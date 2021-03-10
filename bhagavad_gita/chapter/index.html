@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ancient Knowledge | Bhagavad Gita</title>
+
+    <!-- Bulma CSS Framework -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    
+    <!-- JQuery for fun -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- Mustache is love <3 -->
+    <script src="https://unpkg.com/mustache@latest"></script>
+    <!-- Helpers JS -->
+    <script src="../../js/helpers.js"></script>
+</head>
+
+<body>
+    <!-- Site header start -->
+    <section class="hero is-small is-link">
+        <div class="hero-head">
+            <nav class="navbar">
+                <div class="container">
+                    <div class="navbar-brand">
+                        <a class="navbar-item" href="../../">
+                            <h2 class="subtitle">
+                                Ancient Knowledge
+                            </h2>
+                        </a>
+                        <span class="navbar-burger burger" data-target="navbarMenu">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </span>
+                    </div>
+                    <div id="navbarMenu" class="navbar-menu">
+                        <div class="navbar-end">
+                            <div class="tabs is-right">
+                                <ul>
+                                    <li class="is-active"><a href="../">भगवद गीता (Bhagavad Gita)</a></li>
+                                    <li>
+                                        <script>
+                                            switch (getSiteLanguage()){
+                                                case "english":
+                                                    document.write(
+                                                        "<a onclick=\"setSiteLanguage('hindi')\">हिंदी में पढ़े</a>"
+                                                    );
+                                                    break;
+                                                default:
+                                                    document.write(
+                                                        "<a onclick=\"setSiteLanguage('english')\">Read in English</a>"
+                                                    );
+                                                    break;
+                                            }
+                                        </script>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <h1 class="title">
+                    <script>
+                        switch (getSiteLanguage()){
+                            case "english":
+                                document.write("Bhagavad Gita");
+                                break;
+                            default:
+                                document.write("भगवद गीता");
+                                break;
+                        }
+                    </script>
+                </h1>
+            </div>
+        </div>
+    </section>
+    <div class="box cta mb-0">
+        <div class="content container" id="chapter-title-container">
+            <!-- chapter summary goes here -->
+        </div>
+    </div>
+    <!-- Site header end -->
+
+    <!-- Site content start -->
+    <section class="section">
+        <div class="container">
+            <div class="row columns is-multiline" id="text-cards-container">
+                <!-- dynamic cards goes here -->
+                <div class="column is-12">
+                    <div class="card is-shady">
+                        <div class="card-content">
+                            <div class="content" id="chapter-summary-container">
+                                <!-- chapter summary goes here -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <article class="message is-info">
+                <div class="message-body has-text-centered">
+                    <strong>
+                        Hindi/English translation for all verses will be available soon.
+                    </strong>
+                </div>
+            </article>
+        </div>
+    </section>
+    
+    <!-- Site content end -->
+
+    <!-- Site footer start -->
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <p>
+                <strong>Ancient Knowledge</strong> is maintained by <a href="https://github.com/vedupraity">Vedprakash
+                    Upraity</a>.
+            </p>
+        </div>
+    </footer>
+    <!-- Site footer end -->
+
+    <!-- Mustache templates start -->
+    <script id="chapter-title-template" type="x-tmpl-mustache">
+        <div class="has-text-centered">
+            <h2 class="subtitle">{{ title }}</h2>
+
+            {{#translation}}
+            <p>{{ . }}</p>
+            {{/translation}}
+        </div>
+    </script>
+
+    <script id="chapter-summary-template" type="x-tmpl-mustache">
+        <h2 class="subtitle has-text-centered">Summary</h2>
+        <div class="has-text-justified">
+            {{#summary}}
+            <p>{{ . }}</p>
+            {{/summary}}
+        </div>
+    </script>
+    <!-- Mustache templates end -->
+
+    <!-- Include bulma.js -->
+    <script src="../js/bulma.js"></script>
+
+    <!-- include site.js -->
+    <script src="site.js"></script>
+</body>
+
+</html>
