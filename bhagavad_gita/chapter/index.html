@@ -14,7 +14,7 @@
     <!-- Mustache is love <3 -->
     <script src="https://unpkg.com/mustache@latest"></script>
     <!-- Helpers JS -->
-    <script src="../js/helpers.js"></script>
+    <script src="../../js/helpers.js"></script>
 </head>
 
 <body>
@@ -24,7 +24,7 @@
             <nav class="navbar">
                 <div class="container">
                     <div class="navbar-brand">
-                        <a class="navbar-item" href="../">
+                        <a class="navbar-item" href="../../">
                             <h2 class="subtitle">
                                 Ancient Knowledge
                             </h2>
@@ -39,7 +39,7 @@
                         <div class="navbar-end">
                             <div class="tabs is-right">
                                 <ul>
-                                    <li class="is-active"><a href="">भगवद गीता (Bhagavad Gita)</a></li>
+                                    <li class="is-active"><a href="../">भगवद गीता (Bhagavad Gita)</a></li>
                                     <li>
                                         <script>
                                             switch (getSiteLanguage()){
@@ -81,18 +81,37 @@
         </div>
     </section>
     <div class="box cta mb-0">
-        <h2 class="subtitle has-text-centered chapters-label"></h2>
+        <div class="content container" id="chapter-title-container">
+            <!-- chapter summary goes here -->
+        </div>
     </div>
     <!-- Site header end -->
 
     <!-- Site content start -->
     <section class="section">
         <div class="container">
-            <div class="row columns is-multiline" id="chapter-cards-container">
+            <div class="row columns is-multiline" id="text-cards-container">
                 <!-- dynamic cards goes here -->
+                <div class="column is-12">
+                    <div class="card is-shady">
+                        <div class="card-content">
+                            <div class="content" id="chapter-summary-container">
+                                <!-- chapter summary goes here -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+            <article class="message is-info">
+                <div class="message-body has-text-centered">
+                    <strong>
+                        Hindi/English translation for all verses will be available soon.
+                    </strong>
+                </div>
+            </article>
         </div>
     </section>
+    
     <!-- Site content end -->
 
     <!-- Site footer start -->
@@ -107,33 +126,31 @@
     <!-- Site footer end -->
 
     <!-- Mustache templates start -->
-    <script id="chapter-card-template" type="x-tmpl-mustache">
-        <div class="column is-6">
-            <div class="card is-shady">
-                <div class="card-content">
-                    <div class="content">
-                        <h3><a href="chapter/?chapter={{ id }}">{{ title }}</a></h3>
+    <script id="chapter-title-template" type="x-tmpl-mustache">
+        <div class="has-text-centered">
+            <h2 class="subtitle">{{ title }}</h2>
 
-                        {{ tranlation.siteLanguage }}
+            {{#translation}}
+            <p>{{ . }}</p>
+            {{/translation}}
+        </div>
+    </script>
 
-                        <p class="has-text-weight-bold">Translation:</p>
-                        
-                        {{#translation}}
-                        <p>{{ . }}</p>
-                        {{/translation}}
-                    </div>
-                </div>
-            </div>
+    <script id="chapter-summary-template" type="x-tmpl-mustache">
+        <h2 class="subtitle has-text-centered">Summary</h2>
+        <div class="has-text-justified">
+            {{#summary}}
+            <p>{{ . }}</p>
+            {{/summary}}
         </div>
     </script>
     <!-- Mustache templates end -->
 
     <!-- Include bulma.js -->
     <script src="../js/bulma.js"></script>
-    
+
     <!-- include site.js -->
     <script src="site.js"></script>
-
 </body>
 
 </html>
