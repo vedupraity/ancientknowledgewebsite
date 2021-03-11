@@ -5,6 +5,8 @@
 
 ---
 
+**Site URL**: https://www.ancientknowledge.in/
+
 **Github Page URL**: https://vedupraity.github.io/ancientknowledge/
 
 **Short URL**: https://tinyurl.com/ancientknowledgeonline
@@ -18,7 +20,7 @@ https://github.com/vedupraity/ancientknowledgedatabase
 
 ### Translation available for
 
-1. [भगवद् गीता (Bhagavad Gita)](https://vedupraity.github.io/ancientknowledge/bhagavad_gita/)
+1. [भगवद् गीता (Bhagavad Gita)](https://www.ancientknowledge.in/bhagavad_gita/)
 
 ---
 
