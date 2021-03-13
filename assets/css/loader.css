@@ -1,0 +1,14 @@
+.loading-overlay {
+    min-height: 100vh;
+    min-width: 100vw;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    background: white;
+}
+
+.disable-scroll {
+    max-height: 100vh;
+    overflow: hidden;
+}
