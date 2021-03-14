@@ -6,7 +6,6 @@ $(document).ready(function () {
         url: chapterJSONURL,
         method: "GET",
     }).done(function (response) {
-        console.log(response);
         
         $.each(response, (_index, chapter) => {
             chapterCardContainer = $("#chapter-card-container");
