@@ -26,16 +26,16 @@
 
 <body class="disable-scroll">
     <!-- Begin Loader Overlay -->
-    <!-- <section class="section loading-overlay">
+    <section class="section loading-overlay">
         <div class="container has-text-centered">
             <div class="columns is-centered">
-                <div class="column is-6">
+                <div class="column is-4">
                     <p class="title has-text-link">Loading...</p>
                     <progress class="progress is-small is-link" max="100">15%</progress>
                 </div>
             </div>
         </div>
-    </section> -->
+    </section>
     <!-- End Loader Overlay -->
 
     <!-- Begin Navbar -->
@@ -71,19 +71,23 @@
     <!-- Begin Hero -->
     <section class="hero is-small is-bold is-primary">
         <div class="hero-body">
-            <div class="container has-text-centered">
-                <h3 class="title is-3">...</h3>
-                <h3 class="title is-3">...</h3>
+            <div class="container has-text-centered" id="chapter-title-container">
+                <!-- Chapter Title Here -->
             </div>
         </div>
     </section>
     <!-- End Hero -->
 
     <!-- Begin Main Content -->
+
+    <div id="chapter-summary-container">
+        <!-- Chapter Summary Here -->
+    </div>
+
     <section class="section">
         <div class="container">
-            <div class="columns is-multiline is-centered" id="chapter-card-container">
-                <!-- Chapter Cards Here -->
+            <div class="columns is-multiline is-centered" id="text-card-container">
+                <!-- Text Cards Here -->
             </div>
         </div>
     </section>
@@ -158,7 +162,115 @@
     <script src="https://unpkg.com/mustache@latest"></script>
 
     <script src="/assets/js/helpers.js" defer></script>
+    <script src="/bhagavad-gita/texts/assets/js/site.js" defer></script>
     <!-- End Additional JS -->
+
+    <!-- Begin Mustache Templates -->
+
+    <script id="chapter-title-template" type="x-tmpl-mustache">
+        <h3 class="title is-3">{{ title.hindi }}</h3>
+        <h3 class="title is-3">{{ title.english }}</h3>
+    </script>
+
+    <script id="chapter-summary-template" type="x-tmpl-mustache">
+        <section class="hero is-small is-light">
+            <div class="hero-body">
+                <div class="container">
+                    <h3 class="title is-4 has-text-centered">Summary</h3>
+
+                    {{ #summary.english }}
+                        <p class="mb-3 has-text-justified">
+                            {{ . }}
+                        </p>
+                    {{ /summary.english }}
+                </div>
+            </div>
+        </section>
+    </script>
+
+    <script id="text-card-template" type="x-tmpl-mustache">
+        <div class="column is-12">
+            <div class="card">
+                <div class="card-content">
+                    <div class="has-text-centered">
+                        <p class="title is-5 mb-3">
+                            अधाय {{ chapterIdHindi }} - श्लोक {{ idHindi }}
+                        </p>
+                        <p class="title is-5 mb-3">
+                            Chapter {{ chapterId }} - Text {{ id }}
+                        </p>
+                    </div>
+
+                    <hr />
+
+                    <div class="has-text-centered">
+                        {{ #originalText }}
+                            <p class="mb-3">
+                                {{ . }}
+                            </p>
+                        {{ /originalText }}
+                    </div>
+                    
+                    {{ #renderTextTranslation }}
+                        <hr />
+
+                        <div class="has-text-centered">
+                            <p class="title is-5 mb-3">
+                                अनुवाद
+                            </p>
+                            <div>
+                                {{ #translation.hindi }}
+                                    <p class="mb-3">
+                                        {{ . }}
+                                    </p>
+                                {{ /translation.hindi }}
+                            </div>
+
+                            <p class="title is-5 mb-3">
+                                Translation
+                            </p>
+                            <div>
+                                {{ #translation.english }}
+                                    <p class="mb-3">
+                                        {{ . }}
+                                    </p>
+                                {{ /translation.english }}
+                            </div>
+                        </div>
+                    {{ /renderTextTranslation }}
+                    
+                    {{ #renderTextMeaning }}
+                        <hr />
+
+                        <div class="has-text-centered">
+                            <p class="title is-5 mb-3">
+                                तात्पर्य
+                            </p>
+                            <div>
+                                {{ #meaning.hindi }}
+                                    <p class="mb-3 has-text-justified">
+                                        {{ . }}
+                                    </p>
+                                {{ /meaning.hindi }}
+                            </div>
+
+                            <p class="title is-5 mb-3">
+                                Meaning
+                            </p>
+                            <div>
+                                {{ #meaning.english }}
+                                    <p class="mb-3 has-text-justified">
+                                        {{ . }}
+                                    </p>
+                                {{ /meaning.english }}
+                            </div>
+                        </div>
+                    {{ /renderTextMeaning }}
+                </div>
+            </div>
+        </div>
+    </script>
+    <!-- End Mustache Templates -->
 </body>
 
 </html>
