@@ -7,7 +7,9 @@
     <meta name="theme-color" content="#ffffff" />
 
     <link rel="stylesheet" href="/assets/css/theme.css" />
+    <link rel="stylesheet" href="/assets/css/app.css" />
     <link rel="stylesheet" href="/assets/css/loader.css" />
+    <link rel="stylesheet" href="/bhagavad-gita/texts/assets/css/site.css" />
 
     <link rel="shortcut icon" type="image/png" href="/bulma-clean-theme/favicon.png" />
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.0/dist/alpine.min.js" defer></script>
@@ -155,12 +157,22 @@
             </div>
         </div>
     </footer>
+
+    <div class="is-hidden-tablet lang-switch-buttons">
+        <div class="buttons has-addons">
+            <button class="button lang-switch-btn" data-language="hindi" style="width: 30%">हिंदी</button>
+            <button class="button lang-switch-btn" data-language="all" style="width: 40%">Hindi and English</button>
+            <button class="button lang-switch-btn" data-language="english" style="width: 30%">English</button>
+        </div>
+    </div>
+
     <!-- End Footer -->
 
     <!-- Begin Additional JS -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/mustache@latest"></script>
 
+    <script src="/assets/js/constants.js" defer></script>
     <script src="/assets/js/helpers.js" defer></script>
     <script src="/bhagavad-gita/texts/assets/js/site.js" defer></script>
     <!-- End Additional JS -->
@@ -168,15 +180,15 @@
     <!-- Begin Mustache Templates -->
 
     <script id="chapter-title-template" type="x-tmpl-mustache">
-        <h3 class="title is-3">{{ title.hindi }}</h3>
-        <h3 class="title is-3">{{ title.english }}</h3>
+        <h3 class="title is-3 hindi-content">{{ title.hindi }}</h3>
+        <h3 class="title is-3 english-content">{{ title.english }}</h3>
     </script>
 
     <script id="chapter-summary-template" type="x-tmpl-mustache">
-        <section class="hero is-small is-light">
+        <section class="hero is-small is-light english-content">
             <div class="hero-body">
                 <div class="container">
-                    <h3 class="title is-4 has-text-centered">Summary</h3>
+                    <h3 class="title is-4">Summary</h3>
 
                     {{ #summary.english }}
                         <p class="mb-3 has-text-justified">
@@ -192,49 +204,78 @@
         <div class="column is-12">
             <div class="card">
                 <div class="card-content">
-                    <div class="has-text-centered">
-                        <p class="title is-5 mb-3">
-                            अधाय {{ chapterIdHindi }} - श्लोक {{ idHindi }}
-                        </p>
-                        <p class="title is-5 mb-3">
-                            Chapter {{ chapterId }} - Text {{ id }}
-                        </p>
+                    <div class="is-hidden-mobile">
+                        <div class="columns is-multiline is-centered">
+                            <div class="column is-6-tablet hindi-content">
+                                <p class="title is-5 mb-3">
+                                    अधाय {{ chapterIdHindi }} - श्लोक {{ idHindi }}
+                                </p>
+                            </div>
+                            <div class="column is-6-tablet english-content">
+                                <p class="title is-5 mb-3">
+                                    Chapter {{ chapterId }} - Text {{ id }}
+                                </p>
+                            </div>
+                        </div>
+
+                        <hr />
+                    </div>
+
+                    <div class="columns is-multiline is-centered has-text-centered-mobile">
+                        <div class="column is-6-tablet hindi-content">
+                            <p class="title is-5 mb-3 is-hidden-tablet">
+                                अधाय {{ chapterIdHindi }} - श्लोक {{ idHindi }}
+                            </p>
+                            <div>
+                                {{ #text.hindi }}
+                                    <p class="mb-3">
+                                        {{ . }}
+                                    </p>
+                                {{ /text.hindi }}
+                            </div>
+                        </div>
+
+                        <div class="column is-6-tablet english-content">
+                            <p class="title is-5 mb-3 is-hidden-tablet">
+                                Chapter {{ chapterId }} - Text {{ id }}
+                            </p>
+                            <div>
+                                {{ #text.english }}
+                                    <p class="mb-3">
+                                        {{ . }}
+                                    </p>
+                                {{ /text.english }}
+                            </div>
+                        </div>
                     </div>
 
                     <hr />
 
-                    <div class="has-text-centered">
-                        {{ #originalText }}
-                            <p class="mb-3">
-                                {{ . }}
-                            </p>
-                        {{ /originalText }}
-                    </div>
-                    
                     {{ #renderTextTranslation }}
-                        <hr />
-
-                        <div class="has-text-centered">
-                            <p class="title is-5 mb-3">
-                                अनुवाद
-                            </p>
-                            <div>
-                                {{ #translation.hindi }}
-                                    <p class="mb-3">
-                                        {{ . }}
-                                    </p>
-                                {{ /translation.hindi }}
+                        <div class="columns is-multiline is-centered has-text-centered-mobile">
+                            <div class="column is-6-tablet hindi-content">
+                                <p class="title is-5 mb-3">
+                                    अनुवाद
+                                </p>
+                                <div>
+                                    {{ #translation.hindi }}
+                                        <p class="mb-3">
+                                            {{ . }}
+                                        </p>
+                                    {{ /translation.hindi }}
+                                </div>
                             </div>
-
-                            <p class="title is-5 mb-3">
-                                Translation
-                            </p>
-                            <div>
-                                {{ #translation.english }}
-                                    <p class="mb-3">
-                                        {{ . }}
-                                    </p>
-                                {{ /translation.english }}
+                            <div class="column is-6-tablet english-content">
+                                <p class="title is-5 mb-3">
+                                    Translation
+                                </p>
+                                <div>
+                                    {{ #translation.english }}
+                                        <p class="mb-3">
+                                            {{ . }}
+                                        </p>
+                                    {{ /translation.english }}
+                                </div>
                             </div>
                         </div>
                     {{ /renderTextTranslation }}
@@ -242,27 +283,30 @@
                     {{ #renderTextMeaning }}
                         <hr />
 
-                        <div class="has-text-centered">
-                            <p class="title is-5 mb-3">
-                                तात्पर्य
-                            </p>
-                            <div>
-                                {{ #meaning.hindi }}
-                                    <p class="mb-3 has-text-justified">
-                                        {{ . }}
-                                    </p>
-                                {{ /meaning.hindi }}
+                        <div class="columns is-multiline is-centered has-text-centered-mobile">
+                            <div class="column is-6-tablet hindi-content">
+                                <p class="title is-5 mb-3">
+                                    तात्पर्य
+                                </p>
+                                <div>
+                                    {{ #meaning.hindi }}
+                                        <p class="mb-3 has-text-justified">
+                                            {{ . }}
+                                        </p>
+                                    {{ /meaning.hindi }}
+                                </div>
                             </div>
-
-                            <p class="title is-5 mb-3">
-                                Meaning
-                            </p>
-                            <div>
-                                {{ #meaning.english }}
-                                    <p class="mb-3 has-text-justified">
-                                        {{ . }}
-                                    </p>
-                                {{ /meaning.english }}
+                            <div class="column is-6-tablet english-content">
+                                <p class="title is-5 mb-3">
+                                    Meaning
+                                </p>
+                                <div>
+                                    {{ #meaning.english }}
+                                        <p class="mb-3 has-text-justified">
+                                            {{ . }}
+                                        </p>
+                                    {{ /meaning.english }}
+                                </div>
                             </div>
                         </div>
                     {{ /renderTextMeaning }}
