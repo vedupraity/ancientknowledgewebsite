@@ -72,7 +72,7 @@
 
     <!-- Begin Hero -->
     <section class="hero is-small is-bold is-primary">
-        <div class="hero-body">
+        <div class="hero-body p-6">
             <div class="container has-text-centered" id="chapter-title-container">
                 <!-- Chapter Title Here -->
             </div>
@@ -88,11 +88,20 @@
 
     <section class="section">
         <div class="container">
-            <div class="columns is-multiline is-centered" id="text-card-container">
+            <div class="pagination-container mb-6">
+                <!-- Pagination top -->
+            </div>
+
+            <div class="columns is-multiline is-centered mb-6" id="text-card-container">
                 <!-- Text Cards Here -->
+            </div>
+
+            <div class="pagination-container">
+                <!-- Pagination bottom -->
             </div>
         </div>
     </section>
+    
     <!-- End Main Content -->
 
     <!-- Begin Footer -->
@@ -158,14 +167,6 @@
         </div>
     </footer>
 
-    <div class="is-hidden-tablet lang-switch-buttons">
-        <div class="buttons has-addons">
-            <button class="button lang-switch-btn" data-language="hindi" style="width: 30%">हिंदी</button>
-            <button class="button lang-switch-btn" data-language="all" style="width: 40%">Hindi and English</button>
-            <button class="button lang-switch-btn" data-language="english" style="width: 30%">English</button>
-        </div>
-    </div>
-
     <!-- End Footer -->
 
     <!-- Begin Additional JS -->
@@ -180,15 +181,15 @@
     <!-- Begin Mustache Templates -->
 
     <script id="chapter-title-template" type="x-tmpl-mustache">
-        <h3 class="title is-3 hindi-content">{{ title.hindi }}</h3>
-        <h3 class="title is-3 english-content">{{ title.english }}</h3>
+        <h4 class="title is-4 mb-3">{{ title.hindi }}</h4>
+        <h4 class="title is-4">{{ title.english }}</h4>
     </script>
 
     <script id="chapter-summary-template" type="x-tmpl-mustache">
-        <section class="hero is-small is-light english-content">
+        <section class="hero is-small is-light">
             <div class="hero-body">
                 <div class="container">
-                    <h3 class="title is-4">Summary</h3>
+                    <h4 class="title is-4">Summary</h4>
 
                     {{ #summary.english }}
                         <p class="mb-3 has-text-justified">
@@ -206,12 +207,12 @@
                 <div class="card-content">
                     <div class="is-hidden-mobile">
                         <div class="columns is-multiline is-centered">
-                            <div class="column is-6-tablet hindi-content">
+                            <div class="column is-6-tablet">
                                 <p class="title is-5 mb-3">
                                     अधाय {{ chapterIdHindi }} - श्लोक {{ idHindi }}
                                 </p>
                             </div>
-                            <div class="column is-6-tablet english-content">
+                            <div class="column is-6-tablet">
                                 <p class="title is-5 mb-3">
                                     Chapter {{ chapterId }} - Text {{ id }}
                                 </p>
@@ -222,7 +223,7 @@
                     </div>
 
                     <div class="columns is-multiline is-centered has-text-centered-mobile">
-                        <div class="column is-6-tablet hindi-content">
+                        <div class="column is-6-tablet">
                             <p class="title is-5 mb-3 is-hidden-tablet">
                                 अधाय {{ chapterIdHindi }} - श्लोक {{ idHindi }}
                             </p>
@@ -235,7 +236,7 @@
                             </div>
                         </div>
 
-                        <div class="column is-6-tablet english-content">
+                        <div class="column is-6-tablet">
                             <p class="title is-5 mb-3 is-hidden-tablet">
                                 Chapter {{ chapterId }} - Text {{ id }}
                             </p>
@@ -253,7 +254,7 @@
 
                     {{ #renderTextTranslation }}
                         <div class="columns is-multiline is-centered has-text-centered-mobile">
-                            <div class="column is-6-tablet hindi-content">
+                            <div class="column is-6-tablet">
                                 <p class="title is-5 mb-3">
                                     अनुवाद
                                 </p>
@@ -265,7 +266,7 @@
                                     {{ /translation.hindi }}
                                 </div>
                             </div>
-                            <div class="column is-6-tablet english-content">
+                            <div class="column is-6-tablet">
                                 <p class="title is-5 mb-3">
                                     Translation
                                 </p>
@@ -284,7 +285,7 @@
                         <hr />
 
                         <div class="columns is-multiline is-centered has-text-centered-mobile">
-                            <div class="column is-6-tablet hindi-content">
+                            <div class="column is-6-tablet">
                                 <p class="title is-5 mb-3">
                                     तात्पर्य
                                 </p>
@@ -296,7 +297,7 @@
                                     {{ /meaning.hindi }}
                                 </div>
                             </div>
-                            <div class="column is-6-tablet english-content">
+                            <div class="column is-6-tablet">
                                 <p class="title is-5 mb-3">
                                     Meaning
                                 </p>
@@ -313,6 +314,43 @@
                 </div>
             </div>
         </div>
+    </script>
+    <script id="pagination-template" type="x-tmpl-mustache">
+        <nav class="pagination is-centered" role="navigation" aria-label="pagination">
+            {{ #renderPreviousPageButton }}
+                <a class="pagination-previous" href="{{ previousPageUrl }}">Previous</a>
+            {{ /renderPreviousPageButton }}
+            
+            {{ #renderNextPageButton }}
+                <a class="pagination-next" href="{{ nextPageUrl }}">Next page</a>
+            {{ /renderNextPageButton }}
+            
+            <ul class="pagination-list">
+                {{ #renderPreviousPageButton }}
+                    <li><a class="pagination-link" href="{{ firstPageUrl }}">{{ firstPage }}</a></li>
+
+                    {{ #isNotSecondPage }}
+                        {{ #previousPage }}
+                            <li><span class="pagination-ellipsis">&hellip;</span></li>
+                            <li><a class="pagination-link" href="{{ previousPageUrl }}">{{ previousPage }}</a></li>
+                        {{ /previousPage }}
+                    {{ /isNotSecondPage }}
+                {{ /renderPreviousPageButton }}
+
+                <li><a class="pagination-link is-current" aria-current="page" disabled>{{ currentPage }}</a></li>
+                
+                {{ #renderNextPageButton }}
+                    {{ #isNotSecondLastPage }}
+                        {{ #nextPage }}
+                            <li><a class="pagination-link" href="{{ nextPageUrl }}">{{ nextPage }}</a></li>
+                            <li><span class="pagination-ellipsis">&hellip;</span></li>
+                        {{ /nextPage }}
+                    {{ /isNotSecondLastPage }}
+
+                    <li><a class="pagination-link" href="{{ lastPageUrl }}">{{ lastPage }}</a></li>
+                {{ /renderNextPageButton }}
+            </ul>
+        </nav>
     </script>
     <!-- End Mustache Templates -->
 </body>

@@ -1,88 +1,58 @@
 const chapterJSONURL = `${dbUrlRoot}/bhagavad-gita/chapters.json`
-const textJSONURLTemplate = `${dbUrlRoot}/bhagavad-gita/chapters/{chapter-id}.json`
+const textJSONURLTemplate = `${dbUrlRoot}/bhagavad-gita/chapters/{chapter-id}/page-{page-number}.json`
 
 
-let getSiteLanguage = () => {
-    if (!localStorage.siteLanguage) {
-        localStorage.siteLanguage = "all";
-    }
-    return localStorage.siteLanguage;
-}
-
-
-let setSiteLanguage = (language) => {
-
-    localStorage.siteLanguage = language;
-    
-    if (language === "hindi") {
-        $(".english-content").addClass("is-hidden");
-        $(".hindi-content").removeClass("is-hidden");
-    } else if (language === "english") {
-        $(".hindi-content").addClass("is-hidden");
-        $(".english-content").removeClass("is-hidden");
-    } else {
-        $(".hindi-content").removeClass("is-hidden");
-        $(".english-content").removeClass("is-hidden");
-    }
-
-    $(`.lang-switch-btn[data-language='${language}']`).addClass("is-link");
-}
-
-
-$(document).ready(function () {
-    
-    let chapterId = fetchQueryParam('chapter') || 1;
-
-    $(".lang-switch-btn").on("click", (e) => {
-        let targetElement = $(e.target);
-        setSiteLanguage(targetElement.attr("data-language"));
-        $(".lang-switch-btn").removeClass("is-link");
-        targetElement.addClass("is-link");
-    });
-
-
-    // Render Chapter Title and Summary
+let init = () => {
     $.ajax({
         url: chapterJSONURL,
         method: "GET",
-        async: false,
     }).done(function (response) {
-        let chapter = response[chapterId - 1];
+        let chapterId = fetchQueryParam('chapter') || 1;
+        let chapterData = response[chapterId - 1];
 
-        chapterTitleContainer = $("#chapter-title-container");
-        chapterTitleTemplate = $("#chapter-title-template").html();
-
-        chapterTitleContainer.html(
-            chapterTitleContainer.html()
-            +
-            Mustache.render(
-                chapterTitleTemplate,
-                chapter
-            )
-        )
-
-        chapterSummaryContainer = $("#chapter-summary-container");
-        chapterSummaryTemplate = $("#chapter-summary-template").html();
-
-        chapterSummaryContainer.html(
-            chapterSummaryContainer.html()
-            +
-            Mustache.render(
-                chapterSummaryTemplate,
-                chapter
-            )
-        )
+        renderChapter(chapterData);
+        renderTexts(chapterData);
     })
+}
 
-    // Render all Text Cards for Chapter
+let renderChapter = (chapterData) => {
+    let chapterTitleContainer = $("#chapter-title-container");
+    let chapterTitleTemplate = $("#chapter-title-template").html();
+
+    chapterTitleContainer.html(
+        chapterTitleContainer.html()
+        +
+        Mustache.render(
+            chapterTitleTemplate,
+            chapterData
+        )
+    )
+
+    // let chapterSummaryContainer = $("#chapter-summary-container");
+    // let chapterSummaryTemplate = $("#chapter-summary-template").html();
+
+    // chapterSummaryContainer.html(
+    //     chapterSummaryContainer.html()
+    //     +
+    //     Mustache.render(
+    //         chapterSummaryTemplate,
+    //         chapterData
+    //     )
+    // )
+}
+
+let renderTexts = (chapterData) => {
+    let totalPage = chapterData.pagingMeta.total_page;
+    let pageNumberQueryParam = Math.floor(fetchQueryParam('page')) || 1
+    let pageNumber = pageNumberQueryParam <= totalPage ? pageNumberQueryParam : 1;
+
     $.ajax({
-        url: textJSONURLTemplate.replace("{chapter-id}", chapterId),
+        url: textJSONURLTemplate.replace("{chapter-id}", chapterData.id).replace("{page-number}", pageNumber),
         method: "GET",
-        async: false,
     }).done(function (response) {
         $.each(response, (_index, text) => {
-            textCardContainer = $("#text-card-container");
-            textCardTemplate = $("#text-card-template").html();
+            let textCardContainer = $("#text-card-container");
+            let textCardTemplate = $("#text-card-template").html();
             
             text.idHindi = convertToHindiNumberal(text.id);
             text.chapterIdHindi = convertToHindiNumberal(text.chapterId);
@@ -98,9 +68,50 @@ $(document).ready(function () {
                 )
             )
         })
+
+        renderPagination(pageNumber, totalPage);
     });
+}
 
-    setSiteLanguage(getSiteLanguage());
+let _generatePageUrl = (page) => {
+    return location.pathname + "?" + $.param({chapter: fetchQueryParam("chapter") || 1, page: page});
+}
 
+let renderPagination = (pageNumber, totalPage) => {
+    let paginationContainer = $(".pagination-container");
+    let paginationTemplate = $("#pagination-template").html();
+
+    let pagingData = {
+        renderPreviousPageButton: pageNumber > 1,
+        renderNextPageButton: pageNumber < totalPage,
+        firstPage: 1,
+        lastPage: totalPage,
+        currentPage: pageNumber,
+        isNotSecondPage: !(pageNumber == 2),
+        isNotSecondLastPage: !(pageNumber == totalPage - 1),
+        previousPage: pageNumber > 1 ? pageNumber - 1 : null,
+        nextPage: pageNumber < totalPage ? pageNumber + 1 : null
+    }
+
+    pagingData.firstPageUrl = _generatePageUrl(pagingData.firstPage);
+    pagingData.lastPageUrl = _generatePageUrl(pagingData.lastPage);
+    pagingData.previousPageUrl = _generatePageUrl(pagingData.previousPage);
+    pagingData.nextPageUrl = _generatePageUrl(pagingData.nextPage);
+
+    paginationContainer.html(
+        Mustache.render(
+            paginationTemplate,
+            data = pagingData
+        )
+    )
+
+    postContentRender();
+}
+
+let postContentRender = () => {
     hideLoader();
+}
+
+$(document).ready(function () {
+    init();
 })
