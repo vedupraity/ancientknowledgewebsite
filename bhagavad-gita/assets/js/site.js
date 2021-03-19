@@ -1,4 +1,4 @@
-const chapterJSONURL = "https://vedupraity.github.io/ancientknowledgedatabase/bhagavad-gita/chapters.json"
+const chapterJSONURL = `${dbUrlRoot}/bhagavad-gita/chapters.json`
 
 
 $(document).ready(function () {

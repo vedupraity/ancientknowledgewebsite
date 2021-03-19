@@ -7,7 +7,9 @@
     <meta name="theme-color" content="#ffffff" />
 
     <link rel="stylesheet" href="/assets/css/theme.css" />
+    <link rel="stylesheet" href="/assets/css/app.css" />
     <link rel="stylesheet" href="/assets/css/loader.css" />
+    <link rel="stylesheet" href="/bhagavad-gita/texts/assets/css/site.css" />
 
     <link rel="shortcut icon" type="image/png" href="/bulma-clean-theme/favicon.png" />
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.0/dist/alpine.min.js" defer></script>
@@ -29,8 +31,8 @@
     <section class="section loading-overlay">
         <div class="container has-text-centered">
             <div class="columns is-centered">
-                <div class="column is-4">
-                    <p class="title has-text-link">Loading...</p>
+                <div class="column is-4-tablet">
+                    <h4 class="title is-3 has-text-link">Loading...</h4>
                     <progress class="progress is-small is-link" max="100">15%</progress>
                 </div>
             </div>
@@ -60,8 +62,6 @@
                     </div>
 
                     <a href="/about/" class="navbar-item">About</a>
-
-                    <a href="/contact/" class="navbar-item">Contact</a>
                 </div>
             </div>
         </div>
@@ -70,7 +70,7 @@
 
     <!-- Begin Hero -->
     <section class="hero is-small is-bold is-primary">
-        <div class="hero-body">
+        <div class="hero-body p-6">
             <div class="container has-text-centered" id="chapter-title-container">
                 <!-- Chapter Title Here -->
             </div>
@@ -86,60 +86,33 @@
 
     <section class="section">
         <div class="container">
-            <div class="columns is-multiline is-centered" id="text-card-container">
+            <div class="pagination-container mb-6">
+                <!-- Pagination top -->
+            </div>
+
+            <div class="columns is-multiline is-centered mb-6" id="text-card-container">
                 <!-- Text Cards Here -->
+            </div>
+
+            <div class="pagination-container">
+                <!-- Pagination bottom -->
             </div>
         </div>
     </section>
+    
     <!-- End Main Content -->
 
     <!-- Begin Footer -->
     <footer class="footer">
         <div class="container">
-            <!-- Begin Footer - Github Links -->
-            <div class="columns is-multiline is-centered">
-                <div class="column has-text-centered is-4-desktop is-6-tablet">
-                    <div>
-                        <div class="icon callout-icon">
-                            <i class="fab fa-github fa-2x"></i>
-                        </div>
-                        <p class="subtitle is-6">
-                            <a href="https://github.com/vedupraity/ancientknowledgedatabase">
-                                Ancient Knowledge Database
-                            </a>
-                        </p>
-                    </div>
-                </div>
-                <div class="column has-text-centered is-4-desktop is-6-tablet">
-                    <div>
-                        <div class="icon callout-icon">
-                            <i class="fab fa-github fa-2x"></i>
-                        </div>
-                        <p class="subtitle is-6">
-                            <a href="https://github.com/vedupraity/ancientknowledge">
-                                Ancient Knowledge Website
-                            </a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <!-- End Footer - Github Links -->
-
-            <hr />
-
             <!-- Begin Footer - Nav Links -->
-            <div class="columns is-multiline">
-                <div class="column has-text-centered">
+            <div class="columns is-multiline is-centered">
+                <div class="column is-2-tablet has-text-centered">
                     <div>
                         <a href="/" class="link">Home</a>
                     </div>
                 </div>
-                <div class="column has-text-centered">
-                    <div>
-                        <a href="/contact/" class="link">Contact</a>
-                    </div>
-                </div>
-                <div class="column has-text-centered">
+                <div class="column is-2-tablet has-text-centered">
                     <div>
                         <a href="/about/" class="link">About</a>
                     </div>
@@ -161,6 +134,7 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/mustache@latest"></script>
 
+    <script src="/assets/js/constants.js" defer></script>
     <script src="/assets/js/helpers.js" defer></script>
     <script src="/bhagavad-gita/texts/assets/js/site.js" defer></script>
     <!-- End Additional JS -->
@@ -168,15 +142,15 @@
     <!-- Begin Mustache Templates -->
 
     <script id="chapter-title-template" type="x-tmpl-mustache">
-        <h3 class="title is-3">{{ title.hindi }}</h3>
-        <h3 class="title is-3">{{ title.english }}</h3>
+        <h4 class="title is-4 mb-3">{{ title.hindi }}</h4>
+        <h4 class="title is-4">{{ title.english }}</h4>
     </script>
 
     <script id="chapter-summary-template" type="x-tmpl-mustache">
         <section class="hero is-small is-light">
             <div class="hero-body">
                 <div class="container">
-                    <h3 class="title is-4 has-text-centered">Summary</h3>
+                    <h4 class="title is-4">Summary</h4>
 
                     {{ #summary.english }}
                         <p class="mb-3 has-text-justified">
@@ -192,49 +166,78 @@
         <div class="column is-12">
             <div class="card">
                 <div class="card-content">
-                    <div class="has-text-centered">
-                        <p class="title is-5 mb-3">
-                            अधाय {{ chapterIdHindi }} - श्लोक {{ idHindi }}
-                        </p>
-                        <p class="title is-5 mb-3">
-                            Chapter {{ chapterId }} - Text {{ id }}
-                        </p>
+                    <div class="is-hidden-mobile">
+                        <div class="columns is-multiline is-centered">
+                            <div class="column is-6-tablet">
+                                <p class="title is-5 mb-3">
+                                    अधाय {{ chapterIdHindi }} - श्लोक {{ idHindi }}
+                                </p>
+                            </div>
+                            <div class="column is-6-tablet">
+                                <p class="title is-5 mb-3">
+                                    Chapter {{ chapterId }} - Text {{ id }}
+                                </p>
+                            </div>
+                        </div>
+
+                        <hr />
+                    </div>
+
+                    <div class="columns is-multiline is-centered has-text-centered-mobile">
+                        <div class="column is-6-tablet">
+                            <p class="title is-5 mb-3 is-hidden-tablet">
+                                अधाय {{ chapterIdHindi }} - श्लोक {{ idHindi }}
+                            </p>
+                            <div>
+                                {{ #text.hindi }}
+                                    <p class="mb-3">
+                                        {{ . }}
+                                    </p>
+                                {{ /text.hindi }}
+                            </div>
+                        </div>
+
+                        <div class="column is-6-tablet">
+                            <p class="title is-5 mb-3 is-hidden-tablet">
+                                Chapter {{ chapterId }} - Text {{ id }}
+                            </p>
+                            <div>
+                                {{ #text.english }}
+                                    <p class="mb-3">
+                                        {{ . }}
+                                    </p>
+                                {{ /text.english }}
+                            </div>
+                        </div>
                     </div>
 
                     <hr />
 
-                    <div class="has-text-centered">
-                        {{ #originalText }}
-                            <p class="mb-3">
-                                {{ . }}
-                            </p>
-                        {{ /originalText }}
-                    </div>
-                    
                     {{ #renderTextTranslation }}
-                        <hr />
-
-                        <div class="has-text-centered">
-                            <p class="title is-5 mb-3">
-                                अनुवाद
-                            </p>
-                            <div>
-                                {{ #translation.hindi }}
-                                    <p class="mb-3">
-                                        {{ . }}
-                                    </p>
-                                {{ /translation.hindi }}
+                        <div class="columns is-multiline is-centered has-text-centered-mobile">
+                            <div class="column is-6-tablet">
+                                <p class="title is-5 mb-3">
+                                    अनुवाद
+                                </p>
+                                <div>
+                                    {{ #translation.hindi }}
+                                        <p class="mb-3">
+                                            {{ . }}
+                                        </p>
+                                    {{ /translation.hindi }}
+                                </div>
                             </div>
-
-                            <p class="title is-5 mb-3">
-                                Translation
-                            </p>
-                            <div>
-                                {{ #translation.english }}
-                                    <p class="mb-3">
-                                        {{ . }}
-                                    </p>
-                                {{ /translation.english }}
+                            <div class="column is-6-tablet">
+                                <p class="title is-5 mb-3">
+                                    Translation
+                                </p>
+                                <div>
+                                    {{ #translation.english }}
+                                        <p class="mb-3">
+                                            {{ . }}
+                                        </p>
+                                    {{ /translation.english }}
+                                </div>
                             </div>
                         </div>
                     {{ /renderTextTranslation }}
@@ -242,33 +245,73 @@
                     {{ #renderTextMeaning }}
                         <hr />
 
-                        <div class="has-text-centered">
-                            <p class="title is-5 mb-3">
-                                तात्पर्य
-                            </p>
-                            <div>
-                                {{ #meaning.hindi }}
-                                    <p class="mb-3 has-text-justified">
-                                        {{ . }}
-                                    </p>
-                                {{ /meaning.hindi }}
+                        <div class="columns is-multiline is-centered has-text-centered-mobile">
+                            <div class="column is-6-tablet">
+                                <p class="title is-5 mb-3">
+                                    तात्पर्य
+                                </p>
+                                <div>
+                                    {{ #meaning.hindi }}
+                                        <p class="mb-3 has-text-justified">
+                                            {{ . }}
+                                        </p>
+                                    {{ /meaning.hindi }}
+                                </div>
                             </div>
-
-                            <p class="title is-5 mb-3">
-                                Meaning
-                            </p>
-                            <div>
-                                {{ #meaning.english }}
-                                    <p class="mb-3 has-text-justified">
-                                        {{ . }}
-                                    </p>
-                                {{ /meaning.english }}
+                            <div class="column is-6-tablet">
+                                <p class="title is-5 mb-3">
+                                    Meaning
+                                </p>
+                                <div>
+                                    {{ #meaning.english }}
+                                        <p class="mb-3 has-text-justified">
+                                            {{ . }}
+                                        </p>
+                                    {{ /meaning.english }}
+                                </div>
                             </div>
                         </div>
                     {{ /renderTextMeaning }}
                 </div>
             </div>
         </div>
+    </script>
+    <script id="pagination-template" type="x-tmpl-mustache">
+        <nav class="pagination is-centered" role="navigation" aria-label="pagination">
+            {{ #renderPreviousPageButton }}
+                <a class="pagination-previous" href="{{ previousPageUrl }}">Previous</a>
+            {{ /renderPreviousPageButton }}
+            
+            {{ #renderNextPageButton }}
+                <a class="pagination-next" href="{{ nextPageUrl }}">Next page</a>
+            {{ /renderNextPageButton }}
+            
+            <ul class="pagination-list">
+                {{ #renderPreviousPageButton }}
+                    <li><a class="pagination-link" href="{{ firstPageUrl }}">{{ firstPage }}</a></li>
+
+                    {{ #isNotSecondPage }}
+                        {{ #previousPage }}
+                            <li><span class="pagination-ellipsis">&hellip;</span></li>
+                            <li><a class="pagination-link" href="{{ previousPageUrl }}">{{ previousPage }}</a></li>
+                        {{ /previousPage }}
+                    {{ /isNotSecondPage }}
+                {{ /renderPreviousPageButton }}
+
+                <li><a class="pagination-link is-current" aria-current="page" disabled>{{ currentPage }}</a></li>
+                
+                {{ #renderNextPageButton }}
+                    {{ #isNotSecondLastPage }}
+                        {{ #nextPage }}
+                            <li><a class="pagination-link" href="{{ nextPageUrl }}">{{ nextPage }}</a></li>
+                            <li><span class="pagination-ellipsis">&hellip;</span></li>
+                        {{ /nextPage }}
+                    {{ /isNotSecondLastPage }}
+
+                    <li><a class="pagination-link" href="{{ lastPageUrl }}">{{ lastPage }}</a></li>
+                {{ /renderNextPageButton }}
+            </ul>
+        </nav>
     </script>
     <!-- End Mustache Templates -->
 </body>

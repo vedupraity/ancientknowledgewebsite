@@ -7,6 +7,7 @@
     <meta name="theme-color" content="#ffffff" />
 
     <link rel="stylesheet" href="/assets/css/theme.css" />
+    <link rel="stylesheet" href="/assets/css/loader.css" />
 
     <link rel="shortcut icon" type="image/png" href="/bulma-clean-theme/favicon.png" />
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.0/dist/alpine.min.js" defer></script>
@@ -24,6 +25,19 @@
 </head>
 
 <body>
+    <!-- Begin Loader Overlay -->
+    <section class="section loading-overlay">
+        <div class="container has-text-centered">
+            <div class="columns is-centered">
+                <div class="column is-4-tablet">
+                    <h4 class="title is-3 has-text-link">Loading...</h4>
+                    <progress class="progress is-small is-link" max="100">15%</progress>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Loader Overlay -->
+
     <!-- Begin Navbar -->
     <nav class="navbar is-primary" x-data="{ openNav: false }">
         <div class="container">
@@ -38,16 +52,7 @@
             </div>
             <div class="navbar-menu" id="navMenu" :class="{ 'is-active': openNav }">
                 <div class="navbar-end">
-                    <!-- <div class="navbar-item has-dropdown is-hoverable">
-                        <a class="navbar-link">Books</a>
-                        <div class="navbar-dropdown">
-                            <a href="/bhagavad-gita/" class="navbar-item">Bhagavad Gita</a>
-                        </div>
-                    </div> -->
-
                     <a href="/about/" class="navbar-item">About</a>
-
-                    <a href="/contact/" class="navbar-item">Contact</a>
                 </div>
             </div>
         </div>
@@ -55,11 +60,11 @@
     <!-- End Navbar -->
 
     <!-- Begin Hero -->
-    <section class="hero is-medium is-bold is-primary">
-        <div class="hero-body">
+    <section class="hero is-small is-bold is-primary">
+        <div class="hero-body p-6">
             <div class="container has-text-centered">
-                <h1 class="title is-2">Ancient Knowledge</h1>
-                <p class="subtitle is-3">Recollecting the lost knowledge</p>
+                <h3 class="title is-3 mb-3">Ancient Knowledge</h3>
+                <h5 class="title is-5">Recollecting the lost knowledge</h5>
             </div>
         </div>
     </section>
@@ -68,36 +73,8 @@
     <!-- Begin Main Content -->
     <section class="section">
         <div class="container">
-            <div class="columns is-multiline is-centered">
-                <!-- Begin Book Card -->
-                <div class="column is-6-desktop is-6-tablet">
-                    <a href="/bhagavad-gita/">
-                        <div class="card">
-                            <div class="card-image">
-                                <figure class="image is-16by9">
-                                    <img src="/bhagavad-gita/assets/img/bhagavad-gita-cover-16by9.jpg" alt="Bhagavad Gita" />
-                                </figure>
-                            </div>
-                            <div class="card-content">
-                                <p class="title is-4 mb-3">
-                                    भगवद गीता
-                                </p>
-                                <p class="title is-4 mb-0">
-                                    Bhagavad Gita
-                                </p>
-                                <hr />
-                                <p class="subtitle mb-3">
-                                    भगवद गीता हिंदी और अंग्रेजी में पढ़ें
-                                </p>
-                                <p class="subtitle mb-0">
-                                    Read Bhagavad Gita in Hindi and English
-                                </p>
-                                
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <!-- End Book Card -->
+            <div class="columns is-multiline is-centered" id="book-card-container">
+                <!-- book cards here -->
             </div>
         </div>
     </section>
@@ -106,50 +83,14 @@
     <!-- Begin Footer -->
     <footer class="footer">
         <div class="container">
-            <!-- Begin Footer - Github Links -->
-            <div class="columns is-multiline is-centered">
-                <div class="column has-text-centered is-4-desktop is-6-tablet">
-                    <div>
-                        <div class="icon callout-icon">
-                            <i class="fab fa-github fa-2x"></i>
-                        </div>
-                        <p class="subtitle is-6">
-                            <a href="https://github.com/vedupraity/ancientknowledgedatabase">
-                                Ancient Knowledge Database
-                            </a>
-                        </p>
-                    </div>
-                </div>
-                <div class="column has-text-centered is-4-desktop is-6-tablet">
-                    <div>
-                        <div class="icon callout-icon">
-                            <i class="fab fa-github fa-2x"></i>
-                        </div>
-                        <p class="subtitle is-6">
-                            <a href="https://github.com/vedupraity/ancientknowledge">
-                                Ancient Knowledge Website
-                            </a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <!-- End Footer - Github Links -->
-
-            <hr />
-
             <!-- Begin Footer - Nav Links -->
-            <div class="columns is-multiline">
-                <div class="column has-text-centered">
+            <div class="columns is-multiline is-centered">
+                <div class="column is-2-tablet has-text-centered">
                     <div>
                         <a href="/" class="link">Home</a>
                     </div>
                 </div>
-                <div class="column has-text-centered">
-                    <div>
-                        <a href="/contact/" class="link">Contact</a>
-                    </div>
-                </div>
-                <div class="column has-text-centered">
+                <div class="column is-2-tablet has-text-centered">
                     <div>
                         <a href="/about/" class="link">About</a>
                     </div>
@@ -166,6 +107,45 @@
         </div>
     </footer>
     <!-- End Footer -->
+
+    <!-- Begin Additional JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/mustache@latest"></script>
+
+    <script src="/assets/js/constants.js" defer></script>
+    <script src="/assets/js/helpers.js" defer></script>
+    <script src="/assets/js/site.js" defer></script>
+    <!-- End Additional JS -->
+
+    <!-- Begin Mustache Templates -->
+    <script id="book-card-template" type="x-tmpl-mustache">
+        <div class="column is-6-desktop is-6-tablet">
+            <a href="{{ path }}">
+                <div class="card">
+                    <div class="card-image">
+                        <figure class="image is-16by9">
+                            <img src="{{ coverImage }}" alt="{{ title.english }}" />
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <h5 class="title is-5 mb-3">
+                            {{ title.hindi }}
+                        </h5>
+                        <h5 class="title is-5 mb-0">
+                            {{ title.english }}
+                        </h5>
+                        <hr />
+                        <p class="mb-3">
+                            {{ subtitle.hindi }}
+                        </p>
+                        <p class="mb-0">
+                            {{ subtitle.english }}
+                        </p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </script>
 </body>
 
 </html>
