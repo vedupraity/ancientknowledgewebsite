@@ -1,9 +1,9 @@
 /* begin dev urls */
-siteUrlRoot = "http://localhost"
-dbUrlRoot = "http://localhost/db-local"
+// siteUrlRoot = "http://localhost"
+// dbUrlRoot = "http://localhost/db-local"
 /* end dev urls */
 
 /* begin live urls */
-// siteUrlRoot = "https://www.ancientknowledge.in";
-// dbUrlRoot = "https://vedupraity.github.io/ancientknowledgedatabase"
+siteUrlRoot = "https://www.ancientknowledge.in";
+dbUrlRoot = "https://vedupraity.github.io/ancientknowledgedatabase"
 /* end live urls */
