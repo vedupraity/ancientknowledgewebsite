@@ -104,6 +104,10 @@
 
     <section class="section pt-0">
         <div class="container">
+            <div class="pagination-container mb-5">
+                <!-- Pagination top -->
+            </div>
+
             <div class="columns is-multiline is-centered mb-5" id="text-card-container">
                 <!-- Text Cards Here -->
             </div>
@@ -293,36 +297,35 @@
     </script>
     <script id="pagination-template" type="x-tmpl-mustache">
         <nav class="pagination is-centered" role="navigation" aria-label="pagination">
-            {{ #renderPreviousPageButton }}
-                <a class="pagination-previous" href="{{ previousPageUrl }}">Previous page</a>
-            {{ /renderPreviousPageButton }}
+            <a class="pagination-previous pagination-button" {{ #renderPreviousPageButton }}href="{{ previousPageUrl }}"{{ /renderPreviousPageButton }} {{ ^renderPreviousPageButton }}disabled{{ /renderPreviousPageButton }} >Previous page</a>
             
-            {{ #renderNextPageButton }}
-                <a class="pagination-next" href="{{ nextPageUrl }}">Next page</a>
-            {{ /renderNextPageButton }}
+            <a class="pagination-next pagination-button" {{ #renderNextPageButton }}href="{{ nextPageUrl }}"{{ /renderNextPageButton }} {{ ^renderNextPageButton }}disabled{{ /renderNextPageButton }}>Next page</a>
             
             <ul class="pagination-list">
                 {{ #renderPreviousPageButton }}
                     <li><a class="pagination-link" href="{{ firstPageUrl }}">{{ firstPage }}</a></li>
 
-                    {{ #isNotSecondPage }}
-                        {{ #previousPage }}
-                            <li><span class="pagination-ellipsis">&hellip;</span></li>
-                            <li><a class="pagination-link" href="{{ previousPageUrl }}">{{ previousPage }}</a></li>
-                        {{ /previousPage }}
-                    {{ /isNotSecondPage }}
+                    {{ #renderPreviousPageEllipsis }}
+                        <li><span class="pagination-ellipsis">&hellip;</span></li>
+                    {{ /renderPreviousPageEllipsis }}
+                    
+                    {{ #renderPreviousPageLink }}
+                        <li><a class="pagination-link" href="{{ previousPageUrl }}">{{ previousPage }}</a></li>
+                    {{ /renderPreviousPageLink }}
                 {{ /renderPreviousPageButton }}
 
                 <li><a class="pagination-link is-current" aria-current="page" disabled>{{ currentPage }}</a></li>
                 
                 {{ #renderNextPageButton }}
-                    {{ #isNotSecondLastPage }}
-                        {{ #nextPage }}
-                            <li><a class="pagination-link" href="{{ nextPageUrl }}">{{ nextPage }}</a></li>
-                            <li><span class="pagination-ellipsis">&hellip;</span></li>
-                        {{ /nextPage }}
-                    {{ /isNotSecondLastPage }}
-
+                    
+                    {{ #renderNextPageLink }}
+                        <li><a class="pagination-link" href="{{ nextPageUrl }}">{{ nextPage }}</a></li>
+                    {{ /renderNextPageLink }}
+                    
+                    {{ #renderNextPageEllipsis }}
+                        <li><span class="pagination-ellipsis">&hellip;</span></li>
+                    {{ /renderNextPageEllipsis }}
+                    
                     <li><a class="pagination-link" href="{{ lastPageUrl }}">{{ lastPage }}</a></li>
                 {{ /renderNextPageButton }}
             </ul>

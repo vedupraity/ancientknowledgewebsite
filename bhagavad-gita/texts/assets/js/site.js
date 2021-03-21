@@ -82,13 +82,17 @@ let renderPagination = (pageNumber, totalPage) => {
     let paginationTemplate = $("#pagination-template").html();
 
     let pagingData = {
-        renderPreviousPageButton: pageNumber > 1,
-        renderNextPageButton: pageNumber < totalPage,
         firstPage: 1,
         lastPage: totalPage,
         currentPage: pageNumber,
-        isNotSecondPage: !(pageNumber == 2),
-        isNotSecondLastPage: !(pageNumber == totalPage - 1),
+
+        renderPreviousPageButton: pageNumber > 1,
+        renderNextPageButton: pageNumber < totalPage,
+        renderPreviousPageLink: pageNumber - 1 >= 2,
+        renderNextPageLink: totalPage - pageNumber >= 2,
+        renderPreviousPageEllipsis: pageNumber - 1 > 2,
+        renderNextPageEllipsis: totalPage - pageNumber > 2,
+
         previousPage: pageNumber > 1 ? pageNumber - 1 : null,
         nextPage: pageNumber < totalPage ? pageNumber + 1 : null
     }

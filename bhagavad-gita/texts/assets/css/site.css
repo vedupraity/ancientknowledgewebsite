@@ -3,3 +3,11 @@
     bottom: 0;
     width: 100vw;
 }
+
+.pagination-button {
+    width: 10em;
+}
+
+.pagination-list {
+    width: 100%;
+}
