@@ -17,11 +17,9 @@
     <meta name="theme-color" content="#ffffff" />
 
     <link rel="stylesheet" href="/assets/css/theme.css" />
-    <link rel="stylesheet" href="/assets/css/loader.css" />
 
     <link rel="shortcut icon" type="image/png" href="/bulma-clean-theme/favicon.png" />
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.0/dist/alpine.min.js" defer></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" />
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-social@1/bin/bulma-social.min.css" />
 
@@ -35,18 +33,6 @@
 </head>
 
 <body>
-    <!-- Begin Loader Overlay -->
-    <section class="section loading-overlay">
-        <div class="container has-text-centered">
-            <div class="columns is-centered">
-                <div class="column is-4-tablet">
-                    <h4 class="title is-3 has-text-link">Loading...</h4>
-                    <progress class="progress is-small is-link" max="100">15%</progress>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End Loader Overlay -->
 
     <!-- Begin Navbar -->
     <nav class="navbar is-primary" x-data="{ openNav: false }">
@@ -84,7 +70,44 @@
     <section class="section">
         <div class="container">
             <div class="columns is-multiline is-centered" id="book-card-container">
-                <!-- book cards here -->
+                <div class="column is-6-desktop is-6-tablet">
+                    <a href="/bhagavad-gita/">
+                        <div class="card">
+                            <div class="card-image">
+                                <figure class="image is-16by9">
+                                    <img src="/bhagavad-gita/assets/img/bhagavad-gita-cover-16by9.jpg" alt="Bhagavad Gita">
+                                </figure>
+                            </div>
+                            <div class="card-content">
+                                <div>
+                                    <h5 class="title is-5 mb-3">
+                                        श्रीमद्भगवद्गीता - यथारूप
+                                    </h5>
+                                    <h5 class="title is-5 mb-5">
+                                        Shrimad Bhagavad Gita - As It Is
+                                    </h5>
+                                    <h6 class="is-6 mb-3">
+                                        by A.C. Bhaktivendanta Swami Prabhupada
+                                    </h6>
+                                </div>
+                                <hr>
+                                <div>
+                                    <p class="mb-3">
+                                        Tags:
+                                    </p>
+                                    <div class="tags">
+                                        <span class="tag">Bhagavad Gita</span>
+                                        <span class="tag">Yatharoop</span>
+                                        <span class="tag">As It Is</span>
+                                        <span class="tag">A.C. Bhaktivendanta Swami Prabhupada</span>
+                                        <span class="tag">Hindi</span>
+                                        <span class="tag">English</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
             </div>
         </div>
     </section>
@@ -117,45 +140,6 @@
         </div>
     </footer>
     <!-- End Footer -->
-
-    <!-- Begin Additional JS -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/mustache@latest"></script>
-
-    <script src="/assets/js/constants.js" defer></script>
-    <script src="/assets/js/helpers.js" defer></script>
-    <script src="/assets/js/site.js" defer></script>
-    <!-- End Additional JS -->
-
-    <!-- Begin Mustache Templates -->
-    <script id="book-card-template" type="x-tmpl-mustache">
-        <div class="column is-6-desktop is-6-tablet">
-            <a href="{{ path }}">
-                <div class="card">
-                    <div class="card-image">
-                        <figure class="image is-16by9">
-                            <img src="{{ coverImage }}" alt="{{ title.english }}" />
-                        </figure>
-                    </div>
-                    <div class="card-content">
-                        <h5 class="title is-5 mb-3">
-                            {{ title.hindi }}
-                        </h5>
-                        <h5 class="title is-5 mb-0">
-                            {{ title.english }}
-                        </h5>
-                        <hr />
-                        <p class="mb-3">
-                            {{ subtitle.hindi }}
-                        </p>
-                        <p class="mb-0">
-                            {{ subtitle.english }}
-                        </p>
-                    </div>
-                </div>
-            </a>
-        </div>
-    </script>
 </body>
 
 </html>
