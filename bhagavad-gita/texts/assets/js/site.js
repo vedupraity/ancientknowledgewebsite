@@ -8,7 +8,7 @@ let init = () => {
         method: "GET",
     }).done(function (response) {
         let chapterId = fetchQueryParam('chapter') || 1;
-        let chapterData = response[chapterId - 1];
+        let chapterData = response.chapters[chapterId - 1];
 
         renderChapter(chapterData);
         renderTexts(chapterData);
@@ -114,6 +114,12 @@ let renderPagination = (pageNumber, totalPage) => {
 
 let postContentRender = () => {
     hideLoader();
+
+    if (window.location.hash && window.location.hash.includes("T")) {
+        $([document.documentElement, document.body]).animate({
+            scrollTop: $(window.location.hash).offset().top
+        }, 1000, "swing");
+    }
 }
 
 $(document).ready(function () {

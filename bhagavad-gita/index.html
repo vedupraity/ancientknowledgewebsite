@@ -17,9 +17,10 @@
     <meta name="theme-color" content="#ffffff" />
 
     <link rel="stylesheet" href="/assets/css/theme.css" />
+    <link rel="stylesheet" href="/assets/css/theme-custom.css" />
     <link rel="stylesheet" href="/assets/css/loader.css" />
 
-    <link rel="shortcut icon" type="image/png" href="/bulma-clean-theme/favicon.png" />
+    <link rel="shortcut icon" type="image/png" href="/favicon.png" />
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.0/dist/alpine.min.js" defer></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" />
 
@@ -49,10 +50,12 @@
     <!-- End Loader Overlay -->
 
     <!-- Begin Navbar -->
-    <nav class="navbar is-primary" x-data="{ openNav: false }">
+    <nav class="navbar is-warning bg-gradient-light-orange" x-data="{ openNav: false }">
         <div class="container">
             <div class="navbar-brand">
-                <a href="/" class="navbar-item"> Ancient Knowledge </a>
+                <a href="/" class="navbar-item">
+                    <h5 class="subtitle is-5 has-text-orange"><span>📖</span><span class="pl-2">Ancient Knowledge</span></h5>
+                </a>
                 <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
                     data-target="navMenu" :class="{ 'is-active': openNav }" x-on:click="openNav = !openNav">
                     <span aria-hidden="true"></span>
@@ -63,13 +66,13 @@
             <div class="navbar-menu" id="navMenu" :class="{ 'is-active': openNav }">
                 <div class="navbar-end">
                     <div class="navbar-item has-dropdown is-hoverable">
-                        <a class="navbar-link">Books</a>
+                        <a class="navbar-link has-text-orange">Books</a>
                         <div class="navbar-dropdown">
                             <a href="/bhagavad-gita/" class="navbar-item">Bhagavad Gita</a>
                         </div>
                     </div>
 
-                    <a href="/about/" class="navbar-item">About</a>
+                    <a href="/about/" class="navbar-item has-text-orange">About</a>
                 </div>
             </div>
         </div>
@@ -77,11 +80,18 @@
     <!-- End Navbar -->
 
     <!-- Begin Hero -->
-    <section class="hero is-small is-bold is-primary">
+    <section class="hero is-small is-bold is-dark bg-gradient-orange">
         <div class="hero-body p-6">
             <div class="container has-text-centered">
                 <h4 class="title is-4 mb-3">श्रीमद्भगवद्गीता - यथारूप - अध्याय</h4>
                 <h4 class="title is-4">Shrimad Bhagavad Gita - As It Is - Chapters</h4>
+            </div>
+        </div>
+    </section>
+    <section class="hero is-small is-light">
+        <div class="hero-body p-5 pt-6 pb-6">
+            <div class="container has-text-justified" id="introduction-container">
+                <!-- Introduction goes here -->
             </div>
         </div>
     </section>
@@ -98,28 +108,29 @@
     <!-- End Main Content -->
 
     <!-- Begin Footer -->
-    <footer class="footer">
+    <footer class="footer bg-gradient-light-orange pt-6 pb-6">
         <div class="container">
             <!-- Begin Footer - Nav Links -->
             <div class="columns is-multiline is-centered">
                 <div class="column is-2-tablet has-text-centered">
                     <div>
-                        <a href="/" class="link">Home</a>
+                        <a href="/" class="link has-text-orange">Home</a>
                     </div>
                 </div>
                 <div class="column is-2-tablet has-text-centered">
                     <div>
-                        <a href="/about/" class="link">About</a>
+                        <a href="/about/" class="link has-text-orange">About</a>
                     </div>
                 </div>
             </div>
             <!-- End Footer - Nav Links -->
 
-            <hr />
+            <hr class="mb-6" />
 
             <div class="content has-text-centered">
-                <a href="/">Ancient Knowledge</a> is maintained by
-                <a href="https://github.com/vedupraity">Vedprakash Upraity</a>.
+                <a href="/" class="link has-text-orange">Ancient Knowledge</a>
+                is maintained by
+                <a href="https://github.com/vedupraity" class="link has-text-orange">Vedprakash Upraity</a>.
             </div>
         </div>
     </footer>
@@ -139,7 +150,7 @@
         <!-- Begin Chapter Card -->
             <div class="column is-12">
                 <a href="/bhagavad-gita/texts?chapter={{ id }}">
-                    <div class="card">
+                    <div class="card has-glow-md">
                         <div class="card-content">
                             <!-- Begin Card Header -->
                             <div class="has-text-centered">
@@ -168,6 +179,16 @@
                 </a>
             </div>
             <!-- End Chapter Card -->
+    </script>
+    <script id="introduction-template" type="x-tmpl-mustache">
+        <div class="content">
+            <p class="title is-4 has-text-centered">Introduction</p>
+
+            <hr />
+            {{ #introduction }}
+                <p>{{ . }}</p>
+            {{ /introduction }}
+        </div>
     </script>
     <!-- Begin Mustache Templates -->
 </body>

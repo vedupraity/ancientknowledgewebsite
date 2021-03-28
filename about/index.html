@@ -17,8 +17,9 @@
     <meta name="theme-color" content="#ffffff" />
 
     <link rel="stylesheet" href="/assets/css/theme.css" />
+    <link rel="stylesheet" href="/assets/css/theme-custom.css" />
 
-    <link rel="shortcut icon" type="image/png" href="/bulma-clean-theme/favicon.png" />
+    <link rel="shortcut icon" type="image/png" href="/favicon.png" />
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.0/dist/alpine.min.js" defer></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" />
 
@@ -35,10 +36,12 @@
 
 <body>
     <!-- Begin Navbar -->
-    <nav class="navbar is-primary" x-data="{ openNav: false }">
+    <nav class="navbar is-warning bg-gradient-light-orange" x-data="{ openNav: false }">
         <div class="container">
             <div class="navbar-brand">
-                <a href="/" class="navbar-item"> Ancient Knowledge </a>
+                <a href="/" class="navbar-item">
+                    <h5 class="subtitle is-5 has-text-orange"><span>📖</span><span class="pl-2">Ancient Knowledge</span></h5>
+                </a>
                 <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
                     data-target="navMenu" :class="{ 'is-active': openNav }" x-on:click="openNav = !openNav">
                     <span aria-hidden="true"></span>
@@ -48,7 +51,7 @@
             </div>
             <div class="navbar-menu" id="navMenu" :class="{ 'is-active': openNav }">
                 <div class="navbar-end">
-                    <a href="/about/" class="navbar-item">About</a>
+                    <a href="/about/" class="navbar-item has-text-orange">About</a>
                 </div>
             </div>
         </div>
@@ -56,11 +59,11 @@
     <!-- End Navbar -->
 
     <!-- Begin Hero -->
-    <section class="hero is-small is-bold is-primary">
-        <div class="hero-body p-6">
-            <div class="container has-text-centered">
-                <h3 class="title is-3 mb-3">Ancient Knowledge</h3>
-                <h5 class="title is-5">Recollecting the lost knowledge</h5>
+    <section class="hero is-small is-bold is-dark bg-gradient-orange">
+        <div class="hero-body">
+            <div class="container has-text-centered p-5">
+                <!-- <h3 class="title is-3 mb-3">Ancient Knowledge</h3> -->
+                <h4 class="title is-4">Recollecting the lost knowledge</h4>
             </div>
         </div>
     </section>
@@ -69,7 +72,7 @@
     <!-- Begin Main Content -->
     <section class="section">
         <div class="container">
-            <div class="card">
+            <div class="card has-glow-md">
                 <div class="card-content">
                     <div class="content">
                         <!-- Begin About -->
@@ -81,7 +84,7 @@
                             Ancient Knowledge is an educational, open-source, and non-profit project with an idea to collect, consolidate and make the content available in multiple languages (currently limited to Hindi and English).
                         </p>
 
-                        <p>Please reach out to us at <a href="mailto:ancientknowledgeinbox@gmail.com">ancientknowledgeinbox@gmail.com</a> in case if you have a suggestion or if you want to join us as a translator. <i class="far fa-smile"></i>
+                        <p>Please reach out to us at <a class="link has-text-orange" href="mailto:ancientknowledgeinbox@gmail.com">ancientknowledgeinbox@gmail.com</a> in case if you have a suggestion or if you want to join us as a translator. <i class="far fa-smile"></i>
                         </p>
                         <!-- End About -->
 
@@ -94,14 +97,14 @@
                     
                         <p>Checkout our GitHub repositories to become a contributor.</p>
 
-                        <a href="https://github.com/vedupraity/ancientknowledgedatabase">
+                        <a href="https://github.com/vedupraity/ancientknowledgedatabase" class="link has-text-orange">
                             <div class="icon callout-icon m-0 has-text-black">
                                 <i class="fab fa-github fa-2x"></i>
                             </div>
                             <p>Ancient Knowledge Database</p>
                         </a>
 
-                        <a href="https://github.com/vedupraity/ancientknowledge">
+                        <a href="https://github.com/vedupraity/ancientknowledge" class="link has-text-orange">
                             <div class="icon callout-icon m-0 has-text-black">
                                 <i class="fab fa-github fa-2x"></i>
                             </div>
@@ -127,7 +130,7 @@
                         <li><strong>Company</strong> (referred to as either &quot;the Company&quot;, &quot;We&quot;, &quot;Us&quot; or &quot;Our&quot; in this Disclaimer) refers to Ancient Knowledge.</li>
                         <li><strong>Service</strong> refers to the Website.</li>
                         <li><strong>You</strong> means the individual accessing the Service, or the company, or other legal entity on behalf of which such individual is accessing or using the Service, as applicable.</li>
-                        <li><strong>Website</strong> refers to Ancient Knowledge, accessible from <a href="https://www.ancientknowledge.in" rel="external nofollow noopener" target="_blank">https://www.ancientknowledge.in</a></li>
+                        <li><strong>Website</strong> refers to Ancient Knowledge, accessible from <a class="link has-text-orange" href="https://www.ancientknowledge.in" rel="external nofollow noopener" target="_blank">https://www.ancientknowledge.in</a></li>
                         </ul>
                         <h5 class="is-5">Disclaimer</h5>
                         <p>The information contained on the Service is for general information purposes only.</p>
@@ -155,7 +158,7 @@
                         <h5 class="is-5">Contact Us</h5>
                         <p>If you have any questions about this Disclaimer, You can contact Us:</p>
                         <ul>
-                        <li>By email: <a href="mailto:ancientknowledgeinbox@gmail.com">ancientknowledgeinbox@gmail.com</a></li>
+                        <li>By email: <a class="link has-text-orange" href="mailto:ancientknowledgeinbox@gmail.com">ancientknowledgeinbox@gmail.com</a></li>
                         </ul>
                         <!-- End Disclaimer -->
                     </div>
@@ -166,28 +169,29 @@
     <!-- End Main Content -->
 
     <!-- Begin Footer -->
-    <footer class="footer">
+    <footer class="footer bg-gradient-light-orange pt-6 pb-6">
         <div class="container">
             <!-- Begin Footer - Nav Links -->
             <div class="columns is-multiline is-centered">
                 <div class="column is-2-tablet has-text-centered">
                     <div>
-                        <a href="/" class="link">Home</a>
+                        <a href="/" class="link has-text-orange">Home</a>
                     </div>
                 </div>
                 <div class="column is-2-tablet has-text-centered">
                     <div>
-                        <a href="/about/" class="link">About</a>
+                        <a href="/about/" class="link has-text-orange">About</a>
                     </div>
                 </div>
             </div>
             <!-- End Footer - Nav Links -->
 
-            <hr />
+            <hr class="mb-6" />
 
             <div class="content has-text-centered">
-                <a href="/">Ancient Knowledge</a> is maintained by
-                <a href="https://github.com/vedupraity">Vedprakash Upraity</a>.
+                <a href="/" class="link has-text-orange">Ancient Knowledge</a>
+                is maintained by
+                <a href="https://github.com/vedupraity" class="link has-text-orange">Vedprakash Upraity</a>.
             </div>
         </div>
     </footer>
