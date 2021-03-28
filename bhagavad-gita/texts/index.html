@@ -17,11 +17,12 @@
     <meta name="theme-color" content="#ffffff" />
 
     <link rel="stylesheet" href="/assets/css/theme.css" />
+    <link rel="stylesheet" href="/assets/css/theme-custom.css" />
     <link rel="stylesheet" href="/assets/css/app.css" />
     <link rel="stylesheet" href="/assets/css/loader.css" />
     <link rel="stylesheet" href="/bhagavad-gita/texts/assets/css/site.css" />
 
-    <link rel="shortcut icon" type="image/png" href="/bulma-clean-theme/favicon.png" />
+    <link rel="shortcut icon" type="image/png" href="/favicon.png" />
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.0/dist/alpine.min.js" defer></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" />
 
@@ -51,10 +52,12 @@
     <!-- End Loader Overlay -->
 
     <!-- Begin Navbar -->
-    <nav class="navbar is-primary" x-data="{ openNav: false }">
+    <nav class="navbar is-warning bg-gradient-light-orange" x-data="{ openNav: false }">
         <div class="container">
             <div class="navbar-brand">
-                <a href="/" class="navbar-item"> Ancient Knowledge </a>
+                <a href="/" class="navbar-item">
+                    <h5 class="subtitle is-5 has-text-orange"><span>📖</span><span class="pl-2">Ancient Knowledge</span></h5>
+                </a>
                 <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
                     data-target="navMenu" :class="{ 'is-active': openNav }" x-on:click="openNav = !openNav">
                     <span aria-hidden="true"></span>
@@ -65,13 +68,13 @@
             <div class="navbar-menu" id="navMenu" :class="{ 'is-active': openNav }">
                 <div class="navbar-end">
                     <div class="navbar-item has-dropdown is-hoverable">
-                        <a class="navbar-link">Books</a>
+                        <a class="navbar-link has-text-orange">Books</a>
                         <div class="navbar-dropdown">
                             <a href="/bhagavad-gita/" class="navbar-item">Bhagavad Gita</a>
                         </div>
                     </div>
 
-                    <a href="/about/" class="navbar-item">About</a>
+                    <a href="/about/" class="navbar-item has-text-orange">About</a>
                 </div>
             </div>
         </div>
@@ -79,7 +82,7 @@
     <!-- End Navbar -->
 
     <!-- Begin Hero -->
-    <section class="hero is-small is-bold is-primary">
+    <section class="hero is-small is-bold is-dark bg-gradient-orange">
         <div class="hero-body p-6">
             <div class="container has-text-centered" id="chapter-title-container">
                 <!-- Chapter Title Here -->
@@ -87,12 +90,12 @@
         </div>
     </section>
 
-    <section class="section pt-5 pb-5">
+    <section class="section pt-6 pb-6">
         <div class="container">
             <nav class="breadcrumb is-centered" aria-label="breadcrumbs">
                 <ul>
                     <li>
-                        <a class="is-link" href="/bhagavad-gita">
+                        <a class="is-link has-text-orange" href="/bhagavad-gita">
                             <span class="icon is-small">
                                 <i class="fas fa-chevron-left" aria-hidden="true"></i>
                             </span>
@@ -114,11 +117,11 @@
 
     <section class="section pt-0">
         <div class="container">
-            <div class="pagination-container mb-5">
+            <div class="pagination-container mb-6">
                 <!-- Pagination top -->
             </div>
 
-            <div class="columns is-multiline is-centered mb-5" id="text-card-container">
+            <div class="columns is-multiline is-centered mb-6" id="text-card-container">
                 <!-- Text Cards Here -->
             </div>
 
@@ -131,28 +134,29 @@
     <!-- End Main Content -->
 
     <!-- Begin Footer -->
-    <footer class="footer">
+    <footer class="footer bg-gradient-light-orange pt-6 pb-6">
         <div class="container">
             <!-- Begin Footer - Nav Links -->
             <div class="columns is-multiline is-centered">
                 <div class="column is-2-tablet has-text-centered">
                     <div>
-                        <a href="/" class="link">Home</a>
+                        <a href="/" class="link has-text-orange">Home</a>
                     </div>
                 </div>
                 <div class="column is-2-tablet has-text-centered">
                     <div>
-                        <a href="/about/" class="link">About</a>
+                        <a href="/about/" class="link has-text-orange">About</a>
                     </div>
                 </div>
             </div>
             <!-- End Footer - Nav Links -->
 
-            <hr />
+            <hr class="mb-6" />
 
             <div class="content has-text-centered">
-                <a href="/">Ancient Knowledge</a> is maintained by
-                <a href="https://github.com/vedupraity">Vedprakash Upraity</a>.
+                <a href="/" class="link has-text-orange">Ancient Knowledge</a>
+                is maintained by
+                <a href="https://github.com/vedupraity" class="link has-text-orange">Vedprakash Upraity</a>.
             </div>
         </div>
     </footer>
@@ -192,19 +196,23 @@
     </script>
 
     <script id="text-card-template" type="x-tmpl-mustache">
-        <div class="column is-12 column-responsive">
-            <div class="card">
+        <div class="column is-12 column-responsive" id="T{{ id }}">
+            <div class="card has-glow-md">
                 <div class="card-content">
                     <div class="is-hidden-mobile">
                         <div class="columns is-multiline is-centered">
                             <div class="column column-responsive is-6-tablet">
                                 <p class="title is-5 mb-3">
-                                    अधाय {{ chapterIdHindi }} - श्लोक {{ idHindi }}
+                                    <a class="link has-text-orange" href="#T{{ id }}">
+                                        अधाय {{ chapterIdHindi }} - श्लोक {{ idHindi }}
+                                    </a>
                                 </p>
                             </div>
                             <div class="column column-responsive is-6-tablet">
-                                <p class="title is-5 mb-3">
-                                    Chapter {{ chapterId }} - Text {{ id }}
+                                <p class="title is-5 mb-3 has-text-orange">
+                                    <a class="link has-text-orange" href="#T{{ id }}">
+                                        Chapter {{ chapterId }} - Text {{ id }}
+                                    </a>
                                 </p>
                             </div>
                         </div>
@@ -214,8 +222,10 @@
 
                     <div class="columns is-multiline is-centered has-text-centered-mobile">
                         <div class="column column-responsive is-6-tablet">
-                            <p class="title is-5 mb-3 is-hidden-tablet">
-                                अधाय {{ chapterIdHindi }} - श्लोक {{ idHindi }}
+                            <p class="title is-5 mb-3 is-hidden-tablet has-text-orange">
+                                <a class="link has-text-orange" href="#T{{ id }}">
+                                    अधाय {{ chapterIdHindi }} - श्लोक {{ idHindi }}
+                                </a>
                             </p>
                             <div>
                                 {{ #text.hindi }}
@@ -227,8 +237,10 @@
                         </div>
 
                         <div class="column column-responsive is-6-tablet">
-                            <p class="title is-5 mb-3 is-hidden-tablet">
-                                Chapter {{ chapterId }} - Text {{ id }}
+                            <p class="title is-5 mb-3 is-hidden-tablet has-text-orange">
+                                <a class="link has-text-orange" href="#T{{ id }}">
+                                    Chapter {{ chapterId }} - Text {{ id }}
+                                </a>
                             </p>
                             <div>
                                 {{ #text.english }}

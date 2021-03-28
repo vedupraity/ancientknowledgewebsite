@@ -17,8 +17,9 @@
     <meta name="theme-color" content="#ffffff" />
 
     <link rel="stylesheet" href="/assets/css/theme.css" />
+    <link rel="stylesheet" href="/assets/css/theme-custom.css" />
 
-    <link rel="shortcut icon" type="image/png" href="/bulma-clean-theme/favicon.png" />
+    <link rel="shortcut icon" type="image/png" href="/favicon.png" />
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.0/dist/alpine.min.js" defer></script>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-social@1/bin/bulma-social.min.css" />
@@ -35,10 +36,12 @@
 <body>
 
     <!-- Begin Navbar -->
-    <nav class="navbar is-primary" x-data="{ openNav: false }">
+    <nav class="navbar is-warning bg-gradient-light-orange" x-data="{ openNav: false }">
         <div class="container">
             <div class="navbar-brand">
-                <a href="/" class="navbar-item"> Ancient Knowledge </a>
+                <a href="/" class="navbar-item">
+                    <h5 class="subtitle is-5 has-text-orange"><span>📖</span><span class="pl-2">Ancient Knowledge</span></h5>
+                </a>
                 <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
                     data-target="navMenu" :class="{ 'is-active': openNav }" x-on:click="openNav = !openNav">
                     <span aria-hidden="true"></span>
@@ -48,7 +51,7 @@
             </div>
             <div class="navbar-menu" id="navMenu" :class="{ 'is-active': openNav }">
                 <div class="navbar-end">
-                    <a href="/about/" class="navbar-item">About</a>
+                    <a href="/about/" class="navbar-item has-text-orange">About</a>
                 </div>
             </div>
         </div>
@@ -56,11 +59,11 @@
     <!-- End Navbar -->
 
     <!-- Begin Hero -->
-    <section class="hero is-small is-bold is-primary">
-        <div class="hero-body p-6">
-            <div class="container has-text-centered">
-                <h3 class="title is-3 mb-3">Ancient Knowledge</h3>
-                <h5 class="title is-5">Recollecting the lost knowledge</h5>
+    <section class="hero is-small is-bold is-dark bg-gradient-orange">
+        <div class="hero-body">
+            <div class="container has-text-centered p-5">
+                <!-- <h3 class="title is-3 mb-3">Ancient Knowledge</h3> -->
+                <h4 class="title is-4">Recollecting the lost knowledge</h4>
             </div>
         </div>
     </section>
@@ -72,7 +75,7 @@
             <div class="columns is-multiline is-centered" id="book-card-container">
                 <div class="column is-6-desktop is-6-tablet">
                     <a href="/bhagavad-gita/">
-                        <div class="card">
+                        <div class="card has-glow-md">
                             <div class="card-image">
                                 <figure class="image is-16by9">
                                     <img src="/bhagavad-gita/assets/img/bhagavad-gita-cover-16by9.jpg" alt="Bhagavad Gita">
@@ -96,12 +99,12 @@
                                         Tags:
                                     </p>
                                     <div class="tags">
-                                        <span class="tag">Bhagavad Gita</span>
-                                        <span class="tag">Yatharoop</span>
-                                        <span class="tag">As It Is</span>
-                                        <span class="tag">A.C. Bhaktivendanta Swami Prabhupada</span>
-                                        <span class="tag">Hindi</span>
-                                        <span class="tag">English</span>
+                                        <span class="tag is-white has-glow-sm">Bhagavad Gita</span>
+                                        <span class="tag is-white has-glow-sm">Yatharoop</span>
+                                        <span class="tag is-white has-glow-sm">As It Is</span>
+                                        <span class="tag is-white has-glow-sm">A.C. Bhaktivendanta Swami Prabhupada</span>
+                                        <span class="tag is-white has-glow-sm">Hindi</span>
+                                        <span class="tag is-white has-glow-sm">English</span>
                                     </div>
                                 </div>
                             </div>
@@ -114,28 +117,29 @@
     <!-- End Main Content -->
 
     <!-- Begin Footer -->
-    <footer class="footer">
+    <footer class="footer bg-gradient-light-orange pt-6 pb-6">
         <div class="container">
             <!-- Begin Footer - Nav Links -->
             <div class="columns is-multiline is-centered">
                 <div class="column is-2-tablet has-text-centered">
                     <div>
-                        <a href="/" class="link">Home</a>
+                        <a href="/" class="link has-text-orange">Home</a>
                     </div>
                 </div>
                 <div class="column is-2-tablet has-text-centered">
                     <div>
-                        <a href="/about/" class="link">About</a>
+                        <a href="/about/" class="link has-text-orange">About</a>
                     </div>
                 </div>
             </div>
             <!-- End Footer - Nav Links -->
 
-            <hr />
+            <hr class="mb-6" />
 
             <div class="content has-text-centered">
-                <a href="/">Ancient Knowledge</a> is maintained by
-                <a href="https://github.com/vedupraity">Vedprakash Upraity</a>.
+                <a href="/" class="link has-text-orange">Ancient Knowledge</a>
+                is maintained by
+                <a href="https://github.com/vedupraity" class="link has-text-orange">Vedprakash Upraity</a>.
             </div>
         </div>
     </footer>
