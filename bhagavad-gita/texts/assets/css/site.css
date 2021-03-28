@@ -11,3 +11,9 @@
 .pagination-list {
     width: 100%;
 }
+
+@media screen and (max-width: 768px) {
+    .column-responsive {
+        padding: 0.4rem 0.1rem;
+    }
+}

@@ -192,17 +192,17 @@
     </script>
 
     <script id="text-card-template" type="x-tmpl-mustache">
-        <div class="column is-12">
+        <div class="column is-12 column-responsive">
             <div class="card">
                 <div class="card-content">
                     <div class="is-hidden-mobile">
                         <div class="columns is-multiline is-centered">
-                            <div class="column is-6-tablet">
+                            <div class="column column-responsive is-6-tablet">
                                 <p class="title is-5 mb-3">
                                     अधाय {{ chapterIdHindi }} - श्लोक {{ idHindi }}
                                 </p>
                             </div>
-                            <div class="column is-6-tablet">
+                            <div class="column column-responsive is-6-tablet">
                                 <p class="title is-5 mb-3">
                                     Chapter {{ chapterId }} - Text {{ id }}
                                 </p>
@@ -213,7 +213,7 @@
                     </div>
 
                     <div class="columns is-multiline is-centered has-text-centered-mobile">
-                        <div class="column is-6-tablet">
+                        <div class="column column-responsive is-6-tablet">
                             <p class="title is-5 mb-3 is-hidden-tablet">
                                 अधाय {{ chapterIdHindi }} - श्लोक {{ idHindi }}
                             </p>
@@ -226,7 +226,7 @@
                             </div>
                         </div>
 
-                        <div class="column is-6-tablet">
+                        <div class="column column-responsive is-6-tablet">
                             <p class="title is-5 mb-3 is-hidden-tablet">
                                 Chapter {{ chapterId }} - Text {{ id }}
                             </p>
@@ -244,7 +244,7 @@
 
                     {{ #renderTextTranslation }}
                         <div class="columns is-multiline is-centered has-text-centered-mobile">
-                            <div class="column is-6-tablet">
+                            <div class="column column-responsive is-6-tablet">
                                 <p class="title is-5 mb-3">
                                     अनुवाद
                                 </p>
@@ -256,7 +256,7 @@
                                     {{ /translation.hindi }}
                                 </div>
                             </div>
-                            <div class="column is-6-tablet">
+                            <div class="column column-responsive is-6-tablet">
                                 <p class="title is-5 mb-3">
                                     Translation
                                 </p>
@@ -275,7 +275,7 @@
                         <hr />
 
                         <div class="columns is-multiline is-centered has-text-centered-mobile">
-                            <div class="column is-6-tablet">
+                            <div class="column column-responsive is-6-tablet">
                                 <p class="title is-5 mb-3">
                                     तात्पर्य
                                 </p>
@@ -287,7 +287,7 @@
                                     {{ /meaning.hindi }}
                                 </div>
                             </div>
-                            <div class="column is-6-tablet">
+                            <div class="column column-responsive is-6-tablet">
                                 <p class="title is-5 mb-3">
                                     Meaning
                                 </p>
