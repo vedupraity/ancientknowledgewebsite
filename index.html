@@ -16,134 +16,170 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#ffffff" />
 
-    <link rel="stylesheet" href="/assets/css/theme.css" />
-    <link rel="stylesheet" href="/assets/css/theme-custom.css" />
-
-    <link rel="shortcut icon" type="image/png" href="/favicon.png" />
+    <link rel="stylesheet" href="/static/css/theme.css" />
+    <link rel="stylesheet" href="/static/css/theme-custom.css" />
+    
+    <link rel="shortcut icon" type="image/png" href="/static/images/favicon.png" />
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.0/dist/alpine.min.js" defer></script>
-
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-social@1/bin/bulma-social.min.css" />
 
     <!-- Begin SEO tags -->
     <title>Ancient Knowledge</title>
+    <meta name="description" content="Recollecting the lost knowledge">
+
     <meta property="og:title" content="Ancient Knowledge" />
     <meta property="og:description" content="Recollecting the lost knowledge" />
+    <meta property="og:url" content="https://www.ancientknowledge.in" />
+    
+    <meta property="og:type" content="website" />
+    
     <meta property="twitter:title" content="Ancient Knowledge" />
     <meta property="twitter:description" content="Recollecting the lost knowledge" />
+    
     <!-- End SEO tags -->
 </head>
 
 <body>
-
-    <!-- Begin Navbar -->
     <nav class="navbar is-warning bg-gradient-light-orange" x-data="{ openNav: false }">
-        <div class="container">
-            <div class="navbar-brand">
-                <a href="/" class="navbar-item">
-                    <h5 class="subtitle is-5 has-text-orange"><span>📖</span><span class="pl-2">Ancient Knowledge</span></h5>
-                </a>
-                <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
-                    data-target="navMenu" :class="{ 'is-active': openNav }" x-on:click="openNav = !openNav">
-                    <span aria-hidden="true"></span>
-                    <span aria-hidden="true"></span>
-                    <span aria-hidden="true"></span>
-                </a>
-            </div>
-            <div class="navbar-menu" id="navMenu" :class="{ 'is-active': openNav }">
-                <div class="navbar-end">
-                    <a href="/about/" class="navbar-item has-text-orange">About</a>
-                </div>
+    <div class="container">
+        <div class="navbar-brand">
+            <a href="https://www.ancientknowledge.in" class="navbar-item">
+                <p class="has-text-weight-normal has-text-orange">
+                    <span>📖</span>
+                    <span class="pl-2">Ancient Knowledge</span>
+                </p>
+            </a>
+            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navMenu"
+                :class="{ 'is-active': openNav }" x-on:click="openNav = !openNav">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+        <div class="navbar-menu" id="navMenu" :class="{ 'is-active': openNav }">
+            <div class="navbar-end">
+                <a href="https://www.ancientknowledge.in/about/" class="navbar-item has-text-weight-normal has-text-orange">About</a>
             </div>
         </div>
-    </nav>
-    <!-- End Navbar -->
+    </div>
+</nav>
 
-    <!-- Begin Hero -->
     <section class="hero is-small is-bold is-dark bg-gradient-orange">
-        <div class="hero-body">
-            <div class="container has-text-centered p-5">
-                <!-- <h3 class="title is-3 mb-3">Ancient Knowledge</h3> -->
-                <h4 class="title is-4">Recollecting the lost knowledge</h4>
-            </div>
+    <div class="hero-body">
+        <div class="container has-text-centered p-5">
+            <h4 class="title is-4">
+                Recollecting the lost knowledge
+            </h4>
         </div>
-    </section>
-    <!-- End Hero -->
+    </div>
+</section>
 
-    <!-- Begin Main Content -->
+    
     <section class="section">
         <div class="container">
             <div class="columns is-multiline is-centered" id="book-card-container">
-                <div class="column is-6-desktop is-6-tablet">
-                    <a href="/bhagavad-gita/">
-                        <div class="card has-glow-md">
-                            <div class="card-image">
-                                <figure class="image is-16by9">
-                                    <img src="/bhagavad-gita/assets/img/bhagavad-gita-cover-16by9.jpg" alt="Bhagavad Gita">
-                                </figure>
-                            </div>
-                            <div class="card-content">
-                                <div>
-                                    <h5 class="title is-5 mb-3">
-                                        श्रीमद्भगवद्गीता - यथारूप
-                                    </h5>
-                                    <h5 class="title is-5 mb-5">
-                                        Shrimad Bhagavad Gita - As It Is
-                                    </h5>
-                                    <h6 class="is-6 mb-3">
-                                        by A.C. Bhaktivendanta Swami Prabhupada
-                                    </h6>
+                
+                    <div class="column is-4-desktop is-6-tablet">
+                        <a href="https://www.ancientknowledge.in/bhagavad-gita-hindi/">
+                            <div class="card has-glow-md">
+                                <div class="card-image">
+                                    <figure class="image is-16by9">
+                                        <img src="/static/images/bhagavad-gita-cover-16by9.jpg" alt="श्रीमद्भगवद्गीता - यथारूप (हिंदी)">
+                                    </figure>
                                 </div>
-                                <hr>
-                                <div>
-                                    <p class="mb-3">
-                                        Tags:
-                                    </p>
-                                    <div class="tags">
-                                        <span class="tag is-white has-glow-sm">Bhagavad Gita</span>
-                                        <span class="tag is-white has-glow-sm">Yatharoop</span>
-                                        <span class="tag is-white has-glow-sm">As It Is</span>
-                                        <span class="tag is-white has-glow-sm">A.C. Bhaktivendanta Swami Prabhupada</span>
-                                        <span class="tag is-white has-glow-sm">Hindi</span>
-                                        <span class="tag is-white has-glow-sm">English</span>
+                                <div class="card-content">
+                                    <div class="content">
+                                        <div>
+                                            <h6 class="mb-3">श्रीमद्भगवद्गीता - यथारूप (हिंदी)</h6>
+                                            <p class="mb-3">ए.सी. भक्तिवेदांत स्वामी प्रभुपाद</p>
+                                        </div>
+                                        <hr>
+                                        <div>
+                                            <div class="tags">
+                                                
+                                                    <span class="tag is-white has-glow-sm">Bhagavad Gita</span>
+                                                
+                                                    <span class="tag is-white has-glow-sm">Yatharoop</span>
+                                                
+                                                    <span class="tag is-white has-glow-sm">Hindi</span>
+                                                
+                                                    <span class="tag is-white has-glow-sm">A.C. Bhaktivendanta Swami Prabhupada</span>
+                                                
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </a>
-                </div>
+                        </a>
+                    </div>
+                
+                    <div class="column is-4-desktop is-6-tablet">
+                        <a href="https://www.ancientknowledge.in/bhagavad-gita-english/">
+                            <div class="card has-glow-md">
+                                <div class="card-image">
+                                    <figure class="image is-16by9">
+                                        <img src="/static/images/bhagavad-gita-cover-16by9.jpg" alt="Shrimad Bhagavad Gita - As It Is (English)">
+                                    </figure>
+                                </div>
+                                <div class="card-content">
+                                    <div class="content">
+                                        <div>
+                                            <h6 class="mb-3">Shrimad Bhagavad Gita - As It Is (English)</h6>
+                                            <p class="mb-3">A.C. Bhaktivendanta Swami Prabhupada</p>
+                                        </div>
+                                        <hr>
+                                        <div>
+                                            <div class="tags">
+                                                
+                                                    <span class="tag is-white has-glow-sm">Bhagavad Gita</span>
+                                                
+                                                    <span class="tag is-white has-glow-sm">Yatharoop</span>
+                                                
+                                                    <span class="tag is-white has-glow-sm">English</span>
+                                                
+                                                    <span class="tag is-white has-glow-sm">A.C. Bhaktivendanta Swami Prabhupada</span>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                
             </div>
         </div>
     </section>
-    <!-- End Main Content -->
 
-    <!-- Begin Footer -->
+
     <footer class="footer bg-gradient-light-orange pt-6 pb-6">
-        <div class="container">
-            <!-- Begin Footer - Nav Links -->
-            <div class="columns is-multiline is-centered">
-                <div class="column is-2-tablet has-text-centered">
-                    <div>
-                        <a href="/" class="link has-text-orange">Home</a>
-                    </div>
-                </div>
-                <div class="column is-2-tablet has-text-centered">
-                    <div>
-                        <a href="/about/" class="link has-text-orange">About</a>
-                    </div>
+    <div class="container">
+        <div class="columns is-multiline is-centered">
+            <div class="column is-2-tablet has-text-centered">
+                <div>
+                    <a href="https://www.ancientknowledge.in" class="link has-text-orange">Home</a>
                 </div>
             </div>
-            <!-- End Footer - Nav Links -->
-
-            <hr class="mb-6" />
-
-            <div class="content has-text-centered">
-                <a href="/" class="link has-text-orange">Ancient Knowledge</a>
-                is maintained by
-                <a href="https://github.com/vedupraity" class="link has-text-orange">Vedprakash Upraity</a>.
+            <div class="column is-2-tablet has-text-centered">
+                <div>
+                    <a href="https://www.ancientknowledge.in/about/" class="link has-text-orange">About</a>
+                </div>
             </div>
         </div>
-    </footer>
-    <!-- End Footer -->
+
+        <hr class="mb-6" />
+
+        <div class="content has-text-centered">
+            <a href="https://www.ancientknowledge.in" class="link has-text-orange">Ancient Knowledge</a>
+            is maintained by
+            <a href="https://github.com/vedupraity" class="link has-text-orange">Vedprakash Upraity</a>.
+        </div>
+    </div>
+</footer>
+
+    
 </body>
 
 </html>
