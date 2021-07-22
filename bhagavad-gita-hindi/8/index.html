@@ -14,7 +14,7 @@
 
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#ffffff" />
+    <meta name="theme-color" content="#ff902b" />
 
     <!-- Begin SEO tags -->
     <title>Ancient Knowledge | Bhagavad Gita | Hindi</title>
@@ -24,927 +24,1463 @@
     <meta property="og:title" content="Ancient Knowledge | Bhagavad Gita | Hindi" />
     <meta property="og:description" content="Read Shrimad Bhagavad Gita - Yatharoop in hindi. श्रीमद्भगवद्गीता - यथारूप हिंदी में पढ़ें।" />
     <meta property="og:url" content="https://www.ancientknowledge.in" />
-    <meta property="og:image" content="https://www.ancientknowledge.in/static/images/bhagavad-gita-cover-16by9.jpg" />
+    <meta property="og:image" content="https://www.ancientknowledge.in/static/images/bhagavad-gita-cover-4x3.jpg" />
     <meta property="og:type" content="website" />
     
     <meta property="twitter:title" content="Ancient Knowledge | Bhagavad Gita | Hindi" />
     <meta property="twitter:description" content="Read Shrimad Bhagavad Gita - Yatharoop in hindi. श्रीमद्भगवद्गीता - यथारूप हिंदी में पढ़ें।" />
-    <meta property="twitter:image" content="https://www.ancientknowledge.in/static/images/bhagavad-gita-cover-16by9.jpg" />
+    <meta property="twitter:image" content="https://www.ancientknowledge.in/static/images/bhagavad-gita-cover-4x3.jpg" />
     <!-- End SEO tags -->
 
-    <link rel="stylesheet" href="https://www.ancientknowledge.in/static/css/theme.css" />
-    <link rel="stylesheet" href="https://www.ancientknowledge.in/static/css/theme-custom.css" />
+    <!-- <link rel="stylesheet" href="https://www.ancientknowledge.in/static/css/theme-old.css" /> -->
+    <!-- <link rel="stylesheet" href="https://www.ancientknowledge.in/static/css/switch-control.min.css" /> -->
+    <!-- <link rel="stylesheet" href="https://www.ancientknowledge.in/static/css/theme-custom.css" /> -->
     
     <link rel="icon" href="https://www.ancientknowledge.in/static/images/favicon.ico">
-    <link rel="shortcut icon" type="image/png" href="https://www.ancientknowledge.in/static/images/favicon.png" />
+    <link rel="shortcut icon" type="image/png" href="https://www.ancientknowledge.in/static/images/logo.png" />
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.0/dist/alpine.min.js" defer></script>
     
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-social@1/bin/bulma-social.min.css" />
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" /> -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-social@1/bin/bulma-social.min.css" /> -->
+
+    <link rel="stylesheet" href="https://www.ancientknowledge.in/static/css/bulma.min.css">
+    <link rel="stylesheet" href="https://www.ancientknowledge.in/static/css/theme.css">
+    <link rel="stylesheet" href="https://www.ancientknowledge.in/static/css/animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 
-<body>
-    <nav class="navbar is-warning bg-gradient-light-orange" x-data="{ openNav: false }">
-    <div class="container">
-        <div class="navbar-brand">
-            <a href="https://www.ancientknowledge.in" class="navbar-item">
-                <p class="has-text-weight-normal has-text-orange">
-                    <span>📖</span>
-                    <span class="pl-2">Ancient Knowledge</span>
-                </p>
+<body class="dark-modes">
+    <nav class="navbar is-light glass" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+        <a class="navbar-item pl-4" href="https://www.ancientknowledge.in">
+            <img src="https://www.ancientknowledge.in/static/images/logo.png" width="28" height="28">
+            <span class="pl-4">
+                Ancient Knowledge
+            </span>
+        </a>
+
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+            data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+    </div>
+
+    <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+            <a class="navbar-item" href="https://www.ancientknowledge.in/about/">
+                About
             </a>
-            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navMenu"
-                :class="{ 'is-active': openNav }" x-on:click="openNav = !openNav">
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-            </a>
-        </div>
-        <div class="navbar-menu" id="navMenu" :class="{ 'is-active': openNav }">
-            <div class="navbar-end">
-                <a href="https://www.ancientknowledge.in/about/" class="navbar-item has-text-weight-normal has-text-orange">About</a>
-            </div>
         </div>
     </div>
 </nav>
 
     
-    <section class="hero is-small is-bold is-dark bg-gradient-orange">
-    <div class="hero-body">
-        <div class="container has-text-centered p-5">
-            <h4 class="title is-4">श्रीमद्भगवद्गीता - यथारूप (हिंदी)</h4>
-        </div>
-    </div>
-</section>
-    
-
-    <div class="content is-centered has-text-centered" style="display: none;">
-        <h1>Ancient Knowledge</h1>
-        <h2>Recollecting the lost knowledge</h2>
-        <h3>Ancient Knowledge | Bhagavad Gita | Hindi</h3>
-        <p>Read Shrimad Bhagavad Gita - Yatharoop in hindi. श्रीमद्भगवद्गीता - यथारूप हिंदी में पढ़ें।</p>
-        <div class="tags is-centered">
-            
-                <span class="tag">Ancient</span>
-            
-                <span class="tag">Knowledge</span>
-            
-                <span class="tag">India</span>
-            
-                <span class="tag">Shrimad</span>
-            
-                <span class="tag">Bhagavad</span>
-            
-                <span class="tag">Gita</span>
-            
-                <span class="tag">Yatharoop</span>
-            
-                <span class="tag">As It Is</span>
-            
-                <span class="tag">Mahabharat</span>
-            
-                <span class="tag">Krishna</span>
-            
-                <span class="tag">Prabhupad</span>
-            
-                <span class="tag">Hindi</span>
-            
-        </div>
-    </div>
 
     
 
-<section class="hero is-light is-small">
-    <div class="hero-body">
-        <div class="container">
-            <nav class="breadcrumb is-centered" aria-label="breadcrumbs">
-                <ul>
-                    
-                        <li >
-                            <a class="is-link has-text-orange" href="/">
-                                <span class="icon is-small">
-                                    <i class="fas fa-home" aria-hidden="true"></i>
-                                </span>
-                                <span>Home</span>
-                            </a>
-                        </li>
-                    
-                        <li >
-                            <a class="is-link has-text-orange" href="/bhagavad-gita-hindi/">
-                                <span class="icon is-small">
-                                    <i class="fas fa-book" aria-hidden="true"></i>
-                                </span>
-                                <span>श्रीमद्भगवद्गीता - यथारूप (हिंदी)</span>
-                            </a>
-                        </li>
-                    
-                        <li class="is-active">
-                            <a  href="">
-                                <span class="icon is-small">
-                                    <i class="fas fa-file-alt" aria-hidden="true"></i>
-                                </span>
-                                <span>अध्याय ८ - अक्षरब्रह्मयोग</span>
-                            </a>
-                        </li>
-                    
-                </ul>
-            </nav>
-        </div>
+<!-- Margin top behind navbar -->
+<div class="mt-6"></div>
+
+<style>
+    :root {
+        --page-background-image: url(/static/images/bhagavad-gita-cover-4x3.jpg);
+    }
+</style>
+<div class="image-background"></div>
+
+<section class="section animatedParent animateOnce">
+    <div class="box glass animated fadeInUpShort">
+        <nav class="breadcrumb is-medium is-centered" aria-label="breadcrumbs">
+            <ul>
+                
+                <li >
+                    <a class="is-link has-text-orange" href="/">
+                        <span class="icon is-small">
+                            <i class="fas fa-home" aria-hidden="true"></i>
+                        </span>
+                        <span>Home</span>
+                    </a>
+                </li>
+                
+                <li >
+                    <a class="is-link has-text-orange" href="/bhagavad-gita-hindi/">
+                        <span class="icon is-small">
+                            <i class="fas fa-book" aria-hidden="true"></i>
+                        </span>
+                        <span>श्रीमद्भगवद्गीता</span>
+                    </a>
+                </li>
+                
+                <li class="is-active">
+                    <a tabindex="-1" href="">
+                        <span class="icon is-small">
+                            <i class="fas fa-file-alt" aria-hidden="true"></i>
+                        </span>
+                        <span>अध्याय ८ - अक्षरब्रह्मयोग</span>
+                    </a>
+                </li>
+                
+            </ul>
+        </nav>
     </div>
 </section>
 
-<section class="section" oncopy="return false" oncut="return false" onpaste="return false">
-    <div class="container">
-        <div class="columns is-multiline is-centered" id="book-card-container">
-            
-                <div class="column is-12">
-                    <a class="is-clickable" href="1/">
-                        <div class="card has-glow-md">
-                            <div class="card-content">
-                                <div class="content">
-                                    <h5 class="mb-0">
+<section class="section pt-0 pb-0">
+    <div class="columns is-multiline is-centered is-variable is-4">
+
+        
+        <div
+            class="column is-full-tablet is-full-desktop is-full-widescreen is-full-fullhd is-flex animatedParent animateOnce">
+            <div class="card card-horizontal is-flex-grow-1 animated fadeInUpShort">
+                <div class="card-content p-2">
+                    <div class="columns is-multiline is-variable m-0">
+                        <div class="column">
+                            <div class="content m-0">
+                                <div class="m-0">
+                                    
+                                    <h5 class="title is-5 m-0">
                                         अध्याय ८ - श्लोक १
                                     </h5>
                                     
                                     
-                                        <hr class="mt-3 mb-3"/>
-                                    
-
-                                    
-
-                                    
-                                        
-                                            <p class="has-text-justified">अर्जुन ने कहा – हे भगवान्! हे पुरुषोत्तम! ब्रह्म क्या है? आत्मा क्या है? सकाम कर्म क्या है? यह भौतिक जगत क्या है? तथा देवता क्या हैं? कृपा करके यह सब मुझे बताइये |</p>
-                                        
-                                    
+                                
                                 </div>
+                                
+                                
+                                <hr class="m-0 mt-4">
+                                
+                                <div class="m-0 mt-4">
+                                    
+                                    
+                                    <p class="has-text-justified">
+                                        अर्जुन ने कहा – हे भगवान्! हे पुरुषोत्तम! ब्रह्म क्या है? आत्मा क्या है? सकाम कर्म क्या है? यह भौतिक जगत क्या है? तथा देवता क्या हैं? कृपा करके यह सब मुझे बताइये |
+                                    </p>
+                                    
+
+                                </div>
+                                
+                                
+                                <div class="m-0 mt-4">
+                                    <p>
+                                        <a class="button is-outlined is-warning" href="1/">
+                                            Read Now
+                                        </a>
+                                    </p>
+                                </div>
+
                             </div>
                         </div>
-                    </a>
+                    </div>
                 </div>
-            
-                <div class="column is-12">
-                    <a class="is-clickable" href="2/">
-                        <div class="card has-glow-md">
-                            <div class="card-content">
-                                <div class="content">
-                                    <h5 class="mb-0">
+            </div>
+        </div>
+        
+        <div
+            class="column is-full-tablet is-full-desktop is-full-widescreen is-full-fullhd is-flex animatedParent animateOnce">
+            <div class="card card-horizontal is-flex-grow-1 animated fadeInUpShort">
+                <div class="card-content p-2">
+                    <div class="columns is-multiline is-variable m-0">
+                        <div class="column">
+                            <div class="content m-0">
+                                <div class="m-0">
+                                    
+                                    <h5 class="title is-5 m-0">
                                         अध्याय ८ - श्लोक २
                                     </h5>
                                     
                                     
-                                        <hr class="mt-3 mb-3"/>
-                                    
-
-                                    
-
-                                    
-                                        
-                                            <p class="has-text-justified">हे मधुसूदन! यज्ञ का स्वामी कौन है और वह शरीर में कैसे रहता है? और मृत्यु के समय भक्ति में लगे रहने वाले आपको कैसे जान पाते हैं?</p>
-                                        
-                                    
+                                
                                 </div>
+                                
+                                
+                                <hr class="m-0 mt-4">
+                                
+                                <div class="m-0 mt-4">
+                                    
+                                    
+                                    <p class="has-text-justified">
+                                        हे मधुसूदन! यज्ञ का स्वामी कौन है और वह शरीर में कैसे रहता है? और मृत्यु के समय भक्ति में लगे रहने वाले आपको कैसे जान पाते हैं?
+                                    </p>
+                                    
+
+                                </div>
+                                
+                                
+                                <div class="m-0 mt-4">
+                                    <p>
+                                        <a class="button is-outlined is-warning" href="2/">
+                                            Read Now
+                                        </a>
+                                    </p>
+                                </div>
+
                             </div>
                         </div>
-                    </a>
+                    </div>
                 </div>
-            
-                <div class="column is-12">
-                    <a class="is-clickable" href="3/">
-                        <div class="card has-glow-md">
-                            <div class="card-content">
-                                <div class="content">
-                                    <h5 class="mb-0">
+            </div>
+        </div>
+        
+        <div
+            class="column is-full-tablet is-full-desktop is-full-widescreen is-full-fullhd is-flex animatedParent animateOnce">
+            <div class="card card-horizontal is-flex-grow-1 animated fadeInUpShort">
+                <div class="card-content p-2">
+                    <div class="columns is-multiline is-variable m-0">
+                        <div class="column">
+                            <div class="content m-0">
+                                <div class="m-0">
+                                    
+                                    <h5 class="title is-5 m-0">
                                         अध्याय ८ - श्लोक ३
                                     </h5>
                                     
                                     
-                                        <hr class="mt-3 mb-3"/>
-                                    
-
-                                    
-
-                                    
-                                        
-                                            <p class="has-text-justified">भगवान् ने कहा – अविनाशी और दिव्य जीव ब्रह्म कहलाता है और उसका नित्य स्वभाव अध्यात्म या आत्म कहलाता है | जीवों के भौतिक शरीर से सम्बन्धित गतिविधि कर्म या सकाम कर्म कहलाती है |</p>
-                                        
-                                    
+                                
                                 </div>
+                                
+                                
+                                <hr class="m-0 mt-4">
+                                
+                                <div class="m-0 mt-4">
+                                    
+                                    
+                                    <p class="has-text-justified">
+                                        भगवान् ने कहा – अविनाशी और दिव्य जीव ब्रह्म कहलाता है और उसका नित्य स्वभाव अध्यात्म या आत्म कहलाता है | जीवों के भौतिक शरीर से सम्बन्धित गतिविधि कर्म या सकाम कर्म कहलाती है |
+                                    </p>
+                                    
+
+                                </div>
+                                
+                                
+                                <div class="m-0 mt-4">
+                                    <p>
+                                        <a class="button is-outlined is-warning" href="3/">
+                                            Read Now
+                                        </a>
+                                    </p>
+                                </div>
+
                             </div>
                         </div>
-                    </a>
+                    </div>
                 </div>
-            
-                <div class="column is-12">
-                    <a class="is-clickable" href="4/">
-                        <div class="card has-glow-md">
-                            <div class="card-content">
-                                <div class="content">
-                                    <h5 class="mb-0">
+            </div>
+        </div>
+        
+        <div
+            class="column is-full-tablet is-full-desktop is-full-widescreen is-full-fullhd is-flex animatedParent animateOnce">
+            <div class="card card-horizontal is-flex-grow-1 animated fadeInUpShort">
+                <div class="card-content p-2">
+                    <div class="columns is-multiline is-variable m-0">
+                        <div class="column">
+                            <div class="content m-0">
+                                <div class="m-0">
+                                    
+                                    <h5 class="title is-5 m-0">
                                         अध्याय ८ - श्लोक ४
                                     </h5>
                                     
                                     
-                                        <hr class="mt-3 mb-3"/>
-                                    
-
-                                    
-
-                                    
-                                        
-                                            <p class="has-text-justified">हे देहधारियों में श्रेष्ठ! निरन्तर परिवर्तनशील यह भौतिक प्रकृति अधिभूत (भौतिक अभिव्यक्ति) कहलाती है | भगवान् का विराट रूप, जिसमें सूर्य तथा चन्द्र जैसे समस्त देवता सम्मिलित हैं, अधिदैव कहलाता है | तथा प्रत्येक देहधारी के हृदय में परमात्मा स्वरूप स्थित मैं परमेश्वर (यज्ञ का स्वामी) कहलाता हूँ |</p>
-                                        
-                                    
+                                
                                 </div>
+                                
+                                
+                                <hr class="m-0 mt-4">
+                                
+                                <div class="m-0 mt-4">
+                                    
+                                    
+                                    <p class="has-text-justified">
+                                        हे देहधारियों में श्रेष्ठ! निरन्तर परिवर्तनशील यह भौतिक प्रकृति अधिभूत (भौतिक अभिव्यक्ति) कहलाती है | भगवान् का विराट रूप, जिसमें सूर्य तथा चन्द्र जैसे समस्त देवता सम्मिलित हैं, अधिदैव कहलाता है | तथा प्रत्येक देहधारी के हृदय में परमात्मा स्वरूप स्थित मैं परमेश्वर (यज्ञ का स्वामी) कहलाता हूँ |
+                                    </p>
+                                    
+
+                                </div>
+                                
+                                
+                                <div class="m-0 mt-4">
+                                    <p>
+                                        <a class="button is-outlined is-warning" href="4/">
+                                            Read Now
+                                        </a>
+                                    </p>
+                                </div>
+
                             </div>
                         </div>
-                    </a>
+                    </div>
                 </div>
-            
-                <div class="column is-12">
-                    <a class="is-clickable" href="5/">
-                        <div class="card has-glow-md">
-                            <div class="card-content">
-                                <div class="content">
-                                    <h5 class="mb-0">
+            </div>
+        </div>
+        
+        <div
+            class="column is-full-tablet is-full-desktop is-full-widescreen is-full-fullhd is-flex animatedParent animateOnce">
+            <div class="card card-horizontal is-flex-grow-1 animated fadeInUpShort">
+                <div class="card-content p-2">
+                    <div class="columns is-multiline is-variable m-0">
+                        <div class="column">
+                            <div class="content m-0">
+                                <div class="m-0">
+                                    
+                                    <h5 class="title is-5 m-0">
                                         अध्याय ८ - श्लोक ५
                                     </h5>
                                     
                                     
-                                        <hr class="mt-3 mb-3"/>
-                                    
-
-                                    
-
-                                    
-                                        
-                                            <p class="has-text-justified">और जीवन के अन्त में जो केवल मेरा स्मरण करते हुए शरीर का त्याग करता है, वह तुरन्त मेरे स्वभाव को प्राप्त करता है | इसमें रंचमात्र भी सन्देह नहीं है |</p>
-                                        
-                                    
+                                
                                 </div>
+                                
+                                
+                                <hr class="m-0 mt-4">
+                                
+                                <div class="m-0 mt-4">
+                                    
+                                    
+                                    <p class="has-text-justified">
+                                        और जीवन के अन्त में जो केवल मेरा स्मरण करते हुए शरीर का त्याग करता है, वह तुरन्त मेरे स्वभाव को प्राप्त करता है | इसमें रंचमात्र भी सन्देह नहीं है |
+                                    </p>
+                                    
+
+                                </div>
+                                
+                                
+                                <div class="m-0 mt-4">
+                                    <p>
+                                        <a class="button is-outlined is-warning" href="5/">
+                                            Read Now
+                                        </a>
+                                    </p>
+                                </div>
+
                             </div>
                         </div>
-                    </a>
+                    </div>
                 </div>
-            
-                <div class="column is-12">
-                    <a class="is-clickable" href="6/">
-                        <div class="card has-glow-md">
-                            <div class="card-content">
-                                <div class="content">
-                                    <h5 class="mb-0">
+            </div>
+        </div>
+        
+        <div
+            class="column is-full-tablet is-full-desktop is-full-widescreen is-full-fullhd is-flex animatedParent animateOnce">
+            <div class="card card-horizontal is-flex-grow-1 animated fadeInUpShort">
+                <div class="card-content p-2">
+                    <div class="columns is-multiline is-variable m-0">
+                        <div class="column">
+                            <div class="content m-0">
+                                <div class="m-0">
+                                    
+                                    <h5 class="title is-5 m-0">
                                         अध्याय ८ - श्लोक ६
                                     </h5>
                                     
                                     
-                                        <hr class="mt-3 mb-3"/>
-                                    
-
-                                    
-
-                                    
-                                        
-                                            <p class="has-text-justified">हे कुन्तीपुत्र! शरीर त्यागते समय मनुष्य जिस-जिस भाव का स्मरण करता है, वह उस उस भाव को निश्चित रूप से प्राप्त होता है |</p>
-                                        
-                                    
+                                
                                 </div>
+                                
+                                
+                                <hr class="m-0 mt-4">
+                                
+                                <div class="m-0 mt-4">
+                                    
+                                    
+                                    <p class="has-text-justified">
+                                        हे कुन्तीपुत्र! शरीर त्यागते समय मनुष्य जिस-जिस भाव का स्मरण करता है, वह उस उस भाव को निश्चित रूप से प्राप्त होता है |
+                                    </p>
+                                    
+
+                                </div>
+                                
+                                
+                                <div class="m-0 mt-4">
+                                    <p>
+                                        <a class="button is-outlined is-warning" href="6/">
+                                            Read Now
+                                        </a>
+                                    </p>
+                                </div>
+
                             </div>
                         </div>
-                    </a>
+                    </div>
                 </div>
-            
-                <div class="column is-12">
-                    <a class="is-clickable" href="7/">
-                        <div class="card has-glow-md">
-                            <div class="card-content">
-                                <div class="content">
-                                    <h5 class="mb-0">
+            </div>
+        </div>
+        
+        <div
+            class="column is-full-tablet is-full-desktop is-full-widescreen is-full-fullhd is-flex animatedParent animateOnce">
+            <div class="card card-horizontal is-flex-grow-1 animated fadeInUpShort">
+                <div class="card-content p-2">
+                    <div class="columns is-multiline is-variable m-0">
+                        <div class="column">
+                            <div class="content m-0">
+                                <div class="m-0">
+                                    
+                                    <h5 class="title is-5 m-0">
                                         अध्याय ८ - श्लोक ७
                                     </h5>
                                     
                                     
-                                        <hr class="mt-3 mb-3"/>
-                                    
-
-                                    
-
-                                    
-                                        
-                                            <p class="has-text-justified">अतएव, हे अर्जुन! तुम्हें सदैव कृष्ण रूप में मेरा चिन्तन करना चाहिए और साथ ही युद्ध करने के कर्तव्य को भी पूरा करना चाहिए | अपने कर्मों को मुझे समर्पित करके तथा अपने मन एवं बुद्धि को मुझमें स्थिर करके तुम निश्चित रूप से मुझे प्राप्त कर सकोगे |</p>
-                                        
-                                    
+                                
                                 </div>
+                                
+                                
+                                <hr class="m-0 mt-4">
+                                
+                                <div class="m-0 mt-4">
+                                    
+                                    
+                                    <p class="has-text-justified">
+                                        अतएव, हे अर्जुन! तुम्हें सदैव कृष्ण रूप में मेरा चिन्तन करना चाहिए और साथ ही युद्ध करने के कर्तव्य को भी पूरा करना चाहिए | अपने कर्मों को मुझे समर्पित करके तथा अपने मन एवं बुद्धि को मुझमें स्थिर करके तुम निश्चित रूप से मुझे प्राप्त कर सकोगे |
+                                    </p>
+                                    
+
+                                </div>
+                                
+                                
+                                <div class="m-0 mt-4">
+                                    <p>
+                                        <a class="button is-outlined is-warning" href="7/">
+                                            Read Now
+                                        </a>
+                                    </p>
+                                </div>
+
                             </div>
                         </div>
-                    </a>
+                    </div>
                 </div>
-            
-                <div class="column is-12">
-                    <a class="is-clickable" href="8/">
-                        <div class="card has-glow-md">
-                            <div class="card-content">
-                                <div class="content">
-                                    <h5 class="mb-0">
+            </div>
+        </div>
+        
+        <div
+            class="column is-full-tablet is-full-desktop is-full-widescreen is-full-fullhd is-flex animatedParent animateOnce">
+            <div class="card card-horizontal is-flex-grow-1 animated fadeInUpShort">
+                <div class="card-content p-2">
+                    <div class="columns is-multiline is-variable m-0">
+                        <div class="column">
+                            <div class="content m-0">
+                                <div class="m-0">
+                                    
+                                    <h5 class="title is-5 m-0">
                                         अध्याय ८ - श्लोक ८
                                     </h5>
                                     
                                     
-                                        <hr class="mt-3 mb-3"/>
-                                    
-
-                                    
-
-                                    
-                                        
-                                            <p class="has-text-justified">हे पार्थ! जो व्यक्ति मेरा स्मरण करने में अपना मन निरन्तर लगाये रखकर अविचलित भाव से भगवान् के रूप में मेरा ध्यान करता है, वह मुझको अवश्य ही प्राप्त होता है |</p>
-                                        
-                                    
+                                
                                 </div>
+                                
+                                
+                                <hr class="m-0 mt-4">
+                                
+                                <div class="m-0 mt-4">
+                                    
+                                    
+                                    <p class="has-text-justified">
+                                        हे पार्थ! जो व्यक्ति मेरा स्मरण करने में अपना मन निरन्तर लगाये रखकर अविचलित भाव से भगवान् के रूप में मेरा ध्यान करता है, वह मुझको अवश्य ही प्राप्त होता है |
+                                    </p>
+                                    
+
+                                </div>
+                                
+                                
+                                <div class="m-0 mt-4">
+                                    <p>
+                                        <a class="button is-outlined is-warning" href="8/">
+                                            Read Now
+                                        </a>
+                                    </p>
+                                </div>
+
                             </div>
                         </div>
-                    </a>
+                    </div>
                 </div>
-            
-                <div class="column is-12">
-                    <a class="is-clickable" href="9/">
-                        <div class="card has-glow-md">
-                            <div class="card-content">
-                                <div class="content">
-                                    <h5 class="mb-0">
+            </div>
+        </div>
+        
+        <div
+            class="column is-full-tablet is-full-desktop is-full-widescreen is-full-fullhd is-flex animatedParent animateOnce">
+            <div class="card card-horizontal is-flex-grow-1 animated fadeInUpShort">
+                <div class="card-content p-2">
+                    <div class="columns is-multiline is-variable m-0">
+                        <div class="column">
+                            <div class="content m-0">
+                                <div class="m-0">
+                                    
+                                    <h5 class="title is-5 m-0">
                                         अध्याय ८ - श्लोक ९
                                     </h5>
                                     
                                     
-                                        <hr class="mt-3 mb-3"/>
-                                    
-
-                                    
-
-                                    
-                                        
-                                            <p class="has-text-justified">मनुष्य को चाहिए कि परमपुरुष का ध्यान सर्वज्ञ, पुरातन, नियन्ता, लघुतम से भी लघुतर, प्रत्येक के पालनकर्ता, समस्त भौतिकबुद्धि से परे, अचिन्त्य तथा नित्य पुरुष के रूप में करे | वे सूर्य की भाँति तेजवान हैं और इस भौतिक प्रकृति से परे, दिव्य रूप हैं |</p>
-                                        
-                                    
+                                
                                 </div>
+                                
+                                
+                                <hr class="m-0 mt-4">
+                                
+                                <div class="m-0 mt-4">
+                                    
+                                    
+                                    <p class="has-text-justified">
+                                        मनुष्य को चाहिए कि परमपुरुष का ध्यान सर्वज्ञ, पुरातन, नियन्ता, लघुतम से भी लघुतर, प्रत्येक के पालनकर्ता, समस्त भौतिकबुद्धि से परे, अचिन्त्य तथा नित्य पुरुष के रूप में करे | वे सूर्य की भाँति तेजवान हैं और इस भौतिक प्रकृति से परे, दिव्य रूप हैं |
+                                    </p>
+                                    
+
+                                </div>
+                                
+                                
+                                <div class="m-0 mt-4">
+                                    <p>
+                                        <a class="button is-outlined is-warning" href="9/">
+                                            Read Now
+                                        </a>
+                                    </p>
+                                </div>
+
                             </div>
                         </div>
-                    </a>
+                    </div>
                 </div>
-            
-                <div class="column is-12">
-                    <a class="is-clickable" href="10/">
-                        <div class="card has-glow-md">
-                            <div class="card-content">
-                                <div class="content">
-                                    <h5 class="mb-0">
+            </div>
+        </div>
+        
+        <div
+            class="column is-full-tablet is-full-desktop is-full-widescreen is-full-fullhd is-flex animatedParent animateOnce">
+            <div class="card card-horizontal is-flex-grow-1 animated fadeInUpShort">
+                <div class="card-content p-2">
+                    <div class="columns is-multiline is-variable m-0">
+                        <div class="column">
+                            <div class="content m-0">
+                                <div class="m-0">
+                                    
+                                    <h5 class="title is-5 m-0">
                                         अध्याय ८ - श्लोक १०
                                     </h5>
                                     
                                     
-                                        <hr class="mt-3 mb-3"/>
-                                    
-
-                                    
-
-                                    
-                                        
-                                            <p class="has-text-justified">मृत्यु के समय जो व्यक्ति अपने प्राण को भौहों के मध्य स्थिर कर लेता है और योगशक्ति के द्वारा अविचलित मन से पूर्णभक्ति के साथ परमेश्वर के स्मरण में अपने को लगाता है, वह निश्चित रूप से भगवान् को प्राप्त होता है |</p>
-                                        
-                                    
+                                
                                 </div>
+                                
+                                
+                                <hr class="m-0 mt-4">
+                                
+                                <div class="m-0 mt-4">
+                                    
+                                    
+                                    <p class="has-text-justified">
+                                        मृत्यु के समय जो व्यक्ति अपने प्राण को भौहों के मध्य स्थिर कर लेता है और योगशक्ति के द्वारा अविचलित मन से पूर्णभक्ति के साथ परमेश्वर के स्मरण में अपने को लगाता है, वह निश्चित रूप से भगवान् को प्राप्त होता है |
+                                    </p>
+                                    
+
+                                </div>
+                                
+                                
+                                <div class="m-0 mt-4">
+                                    <p>
+                                        <a class="button is-outlined is-warning" href="10/">
+                                            Read Now
+                                        </a>
+                                    </p>
+                                </div>
+
                             </div>
                         </div>
-                    </a>
+                    </div>
                 </div>
-            
-                <div class="column is-12">
-                    <a class="is-clickable" href="11/">
-                        <div class="card has-glow-md">
-                            <div class="card-content">
-                                <div class="content">
-                                    <h5 class="mb-0">
+            </div>
+        </div>
+        
+        <div
+            class="column is-full-tablet is-full-desktop is-full-widescreen is-full-fullhd is-flex animatedParent animateOnce">
+            <div class="card card-horizontal is-flex-grow-1 animated fadeInUpShort">
+                <div class="card-content p-2">
+                    <div class="columns is-multiline is-variable m-0">
+                        <div class="column">
+                            <div class="content m-0">
+                                <div class="m-0">
+                                    
+                                    <h5 class="title is-5 m-0">
                                         अध्याय ८ - श्लोक ११
                                     </h5>
                                     
                                     
-                                        <hr class="mt-3 mb-3"/>
-                                    
-
-                                    
-
-                                    
-                                        
-                                            <p class="has-text-justified">जो वेदों के ज्ञाता हैं, जो ओंकार का उच्चारण करते हैं और जो संन्यास आश्रम के बड़े-बड़े मुनि हैं, वे ब्रह्म में प्रवेश करते हैं | ऐसी सिद्धि की इच्छा करने वाले ब्रह्मचर्यव्रत का अभ्यास करते हैं | अब मैं तुम्हें वह विधि बताऊँगा, जिससे कोई भी व्यक्ति मुक्ति-लाभ कर सकता है |</p>
-                                        
-                                    
+                                
                                 </div>
+                                
+                                
+                                <hr class="m-0 mt-4">
+                                
+                                <div class="m-0 mt-4">
+                                    
+                                    
+                                    <p class="has-text-justified">
+                                        जो वेदों के ज्ञाता हैं, जो ओंकार का उच्चारण करते हैं और जो संन्यास आश्रम के बड़े-बड़े मुनि हैं, वे ब्रह्म में प्रवेश करते हैं | ऐसी सिद्धि की इच्छा करने वाले ब्रह्मचर्यव्रत का अभ्यास करते हैं | अब मैं तुम्हें वह विधि बताऊँगा, जिससे कोई भी व्यक्ति मुक्ति-लाभ कर सकता है |
+                                    </p>
+                                    
+
+                                </div>
+                                
+                                
+                                <div class="m-0 mt-4">
+                                    <p>
+                                        <a class="button is-outlined is-warning" href="11/">
+                                            Read Now
+                                        </a>
+                                    </p>
+                                </div>
+
                             </div>
                         </div>
-                    </a>
+                    </div>
                 </div>
-            
-                <div class="column is-12">
-                    <a class="is-clickable" href="12/">
-                        <div class="card has-glow-md">
-                            <div class="card-content">
-                                <div class="content">
-                                    <h5 class="mb-0">
+            </div>
+        </div>
+        
+        <div
+            class="column is-full-tablet is-full-desktop is-full-widescreen is-full-fullhd is-flex animatedParent animateOnce">
+            <div class="card card-horizontal is-flex-grow-1 animated fadeInUpShort">
+                <div class="card-content p-2">
+                    <div class="columns is-multiline is-variable m-0">
+                        <div class="column">
+                            <div class="content m-0">
+                                <div class="m-0">
+                                    
+                                    <h5 class="title is-5 m-0">
                                         अध्याय ८ - श्लोक १२
                                     </h5>
                                     
                                     
-                                        <hr class="mt-3 mb-3"/>
-                                    
-
-                                    
-
-                                    
-                                        
-                                            <p class="has-text-justified">समस्त ऐन्द्रिय क्रियाओं से विरक्ति को योग की स्थिति (योगधारणा) कहा जाता है | इन्द्रियों के समस्त द्वारों को बन्द करके तथा मन को हृदय में और प्राणवायु को सिर पर केन्द्रित करके मनुष्य अपने को योग में स्थापित करता है |</p>
-                                        
-                                    
+                                
                                 </div>
+                                
+                                
+                                <hr class="m-0 mt-4">
+                                
+                                <div class="m-0 mt-4">
+                                    
+                                    
+                                    <p class="has-text-justified">
+                                        समस्त ऐन्द्रिय क्रियाओं से विरक्ति को योग की स्थिति (योगधारणा) कहा जाता है | इन्द्रियों के समस्त द्वारों को बन्द करके तथा मन को हृदय में और प्राणवायु को सिर पर केन्द्रित करके मनुष्य अपने को योग में स्थापित करता है |
+                                    </p>
+                                    
+
+                                </div>
+                                
+                                
+                                <div class="m-0 mt-4">
+                                    <p>
+                                        <a class="button is-outlined is-warning" href="12/">
+                                            Read Now
+                                        </a>
+                                    </p>
+                                </div>
+
                             </div>
                         </div>
-                    </a>
+                    </div>
                 </div>
-            
-                <div class="column is-12">
-                    <a class="is-clickable" href="13/">
-                        <div class="card has-glow-md">
-                            <div class="card-content">
-                                <div class="content">
-                                    <h5 class="mb-0">
+            </div>
+        </div>
+        
+        <div
+            class="column is-full-tablet is-full-desktop is-full-widescreen is-full-fullhd is-flex animatedParent animateOnce">
+            <div class="card card-horizontal is-flex-grow-1 animated fadeInUpShort">
+                <div class="card-content p-2">
+                    <div class="columns is-multiline is-variable m-0">
+                        <div class="column">
+                            <div class="content m-0">
+                                <div class="m-0">
+                                    
+                                    <h5 class="title is-5 m-0">
                                         अध्याय ८ - श्लोक १३
                                     </h5>
                                     
                                     
-                                        <hr class="mt-3 mb-3"/>
-                                    
-
-                                    
-
-                                    
-                                        
-                                            <p class="has-text-justified">इस योगाभ्यास में स्थित होकर तथा अक्षरों के परं संयोग यानी ओंकार का उच्चारण करते हुए यदि कोई भगवान् का चिन्तन करता है और अपने शरीर का त्याग करता है, तो वह निश्चित रूप से आध्यात्मिक लोकों को जाता है |</p>
-                                        
-                                    
+                                
                                 </div>
+                                
+                                
+                                <hr class="m-0 mt-4">
+                                
+                                <div class="m-0 mt-4">
+                                    
+                                    
+                                    <p class="has-text-justified">
+                                        इस योगाभ्यास में स्थित होकर तथा अक्षरों के परं संयोग यानी ओंकार का उच्चारण करते हुए यदि कोई भगवान् का चिन्तन करता है और अपने शरीर का त्याग करता है, तो वह निश्चित रूप से आध्यात्मिक लोकों को जाता है |
+                                    </p>
+                                    
+
+                                </div>
+                                
+                                
+                                <div class="m-0 mt-4">
+                                    <p>
+                                        <a class="button is-outlined is-warning" href="13/">
+                                            Read Now
+                                        </a>
+                                    </p>
+                                </div>
+
                             </div>
                         </div>
-                    </a>
+                    </div>
                 </div>
-            
-                <div class="column is-12">
-                    <a class="is-clickable" href="14/">
-                        <div class="card has-glow-md">
-                            <div class="card-content">
-                                <div class="content">
-                                    <h5 class="mb-0">
+            </div>
+        </div>
+        
+        <div
+            class="column is-full-tablet is-full-desktop is-full-widescreen is-full-fullhd is-flex animatedParent animateOnce">
+            <div class="card card-horizontal is-flex-grow-1 animated fadeInUpShort">
+                <div class="card-content p-2">
+                    <div class="columns is-multiline is-variable m-0">
+                        <div class="column">
+                            <div class="content m-0">
+                                <div class="m-0">
+                                    
+                                    <h5 class="title is-5 m-0">
                                         अध्याय ८ - श्लोक १४
                                     </h5>
                                     
                                     
-                                        <hr class="mt-3 mb-3"/>
-                                    
-
-                                    
-
-                                    
-                                        
-                                            <p class="has-text-justified">हे अर्जुन! जो अनन्य भाव से निरन्तर मेरा स्मरण करता है उसके लिए मैं सुलभ हूँ, क्योंकि वह मेरी भक्ति में प्रवृत्त रहता है |</p>
-                                        
-                                    
+                                
                                 </div>
+                                
+                                
+                                <hr class="m-0 mt-4">
+                                
+                                <div class="m-0 mt-4">
+                                    
+                                    
+                                    <p class="has-text-justified">
+                                        हे अर्जुन! जो अनन्य भाव से निरन्तर मेरा स्मरण करता है उसके लिए मैं सुलभ हूँ, क्योंकि वह मेरी भक्ति में प्रवृत्त रहता है |
+                                    </p>
+                                    
+
+                                </div>
+                                
+                                
+                                <div class="m-0 mt-4">
+                                    <p>
+                                        <a class="button is-outlined is-warning" href="14/">
+                                            Read Now
+                                        </a>
+                                    </p>
+                                </div>
+
                             </div>
                         </div>
-                    </a>
+                    </div>
                 </div>
-            
-                <div class="column is-12">
-                    <a class="is-clickable" href="15/">
-                        <div class="card has-glow-md">
-                            <div class="card-content">
-                                <div class="content">
-                                    <h5 class="mb-0">
+            </div>
+        </div>
+        
+        <div
+            class="column is-full-tablet is-full-desktop is-full-widescreen is-full-fullhd is-flex animatedParent animateOnce">
+            <div class="card card-horizontal is-flex-grow-1 animated fadeInUpShort">
+                <div class="card-content p-2">
+                    <div class="columns is-multiline is-variable m-0">
+                        <div class="column">
+                            <div class="content m-0">
+                                <div class="m-0">
+                                    
+                                    <h5 class="title is-5 m-0">
                                         अध्याय ८ - श्लोक १५
                                     </h5>
                                     
                                     
-                                        <hr class="mt-3 mb-3"/>
-                                    
-
-                                    
-
-                                    
-                                        
-                                            <p class="has-text-justified">मुझे प्राप्त करके महापुरुष, जो भक्तियोगी हैं, कभी भी दुखों से पूर्ण इस अनित्य जगत् में नहीं लौटते, क्योंकि उन्हें परम सिद्धि प्राप्त हो चुकी होती है |</p>
-                                        
-                                    
+                                
                                 </div>
+                                
+                                
+                                <hr class="m-0 mt-4">
+                                
+                                <div class="m-0 mt-4">
+                                    
+                                    
+                                    <p class="has-text-justified">
+                                        मुझे प्राप्त करके महापुरुष, जो भक्तियोगी हैं, कभी भी दुखों से पूर्ण इस अनित्य जगत् में नहीं लौटते, क्योंकि उन्हें परम सिद्धि प्राप्त हो चुकी होती है |
+                                    </p>
+                                    
+
+                                </div>
+                                
+                                
+                                <div class="m-0 mt-4">
+                                    <p>
+                                        <a class="button is-outlined is-warning" href="15/">
+                                            Read Now
+                                        </a>
+                                    </p>
+                                </div>
+
                             </div>
                         </div>
-                    </a>
+                    </div>
                 </div>
-            
-                <div class="column is-12">
-                    <a class="is-clickable" href="16/">
-                        <div class="card has-glow-md">
-                            <div class="card-content">
-                                <div class="content">
-                                    <h5 class="mb-0">
+            </div>
+        </div>
+        
+        <div
+            class="column is-full-tablet is-full-desktop is-full-widescreen is-full-fullhd is-flex animatedParent animateOnce">
+            <div class="card card-horizontal is-flex-grow-1 animated fadeInUpShort">
+                <div class="card-content p-2">
+                    <div class="columns is-multiline is-variable m-0">
+                        <div class="column">
+                            <div class="content m-0">
+                                <div class="m-0">
+                                    
+                                    <h5 class="title is-5 m-0">
                                         अध्याय ८ - श्लोक १६
                                     </h5>
                                     
                                     
-                                        <hr class="mt-3 mb-3"/>
-                                    
-
-                                    
-
-                                    
-                                        
-                                            <p class="has-text-justified">इस जगत् में सर्वोच्च लोक से लेकर निम्नतम सारे लोक दुखों के घर हैं, जहाँ जन्म तथा मरण का चक्कर लगा रहता है | किन्तु हे कुन्तीपुत्र! जो मेरे धाम को प्राप्त कर लेता है, वह फिर कभी जन्म नहीं लेता |</p>
-                                        
-                                    
+                                
                                 </div>
+                                
+                                
+                                <hr class="m-0 mt-4">
+                                
+                                <div class="m-0 mt-4">
+                                    
+                                    
+                                    <p class="has-text-justified">
+                                        इस जगत् में सर्वोच्च लोक से लेकर निम्नतम सारे लोक दुखों के घर हैं, जहाँ जन्म तथा मरण का चक्कर लगा रहता है | किन्तु हे कुन्तीपुत्र! जो मेरे धाम को प्राप्त कर लेता है, वह फिर कभी जन्म नहीं लेता |
+                                    </p>
+                                    
+
+                                </div>
+                                
+                                
+                                <div class="m-0 mt-4">
+                                    <p>
+                                        <a class="button is-outlined is-warning" href="16/">
+                                            Read Now
+                                        </a>
+                                    </p>
+                                </div>
+
                             </div>
                         </div>
-                    </a>
+                    </div>
                 </div>
-            
-                <div class="column is-12">
-                    <a class="is-clickable" href="17/">
-                        <div class="card has-glow-md">
-                            <div class="card-content">
-                                <div class="content">
-                                    <h5 class="mb-0">
+            </div>
+        </div>
+        
+        <div
+            class="column is-full-tablet is-full-desktop is-full-widescreen is-full-fullhd is-flex animatedParent animateOnce">
+            <div class="card card-horizontal is-flex-grow-1 animated fadeInUpShort">
+                <div class="card-content p-2">
+                    <div class="columns is-multiline is-variable m-0">
+                        <div class="column">
+                            <div class="content m-0">
+                                <div class="m-0">
+                                    
+                                    <h5 class="title is-5 m-0">
                                         अध्याय ८ - श्लोक १७
                                     </h5>
                                     
                                     
-                                        <hr class="mt-3 mb-3"/>
-                                    
-
-                                    
-
-                                    
-                                        
-                                            <p class="has-text-justified">मानवीय गणना के अनुसार एक हजार युग मिलकर ब्रह्मा का दिन बनता है और इतनी ही बड़ी ब्रह्मा की रात्रि भी होती है |</p>
-                                        
-                                    
+                                
                                 </div>
+                                
+                                
+                                <hr class="m-0 mt-4">
+                                
+                                <div class="m-0 mt-4">
+                                    
+                                    
+                                    <p class="has-text-justified">
+                                        मानवीय गणना के अनुसार एक हजार युग मिलकर ब्रह्मा का दिन बनता है और इतनी ही बड़ी ब्रह्मा की रात्रि भी होती है |
+                                    </p>
+                                    
+
+                                </div>
+                                
+                                
+                                <div class="m-0 mt-4">
+                                    <p>
+                                        <a class="button is-outlined is-warning" href="17/">
+                                            Read Now
+                                        </a>
+                                    </p>
+                                </div>
+
                             </div>
                         </div>
-                    </a>
+                    </div>
                 </div>
-            
-                <div class="column is-12">
-                    <a class="is-clickable" href="18/">
-                        <div class="card has-glow-md">
-                            <div class="card-content">
-                                <div class="content">
-                                    <h5 class="mb-0">
+            </div>
+        </div>
+        
+        <div
+            class="column is-full-tablet is-full-desktop is-full-widescreen is-full-fullhd is-flex animatedParent animateOnce">
+            <div class="card card-horizontal is-flex-grow-1 animated fadeInUpShort">
+                <div class="card-content p-2">
+                    <div class="columns is-multiline is-variable m-0">
+                        <div class="column">
+                            <div class="content m-0">
+                                <div class="m-0">
+                                    
+                                    <h5 class="title is-5 m-0">
                                         अध्याय ८ - श्लोक १८
                                     </h5>
                                     
                                     
-                                        <hr class="mt-3 mb-3"/>
-                                    
-
-                                    
-
-                                    
-                                        
-                                            <p class="has-text-justified">ब्रह्मा के दिन के शुभारम्भ में सारे जीव अव्यक्त अवस्था से व्यक्त होते हैं और फिर जब रात्रि आती है तो वे पुनः अव्यक्त में विलीन हो जाते हैं |</p>
-                                        
-                                    
+                                
                                 </div>
+                                
+                                
+                                <hr class="m-0 mt-4">
+                                
+                                <div class="m-0 mt-4">
+                                    
+                                    
+                                    <p class="has-text-justified">
+                                        ब्रह्मा के दिन के शुभारम्भ में सारे जीव अव्यक्त अवस्था से व्यक्त होते हैं और फिर जब रात्रि आती है तो वे पुनः अव्यक्त में विलीन हो जाते हैं |
+                                    </p>
+                                    
+
+                                </div>
+                                
+                                
+                                <div class="m-0 mt-4">
+                                    <p>
+                                        <a class="button is-outlined is-warning" href="18/">
+                                            Read Now
+                                        </a>
+                                    </p>
+                                </div>
+
                             </div>
                         </div>
-                    </a>
+                    </div>
                 </div>
-            
-                <div class="column is-12">
-                    <a class="is-clickable" href="19/">
-                        <div class="card has-glow-md">
-                            <div class="card-content">
-                                <div class="content">
-                                    <h5 class="mb-0">
+            </div>
+        </div>
+        
+        <div
+            class="column is-full-tablet is-full-desktop is-full-widescreen is-full-fullhd is-flex animatedParent animateOnce">
+            <div class="card card-horizontal is-flex-grow-1 animated fadeInUpShort">
+                <div class="card-content p-2">
+                    <div class="columns is-multiline is-variable m-0">
+                        <div class="column">
+                            <div class="content m-0">
+                                <div class="m-0">
+                                    
+                                    <h5 class="title is-5 m-0">
                                         अध्याय ८ - श्लोक १९
                                     </h5>
                                     
                                     
-                                        <hr class="mt-3 mb-3"/>
-                                    
-
-                                    
-
-                                    
-                                        
-                                            <p class="has-text-justified">जब-जब ब्रह्मा का दिन आता है तो सारे जीव प्रकट होते हैं और ब्रह्मा की रात्रि होते ही वे असहायवत् विलीन हो जाते हैं |</p>
-                                        
-                                    
+                                
                                 </div>
+                                
+                                
+                                <hr class="m-0 mt-4">
+                                
+                                <div class="m-0 mt-4">
+                                    
+                                    
+                                    <p class="has-text-justified">
+                                        जब-जब ब्रह्मा का दिन आता है तो सारे जीव प्रकट होते हैं और ब्रह्मा की रात्रि होते ही वे असहायवत् विलीन हो जाते हैं |
+                                    </p>
+                                    
+
+                                </div>
+                                
+                                
+                                <div class="m-0 mt-4">
+                                    <p>
+                                        <a class="button is-outlined is-warning" href="19/">
+                                            Read Now
+                                        </a>
+                                    </p>
+                                </div>
+
                             </div>
                         </div>
-                    </a>
+                    </div>
                 </div>
-            
-                <div class="column is-12">
-                    <a class="is-clickable" href="20/">
-                        <div class="card has-glow-md">
-                            <div class="card-content">
-                                <div class="content">
-                                    <h5 class="mb-0">
+            </div>
+        </div>
+        
+        <div
+            class="column is-full-tablet is-full-desktop is-full-widescreen is-full-fullhd is-flex animatedParent animateOnce">
+            <div class="card card-horizontal is-flex-grow-1 animated fadeInUpShort">
+                <div class="card-content p-2">
+                    <div class="columns is-multiline is-variable m-0">
+                        <div class="column">
+                            <div class="content m-0">
+                                <div class="m-0">
+                                    
+                                    <h5 class="title is-5 m-0">
                                         अध्याय ८ - श्लोक २०
                                     </h5>
                                     
                                     
-                                        <hr class="mt-3 mb-3"/>
-                                    
-
-                                    
-
-                                    
-                                        
-                                            <p class="has-text-justified">इसके अतिरिक्त एक अन्य अव्यय प्रकृति है, जो शाश्वत है और इस व्यक्त तथा अव्यक्त पदार्थ से परे है | यह परा (श्रेष्ठ) और कभी न नाश होने वाली है | जब इस संसार का सब कुछ लय हो जाता है, तब भी उसका नाश नहीं होता |</p>
-                                        
-                                    
+                                
                                 </div>
+                                
+                                
+                                <hr class="m-0 mt-4">
+                                
+                                <div class="m-0 mt-4">
+                                    
+                                    
+                                    <p class="has-text-justified">
+                                        इसके अतिरिक्त एक अन्य अव्यय प्रकृति है, जो शाश्वत है और इस व्यक्त तथा अव्यक्त पदार्थ से परे है | यह परा (श्रेष्ठ) और कभी न नाश होने वाली है | जब इस संसार का सब कुछ लय हो जाता है, तब भी उसका नाश नहीं होता |
+                                    </p>
+                                    
+
+                                </div>
+                                
+                                
+                                <div class="m-0 mt-4">
+                                    <p>
+                                        <a class="button is-outlined is-warning" href="20/">
+                                            Read Now
+                                        </a>
+                                    </p>
+                                </div>
+
                             </div>
                         </div>
-                    </a>
+                    </div>
                 </div>
-            
-                <div class="column is-12">
-                    <a class="is-clickable" href="21/">
-                        <div class="card has-glow-md">
-                            <div class="card-content">
-                                <div class="content">
-                                    <h5 class="mb-0">
+            </div>
+        </div>
+        
+        <div
+            class="column is-full-tablet is-full-desktop is-full-widescreen is-full-fullhd is-flex animatedParent animateOnce">
+            <div class="card card-horizontal is-flex-grow-1 animated fadeInUpShort">
+                <div class="card-content p-2">
+                    <div class="columns is-multiline is-variable m-0">
+                        <div class="column">
+                            <div class="content m-0">
+                                <div class="m-0">
+                                    
+                                    <h5 class="title is-5 m-0">
                                         अध्याय ८ - श्लोक २१
                                     </h5>
                                     
                                     
-                                        <hr class="mt-3 mb-3"/>
-                                    
-
-                                    
-
-                                    
-                                        
-                                            <p class="has-text-justified">जिसे वेदान्ती अप्रकट और अविनाशी बताते हैं, जो परम गन्तव्य है, जिसे प्राप्त कर लेने पर कोई वापस नहीं आता, वही मेरा परमधाम है |</p>
-                                        
-                                    
+                                
                                 </div>
+                                
+                                
+                                <hr class="m-0 mt-4">
+                                
+                                <div class="m-0 mt-4">
+                                    
+                                    
+                                    <p class="has-text-justified">
+                                        जिसे वेदान्ती अप्रकट और अविनाशी बताते हैं, जो परम गन्तव्य है, जिसे प्राप्त कर लेने पर कोई वापस नहीं आता, वही मेरा परमधाम है |
+                                    </p>
+                                    
+
+                                </div>
+                                
+                                
+                                <div class="m-0 mt-4">
+                                    <p>
+                                        <a class="button is-outlined is-warning" href="21/">
+                                            Read Now
+                                        </a>
+                                    </p>
+                                </div>
+
                             </div>
                         </div>
-                    </a>
+                    </div>
                 </div>
-            
-                <div class="column is-12">
-                    <a class="is-clickable" href="22/">
-                        <div class="card has-glow-md">
-                            <div class="card-content">
-                                <div class="content">
-                                    <h5 class="mb-0">
+            </div>
+        </div>
+        
+        <div
+            class="column is-full-tablet is-full-desktop is-full-widescreen is-full-fullhd is-flex animatedParent animateOnce">
+            <div class="card card-horizontal is-flex-grow-1 animated fadeInUpShort">
+                <div class="card-content p-2">
+                    <div class="columns is-multiline is-variable m-0">
+                        <div class="column">
+                            <div class="content m-0">
+                                <div class="m-0">
+                                    
+                                    <h5 class="title is-5 m-0">
                                         अध्याय ८ - श्लोक २२
                                     </h5>
                                     
                                     
-                                        <hr class="mt-3 mb-3"/>
-                                    
-
-                                    
-
-                                    
-                                        
-                                            <p class="has-text-justified">भगवान्, जो सबसे महान हैं, अनन्य भक्ति द्वारा ही प्राप्त किये जा सकते हैं | यद्यपि वे अपने धाम में विराजमान हैं, तो भी वे सर्वव्यापी हैं और उनमें सब कुछ स्थित है |</p>
-                                        
-                                    
+                                
                                 </div>
+                                
+                                
+                                <hr class="m-0 mt-4">
+                                
+                                <div class="m-0 mt-4">
+                                    
+                                    
+                                    <p class="has-text-justified">
+                                        भगवान्, जो सबसे महान हैं, अनन्य भक्ति द्वारा ही प्राप्त किये जा सकते हैं | यद्यपि वे अपने धाम में विराजमान हैं, तो भी वे सर्वव्यापी हैं और उनमें सब कुछ स्थित है |
+                                    </p>
+                                    
+
+                                </div>
+                                
+                                
+                                <div class="m-0 mt-4">
+                                    <p>
+                                        <a class="button is-outlined is-warning" href="22/">
+                                            Read Now
+                                        </a>
+                                    </p>
+                                </div>
+
                             </div>
                         </div>
-                    </a>
+                    </div>
                 </div>
-            
-                <div class="column is-12">
-                    <a class="is-clickable" href="23/">
-                        <div class="card has-glow-md">
-                            <div class="card-content">
-                                <div class="content">
-                                    <h5 class="mb-0">
+            </div>
+        </div>
+        
+        <div
+            class="column is-full-tablet is-full-desktop is-full-widescreen is-full-fullhd is-flex animatedParent animateOnce">
+            <div class="card card-horizontal is-flex-grow-1 animated fadeInUpShort">
+                <div class="card-content p-2">
+                    <div class="columns is-multiline is-variable m-0">
+                        <div class="column">
+                            <div class="content m-0">
+                                <div class="m-0">
+                                    
+                                    <h5 class="title is-5 m-0">
                                         अध्याय ८ - श्लोक २३
                                     </h5>
                                     
                                     
-                                        <hr class="mt-3 mb-3"/>
-                                    
-
-                                    
-
-                                    
-                                        
-                                            <p class="has-text-justified">हे भरतश्रेष्ठ! अब मैं उन विभिन्न कालों को बताऊँगा, जिनमें इस संसार से प्रयाण करने के बाद योगी पुनः आता है अथवा नहीं आता |</p>
-                                        
-                                    
+                                
                                 </div>
+                                
+                                
+                                <hr class="m-0 mt-4">
+                                
+                                <div class="m-0 mt-4">
+                                    
+                                    
+                                    <p class="has-text-justified">
+                                        हे भरतश्रेष्ठ! अब मैं उन विभिन्न कालों को बताऊँगा, जिनमें इस संसार से प्रयाण करने के बाद योगी पुनः आता है अथवा नहीं आता |
+                                    </p>
+                                    
+
+                                </div>
+                                
+                                
+                                <div class="m-0 mt-4">
+                                    <p>
+                                        <a class="button is-outlined is-warning" href="23/">
+                                            Read Now
+                                        </a>
+                                    </p>
+                                </div>
+
                             </div>
                         </div>
-                    </a>
+                    </div>
                 </div>
-            
-                <div class="column is-12">
-                    <a class="is-clickable" href="24/">
-                        <div class="card has-glow-md">
-                            <div class="card-content">
-                                <div class="content">
-                                    <h5 class="mb-0">
+            </div>
+        </div>
+        
+        <div
+            class="column is-full-tablet is-full-desktop is-full-widescreen is-full-fullhd is-flex animatedParent animateOnce">
+            <div class="card card-horizontal is-flex-grow-1 animated fadeInUpShort">
+                <div class="card-content p-2">
+                    <div class="columns is-multiline is-variable m-0">
+                        <div class="column">
+                            <div class="content m-0">
+                                <div class="m-0">
+                                    
+                                    <h5 class="title is-5 m-0">
                                         अध्याय ८ - श्लोक २४
                                     </h5>
                                     
                                     
-                                        <hr class="mt-3 mb-3"/>
-                                    
-
-                                    
-
-                                    
-                                        
-                                            <p class="has-text-justified">जो परब्रह्म के ज्ञाता हैं, वे अग्निदेव के प्रभाव में, प्रकाश में, दिन के शुभक्षण में, शुक्लपक्ष में या जब सूर्य उत्तरायण में रहता है, उन छह मासों में इस संसार से शरीर त्याग करने पर उस परब्रह्म को प्राप्त करते हैं |</p>
-                                        
-                                    
+                                
                                 </div>
+                                
+                                
+                                <hr class="m-0 mt-4">
+                                
+                                <div class="m-0 mt-4">
+                                    
+                                    
+                                    <p class="has-text-justified">
+                                        जो परब्रह्म के ज्ञाता हैं, वे अग्निदेव के प्रभाव में, प्रकाश में, दिन के शुभक्षण में, शुक्लपक्ष में या जब सूर्य उत्तरायण में रहता है, उन छह मासों में इस संसार से शरीर त्याग करने पर उस परब्रह्म को प्राप्त करते हैं |
+                                    </p>
+                                    
+
+                                </div>
+                                
+                                
+                                <div class="m-0 mt-4">
+                                    <p>
+                                        <a class="button is-outlined is-warning" href="24/">
+                                            Read Now
+                                        </a>
+                                    </p>
+                                </div>
+
                             </div>
                         </div>
-                    </a>
+                    </div>
                 </div>
-            
-                <div class="column is-12">
-                    <a class="is-clickable" href="25/">
-                        <div class="card has-glow-md">
-                            <div class="card-content">
-                                <div class="content">
-                                    <h5 class="mb-0">
+            </div>
+        </div>
+        
+        <div
+            class="column is-full-tablet is-full-desktop is-full-widescreen is-full-fullhd is-flex animatedParent animateOnce">
+            <div class="card card-horizontal is-flex-grow-1 animated fadeInUpShort">
+                <div class="card-content p-2">
+                    <div class="columns is-multiline is-variable m-0">
+                        <div class="column">
+                            <div class="content m-0">
+                                <div class="m-0">
+                                    
+                                    <h5 class="title is-5 m-0">
                                         अध्याय ८ - श्लोक २५
                                     </h5>
                                     
                                     
-                                        <hr class="mt-3 mb-3"/>
-                                    
-
-                                    
-
-                                    
-                                        
-                                            <p class="has-text-justified">जो योगी धुएँ, रात्री, कृष्णपक्ष में या सूर्य के दक्षिणायन रहने के छह महीनों में दिवंगत होता है, वह चन्द्रलोक को जाता है, किन्तु वहाँ से पुनः (पृथ्वी पर) चला आता है |</p>
-                                        
-                                    
+                                
                                 </div>
+                                
+                                
+                                <hr class="m-0 mt-4">
+                                
+                                <div class="m-0 mt-4">
+                                    
+                                    
+                                    <p class="has-text-justified">
+                                        जो योगी धुएँ, रात्री, कृष्णपक्ष में या सूर्य के दक्षिणायन रहने के छह महीनों में दिवंगत होता है, वह चन्द्रलोक को जाता है, किन्तु वहाँ से पुनः (पृथ्वी पर) चला आता है |
+                                    </p>
+                                    
+
+                                </div>
+                                
+                                
+                                <div class="m-0 mt-4">
+                                    <p>
+                                        <a class="button is-outlined is-warning" href="25/">
+                                            Read Now
+                                        </a>
+                                    </p>
+                                </div>
+
                             </div>
                         </div>
-                    </a>
+                    </div>
                 </div>
-            
-                <div class="column is-12">
-                    <a class="is-clickable" href="26/">
-                        <div class="card has-glow-md">
-                            <div class="card-content">
-                                <div class="content">
-                                    <h5 class="mb-0">
+            </div>
+        </div>
+        
+        <div
+            class="column is-full-tablet is-full-desktop is-full-widescreen is-full-fullhd is-flex animatedParent animateOnce">
+            <div class="card card-horizontal is-flex-grow-1 animated fadeInUpShort">
+                <div class="card-content p-2">
+                    <div class="columns is-multiline is-variable m-0">
+                        <div class="column">
+                            <div class="content m-0">
+                                <div class="m-0">
+                                    
+                                    <h5 class="title is-5 m-0">
                                         अध्याय ८ - श्लोक २६
                                     </h5>
                                     
                                     
-                                        <hr class="mt-3 mb-3"/>
-                                    
-
-                                    
-
-                                    
-                                        
-                                            <p class="has-text-justified">वैदिक मतानुसार इस संसार से प्रयाण करने के दो मार्ग हैं – एक प्रकाश का तथा दूसरा अंधकार का | जब मनुष्य प्रकाश के मार्ग से जाता है तो वह वापस नहीं आता, किन्तु अंधकार के मार्ग से जाने वाला पुनः लौटकर आता है |</p>
-                                        
-                                    
+                                
                                 </div>
+                                
+                                
+                                <hr class="m-0 mt-4">
+                                
+                                <div class="m-0 mt-4">
+                                    
+                                    
+                                    <p class="has-text-justified">
+                                        वैदिक मतानुसार इस संसार से प्रयाण करने के दो मार्ग हैं – एक प्रकाश का तथा दूसरा अंधकार का | जब मनुष्य प्रकाश के मार्ग से जाता है तो वह वापस नहीं आता, किन्तु अंधकार के मार्ग से जाने वाला पुनः लौटकर आता है |
+                                    </p>
+                                    
+
+                                </div>
+                                
+                                
+                                <div class="m-0 mt-4">
+                                    <p>
+                                        <a class="button is-outlined is-warning" href="26/">
+                                            Read Now
+                                        </a>
+                                    </p>
+                                </div>
+
                             </div>
                         </div>
-                    </a>
+                    </div>
                 </div>
-            
-                <div class="column is-12">
-                    <a class="is-clickable" href="27/">
-                        <div class="card has-glow-md">
-                            <div class="card-content">
-                                <div class="content">
-                                    <h5 class="mb-0">
+            </div>
+        </div>
+        
+        <div
+            class="column is-full-tablet is-full-desktop is-full-widescreen is-full-fullhd is-flex animatedParent animateOnce">
+            <div class="card card-horizontal is-flex-grow-1 animated fadeInUpShort">
+                <div class="card-content p-2">
+                    <div class="columns is-multiline is-variable m-0">
+                        <div class="column">
+                            <div class="content m-0">
+                                <div class="m-0">
+                                    
+                                    <h5 class="title is-5 m-0">
                                         अध्याय ८ - श्लोक २७
                                     </h5>
                                     
                                     
-                                        <hr class="mt-3 mb-3"/>
-                                    
-
-                                    
-
-                                    
-                                        
-                                            <p class="has-text-justified">हे अर्जुन! यद्यपि भक्तगण इन दोनों मार्गों को जानते हैं, किन्तु वे मोहग्रस्त नहीं होते | अतः तुम भक्ति में सदैव स्थिर रहो |</p>
-                                        
-                                    
+                                
                                 </div>
+                                
+                                
+                                <hr class="m-0 mt-4">
+                                
+                                <div class="m-0 mt-4">
+                                    
+                                    
+                                    <p class="has-text-justified">
+                                        हे अर्जुन! यद्यपि भक्तगण इन दोनों मार्गों को जानते हैं, किन्तु वे मोहग्रस्त नहीं होते | अतः तुम भक्ति में सदैव स्थिर रहो |
+                                    </p>
+                                    
+
+                                </div>
+                                
+                                
+                                <div class="m-0 mt-4">
+                                    <p>
+                                        <a class="button is-outlined is-warning" href="27/">
+                                            Read Now
+                                        </a>
+                                    </p>
+                                </div>
+
                             </div>
                         </div>
-                    </a>
+                    </div>
                 </div>
-            
-                <div class="column is-12">
-                    <a class="is-clickable" href="28/">
-                        <div class="card has-glow-md">
-                            <div class="card-content">
-                                <div class="content">
-                                    <h5 class="mb-0">
+            </div>
+        </div>
+        
+        <div
+            class="column is-full-tablet is-full-desktop is-full-widescreen is-full-fullhd is-flex animatedParent animateOnce">
+            <div class="card card-horizontal is-flex-grow-1 animated fadeInUpShort">
+                <div class="card-content p-2">
+                    <div class="columns is-multiline is-variable m-0">
+                        <div class="column">
+                            <div class="content m-0">
+                                <div class="m-0">
+                                    
+                                    <h5 class="title is-5 m-0">
                                         अध्याय ८ - श्लोक २८
                                     </h5>
                                     
                                     
-                                        <hr class="mt-3 mb-3"/>
-                                    
-
-                                    
-
-                                    
-                                        
-                                            <p class="has-text-justified">जो व्यक्ति भक्तिमार्ग स्वीकार करता है, वह वेदाध्ययन, तपस्या, दान, दार्शनिक तथा सकाम कर्म करने से प्राप्त होने वाले फलों से वंचित नहीं होता | वह मात्र भक्ति सम्पन्न करके इन समस्त फलों की प्राप्ति करता है और अन्त में परम नित्यधाम को प्राप्त होता है |</p>
-                                        
-                                    
+                                
                                 </div>
+                                
+                                
+                                <hr class="m-0 mt-4">
+                                
+                                <div class="m-0 mt-4">
+                                    
+                                    
+                                    <p class="has-text-justified">
+                                        जो व्यक्ति भक्तिमार्ग स्वीकार करता है, वह वेदाध्ययन, तपस्या, दान, दार्शनिक तथा सकाम कर्म करने से प्राप्त होने वाले फलों से वंचित नहीं होता | वह मात्र भक्ति सम्पन्न करके इन समस्त फलों की प्राप्ति करता है और अन्त में परम नित्यधाम को प्राप्त होता है |
+                                    </p>
+                                    
+
+                                </div>
+                                
+                                
+                                <div class="m-0 mt-4">
+                                    <p>
+                                        <a class="button is-outlined is-warning" href="28/">
+                                            Read Now
+                                        </a>
+                                    </p>
+                                </div>
+
                             </div>
                         </div>
-                    </a>
+                    </div>
                 </div>
-            
-        </div>
-    </div>
-</section>
-
-<section class="section pt-0">
-    <div class="container">
-        <article class="message is-warning is-small">
-            <div class="message-body has-text-centered">
-                <p class="mb-3">The BBT was established in 1972 by His Divine Grace A.C. Bhaktivedanta Swami Prabhupada, Founder-Acharya of the International Society for Krishna Consciousness. BBT is the publisher for his books. All material used here belongs to and copyrighted under BBT (Bhaktivedanta Book Trust).</p>
-
-                <p class="mb-3">🙏 Please consider buying books. Below is a beautiful message by Srila Prabhupada 🙏</p>
-
-                <p class="is-italic mb-3">“I specifically formed the BBT to invest in it exclusive rights for the printing of all literature containing my teachings, writings and lectures. In this way the collections are to be divided fifty percent for printing new books and fifty percent for construction of temples.”</p>
             </div>
-        </article>
-    </div>
-</section>
-
-<section class="hero is-light is-small">
-    <div class="hero-body">
-        <div class="container">
-            <nav class="breadcrumb is-centered" aria-label="breadcrumbs">
-                <ul>
-                    
-                        <li >
-                            <a class="is-link has-text-orange" href="/">
-                                <span class="icon is-small">
-                                    <i class="fas fa-home" aria-hidden="true"></i>
-                                </span>
-                                <span>Home</span>
-                            </a>
-                        </li>
-                    
-                        <li >
-                            <a class="is-link has-text-orange" href="/bhagavad-gita-hindi/">
-                                <span class="icon is-small">
-                                    <i class="fas fa-book" aria-hidden="true"></i>
-                                </span>
-                                <span>श्रीमद्भगवद्गीता - यथारूप (हिंदी)</span>
-                            </a>
-                        </li>
-                    
-                        <li class="is-active">
-                            <a  href="">
-                                <span class="icon is-small">
-                                    <i class="fas fa-file-alt" aria-hidden="true"></i>
-                                </span>
-                                <span>अध्याय ८ - अक्षरब्रह्मयोग</span>
-                            </a>
-                        </li>
-                    
-                </ul>
-            </nav>
         </div>
+        
+
     </div>
+</section>
+
+<section class="section animatedParent animateOnce">
+    <div class="box glass animated fadeInUpShort">
+        <nav class="breadcrumb is-medium is-centered" aria-label="breadcrumbs">
+            <ul>
+                
+                <li >
+                    <a class="is-link has-text-orange" href="/">
+                        <span class="icon is-small">
+                            <i class="fas fa-home" aria-hidden="true"></i>
+                        </span>
+                        <span>Home</span>
+                    </a>
+                </li>
+                
+                <li >
+                    <a class="is-link has-text-orange" href="/bhagavad-gita-hindi/">
+                        <span class="icon is-small">
+                            <i class="fas fa-book" aria-hidden="true"></i>
+                        </span>
+                        <span>श्रीमद्भगवद्गीता</span>
+                    </a>
+                </li>
+                
+                <li class="is-active">
+                    <a tabindex="-1" href="">
+                        <span class="icon is-small">
+                            <i class="fas fa-file-alt" aria-hidden="true"></i>
+                        </span>
+                        <span>अध्याय ८ - अक्षरब्रह्मयोग</span>
+                    </a>
+                </li>
+                
+            </ul>
+        </nav>
+    </div>
+</section>
+
+<section class="section pt-0 animatedParent animateOnce">
+    <article class="box message is-warning is-small p-0 animated fadeInUpShort">
+        <div class="message-header is-justify-content-center">
+            <p>Copyright Notice</p>
+        </div>
+        <div class="message-body has-text-centered">
+            <p class="mb-3">The BBT was established in 1972 by His Divine Grace A.C. Bhaktivedanta Swami Prabhupada, Founder-Acharya of the International Society for Krishna Consciousness. BBT is the publisher for his books. All material used here belongs to and copyrighted under BBT (Bhaktivedanta Book Trust).</p>
+    
+            <p class="is-italic mb-3">“I specifically formed the BBT to invest in it exclusive rights for the printing of all literature containing my teachings, writings and lectures. In this way the collections are to be divided fifty percent for printing new books and fifty percent for construction of temples.”</p>
+
+            <p>- A.C. Bhaktivedanta Swami Prabhupada</p>
+        </div>
+    </article>
 </section>
 
 
 
-    <footer class="footer bg-gradient-light-orange pt-5 pb-5">
+    <!-- <footer class="footer bg-gradient-light-orange pt-5 pb-5">
     <div class="container">
         <div class="content">
             <div class="columns is-multiline is-centered">
@@ -967,7 +1503,51 @@
             </div>
         </div>
     </div>
+</footer> -->
+
+<footer class="footer p-0">
+    <section class="section">
+        <div class="footer-container">
+            <div class="animatedParent animateOnce">
+                <div class="content-w-image is-flex is-centered-mobile">
+                    <figure class="image is-64x64 m-0 animated fadeInUpShort">
+                        <img src="https://www.ancientknowledge.in/static/images/logo.png">
+                    </figure>
+                    <div class="content m-0 is-flex is-flex-direction-column is-justify-content-space-between animated fadeInUpShort">
+                        <h4 class="mt-0">Ancient Knowledge</h4>
+                        <p class="is-centered-mobile">
+                            <a href="https://www.ancientknowledge.in/about/" class="no-decoration">
+                                <span>About</span>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="animatedParent animateOnce">
+                <div class="content animated fadeInUpShort">
+                    <h4 class="is-centered-mobile m-0 mb-4 animated fadeInUpShort delay-500">@PraacheenGyaan</h4>
+                    <p class="has-text-centered is-flex is-justify-content-space-between animatedParent animateOnce">
+                        <a class="box icon facebook is-large fa-2x mb-0 animated growIn delay-500" href="https://www.facebook.com/PraacheenGyaan/" target="_blank">
+                            <i class="fab fa-facebook-square has-text-white"></i>
+                        </a>
+
+                        <a class="box icon instagram is-large fa-2x mb-0 animated growIn delay-1000" href="https://www.instagram.com/PraacheenGyaan/" target="_blank">
+                            <i class="fab fa-instagram-square has-text-white"></i>
+                        </a>
+
+                        <a class="box icon twitter is-large fa-2x mb-0 animated growIn delay-1500" href="https://twitter.com/PraacheenGyaan/" target="_blank">
+                            <i class="fab fa-twitter-square has-text-white"></i>
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
 </footer>
+
+    <script src="https://www.ancientknowledge.in/static/js/jquery.min.js"></script>
+    <script src="https://www.ancientknowledge.in/static/js/script.js"></script>
+    <script src="https://www.ancientknowledge.in/static/js/css3-animate-it.js"></script>
 
     
 </body>

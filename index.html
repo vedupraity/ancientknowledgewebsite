@@ -14,7 +14,7 @@
 
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#ffffff" />
+    <meta name="theme-color" content="#ff902b" />
 
     <!-- Begin SEO tags -->
     <title>Ancient Knowledge</title>
@@ -32,203 +32,241 @@
     <meta property="twitter:image" content="https://www.ancientknowledge.in/static/images/open-book-cover.jpg" />
     <!-- End SEO tags -->
 
-    <link rel="stylesheet" href="https://www.ancientknowledge.in/static/css/theme.css" />
-    <link rel="stylesheet" href="https://www.ancientknowledge.in/static/css/theme-custom.css" />
+    <!-- <link rel="stylesheet" href="https://www.ancientknowledge.in/static/css/theme-old.css" /> -->
+    <!-- <link rel="stylesheet" href="https://www.ancientknowledge.in/static/css/switch-control.min.css" /> -->
+    <!-- <link rel="stylesheet" href="https://www.ancientknowledge.in/static/css/theme-custom.css" /> -->
     
     <link rel="icon" href="https://www.ancientknowledge.in/static/images/favicon.ico">
-    <link rel="shortcut icon" type="image/png" href="https://www.ancientknowledge.in/static/images/favicon.png" />
+    <link rel="shortcut icon" type="image/png" href="https://www.ancientknowledge.in/static/images/logo.png" />
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.0/dist/alpine.min.js" defer></script>
     
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-social@1/bin/bulma-social.min.css" />
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" /> -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-social@1/bin/bulma-social.min.css" /> -->
+
+    <link rel="stylesheet" href="https://www.ancientknowledge.in/static/css/bulma.min.css">
+    <link rel="stylesheet" href="https://www.ancientknowledge.in/static/css/theme.css">
+    <link rel="stylesheet" href="https://www.ancientknowledge.in/static/css/animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 
-<body>
-    <nav class="navbar is-warning bg-gradient-light-orange" x-data="{ openNav: false }">
-    <div class="container">
-        <div class="navbar-brand">
-            <a href="https://www.ancientknowledge.in" class="navbar-item">
-                <p class="has-text-weight-normal has-text-orange">
-                    <span>📖</span>
-                    <span class="pl-2">Ancient Knowledge</span>
-                </p>
+<body class="dark-modes">
+    <nav class="navbar is-light glass" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+        <a class="navbar-item pl-4" href="https://www.ancientknowledge.in">
+            <img src="https://www.ancientknowledge.in/static/images/logo.png" width="28" height="28">
+            <span class="pl-4">
+                Ancient Knowledge
+            </span>
+        </a>
+
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+            data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+    </div>
+
+    <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+            <a class="navbar-item" href="https://www.ancientknowledge.in/about/">
+                About
             </a>
-            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navMenu"
-                :class="{ 'is-active': openNav }" x-on:click="openNav = !openNav">
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-            </a>
-        </div>
-        <div class="navbar-menu" id="navMenu" :class="{ 'is-active': openNav }">
-            <div class="navbar-end">
-                <a href="https://www.ancientknowledge.in/about/" class="navbar-item has-text-weight-normal has-text-orange">About</a>
-            </div>
         </div>
     </div>
 </nav>
 
     
-<section class="hero is-small is-bold is-dark bg-gradient-orange">
-    <div class="hero-body">
-        <div class="container has-text-centered p-5">
-            <div class="content">
-                <h1 class="title is-3 mb-3 mt-o">Ancient Knowledge</h1>
-                <h2 class="title is-5 mt-0 mb-0">Recollecting the lost knowledge</h2>
-            </div>
+<section class="hero is-light is-fullheight">
+    <div class="hero-body is-flex is-justify-content-center animatedParent animateOnce">
+        
+        <img class="mandala-lg rotating-ccw-slow">
+        <img class="mandala-md-bg rotating-cw-slow">
+        <img class="mandala-md rotating-cw-slow">
+
+        <h1 id="site-title" class="title is-1 has-text-centered" title-en="Ancient Knowledge" title-hi="प्राचीन ज्ञान">
+        </h1>
+        
+        <div class="hero-bottom">
+            <a onclick="scrollToCards()">
+                <i class="scroll-down-btn fas fa-angle-down animated bounceInUp delay-1000"></i>
+            </a>
         </div>
     </div>
 </section>
 
-
-    <div class="content is-centered has-text-centered" style="display: none;">
-        <h1>Ancient Knowledge</h1>
-        <h2>Recollecting the lost knowledge</h2>
-        <h3></h3>
-        <p>An online library of Ancient Knowledge, Scriptures and Books about History, Philosophy, Spirituality, Religion and more.</p>
-        <div class="tags is-centered">
-            
-                <span class="tag">Ancient</span>
-            
-                <span class="tag">Knowledge</span>
-            
-                <span class="tag">India</span>
-            
-                <span class="tag">History</span>
-            
-                <span class="tag">Philosophy</span>
-            
-                <span class="tag">Spirituality</span>
-            
-                <span class="tag">Dharma</span>
-            
-                <span class="tag">Religion</span>
-            
-                <span class="tag">Sanatan</span>
-            
-                <span class="tag">Hindu</span>
-            
-                <span class="tag">Devotee</span>
-            
-        </div>
-    </div>
 
     
-<section class="section">
-    <div class="container">
-        <div class="columns is-multiline is-centered" id="book-card-container">
+<section id="cards-section" class="section">
+    <div class="animatedParent animateOnce">
+        <h2 class="subtitle is-3 has-text-centered mt-5 mb-5 animated fadeInUpShort">
+            A free digital library of ancient scriptures, texts, and books
+        </h2>
+    </div>
+    
+    <!-- Begin search bar -->
+    <!-- <div class="control has-icons-right mb-6">
+        <input class="input is-medium is-rounded is-warning" type="text" placeholder="Search">
+        <span class="icon is-right">
+            <i class="fas fa-search"></i>
+        </span>
+    </div> -->
+    <!-- End search bar -->
+
+    <div class="columns is-multiline is-centered is-variable is-4">
             
-            <div class="column is-4-desktop is-6-tablet">
-                <a href="https://www.ancientknowledge.in/bhagavad-gita-hindi/">
-                    <div class="card has-glow-md">
-                        <div class="card-image">
-                            <figure class="image is-16by9">
-                                <img src="/static/images/bhagavad-gita-cover-16by9.jpg" alt="श्रीमद्भगवद्गीता - यथारूप (हिंदी)">
+        <!-- Begin horizontal card column -->
+        
+        <div
+            class="column is-full-tablet is-full-desktop is-full-widescreen is-full-fullhd is-flex animatedParent animateOnce">
+            <div class="card card-horizontal is-flex-grow-1 animated fadeInUpShort">
+                <div class="card-content p-2">
+                    <div class="columns is-multiline is-variable m-0">
+                        <div class="column image-column is-full-tablet is-one-third-desktop is-one-third-widescreen is-one-quarter-fullhd">
+                            <figure class="image is-4by3">
+                                <img class="round-corners" src="/static/images/bhagavad-gita-cover-4x3.jpg" alt="श्रीमद्भगवद्गीता" alt="Placeholder image">
                                 
                             </figure>
                         </div>
-                        <div class="card-content">
-                            <div class="content">
+                        <div class="column">
+                            <div class="content m-0">
                                 <div>
-                                    <h2 class="mb-3 title is-6">श्रीमद्भगवद्गीता - यथारूप (हिंदी)</h2>
-                                    <p class="mb-3 is-italic">ए.सी. भक्तिवेदांत स्वामी प्रभुपाद</p>
-                                </div>
-                                <hr>
-                                <div>
-                                    <div class="tags">
-                                        
-                                        <span class="tag is-white has-glow-sm">Bhagavad Gita</span>
-                                        
-                                        <span class="tag is-white has-glow-sm">Yatharoop</span>
-                                        
-                                        <span class="tag is-white has-glow-sm">Hindi</span>
-                                        
-                                        <span class="tag is-white has-glow-sm">A.C. Bhaktivendanta Swami Prabhupada</span>
-                                        
+                                    <div class="m-0">
+                                        <h5 class="title is-5 m-0">
+                                            श्रीमद्भगवद्गीता - यथारूप (हिंदी)
+                                        </h5>
+                                        <p class="m-0 mt-2">
+                                            ए.सी. भक्तिवेदांत स्वामी प्रभुपाद
+                                        </p>
+                                    </div>
+                                    <hr class="m-0 mt-2">
+                                    <div class="m-0 mt-2">
+                                        <p class="has-text-justified">
+                                            यह एक हिंदू धर्मग्रंथ है जिसमें ७०० श्लोकों की रचना अर्जुन और भगवान् कृष्ण के बीच संवाद के रूप में की गई है, यह संस्कृत महाकाव्य महाभारत की एक उपकथा के रूप में प्राप्त है । महाभारत में वर्तमान कलियुग तक की घटनाओं का विवरण मिलता है । इसी युग के प्रारम्भ में आज से लगभग ५,००० वर्ष पूर्व भगवान् श्रीकृष्ण ने अपने मित्र तथा भक्त अर्जुन को भगवद्गीता का उपदेश दिया था ।
+                                        </p>
                                     </div>
                                 </div>
+                                
+                                <div class="m-0 mt-4">
+                                    <p>
+                                        <a class="button is-outlined is-warning" href="https://www.ancientknowledge.in/bhagavad-gita-hindi">
+                                            Read Now
+                                        </a>
+                                    </p>
+                                </div>
+                                
                             </div>
                         </div>
                     </div>
-                </a>
+                </div>
             </div>
-            
-            <div class="column is-4-desktop is-6-tablet">
-                <a href="https://www.ancientknowledge.in/bhagavad-gita-english/">
-                    <div class="card has-glow-md">
-                        <div class="card-image">
-                            <figure class="image is-16by9">
-                                <img src="/static/images/bhagavad-gita-cover-16by9.jpg" alt="Shrimad Bhagavad Gita - As It Is (English)">
-                                
-                            </figure>
-                        </div>
-                        <div class="card-content">
-                            <div class="content">
-                                <div>
-                                    <h2 class="mb-3 title is-6">Shrimad Bhagavad Gita - As It Is (English)</h2>
-                                    <p class="mb-3 is-italic">A.C. Bhaktivendanta Swami Prabhupada</p>
-                                </div>
-                                <hr>
-                                <div>
-                                    <div class="tags">
-                                        
-                                        <span class="tag is-white has-glow-sm">Bhagavad Gita</span>
-                                        
-                                        <span class="tag is-white has-glow-sm">Yatharoop</span>
-                                        
-                                        <span class="tag is-white has-glow-sm">English</span>
-                                        
-                                        <span class="tag is-white has-glow-sm">A.C. Bhaktivendanta Swami Prabhupada</span>
-                                        
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            
-            <div class="column is-4-desktop is-6-tablet">
-                <a >
-                    <div class="card has-glow-md">
-                        <div class="card-image">
-                            <figure class="image is-16by9">
-                                <img src="/static/images/ramayana-cover-16by9.jpg" alt="Ramayana">
-                                
-                                    <div class="is-overlay image-overlay">
-                                        <p class="title is-3 has-text-white">Coming Soon!</p>
-                                    </div>
-                                
-                            </figure>
-                        </div>
-                        <div class="card-content">
-                            <div class="content">
-                                <div>
-                                    <h2 class="mb-3 title is-6">Ramayana</h2>
-                                    <p class="mb-3 is-italic">Valmiki</p>
-                                </div>
-                                <hr>
-                                <div>
-                                    <div class="tags">
-                                        
-                                        <span class="tag is-white has-glow-sm">Ramayana</span>
-                                        
-                                        <span class="tag is-white has-glow-sm">Valmiki</span>
-                                        
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            
         </div>
+        <!-- End horizontal card column -->
+        
+        <div
+            class="column is-full-tablet is-full-desktop is-full-widescreen is-full-fullhd is-flex animatedParent animateOnce">
+            <div class="card card-horizontal is-flex-grow-1 animated fadeInUpShort">
+                <div class="card-content p-2">
+                    <div class="columns is-multiline is-variable m-0">
+                        <div class="column image-column is-full-tablet is-one-third-desktop is-one-third-widescreen is-one-quarter-fullhd">
+                            <figure class="image is-4by3">
+                                <img class="round-corners" src="/static/images/bhagavad-gita-cover-4x3.jpg" alt="Shrimad Bhagavad Gita" alt="Placeholder image">
+                                
+                            </figure>
+                        </div>
+                        <div class="column">
+                            <div class="content m-0">
+                                <div>
+                                    <div class="m-0">
+                                        <h5 class="title is-5 m-0">
+                                            Shrimad Bhagavad Gita - As It Is (English)
+                                        </h5>
+                                        <p class="m-0 mt-2">
+                                            A.C. Bhaktivendanta Swami Prabhupada
+                                        </p>
+                                    </div>
+                                    <hr class="m-0 mt-2">
+                                    <div class="m-0 mt-2">
+                                        <p class="has-text-justified">
+                                            In a narrative style, the tale of the “Bhagavad Gita” is told through a dialogue between “Arjuna”, a warrior prince, and his charioteer, “Lord Krishna” (eighth avatar of “Lord Vishnu”). Whilst Arjuna doubts whether he should go into battle, Krishna explains that he must fulfill his <em>Dharma</em> (duty) as a warrior.
+                                        </p>
+                                    </div>
+                                </div>
+                                
+                                <div class="m-0 mt-4">
+                                    <p>
+                                        <a class="button is-outlined is-warning" href="https://www.ancientknowledge.in/bhagavad-gita-english">
+                                            Read Now
+                                        </a>
+                                    </p>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End horizontal card column -->
+        
+        <div
+            class="column is-full-tablet is-full-desktop is-full-widescreen is-full-fullhd is-flex animatedParent animateOnce">
+            <div class="card card-horizontal is-flex-grow-1 animated fadeInUpShort">
+                <div class="card-content p-2">
+                    <div class="columns is-multiline is-variable m-0">
+                        <div class="column image-column is-full-tablet is-one-third-desktop is-one-third-widescreen is-one-quarter-fullhd">
+                            <figure class="image is-4by3">
+                                <img class="round-corners" src="/static/images/ramayana-cover-4x3.jpeg" alt="Ramayana" alt="Placeholder image">
+                                
+                                <div class="overlay-text glass">
+                                    Coming Soon!
+                                </div>
+                                
+                            </figure>
+                        </div>
+                        <div class="column">
+                            <div class="content m-0">
+                                <div>
+                                    <div class="m-0">
+                                        <h5 class="title is-5 m-0">
+                                            Ramayana
+                                        </h5>
+                                        <p class="m-0 mt-2">
+                                            Valmiki
+                                        </p>
+                                    </div>
+                                    <hr class="m-0 mt-2">
+                                    <div class="m-0 mt-2">
+                                        <p class="has-text-justified">
+                                            “Ramayana”, or “The Journey of Rama”, is one of the most compelling Indian epics written by sage Valmiki, who is called the <em>adi kavi</em>, meaning the first poet in Sanskrit. It is the story of Rama, who was the seventh avatar of “Lord Vishnu”.
+                                        </p>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End horizontal card column -->
+        
     </div>
 </section>
 
+<section class="section pt-0 animatedParent animateOnce">
+    <article class="message is-warning animated fadeInUpShort">
+        <div class="message-body">
+            This website may contain Copyrighted material used under Fair Use (Section 107 of the Copyright Act) for personal research and non-profit educational purposes.
+        </div>
+    </article>
+</section>
 
-    <footer class="footer bg-gradient-light-orange pt-5 pb-5">
+
+    <!-- <footer class="footer bg-gradient-light-orange pt-5 pb-5">
     <div class="container">
         <div class="content">
             <div class="columns is-multiline is-centered">
@@ -251,7 +289,51 @@
             </div>
         </div>
     </div>
+</footer> -->
+
+<footer class="footer p-0">
+    <section class="section">
+        <div class="footer-container">
+            <div class="animatedParent animateOnce">
+                <div class="content-w-image is-flex is-centered-mobile">
+                    <figure class="image is-64x64 m-0 animated fadeInUpShort">
+                        <img src="https://www.ancientknowledge.in/static/images/logo.png">
+                    </figure>
+                    <div class="content m-0 is-flex is-flex-direction-column is-justify-content-space-between animated fadeInUpShort">
+                        <h4 class="mt-0">Ancient Knowledge</h4>
+                        <p class="is-centered-mobile">
+                            <a href="https://www.ancientknowledge.in/about/" class="no-decoration">
+                                <span>About</span>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="animatedParent animateOnce">
+                <div class="content animated fadeInUpShort">
+                    <h4 class="is-centered-mobile m-0 mb-4 animated fadeInUpShort delay-500">@PraacheenGyaan</h4>
+                    <p class="has-text-centered is-flex is-justify-content-space-between animatedParent animateOnce">
+                        <a class="box icon facebook is-large fa-2x mb-0 animated growIn delay-500" href="https://www.facebook.com/PraacheenGyaan/" target="_blank">
+                            <i class="fab fa-facebook-square has-text-white"></i>
+                        </a>
+
+                        <a class="box icon instagram is-large fa-2x mb-0 animated growIn delay-1000" href="https://www.instagram.com/PraacheenGyaan/" target="_blank">
+                            <i class="fab fa-instagram-square has-text-white"></i>
+                        </a>
+
+                        <a class="box icon twitter is-large fa-2x mb-0 animated growIn delay-1500" href="https://twitter.com/PraacheenGyaan/" target="_blank">
+                            <i class="fab fa-twitter-square has-text-white"></i>
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
 </footer>
+
+    <script src="https://www.ancientknowledge.in/static/js/jquery.min.js"></script>
+    <script src="https://www.ancientknowledge.in/static/js/script.js"></script>
+    <script src="https://www.ancientknowledge.in/static/js/css3-animate-it.js"></script>
 
     
 </body>

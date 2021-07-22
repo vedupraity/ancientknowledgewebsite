@@ -14,7 +14,7 @@
 
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#ffffff" />
+    <meta name="theme-color" content="#ff902b" />
 
     <!-- Begin SEO tags -->
     <title>Ancient Knowledge | Bhagavad Gita | Hindi</title>
@@ -24,430 +24,428 @@
     <meta property="og:title" content="Ancient Knowledge | Bhagavad Gita | Hindi" />
     <meta property="og:description" content="Read Shrimad Bhagavad Gita - Yatharoop in hindi. श्रीमद्भगवद्गीता - यथारूप हिंदी में पढ़ें। अध्याय २ - श्लोक २" />
     <meta property="og:url" content="https://www.ancientknowledge.in" />
-    <meta property="og:image" content="https://www.ancientknowledge.in/static/images/bhagavad-gita-cover-16by9.jpg" />
+    <meta property="og:image" content="https://www.ancientknowledge.in/static/images/bhagavad-gita-cover-4x3.jpg" />
     <meta property="og:type" content="article" />
     
     <meta property="twitter:title" content="Ancient Knowledge | Bhagavad Gita | Hindi" />
     <meta property="twitter:description" content="Read Shrimad Bhagavad Gita - Yatharoop in hindi. श्रीमद्भगवद्गीता - यथारूप हिंदी में पढ़ें। अध्याय २ - श्लोक २" />
-    <meta property="twitter:image" content="https://www.ancientknowledge.in/static/images/bhagavad-gita-cover-16by9.jpg" />
+    <meta property="twitter:image" content="https://www.ancientknowledge.in/static/images/bhagavad-gita-cover-4x3.jpg" />
     <!-- End SEO tags -->
 
-    <link rel="stylesheet" href="https://www.ancientknowledge.in/static/css/theme.css" />
-    <link rel="stylesheet" href="https://www.ancientknowledge.in/static/css/theme-custom.css" />
+    <!-- <link rel="stylesheet" href="https://www.ancientknowledge.in/static/css/theme-old.css" /> -->
+    <!-- <link rel="stylesheet" href="https://www.ancientknowledge.in/static/css/switch-control.min.css" /> -->
+    <!-- <link rel="stylesheet" href="https://www.ancientknowledge.in/static/css/theme-custom.css" /> -->
     
     <link rel="icon" href="https://www.ancientknowledge.in/static/images/favicon.ico">
-    <link rel="shortcut icon" type="image/png" href="https://www.ancientknowledge.in/static/images/favicon.png" />
+    <link rel="shortcut icon" type="image/png" href="https://www.ancientknowledge.in/static/images/logo.png" />
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.0/dist/alpine.min.js" defer></script>
     
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-social@1/bin/bulma-social.min.css" />
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" /> -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-social@1/bin/bulma-social.min.css" /> -->
+
+    <link rel="stylesheet" href="https://www.ancientknowledge.in/static/css/bulma.min.css">
+    <link rel="stylesheet" href="https://www.ancientknowledge.in/static/css/theme.css">
+    <link rel="stylesheet" href="https://www.ancientknowledge.in/static/css/animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 
-<body>
-    <nav class="navbar is-warning bg-gradient-light-orange" x-data="{ openNav: false }">
-    <div class="container">
-        <div class="navbar-brand">
-            <a href="https://www.ancientknowledge.in" class="navbar-item">
-                <p class="has-text-weight-normal has-text-orange">
-                    <span>📖</span>
-                    <span class="pl-2">Ancient Knowledge</span>
-                </p>
+<body class="dark-modes">
+    <nav class="navbar is-light glass" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+        <a class="navbar-item pl-4" href="https://www.ancientknowledge.in">
+            <img src="https://www.ancientknowledge.in/static/images/logo.png" width="28" height="28">
+            <span class="pl-4">
+                Ancient Knowledge
+            </span>
+        </a>
+
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+            data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+    </div>
+
+    <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+            <a class="navbar-item" href="https://www.ancientknowledge.in/about/">
+                About
             </a>
-            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navMenu"
-                :class="{ 'is-active': openNav }" x-on:click="openNav = !openNav">
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-            </a>
-        </div>
-        <div class="navbar-menu" id="navMenu" :class="{ 'is-active': openNav }">
-            <div class="navbar-end">
-                <a href="https://www.ancientknowledge.in/about/" class="navbar-item has-text-weight-normal has-text-orange">About</a>
-            </div>
         </div>
     </div>
 </nav>
 
     
-    <section class="hero is-small is-bold is-dark bg-gradient-orange">
-    <div class="hero-body">
-        <div class="container has-text-centered p-5">
-            <h4 class="title is-4">श्रीमद्भगवद्गीता - यथारूप (हिंदी)</h4>
-        </div>
-    </div>
-</section>
-    
-
-    <div class="content is-centered has-text-centered" style="display: none;">
-        <h1>Ancient Knowledge</h1>
-        <h2>Recollecting the lost knowledge</h2>
-        <h3>Ancient Knowledge | Bhagavad Gita | Hindi</h3>
-        <p>Read Shrimad Bhagavad Gita - Yatharoop in hindi. श्रीमद्भगवद्गीता - यथारूप हिंदी में पढ़ें। अध्याय २ - श्लोक २</p>
-        <div class="tags is-centered">
-            
-                <span class="tag">Ancient</span>
-            
-                <span class="tag">Knowledge</span>
-            
-                <span class="tag">India</span>
-            
-                <span class="tag">Shrimad</span>
-            
-                <span class="tag">Bhagavad</span>
-            
-                <span class="tag">Gita</span>
-            
-                <span class="tag">Yatharoop</span>
-            
-                <span class="tag">As It Is</span>
-            
-                <span class="tag">Mahabharat</span>
-            
-                <span class="tag">Krishna</span>
-            
-                <span class="tag">Prabhupad</span>
-            
-                <span class="tag">Hindi</span>
-            
-        </div>
-    </div>
 
     
 
-<section class="hero is-light is-small">
-    <div class="hero-body">
-        <div class="container">
-            <nav class="breadcrumb is-centered" aria-label="breadcrumbs">
-                <ul>
-                    
-                        <li >
-                            <a class="is-link has-text-orange" href="/">
-                                <span class="icon is-small">
-                                    <i class="fas fa-home" aria-hidden="true"></i>
-                                </span>
-                                <span>Home</span>
-                            </a>
-                        </li>
-                    
-                        <li >
-                            <a class="is-link has-text-orange" href="/bhagavad-gita-hindi/">
-                                <span class="icon is-small">
-                                    <i class="fas fa-book" aria-hidden="true"></i>
-                                </span>
-                                <span>श्रीमद्भगवद्गीता - यथारूप (हिंदी)</span>
-                            </a>
-                        </li>
-                    
-                        <li >
-                            <a class="is-link has-text-orange" href="/bhagavad-gita-hindi/2/">
-                                <span class="icon is-small">
-                                    <i class="fas fa-file-alt" aria-hidden="true"></i>
-                                </span>
-                                <span>अध्याय २ - सांख्ययोग</span>
-                            </a>
-                        </li>
-                    
-                        <li class="is-active">
-                            <a  href="">
-                                <span class="icon is-small">
-                                    <i class="fas fa-quote-right" aria-hidden="true"></i>
-                                </span>
-                                <span>श्लोक २</span>
-                            </a>
-                        </li>
-                    
-                </ul>
-            </nav>
-        </div>
+<!-- Margin top behind navbar -->
+<div class="mt-6"></div>
+
+<style>
+    :root {
+        --page-background-image: url(/static/images/bhagavad-gita-cover-4x3.jpg);
+    }
+</style>
+<div class="image-background"></div>
+
+<section class="section animatedParent animateOnce">
+    <div class="box glass animated fadeInUpShort">
+        <nav class="breadcrumb is-medium is-centered" aria-label="breadcrumbs">
+            <ul>
+                
+                <li >
+                    <a class="is-link has-text-orange" href="/">
+                        <span class="icon is-small">
+                            <i class="fas fa-home" aria-hidden="true"></i>
+                        </span>
+                        <span>Home</span>
+                    </a>
+                </li>
+                
+                <li >
+                    <a class="is-link has-text-orange" href="/bhagavad-gita-hindi/">
+                        <span class="icon is-small">
+                            <i class="fas fa-book" aria-hidden="true"></i>
+                        </span>
+                        <span>श्रीमद्भगवद्गीता</span>
+                    </a>
+                </li>
+                
+                <li >
+                    <a class="is-link has-text-orange" href="/bhagavad-gita-hindi/2/">
+                        <span class="icon is-small">
+                            <i class="fas fa-file-alt" aria-hidden="true"></i>
+                        </span>
+                        <span>अध्याय २ - सांख्ययोग</span>
+                    </a>
+                </li>
+                
+                <li class="is-active">
+                    <a tabindex="-1" href="">
+                        <span class="icon is-small">
+                            <i class="fas fa-quote-right" aria-hidden="true"></i>
+                        </span>
+                        <span>श्लोक २</span>
+                    </a>
+                </li>
+                
+            </ul>
+        </nav>
     </div>
 </section>
 
-<section
-    class="
-        section
-        content-card-section
-        pb-0
-    "
-    oncopy="return false" oncut="return false" onpaste="return false"
->
-    <div class="container">
-        <div class="card has-glow-md">
-            <div class="card-content">
-                <div class="content is-medium">
-                    <h5 class="has-text-centered ">
-                        अध्याय २ - श्लोक २
-                        
-                    </h5>
-                    
-                    <hr/>
-
-                    
-                        
-                            <div
-                                
-                                    class="mb-5"
-                                
-                            >
-                                
-                                    <p class="has-text-centered has-text-weight-bold mb-1">
+<section class="section pt-0 pb-0">
+    <div class="columns is-multiline is-centered is-variable is-4">
+        <div
+            class="column is-full-tablet is-full-desktop is-full-widescreen is-full-fullhd is-flex animatedParent animateOnce">
+            <div class="card card-horizontal is-flex-grow-1 animated fadeInUpShort">
+                <div class="card-content p-2 pt-4 pb-4">
+                    <div class="columns is-multiline is-variable m-0">
+                        <div class="column">
+                            <div class="content is-medium m-0">
+                                <div class="">
+                                    
+                                    
                                         
-                                            श्री भगवानुवाच
+                                            <div
+                                                
+                                                    class="mb-5"
+                                                
+                                            >
+                                                
+                                                    <p class="has-text-centered has-text-weight-bold mb-1">
+                                                        
+                                                            श्रीभगवानुवाच
+                                                        
+                                                    </p>
+                                                
+                                                    <p class="has-text-centered has-text-weight-bold mb-1">
+                                                        
+                                                            कुतस्त्वा कश्मलमिदं विषमे समुपस्थितम् ।
+                                                        
+                                                    </p>
+                                                
+                                                    <p class="has-text-centered has-text-weight-bold mb-1">
+                                                        
+                                                            अनार्यजुष्टमस्वर्ग्यकीर्तिकरमर्जुन ॥ २ ॥
+                                                        
+                                                    </p>
+                                                
+                                            </div>
                                         
-                                    </p>
-                                
-                                    <p class="has-text-centered has-text-weight-bold mb-1">
+                                    
+                                    
+                                    
                                         
-                                            कुतस्त्वा कश्मलमिदं विषमे समुपस्थितम् ।
+                                            <div
+                                                
+                                                    class="mb-3"
+                                                
+                                            >
+                                                
+                                                    <p class="has-text-centered has-text-weight-bold">
+                                                        
+                                                            शब्दार्थ
+                                                        
+                                                    </p>
+                                                
+                                            </div>
                                         
-                                    </p>
-                                
-                                    <p class="has-text-centered has-text-weight-bold mb-1">
+                                    
+                                    
+                                    
                                         
-                                            अनार्यजुष्टमस्वर्ग्यकीर्तिकरमर्जुन ॥ २ ॥
+                                            <div
+                                                
+                                                    class="mb-5"
+                                                
+                                            >
+                                                
+                                                    <p class="has-text-justified">
+                                                        
+                                                            <strong>श्री-भगवान्  उवाच</strong> – भगवान् ने कहा; <strong>कुतः</strong> – कहाँ से; <strong>त्वा</strong> – तुमको; <strong>कश्मलम्</strong> – गंदगी,  अज्ञान; <strong>इदम्</strong> – यह शोक; <strong>विषमे</strong> – इस विषम अवसर पर; <strong>समुपस्थितम्</strong> – प्राप्त  हुआ; <strong>अनार्य</strong> – वे लोग जो जीवन के मूल्य को नहीं समझते; <strong>जुष्टम्</strong> – आचरित; <strong>अस्वर्ग्यम्</strong> – उच्च लोकों को जो न ले जाने वाला; <strong>अकीर्ति</strong> – अपयश का; <strong>करम्</strong> – कारण; <strong>अर्जुन</strong> – हे अर्जुन |
+                                                        
+                                                    </p>
+                                                
+                                            </div>
                                         
-                                    </p>
-                                
+                                    
+                                    
+                                    
+                                        
+                                            <div
+                                                
+                                                    class="mb-3"
+                                                
+                                            >
+                                                
+                                                    <p class="has-text-centered has-text-weight-bold">
+                                                        
+                                                            भावार्थ
+                                                        
+                                                    </p>
+                                                
+                                            </div>
+                                        
+                                    
+                                    
+                                    
+                                        
+                                            <div
+                                                
+                                                    class="mb-5"
+                                                
+                                            >
+                                                
+                                                    <p class="has-text-justified">
+                                                        
+                                                            श्रीभगवान् ने कहा - हे अर्जुन! तुम्हारे मन में यह कल्मष आया कैसे ? यह उस मनुष्य के लिए तनिक भी अनुकूल नहीं है, जो जीवन के मूल्य को जानता हो । इससे उच्चलोक की नहीं अपितु अपयश की प्राप्ति होती है ।
+                                                        
+                                                    </p>
+                                                
+                                            </div>
+                                        
+                                    
+                                    
+                                    
+                                        
+                                            <div
+                                                
+                                                    class="mb-3"
+                                                
+                                            >
+                                                
+                                                    <p class="has-text-centered has-text-weight-bold">
+                                                        
+                                                            तात्पर्य
+                                                        
+                                                    </p>
+                                                
+                                            </div>
+                                        
+                                    
+                                    
+                                    
+                                        
+                                            <div
+                                                
+                                                    class="mb-5"
+                                                
+                                            >
+                                                
+                                                    <p class="has-text-justified">
+                                                        
+                                                            श्रीकृष्ण तथा भगवान् अभिन्न हैं, इसीलिए श्रीकृष्ण को सम्पूर्ण गीता में भगवान् ही कहा गया है । भगवान् परम सत्य की पराकाष्ठा हैं । परम सत्य का बोध ज्ञान की तीन अवस्थाओं में होता है-ब्रह्म या निर्विशेष सर्वव्यापी चेतना, परमात्मा या भगवान् का अन्तर्यामी रूप जो समस्त जीवों के हृदय में है तथा भगवान् या श्रीभगवान् कृष्ण । श्रीमद्भागवत में (१.२.११) परम सत्य की यह धारणा इस प्रकार बताई गई है –
+                                                        
+                                                    </p>
+                                                
+                                            </div>
+                                        
+                                    
+                                    
+                                    
+                                        
+                                            <div
+                                                
+                                                    class="mb-5"
+                                                
+                                            >
+                                                
+                                                    <p class="has-text-centered is-italic mb-1">
+                                                        
+                                                            वदन्ति तत्तत्त्वविदस्तत्त्वं यज्यानमद्वयम् |
+                                                        
+                                                    </p>
+                                                
+                                                    <p class="has-text-centered is-italic mb-1">
+                                                        
+                                                            ब्रह्मेति परमात्मेति भगवानिति शब्द्यते | |
+                                                        
+                                                    </p>
+                                                
+                                            </div>
+                                        
+                                    
+                                    
+                                    
+                                        
+                                            <div
+                                                
+                                                    class="mb-5"
+                                                
+                                            >
+                                                
+                                                    <p class="has-text-justified">
+                                                        
+                                                            “परम सत्य का ज्ञाता परम सत्य का अनुभव ज्ञान की तीन अवस्थाओं में करता है, और ये सब अवस्थाएँ एकरूप हैं । ये ब्रह्म, परमात्मा तथा भगवान् के रूप में व्यक्त की जाती हैं ।”
+                                                        
+                                                    </p>
+                                                
+                                                    <p class="has-text-justified">
+                                                        
+                                                            इन तीन दिव्य पक्षों को सूर्य के दृष्टान्त द्वारा समझाया जा सकता है क्योंकि उसके भी तीन भिन्न-भिन्न पक्ष होते हैं - यथा, धूप (प्रकाश), सूर्य की सतह तथा सूर्यलोक स्वयं । जो सूर्य के प्रकाश का अध्ययन करता है वह नौसिखिया है । जो सूर्य की सतह को समझता है वह कुछ आगे बढ़ा हआ होता है और जो सर्यलोक में प्रवेश कर सकता है वह उच्चतम जानी है । जो नौसिखिया सूर्य प्रकाश - उसकी विश्व व्याप्ति तथा उसकी निर्विशेष प्रकृति के अखण्ड तेज - के ज्ञान से ही तष्ट हो जाता है वह उस व्यक्ति के समान है जो परम सत्य के ब्रह्म रूप को ही समझ सकता है । जो व्यक्ति कुछ अधिक जानकार है वह सूर्य गोले के विषय में जान सकता है जिसकी तुलना परम सत्य के परमात्मा स्वरूप से की जाती है । जो व्यक्ति सूर्यलोक के अन्तर में प्रवेश कर सकता है उसकी तुलना उससे की जाती है जो परम सत्य के साक्षात् रूप की अनुभूति प्राप्त करता है । अत: जिन भक्तों ने परम सत्य के भगवान् स्वरूप का साक्षात्कार किया है वे सर्वोच्च अध्यात्मवादी हैं, यद्यपि परम सत्य के अध्ययन में रत सारे विद्यार्थी एक ही विषय के अध्ययन में लगे हए हैं । सर्य का प्रकाश. सर्य का गोला तथा सूर्यलोक की भीतरी बातें - इन तीनों को एक दूसरे से विलग नहीं किया जा सकता, फिर भी तीनों अवस्थाओं के अध्येता एक ही श्रेणी के नहीं होते ।
+                                                        
+                                                    </p>
+                                                
+                                                    <p class="has-text-justified">
+                                                        
+                                                            संस्कृत शब्द भगवान् की व्याख्या व्यासदेव के पिता पराशर मुनि ने की है । समस्त धन, शक्ति, यश, सौंदर्य, ज्ञान तथा त्याग से युक्त परम पुरुष भगवान् कहलाता है । ऐसे अनेक व्यक्ति हैं जो अत्यन्त धनी हैं, अत्यन्त शक्तिमान हैं, अत्यन्त सुन्दर हैं और अत्यन्त विख्यात, विद्वान् तथा विरक्त भी हैं, किन्तु कोई साधिकार यह नहीं कह सकता कि उसके पास सारा धन, शक्ति आदि है । एकमात्र कृष्ण ही ऐसा दावा कर सकते हैं क्योंकि वे भगवान् हैं । ब्रह्मा, शिव या नारायण सहित कोई भी जीव कृष्ण के समान पूर्ण ऐश्वर्यवान नहीं है । अत: ब्रह्मसंहिता में स्वयं ब्रह्माजी का निर्णय है कि श्रीकृष्ण स्वयं भगवान् हैं । न तो कोई उनके तुल्य है, न उनसे बढ़कर है । वे आदि स्वामी या भगवान् हैं, गोविन्द रूप में जाने जाते हैं और समस्त कारणों के परम कारण हैं –
+                                                        
+                                                    </p>
+                                                
+                                            </div>
+                                        
+                                    
+                                    
+                                    
+                                        
+                                            <div
+                                                
+                                                    class="mb-5"
+                                                
+                                            >
+                                                
+                                                    <p class="has-text-centered is-italic mb-1">
+                                                        
+                                                            ईश्वरः परमः कृष्णः सच्चिदानन्द विग्रहः ।
+                                                        
+                                                    </p>
+                                                
+                                                    <p class="has-text-centered is-italic mb-1">
+                                                        
+                                                            अनादिरादिर्गोविन्दः सर्वकारणकारणम् ॥
+                                                        
+                                                    </p>
+                                                
+                                            </div>
+                                        
+                                    
+                                    
+                                    
+                                        
+                                            <div
+                                                
+                                                    class="mb-5"
+                                                
+                                            >
+                                                
+                                                    <p class="has-text-justified">
+                                                        
+                                                            “ऐसे अनेक पुरुष हैं जो भगवान् के गुणों से युक्त हैं, किन्तु कृष्ण परम हैं क्योंकि उनसे बढ़कर कोई नहीं है । वे परमपुरुष हैं और उनका शरीर सच्चिदानन्दमय है । वे आदि भगवान् गोविन्द हैं और समस्त कारणों के कारण हैं ।” (ब्रह्मसंहिता ५.१)
+                                                        
+                                                    </p>
+                                                
+                                                    <p class="has-text-justified">
+                                                        
+                                                            भागवत में भी भगवान् के नाना अवतारों की सूची है, कृष्ण को आदि भगवान् बताया गया है, जिससे अनेकानेक अवतार तथा ईश्वर विस्तार करते हैं –
+                                                        
+                                                    </p>
+                                                
+                                            </div>
+                                        
+                                    
+                                    
+                                    
+                                        
+                                            <div
+                                                
+                                                    class="mb-5"
+                                                
+                                            >
+                                                
+                                                    <p class="has-text-centered is-italic mb-1">
+                                                        
+                                                            एते चांशकलाः पुंसः कृष्णस्तु भगवान् स्वयम् ।
+                                                        
+                                                    </p>
+                                                
+                                                    <p class="has-text-centered is-italic mb-1">
+                                                        
+                                                            इन्द्रारिव्याकुलं लोकं मृडयन्ति युगे युगे ॥
+                                                        
+                                                    </p>
+                                                
+                                            </div>
+                                        
+                                    
+                                    
+                                    
+                                        
+                                            <div
+                                                
+                                            >
+                                                
+                                                    <p class="has-text-justified">
+                                                        
+                                                            “यहाँ पर वर्णित सारे अवतारों की सूचियाँ या तो भगवान् की अंशकलाओं अथवा पूर्ण कलाओं की हैं, किन्तु कृष्ण तो स्वयं भगवान् हैं ।” (भागवत् १.३.२८)
+                                                        
+                                                    </p>
+                                                
+                                                    <p class="has-text-justified">
+                                                        
+                                                            अतः कृष्ण आदि भगवान्, परम सत्य, परमात्मा तथा निर्विशेष ब्रह्म दोनों के उद्गम है ।
+                                                        
+                                                    </p>
+                                                
+                                                    <p class="has-text-justified">
+                                                        
+                                                            भगवान् की उपस्थिति में अर्जुन द्वारा स्वजनों के लिए शोक करना सर्वथा अशोभनीय है, अत: कृष्ण ने <em>कुत:</em> शब्द से अपना आश्चर्य व्यक्त किया है । <em>आर्य</em> जैसी सभ्य जाति के किसी व्यक्ति से ऐसी मलिनता की उम्मीद नहीं की जाती । <em>आर्य</em> शब्द उन व्यक्तियों पर लागू होता है जो जीवन के मूल्य को जानते हैं और जिनकी सभ्यता आत्म-साक्षात्कार पर निर्भर करती है । देहात्मबुद्धि से प्रेरित मनुष्यों को यह ज्ञान नहीं रहता कि जीवन का उद्देश्य परम सत्य, विष्णु या भगवान् का साक्षात्कार है । वे तो भौतिक जगत के बाह्य स्वरूप से मोहित हो जाते हैं, अत: वे यह नहीं समझ पाते कि मुक्ति क्या है । जिन पुरुषों को भौतिक बन्धन से मुक्ति का कोई ज्ञान नहीं होता वे अनार्य कहलाते हैं । यद्यपि अर्जुन क्षत्रिय था, किन्तु युद्ध से विचलित होकर वह अपने कर्तव्य से च्युत हो रहा था । उसकी यह कायरता अनार्यो के लिए ही शोभा देने वाली हो सकती है । कर्तव्य-पथ से इस प्रकार का विचलन न तो आध्यात्मिक जीवन में प्रगति करने में सहायक बनता है न ही इससे इस संसार में ख्याति प्राप्त की जा सकती है । भगवान् कृष्ण ने अर्जुन द्वारा अपने स्वजनों पर इस प्रकार की करुणा का अनुमोदन नहीं किया ।
+                                                        
+                                                    </p>
+                                                
+                                            </div>
+                                        
+                                    
+                                    
+                                </div>
                             </div>
-                        
-                    
-                        
-                            <div
-                                
-                                    class="mb-3"
-                                
-                            >
-                                
-                                    <p class="has-text-centered has-text-weight-bold">
-                                        
-                                            शब्दार्थ
-                                        
-                                    </p>
-                                
-                            </div>
-                        
-                    
-                        
-                            <div
-                                
-                                    class="mb-5"
-                                
-                            >
-                                
-                                    <p class="has-text-justified">
-                                        
-                                            <strong>श्रीभगवान्  उवाच</strong> – भगवान् ने कहा; <strong>कुतः</strong> – कहाँ से; <strong>त्वा</strong> – तुमको; <strong>कश्मलम्</strong> – गंदगी,  अज्ञान; <strong>इदम्</strong> – यह शोक; <strong>विषमे</strong> – इस विषम अवसर पर; <strong>समुपस्थितम्</strong> – प्राप्त  हुआ; <strong>अनार्य</strong> – वे लोग जो जीवन के मूल्य को नहीं समझते; <strong>जुष्टम्</strong> – आचरित; <strong>अस्वर्ग्यम्</strong> – उच्च लोकों को जो न ले जाने वाला; <strong>अकीर्ति</strong> – अपयश का; <strong>करम्</strong> – कारण; <strong>अर्जुन</strong> – हे अर्जुन |
-                                        
-                                    </p>
-                                
-                            </div>
-                        
-                    
-                        
-                            <div
-                                
-                                    class="mb-3"
-                                
-                            >
-                                
-                                    <p class="has-text-centered has-text-weight-bold">
-                                        
-                                            भावार्थ
-                                        
-                                    </p>
-                                
-                            </div>
-                        
-                    
-                        
-                            <div
-                                
-                                    class="mb-5"
-                                
-                            >
-                                
-                                    <p class="has-text-justified">
-                                        
-                                            श्रीभगवान् ने कहा – हे अर्जुन! तुम्हारे मन में यह कल्मष आया कैसे? यह उस मनुष्य के लिए तनिक भी अनुकूल नहीं है, जो जीवन के मूल्य को जानता हो | इससे उच्चलोक की नहीं अपितु अपयश की प्राप्ति होती है |
-                                        
-                                    </p>
-                                
-                            </div>
-                        
-                    
-                        
-                            <div
-                                
-                                    class="mb-3"
-                                
-                            >
-                                
-                                    <p class="has-text-centered has-text-weight-bold">
-                                        
-                                            तात्पर्य
-                                        
-                                    </p>
-                                
-                            </div>
-                        
-                    
-                        
-                            <div
-                                
-                                    class="mb-5"
-                                
-                            >
-                                
-                                    <p class="has-text-justified">
-                                        
-                                            श्रीकृष्ण तथा भगवान् अभिन्न हैं, इसीलिए श्रीकृष्ण को सम्पूर्ण गीता में भगवान् ही कहा गया है | भगवान् परम सत्य की पराकाष्ठा हैं | परम सत्य का बोध ज्ञान की तीन अवस्थाओं में होता है – ब्रह्म या निर्विशेष सर्वव्यापी चेतना, परमात्मा या भगवान् का अन्तर्यामी रूप जो समस्त जीवों के हृदय में है तथा भगवान् या श्रीभगवान् कृष्ण | श्रीमद्भागवत में (१.२.११) परम सत्य की यह धारणा इस प्रकार बताई गई है –
-                                        
-                                    </p>
-                                
-                            </div>
-                        
-                    
-                        
-                            <div
-                                
-                                    class="mb-5"
-                                
-                            >
-                                
-                                    <p class="has-text-centered is-italic mb-1">
-                                        
-                                            वदन्ति तत्तत्त्वविदस्तत्त्वं यज्यानमद्वयम् |
-                                        
-                                    </p>
-                                
-                                    <p class="has-text-centered is-italic mb-1">
-                                        
-                                            ब्रह्मेति परमात्मेति भगवानिति शब्द्यते ||
-                                        
-                                    </p>
-                                
-                            </div>
-                        
-                    
-                        
-                            <div
-                                
-                                    class="mb-5"
-                                
-                            >
-                                
-                                    <p class="has-text-justified">
-                                        
-                                            "परम सत्य का ज्ञाता परम सत्य का अनुभव ज्ञान की तीन अवस्थाओं में करता है, और ये सब अवस्थाएँ एकरूप हैं | ये ब्रह्म, परमात्मा तथा भगवान् के रूप में व्यक्त की जाती हैं |"
-                                        
-                                    </p>
-                                
-                                    <p class="has-text-justified">
-                                        
-                                            इन तीन दिव्य पक्षों को सूर्य के दृष्टान्त द्वारा समझाया जा सकता है क्योंकि उसके भी तीन भिन्न पक्ष होते हैं – यथा, धूप(प्रकाश), सूर्य की सतह तथा सूर्यलोक स्वयं | जो सूर्य के प्रकाश का अध्ययन करता है वह नौसिखिया है | जो सूर्य की सतह को समझता है वह कुछ आगे बढ़ा हुआ होता है और जो सूर्यलोक में प्रवेश कर सकता है वह उच्चतम ज्ञानी है | जो नौसिखिया सूर्य प्रकाश – उसकी विश्व व्याप्ति तथा उसकी निर्विशेष प्रकृति के अखण्ड तेज – के ज्ञान से ही तुष्ट हो जाता है वह उस व्यक्ति के समान है जो परम सत्य के ब्रह्म रूप को ही समझ सकता है | जो व्यक्ति कुछ अधिक जानकार है वह सूर्य गोले के विषय में जान सकता है जिसकी तुलना परम सत्य के परमात्मा स्वरूप से की जाति है | जो व्यक्ति सूर्यलोक के अन्तर में प्रवेश कर सकता है उसकी तुलना उससे की जाती है जो परम सत्य के साक्षात् रूप की अनुभूति प्राप्त करता है | अतः जिन भक्तों ने परम सत्य के भगवान् स्वरूप का साक्षात्कार किया है वे सर्वोच्च अध्यात्मवादी हैं, यद्यपि परम सत्य के अध्ययन में रत सारे विद्यार्थी एक ही विषय के अध्ययन में लगे हुए हैं | सूर्य का प्रकाश, सूर्य का गोला तथा सूर्यलोक की भीतरी बातें – इन तीनों को एक दूसरे से विलग नहीं किया जा सकता, फिर भी तीनों अवस्थाओं के अध्येता एक ही श्रेणी के नहीं होते |
-                                        
-                                    </p>
-                                
-                                    <p class="has-text-justified">
-                                        
-                                            संस्कृत शब्द भगवान् की व्याख्या व्यासदेव के पिता पराशर मुनि ने की है | समस्त धन, शक्ति, यश, सौंदर्य, ज्ञान तथा त्याग से युक्त परम पुरुष भगवान् कहलाता है | ऐसे अनेक व्यक्ति हैं जो अत्यन्त धनी हैं, अत्यन्त शक्तिमान हैं, अत्यन्त सुन्दर हैं और अत्यन्त विख्यात, विद्वान् तथा विरक्त भी हैं, किन्तु कोई साधिकार यह नहीं कह सकता कि उसके पास सारा धन, शक्ति आदि है | एकमात्र कृष्ण ही ऐसा दावा कर सकते हैं क्योंकि वे भगवान् हैं | ब्रह्मा, शिव या नारायण सहित कोई भी जीव कृष्ण के समान पूर्ण ऐश्वर्यवान नहीं है | अतः ब्रह्मसंहिता में स्वयं ब्रह्माजी का निर्णय है कि श्रीकृष्ण स्वयं भगवान् हैं | न तो कोई उनके तुल्य है, न उनसे बढ़कर है | वे आदि स्वामी या भगवान् हैं, गोविन्द रूप में जाने जाते हैं और समस्त कारणों के परम कारण हैं –
-                                        
-                                    </p>
-                                
-                            </div>
-                        
-                    
-                        
-                            <div
-                                
-                                    class="mb-5"
-                                
-                            >
-                                
-                                    <p class="has-text-centered is-italic mb-1">
-                                        
-                                            ईश्वरः परमः कृष्णः सच्चिदानन्द विग्रहः |
-                                        
-                                    </p>
-                                
-                                    <p class="has-text-centered is-italic mb-1">
-                                        
-                                            अनादिरादिर्गोविन्दः सर्वकारणकारणम् ||
-                                        
-                                    </p>
-                                
-                            </div>
-                        
-                    
-                        
-                            <div
-                                
-                                    class="mb-5"
-                                
-                            >
-                                
-                                    <p class="has-text-justified">
-                                        
-                                            “ऐसे अनेक पुरुष हैं जो भगवान् के गुणों से युक्त हैं, किन्तु कृष्ण परम हैं क्योंकि उनसे बढ़कर कोई नहीं है | वे परमपुरुष हैं और उनका शरीर सच्चिदानन्दमय है | वे आदि भगवान् गोविन्द हैं और समस्त कारणों के कारण हैं |” (ब्रह्मसंहिता ५.१)
-                                        
-                                    </p>
-                                
-                                    <p class="has-text-justified">
-                                        
-                                            भागवत में भी भगवान् के नाना अवतारों की सूची है, कृष्ण को आदि भगवान् बताया गया है, जिससे अनेकानेक अवतार तथा ईश्वर विस्तार करते हैं –
-                                        
-                                    </p>
-                                
-                            </div>
-                        
-                    
-                        
-                            <div
-                                
-                                    class="mb-5"
-                                
-                            >
-                                
-                                    <p class="has-text-centered is-italic mb-1">
-                                        
-                                            एते चांशकलाः पुंसः कृष्णस्तु भगवान् स्वयम् |
-                                        
-                                    </p>
-                                
-                                    <p class="has-text-centered is-italic mb-1">
-                                        
-                                            इन्द्रारिव्याकुलं लोकं मृडयन्ति युगे युगे ||
-                                        
-                                    </p>
-                                
-                            </div>
-                        
-                    
-                        
-                            <div
-                                
-                            >
-                                
-                                    <p class="has-text-justified">
-                                        
-                                            “यहाँ पर वर्णित सारे अवतारों की सूचियाँ या तो भगवान् की अंशकलाओं अथवा पूर्ण कलाओं की हैं, किन्तु कृष्ण तो स्वयं भगवान् हैं |” (भागवत् १.३.२८)
-                                        
-                                    </p>
-                                
-                                    <p class="has-text-justified">
-                                        
-                                            अतः कृष्ण आदि भगवान्, परम सत्य, परमात्मा तथा निर्विशेष ब्रह्म दोनों के उद्गम है |
-                                        
-                                    </p>
-                                
-                                    <p class="has-text-justified">
-                                        
-                                            भगवान् की उपस्थिति में अर्जुन द्वारा स्वजनों के लिए शोक करना सर्वथा अशोभनीय है, अतः कृष्ण ने कुतः शब्द से अपना आश्चर्य व्यक्त किया है | आर्य जैसी सभ्य जाति के किसी व्यक्ति से ऐसी मलिनता की उम्मीद नहीं की जाती | आर्य शब्द उन व्यक्तियों पर लागू होता है जो जीवन के मूल्य को जानते हैं और जिनकी सभ्यता आत्म-साक्षात्कार पर निर्भर करती है | देहात्मबुद्धि से प्रेरित मनुष्यों को यह ज्ञान नहीं रहता कि जीवन का उद्देश्य परम सत्य, विष्णु या भगवान् का साक्षात्कार है | वे तो भौतिक जगत के बाह्य स्वरूप से मोहित हो जाते हैं, अतः वे यह नहीं समझ पाते कि मुक्ति क्या है | जिन पुरुषों को भौतिक बन्धन से मुक्ति का कोई ज्ञान नहीं होता वे अनार्य कहलाते हैं | यद्यपि अर्जुन क्षत्रिय था, किन्तु युद्ध से विचलित होकर वह अपने कर्तव्य से च्युत हो रहा था | उसकी यह कायरता अनार्यों के लिए ही शोभा देने वाली हो सकती है | कर्तव्य-पथ से इस प्रकार का विचलन न तो आध्यात्मिक जीवन की प्रगति करने में सहायक बनता है न ही इससे संसार में ख्याति प्राप्त की जा सकती है | भगवान् कृष्ण ने अर्जुन द्वारा अपने स्वजनों पर इस प्रकार की करुणा का अनुमोदन नहीं किया |
-                                        
-                                    </p>
-                                
-                            </div>
-                        
-                    
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -455,163 +453,169 @@
 </section>
 
 
-    <section class="section pt-0">
-        <div class="container mt-6">
-            <div class="pagination-container">
-    <nav class="pagination is-centered" role="navigation" aria-label="pagination">
-        
-        <!-- previous page button -->
-        <a
-            class="pagination-previous pagination-button button is-orange is-outlined"
-            
-                href="/bhagavad-gita-hindi/2/1/"
-            
-        >
-            पिछला श्लोक
-        </a>
-
-        <!-- next page button -->
-        <a
-            class="pagination-next pagination-button button is-orange is-outlined"
-            
-                href="/bhagavad-gita-hindi/2/3/"
-            
-        >
-        अगला श्लोक
-        </a>
-
-        <ul class="pagination-list">
-            
-            
-                <li>
-                    <a
-                        class="pagination-link"
-                        
-                            href="/bhagavad-gita-hindi/2/1/"
-                        
-                    >
-                        1
-                    </a>
-                </li>
+<section class="section animatedParent animateOnce pb-0">
+    <div class="box glass animated fadeInUpShort">
+        <nav class="pagination is-centered" role="navigation" aria-label="pagination">
+            <!-- previous page button -->
+            <a
+                class="button is-outlined is-warning pagination-previous pagination-button button is-orange is-outlined"
                 
+                    href="/bhagavad-gita-hindi/2/1/"
                 
-            
-            
-            
-            
-            <li>
-                <a
-                    class="pagination-link is-current"
-                    aria-current="page"
-                    disabled
-                >
-                    2
-                </a>
-            </li>
-            
+            >
+                पिछला श्लोक
+            </a>
 
-            
-            
+            <!-- next page button -->
+            <!-- <a
+                class="button is-outlined is-warning pagination-next pagination-button button is-orange is-outlined"
+                
+                    href="/bhagavad-gita-hindi/2/3/"
+                
+            >
+            अगला श्लोक -->
+            </a>
+
+            <ul class="pagination-list">
+                
                 
                     <li>
                         <a
-                            class="pagination-link"
-                            href="/bhagavad-gita-hindi/2/3/"
+                            class="button is-outlined is-warning pagination-link"
+                            
+                                href="/bhagavad-gita-hindi/2/1/"
+                            
                         >
-                            3
+                            1
                         </a>
                     </li>
                     
-                        <li>
-                            <span class="pagination-ellipsis">…</span>
-                        </li>
                     
+                
+                
                 
                 
                 <li>
                     <a
-                        class="pagination-link"
-                        
-                            href="/bhagavad-gita-hindi/2/72/"
-                        
+                        class="button is-outlined is-warning pagination-link is-current" tabindex="-1"
+                        aria-current="page"
+                        disabled
                     >
-                        72
+                        2
                     </a>
                 </li>
-            
-            
-        </ul>
-    </nav>
-</div>
-        </div>
-    </section>
+                
 
-
-<section class="section pt-0">
-    <div class="container">
-        <article class="message is-warning is-small">
-            <div class="message-body has-text-centered">
-                <p class="mb-3">The BBT was established in 1972 by His Divine Grace A.C. Bhaktivedanta Swami Prabhupada, Founder-Acharya of the International Society for Krishna Consciousness. BBT is the publisher for his books. All material used here belongs to and copyrighted under BBT (Bhaktivedanta Book Trust).</p>
-
-                <p class="mb-3">🙏 Please consider buying books. Below is a beautiful message by Srila Prabhupada 🙏</p>
-
-                <p class="is-italic mb-3">“I specifically formed the BBT to invest in it exclusive rights for the printing of all literature containing my teachings, writings and lectures. In this way the collections are to be divided fifty percent for printing new books and fifty percent for construction of temples.”</p>
-            </div>
-        </article>
-    </div>
-</section>
-
-<section class="hero is-light is-small">
-    <div class="hero-body">
-        <div class="container">
-            <nav class="breadcrumb is-centered" aria-label="breadcrumbs">
-                <ul>
+                
+                
                     
-                        <li >
-                            <a class="is-link has-text-orange" href="/">
-                                <span class="icon is-small">
-                                    <i class="fas fa-home" aria-hidden="true"></i>
-                                </span>
-                                <span>Home</span>
+                        <li>
+                            <a
+                                class="button is-outlined is-warning pagination-link"
+                                href="/bhagavad-gita-hindi/2/3/"
+                            >
+                                3
                             </a>
                         </li>
+                        
+                            <li>
+                                <span class="pagination-ellipsis">…</span>
+                            </li>
+                        
                     
-                        <li >
-                            <a class="is-link has-text-orange" href="/bhagavad-gita-hindi/">
-                                <span class="icon is-small">
-                                    <i class="fas fa-book" aria-hidden="true"></i>
-                                </span>
-                                <span>श्रीमद्भगवद्गीता - यथारूप (हिंदी)</span>
-                            </a>
-                        </li>
                     
-                        <li >
-                            <a class="is-link has-text-orange" href="/bhagavad-gita-hindi/2/">
-                                <span class="icon is-small">
-                                    <i class="fas fa-file-alt" aria-hidden="true"></i>
-                                </span>
-                                <span>अध्याय २ - सांख्ययोग</span>
-                            </a>
-                        </li>
-                    
-                        <li class="is-active">
-                            <a  href="">
-                                <span class="icon is-small">
-                                    <i class="fas fa-quote-right" aria-hidden="true"></i>
-                                </span>
-                                <span>श्लोक २</span>
-                            </a>
-                        </li>
-                    
-                </ul>
-            </nav>
-        </div>
+                    <li>
+                        <a
+                            class="button is-outlined is-warning pagination-link"
+                            
+                                href="/bhagavad-gita-hindi/2/72/"
+                            
+                        >
+                            72
+                        </a>
+                    </li>
+                
+                
+            </ul>
+
+            <!-- next page button -->
+            <a
+                class="button is-outlined is-warning pagination-next pagination-button button is-orange is-outlined"
+                
+                    href="/bhagavad-gita-hindi/2/3/"
+                
+            >
+            अगला श्लोक
+            </a>
+        </nav>
     </div>
 </section>
 
 
+<section class="section animatedParent animateOnce">
+    <div class="box glass animated fadeInUpShort">
+        <nav class="breadcrumb is-medium is-centered" aria-label="breadcrumbs">
+            <ul>
+                
+                <li >
+                    <a class="is-link has-text-orange" href="/">
+                        <span class="icon is-small">
+                            <i class="fas fa-home" aria-hidden="true"></i>
+                        </span>
+                        <span>Home</span>
+                    </a>
+                </li>
+                
+                <li >
+                    <a class="is-link has-text-orange" href="/bhagavad-gita-hindi/">
+                        <span class="icon is-small">
+                            <i class="fas fa-book" aria-hidden="true"></i>
+                        </span>
+                        <span>श्रीमद्भगवद्गीता</span>
+                    </a>
+                </li>
+                
+                <li >
+                    <a class="is-link has-text-orange" href="/bhagavad-gita-hindi/2/">
+                        <span class="icon is-small">
+                            <i class="fas fa-file-alt" aria-hidden="true"></i>
+                        </span>
+                        <span>अध्याय २ - सांख्ययोग</span>
+                    </a>
+                </li>
+                
+                <li class="is-active">
+                    <a tabindex="-1" href="">
+                        <span class="icon is-small">
+                            <i class="fas fa-quote-right" aria-hidden="true"></i>
+                        </span>
+                        <span>श्लोक २</span>
+                    </a>
+                </li>
+                
+            </ul>
+        </nav>
+    </div>
+</section>
 
-    <footer class="footer bg-gradient-light-orange pt-5 pb-5">
+<section class="section pt-0 animatedParent animateOnce">
+    <article class="box message is-warning is-small p-0 animated fadeInUpShort">
+        <div class="message-header is-justify-content-center">
+            <p>Copyright Notice</p>
+        </div>
+        <div class="message-body has-text-centered">
+            <p class="mb-3">The BBT was established in 1972 by His Divine Grace A.C. Bhaktivedanta Swami Prabhupada, Founder-Acharya of the International Society for Krishna Consciousness. BBT is the publisher for his books. All material used here belongs to and copyrighted under BBT (Bhaktivedanta Book Trust).</p>
+    
+            <p class="is-italic mb-3">“I specifically formed the BBT to invest in it exclusive rights for the printing of all literature containing my teachings, writings and lectures. In this way the collections are to be divided fifty percent for printing new books and fifty percent for construction of temples.”</p>
+
+            <p>- A.C. Bhaktivedanta Swami Prabhupada</p>
+        </div>
+    </article>
+</section>
+
+
+
+    <!-- <footer class="footer bg-gradient-light-orange pt-5 pb-5">
     <div class="container">
         <div class="content">
             <div class="columns is-multiline is-centered">
@@ -634,7 +638,51 @@
             </div>
         </div>
     </div>
+</footer> -->
+
+<footer class="footer p-0">
+    <section class="section">
+        <div class="footer-container">
+            <div class="animatedParent animateOnce">
+                <div class="content-w-image is-flex is-centered-mobile">
+                    <figure class="image is-64x64 m-0 animated fadeInUpShort">
+                        <img src="https://www.ancientknowledge.in/static/images/logo.png">
+                    </figure>
+                    <div class="content m-0 is-flex is-flex-direction-column is-justify-content-space-between animated fadeInUpShort">
+                        <h4 class="mt-0">Ancient Knowledge</h4>
+                        <p class="is-centered-mobile">
+                            <a href="https://www.ancientknowledge.in/about/" class="no-decoration">
+                                <span>About</span>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="animatedParent animateOnce">
+                <div class="content animated fadeInUpShort">
+                    <h4 class="is-centered-mobile m-0 mb-4 animated fadeInUpShort delay-500">@PraacheenGyaan</h4>
+                    <p class="has-text-centered is-flex is-justify-content-space-between animatedParent animateOnce">
+                        <a class="box icon facebook is-large fa-2x mb-0 animated growIn delay-500" href="https://www.facebook.com/PraacheenGyaan/" target="_blank">
+                            <i class="fab fa-facebook-square has-text-white"></i>
+                        </a>
+
+                        <a class="box icon instagram is-large fa-2x mb-0 animated growIn delay-1000" href="https://www.instagram.com/PraacheenGyaan/" target="_blank">
+                            <i class="fab fa-instagram-square has-text-white"></i>
+                        </a>
+
+                        <a class="box icon twitter is-large fa-2x mb-0 animated growIn delay-1500" href="https://twitter.com/PraacheenGyaan/" target="_blank">
+                            <i class="fab fa-twitter-square has-text-white"></i>
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
 </footer>
+
+    <script src="https://www.ancientknowledge.in/static/js/jquery.min.js"></script>
+    <script src="https://www.ancientknowledge.in/static/js/script.js"></script>
+    <script src="https://www.ancientknowledge.in/static/js/css3-animate-it.js"></script>
 
     
 </body>

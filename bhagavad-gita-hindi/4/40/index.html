@@ -14,7 +14,7 @@
 
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#ffffff" />
+    <meta name="theme-color" content="#ff902b" />
 
     <!-- Begin SEO tags -->
     <title>Ancient Knowledge | Bhagavad Gita | Hindi</title>
@@ -24,280 +24,266 @@
     <meta property="og:title" content="Ancient Knowledge | Bhagavad Gita | Hindi" />
     <meta property="og:description" content="Read Shrimad Bhagavad Gita - Yatharoop in hindi. श्रीमद्भगवद्गीता - यथारूप हिंदी में पढ़ें। अध्याय ४ - श्लोक ४०" />
     <meta property="og:url" content="https://www.ancientknowledge.in" />
-    <meta property="og:image" content="https://www.ancientknowledge.in/static/images/bhagavad-gita-cover-16by9.jpg" />
+    <meta property="og:image" content="https://www.ancientknowledge.in/static/images/bhagavad-gita-cover-4x3.jpg" />
     <meta property="og:type" content="article" />
     
     <meta property="twitter:title" content="Ancient Knowledge | Bhagavad Gita | Hindi" />
     <meta property="twitter:description" content="Read Shrimad Bhagavad Gita - Yatharoop in hindi. श्रीमद्भगवद्गीता - यथारूप हिंदी में पढ़ें। अध्याय ४ - श्लोक ४०" />
-    <meta property="twitter:image" content="https://www.ancientknowledge.in/static/images/bhagavad-gita-cover-16by9.jpg" />
+    <meta property="twitter:image" content="https://www.ancientknowledge.in/static/images/bhagavad-gita-cover-4x3.jpg" />
     <!-- End SEO tags -->
 
-    <link rel="stylesheet" href="https://www.ancientknowledge.in/static/css/theme.css" />
-    <link rel="stylesheet" href="https://www.ancientknowledge.in/static/css/theme-custom.css" />
+    <!-- <link rel="stylesheet" href="https://www.ancientknowledge.in/static/css/theme-old.css" /> -->
+    <!-- <link rel="stylesheet" href="https://www.ancientknowledge.in/static/css/switch-control.min.css" /> -->
+    <!-- <link rel="stylesheet" href="https://www.ancientknowledge.in/static/css/theme-custom.css" /> -->
     
     <link rel="icon" href="https://www.ancientknowledge.in/static/images/favicon.ico">
-    <link rel="shortcut icon" type="image/png" href="https://www.ancientknowledge.in/static/images/favicon.png" />
+    <link rel="shortcut icon" type="image/png" href="https://www.ancientknowledge.in/static/images/logo.png" />
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.0/dist/alpine.min.js" defer></script>
     
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-social@1/bin/bulma-social.min.css" />
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" /> -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-social@1/bin/bulma-social.min.css" /> -->
+
+    <link rel="stylesheet" href="https://www.ancientknowledge.in/static/css/bulma.min.css">
+    <link rel="stylesheet" href="https://www.ancientknowledge.in/static/css/theme.css">
+    <link rel="stylesheet" href="https://www.ancientknowledge.in/static/css/animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 
-<body>
-    <nav class="navbar is-warning bg-gradient-light-orange" x-data="{ openNav: false }">
-    <div class="container">
-        <div class="navbar-brand">
-            <a href="https://www.ancientknowledge.in" class="navbar-item">
-                <p class="has-text-weight-normal has-text-orange">
-                    <span>📖</span>
-                    <span class="pl-2">Ancient Knowledge</span>
-                </p>
+<body class="dark-modes">
+    <nav class="navbar is-light glass" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+        <a class="navbar-item pl-4" href="https://www.ancientknowledge.in">
+            <img src="https://www.ancientknowledge.in/static/images/logo.png" width="28" height="28">
+            <span class="pl-4">
+                Ancient Knowledge
+            </span>
+        </a>
+
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+            data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+    </div>
+
+    <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+            <a class="navbar-item" href="https://www.ancientknowledge.in/about/">
+                About
             </a>
-            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navMenu"
-                :class="{ 'is-active': openNav }" x-on:click="openNav = !openNav">
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-            </a>
-        </div>
-        <div class="navbar-menu" id="navMenu" :class="{ 'is-active': openNav }">
-            <div class="navbar-end">
-                <a href="https://www.ancientknowledge.in/about/" class="navbar-item has-text-weight-normal has-text-orange">About</a>
-            </div>
         </div>
     </div>
 </nav>
 
     
-    <section class="hero is-small is-bold is-dark bg-gradient-orange">
-    <div class="hero-body">
-        <div class="container has-text-centered p-5">
-            <h4 class="title is-4">श्रीमद्भगवद्गीता - यथारूप (हिंदी)</h4>
-        </div>
-    </div>
-</section>
-    
-
-    <div class="content is-centered has-text-centered" style="display: none;">
-        <h1>Ancient Knowledge</h1>
-        <h2>Recollecting the lost knowledge</h2>
-        <h3>Ancient Knowledge | Bhagavad Gita | Hindi</h3>
-        <p>Read Shrimad Bhagavad Gita - Yatharoop in hindi. श्रीमद्भगवद्गीता - यथारूप हिंदी में पढ़ें। अध्याय ४ - श्लोक ४०</p>
-        <div class="tags is-centered">
-            
-                <span class="tag">Ancient</span>
-            
-                <span class="tag">Knowledge</span>
-            
-                <span class="tag">India</span>
-            
-                <span class="tag">Shrimad</span>
-            
-                <span class="tag">Bhagavad</span>
-            
-                <span class="tag">Gita</span>
-            
-                <span class="tag">Yatharoop</span>
-            
-                <span class="tag">As It Is</span>
-            
-                <span class="tag">Mahabharat</span>
-            
-                <span class="tag">Krishna</span>
-            
-                <span class="tag">Prabhupad</span>
-            
-                <span class="tag">Hindi</span>
-            
-        </div>
-    </div>
 
     
 
-<section class="hero is-light is-small">
-    <div class="hero-body">
-        <div class="container">
-            <nav class="breadcrumb is-centered" aria-label="breadcrumbs">
-                <ul>
-                    
-                        <li >
-                            <a class="is-link has-text-orange" href="/">
-                                <span class="icon is-small">
-                                    <i class="fas fa-home" aria-hidden="true"></i>
-                                </span>
-                                <span>Home</span>
-                            </a>
-                        </li>
-                    
-                        <li >
-                            <a class="is-link has-text-orange" href="/bhagavad-gita-hindi/">
-                                <span class="icon is-small">
-                                    <i class="fas fa-book" aria-hidden="true"></i>
-                                </span>
-                                <span>श्रीमद्भगवद्गीता - यथारूप (हिंदी)</span>
-                            </a>
-                        </li>
-                    
-                        <li >
-                            <a class="is-link has-text-orange" href="/bhagavad-gita-hindi/4/">
-                                <span class="icon is-small">
-                                    <i class="fas fa-file-alt" aria-hidden="true"></i>
-                                </span>
-                                <span>अध्याय ४ - ज्ञानकर्मसन्यासयोग</span>
-                            </a>
-                        </li>
-                    
-                        <li class="is-active">
-                            <a  href="">
-                                <span class="icon is-small">
-                                    <i class="fas fa-quote-right" aria-hidden="true"></i>
-                                </span>
-                                <span>श्लोक ४०</span>
-                            </a>
-                        </li>
-                    
-                </ul>
-            </nav>
-        </div>
+<!-- Margin top behind navbar -->
+<div class="mt-6"></div>
+
+<style>
+    :root {
+        --page-background-image: url(/static/images/bhagavad-gita-cover-4x3.jpg);
+    }
+</style>
+<div class="image-background"></div>
+
+<section class="section animatedParent animateOnce">
+    <div class="box glass animated fadeInUpShort">
+        <nav class="breadcrumb is-medium is-centered" aria-label="breadcrumbs">
+            <ul>
+                
+                <li >
+                    <a class="is-link has-text-orange" href="/">
+                        <span class="icon is-small">
+                            <i class="fas fa-home" aria-hidden="true"></i>
+                        </span>
+                        <span>Home</span>
+                    </a>
+                </li>
+                
+                <li >
+                    <a class="is-link has-text-orange" href="/bhagavad-gita-hindi/">
+                        <span class="icon is-small">
+                            <i class="fas fa-book" aria-hidden="true"></i>
+                        </span>
+                        <span>श्रीमद्भगवद्गीता</span>
+                    </a>
+                </li>
+                
+                <li >
+                    <a class="is-link has-text-orange" href="/bhagavad-gita-hindi/4/">
+                        <span class="icon is-small">
+                            <i class="fas fa-file-alt" aria-hidden="true"></i>
+                        </span>
+                        <span>अध्याय ४ - ज्ञानकर्मसन्यासयोग</span>
+                    </a>
+                </li>
+                
+                <li class="is-active">
+                    <a tabindex="-1" href="">
+                        <span class="icon is-small">
+                            <i class="fas fa-quote-right" aria-hidden="true"></i>
+                        </span>
+                        <span>श्लोक ४०</span>
+                    </a>
+                </li>
+                
+            </ul>
+        </nav>
     </div>
 </section>
 
-<section
-    class="
-        section
-        content-card-section
-        pb-0
-    "
-    oncopy="return false" oncut="return false" onpaste="return false"
->
-    <div class="container">
-        <div class="card has-glow-md">
-            <div class="card-content">
-                <div class="content is-medium">
-                    <h5 class="has-text-centered ">
-                        अध्याय ४ - श्लोक ४०
-                        
-                    </h5>
-                    
-                    <hr/>
-
-                    
-                        
-                            <div
-                                
-                                    class="mb-5"
-                                
-                            >
-                                
-                                    <p class="has-text-centered has-text-weight-bold mb-1">
+<section class="section pt-0 pb-0">
+    <div class="columns is-multiline is-centered is-variable is-4">
+        <div
+            class="column is-full-tablet is-full-desktop is-full-widescreen is-full-fullhd is-flex animatedParent animateOnce">
+            <div class="card card-horizontal is-flex-grow-1 animated fadeInUpShort">
+                <div class="card-content p-2 pt-4 pb-4">
+                    <div class="columns is-multiline is-variable m-0">
+                        <div class="column">
+                            <div class="content is-medium m-0">
+                                <div class="">
+                                    
+                                    
                                         
-                                            अज्ञश्चाश्रद्दधानश्च संशयात्मा विनश्यति ।
+                                            <div
+                                                
+                                                    class="mb-5"
+                                                
+                                            >
+                                                
+                                                    <p class="has-text-centered has-text-weight-bold mb-1">
+                                                        
+                                                            अज्ञश्चाश्रद्दधानश्च संशयात्मा विनश्यति ।
+                                                        
+                                                    </p>
+                                                
+                                                    <p class="has-text-centered has-text-weight-bold mb-1">
+                                                        
+                                                            नायं लोकोऽस्ति न परो न सुखं संशयात्मनः ॥ ४० ॥
+                                                        
+                                                    </p>
+                                                
+                                            </div>
                                         
-                                    </p>
-                                
-                                    <p class="has-text-centered has-text-weight-bold mb-1">
+                                    
+                                    
+                                    
                                         
-                                            नायं लोकोऽस्ति न परो न सुखं संशयात्मनः ॥ ४० ॥
+                                            <div
+                                                
+                                                    class="mb-3"
+                                                
+                                            >
+                                                
+                                                    <p class="has-text-centered has-text-weight-bold">
+                                                        
+                                                            शब्दार्थ
+                                                        
+                                                    </p>
+                                                
+                                            </div>
                                         
-                                    </p>
-                                
+                                    
+                                    
+                                    
+                                        
+                                            <div
+                                                
+                                                    class="mb-5"
+                                                
+                                            >
+                                                
+                                                    <p class="has-text-justified">
+                                                        
+                                                            <strong>अज्ञः</strong> – मुर्ख, जिसे शास्त्रों का ज्ञान नहीं  है; <strong>च</strong> – तथा; <strong>अश्रद्द धानः</strong> – शास्त्रों में श्रद्धा से विहीन; <strong>च</strong> – भी; <strong>संशय</strong> – शंकाग्रस्त; <strong>आत्मा</strong> – व्यक्ति; <strong>विनश्यति</strong> – गिर जाता है; <strong>न</strong> – न; <strong>अयम्</strong> – इस; <strong>लोकः</strong> – जगत में; <strong>अस्ति</strong> – है; <strong>न</strong> – न तो; <strong>परः</strong> – अगले जीवन में; <strong>न</strong> – नहीं; <strong>सुखम्</strong> – सुख; <strong>संशय</strong> – संशयग्रस्त; <strong>आत्मनः</strong> – व्यक्ति के लिए |
+                                                        
+                                                    </p>
+                                                
+                                            </div>
+                                        
+                                    
+                                    
+                                    
+                                        
+                                            <div
+                                                
+                                                    class="mb-3"
+                                                
+                                            >
+                                                
+                                                    <p class="has-text-centered has-text-weight-bold">
+                                                        
+                                                            भावार्थ
+                                                        
+                                                    </p>
+                                                
+                                            </div>
+                                        
+                                    
+                                    
+                                    
+                                        
+                                            <div
+                                                
+                                                    class="mb-5"
+                                                
+                                            >
+                                                
+                                                    <p class="has-text-justified">
+                                                        
+                                                            किन्तु जो अज्ञानी तथा श्रद्धाविहीन व्यक्ति शास्त्रों में संदेह करते हैं, वे भगवद्भावनामृत नहीं प्राप्त करते, अपितु नीचे गिर जाते है | संशयात्मा के लिए न तो इस लोक में, न ही परलोक में कोई सुख है |
+                                                        
+                                                    </p>
+                                                
+                                            </div>
+                                        
+                                    
+                                    
+                                    
+                                        
+                                            <div
+                                                
+                                                    class="mb-3"
+                                                
+                                            >
+                                                
+                                                    <p class="has-text-centered has-text-weight-bold">
+                                                        
+                                                            तात्पर्य
+                                                        
+                                                    </p>
+                                                
+                                            </div>
+                                        
+                                    
+                                    
+                                    
+                                        
+                                            <div
+                                                
+                                            >
+                                                
+                                                    <p class="has-text-justified">
+                                                        
+                                                            भगवद्गीता सभी प्रामाणिक एवं मान्य शास्त्रों में सर्वोत्तम है | जो लोग पशुतुल्य हैं उनमें न तो प्रामाणिक शास्त्रों के प्रति कोई श्रद्धा है और न उनका ज्ञान होता है और कुछ लोगों को यद्यपि उनका ज्ञान होता है और उनमें से वे उद्धरण देते रहते हैं, किन्तु उनमें वास्तविक विश्वास नहीं करते | यहाँ तक कि कुछ लोग जिनमें भगवद्गीता जैसे शास्त्रों में श्रद्धा होती भी है फिर भी वे न तो भगवान् कृष्ण में विश्वास करते हैं, न उनकी पूजा करते हैं | ऐसे लोगों को कृष्णभावनामृत का कोई ज्ञान नहीं होता | वे नीचे गिरते हैं | उपर्युक्त सभी कोटि के व्यक्तियों में जो श्रद्धालु नहीं हैं और सदैव संशयग्रस्त रहते हैं, वे तनिक भी उन्नति नहीं कर पाते | जो लोग ईश्वर तथा उनके वचनों में श्रद्धा नहीं रखते उन्हें न तो इस संसार में न तो भावी लोक में कुछ हाथ लगता है | उनके लिए किसी भी प्रकार का सुख नहीं है | अतः मनुष्य को चाहिए कि श्रद्धाभाव से शास्त्रों के सिद्धान्तों का पालन करे और ज्ञान प्राप्त करे | इसी ज्ञान से मनुष्य आध्यात्मिक अनुभूति के दिव्य पद तक पहुँच सकता है | दूसरे शब्दों में, आध्यात्मिक उत्थान में संशयग्रस्त मनुष्यों को कोई स्थान नहीं मिलता | अतः मनुष्य को चाहिए कि परम्परा से चले आ रहे महान आचार्यों के पदचिन्हों का अनुसरण करे और सफलता प्राप्त करे |
+                                                        
+                                                    </p>
+                                                
+                                            </div>
+                                        
+                                    
+                                    
+                                </div>
                             </div>
-                        
-                    
-                        
-                            <div
-                                
-                                    class="mb-3"
-                                
-                            >
-                                
-                                    <p class="has-text-centered has-text-weight-bold">
-                                        
-                                            शब्दार्थ
-                                        
-                                    </p>
-                                
-                            </div>
-                        
-                    
-                        
-                            <div
-                                
-                                    class="mb-5"
-                                
-                            >
-                                
-                                    <p class="has-text-justified">
-                                        
-                                            <strong>अज्ञः</strong> – मुर्ख, जिसे शास्त्रों का ज्ञान नहीं  है; <strong>च</strong> – तथा; <strong>अश्रद्द धानः</strong> – शास्त्रों में श्रद्धा से विहीन; <strong>च</strong> – भी; <strong>संशय</strong> – शंकाग्रस्त; <strong>आत्मा</strong> – व्यक्ति; <strong>विनश्यति</strong> – गिर जाता है; <strong>न</strong> – न; <strong>अयम्</strong> – इस; <strong>लोकः</strong> – जगत में; <strong>अस्ति</strong> – है; <strong>न</strong> – न तो; <strong>परः</strong> – अगले जीवन में; <strong>न</strong> – नहीं; <strong>सुखम्</strong> – सुख; <strong>संशय</strong> – संशयग्रस्त; <strong>आत्मनः</strong> – व्यक्ति के लिए |
-                                        
-                                    </p>
-                                
-                            </div>
-                        
-                    
-                        
-                            <div
-                                
-                                    class="mb-3"
-                                
-                            >
-                                
-                                    <p class="has-text-centered has-text-weight-bold">
-                                        
-                                            भावार्थ
-                                        
-                                    </p>
-                                
-                            </div>
-                        
-                    
-                        
-                            <div
-                                
-                                    class="mb-5"
-                                
-                            >
-                                
-                                    <p class="has-text-justified">
-                                        
-                                            किन्तु जो अज्ञानी तथा श्रद्धाविहीन व्यक्ति शास्त्रों में संदेह करते हैं, वे भगवद्भावनामृत नहीं प्राप्त करते, अपितु नीचे गिर जाते है | संशयात्मा के लिए न तो इस लोक में, न ही परलोक में कोई सुख है |
-                                        
-                                    </p>
-                                
-                            </div>
-                        
-                    
-                        
-                            <div
-                                
-                                    class="mb-3"
-                                
-                            >
-                                
-                                    <p class="has-text-centered has-text-weight-bold">
-                                        
-                                            तात्पर्य
-                                        
-                                    </p>
-                                
-                            </div>
-                        
-                    
-                        
-                            <div
-                                
-                            >
-                                
-                                    <p class="has-text-justified">
-                                        
-                                            भगवद्गीता सभी प्रामाणिक एवं मान्य शास्त्रों में सर्वोत्तम है | जो लोग पशुतुल्य हैं उनमें न तो प्रामाणिक शास्त्रों के प्रति कोई श्रद्धा है और न उनका ज्ञान होता है और कुछ लोगों को यद्यपि उनका ज्ञान होता है और उनमें से वे उद्धरण देते रहते हैं, किन्तु उनमें वास्तविक विश्वास नहीं करते | यहाँ तक कि कुछ लोग जिनमें भगवद्गीता जैसे शास्त्रों में श्रद्धा होती भी है फिर भी वे न तो भगवान् कृष्ण में विश्वास करते हैं, न उनकी पूजा करते हैं | ऐसे लोगों को कृष्णभावनामृत का कोई ज्ञान नहीं होता | वे नीचे गिरते हैं | उपर्युक्त सभी कोटि के व्यक्तियों में जो श्रद्धालु नहीं हैं और सदैव संशयग्रस्त रहते हैं, वे तनिक भी उन्नति नहीं कर पाते | जो लोग ईश्वर तथा उनके वचनों में श्रद्धा नहीं रखते उन्हें न तो इस संसार में न तो भावी लोक में कुछ हाथ लगता है | उनके लिए किसी भी प्रकार का सुख नहीं है | अतः मनुष्य को चाहिए कि श्रद्धाभाव से शास्त्रों के सिद्धान्तों का पालन करे और ज्ञान प्राप्त करे | इसी ज्ञान से मनुष्य आध्यात्मिक अनुभूति के दिव्य पद तक पहुँच सकता है | दूसरे शब्दों में, आध्यात्मिक उत्थान में संशयग्रस्त मनुष्यों को कोई स्थान नहीं मिलता | अतः मनुष्य को चाहिए कि परम्परा से चले आ रहे महान आचार्यों के पदचिन्हों का अनुसरण करे और सफलता प्राप्त करे |
-                                        
-                                    </p>
-                                
-                            </div>
-                        
-                    
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -305,174 +291,180 @@
 </section>
 
 
-    <section class="section pt-0">
-        <div class="container mt-6">
-            <div class="pagination-container">
-    <nav class="pagination is-centered" role="navigation" aria-label="pagination">
-        
-        <!-- previous page button -->
-        <a
-            class="pagination-previous pagination-button button is-orange is-outlined"
-            
-                href="/bhagavad-gita-hindi/4/39/"
-            
-        >
-            पिछला श्लोक
-        </a>
+<section class="section animatedParent animateOnce pb-0">
+    <div class="box glass animated fadeInUpShort">
+        <nav class="pagination is-centered" role="navigation" aria-label="pagination">
+            <!-- previous page button -->
+            <a
+                class="button is-outlined is-warning pagination-previous pagination-button button is-orange is-outlined"
+                
+                    href="/bhagavad-gita-hindi/4/39/"
+                
+            >
+                पिछला श्लोक
+            </a>
 
-        <!-- next page button -->
-        <a
-            class="pagination-next pagination-button button is-orange is-outlined"
-            
-                href="/bhagavad-gita-hindi/4/41/"
-            
-        >
-        अगला श्लोक
-        </a>
+            <!-- next page button -->
+            <!-- <a
+                class="button is-outlined is-warning pagination-next pagination-button button is-orange is-outlined"
+                
+                    href="/bhagavad-gita-hindi/4/41/"
+                
+            >
+            अगला श्लोक -->
+            </a>
 
-        <ul class="pagination-list">
-            
-            
+            <ul class="pagination-list">
+                
+                
+                    <li>
+                        <a
+                            class="button is-outlined is-warning pagination-link"
+                            
+                                href="/bhagavad-gita-hindi/4/1/"
+                            
+                        >
+                            1
+                        </a>
+                    </li>
+                    
+                    
+                        
+                            <li>
+                                <span class="pagination-ellipsis">…</span>
+                            </li>
+                        
+
+                        <li>
+                            <a
+                                class="button is-outlined is-warning pagination-link"
+                                href="/bhagavad-gita-hindi/4/39/"
+                            >
+                                39
+                            </a>
+                        </li>
+                    
+                
+                
+                
+                
                 <li>
                     <a
-                        class="pagination-link"
-                        
-                            href="/bhagavad-gita-hindi/4/1/"
-                        
+                        class="button is-outlined is-warning pagination-link is-current" tabindex="-1"
+                        aria-current="page"
+                        disabled
                     >
-                        1
+                        40
                     </a>
                 </li>
+                
+
                 
                 
                     
                         <li>
-                            <span class="pagination-ellipsis">…</span>
+                            <a
+                                class="button is-outlined is-warning pagination-link"
+                                href="/bhagavad-gita-hindi/4/41/"
+                            >
+                                41
+                            </a>
                         </li>
+                        
                     
-
+                    
                     <li>
                         <a
-                            class="pagination-link"
-                            href="/bhagavad-gita-hindi/4/39/"
+                            class="button is-outlined is-warning pagination-link"
+                            
+                                href="/bhagavad-gita-hindi/4/42/"
+                            
                         >
-                            39
+                            42
                         </a>
                     </li>
                 
-            
-            
-            
-            
-            <li>
-                <a
-                    class="pagination-link is-current"
-                    aria-current="page"
-                    disabled
-                >
-                    40
-                </a>
-            </li>
-            
+                
+            </ul>
 
-            
-            
+            <!-- next page button -->
+            <a
+                class="button is-outlined is-warning pagination-next pagination-button button is-orange is-outlined"
                 
-                    <li>
-                        <a
-                            class="pagination-link"
-                            href="/bhagavad-gita-hindi/4/41/"
-                        >
-                            41
-                        </a>
-                    </li>
-                    
+                    href="/bhagavad-gita-hindi/4/41/"
                 
+            >
+            अगला श्लोक
+            </a>
+        </nav>
+    </div>
+</section>
+
+
+<section class="section animatedParent animateOnce">
+    <div class="box glass animated fadeInUpShort">
+        <nav class="breadcrumb is-medium is-centered" aria-label="breadcrumbs">
+            <ul>
                 
-                <li>
-                    <a
-                        class="pagination-link"
-                        
-                            href="/bhagavad-gita-hindi/4/42/"
-                        
-                    >
-                        42
+                <li >
+                    <a class="is-link has-text-orange" href="/">
+                        <span class="icon is-small">
+                            <i class="fas fa-home" aria-hidden="true"></i>
+                        </span>
+                        <span>Home</span>
                     </a>
                 </li>
-            
-            
-        </ul>
-    </nav>
-</div>
-        </div>
-    </section>
-
-
-<section class="section pt-0">
-    <div class="container">
-        <article class="message is-warning is-small">
-            <div class="message-body has-text-centered">
-                <p class="mb-3">The BBT was established in 1972 by His Divine Grace A.C. Bhaktivedanta Swami Prabhupada, Founder-Acharya of the International Society for Krishna Consciousness. BBT is the publisher for his books. All material used here belongs to and copyrighted under BBT (Bhaktivedanta Book Trust).</p>
-
-                <p class="mb-3">🙏 Please consider buying books. Below is a beautiful message by Srila Prabhupada 🙏</p>
-
-                <p class="is-italic mb-3">“I specifically formed the BBT to invest in it exclusive rights for the printing of all literature containing my teachings, writings and lectures. In this way the collections are to be divided fifty percent for printing new books and fifty percent for construction of temples.”</p>
-            </div>
-        </article>
+                
+                <li >
+                    <a class="is-link has-text-orange" href="/bhagavad-gita-hindi/">
+                        <span class="icon is-small">
+                            <i class="fas fa-book" aria-hidden="true"></i>
+                        </span>
+                        <span>श्रीमद्भगवद्गीता</span>
+                    </a>
+                </li>
+                
+                <li >
+                    <a class="is-link has-text-orange" href="/bhagavad-gita-hindi/4/">
+                        <span class="icon is-small">
+                            <i class="fas fa-file-alt" aria-hidden="true"></i>
+                        </span>
+                        <span>अध्याय ४ - ज्ञानकर्मसन्यासयोग</span>
+                    </a>
+                </li>
+                
+                <li class="is-active">
+                    <a tabindex="-1" href="">
+                        <span class="icon is-small">
+                            <i class="fas fa-quote-right" aria-hidden="true"></i>
+                        </span>
+                        <span>श्लोक ४०</span>
+                    </a>
+                </li>
+                
+            </ul>
+        </nav>
     </div>
 </section>
 
-<section class="hero is-light is-small">
-    <div class="hero-body">
-        <div class="container">
-            <nav class="breadcrumb is-centered" aria-label="breadcrumbs">
-                <ul>
-                    
-                        <li >
-                            <a class="is-link has-text-orange" href="/">
-                                <span class="icon is-small">
-                                    <i class="fas fa-home" aria-hidden="true"></i>
-                                </span>
-                                <span>Home</span>
-                            </a>
-                        </li>
-                    
-                        <li >
-                            <a class="is-link has-text-orange" href="/bhagavad-gita-hindi/">
-                                <span class="icon is-small">
-                                    <i class="fas fa-book" aria-hidden="true"></i>
-                                </span>
-                                <span>श्रीमद्भगवद्गीता - यथारूप (हिंदी)</span>
-                            </a>
-                        </li>
-                    
-                        <li >
-                            <a class="is-link has-text-orange" href="/bhagavad-gita-hindi/4/">
-                                <span class="icon is-small">
-                                    <i class="fas fa-file-alt" aria-hidden="true"></i>
-                                </span>
-                                <span>अध्याय ४ - ज्ञानकर्मसन्यासयोग</span>
-                            </a>
-                        </li>
-                    
-                        <li class="is-active">
-                            <a  href="">
-                                <span class="icon is-small">
-                                    <i class="fas fa-quote-right" aria-hidden="true"></i>
-                                </span>
-                                <span>श्लोक ४०</span>
-                            </a>
-                        </li>
-                    
-                </ul>
-            </nav>
+<section class="section pt-0 animatedParent animateOnce">
+    <article class="box message is-warning is-small p-0 animated fadeInUpShort">
+        <div class="message-header is-justify-content-center">
+            <p>Copyright Notice</p>
         </div>
-    </div>
+        <div class="message-body has-text-centered">
+            <p class="mb-3">The BBT was established in 1972 by His Divine Grace A.C. Bhaktivedanta Swami Prabhupada, Founder-Acharya of the International Society for Krishna Consciousness. BBT is the publisher for his books. All material used here belongs to and copyrighted under BBT (Bhaktivedanta Book Trust).</p>
+    
+            <p class="is-italic mb-3">“I specifically formed the BBT to invest in it exclusive rights for the printing of all literature containing my teachings, writings and lectures. In this way the collections are to be divided fifty percent for printing new books and fifty percent for construction of temples.”</p>
+
+            <p>- A.C. Bhaktivedanta Swami Prabhupada</p>
+        </div>
+    </article>
 </section>
 
 
 
-    <footer class="footer bg-gradient-light-orange pt-5 pb-5">
+    <!-- <footer class="footer bg-gradient-light-orange pt-5 pb-5">
     <div class="container">
         <div class="content">
             <div class="columns is-multiline is-centered">
@@ -495,7 +487,51 @@
             </div>
         </div>
     </div>
+</footer> -->
+
+<footer class="footer p-0">
+    <section class="section">
+        <div class="footer-container">
+            <div class="animatedParent animateOnce">
+                <div class="content-w-image is-flex is-centered-mobile">
+                    <figure class="image is-64x64 m-0 animated fadeInUpShort">
+                        <img src="https://www.ancientknowledge.in/static/images/logo.png">
+                    </figure>
+                    <div class="content m-0 is-flex is-flex-direction-column is-justify-content-space-between animated fadeInUpShort">
+                        <h4 class="mt-0">Ancient Knowledge</h4>
+                        <p class="is-centered-mobile">
+                            <a href="https://www.ancientknowledge.in/about/" class="no-decoration">
+                                <span>About</span>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="animatedParent animateOnce">
+                <div class="content animated fadeInUpShort">
+                    <h4 class="is-centered-mobile m-0 mb-4 animated fadeInUpShort delay-500">@PraacheenGyaan</h4>
+                    <p class="has-text-centered is-flex is-justify-content-space-between animatedParent animateOnce">
+                        <a class="box icon facebook is-large fa-2x mb-0 animated growIn delay-500" href="https://www.facebook.com/PraacheenGyaan/" target="_blank">
+                            <i class="fab fa-facebook-square has-text-white"></i>
+                        </a>
+
+                        <a class="box icon instagram is-large fa-2x mb-0 animated growIn delay-1000" href="https://www.instagram.com/PraacheenGyaan/" target="_blank">
+                            <i class="fab fa-instagram-square has-text-white"></i>
+                        </a>
+
+                        <a class="box icon twitter is-large fa-2x mb-0 animated growIn delay-1500" href="https://twitter.com/PraacheenGyaan/" target="_blank">
+                            <i class="fab fa-twitter-square has-text-white"></i>
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
 </footer>
+
+    <script src="https://www.ancientknowledge.in/static/js/jquery.min.js"></script>
+    <script src="https://www.ancientknowledge.in/static/js/script.js"></script>
+    <script src="https://www.ancientknowledge.in/static/js/css3-animate-it.js"></script>
 
     
 </body>

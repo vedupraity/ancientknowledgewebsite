@@ -14,7 +14,7 @@
 
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#ffffff" />
+    <meta name="theme-color" content="#ff902b" />
 
     <!-- Begin SEO tags -->
     <title>Ancient Knowledge | Bhagavad Gita | Hindi</title>
@@ -24,280 +24,266 @@
     <meta property="og:title" content="Ancient Knowledge | Bhagavad Gita | Hindi" />
     <meta property="og:description" content="Read Shrimad Bhagavad Gita - Yatharoop in hindi. श्रीमद्भगवद्गीता - यथारूप हिंदी में पढ़ें। अध्याय ९ - श्लोक १०" />
     <meta property="og:url" content="https://www.ancientknowledge.in" />
-    <meta property="og:image" content="https://www.ancientknowledge.in/static/images/bhagavad-gita-cover-16by9.jpg" />
+    <meta property="og:image" content="https://www.ancientknowledge.in/static/images/bhagavad-gita-cover-4x3.jpg" />
     <meta property="og:type" content="article" />
     
     <meta property="twitter:title" content="Ancient Knowledge | Bhagavad Gita | Hindi" />
     <meta property="twitter:description" content="Read Shrimad Bhagavad Gita - Yatharoop in hindi. श्रीमद्भगवद्गीता - यथारूप हिंदी में पढ़ें। अध्याय ९ - श्लोक १०" />
-    <meta property="twitter:image" content="https://www.ancientknowledge.in/static/images/bhagavad-gita-cover-16by9.jpg" />
+    <meta property="twitter:image" content="https://www.ancientknowledge.in/static/images/bhagavad-gita-cover-4x3.jpg" />
     <!-- End SEO tags -->
 
-    <link rel="stylesheet" href="https://www.ancientknowledge.in/static/css/theme.css" />
-    <link rel="stylesheet" href="https://www.ancientknowledge.in/static/css/theme-custom.css" />
+    <!-- <link rel="stylesheet" href="https://www.ancientknowledge.in/static/css/theme-old.css" /> -->
+    <!-- <link rel="stylesheet" href="https://www.ancientknowledge.in/static/css/switch-control.min.css" /> -->
+    <!-- <link rel="stylesheet" href="https://www.ancientknowledge.in/static/css/theme-custom.css" /> -->
     
     <link rel="icon" href="https://www.ancientknowledge.in/static/images/favicon.ico">
-    <link rel="shortcut icon" type="image/png" href="https://www.ancientknowledge.in/static/images/favicon.png" />
+    <link rel="shortcut icon" type="image/png" href="https://www.ancientknowledge.in/static/images/logo.png" />
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.0/dist/alpine.min.js" defer></script>
     
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-social@1/bin/bulma-social.min.css" />
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" /> -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-social@1/bin/bulma-social.min.css" /> -->
+
+    <link rel="stylesheet" href="https://www.ancientknowledge.in/static/css/bulma.min.css">
+    <link rel="stylesheet" href="https://www.ancientknowledge.in/static/css/theme.css">
+    <link rel="stylesheet" href="https://www.ancientknowledge.in/static/css/animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 
-<body>
-    <nav class="navbar is-warning bg-gradient-light-orange" x-data="{ openNav: false }">
-    <div class="container">
-        <div class="navbar-brand">
-            <a href="https://www.ancientknowledge.in" class="navbar-item">
-                <p class="has-text-weight-normal has-text-orange">
-                    <span>📖</span>
-                    <span class="pl-2">Ancient Knowledge</span>
-                </p>
+<body class="dark-modes">
+    <nav class="navbar is-light glass" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+        <a class="navbar-item pl-4" href="https://www.ancientknowledge.in">
+            <img src="https://www.ancientknowledge.in/static/images/logo.png" width="28" height="28">
+            <span class="pl-4">
+                Ancient Knowledge
+            </span>
+        </a>
+
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+            data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+    </div>
+
+    <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+            <a class="navbar-item" href="https://www.ancientknowledge.in/about/">
+                About
             </a>
-            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navMenu"
-                :class="{ 'is-active': openNav }" x-on:click="openNav = !openNav">
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-            </a>
-        </div>
-        <div class="navbar-menu" id="navMenu" :class="{ 'is-active': openNav }">
-            <div class="navbar-end">
-                <a href="https://www.ancientknowledge.in/about/" class="navbar-item has-text-weight-normal has-text-orange">About</a>
-            </div>
         </div>
     </div>
 </nav>
 
     
-    <section class="hero is-small is-bold is-dark bg-gradient-orange">
-    <div class="hero-body">
-        <div class="container has-text-centered p-5">
-            <h4 class="title is-4">श्रीमद्भगवद्गीता - यथारूप (हिंदी)</h4>
-        </div>
-    </div>
-</section>
-    
-
-    <div class="content is-centered has-text-centered" style="display: none;">
-        <h1>Ancient Knowledge</h1>
-        <h2>Recollecting the lost knowledge</h2>
-        <h3>Ancient Knowledge | Bhagavad Gita | Hindi</h3>
-        <p>Read Shrimad Bhagavad Gita - Yatharoop in hindi. श्रीमद्भगवद्गीता - यथारूप हिंदी में पढ़ें। अध्याय ९ - श्लोक १०</p>
-        <div class="tags is-centered">
-            
-                <span class="tag">Ancient</span>
-            
-                <span class="tag">Knowledge</span>
-            
-                <span class="tag">India</span>
-            
-                <span class="tag">Shrimad</span>
-            
-                <span class="tag">Bhagavad</span>
-            
-                <span class="tag">Gita</span>
-            
-                <span class="tag">Yatharoop</span>
-            
-                <span class="tag">As It Is</span>
-            
-                <span class="tag">Mahabharat</span>
-            
-                <span class="tag">Krishna</span>
-            
-                <span class="tag">Prabhupad</span>
-            
-                <span class="tag">Hindi</span>
-            
-        </div>
-    </div>
 
     
 
-<section class="hero is-light is-small">
-    <div class="hero-body">
-        <div class="container">
-            <nav class="breadcrumb is-centered" aria-label="breadcrumbs">
-                <ul>
-                    
-                        <li >
-                            <a class="is-link has-text-orange" href="/">
-                                <span class="icon is-small">
-                                    <i class="fas fa-home" aria-hidden="true"></i>
-                                </span>
-                                <span>Home</span>
-                            </a>
-                        </li>
-                    
-                        <li >
-                            <a class="is-link has-text-orange" href="/bhagavad-gita-hindi/">
-                                <span class="icon is-small">
-                                    <i class="fas fa-book" aria-hidden="true"></i>
-                                </span>
-                                <span>श्रीमद्भगवद्गीता - यथारूप (हिंदी)</span>
-                            </a>
-                        </li>
-                    
-                        <li >
-                            <a class="is-link has-text-orange" href="/bhagavad-gita-hindi/9/">
-                                <span class="icon is-small">
-                                    <i class="fas fa-file-alt" aria-hidden="true"></i>
-                                </span>
-                                <span>अध्याय ९ - राजविद्याराजगुह्ययोग</span>
-                            </a>
-                        </li>
-                    
-                        <li class="is-active">
-                            <a  href="">
-                                <span class="icon is-small">
-                                    <i class="fas fa-quote-right" aria-hidden="true"></i>
-                                </span>
-                                <span>श्लोक १०</span>
-                            </a>
-                        </li>
-                    
-                </ul>
-            </nav>
-        </div>
+<!-- Margin top behind navbar -->
+<div class="mt-6"></div>
+
+<style>
+    :root {
+        --page-background-image: url(/static/images/bhagavad-gita-cover-4x3.jpg);
+    }
+</style>
+<div class="image-background"></div>
+
+<section class="section animatedParent animateOnce">
+    <div class="box glass animated fadeInUpShort">
+        <nav class="breadcrumb is-medium is-centered" aria-label="breadcrumbs">
+            <ul>
+                
+                <li >
+                    <a class="is-link has-text-orange" href="/">
+                        <span class="icon is-small">
+                            <i class="fas fa-home" aria-hidden="true"></i>
+                        </span>
+                        <span>Home</span>
+                    </a>
+                </li>
+                
+                <li >
+                    <a class="is-link has-text-orange" href="/bhagavad-gita-hindi/">
+                        <span class="icon is-small">
+                            <i class="fas fa-book" aria-hidden="true"></i>
+                        </span>
+                        <span>श्रीमद्भगवद्गीता</span>
+                    </a>
+                </li>
+                
+                <li >
+                    <a class="is-link has-text-orange" href="/bhagavad-gita-hindi/9/">
+                        <span class="icon is-small">
+                            <i class="fas fa-file-alt" aria-hidden="true"></i>
+                        </span>
+                        <span>अध्याय ९ - राजविद्याराजगुह्ययोग</span>
+                    </a>
+                </li>
+                
+                <li class="is-active">
+                    <a tabindex="-1" href="">
+                        <span class="icon is-small">
+                            <i class="fas fa-quote-right" aria-hidden="true"></i>
+                        </span>
+                        <span>श्लोक १०</span>
+                    </a>
+                </li>
+                
+            </ul>
+        </nav>
     </div>
 </section>
 
-<section
-    class="
-        section
-        content-card-section
-        pb-0
-    "
-    oncopy="return false" oncut="return false" onpaste="return false"
->
-    <div class="container">
-        <div class="card has-glow-md">
-            <div class="card-content">
-                <div class="content is-medium">
-                    <h5 class="has-text-centered ">
-                        अध्याय ९ - श्लोक १०
-                        
-                    </h5>
-                    
-                    <hr/>
-
-                    
-                        
-                            <div
-                                
-                                    class="mb-5"
-                                
-                            >
-                                
-                                    <p class="has-text-centered has-text-weight-bold mb-1">
+<section class="section pt-0 pb-0">
+    <div class="columns is-multiline is-centered is-variable is-4">
+        <div
+            class="column is-full-tablet is-full-desktop is-full-widescreen is-full-fullhd is-flex animatedParent animateOnce">
+            <div class="card card-horizontal is-flex-grow-1 animated fadeInUpShort">
+                <div class="card-content p-2 pt-4 pb-4">
+                    <div class="columns is-multiline is-variable m-0">
+                        <div class="column">
+                            <div class="content is-medium m-0">
+                                <div class="">
+                                    
+                                    
                                         
-                                            मयाध्यक्षेण प्रकृतिः सूयते सचराचरम् ।
+                                            <div
+                                                
+                                                    class="mb-5"
+                                                
+                                            >
+                                                
+                                                    <p class="has-text-centered has-text-weight-bold mb-1">
+                                                        
+                                                            मयाध्यक्षेण प्रकृतिः सूयते सचराचरम् ।
+                                                        
+                                                    </p>
+                                                
+                                                    <p class="has-text-centered has-text-weight-bold mb-1">
+                                                        
+                                                            हेतुनानेन कौन्तेय जगद्विपरिवर्तते ॥ १० ॥
+                                                        
+                                                    </p>
+                                                
+                                            </div>
                                         
-                                    </p>
-                                
-                                    <p class="has-text-centered has-text-weight-bold mb-1">
+                                    
+                                    
+                                    
                                         
-                                            हेतुनानेन कौन्तेय जगद्विपरिवर्तते ॥ १० ॥
+                                            <div
+                                                
+                                                    class="mb-3"
+                                                
+                                            >
+                                                
+                                                    <p class="has-text-centered has-text-weight-bold">
+                                                        
+                                                            शब्दार्थ
+                                                        
+                                                    </p>
+                                                
+                                            </div>
                                         
-                                    </p>
-                                
+                                    
+                                    
+                                    
+                                        
+                                            <div
+                                                
+                                                    class="mb-5"
+                                                
+                                            >
+                                                
+                                                    <p class="has-text-justified">
+                                                        
+                                                            <strong>मया</strong> – मेरे द्वारा; <strong>अध्यक्षेण</strong> – अध्यक्षता के कारण; <strong>प्रकृतिः</strong> – प्रकृति; <strong>सूयते</strong> – प्रकट होती है; <strong>स</strong> – सहित; <strong>चर-अचरम्</strong> – जड़ तथा जंगम; <strong>हेतुना</strong> – कारण से; <strong>अनेन</strong> – इस; <strong>कौन्तेय</strong> – हे कुन्तीपुत्र; <strong>जगत्</strong> – दृश्य जगत; <strong>विपरिवर्तते</strong> – क्रियाशील है |
+                                                        
+                                                    </p>
+                                                
+                                            </div>
+                                        
+                                    
+                                    
+                                    
+                                        
+                                            <div
+                                                
+                                                    class="mb-3"
+                                                
+                                            >
+                                                
+                                                    <p class="has-text-centered has-text-weight-bold">
+                                                        
+                                                            भावार्थ
+                                                        
+                                                    </p>
+                                                
+                                            </div>
+                                        
+                                    
+                                    
+                                    
+                                        
+                                            <div
+                                                
+                                                    class="mb-5"
+                                                
+                                            >
+                                                
+                                                    <p class="has-text-justified">
+                                                        
+                                                            हे कुन्तीपुत्र! यह भौतिक प्रकृति मेरी शक्तियों में से एक है और मेरी अध्यक्षता में कार्य करती है, जिससे सारे चर तथा अचर प्राणी उत्पन्न होते हैं | इसके शासन में यह जगत् बारम्बार सृजित और विनष्ट होता रहता है |
+                                                        
+                                                    </p>
+                                                
+                                            </div>
+                                        
+                                    
+                                    
+                                    
+                                        
+                                            <div
+                                                
+                                                    class="mb-3"
+                                                
+                                            >
+                                                
+                                                    <p class="has-text-centered has-text-weight-bold">
+                                                        
+                                                            तात्पर्य
+                                                        
+                                                    </p>
+                                                
+                                            </div>
+                                        
+                                    
+                                    
+                                    
+                                        
+                                            <div
+                                                
+                                            >
+                                                
+                                                    <p class="has-text-justified">
+                                                        
+                                                            यहाँ यह स्पष्ट कहा गया है कि यद्यपि परमेश्वर इस जगत् के समस्त कार्यों से पृथक् रहते हैं, किन्तु इसके परम अध्यक्ष (निर्देशक) वही बने रहते हैं | परमेश्वर परम इच्छामय हैं और इस भौतिक जगत् के आधारभूमिस्वरूप हैं, किन्तु इसकी सभी व्यवस्था प्रकृति द्वारा की जाती है | भगवद्गीता में भी कृष्ण यह कहते हैं – “मैं विभिन्न योनियों और रूपों वाले जीवों का पिता हूँ |” जिस प्रकार पिता बालक उत्पन्न करने के लिए माता के गर्भ में वीर्य स्थापित करता है, उसी प्रकार परमेश्वर अपनी चितवन मात्र से प्रकति के गर्भ में जीवों को प्रविष्ट करते हैं और वे अपनी अन्तिम इच्छाओं तथा कर्मों के अनुसार विभिन्न रूपों तथा योनियों में प्रकट होते हैं | अतः भगवान् इस जगत् से प्रत्यक्ष रूप में आसक्त नहीं होते | वे प्रकृति पर दृष्टिपात करते हैं, इस तरह प्रकृति क्रियाशील हो उठती है और तुरन्त ही सारी वस्तुएँ उत्पन्न हो जाती हैं | चूँकि वे प्रकृति पर दृष्टिपात करते हैं, इसलिए परमेश्वर की ओर से तो निःसन्देह क्रिया होती है, किन्तु भौतिक जगत् के प्राकट्य से उन्हें कुछ लेना-देना नहीं रहता | स्मृति में एक उदाहरण मिला है जो इस प्रकार है – जब किसी व्यक्ति के समक्ष फूल होता है तो उसे उसकी सुगन्धि मिलती रहती है, किन्तु फूल और सुगन्धि एक दूसरे से विलग रहते हैं | ऐसा ही सम्बन्ध भौतिक जगत् तथा भगवान् के बीच भी है | वस्तुतः भगवान् को इस जगत् से कोई प्रयोजन नहीं रहता, किन्तु वे ही इसे अपनी दृष्टिपात से उत्पन्न करते तथा व्यवस्थित करते हैं | सारांश के रूप में हम कह सकते हैं कि परमेश्वर की अध्यक्षता के बिना प्रकृति कुछ भी नहीं कर सकती | तो भी भगवान् समस्त कार्यों से पृथक् रहते हैं |
+                                                        
+                                                    </p>
+                                                
+                                            </div>
+                                        
+                                    
+                                    
+                                </div>
                             </div>
-                        
-                    
-                        
-                            <div
-                                
-                                    class="mb-3"
-                                
-                            >
-                                
-                                    <p class="has-text-centered has-text-weight-bold">
-                                        
-                                            शब्दार्थ
-                                        
-                                    </p>
-                                
-                            </div>
-                        
-                    
-                        
-                            <div
-                                
-                                    class="mb-5"
-                                
-                            >
-                                
-                                    <p class="has-text-justified">
-                                        
-                                            <strong>मया</strong> – मेरे द्वारा; <strong>अध्यक्षेण</strong> – अध्यक्षता के कारण; <strong>प्रकृतिः</strong> – प्रकृति; <strong>सूयते</strong> – प्रकट होती है; <strong>स</strong> – सहित; <strong>चर-अचरम्</strong> – जड़ तथा जंगम; <strong>हेतुना</strong> – कारण से; <strong>अनेन</strong> – इस; <strong>कौन्तेय</strong> – हे कुन्तीपुत्र; <strong>जगत्</strong> – दृश्य जगत; <strong>विपरिवर्तते</strong> – क्रियाशील है |
-                                        
-                                    </p>
-                                
-                            </div>
-                        
-                    
-                        
-                            <div
-                                
-                                    class="mb-3"
-                                
-                            >
-                                
-                                    <p class="has-text-centered has-text-weight-bold">
-                                        
-                                            भावार्थ
-                                        
-                                    </p>
-                                
-                            </div>
-                        
-                    
-                        
-                            <div
-                                
-                                    class="mb-5"
-                                
-                            >
-                                
-                                    <p class="has-text-justified">
-                                        
-                                            हे कुन्तीपुत्र! यह भौतिक प्रकृति मेरी शक्तियों में से एक है और मेरी अध्यक्षता में कार्य करती है, जिससे सारे चर तथा अचर प्राणी उत्पन्न होते हैं | इसके शासन में यह जगत् बारम्बार सृजित और विनष्ट होता रहता है |
-                                        
-                                    </p>
-                                
-                            </div>
-                        
-                    
-                        
-                            <div
-                                
-                                    class="mb-3"
-                                
-                            >
-                                
-                                    <p class="has-text-centered has-text-weight-bold">
-                                        
-                                            तात्पर्य
-                                        
-                                    </p>
-                                
-                            </div>
-                        
-                    
-                        
-                            <div
-                                
-                            >
-                                
-                                    <p class="has-text-justified">
-                                        
-                                            यहाँ यह स्पष्ट कहा गया है कि यद्यपि परमेश्वर इस जगत् के समस्त कार्यों से पृथक् रहते हैं, किन्तु इसके परम अध्यक्ष (निर्देशक) वही बने रहते हैं | परमेश्वर परम इच्छामय हैं और इस भौतिक जगत् के आधारभूमिस्वरूप हैं, किन्तु इसकी सभी व्यवस्था प्रकृति द्वारा की जाती है | भगवद्गीता में भी कृष्ण यह कहते हैं – “मैं विभिन्न योनियों और रूपों वाले जीवों का पिता हूँ |” जिस प्रकार पिता बालक उत्पन्न करने के लिए माता के गर्भ में वीर्य स्थापित करता है, उसी प्रकार परमेश्वर अपनी चितवन मात्र से प्रकति के गर्भ में जीवों को प्रविष्ट करते हैं और वे अपनी अन्तिम इच्छाओं तथा कर्मों के अनुसार विभिन्न रूपों तथा योनियों में प्रकट होते हैं | अतः भगवान् इस जगत् से प्रत्यक्ष रूप में आसक्त नहीं होते | वे प्रकृति पर दृष्टिपात करते हैं, इस तरह प्रकृति क्रियाशील हो उठती है और तुरन्त ही सारी वस्तुएँ उत्पन्न हो जाती हैं | चूँकि वे प्रकृति पर दृष्टिपात करते हैं, इसलिए परमेश्वर की ओर से तो निःसन्देह क्रिया होती है, किन्तु भौतिक जगत् के प्राकट्य से उन्हें कुछ लेना-देना नहीं रहता | स्मृति में एक उदाहरण मिला है जो इस प्रकार है – जब किसी व्यक्ति के समक्ष फूल होता है तो उसे उसकी सुगन्धि मिलती रहती है, किन्तु फूल और सुगन्धि एक दूसरे से विलग रहते हैं | ऐसा ही सम्बन्ध भौतिक जगत् तथा भगवान् के बीच भी है | वस्तुतः भगवान् को इस जगत् से कोई प्रयोजन नहीं रहता, किन्तु वे ही इसे अपनी दृष्टिपात से उत्पन्न करते तथा व्यवस्थित करते हैं | सारांश के रूप में हम कह सकते हैं कि परमेश्वर की अध्यक्षता के बिना प्रकृति कुछ भी नहीं कर सकती | तो भी भगवान् समस्त कार्यों से पृथक् रहते हैं |
-                                        
-                                    </p>
-                                
-                            </div>
-                        
-                    
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -305,178 +291,184 @@
 </section>
 
 
-    <section class="section pt-0">
-        <div class="container mt-6">
-            <div class="pagination-container">
-    <nav class="pagination is-centered" role="navigation" aria-label="pagination">
-        
-        <!-- previous page button -->
-        <a
-            class="pagination-previous pagination-button button is-orange is-outlined"
-            
-                href="/bhagavad-gita-hindi/9/9/"
-            
-        >
-            पिछला श्लोक
-        </a>
-
-        <!-- next page button -->
-        <a
-            class="pagination-next pagination-button button is-orange is-outlined"
-            
-                href="/bhagavad-gita-hindi/9/11/"
-            
-        >
-        अगला श्लोक
-        </a>
-
-        <ul class="pagination-list">
-            
-            
-                <li>
-                    <a
-                        class="pagination-link"
-                        
-                            href="/bhagavad-gita-hindi/9/1/"
-                        
-                    >
-                        1
-                    </a>
-                </li>
+<section class="section animatedParent animateOnce pb-0">
+    <div class="box glass animated fadeInUpShort">
+        <nav class="pagination is-centered" role="navigation" aria-label="pagination">
+            <!-- previous page button -->
+            <a
+                class="button is-outlined is-warning pagination-previous pagination-button button is-orange is-outlined"
                 
+                    href="/bhagavad-gita-hindi/9/9/"
                 
-                    
-                        <li>
-                            <span class="pagination-ellipsis">…</span>
-                        </li>
-                    
+            >
+                पिछला श्लोक
+            </a>
 
-                    <li>
-                        <a
-                            class="pagination-link"
-                            href="/bhagavad-gita-hindi/9/9/"
-                        >
-                            9
-                        </a>
-                    </li>
+            <!-- next page button -->
+            <!-- <a
+                class="button is-outlined is-warning pagination-next pagination-button button is-orange is-outlined"
                 
-            
-            
-            
-            
-            <li>
-                <a
-                    class="pagination-link is-current"
-                    aria-current="page"
-                    disabled
-                >
-                    10
-                </a>
-            </li>
-            
+                    href="/bhagavad-gita-hindi/9/11/"
+                
+            >
+            अगला श्लोक -->
+            </a>
 
-            
-            
+            <ul class="pagination-list">
+                
                 
                     <li>
                         <a
-                            class="pagination-link"
-                            href="/bhagavad-gita-hindi/9/11/"
+                            class="button is-outlined is-warning pagination-link"
+                            
+                                href="/bhagavad-gita-hindi/9/1/"
+                            
                         >
-                            11
+                            1
                         </a>
                     </li>
                     
+                    
+                        
+                            <li>
+                                <span class="pagination-ellipsis">…</span>
+                            </li>
+                        
+
                         <li>
-                            <span class="pagination-ellipsis">…</span>
+                            <a
+                                class="button is-outlined is-warning pagination-link"
+                                href="/bhagavad-gita-hindi/9/9/"
+                            >
+                                9
+                            </a>
                         </li>
                     
+                
+                
                 
                 
                 <li>
                     <a
-                        class="pagination-link"
-                        
-                            href="/bhagavad-gita-hindi/9/34/"
-                        
+                        class="button is-outlined is-warning pagination-link is-current" tabindex="-1"
+                        aria-current="page"
+                        disabled
                     >
-                        34
+                        10
                     </a>
                 </li>
-            
-            
-        </ul>
-    </nav>
-</div>
-        </div>
-    </section>
+                
 
-
-<section class="section pt-0">
-    <div class="container">
-        <article class="message is-warning is-small">
-            <div class="message-body has-text-centered">
-                <p class="mb-3">The BBT was established in 1972 by His Divine Grace A.C. Bhaktivedanta Swami Prabhupada, Founder-Acharya of the International Society for Krishna Consciousness. BBT is the publisher for his books. All material used here belongs to and copyrighted under BBT (Bhaktivedanta Book Trust).</p>
-
-                <p class="mb-3">🙏 Please consider buying books. Below is a beautiful message by Srila Prabhupada 🙏</p>
-
-                <p class="is-italic mb-3">“I specifically formed the BBT to invest in it exclusive rights for the printing of all literature containing my teachings, writings and lectures. In this way the collections are to be divided fifty percent for printing new books and fifty percent for construction of temples.”</p>
-            </div>
-        </article>
-    </div>
-</section>
-
-<section class="hero is-light is-small">
-    <div class="hero-body">
-        <div class="container">
-            <nav class="breadcrumb is-centered" aria-label="breadcrumbs">
-                <ul>
+                
+                
                     
-                        <li >
-                            <a class="is-link has-text-orange" href="/">
-                                <span class="icon is-small">
-                                    <i class="fas fa-home" aria-hidden="true"></i>
-                                </span>
-                                <span>Home</span>
+                        <li>
+                            <a
+                                class="button is-outlined is-warning pagination-link"
+                                href="/bhagavad-gita-hindi/9/11/"
+                            >
+                                11
                             </a>
                         </li>
+                        
+                            <li>
+                                <span class="pagination-ellipsis">…</span>
+                            </li>
+                        
                     
-                        <li >
-                            <a class="is-link has-text-orange" href="/bhagavad-gita-hindi/">
-                                <span class="icon is-small">
-                                    <i class="fas fa-book" aria-hidden="true"></i>
-                                </span>
-                                <span>श्रीमद्भगवद्गीता - यथारूप (हिंदी)</span>
-                            </a>
-                        </li>
                     
-                        <li >
-                            <a class="is-link has-text-orange" href="/bhagavad-gita-hindi/9/">
-                                <span class="icon is-small">
-                                    <i class="fas fa-file-alt" aria-hidden="true"></i>
-                                </span>
-                                <span>अध्याय ९ - राजविद्याराजगुह्ययोग</span>
-                            </a>
-                        </li>
-                    
-                        <li class="is-active">
-                            <a  href="">
-                                <span class="icon is-small">
-                                    <i class="fas fa-quote-right" aria-hidden="true"></i>
-                                </span>
-                                <span>श्लोक १०</span>
-                            </a>
-                        </li>
-                    
-                </ul>
-            </nav>
-        </div>
+                    <li>
+                        <a
+                            class="button is-outlined is-warning pagination-link"
+                            
+                                href="/bhagavad-gita-hindi/9/34/"
+                            
+                        >
+                            34
+                        </a>
+                    </li>
+                
+                
+            </ul>
+
+            <!-- next page button -->
+            <a
+                class="button is-outlined is-warning pagination-next pagination-button button is-orange is-outlined"
+                
+                    href="/bhagavad-gita-hindi/9/11/"
+                
+            >
+            अगला श्लोक
+            </a>
+        </nav>
     </div>
 </section>
 
 
+<section class="section animatedParent animateOnce">
+    <div class="box glass animated fadeInUpShort">
+        <nav class="breadcrumb is-medium is-centered" aria-label="breadcrumbs">
+            <ul>
+                
+                <li >
+                    <a class="is-link has-text-orange" href="/">
+                        <span class="icon is-small">
+                            <i class="fas fa-home" aria-hidden="true"></i>
+                        </span>
+                        <span>Home</span>
+                    </a>
+                </li>
+                
+                <li >
+                    <a class="is-link has-text-orange" href="/bhagavad-gita-hindi/">
+                        <span class="icon is-small">
+                            <i class="fas fa-book" aria-hidden="true"></i>
+                        </span>
+                        <span>श्रीमद्भगवद्गीता</span>
+                    </a>
+                </li>
+                
+                <li >
+                    <a class="is-link has-text-orange" href="/bhagavad-gita-hindi/9/">
+                        <span class="icon is-small">
+                            <i class="fas fa-file-alt" aria-hidden="true"></i>
+                        </span>
+                        <span>अध्याय ९ - राजविद्याराजगुह्ययोग</span>
+                    </a>
+                </li>
+                
+                <li class="is-active">
+                    <a tabindex="-1" href="">
+                        <span class="icon is-small">
+                            <i class="fas fa-quote-right" aria-hidden="true"></i>
+                        </span>
+                        <span>श्लोक १०</span>
+                    </a>
+                </li>
+                
+            </ul>
+        </nav>
+    </div>
+</section>
 
-    <footer class="footer bg-gradient-light-orange pt-5 pb-5">
+<section class="section pt-0 animatedParent animateOnce">
+    <article class="box message is-warning is-small p-0 animated fadeInUpShort">
+        <div class="message-header is-justify-content-center">
+            <p>Copyright Notice</p>
+        </div>
+        <div class="message-body has-text-centered">
+            <p class="mb-3">The BBT was established in 1972 by His Divine Grace A.C. Bhaktivedanta Swami Prabhupada, Founder-Acharya of the International Society for Krishna Consciousness. BBT is the publisher for his books. All material used here belongs to and copyrighted under BBT (Bhaktivedanta Book Trust).</p>
+    
+            <p class="is-italic mb-3">“I specifically formed the BBT to invest in it exclusive rights for the printing of all literature containing my teachings, writings and lectures. In this way the collections are to be divided fifty percent for printing new books and fifty percent for construction of temples.”</p>
+
+            <p>- A.C. Bhaktivedanta Swami Prabhupada</p>
+        </div>
+    </article>
+</section>
+
+
+
+    <!-- <footer class="footer bg-gradient-light-orange pt-5 pb-5">
     <div class="container">
         <div class="content">
             <div class="columns is-multiline is-centered">
@@ -499,7 +491,51 @@
             </div>
         </div>
     </div>
+</footer> -->
+
+<footer class="footer p-0">
+    <section class="section">
+        <div class="footer-container">
+            <div class="animatedParent animateOnce">
+                <div class="content-w-image is-flex is-centered-mobile">
+                    <figure class="image is-64x64 m-0 animated fadeInUpShort">
+                        <img src="https://www.ancientknowledge.in/static/images/logo.png">
+                    </figure>
+                    <div class="content m-0 is-flex is-flex-direction-column is-justify-content-space-between animated fadeInUpShort">
+                        <h4 class="mt-0">Ancient Knowledge</h4>
+                        <p class="is-centered-mobile">
+                            <a href="https://www.ancientknowledge.in/about/" class="no-decoration">
+                                <span>About</span>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="animatedParent animateOnce">
+                <div class="content animated fadeInUpShort">
+                    <h4 class="is-centered-mobile m-0 mb-4 animated fadeInUpShort delay-500">@PraacheenGyaan</h4>
+                    <p class="has-text-centered is-flex is-justify-content-space-between animatedParent animateOnce">
+                        <a class="box icon facebook is-large fa-2x mb-0 animated growIn delay-500" href="https://www.facebook.com/PraacheenGyaan/" target="_blank">
+                            <i class="fab fa-facebook-square has-text-white"></i>
+                        </a>
+
+                        <a class="box icon instagram is-large fa-2x mb-0 animated growIn delay-1000" href="https://www.instagram.com/PraacheenGyaan/" target="_blank">
+                            <i class="fab fa-instagram-square has-text-white"></i>
+                        </a>
+
+                        <a class="box icon twitter is-large fa-2x mb-0 animated growIn delay-1500" href="https://twitter.com/PraacheenGyaan/" target="_blank">
+                            <i class="fab fa-twitter-square has-text-white"></i>
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
 </footer>
+
+    <script src="https://www.ancientknowledge.in/static/js/jquery.min.js"></script>
+    <script src="https://www.ancientknowledge.in/static/js/script.js"></script>
+    <script src="https://www.ancientknowledge.in/static/js/css3-animate-it.js"></script>
 
     
 </body>

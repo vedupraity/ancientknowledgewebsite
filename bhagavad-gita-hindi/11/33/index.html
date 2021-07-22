@@ -14,7 +14,7 @@
 
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#ffffff" />
+    <meta name="theme-color" content="#ff902b" />
 
     <!-- Begin SEO tags -->
     <title>Ancient Knowledge | Bhagavad Gita | Hindi</title>
@@ -24,292 +24,278 @@
     <meta property="og:title" content="Ancient Knowledge | Bhagavad Gita | Hindi" />
     <meta property="og:description" content="Read Shrimad Bhagavad Gita - Yatharoop in hindi. श्रीमद्भगवद्गीता - यथारूप हिंदी में पढ़ें। अध्याय ११ - श्लोक ३३" />
     <meta property="og:url" content="https://www.ancientknowledge.in" />
-    <meta property="og:image" content="https://www.ancientknowledge.in/static/images/bhagavad-gita-cover-16by9.jpg" />
+    <meta property="og:image" content="https://www.ancientknowledge.in/static/images/bhagavad-gita-cover-4x3.jpg" />
     <meta property="og:type" content="article" />
     
     <meta property="twitter:title" content="Ancient Knowledge | Bhagavad Gita | Hindi" />
     <meta property="twitter:description" content="Read Shrimad Bhagavad Gita - Yatharoop in hindi. श्रीमद्भगवद्गीता - यथारूप हिंदी में पढ़ें। अध्याय ११ - श्लोक ३३" />
-    <meta property="twitter:image" content="https://www.ancientknowledge.in/static/images/bhagavad-gita-cover-16by9.jpg" />
+    <meta property="twitter:image" content="https://www.ancientknowledge.in/static/images/bhagavad-gita-cover-4x3.jpg" />
     <!-- End SEO tags -->
 
-    <link rel="stylesheet" href="https://www.ancientknowledge.in/static/css/theme.css" />
-    <link rel="stylesheet" href="https://www.ancientknowledge.in/static/css/theme-custom.css" />
+    <!-- <link rel="stylesheet" href="https://www.ancientknowledge.in/static/css/theme-old.css" /> -->
+    <!-- <link rel="stylesheet" href="https://www.ancientknowledge.in/static/css/switch-control.min.css" /> -->
+    <!-- <link rel="stylesheet" href="https://www.ancientknowledge.in/static/css/theme-custom.css" /> -->
     
     <link rel="icon" href="https://www.ancientknowledge.in/static/images/favicon.ico">
-    <link rel="shortcut icon" type="image/png" href="https://www.ancientknowledge.in/static/images/favicon.png" />
+    <link rel="shortcut icon" type="image/png" href="https://www.ancientknowledge.in/static/images/logo.png" />
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.0/dist/alpine.min.js" defer></script>
     
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-social@1/bin/bulma-social.min.css" />
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" /> -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-social@1/bin/bulma-social.min.css" /> -->
+
+    <link rel="stylesheet" href="https://www.ancientknowledge.in/static/css/bulma.min.css">
+    <link rel="stylesheet" href="https://www.ancientknowledge.in/static/css/theme.css">
+    <link rel="stylesheet" href="https://www.ancientknowledge.in/static/css/animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 
-<body>
-    <nav class="navbar is-warning bg-gradient-light-orange" x-data="{ openNav: false }">
-    <div class="container">
-        <div class="navbar-brand">
-            <a href="https://www.ancientknowledge.in" class="navbar-item">
-                <p class="has-text-weight-normal has-text-orange">
-                    <span>📖</span>
-                    <span class="pl-2">Ancient Knowledge</span>
-                </p>
+<body class="dark-modes">
+    <nav class="navbar is-light glass" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+        <a class="navbar-item pl-4" href="https://www.ancientknowledge.in">
+            <img src="https://www.ancientknowledge.in/static/images/logo.png" width="28" height="28">
+            <span class="pl-4">
+                Ancient Knowledge
+            </span>
+        </a>
+
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+            data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+    </div>
+
+    <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+            <a class="navbar-item" href="https://www.ancientknowledge.in/about/">
+                About
             </a>
-            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navMenu"
-                :class="{ 'is-active': openNav }" x-on:click="openNav = !openNav">
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-            </a>
-        </div>
-        <div class="navbar-menu" id="navMenu" :class="{ 'is-active': openNav }">
-            <div class="navbar-end">
-                <a href="https://www.ancientknowledge.in/about/" class="navbar-item has-text-weight-normal has-text-orange">About</a>
-            </div>
         </div>
     </div>
 </nav>
 
     
-    <section class="hero is-small is-bold is-dark bg-gradient-orange">
-    <div class="hero-body">
-        <div class="container has-text-centered p-5">
-            <h4 class="title is-4">श्रीमद्भगवद्गीता - यथारूप (हिंदी)</h4>
-        </div>
-    </div>
-</section>
-    
-
-    <div class="content is-centered has-text-centered" style="display: none;">
-        <h1>Ancient Knowledge</h1>
-        <h2>Recollecting the lost knowledge</h2>
-        <h3>Ancient Knowledge | Bhagavad Gita | Hindi</h3>
-        <p>Read Shrimad Bhagavad Gita - Yatharoop in hindi. श्रीमद्भगवद्गीता - यथारूप हिंदी में पढ़ें। अध्याय ११ - श्लोक ३३</p>
-        <div class="tags is-centered">
-            
-                <span class="tag">Ancient</span>
-            
-                <span class="tag">Knowledge</span>
-            
-                <span class="tag">India</span>
-            
-                <span class="tag">Shrimad</span>
-            
-                <span class="tag">Bhagavad</span>
-            
-                <span class="tag">Gita</span>
-            
-                <span class="tag">Yatharoop</span>
-            
-                <span class="tag">As It Is</span>
-            
-                <span class="tag">Mahabharat</span>
-            
-                <span class="tag">Krishna</span>
-            
-                <span class="tag">Prabhupad</span>
-            
-                <span class="tag">Hindi</span>
-            
-        </div>
-    </div>
 
     
 
-<section class="hero is-light is-small">
-    <div class="hero-body">
-        <div class="container">
-            <nav class="breadcrumb is-centered" aria-label="breadcrumbs">
-                <ul>
-                    
-                        <li >
-                            <a class="is-link has-text-orange" href="/">
-                                <span class="icon is-small">
-                                    <i class="fas fa-home" aria-hidden="true"></i>
-                                </span>
-                                <span>Home</span>
-                            </a>
-                        </li>
-                    
-                        <li >
-                            <a class="is-link has-text-orange" href="/bhagavad-gita-hindi/">
-                                <span class="icon is-small">
-                                    <i class="fas fa-book" aria-hidden="true"></i>
-                                </span>
-                                <span>श्रीमद्भगवद्गीता - यथारूप (हिंदी)</span>
-                            </a>
-                        </li>
-                    
-                        <li >
-                            <a class="is-link has-text-orange" href="/bhagavad-gita-hindi/11/">
-                                <span class="icon is-small">
-                                    <i class="fas fa-file-alt" aria-hidden="true"></i>
-                                </span>
-                                <span>अध्याय ११ - विश्वरूपदर्शनयोग</span>
-                            </a>
-                        </li>
-                    
-                        <li class="is-active">
-                            <a  href="">
-                                <span class="icon is-small">
-                                    <i class="fas fa-quote-right" aria-hidden="true"></i>
-                                </span>
-                                <span>श्लोक ३३</span>
-                            </a>
-                        </li>
-                    
-                </ul>
-            </nav>
-        </div>
+<!-- Margin top behind navbar -->
+<div class="mt-6"></div>
+
+<style>
+    :root {
+        --page-background-image: url(/static/images/bhagavad-gita-cover-4x3.jpg);
+    }
+</style>
+<div class="image-background"></div>
+
+<section class="section animatedParent animateOnce">
+    <div class="box glass animated fadeInUpShort">
+        <nav class="breadcrumb is-medium is-centered" aria-label="breadcrumbs">
+            <ul>
+                
+                <li >
+                    <a class="is-link has-text-orange" href="/">
+                        <span class="icon is-small">
+                            <i class="fas fa-home" aria-hidden="true"></i>
+                        </span>
+                        <span>Home</span>
+                    </a>
+                </li>
+                
+                <li >
+                    <a class="is-link has-text-orange" href="/bhagavad-gita-hindi/">
+                        <span class="icon is-small">
+                            <i class="fas fa-book" aria-hidden="true"></i>
+                        </span>
+                        <span>श्रीमद्भगवद्गीता</span>
+                    </a>
+                </li>
+                
+                <li >
+                    <a class="is-link has-text-orange" href="/bhagavad-gita-hindi/11/">
+                        <span class="icon is-small">
+                            <i class="fas fa-file-alt" aria-hidden="true"></i>
+                        </span>
+                        <span>अध्याय ११ - विश्वरूपदर्शनयोग</span>
+                    </a>
+                </li>
+                
+                <li class="is-active">
+                    <a tabindex="-1" href="">
+                        <span class="icon is-small">
+                            <i class="fas fa-quote-right" aria-hidden="true"></i>
+                        </span>
+                        <span>श्लोक ३३</span>
+                    </a>
+                </li>
+                
+            </ul>
+        </nav>
     </div>
 </section>
 
-<section
-    class="
-        section
-        content-card-section
-        pb-0
-    "
-    oncopy="return false" oncut="return false" onpaste="return false"
->
-    <div class="container">
-        <div class="card has-glow-md">
-            <div class="card-content">
-                <div class="content is-medium">
-                    <h5 class="has-text-centered ">
-                        अध्याय ११ - श्लोक ३३
-                        
-                    </h5>
-                    
-                    <hr/>
-
-                    
-                        
-                            <div
-                                
-                                    class="mb-5"
-                                
-                            >
-                                
-                                    <p class="has-text-centered has-text-weight-bold mb-1">
+<section class="section pt-0 pb-0">
+    <div class="columns is-multiline is-centered is-variable is-4">
+        <div
+            class="column is-full-tablet is-full-desktop is-full-widescreen is-full-fullhd is-flex animatedParent animateOnce">
+            <div class="card card-horizontal is-flex-grow-1 animated fadeInUpShort">
+                <div class="card-content p-2 pt-4 pb-4">
+                    <div class="columns is-multiline is-variable m-0">
+                        <div class="column">
+                            <div class="content is-medium m-0">
+                                <div class="">
+                                    
+                                    
                                         
-                                            तस्मात्त्वमुत्तिष्ठ यशो लभस्व
+                                            <div
+                                                
+                                                    class="mb-5"
+                                                
+                                            >
+                                                
+                                                    <p class="has-text-centered has-text-weight-bold mb-1">
+                                                        
+                                                            तस्मात्त्वमुत्तिष्ठ यशो लभस्व
+                                                        
+                                                    </p>
+                                                
+                                                    <p class="has-text-centered has-text-weight-bold mb-1">
+                                                        
+                                                            जित्वा शत्रून्भुंक्ष्व राज्यं समृद्धम् ।
+                                                        
+                                                    </p>
+                                                
+                                                    <p class="has-text-centered has-text-weight-bold mb-1">
+                                                        
+                                                            मयैवैते निहताः पूर्वमेव
+                                                        
+                                                    </p>
+                                                
+                                                    <p class="has-text-centered has-text-weight-bold mb-1">
+                                                        
+                                                            निमित्तमात्रं भव सव्यसाचिन् ॥ ३३ ॥
+                                                        
+                                                    </p>
+                                                
+                                            </div>
                                         
-                                    </p>
-                                
-                                    <p class="has-text-centered has-text-weight-bold mb-1">
+                                    
+                                    
+                                    
                                         
-                                            जित्वा शत्रून्भुंक्ष्व राज्यं समृद्धम् ।
+                                            <div
+                                                
+                                                    class="mb-3"
+                                                
+                                            >
+                                                
+                                                    <p class="has-text-centered has-text-weight-bold">
+                                                        
+                                                            शब्दार्थ
+                                                        
+                                                    </p>
+                                                
+                                            </div>
                                         
-                                    </p>
-                                
-                                    <p class="has-text-centered has-text-weight-bold mb-1">
+                                    
+                                    
+                                    
                                         
-                                            मयैवैते निहताः पूर्वमेव
+                                            <div
+                                                
+                                                    class="mb-5"
+                                                
+                                            >
+                                                
+                                                    <p class="has-text-justified">
+                                                        
+                                                            <strong>तस्मात्</strong> – अतएव; <strong>त्वम्</strong> – तुम; <strong>उत्तिष्ट</strong> – उठो; <strong>यशः</strong> – यश; <strong>लभस्व</strong> – प्राप्त करो; <strong>जित्वा</strong> – जीतकर; <strong>शत्रून्</strong> – शत्रुओं को; <strong>भुङ्क्ष्व</strong> – भोग करो; <strong>राज्यम्</strong> – राज्य का; <strong>समृद्धम्</strong> – सम्पन्न; <strong>मया</strong> – मेरे द्वारा; <strong>एव</strong> – निश्चय ही; <strong>एते</strong> – ये सब; <strong>निहताः</strong> – मारे गये; <strong>पूर्वम् एव</strong> – पहलेही; <strong>निमित्त-मात्रम्</strong> – केवल कारण मात्र; <strong>भव</strong> – बनो; <strong>सव्य-साचिन्</strong> – हे सव्यसाची |
+                                                        
+                                                    </p>
+                                                
+                                            </div>
                                         
-                                    </p>
-                                
-                                    <p class="has-text-centered has-text-weight-bold mb-1">
+                                    
+                                    
+                                    
                                         
-                                            निमित्तमात्रं भव सव्यसाचिन् ॥ ३३ ॥
+                                            <div
+                                                
+                                                    class="mb-3"
+                                                
+                                            >
+                                                
+                                                    <p class="has-text-centered has-text-weight-bold">
+                                                        
+                                                            भावार्थ
+                                                        
+                                                    </p>
+                                                
+                                            </div>
                                         
-                                    </p>
-                                
+                                    
+                                    
+                                    
+                                        
+                                            <div
+                                                
+                                                    class="mb-5"
+                                                
+                                            >
+                                                
+                                                    <p class="has-text-justified">
+                                                        
+                                                            अतः उठो! लड़ने के लिए तैयार होओ और यश अर्जित करो | अपने शत्रुओं को जीतकर सम्पन्न राज्य का भोग करो | ये सब मेरे द्वारा पहले ही मारे जा चुके हैं और हे सव्यसाची! तुम तो युद्ध में केवल निमित्तमात्र हो सकते हो |
+                                                        
+                                                    </p>
+                                                
+                                            </div>
+                                        
+                                    
+                                    
+                                    
+                                        
+                                            <div
+                                                
+                                                    class="mb-3"
+                                                
+                                            >
+                                                
+                                                    <p class="has-text-centered has-text-weight-bold">
+                                                        
+                                                            तात्पर्य
+                                                        
+                                                    </p>
+                                                
+                                            </div>
+                                        
+                                    
+                                    
+                                    
+                                        
+                                            <div
+                                                
+                                            >
+                                                
+                                                    <p class="has-text-justified">
+                                                        
+                                                            सव्यसाची काअर्थ है वह जो युद्धभूमि में अत्यन्त कौशल के साथ तीर छोड़ सके | इस प्रकार अर्जुन को एक पटु योद्धा के रूप में सम्बोधित किया गया है, जो अपने शत्रुओं को तीर सेमारकर मौत के घाट उतार सकता है | निमित्तमात्रम् – “केवल कारण मात्र” यह शब्द भी अत्यन्त महत्त्वपूर्ण है | संसार भगवान् की इच्छानुसार गतिमान है | अल्पज्ञ पुरुष सोचते हैं कि प्रकृति बिना किसी योजना के गतिशील है और सारी सृष्टि आकस्मिक है | ऐसा अनेक तथाकथित विज्ञानी हैं, जो यह सुझाव रखते हैं कि सम्भवतया ऐसा था, या ऐसा हो सकता है, किन्तु इस प्रकार के “शायद” या “हो सकता है” का प्रश्न ही नहीं उठता | प्रकृति द्वारा विशेष योजना संचालित की जा रही है | यह योजना क्या है ? यह विराट जगत् बद्धजीवों के लिए भगवान् के धाम वापस जाने के लिए सुअवसर (सुयोग) है | जब तक उनकी प्रवृत्ति प्रकृति के ऊपर प्रभुत्व स्थापित करने की रहती है, तब तक वे बद्ध रहते हैं | किन्तु जो कोई भी परमेश्वर की इस योजना (इच्छा) को समझ लेता है और कृष्णभावनामृत का अनुशीलन करता है, वह परम बुद्धिमान है | दृश्यजगत की उत्पत्ति तथा उसका संहार ईश्वर की परम अध्यक्षता में होता है | इस प्रकार कुरुक्षेत्र का युद्ध ईश्वर की योजना के अनुसार लड़ा गया | अर्जुन युद्ध करने से मना कर रहा था, किन्तु उसे बताया गया कि परमेश्वर की इच्छानुसार उसे लड़ना होगा | तभी वह सुखी होगा | यदि कोई कृष्णभावनामृत से पूरित हो और उसका जीवन भगवान् की दिव्य सेवा में अर्पित हो, तो समझो कि वह कृतार्थ है |
+                                                        
+                                                    </p>
+                                                
+                                            </div>
+                                        
+                                    
+                                    
+                                </div>
                             </div>
-                        
-                    
-                        
-                            <div
-                                
-                                    class="mb-3"
-                                
-                            >
-                                
-                                    <p class="has-text-centered has-text-weight-bold">
-                                        
-                                            शब्दार्थ
-                                        
-                                    </p>
-                                
-                            </div>
-                        
-                    
-                        
-                            <div
-                                
-                                    class="mb-5"
-                                
-                            >
-                                
-                                    <p class="has-text-justified">
-                                        
-                                            <strong>तस्मात्</strong> – अतएव; <strong>त्वम्</strong> – तुम; <strong>उत्तिष्ट</strong> – उठो; <strong>यशः</strong> – यश; <strong>लभस्व</strong> – प्राप्त करो; <strong>जित्वा</strong> – जीतकर; <strong>शत्रून्</strong> – शत्रुओं को; <strong>भुङ्क्ष्व</strong> – भोग करो; <strong>राज्यम्</strong> – राज्य का; <strong>समृद्धम्</strong> – सम्पन्न; <strong>मया</strong> – मेरे द्वारा; <strong>एव</strong> – निश्चय ही; <strong>एते</strong> – ये सब; <strong>निहताः</strong> – मारे गये; <strong>पूर्वम् एव</strong> – पहलेही; <strong>निमित्त-मात्रम्</strong> – केवल कारण मात्र; <strong>भव</strong> – बनो; <strong>सव्य-साचिन्</strong> – हे सव्यसाची |
-                                        
-                                    </p>
-                                
-                            </div>
-                        
-                    
-                        
-                            <div
-                                
-                                    class="mb-3"
-                                
-                            >
-                                
-                                    <p class="has-text-centered has-text-weight-bold">
-                                        
-                                            भावार्थ
-                                        
-                                    </p>
-                                
-                            </div>
-                        
-                    
-                        
-                            <div
-                                
-                                    class="mb-5"
-                                
-                            >
-                                
-                                    <p class="has-text-justified">
-                                        
-                                            अतः उठो! लड़ने के लिए तैयार होओ और यश अर्जित करो | अपने शत्रुओं को जीतकर सम्पन्न राज्य का भोग करो | ये सब मेरे द्वारा पहले ही मारे जा चुके हैं और हे सव्यसाची! तुम तो युद्ध में केवल निमित्तमात्र हो सकते हो |
-                                        
-                                    </p>
-                                
-                            </div>
-                        
-                    
-                        
-                            <div
-                                
-                                    class="mb-3"
-                                
-                            >
-                                
-                                    <p class="has-text-centered has-text-weight-bold">
-                                        
-                                            तात्पर्य
-                                        
-                                    </p>
-                                
-                            </div>
-                        
-                    
-                        
-                            <div
-                                
-                            >
-                                
-                                    <p class="has-text-justified">
-                                        
-                                            सव्यसाची काअर्थ है वह जो युद्धभूमि में अत्यन्त कौशल के साथ तीर छोड़ सके | इस प्रकार अर्जुन को एक पटु योद्धा के रूप में सम्बोधित किया गया है, जो अपने शत्रुओं को तीर सेमारकर मौत के घाट उतार सकता है | निमित्तमात्रम् – “केवल कारण मात्र” यह शब्द भी अत्यन्त महत्त्वपूर्ण है | संसार भगवान् की इच्छानुसार गतिमान है | अल्पज्ञ पुरुष सोचते हैं कि प्रकृति बिना किसी योजना के गतिशील है और सारी सृष्टि आकस्मिक है | ऐसा अनेक तथाकथित विज्ञानी हैं, जो यह सुझाव रखते हैं कि सम्भवतया ऐसा था, या ऐसा हो सकता है, किन्तु इस प्रकार के “शायद” या “हो सकता है” का प्रश्न ही नहीं उठता | प्रकृति द्वारा विशेष योजना संचालित की जा रही है | यह योजना क्या है ? यह विराट जगत् बद्धजीवों के लिए भगवान् के धाम वापस जाने के लिए सुअवसर (सुयोग) है | जब तक उनकी प्रवृत्ति प्रकृति के ऊपर प्रभुत्व स्थापित करने की रहती है, तब तक वे बद्ध रहते हैं | किन्तु जो कोई भी परमेश्वर की इस योजना (इच्छा) को समझ लेता है और कृष्णभावनामृत का अनुशीलन करता है, वह परम बुद्धिमान है | दृश्यजगत की उत्पत्ति तथा उसका संहार ईश्वर की परम अध्यक्षता में होता है | इस प्रकार कुरुक्षेत्र का युद्ध ईश्वर की योजना के अनुसार लड़ा गया | अर्जुन युद्ध करने से मना कर रहा था, किन्तु उसे बताया गया कि परमेश्वर की इच्छानुसार उसे लड़ना होगा | तभी वह सुखी होगा | यदि कोई कृष्णभावनामृत से पूरित हो और उसका जीवन भगवान् की दिव्य सेवा में अर्पित हो, तो समझो कि वह कृतार्थ है |
-                                        
-                                    </p>
-                                
-                            </div>
-                        
-                    
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -317,178 +303,184 @@
 </section>
 
 
-    <section class="section pt-0">
-        <div class="container mt-6">
-            <div class="pagination-container">
-    <nav class="pagination is-centered" role="navigation" aria-label="pagination">
-        
-        <!-- previous page button -->
-        <a
-            class="pagination-previous pagination-button button is-orange is-outlined"
-            
-                href="/bhagavad-gita-hindi/11/32/"
-            
-        >
-            पिछला श्लोक
-        </a>
-
-        <!-- next page button -->
-        <a
-            class="pagination-next pagination-button button is-orange is-outlined"
-            
-                href="/bhagavad-gita-hindi/11/34/"
-            
-        >
-        अगला श्लोक
-        </a>
-
-        <ul class="pagination-list">
-            
-            
-                <li>
-                    <a
-                        class="pagination-link"
-                        
-                            href="/bhagavad-gita-hindi/11/1/"
-                        
-                    >
-                        1
-                    </a>
-                </li>
+<section class="section animatedParent animateOnce pb-0">
+    <div class="box glass animated fadeInUpShort">
+        <nav class="pagination is-centered" role="navigation" aria-label="pagination">
+            <!-- previous page button -->
+            <a
+                class="button is-outlined is-warning pagination-previous pagination-button button is-orange is-outlined"
                 
+                    href="/bhagavad-gita-hindi/11/32/"
                 
-                    
-                        <li>
-                            <span class="pagination-ellipsis">…</span>
-                        </li>
-                    
+            >
+                पिछला श्लोक
+            </a>
 
-                    <li>
-                        <a
-                            class="pagination-link"
-                            href="/bhagavad-gita-hindi/11/32/"
-                        >
-                            32
-                        </a>
-                    </li>
+            <!-- next page button -->
+            <!-- <a
+                class="button is-outlined is-warning pagination-next pagination-button button is-orange is-outlined"
                 
-            
-            
-            
-            
-            <li>
-                <a
-                    class="pagination-link is-current"
-                    aria-current="page"
-                    disabled
-                >
-                    33
-                </a>
-            </li>
-            
+                    href="/bhagavad-gita-hindi/11/34/"
+                
+            >
+            अगला श्लोक -->
+            </a>
 
-            
-            
+            <ul class="pagination-list">
+                
                 
                     <li>
                         <a
-                            class="pagination-link"
-                            href="/bhagavad-gita-hindi/11/34/"
+                            class="button is-outlined is-warning pagination-link"
+                            
+                                href="/bhagavad-gita-hindi/11/1/"
+                            
                         >
-                            34
+                            1
                         </a>
                     </li>
                     
+                    
+                        
+                            <li>
+                                <span class="pagination-ellipsis">…</span>
+                            </li>
+                        
+
                         <li>
-                            <span class="pagination-ellipsis">…</span>
+                            <a
+                                class="button is-outlined is-warning pagination-link"
+                                href="/bhagavad-gita-hindi/11/32/"
+                            >
+                                32
+                            </a>
                         </li>
                     
+                
+                
                 
                 
                 <li>
                     <a
-                        class="pagination-link"
-                        
-                            href="/bhagavad-gita-hindi/11/55/"
-                        
+                        class="button is-outlined is-warning pagination-link is-current" tabindex="-1"
+                        aria-current="page"
+                        disabled
                     >
-                        55
+                        33
                     </a>
                 </li>
-            
-            
-        </ul>
-    </nav>
-</div>
-        </div>
-    </section>
+                
 
-
-<section class="section pt-0">
-    <div class="container">
-        <article class="message is-warning is-small">
-            <div class="message-body has-text-centered">
-                <p class="mb-3">The BBT was established in 1972 by His Divine Grace A.C. Bhaktivedanta Swami Prabhupada, Founder-Acharya of the International Society for Krishna Consciousness. BBT is the publisher for his books. All material used here belongs to and copyrighted under BBT (Bhaktivedanta Book Trust).</p>
-
-                <p class="mb-3">🙏 Please consider buying books. Below is a beautiful message by Srila Prabhupada 🙏</p>
-
-                <p class="is-italic mb-3">“I specifically formed the BBT to invest in it exclusive rights for the printing of all literature containing my teachings, writings and lectures. In this way the collections are to be divided fifty percent for printing new books and fifty percent for construction of temples.”</p>
-            </div>
-        </article>
-    </div>
-</section>
-
-<section class="hero is-light is-small">
-    <div class="hero-body">
-        <div class="container">
-            <nav class="breadcrumb is-centered" aria-label="breadcrumbs">
-                <ul>
+                
+                
                     
-                        <li >
-                            <a class="is-link has-text-orange" href="/">
-                                <span class="icon is-small">
-                                    <i class="fas fa-home" aria-hidden="true"></i>
-                                </span>
-                                <span>Home</span>
+                        <li>
+                            <a
+                                class="button is-outlined is-warning pagination-link"
+                                href="/bhagavad-gita-hindi/11/34/"
+                            >
+                                34
                             </a>
                         </li>
+                        
+                            <li>
+                                <span class="pagination-ellipsis">…</span>
+                            </li>
+                        
                     
-                        <li >
-                            <a class="is-link has-text-orange" href="/bhagavad-gita-hindi/">
-                                <span class="icon is-small">
-                                    <i class="fas fa-book" aria-hidden="true"></i>
-                                </span>
-                                <span>श्रीमद्भगवद्गीता - यथारूप (हिंदी)</span>
-                            </a>
-                        </li>
                     
-                        <li >
-                            <a class="is-link has-text-orange" href="/bhagavad-gita-hindi/11/">
-                                <span class="icon is-small">
-                                    <i class="fas fa-file-alt" aria-hidden="true"></i>
-                                </span>
-                                <span>अध्याय ११ - विश्वरूपदर्शनयोग</span>
-                            </a>
-                        </li>
-                    
-                        <li class="is-active">
-                            <a  href="">
-                                <span class="icon is-small">
-                                    <i class="fas fa-quote-right" aria-hidden="true"></i>
-                                </span>
-                                <span>श्लोक ३३</span>
-                            </a>
-                        </li>
-                    
-                </ul>
-            </nav>
-        </div>
+                    <li>
+                        <a
+                            class="button is-outlined is-warning pagination-link"
+                            
+                                href="/bhagavad-gita-hindi/11/55/"
+                            
+                        >
+                            55
+                        </a>
+                    </li>
+                
+                
+            </ul>
+
+            <!-- next page button -->
+            <a
+                class="button is-outlined is-warning pagination-next pagination-button button is-orange is-outlined"
+                
+                    href="/bhagavad-gita-hindi/11/34/"
+                
+            >
+            अगला श्लोक
+            </a>
+        </nav>
     </div>
 </section>
 
 
+<section class="section animatedParent animateOnce">
+    <div class="box glass animated fadeInUpShort">
+        <nav class="breadcrumb is-medium is-centered" aria-label="breadcrumbs">
+            <ul>
+                
+                <li >
+                    <a class="is-link has-text-orange" href="/">
+                        <span class="icon is-small">
+                            <i class="fas fa-home" aria-hidden="true"></i>
+                        </span>
+                        <span>Home</span>
+                    </a>
+                </li>
+                
+                <li >
+                    <a class="is-link has-text-orange" href="/bhagavad-gita-hindi/">
+                        <span class="icon is-small">
+                            <i class="fas fa-book" aria-hidden="true"></i>
+                        </span>
+                        <span>श्रीमद्भगवद्गीता</span>
+                    </a>
+                </li>
+                
+                <li >
+                    <a class="is-link has-text-orange" href="/bhagavad-gita-hindi/11/">
+                        <span class="icon is-small">
+                            <i class="fas fa-file-alt" aria-hidden="true"></i>
+                        </span>
+                        <span>अध्याय ११ - विश्वरूपदर्शनयोग</span>
+                    </a>
+                </li>
+                
+                <li class="is-active">
+                    <a tabindex="-1" href="">
+                        <span class="icon is-small">
+                            <i class="fas fa-quote-right" aria-hidden="true"></i>
+                        </span>
+                        <span>श्लोक ३३</span>
+                    </a>
+                </li>
+                
+            </ul>
+        </nav>
+    </div>
+</section>
 
-    <footer class="footer bg-gradient-light-orange pt-5 pb-5">
+<section class="section pt-0 animatedParent animateOnce">
+    <article class="box message is-warning is-small p-0 animated fadeInUpShort">
+        <div class="message-header is-justify-content-center">
+            <p>Copyright Notice</p>
+        </div>
+        <div class="message-body has-text-centered">
+            <p class="mb-3">The BBT was established in 1972 by His Divine Grace A.C. Bhaktivedanta Swami Prabhupada, Founder-Acharya of the International Society for Krishna Consciousness. BBT is the publisher for his books. All material used here belongs to and copyrighted under BBT (Bhaktivedanta Book Trust).</p>
+    
+            <p class="is-italic mb-3">“I specifically formed the BBT to invest in it exclusive rights for the printing of all literature containing my teachings, writings and lectures. In this way the collections are to be divided fifty percent for printing new books and fifty percent for construction of temples.”</p>
+
+            <p>- A.C. Bhaktivedanta Swami Prabhupada</p>
+        </div>
+    </article>
+</section>
+
+
+
+    <!-- <footer class="footer bg-gradient-light-orange pt-5 pb-5">
     <div class="container">
         <div class="content">
             <div class="columns is-multiline is-centered">
@@ -511,7 +503,51 @@
             </div>
         </div>
     </div>
+</footer> -->
+
+<footer class="footer p-0">
+    <section class="section">
+        <div class="footer-container">
+            <div class="animatedParent animateOnce">
+                <div class="content-w-image is-flex is-centered-mobile">
+                    <figure class="image is-64x64 m-0 animated fadeInUpShort">
+                        <img src="https://www.ancientknowledge.in/static/images/logo.png">
+                    </figure>
+                    <div class="content m-0 is-flex is-flex-direction-column is-justify-content-space-between animated fadeInUpShort">
+                        <h4 class="mt-0">Ancient Knowledge</h4>
+                        <p class="is-centered-mobile">
+                            <a href="https://www.ancientknowledge.in/about/" class="no-decoration">
+                                <span>About</span>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="animatedParent animateOnce">
+                <div class="content animated fadeInUpShort">
+                    <h4 class="is-centered-mobile m-0 mb-4 animated fadeInUpShort delay-500">@PraacheenGyaan</h4>
+                    <p class="has-text-centered is-flex is-justify-content-space-between animatedParent animateOnce">
+                        <a class="box icon facebook is-large fa-2x mb-0 animated growIn delay-500" href="https://www.facebook.com/PraacheenGyaan/" target="_blank">
+                            <i class="fab fa-facebook-square has-text-white"></i>
+                        </a>
+
+                        <a class="box icon instagram is-large fa-2x mb-0 animated growIn delay-1000" href="https://www.instagram.com/PraacheenGyaan/" target="_blank">
+                            <i class="fab fa-instagram-square has-text-white"></i>
+                        </a>
+
+                        <a class="box icon twitter is-large fa-2x mb-0 animated growIn delay-1500" href="https://twitter.com/PraacheenGyaan/" target="_blank">
+                            <i class="fab fa-twitter-square has-text-white"></i>
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
 </footer>
+
+    <script src="https://www.ancientknowledge.in/static/js/jquery.min.js"></script>
+    <script src="https://www.ancientknowledge.in/static/js/script.js"></script>
+    <script src="https://www.ancientknowledge.in/static/js/css3-animate-it.js"></script>
 
     
 </body>

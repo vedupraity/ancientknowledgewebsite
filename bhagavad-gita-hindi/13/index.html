@@ -14,7 +14,7 @@
 
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#ffffff" />
+    <meta name="theme-color" content="#ff902b" />
 
     <!-- Begin SEO tags -->
     <title>Ancient Knowledge | Bhagavad Gita | Hindi</title>
@@ -24,955 +24,1513 @@
     <meta property="og:title" content="Ancient Knowledge | Bhagavad Gita | Hindi" />
     <meta property="og:description" content="Read Shrimad Bhagavad Gita - Yatharoop in hindi. श्रीमद्भगवद्गीता - यथारूप हिंदी में पढ़ें।" />
     <meta property="og:url" content="https://www.ancientknowledge.in" />
-    <meta property="og:image" content="https://www.ancientknowledge.in/static/images/bhagavad-gita-cover-16by9.jpg" />
+    <meta property="og:image" content="https://www.ancientknowledge.in/static/images/bhagavad-gita-cover-4x3.jpg" />
     <meta property="og:type" content="website" />
     
     <meta property="twitter:title" content="Ancient Knowledge | Bhagavad Gita | Hindi" />
     <meta property="twitter:description" content="Read Shrimad Bhagavad Gita - Yatharoop in hindi. श्रीमद्भगवद्गीता - यथारूप हिंदी में पढ़ें।" />
-    <meta property="twitter:image" content="https://www.ancientknowledge.in/static/images/bhagavad-gita-cover-16by9.jpg" />
+    <meta property="twitter:image" content="https://www.ancientknowledge.in/static/images/bhagavad-gita-cover-4x3.jpg" />
     <!-- End SEO tags -->
 
-    <link rel="stylesheet" href="https://www.ancientknowledge.in/static/css/theme.css" />
-    <link rel="stylesheet" href="https://www.ancientknowledge.in/static/css/theme-custom.css" />
+    <!-- <link rel="stylesheet" href="https://www.ancientknowledge.in/static/css/theme-old.css" /> -->
+    <!-- <link rel="stylesheet" href="https://www.ancientknowledge.in/static/css/switch-control.min.css" /> -->
+    <!-- <link rel="stylesheet" href="https://www.ancientknowledge.in/static/css/theme-custom.css" /> -->
     
     <link rel="icon" href="https://www.ancientknowledge.in/static/images/favicon.ico">
-    <link rel="shortcut icon" type="image/png" href="https://www.ancientknowledge.in/static/images/favicon.png" />
+    <link rel="shortcut icon" type="image/png" href="https://www.ancientknowledge.in/static/images/logo.png" />
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.0/dist/alpine.min.js" defer></script>
     
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-social@1/bin/bulma-social.min.css" />
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" /> -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-social@1/bin/bulma-social.min.css" /> -->
+
+    <link rel="stylesheet" href="https://www.ancientknowledge.in/static/css/bulma.min.css">
+    <link rel="stylesheet" href="https://www.ancientknowledge.in/static/css/theme.css">
+    <link rel="stylesheet" href="https://www.ancientknowledge.in/static/css/animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 
-<body>
-    <nav class="navbar is-warning bg-gradient-light-orange" x-data="{ openNav: false }">
-    <div class="container">
-        <div class="navbar-brand">
-            <a href="https://www.ancientknowledge.in" class="navbar-item">
-                <p class="has-text-weight-normal has-text-orange">
-                    <span>📖</span>
-                    <span class="pl-2">Ancient Knowledge</span>
-                </p>
+<body class="dark-modes">
+    <nav class="navbar is-light glass" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+        <a class="navbar-item pl-4" href="https://www.ancientknowledge.in">
+            <img src="https://www.ancientknowledge.in/static/images/logo.png" width="28" height="28">
+            <span class="pl-4">
+                Ancient Knowledge
+            </span>
+        </a>
+
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+            data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+    </div>
+
+    <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+            <a class="navbar-item" href="https://www.ancientknowledge.in/about/">
+                About
             </a>
-            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navMenu"
-                :class="{ 'is-active': openNav }" x-on:click="openNav = !openNav">
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-            </a>
-        </div>
-        <div class="navbar-menu" id="navMenu" :class="{ 'is-active': openNav }">
-            <div class="navbar-end">
-                <a href="https://www.ancientknowledge.in/about/" class="navbar-item has-text-weight-normal has-text-orange">About</a>
-            </div>
         </div>
     </div>
 </nav>
 
     
-    <section class="hero is-small is-bold is-dark bg-gradient-orange">
-    <div class="hero-body">
-        <div class="container has-text-centered p-5">
-            <h4 class="title is-4">श्रीमद्भगवद्गीता - यथारूप (हिंदी)</h4>
-        </div>
-    </div>
-</section>
-    
-
-    <div class="content is-centered has-text-centered" style="display: none;">
-        <h1>Ancient Knowledge</h1>
-        <h2>Recollecting the lost knowledge</h2>
-        <h3>Ancient Knowledge | Bhagavad Gita | Hindi</h3>
-        <p>Read Shrimad Bhagavad Gita - Yatharoop in hindi. श्रीमद्भगवद्गीता - यथारूप हिंदी में पढ़ें।</p>
-        <div class="tags is-centered">
-            
-                <span class="tag">Ancient</span>
-            
-                <span class="tag">Knowledge</span>
-            
-                <span class="tag">India</span>
-            
-                <span class="tag">Shrimad</span>
-            
-                <span class="tag">Bhagavad</span>
-            
-                <span class="tag">Gita</span>
-            
-                <span class="tag">Yatharoop</span>
-            
-                <span class="tag">As It Is</span>
-            
-                <span class="tag">Mahabharat</span>
-            
-                <span class="tag">Krishna</span>
-            
-                <span class="tag">Prabhupad</span>
-            
-                <span class="tag">Hindi</span>
-            
-        </div>
-    </div>
 
     
 
-<section class="hero is-light is-small">
-    <div class="hero-body">
-        <div class="container">
-            <nav class="breadcrumb is-centered" aria-label="breadcrumbs">
-                <ul>
-                    
-                        <li >
-                            <a class="is-link has-text-orange" href="/">
-                                <span class="icon is-small">
-                                    <i class="fas fa-home" aria-hidden="true"></i>
-                                </span>
-                                <span>Home</span>
-                            </a>
-                        </li>
-                    
-                        <li >
-                            <a class="is-link has-text-orange" href="/bhagavad-gita-hindi/">
-                                <span class="icon is-small">
-                                    <i class="fas fa-book" aria-hidden="true"></i>
-                                </span>
-                                <span>श्रीमद्भगवद्गीता - यथारूप (हिंदी)</span>
-                            </a>
-                        </li>
-                    
-                        <li class="is-active">
-                            <a  href="">
-                                <span class="icon is-small">
-                                    <i class="fas fa-file-alt" aria-hidden="true"></i>
-                                </span>
-                                <span>अध्याय १३ - क्षेत्र-क्षेत्रज्ञविभागयोग</span>
-                            </a>
-                        </li>
-                    
-                </ul>
-            </nav>
-        </div>
+<!-- Margin top behind navbar -->
+<div class="mt-6"></div>
+
+<style>
+    :root {
+        --page-background-image: url(/static/images/bhagavad-gita-cover-4x3.jpg);
+    }
+</style>
+<div class="image-background"></div>
+
+<section class="section animatedParent animateOnce">
+    <div class="box glass animated fadeInUpShort">
+        <nav class="breadcrumb is-medium is-centered" aria-label="breadcrumbs">
+            <ul>
+                
+                <li >
+                    <a class="is-link has-text-orange" href="/">
+                        <span class="icon is-small">
+                            <i class="fas fa-home" aria-hidden="true"></i>
+                        </span>
+                        <span>Home</span>
+                    </a>
+                </li>
+                
+                <li >
+                    <a class="is-link has-text-orange" href="/bhagavad-gita-hindi/">
+                        <span class="icon is-small">
+                            <i class="fas fa-book" aria-hidden="true"></i>
+                        </span>
+                        <span>श्रीमद्भगवद्गीता</span>
+                    </a>
+                </li>
+                
+                <li class="is-active">
+                    <a tabindex="-1" href="">
+                        <span class="icon is-small">
+                            <i class="fas fa-file-alt" aria-hidden="true"></i>
+                        </span>
+                        <span>अध्याय १३ - क्षेत्र-क्षेत्रज्ञविभागयोग</span>
+                    </a>
+                </li>
+                
+            </ul>
+        </nav>
     </div>
 </section>
 
-<section class="section" oncopy="return false" oncut="return false" onpaste="return false">
-    <div class="container">
-        <div class="columns is-multiline is-centered" id="book-card-container">
-            
-                <div class="column is-12">
-                    <a class="is-clickable" href="1-2/">
-                        <div class="card has-glow-md">
-                            <div class="card-content">
-                                <div class="content">
-                                    <h5 class="mb-0">
+<section class="section pt-0 pb-0">
+    <div class="columns is-multiline is-centered is-variable is-4">
+
+        
+        <div
+            class="column is-full-tablet is-full-desktop is-full-widescreen is-full-fullhd is-flex animatedParent animateOnce">
+            <div class="card card-horizontal is-flex-grow-1 animated fadeInUpShort">
+                <div class="card-content p-2">
+                    <div class="columns is-multiline is-variable m-0">
+                        <div class="column">
+                            <div class="content m-0">
+                                <div class="m-0">
+                                    
+                                    <h5 class="title is-5 m-0">
                                         अध्याय १३ - श्लोक १,२
                                     </h5>
                                     
                                     
-                                        <hr class="mt-3 mb-3"/>
-                                    
-
-                                    
-
-                                    
-                                        
-                                            <p class="has-text-justified">अर्जुन ने कहा – हे कृष्ण! मैं प्रकृति एवं पुरुष (भोक्ता), क्षेत्र एवं क्षेत्रज्ञ तथा ज्ञान एवं ज्ञेय के विषय में जानने का इच्छुक हूँ |</p>
-                                        
-                                            <p class="has-text-justified">श्रीभगवान् ने कहा – हे कुन्तीपुत्र! यह शरीर क्षेत्र कहलाता है और इस क्षेत्र को जानने वाला क्षेत्रज्ञ है |</p>
-                                        
-                                    
+                                
                                 </div>
+                                
+                                
+                                <hr class="m-0 mt-4">
+                                
+                                <div class="m-0 mt-4">
+                                    
+                                    
+                                    <p class="has-text-justified">
+                                        अर्जुन ने कहा – हे कृष्ण! मैं प्रकृति एवं पुरुष (भोक्ता), क्षेत्र एवं क्षेत्रज्ञ तथा ज्ञान एवं ज्ञेय के विषय में जानने का इच्छुक हूँ |
+                                    </p>
+                                    
+                                    <p class="has-text-justified">
+                                        श्रीभगवान् ने कहा – हे कुन्तीपुत्र! यह शरीर क्षेत्र कहलाता है और इस क्षेत्र को जानने वाला क्षेत्रज्ञ है |
+                                    </p>
+                                    
+
+                                </div>
+                                
+                                
+                                <div class="m-0 mt-4">
+                                    <p>
+                                        <a class="button is-outlined is-warning" href="1-2/">
+                                            Read Now
+                                        </a>
+                                    </p>
+                                </div>
+
                             </div>
                         </div>
-                    </a>
+                    </div>
                 </div>
-            
-                <div class="column is-12">
-                    <a class="is-clickable" href="3/">
-                        <div class="card has-glow-md">
-                            <div class="card-content">
-                                <div class="content">
-                                    <h5 class="mb-0">
+            </div>
+        </div>
+        
+        <div
+            class="column is-full-tablet is-full-desktop is-full-widescreen is-full-fullhd is-flex animatedParent animateOnce">
+            <div class="card card-horizontal is-flex-grow-1 animated fadeInUpShort">
+                <div class="card-content p-2">
+                    <div class="columns is-multiline is-variable m-0">
+                        <div class="column">
+                            <div class="content m-0">
+                                <div class="m-0">
+                                    
+                                    <h5 class="title is-5 m-0">
                                         अध्याय १३ - श्लोक ३
                                     </h5>
                                     
                                     
-                                        <hr class="mt-3 mb-3"/>
-                                    
-
-                                    
-
-                                    
-                                        
-                                            <p class="has-text-justified">हे भरतवंशी! तुम्हें ज्ञात होना चाहिए कि मैं भी समस्त शरीरों में ज्ञाता भी हूँ और इस शरीर तथा इसके ज्ञाता को जान लेना ज्ञान कहलाता है | ऐसा मेरा मत है |</p>
-                                        
-                                    
+                                
                                 </div>
+                                
+                                
+                                <hr class="m-0 mt-4">
+                                
+                                <div class="m-0 mt-4">
+                                    
+                                    
+                                    <p class="has-text-justified">
+                                        हे भरतवंशी! तुम्हें ज्ञात होना चाहिए कि मैं भी समस्त शरीरों में ज्ञाता भी हूँ और इस शरीर तथा इसके ज्ञाता को जान लेना ज्ञान कहलाता है | ऐसा मेरा मत है |
+                                    </p>
+                                    
+
+                                </div>
+                                
+                                
+                                <div class="m-0 mt-4">
+                                    <p>
+                                        <a class="button is-outlined is-warning" href="3/">
+                                            Read Now
+                                        </a>
+                                    </p>
+                                </div>
+
                             </div>
                         </div>
-                    </a>
+                    </div>
                 </div>
-            
-                <div class="column is-12">
-                    <a class="is-clickable" href="4/">
-                        <div class="card has-glow-md">
-                            <div class="card-content">
-                                <div class="content">
-                                    <h5 class="mb-0">
+            </div>
+        </div>
+        
+        <div
+            class="column is-full-tablet is-full-desktop is-full-widescreen is-full-fullhd is-flex animatedParent animateOnce">
+            <div class="card card-horizontal is-flex-grow-1 animated fadeInUpShort">
+                <div class="card-content p-2">
+                    <div class="columns is-multiline is-variable m-0">
+                        <div class="column">
+                            <div class="content m-0">
+                                <div class="m-0">
+                                    
+                                    <h5 class="title is-5 m-0">
                                         अध्याय १३ - श्लोक ४
                                     </h5>
                                     
                                     
-                                        <hr class="mt-3 mb-3"/>
-                                    
-
-                                    
-
-                                    
-                                        
-                                            <p class="has-text-justified">अब तुम मुझसे यह सब संक्षेप में सुनो कि कर्मक्षेत्र क्या है, यह किस प्रकार बना है, इसमें क्या परिवर्तन होते हैं, यह कहाँ से उत्पन्न होता है, इस कर्मक्षेत्र को जानने वाला कौन है और उसके क्या प्रभाव हैं |</p>
-                                        
-                                    
+                                
                                 </div>
+                                
+                                
+                                <hr class="m-0 mt-4">
+                                
+                                <div class="m-0 mt-4">
+                                    
+                                    
+                                    <p class="has-text-justified">
+                                        अब तुम मुझसे यह सब संक्षेप में सुनो कि कर्मक्षेत्र क्या है, यह किस प्रकार बना है, इसमें क्या परिवर्तन होते हैं, यह कहाँ से उत्पन्न होता है, इस कर्मक्षेत्र को जानने वाला कौन है और उसके क्या प्रभाव हैं |
+                                    </p>
+                                    
+
+                                </div>
+                                
+                                
+                                <div class="m-0 mt-4">
+                                    <p>
+                                        <a class="button is-outlined is-warning" href="4/">
+                                            Read Now
+                                        </a>
+                                    </p>
+                                </div>
+
                             </div>
                         </div>
-                    </a>
+                    </div>
                 </div>
-            
-                <div class="column is-12">
-                    <a class="is-clickable" href="5/">
-                        <div class="card has-glow-md">
-                            <div class="card-content">
-                                <div class="content">
-                                    <h5 class="mb-0">
+            </div>
+        </div>
+        
+        <div
+            class="column is-full-tablet is-full-desktop is-full-widescreen is-full-fullhd is-flex animatedParent animateOnce">
+            <div class="card card-horizontal is-flex-grow-1 animated fadeInUpShort">
+                <div class="card-content p-2">
+                    <div class="columns is-multiline is-variable m-0">
+                        <div class="column">
+                            <div class="content m-0">
+                                <div class="m-0">
+                                    
+                                    <h5 class="title is-5 m-0">
                                         अध्याय १३ - श्लोक ५
                                     </h5>
                                     
                                     
-                                        <hr class="mt-3 mb-3"/>
-                                    
-
-                                    
-
-                                    
-                                        
-                                            <p class="has-text-justified">विभिन्न वैदिक ग्रंथों में विभिन्न ऋषियों ने कार्यकलापों के क्षेत्र तथा उन कार्यकलापों के ज्ञाता के ज्ञान का वर्णन किया है | इसे विशेष रूप से वेदान्त सूत्र में कार्य-कारण के समस्त तर्क समेत प्रस्तुत किया गया है |</p>
-                                        
-                                    
+                                
                                 </div>
+                                
+                                
+                                <hr class="m-0 mt-4">
+                                
+                                <div class="m-0 mt-4">
+                                    
+                                    
+                                    <p class="has-text-justified">
+                                        विभिन्न वैदिक ग्रंथों में विभिन्न ऋषियों ने कार्यकलापों के क्षेत्र तथा उन कार्यकलापों के ज्ञाता के ज्ञान का वर्णन किया है | इसे विशेष रूप से वेदान्त सूत्र में कार्य-कारण के समस्त तर्क समेत प्रस्तुत किया गया है |
+                                    </p>
+                                    
+
+                                </div>
+                                
+                                
+                                <div class="m-0 mt-4">
+                                    <p>
+                                        <a class="button is-outlined is-warning" href="5/">
+                                            Read Now
+                                        </a>
+                                    </p>
+                                </div>
+
                             </div>
                         </div>
-                    </a>
+                    </div>
                 </div>
-            
-                <div class="column is-12">
-                    <a class="is-clickable" href="6-7/">
-                        <div class="card has-glow-md">
-                            <div class="card-content">
-                                <div class="content">
-                                    <h5 class="mb-0">
+            </div>
+        </div>
+        
+        <div
+            class="column is-full-tablet is-full-desktop is-full-widescreen is-full-fullhd is-flex animatedParent animateOnce">
+            <div class="card card-horizontal is-flex-grow-1 animated fadeInUpShort">
+                <div class="card-content p-2">
+                    <div class="columns is-multiline is-variable m-0">
+                        <div class="column">
+                            <div class="content m-0">
+                                <div class="m-0">
+                                    
+                                    <h5 class="title is-5 m-0">
                                         अध्याय १३ - श्लोक ६,७
                                     </h5>
                                     
                                     
-                                        <hr class="mt-3 mb-3"/>
-                                    
-
-                                    
-
-                                    
-                                        
-                                            <p class="has-text-justified">पंच महाभूत, अहंकार, बुद्धि, अव्यक्त (तीनों गुणों की अप्रकट अवस्था), दसों इन्द्रियाँ तथा मन, पाँच इन्द्रियविषय, इच्छा, द्वेष, सुख, दुख, संघात, जीवन के लक्षण तथा धैर्य – इन सब को संक्षेप में कर्म का क्षेत्र तथा उसकी अन्तःक्रियाएँ (विकार) कहा जाता है |</p>
-                                        
-                                    
+                                
                                 </div>
+                                
+                                
+                                <hr class="m-0 mt-4">
+                                
+                                <div class="m-0 mt-4">
+                                    
+                                    
+                                    <p class="has-text-justified">
+                                        पंच महाभूत, अहंकार, बुद्धि, अव्यक्त (तीनों गुणों की अप्रकट अवस्था), दसों इन्द्रियाँ तथा मन, पाँच इन्द्रियविषय, इच्छा, द्वेष, सुख, दुख, संघात, जीवन के लक्षण तथा धैर्य – इन सब को संक्षेप में कर्म का क्षेत्र तथा उसकी अन्तःक्रियाएँ (विकार) कहा जाता है |
+                                    </p>
+                                    
+
+                                </div>
+                                
+                                
+                                <div class="m-0 mt-4">
+                                    <p>
+                                        <a class="button is-outlined is-warning" href="6-7/">
+                                            Read Now
+                                        </a>
+                                    </p>
+                                </div>
+
                             </div>
                         </div>
-                    </a>
+                    </div>
                 </div>
-            
-                <div class="column is-12">
-                    <a class="is-clickable" href="8-9-10-11-12/">
-                        <div class="card has-glow-md">
-                            <div class="card-content">
-                                <div class="content">
-                                    <h5 class="mb-0">
+            </div>
+        </div>
+        
+        <div
+            class="column is-full-tablet is-full-desktop is-full-widescreen is-full-fullhd is-flex animatedParent animateOnce">
+            <div class="card card-horizontal is-flex-grow-1 animated fadeInUpShort">
+                <div class="card-content p-2">
+                    <div class="columns is-multiline is-variable m-0">
+                        <div class="column">
+                            <div class="content m-0">
+                                <div class="m-0">
+                                    
+                                    <h5 class="title is-5 m-0">
                                         अध्याय १३ - श्लोक ८,९,१०,११,१२
                                     </h5>
                                     
                                     
-                                        <hr class="mt-3 mb-3"/>
-                                    
-
-                                    
-
-                                    
-                                        
-                                            <p class="has-text-justified">विनम्रता, दम्भहीनता, अहिंसा, सहिष्णुता, सरलता, प्रामाणिक गुरु के पास जाना, पवित्रता, स्थिरता, आत्मसंयम, इन्द्रियतृप्ति के विषयों का परित्याग, अहंकार का अभाव, जन्म, मृत्यु, वृद्धावस्था तथा रोग के दोषों की अनुभूति, वैराग्य, सन्तान, स्त्री, घर तथा अन्य वस्तुओं की ममता से मुक्ति, अच्छी तथा बुरी घटनाओं के प्रति समभाव, मेरे प्रति निरन्तर अनन्य भक्ति, एकान्त स्थान में रहने की इच्छा, जन समूह से विलगाव, आत्म-साक्षात्कार की महत्ता को स्वीकारना, तथा परम सत्य की दार्शनिक खोज – इन सबको मैं ज्ञान घोषित करता हूँ और इनके अतिरिक्त जो भी है, वह सब अज्ञान है |</p>
-                                        
-                                    
+                                
                                 </div>
+                                
+                                
+                                <hr class="m-0 mt-4">
+                                
+                                <div class="m-0 mt-4">
+                                    
+                                    
+                                    <p class="has-text-justified">
+                                        विनम्रता, दम्भहीनता, अहिंसा, सहिष्णुता, सरलता, प्रामाणिक गुरु के पास जाना, पवित्रता, स्थिरता, आत्मसंयम, इन्द्रियतृप्ति के विषयों का परित्याग, अहंकार का अभाव, जन्म, मृत्यु, वृद्धावस्था तथा रोग के दोषों की अनुभूति, वैराग्य, सन्तान, स्त्री, घर तथा अन्य वस्तुओं की ममता से मुक्ति, अच्छी तथा बुरी घटनाओं के प्रति समभाव, मेरे प्रति निरन्तर अनन्य भक्ति, एकान्त स्थान में रहने की इच्छा, जन समूह से विलगाव, आत्म-साक्षात्कार की महत्ता को स्वीकारना, तथा परम सत्य की दार्शनिक खोज – इन सबको मैं ज्ञान घोषित करता हूँ और इनके अतिरिक्त जो भी है, वह सब अज्ञान है |
+                                    </p>
+                                    
+
+                                </div>
+                                
+                                
+                                <div class="m-0 mt-4">
+                                    <p>
+                                        <a class="button is-outlined is-warning" href="8-9-10-11-12/">
+                                            Read Now
+                                        </a>
+                                    </p>
+                                </div>
+
                             </div>
                         </div>
-                    </a>
+                    </div>
                 </div>
-            
-                <div class="column is-12">
-                    <a class="is-clickable" href="13/">
-                        <div class="card has-glow-md">
-                            <div class="card-content">
-                                <div class="content">
-                                    <h5 class="mb-0">
+            </div>
+        </div>
+        
+        <div
+            class="column is-full-tablet is-full-desktop is-full-widescreen is-full-fullhd is-flex animatedParent animateOnce">
+            <div class="card card-horizontal is-flex-grow-1 animated fadeInUpShort">
+                <div class="card-content p-2">
+                    <div class="columns is-multiline is-variable m-0">
+                        <div class="column">
+                            <div class="content m-0">
+                                <div class="m-0">
+                                    
+                                    <h5 class="title is-5 m-0">
                                         अध्याय १३ - श्लोक १३
                                     </h5>
                                     
                                     
-                                        <hr class="mt-3 mb-3"/>
-                                    
-
-                                    
-
-                                    
-                                        
-                                            <p class="has-text-justified">अब मैं तुम्हें ज्ञेय के विषय में बतलाऊँगा, जिसे जानकर तुम नित्य ब्रह्म का आस्वादन कर सकोगे | यह ब्रह्म या आत्मा, जो अनादि है और मेरे अधीन है, इस भौतिक जगत् के कार्य-करण से परे स्थित है |</p>
-                                        
-                                    
+                                
                                 </div>
+                                
+                                
+                                <hr class="m-0 mt-4">
+                                
+                                <div class="m-0 mt-4">
+                                    
+                                    
+                                    <p class="has-text-justified">
+                                        अब मैं तुम्हें ज्ञेय के विषय में बतलाऊँगा, जिसे जानकर तुम नित्य ब्रह्म का आस्वादन कर सकोगे | यह ब्रह्म या आत्मा, जो अनादि है और मेरे अधीन है, इस भौतिक जगत् के कार्य-करण से परे स्थित है |
+                                    </p>
+                                    
+
+                                </div>
+                                
+                                
+                                <div class="m-0 mt-4">
+                                    <p>
+                                        <a class="button is-outlined is-warning" href="13/">
+                                            Read Now
+                                        </a>
+                                    </p>
+                                </div>
+
                             </div>
                         </div>
-                    </a>
+                    </div>
                 </div>
-            
-                <div class="column is-12">
-                    <a class="is-clickable" href="14/">
-                        <div class="card has-glow-md">
-                            <div class="card-content">
-                                <div class="content">
-                                    <h5 class="mb-0">
+            </div>
+        </div>
+        
+        <div
+            class="column is-full-tablet is-full-desktop is-full-widescreen is-full-fullhd is-flex animatedParent animateOnce">
+            <div class="card card-horizontal is-flex-grow-1 animated fadeInUpShort">
+                <div class="card-content p-2">
+                    <div class="columns is-multiline is-variable m-0">
+                        <div class="column">
+                            <div class="content m-0">
+                                <div class="m-0">
+                                    
+                                    <h5 class="title is-5 m-0">
                                         अध्याय १३ - श्लोक १४
                                     </h5>
                                     
                                     
-                                        <hr class="mt-3 mb-3"/>
-                                    
-
-                                    
-
-                                    
-                                        
-                                            <p class="has-text-justified">उनके हाथ, पाँव, आखें, सिर तथा मुँह तथा उनके कान सर्वत्र हैं | इस प्रकार परमात्मा सभी वस्तुओं में व्याप्त होकर अवस्थित है |</p>
-                                        
-                                    
+                                
                                 </div>
+                                
+                                
+                                <hr class="m-0 mt-4">
+                                
+                                <div class="m-0 mt-4">
+                                    
+                                    
+                                    <p class="has-text-justified">
+                                        उनके हाथ, पाँव, आखें, सिर तथा मुँह तथा उनके कान सर्वत्र हैं | इस प्रकार परमात्मा सभी वस्तुओं में व्याप्त होकर अवस्थित है |
+                                    </p>
+                                    
+
+                                </div>
+                                
+                                
+                                <div class="m-0 mt-4">
+                                    <p>
+                                        <a class="button is-outlined is-warning" href="14/">
+                                            Read Now
+                                        </a>
+                                    </p>
+                                </div>
+
                             </div>
                         </div>
-                    </a>
+                    </div>
                 </div>
-            
-                <div class="column is-12">
-                    <a class="is-clickable" href="15/">
-                        <div class="card has-glow-md">
-                            <div class="card-content">
-                                <div class="content">
-                                    <h5 class="mb-0">
+            </div>
+        </div>
+        
+        <div
+            class="column is-full-tablet is-full-desktop is-full-widescreen is-full-fullhd is-flex animatedParent animateOnce">
+            <div class="card card-horizontal is-flex-grow-1 animated fadeInUpShort">
+                <div class="card-content p-2">
+                    <div class="columns is-multiline is-variable m-0">
+                        <div class="column">
+                            <div class="content m-0">
+                                <div class="m-0">
+                                    
+                                    <h5 class="title is-5 m-0">
                                         अध्याय १३ - श्लोक १५
                                     </h5>
                                     
                                     
-                                        <hr class="mt-3 mb-3"/>
-                                    
-
-                                    
-
-                                    
-                                        
-                                            <p class="has-text-justified">परमात्मा समस्त इन्द्रियों के मूल स्त्रोत हैं, फिर भी वे इन्द्रियों से रहित हैं | वे समस्त जीवों के पालनकर्ता होकर भी अनासक्त हैं | वे प्रकृति के गुणों के परे हैं, फिर भी वे भौतिक प्रकृति के समस्त गुणों के स्वामी हैं |</p>
-                                        
-                                    
+                                
                                 </div>
+                                
+                                
+                                <hr class="m-0 mt-4">
+                                
+                                <div class="m-0 mt-4">
+                                    
+                                    
+                                    <p class="has-text-justified">
+                                        परमात्मा समस्त इन्द्रियों के मूल स्त्रोत हैं, फिर भी वे इन्द्रियों से रहित हैं | वे समस्त जीवों के पालनकर्ता होकर भी अनासक्त हैं | वे प्रकृति के गुणों के परे हैं, फिर भी वे भौतिक प्रकृति के समस्त गुणों के स्वामी हैं |
+                                    </p>
+                                    
+
+                                </div>
+                                
+                                
+                                <div class="m-0 mt-4">
+                                    <p>
+                                        <a class="button is-outlined is-warning" href="15/">
+                                            Read Now
+                                        </a>
+                                    </p>
+                                </div>
+
                             </div>
                         </div>
-                    </a>
+                    </div>
                 </div>
-            
-                <div class="column is-12">
-                    <a class="is-clickable" href="16/">
-                        <div class="card has-glow-md">
-                            <div class="card-content">
-                                <div class="content">
-                                    <h5 class="mb-0">
+            </div>
+        </div>
+        
+        <div
+            class="column is-full-tablet is-full-desktop is-full-widescreen is-full-fullhd is-flex animatedParent animateOnce">
+            <div class="card card-horizontal is-flex-grow-1 animated fadeInUpShort">
+                <div class="card-content p-2">
+                    <div class="columns is-multiline is-variable m-0">
+                        <div class="column">
+                            <div class="content m-0">
+                                <div class="m-0">
+                                    
+                                    <h5 class="title is-5 m-0">
                                         अध्याय १३ - श्लोक १६
                                     </h5>
                                     
                                     
-                                        <hr class="mt-3 mb-3"/>
-                                    
-
-                                    
-
-                                    
-                                        
-                                            <p class="has-text-justified">परम सत्य जड़ तथा जंगम समस्त जीवों के बाहर तथा भीतर स्थित हैं | सूक्ष्म होने के कारण वे भौतिक इन्द्रियों के द्वारा जानने या देखने से परे हैं | यद्यपि वे अत्यन्त दूर रहते हैं, किन्तु हम सबों के निकट भी हैं |</p>
-                                        
-                                    
+                                
                                 </div>
+                                
+                                
+                                <hr class="m-0 mt-4">
+                                
+                                <div class="m-0 mt-4">
+                                    
+                                    
+                                    <p class="has-text-justified">
+                                        परम सत्य जड़ तथा जंगम समस्त जीवों के बाहर तथा भीतर स्थित हैं | सूक्ष्म होने के कारण वे भौतिक इन्द्रियों के द्वारा जानने या देखने से परे हैं | यद्यपि वे अत्यन्त दूर रहते हैं, किन्तु हम सबों के निकट भी हैं |
+                                    </p>
+                                    
+
+                                </div>
+                                
+                                
+                                <div class="m-0 mt-4">
+                                    <p>
+                                        <a class="button is-outlined is-warning" href="16/">
+                                            Read Now
+                                        </a>
+                                    </p>
+                                </div>
+
                             </div>
                         </div>
-                    </a>
+                    </div>
                 </div>
-            
-                <div class="column is-12">
-                    <a class="is-clickable" href="17/">
-                        <div class="card has-glow-md">
-                            <div class="card-content">
-                                <div class="content">
-                                    <h5 class="mb-0">
+            </div>
+        </div>
+        
+        <div
+            class="column is-full-tablet is-full-desktop is-full-widescreen is-full-fullhd is-flex animatedParent animateOnce">
+            <div class="card card-horizontal is-flex-grow-1 animated fadeInUpShort">
+                <div class="card-content p-2">
+                    <div class="columns is-multiline is-variable m-0">
+                        <div class="column">
+                            <div class="content m-0">
+                                <div class="m-0">
+                                    
+                                    <h5 class="title is-5 m-0">
                                         अध्याय १३ - श्लोक १७
                                     </h5>
                                     
                                     
-                                        <hr class="mt-3 mb-3"/>
-                                    
-
-                                    
-
-                                    
-                                        
-                                            <p class="has-text-justified">यद्यपि परमात्मा समस्त जीवों के मध्य विभाजित प्रतीत होता है, लेकिन वह कभी भी विभाजित नहीं है | वह एक रूप में स्थित है | यद्यपि वह प्रत्येक जीव का पालनकर्ता है, लेकिन यह समझना चाहिए कि वह सबों का संहारकरता है और सबों को जन्म देता है |</p>
-                                        
-                                    
+                                
                                 </div>
+                                
+                                
+                                <hr class="m-0 mt-4">
+                                
+                                <div class="m-0 mt-4">
+                                    
+                                    
+                                    <p class="has-text-justified">
+                                        यद्यपि परमात्मा समस्त जीवों के मध्य विभाजित प्रतीत होता है, लेकिन वह कभी भी विभाजित नहीं है | वह एक रूप में स्थित है | यद्यपि वह प्रत्येक जीव का पालनकर्ता है, लेकिन यह समझना चाहिए कि वह सबों का संहारकरता है और सबों को जन्म देता है |
+                                    </p>
+                                    
+
+                                </div>
+                                
+                                
+                                <div class="m-0 mt-4">
+                                    <p>
+                                        <a class="button is-outlined is-warning" href="17/">
+                                            Read Now
+                                        </a>
+                                    </p>
+                                </div>
+
                             </div>
                         </div>
-                    </a>
+                    </div>
                 </div>
-            
-                <div class="column is-12">
-                    <a class="is-clickable" href="18/">
-                        <div class="card has-glow-md">
-                            <div class="card-content">
-                                <div class="content">
-                                    <h5 class="mb-0">
+            </div>
+        </div>
+        
+        <div
+            class="column is-full-tablet is-full-desktop is-full-widescreen is-full-fullhd is-flex animatedParent animateOnce">
+            <div class="card card-horizontal is-flex-grow-1 animated fadeInUpShort">
+                <div class="card-content p-2">
+                    <div class="columns is-multiline is-variable m-0">
+                        <div class="column">
+                            <div class="content m-0">
+                                <div class="m-0">
+                                    
+                                    <h5 class="title is-5 m-0">
                                         अध्याय १३ - श्लोक १८
                                     </h5>
                                     
                                     
-                                        <hr class="mt-3 mb-3"/>
-                                    
-
-                                    
-
-                                    
-                                        
-                                            <p class="has-text-justified">वे समस्त प्रकाशमान वस्तुओं के प्रकाशस्त्रोत हैं | वे भौतिक अंधकार से परे हैं और अगोचर हैं | वे ज्ञान हैं, ज्ञेय हैं और ज्ञान के लक्ष्य हैं | वे सबके हृदय में स्थित हैं |</p>
-                                        
-                                    
+                                
                                 </div>
+                                
+                                
+                                <hr class="m-0 mt-4">
+                                
+                                <div class="m-0 mt-4">
+                                    
+                                    
+                                    <p class="has-text-justified">
+                                        वे समस्त प्रकाशमान वस्तुओं के प्रकाशस्त्रोत हैं | वे भौतिक अंधकार से परे हैं और अगोचर हैं | वे ज्ञान हैं, ज्ञेय हैं और ज्ञान के लक्ष्य हैं | वे सबके हृदय में स्थित हैं |
+                                    </p>
+                                    
+
+                                </div>
+                                
+                                
+                                <div class="m-0 mt-4">
+                                    <p>
+                                        <a class="button is-outlined is-warning" href="18/">
+                                            Read Now
+                                        </a>
+                                    </p>
+                                </div>
+
                             </div>
                         </div>
-                    </a>
+                    </div>
                 </div>
-            
-                <div class="column is-12">
-                    <a class="is-clickable" href="19/">
-                        <div class="card has-glow-md">
-                            <div class="card-content">
-                                <div class="content">
-                                    <h5 class="mb-0">
+            </div>
+        </div>
+        
+        <div
+            class="column is-full-tablet is-full-desktop is-full-widescreen is-full-fullhd is-flex animatedParent animateOnce">
+            <div class="card card-horizontal is-flex-grow-1 animated fadeInUpShort">
+                <div class="card-content p-2">
+                    <div class="columns is-multiline is-variable m-0">
+                        <div class="column">
+                            <div class="content m-0">
+                                <div class="m-0">
+                                    
+                                    <h5 class="title is-5 m-0">
                                         अध्याय १३ - श्लोक १९
                                     </h5>
                                     
                                     
-                                        <hr class="mt-3 mb-3"/>
-                                    
-
-                                    
-
-                                    
-                                        
-                                            <p class="has-text-justified">इस प्रकार मैंने कर्म क्षेत्र (शरीर), ज्ञान तथा ज्ञेय का संक्षेप में वर्णन किया है | इसे केवल मेरे भक्त ही पूरी तरह समझ सकते हैं और इस तरह मेरे स्वभाव को प्राप्त होते हैं |</p>
-                                        
-                                    
+                                
                                 </div>
+                                
+                                
+                                <hr class="m-0 mt-4">
+                                
+                                <div class="m-0 mt-4">
+                                    
+                                    
+                                    <p class="has-text-justified">
+                                        इस प्रकार मैंने कर्म क्षेत्र (शरीर), ज्ञान तथा ज्ञेय का संक्षेप में वर्णन किया है | इसे केवल मेरे भक्त ही पूरी तरह समझ सकते हैं और इस तरह मेरे स्वभाव को प्राप्त होते हैं |
+                                    </p>
+                                    
+
+                                </div>
+                                
+                                
+                                <div class="m-0 mt-4">
+                                    <p>
+                                        <a class="button is-outlined is-warning" href="19/">
+                                            Read Now
+                                        </a>
+                                    </p>
+                                </div>
+
                             </div>
                         </div>
-                    </a>
+                    </div>
                 </div>
-            
-                <div class="column is-12">
-                    <a class="is-clickable" href="20/">
-                        <div class="card has-glow-md">
-                            <div class="card-content">
-                                <div class="content">
-                                    <h5 class="mb-0">
+            </div>
+        </div>
+        
+        <div
+            class="column is-full-tablet is-full-desktop is-full-widescreen is-full-fullhd is-flex animatedParent animateOnce">
+            <div class="card card-horizontal is-flex-grow-1 animated fadeInUpShort">
+                <div class="card-content p-2">
+                    <div class="columns is-multiline is-variable m-0">
+                        <div class="column">
+                            <div class="content m-0">
+                                <div class="m-0">
+                                    
+                                    <h5 class="title is-5 m-0">
                                         अध्याय १३ - श्लोक २०
                                     </h5>
                                     
                                     
-                                        <hr class="mt-3 mb-3"/>
-                                    
-
-                                    
-
-                                    
-                                        
-                                            <p class="has-text-justified">प्रकृति तथा जीवों को अनादि समझना चाहिए | उनके विकार तथा गुण प्रकृतिजन्य हैं |</p>
-                                        
-                                    
+                                
                                 </div>
+                                
+                                
+                                <hr class="m-0 mt-4">
+                                
+                                <div class="m-0 mt-4">
+                                    
+                                    
+                                    <p class="has-text-justified">
+                                        प्रकृति तथा जीवों को अनादि समझना चाहिए | उनके विकार तथा गुण प्रकृतिजन्य हैं |
+                                    </p>
+                                    
+
+                                </div>
+                                
+                                
+                                <div class="m-0 mt-4">
+                                    <p>
+                                        <a class="button is-outlined is-warning" href="20/">
+                                            Read Now
+                                        </a>
+                                    </p>
+                                </div>
+
                             </div>
                         </div>
-                    </a>
+                    </div>
                 </div>
-            
-                <div class="column is-12">
-                    <a class="is-clickable" href="21/">
-                        <div class="card has-glow-md">
-                            <div class="card-content">
-                                <div class="content">
-                                    <h5 class="mb-0">
+            </div>
+        </div>
+        
+        <div
+            class="column is-full-tablet is-full-desktop is-full-widescreen is-full-fullhd is-flex animatedParent animateOnce">
+            <div class="card card-horizontal is-flex-grow-1 animated fadeInUpShort">
+                <div class="card-content p-2">
+                    <div class="columns is-multiline is-variable m-0">
+                        <div class="column">
+                            <div class="content m-0">
+                                <div class="m-0">
+                                    
+                                    <h5 class="title is-5 m-0">
                                         अध्याय १३ - श्लोक २१
                                     </h5>
                                     
                                     
-                                        <hr class="mt-3 mb-3"/>
-                                    
-
-                                    
-
-                                    
-                                        
-                                            <p class="has-text-justified">प्रकृति समस्त भौतिक कारणों तथा कार्यों (परिणामों) की हेतु कही जाती है, और जीव (पुरुष) इस संसार में विविध सुख-दुख के भोग का कारण कहा जाता है |</p>
-                                        
-                                    
+                                
                                 </div>
+                                
+                                
+                                <hr class="m-0 mt-4">
+                                
+                                <div class="m-0 mt-4">
+                                    
+                                    
+                                    <p class="has-text-justified">
+                                        प्रकृति समस्त भौतिक कारणों तथा कार्यों (परिणामों) की हेतु कही जाती है, और जीव (पुरुष) इस संसार में विविध सुख-दुख के भोग का कारण कहा जाता है |
+                                    </p>
+                                    
+
+                                </div>
+                                
+                                
+                                <div class="m-0 mt-4">
+                                    <p>
+                                        <a class="button is-outlined is-warning" href="21/">
+                                            Read Now
+                                        </a>
+                                    </p>
+                                </div>
+
                             </div>
                         </div>
-                    </a>
+                    </div>
                 </div>
-            
-                <div class="column is-12">
-                    <a class="is-clickable" href="22/">
-                        <div class="card has-glow-md">
-                            <div class="card-content">
-                                <div class="content">
-                                    <h5 class="mb-0">
+            </div>
+        </div>
+        
+        <div
+            class="column is-full-tablet is-full-desktop is-full-widescreen is-full-fullhd is-flex animatedParent animateOnce">
+            <div class="card card-horizontal is-flex-grow-1 animated fadeInUpShort">
+                <div class="card-content p-2">
+                    <div class="columns is-multiline is-variable m-0">
+                        <div class="column">
+                            <div class="content m-0">
+                                <div class="m-0">
+                                    
+                                    <h5 class="title is-5 m-0">
                                         अध्याय १३ - श्लोक २२
                                     </h5>
                                     
                                     
-                                        <hr class="mt-3 mb-3"/>
-                                    
-
-                                    
-
-                                    
-                                        
-                                            <p class="has-text-justified">इस प्रकार जीव प्रकृति के तीनों गुणों का भोग करता हुआ प्रकृति में ही जीवन बिताता है | यह उस प्रकृति के साथ उसकी संगति के कारण है | इस तरह उसे उत्तम तथा अधम योनियाँ मिलती रहती हैं |</p>
-                                        
-                                    
+                                
                                 </div>
+                                
+                                
+                                <hr class="m-0 mt-4">
+                                
+                                <div class="m-0 mt-4">
+                                    
+                                    
+                                    <p class="has-text-justified">
+                                        इस प्रकार जीव प्रकृति के तीनों गुणों का भोग करता हुआ प्रकृति में ही जीवन बिताता है | यह उस प्रकृति के साथ उसकी संगति के कारण है | इस तरह उसे उत्तम तथा अधम योनियाँ मिलती रहती हैं |
+                                    </p>
+                                    
+
+                                </div>
+                                
+                                
+                                <div class="m-0 mt-4">
+                                    <p>
+                                        <a class="button is-outlined is-warning" href="22/">
+                                            Read Now
+                                        </a>
+                                    </p>
+                                </div>
+
                             </div>
                         </div>
-                    </a>
+                    </div>
                 </div>
-            
-                <div class="column is-12">
-                    <a class="is-clickable" href="23/">
-                        <div class="card has-glow-md">
-                            <div class="card-content">
-                                <div class="content">
-                                    <h5 class="mb-0">
+            </div>
+        </div>
+        
+        <div
+            class="column is-full-tablet is-full-desktop is-full-widescreen is-full-fullhd is-flex animatedParent animateOnce">
+            <div class="card card-horizontal is-flex-grow-1 animated fadeInUpShort">
+                <div class="card-content p-2">
+                    <div class="columns is-multiline is-variable m-0">
+                        <div class="column">
+                            <div class="content m-0">
+                                <div class="m-0">
+                                    
+                                    <h5 class="title is-5 m-0">
                                         अध्याय १३ - श्लोक २३
                                     </h5>
                                     
                                     
-                                        <hr class="mt-3 mb-3"/>
-                                    
-
-                                    
-
-                                    
-                                        
-                                            <p class="has-text-justified">तो भी इस शरीर में एक दिव्य भोक्ता है, जो ईश्वर है, परम स्वामी है और साक्षी तथा अनुमति देने वाले के रूप में विद्यमान है और जो परमात्मा कहलाता है ।</p>
-                                        
-                                    
+                                
                                 </div>
+                                
+                                
+                                <hr class="m-0 mt-4">
+                                
+                                <div class="m-0 mt-4">
+                                    
+                                    
+                                    <p class="has-text-justified">
+                                        तो भी इस शरीर में एक दिव्य भोक्ता है, जो ईश्वर है, परम स्वामी है और साक्षी तथा अनुमति देने वाले के रूप में विद्यमान है और जो परमात्मा कहलाता है ।
+                                    </p>
+                                    
+
+                                </div>
+                                
+                                
+                                <div class="m-0 mt-4">
+                                    <p>
+                                        <a class="button is-outlined is-warning" href="23/">
+                                            Read Now
+                                        </a>
+                                    </p>
+                                </div>
+
                             </div>
                         </div>
-                    </a>
+                    </div>
                 </div>
-            
-                <div class="column is-12">
-                    <a class="is-clickable" href="24/">
-                        <div class="card has-glow-md">
-                            <div class="card-content">
-                                <div class="content">
-                                    <h5 class="mb-0">
+            </div>
+        </div>
+        
+        <div
+            class="column is-full-tablet is-full-desktop is-full-widescreen is-full-fullhd is-flex animatedParent animateOnce">
+            <div class="card card-horizontal is-flex-grow-1 animated fadeInUpShort">
+                <div class="card-content p-2">
+                    <div class="columns is-multiline is-variable m-0">
+                        <div class="column">
+                            <div class="content m-0">
+                                <div class="m-0">
+                                    
+                                    <h5 class="title is-5 m-0">
                                         अध्याय १३ - श्लोक २४
                                     </h5>
                                     
                                     
-                                        <hr class="mt-3 mb-3"/>
-                                    
-
-                                    
-
-                                    
-                                        
-                                            <p class="has-text-justified">जो व्यक्ति प्रकृति, जीव तथा प्रकृति के गुणों की अन्तःक्रिया से सम्बन्धित इस विचारधारा को समझ लेता है, उसे मुक्ति की प्राप्ति सुनिश्चित है । उसकी वर्तमान स्थिति चाहे जैसी हो, यहाँ पर उसका पुनर्जन्म नहीं होगा ।</p>
-                                        
-                                    
+                                
                                 </div>
+                                
+                                
+                                <hr class="m-0 mt-4">
+                                
+                                <div class="m-0 mt-4">
+                                    
+                                    
+                                    <p class="has-text-justified">
+                                        जो व्यक्ति प्रकृति, जीव तथा प्रकृति के गुणों की अन्तःक्रिया से सम्बन्धित इस विचारधारा को समझ लेता है, उसे मुक्ति की प्राप्ति सुनिश्चित है । उसकी वर्तमान स्थिति चाहे जैसी हो, यहाँ पर उसका पुनर्जन्म नहीं होगा ।
+                                    </p>
+                                    
+
+                                </div>
+                                
+                                
+                                <div class="m-0 mt-4">
+                                    <p>
+                                        <a class="button is-outlined is-warning" href="24/">
+                                            Read Now
+                                        </a>
+                                    </p>
+                                </div>
+
                             </div>
                         </div>
-                    </a>
+                    </div>
                 </div>
-            
-                <div class="column is-12">
-                    <a class="is-clickable" href="25/">
-                        <div class="card has-glow-md">
-                            <div class="card-content">
-                                <div class="content">
-                                    <h5 class="mb-0">
+            </div>
+        </div>
+        
+        <div
+            class="column is-full-tablet is-full-desktop is-full-widescreen is-full-fullhd is-flex animatedParent animateOnce">
+            <div class="card card-horizontal is-flex-grow-1 animated fadeInUpShort">
+                <div class="card-content p-2">
+                    <div class="columns is-multiline is-variable m-0">
+                        <div class="column">
+                            <div class="content m-0">
+                                <div class="m-0">
+                                    
+                                    <h5 class="title is-5 m-0">
                                         अध्याय १३ - श्लोक २५
                                     </h5>
                                     
                                     
-                                        <hr class="mt-3 mb-3"/>
-                                    
-
-                                    
-
-                                    
-                                        
-                                            <p class="has-text-justified">कुछ लोग परमात्मा को ध्यान के द्वारा अपने भीतर देखते हैं, तो दूसरे लोग ज्ञान के अनुशीलन द्वारा और कुछ ऐसे हैं जो निष्काम कर्मयोग द्वारा देखते हैं ।</p>
-                                        
-                                    
+                                
                                 </div>
+                                
+                                
+                                <hr class="m-0 mt-4">
+                                
+                                <div class="m-0 mt-4">
+                                    
+                                    
+                                    <p class="has-text-justified">
+                                        कुछ लोग परमात्मा को ध्यान के द्वारा अपने भीतर देखते हैं, तो दूसरे लोग ज्ञान के अनुशीलन द्वारा और कुछ ऐसे हैं जो निष्काम कर्मयोग द्वारा देखते हैं ।
+                                    </p>
+                                    
+
+                                </div>
+                                
+                                
+                                <div class="m-0 mt-4">
+                                    <p>
+                                        <a class="button is-outlined is-warning" href="25/">
+                                            Read Now
+                                        </a>
+                                    </p>
+                                </div>
+
                             </div>
                         </div>
-                    </a>
+                    </div>
                 </div>
-            
-                <div class="column is-12">
-                    <a class="is-clickable" href="26/">
-                        <div class="card has-glow-md">
-                            <div class="card-content">
-                                <div class="content">
-                                    <h5 class="mb-0">
+            </div>
+        </div>
+        
+        <div
+            class="column is-full-tablet is-full-desktop is-full-widescreen is-full-fullhd is-flex animatedParent animateOnce">
+            <div class="card card-horizontal is-flex-grow-1 animated fadeInUpShort">
+                <div class="card-content p-2">
+                    <div class="columns is-multiline is-variable m-0">
+                        <div class="column">
+                            <div class="content m-0">
+                                <div class="m-0">
+                                    
+                                    <h5 class="title is-5 m-0">
                                         अध्याय १३ - श्लोक २६
                                     </h5>
                                     
                                     
-                                        <hr class="mt-3 mb-3"/>
-                                    
-
-                                    
-
-                                    
-                                        
-                                            <p class="has-text-justified">ऐसे भी लोग हैं जो यद्यपि आध्यात्मिक ज्ञान से अवगत नहीं होते पर अन्यों से परम पुरुष के विषय में सुनकर उनकी पूजा करने लगते हैं । ये लोग भी प्रामाणिक पुरुषों सेश्रवण करने की मनोवृत्ति होने के कारण जन्म तथा मृत्यु पथ को पार कर जाते हैं ।</p>
-                                        
-                                    
+                                
                                 </div>
+                                
+                                
+                                <hr class="m-0 mt-4">
+                                
+                                <div class="m-0 mt-4">
+                                    
+                                    
+                                    <p class="has-text-justified">
+                                        ऐसे भी लोग हैं जो यद्यपि आध्यात्मिक ज्ञान से अवगत नहीं होते पर अन्यों से परम पुरुष के विषय में सुनकर उनकी पूजा करने लगते हैं । ये लोग भी प्रामाणिक पुरुषों सेश्रवण करने की मनोवृत्ति होने के कारण जन्म तथा मृत्यु पथ को पार कर जाते हैं ।
+                                    </p>
+                                    
+
+                                </div>
+                                
+                                
+                                <div class="m-0 mt-4">
+                                    <p>
+                                        <a class="button is-outlined is-warning" href="26/">
+                                            Read Now
+                                        </a>
+                                    </p>
+                                </div>
+
                             </div>
                         </div>
-                    </a>
+                    </div>
                 </div>
-            
-                <div class="column is-12">
-                    <a class="is-clickable" href="27/">
-                        <div class="card has-glow-md">
-                            <div class="card-content">
-                                <div class="content">
-                                    <h5 class="mb-0">
+            </div>
+        </div>
+        
+        <div
+            class="column is-full-tablet is-full-desktop is-full-widescreen is-full-fullhd is-flex animatedParent animateOnce">
+            <div class="card card-horizontal is-flex-grow-1 animated fadeInUpShort">
+                <div class="card-content p-2">
+                    <div class="columns is-multiline is-variable m-0">
+                        <div class="column">
+                            <div class="content m-0">
+                                <div class="m-0">
+                                    
+                                    <h5 class="title is-5 m-0">
                                         अध्याय १३ - श्लोक २७
                                     </h5>
                                     
                                     
-                                        <hr class="mt-3 mb-3"/>
-                                    
-
-                                    
-
-                                    
-                                        
-                                            <p class="has-text-justified">हे भरतवंशियों में श्रेष्ठ! यह जान लो कि चर तथा अचर जो भी तुम्हें अस्तित्व में दीख रहा है, वह कर्मक्षेत्र तथा क्षेत्र के ज्ञाता का संयोग मात्र है ।</p>
-                                        
-                                    
+                                
                                 </div>
+                                
+                                
+                                <hr class="m-0 mt-4">
+                                
+                                <div class="m-0 mt-4">
+                                    
+                                    
+                                    <p class="has-text-justified">
+                                        हे भरतवंशियों में श्रेष्ठ! यह जान लो कि चर तथा अचर जो भी तुम्हें अस्तित्व में दीख रहा है, वह कर्मक्षेत्र तथा क्षेत्र के ज्ञाता का संयोग मात्र है ।
+                                    </p>
+                                    
+
+                                </div>
+                                
+                                
+                                <div class="m-0 mt-4">
+                                    <p>
+                                        <a class="button is-outlined is-warning" href="27/">
+                                            Read Now
+                                        </a>
+                                    </p>
+                                </div>
+
                             </div>
                         </div>
-                    </a>
+                    </div>
                 </div>
-            
-                <div class="column is-12">
-                    <a class="is-clickable" href="28/">
-                        <div class="card has-glow-md">
-                            <div class="card-content">
-                                <div class="content">
-                                    <h5 class="mb-0">
+            </div>
+        </div>
+        
+        <div
+            class="column is-full-tablet is-full-desktop is-full-widescreen is-full-fullhd is-flex animatedParent animateOnce">
+            <div class="card card-horizontal is-flex-grow-1 animated fadeInUpShort">
+                <div class="card-content p-2">
+                    <div class="columns is-multiline is-variable m-0">
+                        <div class="column">
+                            <div class="content m-0">
+                                <div class="m-0">
+                                    
+                                    <h5 class="title is-5 m-0">
                                         अध्याय १३ - श्लोक २८
                                     </h5>
                                     
                                     
-                                        <hr class="mt-3 mb-3"/>
-                                    
-
-                                    
-
-                                    
-                                        
-                                            <p class="has-text-justified">जो परमात्मा को समस्त शरीरों में आत्मा के साथ देखता है और जो यह समझता है कि इस नश्वर शरीर के भीतर न तो आत्मा, न ही परमात्मा कभी भी विनष्ट होता है, वही वास्तव में देखता है |</p>
-                                        
-                                    
+                                
                                 </div>
+                                
+                                
+                                <hr class="m-0 mt-4">
+                                
+                                <div class="m-0 mt-4">
+                                    
+                                    
+                                    <p class="has-text-justified">
+                                        जो परमात्मा को समस्त शरीरों में आत्मा के साथ देखता है और जो यह समझता है कि इस नश्वर शरीर के भीतर न तो आत्मा, न ही परमात्मा कभी भी विनष्ट होता है, वही वास्तव में देखता है |
+                                    </p>
+                                    
+
+                                </div>
+                                
+                                
+                                <div class="m-0 mt-4">
+                                    <p>
+                                        <a class="button is-outlined is-warning" href="28/">
+                                            Read Now
+                                        </a>
+                                    </p>
+                                </div>
+
                             </div>
                         </div>
-                    </a>
+                    </div>
                 </div>
-            
-                <div class="column is-12">
-                    <a class="is-clickable" href="29/">
-                        <div class="card has-glow-md">
-                            <div class="card-content">
-                                <div class="content">
-                                    <h5 class="mb-0">
+            </div>
+        </div>
+        
+        <div
+            class="column is-full-tablet is-full-desktop is-full-widescreen is-full-fullhd is-flex animatedParent animateOnce">
+            <div class="card card-horizontal is-flex-grow-1 animated fadeInUpShort">
+                <div class="card-content p-2">
+                    <div class="columns is-multiline is-variable m-0">
+                        <div class="column">
+                            <div class="content m-0">
+                                <div class="m-0">
+                                    
+                                    <h5 class="title is-5 m-0">
                                         अध्याय १३ - श्लोक २९
                                     </h5>
                                     
                                     
-                                        <hr class="mt-3 mb-3"/>
-                                    
-
-                                    
-
-                                    
-                                        
-                                            <p class="has-text-justified">जो व्यक्ति परमात्मा को सर्वत्र तथा प्रत्येक जीव में समान रूप से वर्तमान देखता है, वह अपने मन के द्वारा अपने आपको भ्रष्ट नहीं करता | इस प्रकार वह दिव्य गन्तव्य को प्राप्त करता है |</p>
-                                        
-                                    
+                                
                                 </div>
+                                
+                                
+                                <hr class="m-0 mt-4">
+                                
+                                <div class="m-0 mt-4">
+                                    
+                                    
+                                    <p class="has-text-justified">
+                                        जो व्यक्ति परमात्मा को सर्वत्र तथा प्रत्येक जीव में समान रूप से वर्तमान देखता है, वह अपने मन के द्वारा अपने आपको भ्रष्ट नहीं करता | इस प्रकार वह दिव्य गन्तव्य को प्राप्त करता है |
+                                    </p>
+                                    
+
+                                </div>
+                                
+                                
+                                <div class="m-0 mt-4">
+                                    <p>
+                                        <a class="button is-outlined is-warning" href="29/">
+                                            Read Now
+                                        </a>
+                                    </p>
+                                </div>
+
                             </div>
                         </div>
-                    </a>
+                    </div>
                 </div>
-            
-                <div class="column is-12">
-                    <a class="is-clickable" href="30/">
-                        <div class="card has-glow-md">
-                            <div class="card-content">
-                                <div class="content">
-                                    <h5 class="mb-0">
+            </div>
+        </div>
+        
+        <div
+            class="column is-full-tablet is-full-desktop is-full-widescreen is-full-fullhd is-flex animatedParent animateOnce">
+            <div class="card card-horizontal is-flex-grow-1 animated fadeInUpShort">
+                <div class="card-content p-2">
+                    <div class="columns is-multiline is-variable m-0">
+                        <div class="column">
+                            <div class="content m-0">
+                                <div class="m-0">
+                                    
+                                    <h5 class="title is-5 m-0">
                                         अध्याय १३ - श्लोक ३०
                                     </h5>
                                     
                                     
-                                        <hr class="mt-3 mb-3"/>
-                                    
-
-                                    
-
-                                    
-                                        
-                                            <p class="has-text-justified">जो यह देखता है कि सारे कार्य शरीर द्वारा सम्पन्न किये जाते हैं, जिसकी उत्पत्ति प्रकृति से हुई है, और जो देखता है कि आत्मा कुछ भी नहीं करता, वही यथार्थ में देखता है |</p>
-                                        
-                                    
+                                
                                 </div>
+                                
+                                
+                                <hr class="m-0 mt-4">
+                                
+                                <div class="m-0 mt-4">
+                                    
+                                    
+                                    <p class="has-text-justified">
+                                        जो यह देखता है कि सारे कार्य शरीर द्वारा सम्पन्न किये जाते हैं, जिसकी उत्पत्ति प्रकृति से हुई है, और जो देखता है कि आत्मा कुछ भी नहीं करता, वही यथार्थ में देखता है |
+                                    </p>
+                                    
+
+                                </div>
+                                
+                                
+                                <div class="m-0 mt-4">
+                                    <p>
+                                        <a class="button is-outlined is-warning" href="30/">
+                                            Read Now
+                                        </a>
+                                    </p>
+                                </div>
+
                             </div>
                         </div>
-                    </a>
+                    </div>
                 </div>
-            
-                <div class="column is-12">
-                    <a class="is-clickable" href="31/">
-                        <div class="card has-glow-md">
-                            <div class="card-content">
-                                <div class="content">
-                                    <h5 class="mb-0">
+            </div>
+        </div>
+        
+        <div
+            class="column is-full-tablet is-full-desktop is-full-widescreen is-full-fullhd is-flex animatedParent animateOnce">
+            <div class="card card-horizontal is-flex-grow-1 animated fadeInUpShort">
+                <div class="card-content p-2">
+                    <div class="columns is-multiline is-variable m-0">
+                        <div class="column">
+                            <div class="content m-0">
+                                <div class="m-0">
+                                    
+                                    <h5 class="title is-5 m-0">
                                         अध्याय १३ - श्लोक ३१
                                     </h5>
                                     
                                     
-                                        <hr class="mt-3 mb-3"/>
-                                    
-
-                                    
-
-                                    
-                                        
-                                            <p class="has-text-justified">जब विवेकवान् व्यक्ति विभिन्न भौतिक शरीरों के कारण विभिन्न स्वरूपों को देखना बन्द कर देता है, और यह देखता है कि किस प्रकार जीव सर्वत्र फैले हुए हैं, तो वह ब्रह्म-बोध को प्राप्त होता है |</p>
-                                        
-                                    
+                                
                                 </div>
+                                
+                                
+                                <hr class="m-0 mt-4">
+                                
+                                <div class="m-0 mt-4">
+                                    
+                                    
+                                    <p class="has-text-justified">
+                                        जब विवेकवान् व्यक्ति विभिन्न भौतिक शरीरों के कारण विभिन्न स्वरूपों को देखना बन्द कर देता है, और यह देखता है कि किस प्रकार जीव सर्वत्र फैले हुए हैं, तो वह ब्रह्म-बोध को प्राप्त होता है |
+                                    </p>
+                                    
+
+                                </div>
+                                
+                                
+                                <div class="m-0 mt-4">
+                                    <p>
+                                        <a class="button is-outlined is-warning" href="31/">
+                                            Read Now
+                                        </a>
+                                    </p>
+                                </div>
+
                             </div>
                         </div>
-                    </a>
+                    </div>
                 </div>
-            
-                <div class="column is-12">
-                    <a class="is-clickable" href="32/">
-                        <div class="card has-glow-md">
-                            <div class="card-content">
-                                <div class="content">
-                                    <h5 class="mb-0">
+            </div>
+        </div>
+        
+        <div
+            class="column is-full-tablet is-full-desktop is-full-widescreen is-full-fullhd is-flex animatedParent animateOnce">
+            <div class="card card-horizontal is-flex-grow-1 animated fadeInUpShort">
+                <div class="card-content p-2">
+                    <div class="columns is-multiline is-variable m-0">
+                        <div class="column">
+                            <div class="content m-0">
+                                <div class="m-0">
+                                    
+                                    <h5 class="title is-5 m-0">
                                         अध्याय १३ - श्लोक ३२
                                     </h5>
                                     
                                     
-                                        <hr class="mt-3 mb-3"/>
-                                    
-
-                                    
-
-                                    
-                                        
-                                            <p class="has-text-justified">शाश्वत दृष्टिसम्पन्न लोग यह देख सकते हैं कि अविनाशी आत्मा दिव्य, शाश्वत तथा गुणों अतीत है | हे अर्जुन! भौतिक शरीर के साथ सम्पर्क होते हुए भी आत्मा न तो कुछ करता है और न लिप्त होता है |</p>
-                                        
-                                    
+                                
                                 </div>
+                                
+                                
+                                <hr class="m-0 mt-4">
+                                
+                                <div class="m-0 mt-4">
+                                    
+                                    
+                                    <p class="has-text-justified">
+                                        शाश्वत दृष्टिसम्पन्न लोग यह देख सकते हैं कि अविनाशी आत्मा दिव्य, शाश्वत तथा गुणों अतीत है | हे अर्जुन! भौतिक शरीर के साथ सम्पर्क होते हुए भी आत्मा न तो कुछ करता है और न लिप्त होता है |
+                                    </p>
+                                    
+
+                                </div>
+                                
+                                
+                                <div class="m-0 mt-4">
+                                    <p>
+                                        <a class="button is-outlined is-warning" href="32/">
+                                            Read Now
+                                        </a>
+                                    </p>
+                                </div>
+
                             </div>
                         </div>
-                    </a>
+                    </div>
                 </div>
-            
-                <div class="column is-12">
-                    <a class="is-clickable" href="33/">
-                        <div class="card has-glow-md">
-                            <div class="card-content">
-                                <div class="content">
-                                    <h5 class="mb-0">
+            </div>
+        </div>
+        
+        <div
+            class="column is-full-tablet is-full-desktop is-full-widescreen is-full-fullhd is-flex animatedParent animateOnce">
+            <div class="card card-horizontal is-flex-grow-1 animated fadeInUpShort">
+                <div class="card-content p-2">
+                    <div class="columns is-multiline is-variable m-0">
+                        <div class="column">
+                            <div class="content m-0">
+                                <div class="m-0">
+                                    
+                                    <h5 class="title is-5 m-0">
                                         अध्याय १३ - श्लोक ३३
                                     </h5>
                                     
                                     
-                                        <hr class="mt-3 mb-3"/>
-                                    
-
-                                    
-
-                                    
-                                        
-                                            <p class="has-text-justified">यद्यपि आकाश सर्वव्यापी है, किन्तु अपनी सूक्ष्म प्रकृति के कारण, किसी वस्तु से लिप्त नहीं होता | इसी तरह ब्रह्मदृष्टि में स्थित आत्मा, शरीर में स्थित रहते हुए भी, शरीर से लिप्त नहीं होता |</p>
-                                        
-                                    
+                                
                                 </div>
+                                
+                                
+                                <hr class="m-0 mt-4">
+                                
+                                <div class="m-0 mt-4">
+                                    
+                                    
+                                    <p class="has-text-justified">
+                                        यद्यपि आकाश सर्वव्यापी है, किन्तु अपनी सूक्ष्म प्रकृति के कारण, किसी वस्तु से लिप्त नहीं होता | इसी तरह ब्रह्मदृष्टि में स्थित आत्मा, शरीर में स्थित रहते हुए भी, शरीर से लिप्त नहीं होता |
+                                    </p>
+                                    
+
+                                </div>
+                                
+                                
+                                <div class="m-0 mt-4">
+                                    <p>
+                                        <a class="button is-outlined is-warning" href="33/">
+                                            Read Now
+                                        </a>
+                                    </p>
+                                </div>
+
                             </div>
                         </div>
-                    </a>
+                    </div>
                 </div>
-            
-                <div class="column is-12">
-                    <a class="is-clickable" href="34/">
-                        <div class="card has-glow-md">
-                            <div class="card-content">
-                                <div class="content">
-                                    <h5 class="mb-0">
+            </div>
+        </div>
+        
+        <div
+            class="column is-full-tablet is-full-desktop is-full-widescreen is-full-fullhd is-flex animatedParent animateOnce">
+            <div class="card card-horizontal is-flex-grow-1 animated fadeInUpShort">
+                <div class="card-content p-2">
+                    <div class="columns is-multiline is-variable m-0">
+                        <div class="column">
+                            <div class="content m-0">
+                                <div class="m-0">
+                                    
+                                    <h5 class="title is-5 m-0">
                                         अध्याय १३ - श्लोक ३४
                                     </h5>
                                     
                                     
-                                        <hr class="mt-3 mb-3"/>
-                                    
-
-                                    
-
-                                    
-                                        
-                                            <p class="has-text-justified">हे भरतपुत्र! जिस प्रकार सूर्य अकेले इस सारे ब्रह्माण्ड को प्रकाशित करता है, उसी प्रकार शरीर के भीतर स्थित एक आत्मा सारे शरीर को चेतना से प्रकाशित करता है |</p>
-                                        
-                                    
+                                
                                 </div>
+                                
+                                
+                                <hr class="m-0 mt-4">
+                                
+                                <div class="m-0 mt-4">
+                                    
+                                    
+                                    <p class="has-text-justified">
+                                        हे भरतपुत्र! जिस प्रकार सूर्य अकेले इस सारे ब्रह्माण्ड को प्रकाशित करता है, उसी प्रकार शरीर के भीतर स्थित एक आत्मा सारे शरीर को चेतना से प्रकाशित करता है |
+                                    </p>
+                                    
+
+                                </div>
+                                
+                                
+                                <div class="m-0 mt-4">
+                                    <p>
+                                        <a class="button is-outlined is-warning" href="34/">
+                                            Read Now
+                                        </a>
+                                    </p>
+                                </div>
+
                             </div>
                         </div>
-                    </a>
+                    </div>
                 </div>
-            
-                <div class="column is-12">
-                    <a class="is-clickable" href="35/">
-                        <div class="card has-glow-md">
-                            <div class="card-content">
-                                <div class="content">
-                                    <h5 class="mb-0">
+            </div>
+        </div>
+        
+        <div
+            class="column is-full-tablet is-full-desktop is-full-widescreen is-full-fullhd is-flex animatedParent animateOnce">
+            <div class="card card-horizontal is-flex-grow-1 animated fadeInUpShort">
+                <div class="card-content p-2">
+                    <div class="columns is-multiline is-variable m-0">
+                        <div class="column">
+                            <div class="content m-0">
+                                <div class="m-0">
+                                    
+                                    <h5 class="title is-5 m-0">
                                         अध्याय १३ - श्लोक ३५
                                     </h5>
                                     
                                     
-                                        <hr class="mt-3 mb-3"/>
-                                    
-
-                                    
-
-                                    
-                                        
-                                            <p class="has-text-justified">जो लोग ज्ञान के चक्षुओं से शरीर तथा शरीर के ज्ञाता के अन्तर को देखते हैं और भव-बन्धन से मुक्ति की विधि को भी जानते हैं, उन्हें परमलक्ष्य प्राप्त होता है |</p>
-                                        
-                                    
+                                
                                 </div>
+                                
+                                
+                                <hr class="m-0 mt-4">
+                                
+                                <div class="m-0 mt-4">
+                                    
+                                    
+                                    <p class="has-text-justified">
+                                        जो लोग ज्ञान के चक्षुओं से शरीर तथा शरीर के ज्ञाता के अन्तर को देखते हैं और भव-बन्धन से मुक्ति की विधि को भी जानते हैं, उन्हें परमलक्ष्य प्राप्त होता है |
+                                    </p>
+                                    
+
+                                </div>
+                                
+                                
+                                <div class="m-0 mt-4">
+                                    <p>
+                                        <a class="button is-outlined is-warning" href="35/">
+                                            Read Now
+                                        </a>
+                                    </p>
+                                </div>
+
                             </div>
                         </div>
-                    </a>
+                    </div>
                 </div>
-            
-        </div>
-    </div>
-</section>
-
-<section class="section pt-0">
-    <div class="container">
-        <article class="message is-warning is-small">
-            <div class="message-body has-text-centered">
-                <p class="mb-3">The BBT was established in 1972 by His Divine Grace A.C. Bhaktivedanta Swami Prabhupada, Founder-Acharya of the International Society for Krishna Consciousness. BBT is the publisher for his books. All material used here belongs to and copyrighted under BBT (Bhaktivedanta Book Trust).</p>
-
-                <p class="mb-3">🙏 Please consider buying books. Below is a beautiful message by Srila Prabhupada 🙏</p>
-
-                <p class="is-italic mb-3">“I specifically formed the BBT to invest in it exclusive rights for the printing of all literature containing my teachings, writings and lectures. In this way the collections are to be divided fifty percent for printing new books and fifty percent for construction of temples.”</p>
             </div>
-        </article>
-    </div>
-</section>
-
-<section class="hero is-light is-small">
-    <div class="hero-body">
-        <div class="container">
-            <nav class="breadcrumb is-centered" aria-label="breadcrumbs">
-                <ul>
-                    
-                        <li >
-                            <a class="is-link has-text-orange" href="/">
-                                <span class="icon is-small">
-                                    <i class="fas fa-home" aria-hidden="true"></i>
-                                </span>
-                                <span>Home</span>
-                            </a>
-                        </li>
-                    
-                        <li >
-                            <a class="is-link has-text-orange" href="/bhagavad-gita-hindi/">
-                                <span class="icon is-small">
-                                    <i class="fas fa-book" aria-hidden="true"></i>
-                                </span>
-                                <span>श्रीमद्भगवद्गीता - यथारूप (हिंदी)</span>
-                            </a>
-                        </li>
-                    
-                        <li class="is-active">
-                            <a  href="">
-                                <span class="icon is-small">
-                                    <i class="fas fa-file-alt" aria-hidden="true"></i>
-                                </span>
-                                <span>अध्याय १३ - क्षेत्र-क्षेत्रज्ञविभागयोग</span>
-                            </a>
-                        </li>
-                    
-                </ul>
-            </nav>
         </div>
+        
+
     </div>
+</section>
+
+<section class="section animatedParent animateOnce">
+    <div class="box glass animated fadeInUpShort">
+        <nav class="breadcrumb is-medium is-centered" aria-label="breadcrumbs">
+            <ul>
+                
+                <li >
+                    <a class="is-link has-text-orange" href="/">
+                        <span class="icon is-small">
+                            <i class="fas fa-home" aria-hidden="true"></i>
+                        </span>
+                        <span>Home</span>
+                    </a>
+                </li>
+                
+                <li >
+                    <a class="is-link has-text-orange" href="/bhagavad-gita-hindi/">
+                        <span class="icon is-small">
+                            <i class="fas fa-book" aria-hidden="true"></i>
+                        </span>
+                        <span>श्रीमद्भगवद्गीता</span>
+                    </a>
+                </li>
+                
+                <li class="is-active">
+                    <a tabindex="-1" href="">
+                        <span class="icon is-small">
+                            <i class="fas fa-file-alt" aria-hidden="true"></i>
+                        </span>
+                        <span>अध्याय १३ - क्षेत्र-क्षेत्रज्ञविभागयोग</span>
+                    </a>
+                </li>
+                
+            </ul>
+        </nav>
+    </div>
+</section>
+
+<section class="section pt-0 animatedParent animateOnce">
+    <article class="box message is-warning is-small p-0 animated fadeInUpShort">
+        <div class="message-header is-justify-content-center">
+            <p>Copyright Notice</p>
+        </div>
+        <div class="message-body has-text-centered">
+            <p class="mb-3">The BBT was established in 1972 by His Divine Grace A.C. Bhaktivedanta Swami Prabhupada, Founder-Acharya of the International Society for Krishna Consciousness. BBT is the publisher for his books. All material used here belongs to and copyrighted under BBT (Bhaktivedanta Book Trust).</p>
+    
+            <p class="is-italic mb-3">“I specifically formed the BBT to invest in it exclusive rights for the printing of all literature containing my teachings, writings and lectures. In this way the collections are to be divided fifty percent for printing new books and fifty percent for construction of temples.”</p>
+
+            <p>- A.C. Bhaktivedanta Swami Prabhupada</p>
+        </div>
+    </article>
 </section>
 
 
 
-    <footer class="footer bg-gradient-light-orange pt-5 pb-5">
+    <!-- <footer class="footer bg-gradient-light-orange pt-5 pb-5">
     <div class="container">
         <div class="content">
             <div class="columns is-multiline is-centered">
@@ -995,7 +1553,51 @@
             </div>
         </div>
     </div>
+</footer> -->
+
+<footer class="footer p-0">
+    <section class="section">
+        <div class="footer-container">
+            <div class="animatedParent animateOnce">
+                <div class="content-w-image is-flex is-centered-mobile">
+                    <figure class="image is-64x64 m-0 animated fadeInUpShort">
+                        <img src="https://www.ancientknowledge.in/static/images/logo.png">
+                    </figure>
+                    <div class="content m-0 is-flex is-flex-direction-column is-justify-content-space-between animated fadeInUpShort">
+                        <h4 class="mt-0">Ancient Knowledge</h4>
+                        <p class="is-centered-mobile">
+                            <a href="https://www.ancientknowledge.in/about/" class="no-decoration">
+                                <span>About</span>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="animatedParent animateOnce">
+                <div class="content animated fadeInUpShort">
+                    <h4 class="is-centered-mobile m-0 mb-4 animated fadeInUpShort delay-500">@PraacheenGyaan</h4>
+                    <p class="has-text-centered is-flex is-justify-content-space-between animatedParent animateOnce">
+                        <a class="box icon facebook is-large fa-2x mb-0 animated growIn delay-500" href="https://www.facebook.com/PraacheenGyaan/" target="_blank">
+                            <i class="fab fa-facebook-square has-text-white"></i>
+                        </a>
+
+                        <a class="box icon instagram is-large fa-2x mb-0 animated growIn delay-1000" href="https://www.instagram.com/PraacheenGyaan/" target="_blank">
+                            <i class="fab fa-instagram-square has-text-white"></i>
+                        </a>
+
+                        <a class="box icon twitter is-large fa-2x mb-0 animated growIn delay-1500" href="https://twitter.com/PraacheenGyaan/" target="_blank">
+                            <i class="fab fa-twitter-square has-text-white"></i>
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
 </footer>
+
+    <script src="https://www.ancientknowledge.in/static/js/jquery.min.js"></script>
+    <script src="https://www.ancientknowledge.in/static/js/script.js"></script>
+    <script src="https://www.ancientknowledge.in/static/js/css3-animate-it.js"></script>
 
     
 </body>

@@ -14,7 +14,7 @@
 
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#ffffff" />
+    <meta name="theme-color" content="#ff902b" />
 
     <!-- Begin SEO tags -->
     <title>Ancient Knowledge | Bhagavad Gita | Hindi</title>
@@ -24,298 +24,284 @@
     <meta property="og:title" content="Ancient Knowledge | Bhagavad Gita | Hindi" />
     <meta property="og:description" content="Read Shrimad Bhagavad Gita - Yatharoop in hindi. श्रीमद्भगवद्गीता - यथारूप हिंदी में पढ़ें। अध्याय २ - श्लोक ७" />
     <meta property="og:url" content="https://www.ancientknowledge.in" />
-    <meta property="og:image" content="https://www.ancientknowledge.in/static/images/bhagavad-gita-cover-16by9.jpg" />
+    <meta property="og:image" content="https://www.ancientknowledge.in/static/images/bhagavad-gita-cover-4x3.jpg" />
     <meta property="og:type" content="article" />
     
     <meta property="twitter:title" content="Ancient Knowledge | Bhagavad Gita | Hindi" />
     <meta property="twitter:description" content="Read Shrimad Bhagavad Gita - Yatharoop in hindi. श्रीमद्भगवद्गीता - यथारूप हिंदी में पढ़ें। अध्याय २ - श्लोक ७" />
-    <meta property="twitter:image" content="https://www.ancientknowledge.in/static/images/bhagavad-gita-cover-16by9.jpg" />
+    <meta property="twitter:image" content="https://www.ancientknowledge.in/static/images/bhagavad-gita-cover-4x3.jpg" />
     <!-- End SEO tags -->
 
-    <link rel="stylesheet" href="https://www.ancientknowledge.in/static/css/theme.css" />
-    <link rel="stylesheet" href="https://www.ancientknowledge.in/static/css/theme-custom.css" />
+    <!-- <link rel="stylesheet" href="https://www.ancientknowledge.in/static/css/theme-old.css" /> -->
+    <!-- <link rel="stylesheet" href="https://www.ancientknowledge.in/static/css/switch-control.min.css" /> -->
+    <!-- <link rel="stylesheet" href="https://www.ancientknowledge.in/static/css/theme-custom.css" /> -->
     
     <link rel="icon" href="https://www.ancientknowledge.in/static/images/favicon.ico">
-    <link rel="shortcut icon" type="image/png" href="https://www.ancientknowledge.in/static/images/favicon.png" />
+    <link rel="shortcut icon" type="image/png" href="https://www.ancientknowledge.in/static/images/logo.png" />
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.0/dist/alpine.min.js" defer></script>
     
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-social@1/bin/bulma-social.min.css" />
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" /> -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-social@1/bin/bulma-social.min.css" /> -->
+
+    <link rel="stylesheet" href="https://www.ancientknowledge.in/static/css/bulma.min.css">
+    <link rel="stylesheet" href="https://www.ancientknowledge.in/static/css/theme.css">
+    <link rel="stylesheet" href="https://www.ancientknowledge.in/static/css/animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 
-<body>
-    <nav class="navbar is-warning bg-gradient-light-orange" x-data="{ openNav: false }">
-    <div class="container">
-        <div class="navbar-brand">
-            <a href="https://www.ancientknowledge.in" class="navbar-item">
-                <p class="has-text-weight-normal has-text-orange">
-                    <span>📖</span>
-                    <span class="pl-2">Ancient Knowledge</span>
-                </p>
+<body class="dark-modes">
+    <nav class="navbar is-light glass" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+        <a class="navbar-item pl-4" href="https://www.ancientknowledge.in">
+            <img src="https://www.ancientknowledge.in/static/images/logo.png" width="28" height="28">
+            <span class="pl-4">
+                Ancient Knowledge
+            </span>
+        </a>
+
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+            data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+    </div>
+
+    <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+            <a class="navbar-item" href="https://www.ancientknowledge.in/about/">
+                About
             </a>
-            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navMenu"
-                :class="{ 'is-active': openNav }" x-on:click="openNav = !openNav">
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-            </a>
-        </div>
-        <div class="navbar-menu" id="navMenu" :class="{ 'is-active': openNav }">
-            <div class="navbar-end">
-                <a href="https://www.ancientknowledge.in/about/" class="navbar-item has-text-weight-normal has-text-orange">About</a>
-            </div>
         </div>
     </div>
 </nav>
 
     
-    <section class="hero is-small is-bold is-dark bg-gradient-orange">
-    <div class="hero-body">
-        <div class="container has-text-centered p-5">
-            <h4 class="title is-4">श्रीमद्भगवद्गीता - यथारूप (हिंदी)</h4>
-        </div>
-    </div>
-</section>
-    
-
-    <div class="content is-centered has-text-centered" style="display: none;">
-        <h1>Ancient Knowledge</h1>
-        <h2>Recollecting the lost knowledge</h2>
-        <h3>Ancient Knowledge | Bhagavad Gita | Hindi</h3>
-        <p>Read Shrimad Bhagavad Gita - Yatharoop in hindi. श्रीमद्भगवद्गीता - यथारूप हिंदी में पढ़ें। अध्याय २ - श्लोक ७</p>
-        <div class="tags is-centered">
-            
-                <span class="tag">Ancient</span>
-            
-                <span class="tag">Knowledge</span>
-            
-                <span class="tag">India</span>
-            
-                <span class="tag">Shrimad</span>
-            
-                <span class="tag">Bhagavad</span>
-            
-                <span class="tag">Gita</span>
-            
-                <span class="tag">Yatharoop</span>
-            
-                <span class="tag">As It Is</span>
-            
-                <span class="tag">Mahabharat</span>
-            
-                <span class="tag">Krishna</span>
-            
-                <span class="tag">Prabhupad</span>
-            
-                <span class="tag">Hindi</span>
-            
-        </div>
-    </div>
 
     
 
-<section class="hero is-light is-small">
-    <div class="hero-body">
-        <div class="container">
-            <nav class="breadcrumb is-centered" aria-label="breadcrumbs">
-                <ul>
-                    
-                        <li >
-                            <a class="is-link has-text-orange" href="/">
-                                <span class="icon is-small">
-                                    <i class="fas fa-home" aria-hidden="true"></i>
-                                </span>
-                                <span>Home</span>
-                            </a>
-                        </li>
-                    
-                        <li >
-                            <a class="is-link has-text-orange" href="/bhagavad-gita-hindi/">
-                                <span class="icon is-small">
-                                    <i class="fas fa-book" aria-hidden="true"></i>
-                                </span>
-                                <span>श्रीमद्भगवद्गीता - यथारूप (हिंदी)</span>
-                            </a>
-                        </li>
-                    
-                        <li >
-                            <a class="is-link has-text-orange" href="/bhagavad-gita-hindi/2/">
-                                <span class="icon is-small">
-                                    <i class="fas fa-file-alt" aria-hidden="true"></i>
-                                </span>
-                                <span>अध्याय २ - सांख्ययोग</span>
-                            </a>
-                        </li>
-                    
-                        <li class="is-active">
-                            <a  href="">
-                                <span class="icon is-small">
-                                    <i class="fas fa-quote-right" aria-hidden="true"></i>
-                                </span>
-                                <span>श्लोक ७</span>
-                            </a>
-                        </li>
-                    
-                </ul>
-            </nav>
-        </div>
+<!-- Margin top behind navbar -->
+<div class="mt-6"></div>
+
+<style>
+    :root {
+        --page-background-image: url(/static/images/bhagavad-gita-cover-4x3.jpg);
+    }
+</style>
+<div class="image-background"></div>
+
+<section class="section animatedParent animateOnce">
+    <div class="box glass animated fadeInUpShort">
+        <nav class="breadcrumb is-medium is-centered" aria-label="breadcrumbs">
+            <ul>
+                
+                <li >
+                    <a class="is-link has-text-orange" href="/">
+                        <span class="icon is-small">
+                            <i class="fas fa-home" aria-hidden="true"></i>
+                        </span>
+                        <span>Home</span>
+                    </a>
+                </li>
+                
+                <li >
+                    <a class="is-link has-text-orange" href="/bhagavad-gita-hindi/">
+                        <span class="icon is-small">
+                            <i class="fas fa-book" aria-hidden="true"></i>
+                        </span>
+                        <span>श्रीमद्भगवद्गीता</span>
+                    </a>
+                </li>
+                
+                <li >
+                    <a class="is-link has-text-orange" href="/bhagavad-gita-hindi/2/">
+                        <span class="icon is-small">
+                            <i class="fas fa-file-alt" aria-hidden="true"></i>
+                        </span>
+                        <span>अध्याय २ - सांख्ययोग</span>
+                    </a>
+                </li>
+                
+                <li class="is-active">
+                    <a tabindex="-1" href="">
+                        <span class="icon is-small">
+                            <i class="fas fa-quote-right" aria-hidden="true"></i>
+                        </span>
+                        <span>श्लोक ७</span>
+                    </a>
+                </li>
+                
+            </ul>
+        </nav>
     </div>
 </section>
 
-<section
-    class="
-        section
-        content-card-section
-        pb-0
-    "
-    oncopy="return false" oncut="return false" onpaste="return false"
->
-    <div class="container">
-        <div class="card has-glow-md">
-            <div class="card-content">
-                <div class="content is-medium">
-                    <h5 class="has-text-centered ">
-                        अध्याय २ - श्लोक ७
-                        
-                    </h5>
-                    
-                    <hr/>
-
-                    
-                        
-                            <div
-                                
-                                    class="mb-5"
-                                
-                            >
-                                
-                                    <p class="has-text-centered has-text-weight-bold mb-1">
+<section class="section pt-0 pb-0">
+    <div class="columns is-multiline is-centered is-variable is-4">
+        <div
+            class="column is-full-tablet is-full-desktop is-full-widescreen is-full-fullhd is-flex animatedParent animateOnce">
+            <div class="card card-horizontal is-flex-grow-1 animated fadeInUpShort">
+                <div class="card-content p-2 pt-4 pb-4">
+                    <div class="columns is-multiline is-variable m-0">
+                        <div class="column">
+                            <div class="content is-medium m-0">
+                                <div class="">
+                                    
+                                    
                                         
-                                            कार्पण्यदोषोपहतस्वभावः
+                                            <div
+                                                
+                                                    class="mb-5"
+                                                
+                                            >
+                                                
+                                                    <p class="has-text-centered has-text-weight-bold mb-1">
+                                                        
+                                                            कार्पण्यदोषोपहतस्वभावः
+                                                        
+                                                    </p>
+                                                
+                                                    <p class="has-text-centered has-text-weight-bold mb-1">
+                                                        
+                                                            पृच्छामि त्वां धर्मसम्मूढचेताः ।
+                                                        
+                                                    </p>
+                                                
+                                                    <p class="has-text-centered has-text-weight-bold mb-1">
+                                                        
+                                                            यच्छ्रेयः स्यान्निश्चितं ब्रूहि तन्मे
+                                                        
+                                                    </p>
+                                                
+                                                    <p class="has-text-centered has-text-weight-bold mb-1">
+                                                        
+                                                            शिष्यस्तेऽहं शाधि मां त्वां प्रपन्नम् ॥ ७ ॥
+                                                        
+                                                    </p>
+                                                
+                                            </div>
                                         
-                                    </p>
-                                
-                                    <p class="has-text-centered has-text-weight-bold mb-1">
+                                    
+                                    
+                                    
                                         
-                                            पृच्छामि त्वां धर्मसम्मूढचेताः ।
+                                            <div
+                                                
+                                                    class="mb-3"
+                                                
+                                            >
+                                                
+                                                    <p class="has-text-centered has-text-weight-bold">
+                                                        
+                                                            शब्दार्थ
+                                                        
+                                                    </p>
+                                                
+                                            </div>
                                         
-                                    </p>
-                                
-                                    <p class="has-text-centered has-text-weight-bold mb-1">
+                                    
+                                    
+                                    
                                         
-                                            यच्छ्रेयः स्यान्निश्चितं ब्रूहि तन्मे
+                                            <div
+                                                
+                                                    class="mb-5"
+                                                
+                                            >
+                                                
+                                                    <p class="has-text-justified">
+                                                        
+                                                            <strong>कार्पण्य</strong> – कृपणता; <strong>दोष</strong> – दुर्बलता से; <strong>उपहत</strong> – ग्रस्त; <strong>स्व-भावः</strong> – गुण, विशेषताएँ; <strong>पृच्छामि</strong> – पूछ रहा हूँ; <strong>त्वाम्</strong> – तुम से; <strong>धर्म</strong> – धर्म; <strong>सम्मूढ</strong> – मोहग्रस्त; <strong>चेताः</strong> – हृदय में; <strong>यत्</strong> – जो; <strong>श्रेयः</strong> – कल्याणकारी; <strong>स्यात्</strong> – हो; <strong>निश्र्चितम्</strong> – विश्वासपूर्वक; <strong>ब्रूहि</strong> – कहो; <strong>तत्</strong> – वह; <strong>मे</strong> – मुझको; <strong>शिष्यः</strong> – शिष्य; <strong>ते</strong> – तुम्हारा; <strong>अहम्</strong> – मैं; <strong>शाधि</strong> – उपदेश दीजिये; <strong>माम्</strong> – मुझको; <strong>त्वाम्</strong> – तुम्हारा; <strong>प्रपन्नम</strong> – शरणागत |
+                                                        
+                                                    </p>
+                                                
+                                            </div>
                                         
-                                    </p>
-                                
-                                    <p class="has-text-centered has-text-weight-bold mb-1">
+                                    
+                                    
+                                    
                                         
-                                            शिष्यस्तेऽहं शाधि मां त्वां प्रपन्नम् ॥ ७ ॥
+                                            <div
+                                                
+                                                    class="mb-3"
+                                                
+                                            >
+                                                
+                                                    <p class="has-text-centered has-text-weight-bold">
+                                                        
+                                                            भावार्थ
+                                                        
+                                                    </p>
+                                                
+                                            </div>
                                         
-                                    </p>
-                                
+                                    
+                                    
+                                    
+                                        
+                                            <div
+                                                
+                                                    class="mb-5"
+                                                
+                                            >
+                                                
+                                                    <p class="has-text-justified">
+                                                        
+                                                            अब मैं अपनी कृपण-दुर्बलता के कारण अपना कर्तव्य भूल गया हूँ और सारा धैर्य खो चुका हूँ । ऐसी अवस्था में मैं आपसे पूछ रहा हूँ कि जो मेरे लिए श्रेयस्कर हो उसे निश्चित रूप से बताएँ । अब मैं आपका शिष्य हूँ और आपका शरणागत हूँ । कृपया मुझे उपदेश दें ।
+                                                        
+                                                    </p>
+                                                
+                                            </div>
+                                        
+                                    
+                                    
+                                    
+                                        
+                                            <div
+                                                
+                                                    class="mb-3"
+                                                
+                                            >
+                                                
+                                                    <p class="has-text-centered has-text-weight-bold">
+                                                        
+                                                            तात्पर्य
+                                                        
+                                                    </p>
+                                                
+                                            </div>
+                                        
+                                    
+                                    
+                                    
+                                        
+                                            <div
+                                                
+                                            >
+                                                
+                                                    <p class="has-text-justified">
+                                                        
+                                                            यह प्राकृतिक नियम है कि भौतिक कार्यकलाप की प्रणाली ही हर एक के लिए चिन्ता का कारण है । पग-पग पर उलझन मिलती है, अत: प्रामाणिक गुरु के पास जाना आवश्यक है, जो जीवन के उद्देश्य को पूरा करने के लिए समुचित पथ-निर्देश दे सके । समग्र वैदिक ग्रंथ हमें यह उपदेश देते हैं कि जीवन की अनचाही उलझनों से मुक्त होने के लिए प्रामाणिक गुरु के पास जाना चाहिए । ये उलझनें उस दावाग्नि के समान हैं जो किसी के द्वारा लगाये बिना भभक उठती हैं । इसी प्रकार विश्व की स्थिति ऐसी है कि बिना चाहे जीवन की उलझनें स्वत: उत्पन्न हो जाती हैं । कोई नहीं चाहता कि आग लगे, किन्तु फिर भी वह लगती है और हम अत्यधिक व्याकुल हो उठते हैं । अतः वैदिक वाङमय उपदेश देता है कि जीवन की उलझनों को समझने तथा उनका समाधान करने के लिए हमें परम्परागत गुरु के पास जाना चाहिए । जिस व्यक्ति का प्रामाणिक गुरु होता है वह सब कुछ जानता है । अत: मनुष्य को भौतिक उलझनों में न रहकर गुरु के पास जाना चाहिए । यही इस श्लोक का तात्पर्य है ।
+                                                        
+                                                    </p>
+                                                
+                                                    <p class="has-text-justified">
+                                                        
+                                                            आखिर भौतिक उलझनों में कौन सा व्यक्ति पड़ता है ? वह जो जीवन की समस्याओं को नहीं समझता । <em>बृहदारण्यक उपनिषद्</em> में (३.८.१०) व्याकुल (व्यग्र) मनुष्य का वर्णन इस प्रकार हुआ है - <em>यो वा एतदक्षरं गार्ग्यविदित्वास्मॉल्लोकात्गृति स कृपणः</em> - “कृपण वह है जो मानव जीवन की समस्याओं को हल नहीं करता और आत्म-साक्षात्कार के विज्ञान को समझे बिना कूकर-सूकर की भाँति इस संसार को त्यागकर चला जाता है ।” जीव के लिए यह मनुष्य जीवन अत्यन्त मूल्यवान निधि है, जिसका उपयोग वह अपने जीवन की समस्याओं को हल करने में कर सकता है, अत: जो इस अवसर का लाभ नहीं उठाता वह कृपण है । ब्राह्मण इसके विपरीत होता है जो इस शरीर का उपयोग जीवन की समस्त समस्याओं को हल करने में करता है । <em>य एतदक्षरं गार्गि विदित्वास्मॉल्लोकात्यैति स ब्राह्मणः</em> । देहात्मबुद्धि वश कृपण या कंजूस लोग अपना सारा समय परिवार, समाज, देश आदि के अत्यधिक प्रेम में गँवा देते हैं । मनुष्य प्रायः चर्मरोग के आधार पर अपने पारिवारिक जीवन अर्थात् पत्नी, बच्चों तथा परिजनों में आसक्त रहता है । कृपण यह सोचता है कि वह अपने परिवार को मृत्यु से बचा सकता है अथवा वह यह सोचता है कि उसका परिवार या समाज उसे मृत्यु से बचा सकता है । ऐसी पारिवारिक आसक्ति निम्न पशुओं में भी पाई जाती है क्योंकि वे भी बच्चों की देखभाल करते हैं । बुद्धिमान् होने के कारण अर्जुन समझ गया था कि पारिवारिक सदस्यों के प्रति उसका अनुराग तथा मृत्यु से उनकी रक्षा करने की उसकी इच्छा ही उसकी उलझनों का कारण है । यद्यपि वह समझ रहा था कि युद्ध करने का कर्तव्य उसकी प्रतीक्षा कर रहा था, किन्तु कृपण-दुर्बलता (कार्पण्यदोष) के कारण वह अपना कर्तव्य नहीं निभा रहा था । अत: वह परम गुरु भगवान् कृष्ण से कोई निश्चित हल निकालने का अनुरोध कर रहा है । वह कृष्ण का शिष्यत्व ग्रहण करता है । वह मित्रतापूर्ण बातें बन्द करना चाहता है । गुरु तथा शिष्य की बातें गम्भीर होती हैं और अब अर्जुन अपने मान्य गुरु के समक्ष गम्भीरतापूर्वक बातें करना चाहता है । इसीलिए कृष्ण भगवद्गीता-ज्ञान के आदि गुरु हैं और अर्जुन गीता समझने वाला प्रथम शिष्य है । अर्जुन भगवद्गीता को किस तरह समझता है यह गीता में वर्णित है । तो भी मूर्ख संसारी विद्वान् बताते हैं कि किसी को मनुष्य-रूप कृष्ण की नहीं बल्कि “अजन्मा कृष्ण” की शरण ग्रहण करनी चाहिए । कृष्ण के अन्त: तथा बाह्य में कोई अन्तर नहीं है । इस ज्ञान के बिना जो भगवद्गीता को समझने का प्रयास करता है, वह सबसे बड़ा मूर्ख है ।
+                                                        
+                                                    </p>
+                                                
+                                            </div>
+                                        
+                                    
+                                    
+                                </div>
                             </div>
-                        
-                    
-                        
-                            <div
-                                
-                                    class="mb-3"
-                                
-                            >
-                                
-                                    <p class="has-text-centered has-text-weight-bold">
-                                        
-                                            शब्दार्थ
-                                        
-                                    </p>
-                                
-                            </div>
-                        
-                    
-                        
-                            <div
-                                
-                                    class="mb-5"
-                                
-                            >
-                                
-                                    <p class="has-text-justified">
-                                        
-                                            <strong>कार्पण्य</strong> – कृपणता; <strong>दोष</strong> – दुर्बलता से; <strong>उपहत</strong> – ग्रस्त; <strong>स्वभावः</strong> – गुण, विशेषताएँ; <strong>पृच्छामि</strong> – पूछ रहा हूँ; <strong>त्वाम्</strong> – तुम से; <strong>धर्म</strong> – धर्म; <strong>सम्मूढ</strong> – मोहग्रस्त; <strong>चेताः</strong> – हृदय में; <strong>यत्</strong> – जो; <strong>श्रेयः</strong> – कल्याणकारी; <strong>स्यात्</strong> – हो; <strong>निश्र्चितम्</strong> – विश्वासपूर्वक; <strong>ब्रूहि</strong> – कहो; <strong>तत्</strong> – वह; <strong>मे</strong> – मुझको; <strong>शिष्यः</strong> – शिष्य; <strong>ते</strong> – तुम्हारा; <strong>अहम्</strong> – मैं; <strong>शाधि</strong> – उपदेश दीजिये; <strong>माम्</strong> – मुझको; <strong>त्वाम्</strong> – तुम्हारा; <strong>प्रपन्नम</strong> – शरणागत |
-                                        
-                                    </p>
-                                
-                            </div>
-                        
-                    
-                        
-                            <div
-                                
-                                    class="mb-3"
-                                
-                            >
-                                
-                                    <p class="has-text-centered has-text-weight-bold">
-                                        
-                                            भावार्थ
-                                        
-                                    </p>
-                                
-                            </div>
-                        
-                    
-                        
-                            <div
-                                
-                                    class="mb-5"
-                                
-                            >
-                                
-                                    <p class="has-text-justified">
-                                        
-                                            अब मैं अपनी कृपण-दुर्बलता के कारण अपना कर्तव्य भूल गया हूँ और सारा धैर्य खो चूका हूँ | ऐसी अवस्था में मैं आपसे पूछ रहा हूँ कि जो मेरे लिए श्रेयस्कर हो उसे निश्चित रूप से बताएँ | अब मैं आपका शिष्य हूँ और शरणागत हूँ | कृपया मुझे उपदेश दें |
-                                        
-                                    </p>
-                                
-                            </div>
-                        
-                    
-                        
-                            <div
-                                
-                                    class="mb-3"
-                                
-                            >
-                                
-                                    <p class="has-text-centered has-text-weight-bold">
-                                        
-                                            तात्पर्य
-                                        
-                                    </p>
-                                
-                            </div>
-                        
-                    
-                        
-                            <div
-                                
-                            >
-                                
-                                    <p class="has-text-justified">
-                                        
-                                            यह प्राकृतिक नियम है कि भौतिक कार्यकलाप की प्रणाली ही हर एक के लिए चिन्ता का कारण है | पग-पग पर उलझन मिलती है, अतः प्रामाणिक गुरु के पास जाना आवश्यक है, जो जीवन के उद्देश्य को पूरा करने के लिए समुचित पथ-निर्देश दे सके | समग्र वैदिक ग्रंथ हमें यह उपदेश देते हैं कि जीवन की अनचाही उलझनों से मुक्त होने के लिए प्रामाणिक गुरु के पास जाना चाहिए | ये उलझनें उस दावाग्नि के समान हैं जो किसी के द्वारा लगाये बिना भभक उठती हैं | इसी प्रकार विश्व की स्थिति ऐसी है कि बिना चाहे जीवन की उलझनें स्वतः उत्पन्न हो जाती हैं | कोई नहीं चाहता कि आग लगे, किन्तु फिर भी वह लगती है और हम अत्याधिक व्याकुल हो उठते हैं | अतः वैदिक वाङ्मय उपदेश देता है कि जीवन की उलझनों को समझने तथा समाधान करने के लिए हमें परम्परागत गुरु के पास जाना चाहिए | जिस व्यक्ति का प्रामाणिक गुरु होता है वह सब कुछ जानता है | अतः मनुष्य को भौतिक उलझनों में न रह कर गुरु के पास जाना चाहिए | यही इस श्लोक का तात्पर्य है |
-                                        
-                                    </p>
-                                
-                                    <p class="has-text-justified">
-                                        
-                                            आखिर भौतिक उलझनों में कौन सा व्यक्ति पड़ता है? वह जो जीवन की समस्याओं को नहीं समझता | बृहदारण्यक उपनिषद् में (३.८.१०) व्याकुल (व्यग्र) मनुष्य का वर्णन इस प्रकार हुआ है – <em>यो वा एतदक्षरं गार्ग्यविदित्वास्माँल्लोकात्प्रैति स कृपणः</em> – “कृपण वह है जो मानव जीवन की समस्याओं को हल नहीं करता और आत्म-साक्षात्कार के विज्ञान को समझे बिना कूकर-सूकर की भाँति संसार को त्यागकर चला जाता है |” जीव के लिए मनुष्य जीवन अत्यन्त मूल्यवान निधि है, जिसका उपयोग वह अपने जीवन की समस्याओं को हल करने में कर सकता है, अतः जो इस अवसर का लाभ नहीं उठाता वह कृपण है | ब्राह्मण इसके विपरीत होता है जो इस शरीर का उपयोग जीवन की समस्त समस्याओं को हल करने में करता है | <em>य एतदक्षरं गार्गि विदित्वास्माँल्लोकात्प्रैति स ब्राह्मणः</em> | देहात्मबुद्धि वश कृपण या कंजूस लोग अपना सारा समय परिवार, समाज, देश आदि के अत्यधिक प्रेम में गवाँ देते हैं | मनुष्य प्राय चर्मरोग के आधार पर अपने पारिवारिक जीवन अर्थात् पत्नी, बच्चों तथा परिजनों में आसक्त रहता है | कृपण यह सोचता है कि वह अपने परिवार को मृत्यु से बचा सकता है अथवा वह यह सोचता है कि उसका परिवार या समाज उसे मृत्यु से बचा सकता है | ऐसी पारिवारिक आसक्ति निम्न पशुओं में भी पाई जाती है क्योंकि वे भी बच्चों की देखभाल करते हैं | बुद्धिमान् होने के कारण अर्जुन समझ गया कि पारिवारिक सदस्यों के प्रति उसका अनुराग तथा मृत्यु से उनकी रक्षा करने की उसकी इच्छा ही उसकी उलझनों का कारण है | यद्यपि वह समझ रहा था कि युद्ध करने का कर्तव्य उसकी प्रतीक्षा कर रहा था, किन्तु कृपण-दुर्बलता (कार्पण्यदोष) के कारण वह अपना कर्तव्य नहीं निभा रहा था | अतः वह परम गुरु भगवान् कृष्ण से कोई निश्चित हल निकालने का अनुरोध कर रहा है | वह कृष्ण का शिष्यत्व ग्रहण करता है | वह मित्रतापूर्ण बातें बंद करना चाहता है | गुरु तथा शिष्य की बातें गम्भीर होती हैं और अब अर्जुन अपने मान्य गुरु के समक्ष गम्भीरतापूर्वक बातें करना चाहता है इसीलिए कृष्ण भगवद्गीता-ज्ञान के आदि गुरु है और अर्जुन गीता समझने वाला प्रथम शिष्य है | अर्जुन भगवद्गीता को किस तरह समझता है यह गीता में वर्णित है | तो भी मूर्ख संसारी विद्वान् बताते हैं कि किसी को मनुष्य-रूप कृष्ण की नहीं बल्कि “अजन्मा कृष्ण” की शरण ग्रहण करनी चाहिए | कृष्ण के अन्तः तथा बाह्य में कोई अन्तर नहीं है | इस ज्ञान के बिना जो भगवद्गीता को समझने का प्रयास करता है, वह सबसे बड़ा मूर्ख है |
-                                        
-                                    </p>
-                                
-                            </div>
-                        
-                    
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -323,178 +309,184 @@
 </section>
 
 
-    <section class="section pt-0">
-        <div class="container mt-6">
-            <div class="pagination-container">
-    <nav class="pagination is-centered" role="navigation" aria-label="pagination">
-        
-        <!-- previous page button -->
-        <a
-            class="pagination-previous pagination-button button is-orange is-outlined"
-            
-                href="/bhagavad-gita-hindi/2/6/"
-            
-        >
-            पिछला श्लोक
-        </a>
-
-        <!-- next page button -->
-        <a
-            class="pagination-next pagination-button button is-orange is-outlined"
-            
-                href="/bhagavad-gita-hindi/2/8/"
-            
-        >
-        अगला श्लोक
-        </a>
-
-        <ul class="pagination-list">
-            
-            
-                <li>
-                    <a
-                        class="pagination-link"
-                        
-                            href="/bhagavad-gita-hindi/2/1/"
-                        
-                    >
-                        1
-                    </a>
-                </li>
+<section class="section animatedParent animateOnce pb-0">
+    <div class="box glass animated fadeInUpShort">
+        <nav class="pagination is-centered" role="navigation" aria-label="pagination">
+            <!-- previous page button -->
+            <a
+                class="button is-outlined is-warning pagination-previous pagination-button button is-orange is-outlined"
                 
+                    href="/bhagavad-gita-hindi/2/6/"
                 
-                    
-                        <li>
-                            <span class="pagination-ellipsis">…</span>
-                        </li>
-                    
+            >
+                पिछला श्लोक
+            </a>
 
-                    <li>
-                        <a
-                            class="pagination-link"
-                            href="/bhagavad-gita-hindi/2/6/"
-                        >
-                            6
-                        </a>
-                    </li>
+            <!-- next page button -->
+            <!-- <a
+                class="button is-outlined is-warning pagination-next pagination-button button is-orange is-outlined"
                 
-            
-            
-            
-            
-            <li>
-                <a
-                    class="pagination-link is-current"
-                    aria-current="page"
-                    disabled
-                >
-                    7
-                </a>
-            </li>
-            
+                    href="/bhagavad-gita-hindi/2/8/"
+                
+            >
+            अगला श्लोक -->
+            </a>
 
-            
-            
+            <ul class="pagination-list">
+                
                 
                     <li>
                         <a
-                            class="pagination-link"
-                            href="/bhagavad-gita-hindi/2/8/"
+                            class="button is-outlined is-warning pagination-link"
+                            
+                                href="/bhagavad-gita-hindi/2/1/"
+                            
                         >
-                            8
+                            1
                         </a>
                     </li>
                     
+                    
+                        
+                            <li>
+                                <span class="pagination-ellipsis">…</span>
+                            </li>
+                        
+
                         <li>
-                            <span class="pagination-ellipsis">…</span>
+                            <a
+                                class="button is-outlined is-warning pagination-link"
+                                href="/bhagavad-gita-hindi/2/6/"
+                            >
+                                6
+                            </a>
                         </li>
                     
+                
+                
                 
                 
                 <li>
                     <a
-                        class="pagination-link"
-                        
-                            href="/bhagavad-gita-hindi/2/72/"
-                        
+                        class="button is-outlined is-warning pagination-link is-current" tabindex="-1"
+                        aria-current="page"
+                        disabled
                     >
-                        72
+                        7
                     </a>
                 </li>
-            
-            
-        </ul>
-    </nav>
-</div>
-        </div>
-    </section>
+                
 
-
-<section class="section pt-0">
-    <div class="container">
-        <article class="message is-warning is-small">
-            <div class="message-body has-text-centered">
-                <p class="mb-3">The BBT was established in 1972 by His Divine Grace A.C. Bhaktivedanta Swami Prabhupada, Founder-Acharya of the International Society for Krishna Consciousness. BBT is the publisher for his books. All material used here belongs to and copyrighted under BBT (Bhaktivedanta Book Trust).</p>
-
-                <p class="mb-3">🙏 Please consider buying books. Below is a beautiful message by Srila Prabhupada 🙏</p>
-
-                <p class="is-italic mb-3">“I specifically formed the BBT to invest in it exclusive rights for the printing of all literature containing my teachings, writings and lectures. In this way the collections are to be divided fifty percent for printing new books and fifty percent for construction of temples.”</p>
-            </div>
-        </article>
-    </div>
-</section>
-
-<section class="hero is-light is-small">
-    <div class="hero-body">
-        <div class="container">
-            <nav class="breadcrumb is-centered" aria-label="breadcrumbs">
-                <ul>
+                
+                
                     
-                        <li >
-                            <a class="is-link has-text-orange" href="/">
-                                <span class="icon is-small">
-                                    <i class="fas fa-home" aria-hidden="true"></i>
-                                </span>
-                                <span>Home</span>
+                        <li>
+                            <a
+                                class="button is-outlined is-warning pagination-link"
+                                href="/bhagavad-gita-hindi/2/8/"
+                            >
+                                8
                             </a>
                         </li>
+                        
+                            <li>
+                                <span class="pagination-ellipsis">…</span>
+                            </li>
+                        
                     
-                        <li >
-                            <a class="is-link has-text-orange" href="/bhagavad-gita-hindi/">
-                                <span class="icon is-small">
-                                    <i class="fas fa-book" aria-hidden="true"></i>
-                                </span>
-                                <span>श्रीमद्भगवद्गीता - यथारूप (हिंदी)</span>
-                            </a>
-                        </li>
                     
-                        <li >
-                            <a class="is-link has-text-orange" href="/bhagavad-gita-hindi/2/">
-                                <span class="icon is-small">
-                                    <i class="fas fa-file-alt" aria-hidden="true"></i>
-                                </span>
-                                <span>अध्याय २ - सांख्ययोग</span>
-                            </a>
-                        </li>
-                    
-                        <li class="is-active">
-                            <a  href="">
-                                <span class="icon is-small">
-                                    <i class="fas fa-quote-right" aria-hidden="true"></i>
-                                </span>
-                                <span>श्लोक ७</span>
-                            </a>
-                        </li>
-                    
-                </ul>
-            </nav>
-        </div>
+                    <li>
+                        <a
+                            class="button is-outlined is-warning pagination-link"
+                            
+                                href="/bhagavad-gita-hindi/2/72/"
+                            
+                        >
+                            72
+                        </a>
+                    </li>
+                
+                
+            </ul>
+
+            <!-- next page button -->
+            <a
+                class="button is-outlined is-warning pagination-next pagination-button button is-orange is-outlined"
+                
+                    href="/bhagavad-gita-hindi/2/8/"
+                
+            >
+            अगला श्लोक
+            </a>
+        </nav>
     </div>
 </section>
 
 
+<section class="section animatedParent animateOnce">
+    <div class="box glass animated fadeInUpShort">
+        <nav class="breadcrumb is-medium is-centered" aria-label="breadcrumbs">
+            <ul>
+                
+                <li >
+                    <a class="is-link has-text-orange" href="/">
+                        <span class="icon is-small">
+                            <i class="fas fa-home" aria-hidden="true"></i>
+                        </span>
+                        <span>Home</span>
+                    </a>
+                </li>
+                
+                <li >
+                    <a class="is-link has-text-orange" href="/bhagavad-gita-hindi/">
+                        <span class="icon is-small">
+                            <i class="fas fa-book" aria-hidden="true"></i>
+                        </span>
+                        <span>श्रीमद्भगवद्गीता</span>
+                    </a>
+                </li>
+                
+                <li >
+                    <a class="is-link has-text-orange" href="/bhagavad-gita-hindi/2/">
+                        <span class="icon is-small">
+                            <i class="fas fa-file-alt" aria-hidden="true"></i>
+                        </span>
+                        <span>अध्याय २ - सांख्ययोग</span>
+                    </a>
+                </li>
+                
+                <li class="is-active">
+                    <a tabindex="-1" href="">
+                        <span class="icon is-small">
+                            <i class="fas fa-quote-right" aria-hidden="true"></i>
+                        </span>
+                        <span>श्लोक ७</span>
+                    </a>
+                </li>
+                
+            </ul>
+        </nav>
+    </div>
+</section>
 
-    <footer class="footer bg-gradient-light-orange pt-5 pb-5">
+<section class="section pt-0 animatedParent animateOnce">
+    <article class="box message is-warning is-small p-0 animated fadeInUpShort">
+        <div class="message-header is-justify-content-center">
+            <p>Copyright Notice</p>
+        </div>
+        <div class="message-body has-text-centered">
+            <p class="mb-3">The BBT was established in 1972 by His Divine Grace A.C. Bhaktivedanta Swami Prabhupada, Founder-Acharya of the International Society for Krishna Consciousness. BBT is the publisher for his books. All material used here belongs to and copyrighted under BBT (Bhaktivedanta Book Trust).</p>
+    
+            <p class="is-italic mb-3">“I specifically formed the BBT to invest in it exclusive rights for the printing of all literature containing my teachings, writings and lectures. In this way the collections are to be divided fifty percent for printing new books and fifty percent for construction of temples.”</p>
+
+            <p>- A.C. Bhaktivedanta Swami Prabhupada</p>
+        </div>
+    </article>
+</section>
+
+
+
+    <!-- <footer class="footer bg-gradient-light-orange pt-5 pb-5">
     <div class="container">
         <div class="content">
             <div class="columns is-multiline is-centered">
@@ -517,7 +509,51 @@
             </div>
         </div>
     </div>
+</footer> -->
+
+<footer class="footer p-0">
+    <section class="section">
+        <div class="footer-container">
+            <div class="animatedParent animateOnce">
+                <div class="content-w-image is-flex is-centered-mobile">
+                    <figure class="image is-64x64 m-0 animated fadeInUpShort">
+                        <img src="https://www.ancientknowledge.in/static/images/logo.png">
+                    </figure>
+                    <div class="content m-0 is-flex is-flex-direction-column is-justify-content-space-between animated fadeInUpShort">
+                        <h4 class="mt-0">Ancient Knowledge</h4>
+                        <p class="is-centered-mobile">
+                            <a href="https://www.ancientknowledge.in/about/" class="no-decoration">
+                                <span>About</span>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="animatedParent animateOnce">
+                <div class="content animated fadeInUpShort">
+                    <h4 class="is-centered-mobile m-0 mb-4 animated fadeInUpShort delay-500">@PraacheenGyaan</h4>
+                    <p class="has-text-centered is-flex is-justify-content-space-between animatedParent animateOnce">
+                        <a class="box icon facebook is-large fa-2x mb-0 animated growIn delay-500" href="https://www.facebook.com/PraacheenGyaan/" target="_blank">
+                            <i class="fab fa-facebook-square has-text-white"></i>
+                        </a>
+
+                        <a class="box icon instagram is-large fa-2x mb-0 animated growIn delay-1000" href="https://www.instagram.com/PraacheenGyaan/" target="_blank">
+                            <i class="fab fa-instagram-square has-text-white"></i>
+                        </a>
+
+                        <a class="box icon twitter is-large fa-2x mb-0 animated growIn delay-1500" href="https://twitter.com/PraacheenGyaan/" target="_blank">
+                            <i class="fab fa-twitter-square has-text-white"></i>
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
 </footer>
+
+    <script src="https://www.ancientknowledge.in/static/js/jquery.min.js"></script>
+    <script src="https://www.ancientknowledge.in/static/js/script.js"></script>
+    <script src="https://www.ancientknowledge.in/static/js/css3-animate-it.js"></script>
 
     
 </body>

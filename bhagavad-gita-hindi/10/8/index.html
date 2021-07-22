@@ -14,7 +14,7 @@
 
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#ffffff" />
+    <meta name="theme-color" content="#ff902b" />
 
     <!-- Begin SEO tags -->
     <title>Ancient Knowledge | Bhagavad Gita | Hindi</title>
@@ -24,368 +24,362 @@
     <meta property="og:title" content="Ancient Knowledge | Bhagavad Gita | Hindi" />
     <meta property="og:description" content="Read Shrimad Bhagavad Gita - Yatharoop in hindi. श्रीमद्भगवद्गीता - यथारूप हिंदी में पढ़ें। अध्याय १० - श्लोक ८" />
     <meta property="og:url" content="https://www.ancientknowledge.in" />
-    <meta property="og:image" content="https://www.ancientknowledge.in/static/images/bhagavad-gita-cover-16by9.jpg" />
+    <meta property="og:image" content="https://www.ancientknowledge.in/static/images/bhagavad-gita-cover-4x3.jpg" />
     <meta property="og:type" content="article" />
     
     <meta property="twitter:title" content="Ancient Knowledge | Bhagavad Gita | Hindi" />
     <meta property="twitter:description" content="Read Shrimad Bhagavad Gita - Yatharoop in hindi. श्रीमद्भगवद्गीता - यथारूप हिंदी में पढ़ें। अध्याय १० - श्लोक ८" />
-    <meta property="twitter:image" content="https://www.ancientknowledge.in/static/images/bhagavad-gita-cover-16by9.jpg" />
+    <meta property="twitter:image" content="https://www.ancientknowledge.in/static/images/bhagavad-gita-cover-4x3.jpg" />
     <!-- End SEO tags -->
 
-    <link rel="stylesheet" href="https://www.ancientknowledge.in/static/css/theme.css" />
-    <link rel="stylesheet" href="https://www.ancientknowledge.in/static/css/theme-custom.css" />
+    <!-- <link rel="stylesheet" href="https://www.ancientknowledge.in/static/css/theme-old.css" /> -->
+    <!-- <link rel="stylesheet" href="https://www.ancientknowledge.in/static/css/switch-control.min.css" /> -->
+    <!-- <link rel="stylesheet" href="https://www.ancientknowledge.in/static/css/theme-custom.css" /> -->
     
     <link rel="icon" href="https://www.ancientknowledge.in/static/images/favicon.ico">
-    <link rel="shortcut icon" type="image/png" href="https://www.ancientknowledge.in/static/images/favicon.png" />
+    <link rel="shortcut icon" type="image/png" href="https://www.ancientknowledge.in/static/images/logo.png" />
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.0/dist/alpine.min.js" defer></script>
     
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-social@1/bin/bulma-social.min.css" />
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" /> -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-social@1/bin/bulma-social.min.css" /> -->
+
+    <link rel="stylesheet" href="https://www.ancientknowledge.in/static/css/bulma.min.css">
+    <link rel="stylesheet" href="https://www.ancientknowledge.in/static/css/theme.css">
+    <link rel="stylesheet" href="https://www.ancientknowledge.in/static/css/animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 
-<body>
-    <nav class="navbar is-warning bg-gradient-light-orange" x-data="{ openNav: false }">
-    <div class="container">
-        <div class="navbar-brand">
-            <a href="https://www.ancientknowledge.in" class="navbar-item">
-                <p class="has-text-weight-normal has-text-orange">
-                    <span>📖</span>
-                    <span class="pl-2">Ancient Knowledge</span>
-                </p>
+<body class="dark-modes">
+    <nav class="navbar is-light glass" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+        <a class="navbar-item pl-4" href="https://www.ancientknowledge.in">
+            <img src="https://www.ancientknowledge.in/static/images/logo.png" width="28" height="28">
+            <span class="pl-4">
+                Ancient Knowledge
+            </span>
+        </a>
+
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+            data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+    </div>
+
+    <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+            <a class="navbar-item" href="https://www.ancientknowledge.in/about/">
+                About
             </a>
-            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navMenu"
-                :class="{ 'is-active': openNav }" x-on:click="openNav = !openNav">
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-            </a>
-        </div>
-        <div class="navbar-menu" id="navMenu" :class="{ 'is-active': openNav }">
-            <div class="navbar-end">
-                <a href="https://www.ancientknowledge.in/about/" class="navbar-item has-text-weight-normal has-text-orange">About</a>
-            </div>
         </div>
     </div>
 </nav>
 
     
-    <section class="hero is-small is-bold is-dark bg-gradient-orange">
-    <div class="hero-body">
-        <div class="container has-text-centered p-5">
-            <h4 class="title is-4">श्रीमद्भगवद्गीता - यथारूप (हिंदी)</h4>
-        </div>
-    </div>
-</section>
-    
-
-    <div class="content is-centered has-text-centered" style="display: none;">
-        <h1>Ancient Knowledge</h1>
-        <h2>Recollecting the lost knowledge</h2>
-        <h3>Ancient Knowledge | Bhagavad Gita | Hindi</h3>
-        <p>Read Shrimad Bhagavad Gita - Yatharoop in hindi. श्रीमद्भगवद्गीता - यथारूप हिंदी में पढ़ें। अध्याय १० - श्लोक ८</p>
-        <div class="tags is-centered">
-            
-                <span class="tag">Ancient</span>
-            
-                <span class="tag">Knowledge</span>
-            
-                <span class="tag">India</span>
-            
-                <span class="tag">Shrimad</span>
-            
-                <span class="tag">Bhagavad</span>
-            
-                <span class="tag">Gita</span>
-            
-                <span class="tag">Yatharoop</span>
-            
-                <span class="tag">As It Is</span>
-            
-                <span class="tag">Mahabharat</span>
-            
-                <span class="tag">Krishna</span>
-            
-                <span class="tag">Prabhupad</span>
-            
-                <span class="tag">Hindi</span>
-            
-        </div>
-    </div>
 
     
 
-<section class="hero is-light is-small">
-    <div class="hero-body">
-        <div class="container">
-            <nav class="breadcrumb is-centered" aria-label="breadcrumbs">
-                <ul>
-                    
-                        <li >
-                            <a class="is-link has-text-orange" href="/">
-                                <span class="icon is-small">
-                                    <i class="fas fa-home" aria-hidden="true"></i>
-                                </span>
-                                <span>Home</span>
-                            </a>
-                        </li>
-                    
-                        <li >
-                            <a class="is-link has-text-orange" href="/bhagavad-gita-hindi/">
-                                <span class="icon is-small">
-                                    <i class="fas fa-book" aria-hidden="true"></i>
-                                </span>
-                                <span>श्रीमद्भगवद्गीता - यथारूप (हिंदी)</span>
-                            </a>
-                        </li>
-                    
-                        <li >
-                            <a class="is-link has-text-orange" href="/bhagavad-gita-hindi/10/">
-                                <span class="icon is-small">
-                                    <i class="fas fa-file-alt" aria-hidden="true"></i>
-                                </span>
-                                <span>अध्याय १० - विभूतियोग</span>
-                            </a>
-                        </li>
-                    
-                        <li class="is-active">
-                            <a  href="">
-                                <span class="icon is-small">
-                                    <i class="fas fa-quote-right" aria-hidden="true"></i>
-                                </span>
-                                <span>श्लोक ८</span>
-                            </a>
-                        </li>
-                    
-                </ul>
-            </nav>
-        </div>
+<!-- Margin top behind navbar -->
+<div class="mt-6"></div>
+
+<style>
+    :root {
+        --page-background-image: url(/static/images/bhagavad-gita-cover-4x3.jpg);
+    }
+</style>
+<div class="image-background"></div>
+
+<section class="section animatedParent animateOnce">
+    <div class="box glass animated fadeInUpShort">
+        <nav class="breadcrumb is-medium is-centered" aria-label="breadcrumbs">
+            <ul>
+                
+                <li >
+                    <a class="is-link has-text-orange" href="/">
+                        <span class="icon is-small">
+                            <i class="fas fa-home" aria-hidden="true"></i>
+                        </span>
+                        <span>Home</span>
+                    </a>
+                </li>
+                
+                <li >
+                    <a class="is-link has-text-orange" href="/bhagavad-gita-hindi/">
+                        <span class="icon is-small">
+                            <i class="fas fa-book" aria-hidden="true"></i>
+                        </span>
+                        <span>श्रीमद्भगवद्गीता</span>
+                    </a>
+                </li>
+                
+                <li >
+                    <a class="is-link has-text-orange" href="/bhagavad-gita-hindi/10/">
+                        <span class="icon is-small">
+                            <i class="fas fa-file-alt" aria-hidden="true"></i>
+                        </span>
+                        <span>अध्याय १० - विभूतियोग</span>
+                    </a>
+                </li>
+                
+                <li class="is-active">
+                    <a tabindex="-1" href="">
+                        <span class="icon is-small">
+                            <i class="fas fa-quote-right" aria-hidden="true"></i>
+                        </span>
+                        <span>श्लोक ८</span>
+                    </a>
+                </li>
+                
+            </ul>
+        </nav>
     </div>
 </section>
 
-<section
-    class="
-        section
-        content-card-section
-        pb-0
-    "
-    oncopy="return false" oncut="return false" onpaste="return false"
->
-    <div class="container">
-        <div class="card has-glow-md">
-            <div class="card-content">
-                <div class="content is-medium">
-                    <h5 class="has-text-centered ">
-                        अध्याय १० - श्लोक ८
-                        
-                    </h5>
-                    
-                    <hr/>
-
-                    
-                        
-                            <div
-                                
-                                    class="mb-5"
-                                
-                            >
-                                
-                                    <p class="has-text-centered has-text-weight-bold mb-1">
+<section class="section pt-0 pb-0">
+    <div class="columns is-multiline is-centered is-variable is-4">
+        <div
+            class="column is-full-tablet is-full-desktop is-full-widescreen is-full-fullhd is-flex animatedParent animateOnce">
+            <div class="card card-horizontal is-flex-grow-1 animated fadeInUpShort">
+                <div class="card-content p-2 pt-4 pb-4">
+                    <div class="columns is-multiline is-variable m-0">
+                        <div class="column">
+                            <div class="content is-medium m-0">
+                                <div class="">
+                                    
+                                    
                                         
-                                            अहं सर्वस्य प्रभवो मत्तः सर्वं प्रवर्तते ।
+                                            <div
+                                                
+                                                    class="mb-5"
+                                                
+                                            >
+                                                
+                                                    <p class="has-text-centered has-text-weight-bold mb-1">
+                                                        
+                                                            अहं सर्वस्य प्रभवो मत्तः सर्वं प्रवर्तते ।
+                                                        
+                                                    </p>
+                                                
+                                                    <p class="has-text-centered has-text-weight-bold mb-1">
+                                                        
+                                                            इति मत्वा भजन्ते मां बुधा भावसमन्विताः ॥ ८ ॥
+                                                        
+                                                    </p>
+                                                
+                                            </div>
                                         
-                                    </p>
-                                
-                                    <p class="has-text-centered has-text-weight-bold mb-1">
+                                    
+                                    
+                                    
                                         
-                                            इति मत्वा भजन्ते मां बुधा भावसमन्विताः ॥ ८ ॥
+                                            <div
+                                                
+                                                    class="mb-3"
+                                                
+                                            >
+                                                
+                                                    <p class="has-text-centered has-text-weight-bold">
+                                                        
+                                                            शब्दार्थ
+                                                        
+                                                    </p>
+                                                
+                                            </div>
                                         
-                                    </p>
-                                
+                                    
+                                    
+                                    
+                                        
+                                            <div
+                                                
+                                                    class="mb-5"
+                                                
+                                            >
+                                                
+                                                    <p class="has-text-justified">
+                                                        
+                                                            <strong>अहम्</strong> – मैं; <strong>सर्वस्य</strong> – सबका; <strong>प्रभवः</strong> – उत्पत्ति का कारण; <strong>मत्तः</strong> – मुझसे; <strong>सर्वम्</strong> – सारी वस्तुएँ; <strong>प्रवर्तते</strong> – उद्भूत होती हैं; <strong>इति</strong> – इस प्रकार; <strong>मत्वा</strong> – जानकर; <strong>भजन्ते</strong> – भक्ति करते हैं; <strong>माम्</strong> – मेरी; <strong>बुधाः</strong> – विद्वानजन; <strong>भाव-समन्विताः</strong> – अत्यन्त मनोयोग से |
+                                                        
+                                                    </p>
+                                                
+                                            </div>
+                                        
+                                    
+                                    
+                                    
+                                        
+                                            <div
+                                                
+                                                    class="mb-3"
+                                                
+                                            >
+                                                
+                                                    <p class="has-text-centered has-text-weight-bold">
+                                                        
+                                                            भावार्थ
+                                                        
+                                                    </p>
+                                                
+                                            </div>
+                                        
+                                    
+                                    
+                                    
+                                        
+                                            <div
+                                                
+                                                    class="mb-5"
+                                                
+                                            >
+                                                
+                                                    <p class="has-text-justified">
+                                                        
+                                                            मैं समस्त आध्यात्मिक तथा भौतिक जगतों का कारण हूँ, प्रत्येक वस्तु मुझ ही से उद्भूत है | जो बुद्धिमान यह भलीभाँति जानते हैं, वे मेरी प्रेमाभक्ति में लगते हैं तथा हृदय से पूरी तरह मेरी पूजा में तत्पर होते हैं |
+                                                        
+                                                    </p>
+                                                
+                                            </div>
+                                        
+                                    
+                                    
+                                    
+                                        
+                                            <div
+                                                
+                                                    class="mb-3"
+                                                
+                                            >
+                                                
+                                                    <p class="has-text-centered has-text-weight-bold">
+                                                        
+                                                            तात्पर्य
+                                                        
+                                                    </p>
+                                                
+                                            </div>
+                                        
+                                    
+                                    
+                                    
+                                        
+                                            <div
+                                                
+                                                    class="mb-5"
+                                                
+                                            >
+                                                
+                                                    <p class="has-text-justified">
+                                                        
+                                                            जिस विद्वान ने वेदों का ठीक से अध्ययन किया हो और भगवान् चैतन्य जैसे अधिकारियों से ज्ञान प्राप्त किया हो तथा यह जानता हो कि इन उपदेशों का किस प्रकार उपयोग करना चाहिए, वही यह समझ सकता है कि भौतिक तथा आध्यात्मिक जगतों के मूल श्रीकृष्ण ही हैं | इस प्रकार के ज्ञान से वह भगवद्भक्ति में स्थिर हो जाता है | वह व्यर्थ की टीकाओं से या मूर्खों के द्वारा कभी पथभ्रष्ट नहीं होता | सारा वैदिक साहित्य स्वीकार करता है कि कृष्ण ही ब्रह्मा, शिव तथा अन्य समस्त देवताओं के स्त्रोत हैं | अथर्ववेद में (गोपालतापनी उपनिषद् १.२४) कहा गया है – यो ब्रह्माणं विदधाति पूर्वं यो वै वेदांश्च गापयति स्म कृष्णः– प्रारम्भ में कृष्ण ने ब्रह्मा को वेदों का ज्ञान प्रदान किया और उन्होंने भूतकाल में वैदिक ज्ञान का प्रचार किया | पुनः नारायण उपनिषद् में (१) कहा गयाहै – अथ पुरुषो ह वै नारायणोऽकामयत प्रजाः सृजेयते– तब भगवान् ने जीवों की सृष्टि करनी चाही | उपनिषद् में आगे भी कहा गया है – नारायणाद् ब्रह्मा जायते नारायणाद् प्रजापतिः प्रजायते नारायणाद् इन्द्रो जायते | नारायणादष्टौ वसवो जायन्ते नारायणादेकादश रुद्रा जायन्ते नारायणाद्द्वादशादित्याः– “नारायण से ब्रह्मा उत्पन्न होते हैं, नारायण से प्रजापति उत्पन्न होते हैं, नारायण से इन्द्र और आठ वासु उत्पन्न होते हैं और नारायण से ही ग्यारह रूद्र तथा बारह आदित्य उत्पन्न होते हैं |” यह नारायण कृष्ण के ही अंश हैं |
+                                                        
+                                                    </p>
+                                                
+                                                    <p class="has-text-justified">
+                                                        
+                                                            वेदों का ही कथन है – ब्रह्मण्यो देवकीपुत्रः – देवकी पुत्र, कृष्ण, ही भगवान् हैं (नारायण उपनिषद् ४) | तब यह कहा गया – एको वै आसीन्न ब्रह्मा न ईशानो नापो नाग्निसमौ नेमे द्यावापृथिवी न नाक्षत्राणि न सूर्यः– सृष्टि के प्रारम्भ में केवल भगवान् नारायण थे | न ब्रह्मा थे, न शिव | न अग्नि थी, न चन्द्रमा, न नक्षत्र और न सूर्य (महा उपनिषद् १) | महा उपनिषद् में यह भी कहा गया है कि शिवजी परमेश्वर के मस्तक से उत्पन्न हुए | अतः वेदों का कहना है कि ब्रह्मा तथा शिव के स्रष्टा भगवान् की ही पूजा की जानी चाहिए |
+                                                        
+                                                    </p>
+                                                
+                                                    <p class="has-text-justified">
+                                                        
+                                                            मोक्षधर्म में कृष्ण कहते हैं –
+                                                        
+                                                    </p>
+                                                
+                                            </div>
+                                        
+                                    
+                                    
+                                    
+                                        
+                                            <div
+                                                
+                                                    class="mb-5"
+                                                
+                                            >
+                                                
+                                                    <p class="has-text-centered is-italic mb-1">
+                                                        
+                                                            प्रजापतिं च रूद्र चाप्यहमेव सृजामि वै |
+                                                        
+                                                    </p>
+                                                
+                                                    <p class="has-text-centered is-italic mb-1">
+                                                        
+                                                            तौ हि मां न विजानीतो मम मायाविमोहितौ ||
+                                                        
+                                                    </p>
+                                                
+                                            </div>
+                                        
+                                    
+                                    
+                                    
+                                        
+                                            <div
+                                                
+                                                    class="mb-5"
+                                                
+                                            >
+                                                
+                                                    <p class="has-text-justified">
+                                                        
+                                                            “मैंने ही प्रजापतियों को, शिव तथा अन्यों को उत्पन्न किया, किन्तु वे मेरी माया से मोहित होने के कारण यह नहीं जानते कि मैंने ही उन्हें उत्पन्न किया |” वराह पुराण में भी कहा गया है –
+                                                        
+                                                    </p>
+                                                
+                                            </div>
+                                        
+                                    
+                                    
+                                    
+                                        
+                                            <div
+                                                
+                                                    class="mb-5"
+                                                
+                                            >
+                                                
+                                                    <p class="has-text-centered is-italic mb-1">
+                                                        
+                                                            नारायणः परो देवस्तस्माज्जातश्र्चतुर्मुखः |
+                                                        
+                                                    </p>
+                                                
+                                                    <p class="has-text-centered is-italic mb-1">
+                                                        
+                                                            तस्माद्र रुद्रोऽभवद्देवः स च सर्वज्ञतां गतः ||
+                                                        
+                                                    </p>
+                                                
+                                            </div>
+                                        
+                                    
+                                    
+                                    
+                                        
+                                            <div
+                                                
+                                            >
+                                                
+                                                    <p class="has-text-justified">
+                                                        
+                                                            “नारायण भगवान् हैं, जिनसे ब्रह्मा उत्पन्न हुए और फिर ब्रह्मा से शिव उत्पन्न हुए |” भगवान् कृष्ण समस्त उत्पत्तियों से स्त्रोत हैं और वे सर्वकारण कहलाते हैं | वे स्वयं कहते हैं, “चूँकि सारी वस्तुएँ मुझसे उत्पन्न हैं, अतः मैं सबों का मूल कारण हूँ | सारी वस्तुएँ मेरे अधीन हैं, मेरे ऊपर कोई भी नहीं हैं |” कृष्ण से बढ़कर कोई परम नियन्ता नहीं है | जो व्यक्ति प्रामाणिक गुरु से या वैदिक साहित्य से इस प्रकार कृष्ण को जान लेता है, वह अपनी सारी शक्ति कृष्णभावनामृत में लगाता है और सचमुच विद्वान पुरुष बन जाता है | उसकी तुलना में अन्य लोग, जो कृष्ण को ठीक से नहीं जानते, मात्र मूर्ख सिद्ध होते हैं | केवल मूर्ख ही कृष्ण को सामान्य व्यक्ति समझेगा | कृष्णभावनाभावित व्यक्ति को चाहिए कि कभी मूर्खों द्वारा मोहित न हो, उसे भगवद्गीता की समस्त अप्रामाणिक टीकाओं एवं व्याख्याओं से दूर रहना चाहिए और दृढ़तापूर्वक कृष्णभावनामृत में अग्रसर होना चाहिए |
+                                                        
+                                                    </p>
+                                                
+                                            </div>
+                                        
+                                    
+                                    
+                                </div>
                             </div>
-                        
-                    
-                        
-                            <div
-                                
-                                    class="mb-3"
-                                
-                            >
-                                
-                                    <p class="has-text-centered has-text-weight-bold">
-                                        
-                                            शब्दार्थ
-                                        
-                                    </p>
-                                
-                            </div>
-                        
-                    
-                        
-                            <div
-                                
-                                    class="mb-5"
-                                
-                            >
-                                
-                                    <p class="has-text-justified">
-                                        
-                                            <strong>अहम्</strong> – मैं; <strong>सर्वस्य</strong> – सबका; <strong>प्रभवः</strong> – उत्पत्ति का कारण; <strong>मत्तः</strong> – मुझसे; <strong>सर्वम्</strong> – सारी वस्तुएँ; <strong>प्रवर्तते</strong> – उद्भूत होती हैं; <strong>इति</strong> – इस प्रकार; <strong>मत्वा</strong> – जानकर; <strong>भजन्ते</strong> – भक्ति करते हैं; <strong>माम्</strong> – मेरी; <strong>बुधाः</strong> – विद्वानजन; <strong>भाव-समन्विताः</strong> – अत्यन्त मनोयोग से |
-                                        
-                                    </p>
-                                
-                            </div>
-                        
-                    
-                        
-                            <div
-                                
-                                    class="mb-3"
-                                
-                            >
-                                
-                                    <p class="has-text-centered has-text-weight-bold">
-                                        
-                                            भावार्थ
-                                        
-                                    </p>
-                                
-                            </div>
-                        
-                    
-                        
-                            <div
-                                
-                                    class="mb-5"
-                                
-                            >
-                                
-                                    <p class="has-text-justified">
-                                        
-                                            मैं समस्त आध्यात्मिक तथा भौतिक जगतों का कारण हूँ, प्रत्येक वस्तु मुझ ही से उद्भूत है | जो बुद्धिमान यह भलीभाँति जानते हैं, वे मेरी प्रेमाभक्ति में लगते हैं तथा हृदय से पूरी तरह मेरी पूजा में तत्पर होते हैं |
-                                        
-                                    </p>
-                                
-                            </div>
-                        
-                    
-                        
-                            <div
-                                
-                                    class="mb-3"
-                                
-                            >
-                                
-                                    <p class="has-text-centered has-text-weight-bold">
-                                        
-                                            तात्पर्य
-                                        
-                                    </p>
-                                
-                            </div>
-                        
-                    
-                        
-                            <div
-                                
-                                    class="mb-5"
-                                
-                            >
-                                
-                                    <p class="has-text-justified">
-                                        
-                                            जिस विद्वान ने वेदों का ठीक से अध्ययन किया हो और भगवान् चैतन्य जैसे अधिकारियों से ज्ञान प्राप्त किया हो तथा यह जानता हो कि इन उपदेशों का किस प्रकार उपयोग करना चाहिए, वही यह समझ सकता है कि भौतिक तथा आध्यात्मिक जगतों के मूल श्रीकृष्ण ही हैं | इस प्रकार के ज्ञान से वह भगवद्भक्ति में स्थिर हो जाता है | वह व्यर्थ की टीकाओं से या मूर्खों के द्वारा कभी पथभ्रष्ट नहीं होता | सारा वैदिक साहित्य स्वीकार करता है कि कृष्ण ही ब्रह्मा, शिव तथा अन्य समस्त देवताओं के स्त्रोत हैं | अथर्ववेद में (गोपालतापनी उपनिषद् १.२४) कहा गया है – यो ब्रह्माणं विदधाति पूर्वं यो वै वेदांश्च गापयति स्म कृष्णः– प्रारम्भ में कृष्ण ने ब्रह्मा को वेदों का ज्ञान प्रदान किया और उन्होंने भूतकाल में वैदिक ज्ञान का प्रचार किया | पुनः नारायण उपनिषद् में (१) कहा गयाहै – अथ पुरुषो ह वै नारायणोऽकामयत प्रजाः सृजेयते– तब भगवान् ने जीवों की सृष्टि करनी चाही | उपनिषद् में आगे भी कहा गया है – नारायणाद् ब्रह्मा जायते नारायणाद् प्रजापतिः प्रजायते नारायणाद् इन्द्रो जायते | नारायणादष्टौ वसवो जायन्ते नारायणादेकादश रुद्रा जायन्ते नारायणाद्द्वादशादित्याः– “नारायण से ब्रह्मा उत्पन्न होते हैं, नारायण से प्रजापति उत्पन्न होते हैं, नारायण से इन्द्र और आठ वासु उत्पन्न होते हैं और नारायण से ही ग्यारह रूद्र तथा बारह आदित्य उत्पन्न होते हैं |” यह नारायण कृष्ण के ही अंश हैं |
-                                        
-                                    </p>
-                                
-                                    <p class="has-text-justified">
-                                        
-                                            वेदों का ही कथन है – ब्रह्मण्यो देवकीपुत्रः – देवकी पुत्र, कृष्ण, ही भगवान् हैं (नारायण उपनिषद् ४) | तब यह कहा गया – एको वै आसीन्न ब्रह्मा न ईशानो नापो नाग्निसमौ नेमे द्यावापृथिवी न नाक्षत्राणि न सूर्यः– सृष्टि के प्रारम्भ में केवल भगवान् नारायण थे | न ब्रह्मा थे, न शिव | न अग्नि थी, न चन्द्रमा, न नक्षत्र और न सूर्य (महा उपनिषद् १) | महा उपनिषद् में यह भी कहा गया है कि शिवजी परमेश्वर के मस्तक से उत्पन्न हुए | अतः वेदों का कहना है कि ब्रह्मा तथा शिव के स्रष्टा भगवान् की ही पूजा की जानी चाहिए |
-                                        
-                                    </p>
-                                
-                                    <p class="has-text-justified">
-                                        
-                                            मोक्षधर्म में कृष्ण कहते हैं –
-                                        
-                                    </p>
-                                
-                            </div>
-                        
-                    
-                        
-                            <div
-                                
-                                    class="mb-5"
-                                
-                            >
-                                
-                                    <p class="has-text-centered is-italic mb-1">
-                                        
-                                            प्रजापतिं च रूद्र चाप्यहमेव सृजामि वै |
-                                        
-                                    </p>
-                                
-                                    <p class="has-text-centered is-italic mb-1">
-                                        
-                                            तौ हि मां न विजानीतो मम मायाविमोहितौ ||
-                                        
-                                    </p>
-                                
-                            </div>
-                        
-                    
-                        
-                            <div
-                                
-                                    class="mb-5"
-                                
-                            >
-                                
-                                    <p class="has-text-justified">
-                                        
-                                            “मैंने ही प्रजापतियों को, शिव तथा अन्यों को उत्पन्न किया, किन्तु वे मेरी माया से मोहित होने के कारण यह नहीं जानते कि मैंने ही उन्हें उत्पन्न किया |” वराह पुराण में भी कहा गया है –
-                                        
-                                    </p>
-                                
-                            </div>
-                        
-                    
-                        
-                            <div
-                                
-                                    class="mb-5"
-                                
-                            >
-                                
-                                    <p class="has-text-centered is-italic mb-1">
-                                        
-                                            नारायणः परो देवस्तस्माज्जातश्र्चतुर्मुखः |
-                                        
-                                    </p>
-                                
-                                    <p class="has-text-centered is-italic mb-1">
-                                        
-                                            तस्माद्र रुद्रोऽभवद्देवः स च सर्वज्ञतां गतः ||
-                                        
-                                    </p>
-                                
-                            </div>
-                        
-                    
-                        
-                            <div
-                                
-                            >
-                                
-                                    <p class="has-text-justified">
-                                        
-                                            “नारायण भगवान् हैं, जिनसे ब्रह्मा उत्पन्न हुए और फिर ब्रह्मा से शिव उत्पन्न हुए |” भगवान् कृष्ण समस्त उत्पत्तियों से स्त्रोत हैं और वे सर्वकारण कहलाते हैं | वे स्वयं कहते हैं, “चूँकि सारी वस्तुएँ मुझसे उत्पन्न हैं, अतः मैं सबों का मूल कारण हूँ | सारी वस्तुएँ मेरे अधीन हैं, मेरे ऊपर कोई भी नहीं हैं |” कृष्ण से बढ़कर कोई परम नियन्ता नहीं है | जो व्यक्ति प्रामाणिक गुरु से या वैदिक साहित्य से इस प्रकार कृष्ण को जान लेता है, वह अपनी सारी शक्ति कृष्णभावनामृत में लगाता है और सचमुच विद्वान पुरुष बन जाता है | उसकी तुलना में अन्य लोग, जो कृष्ण को ठीक से नहीं जानते, मात्र मूर्ख सिद्ध होते हैं | केवल मूर्ख ही कृष्ण को सामान्य व्यक्ति समझेगा | कृष्णभावनाभावित व्यक्ति को चाहिए कि कभी मूर्खों द्वारा मोहित न हो, उसे भगवद्गीता की समस्त अप्रामाणिक टीकाओं एवं व्याख्याओं से दूर रहना चाहिए और दृढ़तापूर्वक कृष्णभावनामृत में अग्रसर होना चाहिए |
-                                        
-                                    </p>
-                                
-                            </div>
-                        
-                    
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -393,178 +387,184 @@
 </section>
 
 
-    <section class="section pt-0">
-        <div class="container mt-6">
-            <div class="pagination-container">
-    <nav class="pagination is-centered" role="navigation" aria-label="pagination">
-        
-        <!-- previous page button -->
-        <a
-            class="pagination-previous pagination-button button is-orange is-outlined"
-            
-                href="/bhagavad-gita-hindi/10/7/"
-            
-        >
-            पिछला श्लोक
-        </a>
-
-        <!-- next page button -->
-        <a
-            class="pagination-next pagination-button button is-orange is-outlined"
-            
-                href="/bhagavad-gita-hindi/10/9/"
-            
-        >
-        अगला श्लोक
-        </a>
-
-        <ul class="pagination-list">
-            
-            
-                <li>
-                    <a
-                        class="pagination-link"
-                        
-                            href="/bhagavad-gita-hindi/10/1/"
-                        
-                    >
-                        1
-                    </a>
-                </li>
+<section class="section animatedParent animateOnce pb-0">
+    <div class="box glass animated fadeInUpShort">
+        <nav class="pagination is-centered" role="navigation" aria-label="pagination">
+            <!-- previous page button -->
+            <a
+                class="button is-outlined is-warning pagination-previous pagination-button button is-orange is-outlined"
                 
+                    href="/bhagavad-gita-hindi/10/7/"
                 
-                    
-                        <li>
-                            <span class="pagination-ellipsis">…</span>
-                        </li>
-                    
+            >
+                पिछला श्लोक
+            </a>
 
-                    <li>
-                        <a
-                            class="pagination-link"
-                            href="/bhagavad-gita-hindi/10/7/"
-                        >
-                            7
-                        </a>
-                    </li>
+            <!-- next page button -->
+            <!-- <a
+                class="button is-outlined is-warning pagination-next pagination-button button is-orange is-outlined"
                 
-            
-            
-            
-            
-            <li>
-                <a
-                    class="pagination-link is-current"
-                    aria-current="page"
-                    disabled
-                >
-                    8
-                </a>
-            </li>
-            
+                    href="/bhagavad-gita-hindi/10/9/"
+                
+            >
+            अगला श्लोक -->
+            </a>
 
-            
-            
+            <ul class="pagination-list">
+                
                 
                     <li>
                         <a
-                            class="pagination-link"
-                            href="/bhagavad-gita-hindi/10/9/"
+                            class="button is-outlined is-warning pagination-link"
+                            
+                                href="/bhagavad-gita-hindi/10/1/"
+                            
                         >
-                            9
+                            1
                         </a>
                     </li>
                     
+                    
+                        
+                            <li>
+                                <span class="pagination-ellipsis">…</span>
+                            </li>
+                        
+
                         <li>
-                            <span class="pagination-ellipsis">…</span>
+                            <a
+                                class="button is-outlined is-warning pagination-link"
+                                href="/bhagavad-gita-hindi/10/7/"
+                            >
+                                7
+                            </a>
                         </li>
                     
+                
+                
                 
                 
                 <li>
                     <a
-                        class="pagination-link"
-                        
-                            href="/bhagavad-gita-hindi/10/42/"
-                        
+                        class="button is-outlined is-warning pagination-link is-current" tabindex="-1"
+                        aria-current="page"
+                        disabled
                     >
-                        42
+                        8
                     </a>
                 </li>
-            
-            
-        </ul>
-    </nav>
-</div>
-        </div>
-    </section>
+                
 
-
-<section class="section pt-0">
-    <div class="container">
-        <article class="message is-warning is-small">
-            <div class="message-body has-text-centered">
-                <p class="mb-3">The BBT was established in 1972 by His Divine Grace A.C. Bhaktivedanta Swami Prabhupada, Founder-Acharya of the International Society for Krishna Consciousness. BBT is the publisher for his books. All material used here belongs to and copyrighted under BBT (Bhaktivedanta Book Trust).</p>
-
-                <p class="mb-3">🙏 Please consider buying books. Below is a beautiful message by Srila Prabhupada 🙏</p>
-
-                <p class="is-italic mb-3">“I specifically formed the BBT to invest in it exclusive rights for the printing of all literature containing my teachings, writings and lectures. In this way the collections are to be divided fifty percent for printing new books and fifty percent for construction of temples.”</p>
-            </div>
-        </article>
-    </div>
-</section>
-
-<section class="hero is-light is-small">
-    <div class="hero-body">
-        <div class="container">
-            <nav class="breadcrumb is-centered" aria-label="breadcrumbs">
-                <ul>
+                
+                
                     
-                        <li >
-                            <a class="is-link has-text-orange" href="/">
-                                <span class="icon is-small">
-                                    <i class="fas fa-home" aria-hidden="true"></i>
-                                </span>
-                                <span>Home</span>
+                        <li>
+                            <a
+                                class="button is-outlined is-warning pagination-link"
+                                href="/bhagavad-gita-hindi/10/9/"
+                            >
+                                9
                             </a>
                         </li>
+                        
+                            <li>
+                                <span class="pagination-ellipsis">…</span>
+                            </li>
+                        
                     
-                        <li >
-                            <a class="is-link has-text-orange" href="/bhagavad-gita-hindi/">
-                                <span class="icon is-small">
-                                    <i class="fas fa-book" aria-hidden="true"></i>
-                                </span>
-                                <span>श्रीमद्भगवद्गीता - यथारूप (हिंदी)</span>
-                            </a>
-                        </li>
                     
-                        <li >
-                            <a class="is-link has-text-orange" href="/bhagavad-gita-hindi/10/">
-                                <span class="icon is-small">
-                                    <i class="fas fa-file-alt" aria-hidden="true"></i>
-                                </span>
-                                <span>अध्याय १० - विभूतियोग</span>
-                            </a>
-                        </li>
-                    
-                        <li class="is-active">
-                            <a  href="">
-                                <span class="icon is-small">
-                                    <i class="fas fa-quote-right" aria-hidden="true"></i>
-                                </span>
-                                <span>श्लोक ८</span>
-                            </a>
-                        </li>
-                    
-                </ul>
-            </nav>
-        </div>
+                    <li>
+                        <a
+                            class="button is-outlined is-warning pagination-link"
+                            
+                                href="/bhagavad-gita-hindi/10/42/"
+                            
+                        >
+                            42
+                        </a>
+                    </li>
+                
+                
+            </ul>
+
+            <!-- next page button -->
+            <a
+                class="button is-outlined is-warning pagination-next pagination-button button is-orange is-outlined"
+                
+                    href="/bhagavad-gita-hindi/10/9/"
+                
+            >
+            अगला श्लोक
+            </a>
+        </nav>
     </div>
 </section>
 
 
+<section class="section animatedParent animateOnce">
+    <div class="box glass animated fadeInUpShort">
+        <nav class="breadcrumb is-medium is-centered" aria-label="breadcrumbs">
+            <ul>
+                
+                <li >
+                    <a class="is-link has-text-orange" href="/">
+                        <span class="icon is-small">
+                            <i class="fas fa-home" aria-hidden="true"></i>
+                        </span>
+                        <span>Home</span>
+                    </a>
+                </li>
+                
+                <li >
+                    <a class="is-link has-text-orange" href="/bhagavad-gita-hindi/">
+                        <span class="icon is-small">
+                            <i class="fas fa-book" aria-hidden="true"></i>
+                        </span>
+                        <span>श्रीमद्भगवद्गीता</span>
+                    </a>
+                </li>
+                
+                <li >
+                    <a class="is-link has-text-orange" href="/bhagavad-gita-hindi/10/">
+                        <span class="icon is-small">
+                            <i class="fas fa-file-alt" aria-hidden="true"></i>
+                        </span>
+                        <span>अध्याय १० - विभूतियोग</span>
+                    </a>
+                </li>
+                
+                <li class="is-active">
+                    <a tabindex="-1" href="">
+                        <span class="icon is-small">
+                            <i class="fas fa-quote-right" aria-hidden="true"></i>
+                        </span>
+                        <span>श्लोक ८</span>
+                    </a>
+                </li>
+                
+            </ul>
+        </nav>
+    </div>
+</section>
 
-    <footer class="footer bg-gradient-light-orange pt-5 pb-5">
+<section class="section pt-0 animatedParent animateOnce">
+    <article class="box message is-warning is-small p-0 animated fadeInUpShort">
+        <div class="message-header is-justify-content-center">
+            <p>Copyright Notice</p>
+        </div>
+        <div class="message-body has-text-centered">
+            <p class="mb-3">The BBT was established in 1972 by His Divine Grace A.C. Bhaktivedanta Swami Prabhupada, Founder-Acharya of the International Society for Krishna Consciousness. BBT is the publisher for his books. All material used here belongs to and copyrighted under BBT (Bhaktivedanta Book Trust).</p>
+    
+            <p class="is-italic mb-3">“I specifically formed the BBT to invest in it exclusive rights for the printing of all literature containing my teachings, writings and lectures. In this way the collections are to be divided fifty percent for printing new books and fifty percent for construction of temples.”</p>
+
+            <p>- A.C. Bhaktivedanta Swami Prabhupada</p>
+        </div>
+    </article>
+</section>
+
+
+
+    <!-- <footer class="footer bg-gradient-light-orange pt-5 pb-5">
     <div class="container">
         <div class="content">
             <div class="columns is-multiline is-centered">
@@ -587,7 +587,51 @@
             </div>
         </div>
     </div>
+</footer> -->
+
+<footer class="footer p-0">
+    <section class="section">
+        <div class="footer-container">
+            <div class="animatedParent animateOnce">
+                <div class="content-w-image is-flex is-centered-mobile">
+                    <figure class="image is-64x64 m-0 animated fadeInUpShort">
+                        <img src="https://www.ancientknowledge.in/static/images/logo.png">
+                    </figure>
+                    <div class="content m-0 is-flex is-flex-direction-column is-justify-content-space-between animated fadeInUpShort">
+                        <h4 class="mt-0">Ancient Knowledge</h4>
+                        <p class="is-centered-mobile">
+                            <a href="https://www.ancientknowledge.in/about/" class="no-decoration">
+                                <span>About</span>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="animatedParent animateOnce">
+                <div class="content animated fadeInUpShort">
+                    <h4 class="is-centered-mobile m-0 mb-4 animated fadeInUpShort delay-500">@PraacheenGyaan</h4>
+                    <p class="has-text-centered is-flex is-justify-content-space-between animatedParent animateOnce">
+                        <a class="box icon facebook is-large fa-2x mb-0 animated growIn delay-500" href="https://www.facebook.com/PraacheenGyaan/" target="_blank">
+                            <i class="fab fa-facebook-square has-text-white"></i>
+                        </a>
+
+                        <a class="box icon instagram is-large fa-2x mb-0 animated growIn delay-1000" href="https://www.instagram.com/PraacheenGyaan/" target="_blank">
+                            <i class="fab fa-instagram-square has-text-white"></i>
+                        </a>
+
+                        <a class="box icon twitter is-large fa-2x mb-0 animated growIn delay-1500" href="https://twitter.com/PraacheenGyaan/" target="_blank">
+                            <i class="fab fa-twitter-square has-text-white"></i>
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
 </footer>
+
+    <script src="https://www.ancientknowledge.in/static/js/jquery.min.js"></script>
+    <script src="https://www.ancientknowledge.in/static/js/script.js"></script>
+    <script src="https://www.ancientknowledge.in/static/js/css3-animate-it.js"></script>
 
     
 </body>

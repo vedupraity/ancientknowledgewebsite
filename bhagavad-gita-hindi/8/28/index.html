@@ -14,7 +14,7 @@
 
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#ffffff" />
+    <meta name="theme-color" content="#ff902b" />
 
     <!-- Begin SEO tags -->
     <title>Ancient Knowledge | Bhagavad Gita | Hindi</title>
@@ -24,324 +24,310 @@
     <meta property="og:title" content="Ancient Knowledge | Bhagavad Gita | Hindi" />
     <meta property="og:description" content="Read Shrimad Bhagavad Gita - Yatharoop in hindi. श्रीमद्भगवद्गीता - यथारूप हिंदी में पढ़ें। अध्याय ८ - श्लोक २८" />
     <meta property="og:url" content="https://www.ancientknowledge.in" />
-    <meta property="og:image" content="https://www.ancientknowledge.in/static/images/bhagavad-gita-cover-16by9.jpg" />
+    <meta property="og:image" content="https://www.ancientknowledge.in/static/images/bhagavad-gita-cover-4x3.jpg" />
     <meta property="og:type" content="article" />
     
     <meta property="twitter:title" content="Ancient Knowledge | Bhagavad Gita | Hindi" />
     <meta property="twitter:description" content="Read Shrimad Bhagavad Gita - Yatharoop in hindi. श्रीमद्भगवद्गीता - यथारूप हिंदी में पढ़ें। अध्याय ८ - श्लोक २८" />
-    <meta property="twitter:image" content="https://www.ancientknowledge.in/static/images/bhagavad-gita-cover-16by9.jpg" />
+    <meta property="twitter:image" content="https://www.ancientknowledge.in/static/images/bhagavad-gita-cover-4x3.jpg" />
     <!-- End SEO tags -->
 
-    <link rel="stylesheet" href="https://www.ancientknowledge.in/static/css/theme.css" />
-    <link rel="stylesheet" href="https://www.ancientknowledge.in/static/css/theme-custom.css" />
+    <!-- <link rel="stylesheet" href="https://www.ancientknowledge.in/static/css/theme-old.css" /> -->
+    <!-- <link rel="stylesheet" href="https://www.ancientknowledge.in/static/css/switch-control.min.css" /> -->
+    <!-- <link rel="stylesheet" href="https://www.ancientknowledge.in/static/css/theme-custom.css" /> -->
     
     <link rel="icon" href="https://www.ancientknowledge.in/static/images/favicon.ico">
-    <link rel="shortcut icon" type="image/png" href="https://www.ancientknowledge.in/static/images/favicon.png" />
+    <link rel="shortcut icon" type="image/png" href="https://www.ancientknowledge.in/static/images/logo.png" />
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.0/dist/alpine.min.js" defer></script>
     
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-social@1/bin/bulma-social.min.css" />
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" /> -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-social@1/bin/bulma-social.min.css" /> -->
+
+    <link rel="stylesheet" href="https://www.ancientknowledge.in/static/css/bulma.min.css">
+    <link rel="stylesheet" href="https://www.ancientknowledge.in/static/css/theme.css">
+    <link rel="stylesheet" href="https://www.ancientknowledge.in/static/css/animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 
-<body>
-    <nav class="navbar is-warning bg-gradient-light-orange" x-data="{ openNav: false }">
-    <div class="container">
-        <div class="navbar-brand">
-            <a href="https://www.ancientknowledge.in" class="navbar-item">
-                <p class="has-text-weight-normal has-text-orange">
-                    <span>📖</span>
-                    <span class="pl-2">Ancient Knowledge</span>
-                </p>
+<body class="dark-modes">
+    <nav class="navbar is-light glass" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+        <a class="navbar-item pl-4" href="https://www.ancientknowledge.in">
+            <img src="https://www.ancientknowledge.in/static/images/logo.png" width="28" height="28">
+            <span class="pl-4">
+                Ancient Knowledge
+            </span>
+        </a>
+
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+            data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+    </div>
+
+    <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+            <a class="navbar-item" href="https://www.ancientknowledge.in/about/">
+                About
             </a>
-            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navMenu"
-                :class="{ 'is-active': openNav }" x-on:click="openNav = !openNav">
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-            </a>
-        </div>
-        <div class="navbar-menu" id="navMenu" :class="{ 'is-active': openNav }">
-            <div class="navbar-end">
-                <a href="https://www.ancientknowledge.in/about/" class="navbar-item has-text-weight-normal has-text-orange">About</a>
-            </div>
         </div>
     </div>
 </nav>
 
     
-    <section class="hero is-small is-bold is-dark bg-gradient-orange">
-    <div class="hero-body">
-        <div class="container has-text-centered p-5">
-            <h4 class="title is-4">श्रीमद्भगवद्गीता - यथारूप (हिंदी)</h4>
-        </div>
-    </div>
-</section>
-    
-
-    <div class="content is-centered has-text-centered" style="display: none;">
-        <h1>Ancient Knowledge</h1>
-        <h2>Recollecting the lost knowledge</h2>
-        <h3>Ancient Knowledge | Bhagavad Gita | Hindi</h3>
-        <p>Read Shrimad Bhagavad Gita - Yatharoop in hindi. श्रीमद्भगवद्गीता - यथारूप हिंदी में पढ़ें। अध्याय ८ - श्लोक २८</p>
-        <div class="tags is-centered">
-            
-                <span class="tag">Ancient</span>
-            
-                <span class="tag">Knowledge</span>
-            
-                <span class="tag">India</span>
-            
-                <span class="tag">Shrimad</span>
-            
-                <span class="tag">Bhagavad</span>
-            
-                <span class="tag">Gita</span>
-            
-                <span class="tag">Yatharoop</span>
-            
-                <span class="tag">As It Is</span>
-            
-                <span class="tag">Mahabharat</span>
-            
-                <span class="tag">Krishna</span>
-            
-                <span class="tag">Prabhupad</span>
-            
-                <span class="tag">Hindi</span>
-            
-        </div>
-    </div>
 
     
 
-<section class="hero is-light is-small">
-    <div class="hero-body">
-        <div class="container">
-            <nav class="breadcrumb is-centered" aria-label="breadcrumbs">
-                <ul>
-                    
-                        <li >
-                            <a class="is-link has-text-orange" href="/">
-                                <span class="icon is-small">
-                                    <i class="fas fa-home" aria-hidden="true"></i>
-                                </span>
-                                <span>Home</span>
-                            </a>
-                        </li>
-                    
-                        <li >
-                            <a class="is-link has-text-orange" href="/bhagavad-gita-hindi/">
-                                <span class="icon is-small">
-                                    <i class="fas fa-book" aria-hidden="true"></i>
-                                </span>
-                                <span>श्रीमद्भगवद्गीता - यथारूप (हिंदी)</span>
-                            </a>
-                        </li>
-                    
-                        <li >
-                            <a class="is-link has-text-orange" href="/bhagavad-gita-hindi/8/">
-                                <span class="icon is-small">
-                                    <i class="fas fa-file-alt" aria-hidden="true"></i>
-                                </span>
-                                <span>अध्याय ८ - अक्षरब्रह्मयोग</span>
-                            </a>
-                        </li>
-                    
-                        <li class="is-active">
-                            <a  href="">
-                                <span class="icon is-small">
-                                    <i class="fas fa-quote-right" aria-hidden="true"></i>
-                                </span>
-                                <span>श्लोक २८</span>
-                            </a>
-                        </li>
-                    
-                </ul>
-            </nav>
-        </div>
+<!-- Margin top behind navbar -->
+<div class="mt-6"></div>
+
+<style>
+    :root {
+        --page-background-image: url(/static/images/bhagavad-gita-cover-4x3.jpg);
+    }
+</style>
+<div class="image-background"></div>
+
+<section class="section animatedParent animateOnce">
+    <div class="box glass animated fadeInUpShort">
+        <nav class="breadcrumb is-medium is-centered" aria-label="breadcrumbs">
+            <ul>
+                
+                <li >
+                    <a class="is-link has-text-orange" href="/">
+                        <span class="icon is-small">
+                            <i class="fas fa-home" aria-hidden="true"></i>
+                        </span>
+                        <span>Home</span>
+                    </a>
+                </li>
+                
+                <li >
+                    <a class="is-link has-text-orange" href="/bhagavad-gita-hindi/">
+                        <span class="icon is-small">
+                            <i class="fas fa-book" aria-hidden="true"></i>
+                        </span>
+                        <span>श्रीमद्भगवद्गीता</span>
+                    </a>
+                </li>
+                
+                <li >
+                    <a class="is-link has-text-orange" href="/bhagavad-gita-hindi/8/">
+                        <span class="icon is-small">
+                            <i class="fas fa-file-alt" aria-hidden="true"></i>
+                        </span>
+                        <span>अध्याय ८ - अक्षरब्रह्मयोग</span>
+                    </a>
+                </li>
+                
+                <li class="is-active">
+                    <a tabindex="-1" href="">
+                        <span class="icon is-small">
+                            <i class="fas fa-quote-right" aria-hidden="true"></i>
+                        </span>
+                        <span>श्लोक २८</span>
+                    </a>
+                </li>
+                
+            </ul>
+        </nav>
     </div>
 </section>
 
-<section
-    class="
-        section
-        content-card-section
-        pb-0
-    "
-    oncopy="return false" oncut="return false" onpaste="return false"
->
-    <div class="container">
-        <div class="card has-glow-md">
-            <div class="card-content">
-                <div class="content is-medium">
-                    <h5 class="has-text-centered ">
-                        अध्याय ८ - श्लोक २८
-                        
-                    </h5>
-                    
-                    <hr/>
-
-                    
-                        
-                            <div
-                                
-                                    class="mb-5"
-                                
-                            >
-                                
-                                    <p class="has-text-centered has-text-weight-bold mb-1">
+<section class="section pt-0 pb-0">
+    <div class="columns is-multiline is-centered is-variable is-4">
+        <div
+            class="column is-full-tablet is-full-desktop is-full-widescreen is-full-fullhd is-flex animatedParent animateOnce">
+            <div class="card card-horizontal is-flex-grow-1 animated fadeInUpShort">
+                <div class="card-content p-2 pt-4 pb-4">
+                    <div class="columns is-multiline is-variable m-0">
+                        <div class="column">
+                            <div class="content is-medium m-0">
+                                <div class="">
+                                    
+                                    
                                         
-                                            वेदेषु यज्ञेषु तपःसु चैव
+                                            <div
+                                                
+                                                    class="mb-5"
+                                                
+                                            >
+                                                
+                                                    <p class="has-text-centered has-text-weight-bold mb-1">
+                                                        
+                                                            वेदेषु यज्ञेषु तपःसु चैव
+                                                        
+                                                    </p>
+                                                
+                                                    <p class="has-text-centered has-text-weight-bold mb-1">
+                                                        
+                                                            दानेषु यत्पुण्यफलं प्रदिष्टम् ।
+                                                        
+                                                    </p>
+                                                
+                                                    <p class="has-text-centered has-text-weight-bold mb-1">
+                                                        
+                                                            अत्येति तत्सर्वमिदं विदित्वा
+                                                        
+                                                    </p>
+                                                
+                                                    <p class="has-text-centered has-text-weight-bold mb-1">
+                                                        
+                                                            योगी परं स्थानमुपैति चाद्यम् ॥ २८ ॥
+                                                        
+                                                    </p>
+                                                
+                                            </div>
                                         
-                                    </p>
-                                
-                                    <p class="has-text-centered has-text-weight-bold mb-1">
+                                    
+                                    
+                                    
                                         
-                                            दानेषु यत्पुण्यफलं प्रदिष्टम् ।
+                                            <div
+                                                
+                                                    class="mb-3"
+                                                
+                                            >
+                                                
+                                                    <p class="has-text-centered has-text-weight-bold">
+                                                        
+                                                            शब्दार्थ
+                                                        
+                                                    </p>
+                                                
+                                            </div>
                                         
-                                    </p>
-                                
-                                    <p class="has-text-centered has-text-weight-bold mb-1">
+                                    
+                                    
+                                    
                                         
-                                            अत्येति तत्सर्वमिदं विदित्वा
+                                            <div
+                                                
+                                                    class="mb-5"
+                                                
+                                            >
+                                                
+                                                    <p class="has-text-justified">
+                                                        
+                                                            <strong>वेदेषु</strong> – वेदाध्ययन में; <strong>यज्ञेषु</strong> – यज्ञ सम्पन्न करने में; <strong>तपःसु</strong> – विभिन्न प्रकार की तपस्याएँ करने में; <strong>च</strong> – भी; <strong>एव</strong> – निश्चय ही; <strong>दानेषु</strong> – दान देने में; <strong>यत्</strong> – जो; <strong>पुण्य-फलम्</strong> – पुण्यकर्म का फल; <strong>प्रदिष्टम्</strong> – सूचित; <strong>अत्येति</strong> – लाँघ जाता है; <strong>तत् सर्वम्</strong> – वे सब; <strong>इदम्</strong> – यह; <strong>विदित्वा</strong> – जानकर; <strong>योगी</strong> – योगी; <strong>परम्</strong> – परम; <strong>स्थानम्</strong> – धाम को; <strong>उपैति</strong> – प्राप्त करता है; <strong>च</strong> – भी; <strong>आद्यम्</strong> – मूल, आदि |
+                                                        
+                                                    </p>
+                                                
+                                            </div>
                                         
-                                    </p>
-                                
-                                    <p class="has-text-centered has-text-weight-bold mb-1">
+                                    
+                                    
+                                    
                                         
-                                            योगी परं स्थानमुपैति चाद्यम् ॥ २८ ॥
+                                            <div
+                                                
+                                                    class="mb-3"
+                                                
+                                            >
+                                                
+                                                    <p class="has-text-centered has-text-weight-bold">
+                                                        
+                                                            भावार्थ
+                                                        
+                                                    </p>
+                                                
+                                            </div>
                                         
-                                    </p>
-                                
+                                    
+                                    
+                                    
+                                        
+                                            <div
+                                                
+                                                    class="mb-5"
+                                                
+                                            >
+                                                
+                                                    <p class="has-text-justified">
+                                                        
+                                                            जो व्यक्ति भक्तिमार्ग स्वीकार करता है, वह वेदाध्ययन, तपस्या, दान, दार्शनिक तथा सकाम कर्म करने से प्राप्त होने वाले फलों से वंचित नहीं होता | वह मात्र भक्ति सम्पन्न करके इन समस्त फलों की प्राप्ति करता है और अन्त में परम नित्यधाम को प्राप्त होता है |
+                                                        
+                                                    </p>
+                                                
+                                            </div>
+                                        
+                                    
+                                    
+                                    
+                                        
+                                            <div
+                                                
+                                                    class="mb-3"
+                                                
+                                            >
+                                                
+                                                    <p class="has-text-centered has-text-weight-bold">
+                                                        
+                                                            तात्पर्य
+                                                        
+                                                    </p>
+                                                
+                                            </div>
+                                        
+                                    
+                                    
+                                    
+                                        
+                                            <div
+                                                
+                                                    class="mb-5"
+                                                
+                                            >
+                                                
+                                                    <p class="has-text-justified">
+                                                        
+                                                            यह श्लोक सातवें तथा आठवें अध्यायों का उपसंहार है, जिनमे कृष्णभावनामृत तथा भक्ति का विशेष वर्णन है | मनुष्य को अपने गुरु के निर्देशन में वेदाध्ययन करना होता है, उन्हीं के आश्रम में रहते हुए तपस्या करनी होती है | ब्रह्मचारी को गुरु के घर में एक दास की भाँति रहना पड़ता है और द्वार-द्वार भिक्षा माँगकर गुरु के पास लाना होता है | उसे गुरु के उपदेश पर ही भोजन करना होता है और यदि किसी दिन गुरु शिष्य को भोजन करने के लिए बुलाना भूल जाय तो शिष्य को उपवास करना होता है | ब्रह्मचर्य पालन के ये कुछ वैदिक नियम हैं |
+                                                        
+                                                    </p>
+                                                
+                                                    <p class="has-text-justified">
+                                                        
+                                                            अपने गुरु के आश्रम में जब छात्र पाँच से बीस वर्ष तक वेदों का अध्ययन कर लेता है तो वह परम चरित्रवान बन जाता है | वेदों का अध्ययन मनोधर्मियों के मनोरंजन के लिए नहीं, अपितु चरित्र-निर्माण के लिए है | इस प्रशिक्षण के बाद ब्रह्मचारी को गृहस्थ जीवन में प्रवेश करके विवाह करने की अनुमति दी जाती है | गृहस्थ के रूप में उसे अनेक यज्ञ करने होते हैं, जिससे वह आगे उन्नति कर सके | उसे देश, काल तथा पात्र के अनुसार तथा सात्त्विक, राजसिक तथा तामसिक दान में अन्तर करते हुए दान देना होता है, जैसा कि भगवद्गीता में वर्णित है | गृहस्थ जीवन के बाद वानप्रस्थ आश्रम ग्रहण करना पड़ता है, जिसमें उसे जंगल में रहते हुए वृक्ष की छाल पहन कर और क्षौर कर्म आदि किये बिना कठिन तपस्या करनी होती है इस प्रकार मनुष्य ब्रह्मचर्य, गृहस्थ, वानप्रस्थ तथा अन्त में संन्यास आश्रम का पालन करते हुए जीवन की सिद्धावस्था को प्राप्त होता है | तब इनमें से कुछ स्वर्गलोक को जाते हैं और यदि वे और अधिक उन्नति करते हैं तो अधिक उच्च्लोकों को या तो निर्विशेष ब्रह्मज्योति, या वैकुण्ठलोक या कृष्णलोक को जाते हैं | वैदिक ग्रंथों में इसी मार्ग की रूपरेखा प्राप्त होती है |
+                                                        
+                                                    </p>
+                                                
+                                                    <p class="has-text-justified">
+                                                        
+                                                            किन्तु कृष्णभावनामृत की विशेषता यह है कि मनुष्य एक ही झटके में भक्ति करने के कारण मनुष्य जीवन के विभिन्न आश्रमों के अनुष्ठानों को पार कर जाता है |
+                                                        
+                                                    </p>
+                                                
+                                                    <p class="has-text-justified">
+                                                        
+                                                            इदं विदित्वा शब्द सूचित करते हैं कि मनुष्य को भगवद्गीता के इस अध्याय में तथा सातवें अध्याय में दिये हुए कृष्ण के उपदेशों को समझना चाहिए | उसे विद्वता या मनोधर्म से इस दोनों अध्यायों को समझने का प्रयास नहीं करना चाहिए, अपितु भक्तों की संगति से श्रवण करके समझना चाहिए | सातवें से लेकर बारहवें तक के अध्याय भगवद्गीता के सार रूप हैं | प्रथम छह अध्याय तथा अन्तिम छह अध्याय इन मध्यवर्ती छहों अध्यायों के लिए आवरण पात्र हैं जिनकी सुरक्षा भगवान् करते हैं | यदि कोई गीता के इन छह अध्यायों को भक्त की संगति में भलीभाँति समझ लेता है तो उसका जीवन समस्त तपस्याओं, यज्ञों, दानों, चिन्तनों को पार करके महिमा-मण्डित हो उठेगा, क्योंकि केवल कृष्णभावनामृत के द्वारा उसे इतने कर्मों का फल प्राप्त हो जाता है |
+                                                        
+                                                    </p>
+                                                
+                                                    <p class="has-text-justified">
+                                                        
+                                                            जिसे भगवद्गीता में तनिक भी श्रद्धा नहीं है, उसे किसी भक्त से भगवद्गीता समझनी चाहिए, क्योंकि चौथे अध्याय के प्रारम्भ में ही कहा गया है कि केवल भक्तगण ही गीता को समझ सकते हैं, अन्य कोई भी भगवद्गीता के अभिप्राय को नहीं समझ सकता | अतः मनुष्य को चाहिए कि वह किसी भक्त से भगवद्गीता पढ़े; मनोधर्मियों से नहीं | यह श्रद्धा का सूचक है | जब भक्त की खोज की जाती है और अन्ततः भक्त की संगति प्राप्त हो जाती है, उसी क्षण से भगवद्गीता का वास्तविक अध्ययन तथा उसका ज्ञान प्रारम्भ हो जाता है | भक्त की संगति से भक्ति आती है और भक्ति के कारण कृष्ण या ईश्वर तथा कृष्ण के कार्यकलापों, उनके रूप, नाम, लीलाओं आदि से संबंधित सारे भ्रम दूर हो जाते हैं | इस प्रकार भ्रमों के दूर हो जाने पर वह अपने अध्ययन में स्थिर हो जाता है | तब उसे भगवद्गीता के अध्ययन में रस आने लगता है और कृष्णभावनाभावित होने की अनुभूति होने लगती है | आगे बढ़ने पर वह कृष्ण के प्रेम में पूर्णतया अनुरक्त हो जाता है | यह जीवन की सर्वोच्च सिद्ध अवस्था है, जिससे भक्त कृष्ण के धाम गोलोक वृन्दावन को प्राप्त होता है, जहाँ वह नित्य सुखी रहता है |
+                                                        
+                                                    </p>
+                                                
+                                                    <p class="has-text-justified">
+                                                        
+                                                            इस प्रकार श्रीमद्भगवद्गीता के आठवें अध्याय “भगवत्प्राप्ति” का भक्तिवेदान्त तात्पर्य पूर्ण हुआ |
+                                                        
+                                                    </p>
+                                                
+                                            </div>
+                                        
+                                    
+                                    
+                                </div>
                             </div>
-                        
-                    
-                        
-                            <div
-                                
-                                    class="mb-3"
-                                
-                            >
-                                
-                                    <p class="has-text-centered has-text-weight-bold">
-                                        
-                                            शब्दार्थ
-                                        
-                                    </p>
-                                
-                            </div>
-                        
-                    
-                        
-                            <div
-                                
-                                    class="mb-5"
-                                
-                            >
-                                
-                                    <p class="has-text-justified">
-                                        
-                                            <strong>वेदेषु</strong> – वेदाध्ययन में; <strong>यज्ञेषु</strong> – यज्ञ सम्पन्न करने में; <strong>तपःसु</strong> – विभिन्न प्रकार की तपस्याएँ करने में; <strong>च</strong> – भी; <strong>एव</strong> – निश्चय ही; <strong>दानेषु</strong> – दान देने में; <strong>यत्</strong> – जो; <strong>पुण्य-फलम्</strong> – पुण्यकर्म का फल; <strong>प्रदिष्टम्</strong> – सूचित; <strong>अत्येति</strong> – लाँघ जाता है; <strong>तत् सर्वम्</strong> – वे सब; <strong>इदम्</strong> – यह; <strong>विदित्वा</strong> – जानकर; <strong>योगी</strong> – योगी; <strong>परम्</strong> – परम; <strong>स्थानम्</strong> – धाम को; <strong>उपैति</strong> – प्राप्त करता है; <strong>च</strong> – भी; <strong>आद्यम्</strong> – मूल, आदि |
-                                        
-                                    </p>
-                                
-                            </div>
-                        
-                    
-                        
-                            <div
-                                
-                                    class="mb-3"
-                                
-                            >
-                                
-                                    <p class="has-text-centered has-text-weight-bold">
-                                        
-                                            भावार्थ
-                                        
-                                    </p>
-                                
-                            </div>
-                        
-                    
-                        
-                            <div
-                                
-                                    class="mb-5"
-                                
-                            >
-                                
-                                    <p class="has-text-justified">
-                                        
-                                            जो व्यक्ति भक्तिमार्ग स्वीकार करता है, वह वेदाध्ययन, तपस्या, दान, दार्शनिक तथा सकाम कर्म करने से प्राप्त होने वाले फलों से वंचित नहीं होता | वह मात्र भक्ति सम्पन्न करके इन समस्त फलों की प्राप्ति करता है और अन्त में परम नित्यधाम को प्राप्त होता है |
-                                        
-                                    </p>
-                                
-                            </div>
-                        
-                    
-                        
-                            <div
-                                
-                                    class="mb-3"
-                                
-                            >
-                                
-                                    <p class="has-text-centered has-text-weight-bold">
-                                        
-                                            तात्पर्य
-                                        
-                                    </p>
-                                
-                            </div>
-                        
-                    
-                        
-                            <div
-                                
-                                    class="mb-5"
-                                
-                            >
-                                
-                                    <p class="has-text-justified">
-                                        
-                                            यह श्लोक सातवें तथा आठवें अध्यायों का उपसंहार है, जिनमे कृष्णभावनामृत तथा भक्ति का विशेष वर्णन है | मनुष्य को अपने गुरु के निर्देशन में वेदाध्ययन करना होता है, उन्हीं के आश्रम में रहते हुए तपस्या करनी होती है | ब्रह्मचारी को गुरु के घर में एक दास की भाँति रहना पड़ता है और द्वार-द्वार भिक्षा माँगकर गुरु के पास लाना होता है | उसे गुरु के उपदेश पर ही भोजन करना होता है और यदि किसी दिन गुरु शिष्य को भोजन करने के लिए बुलाना भूल जाय तो शिष्य को उपवास करना होता है | ब्रह्मचर्य पालन के ये कुछ वैदिक नियम हैं |
-                                        
-                                    </p>
-                                
-                                    <p class="has-text-justified">
-                                        
-                                            अपने गुरु के आश्रम में जब छात्र पाँच से बीस वर्ष तक वेदों का अध्ययन कर लेता है तो वह परम चरित्रवान बन जाता है | वेदों का अध्ययन मनोधर्मियों के मनोरंजन के लिए नहीं, अपितु चरित्र-निर्माण के लिए है | इस प्रशिक्षण के बाद ब्रह्मचारी को गृहस्थ जीवन में प्रवेश करके विवाह करने की अनुमति दी जाती है | गृहस्थ के रूप में उसे अनेक यज्ञ करने होते हैं, जिससे वह आगे उन्नति कर सके | उसे देश, काल तथा पात्र के अनुसार तथा सात्त्विक, राजसिक तथा तामसिक दान में अन्तर करते हुए दान देना होता है, जैसा कि भगवद्गीता में वर्णित है | गृहस्थ जीवन के बाद वानप्रस्थ आश्रम ग्रहण करना पड़ता है, जिसमें उसे जंगल में रहते हुए वृक्ष की छाल पहन कर और क्षौर कर्म आदि किये बिना कठिन तपस्या करनी होती है इस प्रकार मनुष्य ब्रह्मचर्य, गृहस्थ, वानप्रस्थ तथा अन्त में संन्यास आश्रम का पालन करते हुए जीवन की सिद्धावस्था को प्राप्त होता है | तब इनमें से कुछ स्वर्गलोक को जाते हैं और यदि वे और अधिक उन्नति करते हैं तो अधिक उच्च्लोकों को या तो निर्विशेष ब्रह्मज्योति, या वैकुण्ठलोक या कृष्णलोक को जाते हैं | वैदिक ग्रंथों में इसी मार्ग की रूपरेखा प्राप्त होती है |
-                                        
-                                    </p>
-                                
-                                    <p class="has-text-justified">
-                                        
-                                            किन्तु कृष्णभावनामृत की विशेषता यह है कि मनुष्य एक ही झटके में भक्ति करने के कारण मनुष्य जीवन के विभिन्न आश्रमों के अनुष्ठानों को पार कर जाता है |
-                                        
-                                    </p>
-                                
-                                    <p class="has-text-justified">
-                                        
-                                            इदं विदित्वा शब्द सूचित करते हैं कि मनुष्य को भगवद्गीता के इस अध्याय में तथा सातवें अध्याय में दिये हुए कृष्ण के उपदेशों को समझना चाहिए | उसे विद्वता या मनोधर्म से इस दोनों अध्यायों को समझने का प्रयास नहीं करना चाहिए, अपितु भक्तों की संगति से श्रवण करके समझना चाहिए | सातवें से लेकर बारहवें तक के अध्याय भगवद्गीता के सार रूप हैं | प्रथम छह अध्याय तथा अन्तिम छह अध्याय इन मध्यवर्ती छहों अध्यायों के लिए आवरण पात्र हैं जिनकी सुरक्षा भगवान् करते हैं | यदि कोई गीता के इन छह अध्यायों को भक्त की संगति में भलीभाँति समझ लेता है तो उसका जीवन समस्त तपस्याओं, यज्ञों, दानों, चिन्तनों को पार करके महिमा-मण्डित हो उठेगा, क्योंकि केवल कृष्णभावनामृत के द्वारा उसे इतने कर्मों का फल प्राप्त हो जाता है |
-                                        
-                                    </p>
-                                
-                                    <p class="has-text-justified">
-                                        
-                                            जिसे भगवद्गीता में तनिक भी श्रद्धा नहीं है, उसे किसी भक्त से भगवद्गीता समझनी चाहिए, क्योंकि चौथे अध्याय के प्रारम्भ में ही कहा गया है कि केवल भक्तगण ही गीता को समझ सकते हैं, अन्य कोई भी भगवद्गीता के अभिप्राय को नहीं समझ सकता | अतः मनुष्य को चाहिए कि वह किसी भक्त से भगवद्गीता पढ़े; मनोधर्मियों से नहीं | यह श्रद्धा का सूचक है | जब भक्त की खोज की जाती है और अन्ततः भक्त की संगति प्राप्त हो जाती है, उसी क्षण से भगवद्गीता का वास्तविक अध्ययन तथा उसका ज्ञान प्रारम्भ हो जाता है | भक्त की संगति से भक्ति आती है और भक्ति के कारण कृष्ण या ईश्वर तथा कृष्ण के कार्यकलापों, उनके रूप, नाम, लीलाओं आदि से संबंधित सारे भ्रम दूर हो जाते हैं | इस प्रकार भ्रमों के दूर हो जाने पर वह अपने अध्ययन में स्थिर हो जाता है | तब उसे भगवद्गीता के अध्ययन में रस आने लगता है और कृष्णभावनाभावित होने की अनुभूति होने लगती है | आगे बढ़ने पर वह कृष्ण के प्रेम में पूर्णतया अनुरक्त हो जाता है | यह जीवन की सर्वोच्च सिद्ध अवस्था है, जिससे भक्त कृष्ण के धाम गोलोक वृन्दावन को प्राप्त होता है, जहाँ वह नित्य सुखी रहता है |
-                                        
-                                    </p>
-                                
-                                    <p class="has-text-justified">
-                                        
-                                            इस प्रकार श्रीमद्भगवद्गीता के आठवें अध्याय “भगवत्प्राप्ति” का भक्तिवेदान्त तात्पर्य पूर्ण हुआ |
-                                        
-                                    </p>
-                                
-                            </div>
-                        
-                    
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -349,151 +335,157 @@
 </section>
 
 
-    <section class="section pt-0">
-        <div class="container mt-6">
-            <div class="pagination-container">
-    <nav class="pagination is-centered" role="navigation" aria-label="pagination">
-        
-        <!-- previous page button -->
-        <a
-            class="pagination-previous pagination-button button is-orange is-outlined"
-            
-                href="/bhagavad-gita-hindi/8/27/"
-            
-        >
-            पिछला श्लोक
-        </a>
+<section class="section animatedParent animateOnce pb-0">
+    <div class="box glass animated fadeInUpShort">
+        <nav class="pagination is-centered" role="navigation" aria-label="pagination">
+            <!-- previous page button -->
+            <a
+                class="button is-outlined is-warning pagination-previous pagination-button button is-orange is-outlined"
+                
+                    href="/bhagavad-gita-hindi/8/27/"
+                
+            >
+                पिछला श्लोक
+            </a>
 
-        <!-- next page button -->
-        <a
-            class="pagination-next pagination-button button is-orange is-outlined"
-            
-                disabled
-            
-        >
-        अगला श्लोक
-        </a>
+            <!-- next page button -->
+            <!-- <a
+                class="button is-outlined is-warning pagination-next pagination-button button is-orange is-outlined"
+                
+                    disabled
+                
+            >
+            अगला श्लोक -->
+            </a>
 
-        <ul class="pagination-list">
-            
-            
+            <ul class="pagination-list">
+                
+                
+                    <li>
+                        <a
+                            class="button is-outlined is-warning pagination-link"
+                            
+                                href="/bhagavad-gita-hindi/8/1/"
+                            
+                        >
+                            1
+                        </a>
+                    </li>
+                    
+                    
+                        
+                            <li>
+                                <span class="pagination-ellipsis">…</span>
+                            </li>
+                        
+
+                        <li>
+                            <a
+                                class="button is-outlined is-warning pagination-link"
+                                href="/bhagavad-gita-hindi/8/27/"
+                            >
+                                27
+                            </a>
+                        </li>
+                    
+                
+                
+                
+                
                 <li>
                     <a
-                        class="pagination-link"
-                        
-                            href="/bhagavad-gita-hindi/8/1/"
-                        
+                        class="button is-outlined is-warning pagination-link is-current" tabindex="-1"
+                        aria-current="page"
+                        disabled
                     >
-                        1
+                        28
                     </a>
                 </li>
                 
-                
-                    
-                        <li>
-                            <span class="pagination-ellipsis">…</span>
-                        </li>
-                    
 
-                    <li>
-                        <a
-                            class="pagination-link"
-                            href="/bhagavad-gita-hindi/8/27/"
-                        >
-                            27
-                        </a>
-                    </li>
                 
-            
-            
-            
-            
-            <li>
-                <a
-                    class="pagination-link is-current"
-                    aria-current="page"
+                
+                
+            </ul>
+
+            <!-- next page button -->
+            <a
+                class="button is-outlined is-warning pagination-next pagination-button button is-orange is-outlined"
+                
                     disabled
-                >
-                    28
-                </a>
-            </li>
-            
-
-            
-            
-            
-        </ul>
-    </nav>
-</div>
-        </div>
-    </section>
-
-
-<section class="section pt-0">
-    <div class="container">
-        <article class="message is-warning is-small">
-            <div class="message-body has-text-centered">
-                <p class="mb-3">The BBT was established in 1972 by His Divine Grace A.C. Bhaktivedanta Swami Prabhupada, Founder-Acharya of the International Society for Krishna Consciousness. BBT is the publisher for his books. All material used here belongs to and copyrighted under BBT (Bhaktivedanta Book Trust).</p>
-
-                <p class="mb-3">🙏 Please consider buying books. Below is a beautiful message by Srila Prabhupada 🙏</p>
-
-                <p class="is-italic mb-3">“I specifically formed the BBT to invest in it exclusive rights for the printing of all literature containing my teachings, writings and lectures. In this way the collections are to be divided fifty percent for printing new books and fifty percent for construction of temples.”</p>
-            </div>
-        </article>
-    </div>
-</section>
-
-<section class="hero is-light is-small">
-    <div class="hero-body">
-        <div class="container">
-            <nav class="breadcrumb is-centered" aria-label="breadcrumbs">
-                <ul>
-                    
-                        <li >
-                            <a class="is-link has-text-orange" href="/">
-                                <span class="icon is-small">
-                                    <i class="fas fa-home" aria-hidden="true"></i>
-                                </span>
-                                <span>Home</span>
-                            </a>
-                        </li>
-                    
-                        <li >
-                            <a class="is-link has-text-orange" href="/bhagavad-gita-hindi/">
-                                <span class="icon is-small">
-                                    <i class="fas fa-book" aria-hidden="true"></i>
-                                </span>
-                                <span>श्रीमद्भगवद्गीता - यथारूप (हिंदी)</span>
-                            </a>
-                        </li>
-                    
-                        <li >
-                            <a class="is-link has-text-orange" href="/bhagavad-gita-hindi/8/">
-                                <span class="icon is-small">
-                                    <i class="fas fa-file-alt" aria-hidden="true"></i>
-                                </span>
-                                <span>अध्याय ८ - अक्षरब्रह्मयोग</span>
-                            </a>
-                        </li>
-                    
-                        <li class="is-active">
-                            <a  href="">
-                                <span class="icon is-small">
-                                    <i class="fas fa-quote-right" aria-hidden="true"></i>
-                                </span>
-                                <span>श्लोक २८</span>
-                            </a>
-                        </li>
-                    
-                </ul>
-            </nav>
-        </div>
+                
+            >
+            अगला श्लोक
+            </a>
+        </nav>
     </div>
 </section>
 
 
+<section class="section animatedParent animateOnce">
+    <div class="box glass animated fadeInUpShort">
+        <nav class="breadcrumb is-medium is-centered" aria-label="breadcrumbs">
+            <ul>
+                
+                <li >
+                    <a class="is-link has-text-orange" href="/">
+                        <span class="icon is-small">
+                            <i class="fas fa-home" aria-hidden="true"></i>
+                        </span>
+                        <span>Home</span>
+                    </a>
+                </li>
+                
+                <li >
+                    <a class="is-link has-text-orange" href="/bhagavad-gita-hindi/">
+                        <span class="icon is-small">
+                            <i class="fas fa-book" aria-hidden="true"></i>
+                        </span>
+                        <span>श्रीमद्भगवद्गीता</span>
+                    </a>
+                </li>
+                
+                <li >
+                    <a class="is-link has-text-orange" href="/bhagavad-gita-hindi/8/">
+                        <span class="icon is-small">
+                            <i class="fas fa-file-alt" aria-hidden="true"></i>
+                        </span>
+                        <span>अध्याय ८ - अक्षरब्रह्मयोग</span>
+                    </a>
+                </li>
+                
+                <li class="is-active">
+                    <a tabindex="-1" href="">
+                        <span class="icon is-small">
+                            <i class="fas fa-quote-right" aria-hidden="true"></i>
+                        </span>
+                        <span>श्लोक २८</span>
+                    </a>
+                </li>
+                
+            </ul>
+        </nav>
+    </div>
+</section>
 
-    <footer class="footer bg-gradient-light-orange pt-5 pb-5">
+<section class="section pt-0 animatedParent animateOnce">
+    <article class="box message is-warning is-small p-0 animated fadeInUpShort">
+        <div class="message-header is-justify-content-center">
+            <p>Copyright Notice</p>
+        </div>
+        <div class="message-body has-text-centered">
+            <p class="mb-3">The BBT was established in 1972 by His Divine Grace A.C. Bhaktivedanta Swami Prabhupada, Founder-Acharya of the International Society for Krishna Consciousness. BBT is the publisher for his books. All material used here belongs to and copyrighted under BBT (Bhaktivedanta Book Trust).</p>
+    
+            <p class="is-italic mb-3">“I specifically formed the BBT to invest in it exclusive rights for the printing of all literature containing my teachings, writings and lectures. In this way the collections are to be divided fifty percent for printing new books and fifty percent for construction of temples.”</p>
+
+            <p>- A.C. Bhaktivedanta Swami Prabhupada</p>
+        </div>
+    </article>
+</section>
+
+
+
+    <!-- <footer class="footer bg-gradient-light-orange pt-5 pb-5">
     <div class="container">
         <div class="content">
             <div class="columns is-multiline is-centered">
@@ -516,7 +508,51 @@
             </div>
         </div>
     </div>
+</footer> -->
+
+<footer class="footer p-0">
+    <section class="section">
+        <div class="footer-container">
+            <div class="animatedParent animateOnce">
+                <div class="content-w-image is-flex is-centered-mobile">
+                    <figure class="image is-64x64 m-0 animated fadeInUpShort">
+                        <img src="https://www.ancientknowledge.in/static/images/logo.png">
+                    </figure>
+                    <div class="content m-0 is-flex is-flex-direction-column is-justify-content-space-between animated fadeInUpShort">
+                        <h4 class="mt-0">Ancient Knowledge</h4>
+                        <p class="is-centered-mobile">
+                            <a href="https://www.ancientknowledge.in/about/" class="no-decoration">
+                                <span>About</span>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="animatedParent animateOnce">
+                <div class="content animated fadeInUpShort">
+                    <h4 class="is-centered-mobile m-0 mb-4 animated fadeInUpShort delay-500">@PraacheenGyaan</h4>
+                    <p class="has-text-centered is-flex is-justify-content-space-between animatedParent animateOnce">
+                        <a class="box icon facebook is-large fa-2x mb-0 animated growIn delay-500" href="https://www.facebook.com/PraacheenGyaan/" target="_blank">
+                            <i class="fab fa-facebook-square has-text-white"></i>
+                        </a>
+
+                        <a class="box icon instagram is-large fa-2x mb-0 animated growIn delay-1000" href="https://www.instagram.com/PraacheenGyaan/" target="_blank">
+                            <i class="fab fa-instagram-square has-text-white"></i>
+                        </a>
+
+                        <a class="box icon twitter is-large fa-2x mb-0 animated growIn delay-1500" href="https://twitter.com/PraacheenGyaan/" target="_blank">
+                            <i class="fab fa-twitter-square has-text-white"></i>
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
 </footer>
+
+    <script src="https://www.ancientknowledge.in/static/js/jquery.min.js"></script>
+    <script src="https://www.ancientknowledge.in/static/js/script.js"></script>
+    <script src="https://www.ancientknowledge.in/static/js/css3-animate-it.js"></script>
 
     
 </body>

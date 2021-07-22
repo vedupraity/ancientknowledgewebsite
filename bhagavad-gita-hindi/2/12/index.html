@@ -14,7 +14,7 @@
 
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#ffffff" />
+    <meta name="theme-color" content="#ff902b" />
 
     <!-- Begin SEO tags -->
     <title>Ancient Knowledge | Bhagavad Gita | Hindi</title>
@@ -24,330 +24,320 @@
     <meta property="og:title" content="Ancient Knowledge | Bhagavad Gita | Hindi" />
     <meta property="og:description" content="Read Shrimad Bhagavad Gita - Yatharoop in hindi. श्रीमद्भगवद्गीता - यथारूप हिंदी में पढ़ें। अध्याय २ - श्लोक १२" />
     <meta property="og:url" content="https://www.ancientknowledge.in" />
-    <meta property="og:image" content="https://www.ancientknowledge.in/static/images/bhagavad-gita-cover-16by9.jpg" />
+    <meta property="og:image" content="https://www.ancientknowledge.in/static/images/bhagavad-gita-cover-4x3.jpg" />
     <meta property="og:type" content="article" />
     
     <meta property="twitter:title" content="Ancient Knowledge | Bhagavad Gita | Hindi" />
     <meta property="twitter:description" content="Read Shrimad Bhagavad Gita - Yatharoop in hindi. श्रीमद्भगवद्गीता - यथारूप हिंदी में पढ़ें। अध्याय २ - श्लोक १२" />
-    <meta property="twitter:image" content="https://www.ancientknowledge.in/static/images/bhagavad-gita-cover-16by9.jpg" />
+    <meta property="twitter:image" content="https://www.ancientknowledge.in/static/images/bhagavad-gita-cover-4x3.jpg" />
     <!-- End SEO tags -->
 
-    <link rel="stylesheet" href="https://www.ancientknowledge.in/static/css/theme.css" />
-    <link rel="stylesheet" href="https://www.ancientknowledge.in/static/css/theme-custom.css" />
+    <!-- <link rel="stylesheet" href="https://www.ancientknowledge.in/static/css/theme-old.css" /> -->
+    <!-- <link rel="stylesheet" href="https://www.ancientknowledge.in/static/css/switch-control.min.css" /> -->
+    <!-- <link rel="stylesheet" href="https://www.ancientknowledge.in/static/css/theme-custom.css" /> -->
     
     <link rel="icon" href="https://www.ancientknowledge.in/static/images/favicon.ico">
-    <link rel="shortcut icon" type="image/png" href="https://www.ancientknowledge.in/static/images/favicon.png" />
+    <link rel="shortcut icon" type="image/png" href="https://www.ancientknowledge.in/static/images/logo.png" />
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.0/dist/alpine.min.js" defer></script>
     
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-social@1/bin/bulma-social.min.css" />
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" /> -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-social@1/bin/bulma-social.min.css" /> -->
+
+    <link rel="stylesheet" href="https://www.ancientknowledge.in/static/css/bulma.min.css">
+    <link rel="stylesheet" href="https://www.ancientknowledge.in/static/css/theme.css">
+    <link rel="stylesheet" href="https://www.ancientknowledge.in/static/css/animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 
-<body>
-    <nav class="navbar is-warning bg-gradient-light-orange" x-data="{ openNav: false }">
-    <div class="container">
-        <div class="navbar-brand">
-            <a href="https://www.ancientknowledge.in" class="navbar-item">
-                <p class="has-text-weight-normal has-text-orange">
-                    <span>📖</span>
-                    <span class="pl-2">Ancient Knowledge</span>
-                </p>
+<body class="dark-modes">
+    <nav class="navbar is-light glass" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+        <a class="navbar-item pl-4" href="https://www.ancientknowledge.in">
+            <img src="https://www.ancientknowledge.in/static/images/logo.png" width="28" height="28">
+            <span class="pl-4">
+                Ancient Knowledge
+            </span>
+        </a>
+
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+            data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+    </div>
+
+    <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+            <a class="navbar-item" href="https://www.ancientknowledge.in/about/">
+                About
             </a>
-            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navMenu"
-                :class="{ 'is-active': openNav }" x-on:click="openNav = !openNav">
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-            </a>
-        </div>
-        <div class="navbar-menu" id="navMenu" :class="{ 'is-active': openNav }">
-            <div class="navbar-end">
-                <a href="https://www.ancientknowledge.in/about/" class="navbar-item has-text-weight-normal has-text-orange">About</a>
-            </div>
         </div>
     </div>
 </nav>
 
     
-    <section class="hero is-small is-bold is-dark bg-gradient-orange">
-    <div class="hero-body">
-        <div class="container has-text-centered p-5">
-            <h4 class="title is-4">श्रीमद्भगवद्गीता - यथारूप (हिंदी)</h4>
-        </div>
-    </div>
-</section>
-    
-
-    <div class="content is-centered has-text-centered" style="display: none;">
-        <h1>Ancient Knowledge</h1>
-        <h2>Recollecting the lost knowledge</h2>
-        <h3>Ancient Knowledge | Bhagavad Gita | Hindi</h3>
-        <p>Read Shrimad Bhagavad Gita - Yatharoop in hindi. श्रीमद्भगवद्गीता - यथारूप हिंदी में पढ़ें। अध्याय २ - श्लोक १२</p>
-        <div class="tags is-centered">
-            
-                <span class="tag">Ancient</span>
-            
-                <span class="tag">Knowledge</span>
-            
-                <span class="tag">India</span>
-            
-                <span class="tag">Shrimad</span>
-            
-                <span class="tag">Bhagavad</span>
-            
-                <span class="tag">Gita</span>
-            
-                <span class="tag">Yatharoop</span>
-            
-                <span class="tag">As It Is</span>
-            
-                <span class="tag">Mahabharat</span>
-            
-                <span class="tag">Krishna</span>
-            
-                <span class="tag">Prabhupad</span>
-            
-                <span class="tag">Hindi</span>
-            
-        </div>
-    </div>
 
     
 
-<section class="hero is-light is-small">
-    <div class="hero-body">
-        <div class="container">
-            <nav class="breadcrumb is-centered" aria-label="breadcrumbs">
-                <ul>
-                    
-                        <li >
-                            <a class="is-link has-text-orange" href="/">
-                                <span class="icon is-small">
-                                    <i class="fas fa-home" aria-hidden="true"></i>
-                                </span>
-                                <span>Home</span>
-                            </a>
-                        </li>
-                    
-                        <li >
-                            <a class="is-link has-text-orange" href="/bhagavad-gita-hindi/">
-                                <span class="icon is-small">
-                                    <i class="fas fa-book" aria-hidden="true"></i>
-                                </span>
-                                <span>श्रीमद्भगवद्गीता - यथारूप (हिंदी)</span>
-                            </a>
-                        </li>
-                    
-                        <li >
-                            <a class="is-link has-text-orange" href="/bhagavad-gita-hindi/2/">
-                                <span class="icon is-small">
-                                    <i class="fas fa-file-alt" aria-hidden="true"></i>
-                                </span>
-                                <span>अध्याय २ - सांख्ययोग</span>
-                            </a>
-                        </li>
-                    
-                        <li class="is-active">
-                            <a  href="">
-                                <span class="icon is-small">
-                                    <i class="fas fa-quote-right" aria-hidden="true"></i>
-                                </span>
-                                <span>श्लोक १२</span>
-                            </a>
-                        </li>
-                    
-                </ul>
-            </nav>
-        </div>
+<!-- Margin top behind navbar -->
+<div class="mt-6"></div>
+
+<style>
+    :root {
+        --page-background-image: url(/static/images/bhagavad-gita-cover-4x3.jpg);
+    }
+</style>
+<div class="image-background"></div>
+
+<section class="section animatedParent animateOnce">
+    <div class="box glass animated fadeInUpShort">
+        <nav class="breadcrumb is-medium is-centered" aria-label="breadcrumbs">
+            <ul>
+                
+                <li >
+                    <a class="is-link has-text-orange" href="/">
+                        <span class="icon is-small">
+                            <i class="fas fa-home" aria-hidden="true"></i>
+                        </span>
+                        <span>Home</span>
+                    </a>
+                </li>
+                
+                <li >
+                    <a class="is-link has-text-orange" href="/bhagavad-gita-hindi/">
+                        <span class="icon is-small">
+                            <i class="fas fa-book" aria-hidden="true"></i>
+                        </span>
+                        <span>श्रीमद्भगवद्गीता</span>
+                    </a>
+                </li>
+                
+                <li >
+                    <a class="is-link has-text-orange" href="/bhagavad-gita-hindi/2/">
+                        <span class="icon is-small">
+                            <i class="fas fa-file-alt" aria-hidden="true"></i>
+                        </span>
+                        <span>अध्याय २ - सांख्ययोग</span>
+                    </a>
+                </li>
+                
+                <li class="is-active">
+                    <a tabindex="-1" href="">
+                        <span class="icon is-small">
+                            <i class="fas fa-quote-right" aria-hidden="true"></i>
+                        </span>
+                        <span>श्लोक १२</span>
+                    </a>
+                </li>
+                
+            </ul>
+        </nav>
     </div>
 </section>
 
-<section
-    class="
-        section
-        content-card-section
-        pb-0
-    "
-    oncopy="return false" oncut="return false" onpaste="return false"
->
-    <div class="container">
-        <div class="card has-glow-md">
-            <div class="card-content">
-                <div class="content is-medium">
-                    <h5 class="has-text-centered ">
-                        अध्याय २ - श्लोक १२
-                        
-                    </h5>
-                    
-                    <hr/>
-
-                    
-                        
-                            <div
-                                
-                                    class="mb-5"
-                                
-                            >
-                                
-                                    <p class="has-text-centered has-text-weight-bold mb-1">
+<section class="section pt-0 pb-0">
+    <div class="columns is-multiline is-centered is-variable is-4">
+        <div
+            class="column is-full-tablet is-full-desktop is-full-widescreen is-full-fullhd is-flex animatedParent animateOnce">
+            <div class="card card-horizontal is-flex-grow-1 animated fadeInUpShort">
+                <div class="card-content p-2 pt-4 pb-4">
+                    <div class="columns is-multiline is-variable m-0">
+                        <div class="column">
+                            <div class="content is-medium m-0">
+                                <div class="">
+                                    
+                                    
                                         
-                                            न त्वेवाहं जातु नासं न त्वं नेमे जनाधिपाः ।
+                                            <div
+                                                
+                                                    class="mb-5"
+                                                
+                                            >
+                                                
+                                                    <p class="has-text-centered has-text-weight-bold mb-1">
+                                                        
+                                                            न त्वेवाहं जातु नासं न त्वं नेमे जनाधिपाः ।
+                                                        
+                                                    </p>
+                                                
+                                                    <p class="has-text-centered has-text-weight-bold mb-1">
+                                                        
+                                                            न चैव न भविष्यामः सर्वे वयमतः परम् ॥ १२ ॥
+                                                        
+                                                    </p>
+                                                
+                                            </div>
                                         
-                                    </p>
-                                
-                                    <p class="has-text-centered has-text-weight-bold mb-1">
+                                    
+                                    
+                                    
                                         
-                                            न चैव नभविष्यामः सर्वे वयमतः परम् ॥ १२ ॥
+                                            <div
+                                                
+                                                    class="mb-3"
+                                                
+                                            >
+                                                
+                                                    <p class="has-text-centered has-text-weight-bold">
+                                                        
+                                                            शब्दार्थ
+                                                        
+                                                    </p>
+                                                
+                                            </div>
                                         
-                                    </p>
-                                
+                                    
+                                    
+                                    
+                                        
+                                            <div
+                                                
+                                                    class="mb-5"
+                                                
+                                            >
+                                                
+                                                    <p class="has-text-justified">
+                                                        
+                                                            <strong>न</strong> – नहीं; <strong>तु</strong> – लेकिन; <strong>एव</strong> – निश्चय ही; <strong>अहम्</strong> – मैं; <strong>जातु</strong> – किसी काल में; <strong>न</strong> – नहीं; <strong>आसम्</strong> – था; <strong>न</strong> – नहीं; <strong>त्वम्</strong> – तुम; <strong>न</strong> – नहीं; <strong>इमे</strong> – ये सब; <strong>जन-अधिपाः</strong> – राजागण; <strong>न</strong> – कभी नहीं; <strong>च</strong> – भी; <strong>एव</strong> – निश्चय ही; <strong>न</strong> – नहीं; <strong>भविष्यामः</strong> – रहेंगे; <strong>सर्वे वयम्</strong> – हम सब; <strong>अतः परम्</strong> – इससे आगे ।
+                                                        
+                                                    </p>
+                                                
+                                            </div>
+                                        
+                                    
+                                    
+                                    
+                                        
+                                            <div
+                                                
+                                                    class="mb-3"
+                                                
+                                            >
+                                                
+                                                    <p class="has-text-centered has-text-weight-bold">
+                                                        
+                                                            भावार्थ
+                                                        
+                                                    </p>
+                                                
+                                            </div>
+                                        
+                                    
+                                    
+                                    
+                                        
+                                            <div
+                                                
+                                                    class="mb-5"
+                                                
+                                            >
+                                                
+                                                    <p class="has-text-justified">
+                                                        
+                                                            ऐसा कभी नहीं हुआ कि मैं न रहा होऊँ या तुम न रहे हो अथवा ये समस्त राजा न रहे हों; और न ऐसा है कि भविष्य में हम लोग नहीं रहेंगे ।
+                                                        
+                                                    </p>
+                                                
+                                            </div>
+                                        
+                                    
+                                    
+                                    
+                                        
+                                            <div
+                                                
+                                                    class="mb-3"
+                                                
+                                            >
+                                                
+                                                    <p class="has-text-centered has-text-weight-bold">
+                                                        
+                                                            तात्पर्य
+                                                        
+                                                    </p>
+                                                
+                                            </div>
+                                        
+                                    
+                                    
+                                    
+                                        
+                                            <div
+                                                
+                                                    class="mb-5"
+                                                
+                                            >
+                                                
+                                                    <p class="has-text-justified">
+                                                        
+                                                            वेदों में, कठोपनिषद् में तथा श्वेताश्वतर उपनिषद् में भी कहा गया है कि जो श्रीभगवान् असंख्य जीवों के कर्म तथा कर्मफल के अनुसार उनकी अपनीअपनी परिस्थितियों में पालक हैं, वही भगवान् अंश रूप में हर जीव के हृदय में वास कर रहे हैं । केवल साधु पुरुष, जो एक ही ईश्वर को भीतरबाहर देख सकते हैं, पूर्ण एवं शाश्वत शान्ति प्राप्त कर पाते हैं ।
+                                                        
+                                                    </p>
+                                                
+                                            </div>
+                                        
+                                    
+                                    
+                                    
+                                        
+                                            <div
+                                                
+                                                    class="mb-5"
+                                                
+                                            >
+                                                
+                                                    <p class="has-text-centered is-italic mb-1">
+                                                        
+                                                            नित्यो नित्यानां चेतनश्चेतनानाम् एको बहूनां यो विदधाति कामान् ।
+                                                        
+                                                    </p>
+                                                
+                                                    <p class="has-text-centered is-italic mb-1">
+                                                        
+                                                            तमात्मस्थं येऽनुपश्यन्ति धीरास्तेषां शान्तिः शाश्वती नेतरेषाम् ॥
+                                                        
+                                                    </p>
+                                                
+                                                    <p class="has-text-centered is-italic mb-1">
+                                                        
+                                                            (कठोपनिषद् २.२.१३)
+                                                        
+                                                    </p>
+                                                
+                                            </div>
+                                        
+                                    
+                                    
+                                    
+                                        
+                                            <div
+                                                
+                                            >
+                                                
+                                                    <p class="has-text-justified">
+                                                        
+                                                            जो वैदिक ज्ञान अर्जुन को प्रदान किया गया वही विश्व के उन समस्त पुरुषों को प्रदान किया जाता है जो विद्वान् होने का दावा तो करते हैं किन्तु जिनकी ज्ञानराशि न्यून है । भगवान् यह स्पष्ट कहते हैं कि वे स्वयं, अर्जुन तथा युद्धभूमि में एकत्र सारे राजा शाश्वत प्राणी हैं और इन जीवों की बद्ध तथा मुक्त अवस्थाओं में भगवान् ही एकमात्र उनके पालक हैं । भगवान् परम पुरुष हैं तथा भगवान् का चिर संगी अर्जुन एवं वहाँ पर एकत्र सारे राजागण शाश्वत पुरुष हैं । ऐसा नहीं है कि ये भूतकाल में प्राणियों के रूप में अलग-अलग उपस्थित नहीं थे और ऐसा भी नहीं है कि ये शाश्वत पुरुष बने नहीं रहेंगे । उनका अस्तित्व भूतकाल में था और भविष्य में भी निर्बाध रूप से बना रहेगा । अत: किसी के लिए शोक करने की कोई बात नहीं है ।
+                                                        
+                                                    </p>
+                                                
+                                                    <p class="has-text-justified">
+                                                        
+                                                            यह मायावादी सिद्धान्त कि मुक्ति के बाद आत्मा माया के आवरण से पृथक् होकर निराकार ब्रह्म में लीन हो जायेगा और अपना अस्तित्व खो देगा यहाँ पर परम अधिकारी भगवान् कृष्ण द्वारा पुष्ट नहीं हो पाता । न ही इस सिद्धान्त का समर्थन हो पाता है कि बद्ध अवस्था में ही हम अस्तित्व का चिन्तन करते हैं । यहाँ पर कृष्ण स्पष्टत: कहते हैं कि भगवान् तथा अन्यों का अस्तित्व भविष्य में भी अक्षुण्ण रहेगा जिसकी पुष्टि उपनिषदों द्वारा भी होती है । कृष्ण का यह कथन प्रामाणिक है क्योंकि कृष्ण मायावश्य नहीं हैं । यदि अस्तित्व तथ्य न होता तो फिर कृष्ण इतना बल क्यों देते और वह भी भविष्य के लिए! मायावादी यह तर्क कर सकते हैं कि कृष्ण द्वारा कथित अस्तित्व आध्यात्मिक न होकर भौतिक है । यदि हम इस तर्क को, कि अस्तित्व भौतिक होता है, स्वीकार कर भी लें तो फिर कोई कृष्ण के अस्तित्व को किस प्रकार पहचानेगा ? कृष्ण भूतकाल में भी अपने अस्तित्व की पुष्टि करते हैं और भविष्य में भी अपने अस्तित्व की पुष्टि करते हैं । उन्होंने अपने अस्तित्व की पुष्टि कई प्रकार से की है और निराकार ब्रह्म उनके अधीन घोषित किया जा चुका है । कृष्ण सदा सर्वदा अपना अस्तित्व बनाये रहे हैं; यदि उन्हें सामान्य चेतना वाले सामान्य व्यक्ति के रूप में माना जाता है तो प्रामाणिक शास्त्र के रूप में उनकी भगवद्गीता की कोई महत्ता नहीं होगी । एक सामान्य व्यक्ति मनुष्यों के चार अवगुणों के कारण श्रवण करने योग्य शिक्षा देने में असमर्थ रहता है । गीता ऐसे साहित्य से ऊपर है । कोई भी संसारी ग्रंथ गीता की तुलना नहीं कर सकता । श्रीकृष्ण को सामान्य व्यक्ति मान लेने पर गीता की सारी महत्ता जाती रहती है । मायावादियों का तर्क है कि इस श्लोक में वर्णित द्वैत लौकिक है और शरीर के लिए प्रयुक्त हुआ है । किन्तु इसके पहले वाले श्लोक में ऐसी देहात्मबुद्धि की निन्दा की गई है । एक बार जीवों की देहात्मबुद्धि की निन्दा करने के बाद यह कैसे सम्भव है कि कृष्ण पुनः शरीर पर उसी वक्तव्य को दुहराते ? अत: यह अस्तित्व आध्यात्मिक आधार पर स्थापित है और इसकी पुष्टि रामानुजाचार्य तथा अन्य आचार्यों ने भी की है । गीता में कई स्थलों पर इसका उल्लेख है कि यह आध्यात्मिक अस्तित्व केवल भगवद्भक्तों द्वारा ज्ञेय है । जो लोग भगवान् कृष्ण का विरोध करते हैं उनकी इस महान साहित्य तक पहुँच नहीं हो पाती । अभक्तों द्वारा गीता के उपदेशों को समझने का प्रयास मधुमक्खी द्वारा मधुपात्र चाटने के सदृश है । पात्र को खोले बिना मधु को नहीं चखा जा सकता । इसी प्रकार भगवद्गीता के रहस्यवाद को केवल भक्त ही समझ सकते हैं, अन्य कोई नहीं, जैसा कि इसके चतुर्थ अध्याय में कहा गया है । न ही गीता का स्पर्श ऐसे लोग कर पाते हैं जो भगवान् के अस्तित्व का ही विरोध करते हैं । अत: मायावादियों द्वारा गीता की व्याख्या मानो समग्र सत्य का सरासर भ्रामक निरूपण है । भगवान् चैतन्य ने मायावादियों द्वारा की गई गीता की व्याख्याओं को पढ़ने का निषेध किया है और चेतावनी दी है कि जो कोई ऐसे मायावादी दर्शन को ग्रहण करता है वह गीता के वास्तविक रहस्य को समझ पाने में असमर्थ रहता है । यदि अस्तित्व का अभिप्राय अनुभवगम्य ब्रह्माण्ड से है तो भगवान् द्वारा उपदेश देने की कोई आवश्यकता नहीं थी । आत्मा तथा परमात्मा का द्वैत शाश्वत तथ्य है और इसकी पुष्टि वेदों द्वारा होती है जैसा कि ऊपर कहा जा चुका है ।
+                                                        
+                                                    </p>
+                                                
+                                            </div>
+                                        
+                                    
+                                    
+                                </div>
                             </div>
-                        
-                    
-                        
-                            <div
-                                
-                                    class="mb-3"
-                                
-                            >
-                                
-                                    <p class="has-text-centered has-text-weight-bold">
-                                        
-                                            शब्दार्थ
-                                        
-                                    </p>
-                                
-                            </div>
-                        
-                    
-                        
-                            <div
-                                
-                                    class="mb-5"
-                                
-                            >
-                                
-                                    <p class="has-text-justified">
-                                        
-                                            <strong>न</strong> – नहीं; <strong>तु</strong> – लेकिन; <strong>एव</strong> – निश्चय ही; <strong>अहम्</strong> – मैं; <strong>जातु</strong> – किसी काल में; <strong>न</strong> – नहीं; <strong>आसम्</strong> – था; <strong>न</strong> – नहीं; <strong>त्वम्</strong> – तुम; <strong>न</strong> – नहीं; <strong>इमे</strong> – ये सब; <strong>जन-अधिपाः</strong> – राजागण; <strong>न</strong> – कभी नहीं; <strong>च</strong> – भी; <strong>एव</strong> – निश्चय ही; <strong>न</strong> – नहीं; <strong>भविष्यामः</strong> – रहेंगे; <strong>सर्वे  वयम्</strong> – हम सब; <strong>अतः परम्</strong> – इससे आगे |
-                                        
-                                    </p>
-                                
-                            </div>
-                        
-                    
-                        
-                            <div
-                                
-                                    class="mb-3"
-                                
-                            >
-                                
-                                    <p class="has-text-centered has-text-weight-bold">
-                                        
-                                            भावार्थ
-                                        
-                                    </p>
-                                
-                            </div>
-                        
-                    
-                        
-                            <div
-                                
-                                    class="mb-5"
-                                
-                            >
-                                
-                                    <p class="has-text-justified">
-                                        
-                                            ऐसा कभी नहीं हुआ कि मैं न रहा होऊँ या तुम न रहे हो अथवा ये समस्त राजा न रहे हों; और न ऐसा है कि भविष्य में हम लोग नहीं रहेंगे |
-                                        
-                                    </p>
-                                
-                            </div>
-                        
-                    
-                        
-                            <div
-                                
-                                    class="mb-3"
-                                
-                            >
-                                
-                                    <p class="has-text-centered has-text-weight-bold">
-                                        
-                                            तात्पर्य
-                                        
-                                    </p>
-                                
-                            </div>
-                        
-                    
-                        
-                            <div
-                                
-                                    class="mb-5"
-                                
-                            >
-                                
-                                    <p class="has-text-justified">
-                                        
-                                            वेदों में, कठोपनिषद् में तथा श्वेताश्वतर उपनिषद् में भी कहा गया है कि जो श्रीभगवान् असंख्य जीवों के कर्म तथा कर्मफल के अनुसार उनकी अपनी-अपनी परिस्थितियों में पालक हैं, वही भगवान् अंश रूप में हर जीव के हृदय में वास कर रहे हैं | केवल साधु पुरुष, जो एक ही ईश्वर को भीतर-बाहर देख सकते हैं, पूर्ण और शाश्वत शान्ति प्राप्त कर पाते हैं |
-                                        
-                                    </p>
-                                
-                            </div>
-                        
-                    
-                        
-                            <div
-                                
-                                    class="mb-5"
-                                
-                            >
-                                
-                                    <p class="has-text-centered is-italic mb-1">
-                                        
-                                            नित्यो नित्यानां चेतनश्र्चेतनानाम् एको बहूनां यो विदधाति कामान् |
-                                        
-                                    </p>
-                                
-                                    <p class="has-text-centered is-italic mb-1">
-                                        
-                                            तमात्मस्थं येऽनुपश्यन्ति धीरास्तेषां शान्तिः शाश्वती नेतरेषाम् ||
-                                        
-                                    </p>
-                                
-                                    <p class="has-text-centered is-italic mb-1">
-                                        
-                                            (कठोपनिषद् २.२.१३)
-                                        
-                                    </p>
-                                
-                            </div>
-                        
-                    
-                        
-                            <div
-                                
-                            >
-                                
-                                    <p class="has-text-justified">
-                                        
-                                            जो वैदिक ज्ञान अर्जुन को प्रदान किया गया वही विश्व के उन पुरुषों को प्रदान किया जाता है जो विद्वान होने का दावा तो करते हैं किन्तु जिनकी ज्ञानराशि न्यून है | भगवान् यह स्पष्ट कहते हैं कि वे स्वयं, अर्जुन तथा युद्धभूमि में एकत्र सारे राजा शाश्वत प्राणी हैं और इन जीवों की बद्ध तथा मुक्त अवस्थाओं में भगवान् ही एकमात्र उनके पालक हैं | भगवान् परम पुरुष हैं तथा भगवान् का चिर संगी अर्जुन एवं वहाँ पर एकत्र सारे राजागण शाश्वत पुरुष हैं | ऐसा नहीं है कि ये भूतकाल में प्राणियों के रूप अलग-अलग उपस्थित नहीं थे और ऐसा भी नहीं है कि वे शाश्वत पुरुष बने नहीं रहेंगे | उनका अस्तित्व भूतकाल में था और भविष्य में भी निर्बोध रूप से बना रहेगा | अतः किसी के लिए शोक करने की कोई बात नहीं है |
-                                        
-                                    </p>
-                                
-                                    <p class="has-text-justified">
-                                        
-                                            यह मायावादी सिद्धान्त कि मुक्ति के बाद आत्मा माया के आवरण से पृथक् होकर निराकार ब्रह्म में लीन हो जायेगा और अपना अस्तित्व खो देगा यहाँ परम अधिकारी भगवान् कृष्ण द्वारा पुष्ट नहीं हो पाता | न ही इस सिद्धान्त का समर्थन हो पाता है कि बद्ध अवस्था में ही हम अस्तित्व का चिन्तन करते हैं | यहाँ पर कृष्ण स्पष्टतः कहते हैं कि भगवान् तथा अन्यों का अस्तित्व भविष्य में भी अक्षुण्ण रहेगा जिसकी पुष्टि उपनिषदों द्वारा भी होती हैं | कृष्ण का यह कथन प्रामाणिक है क्योंकि कृष्ण मायावश्य नहीं हैं | यदि अस्तित्व तथ्य न होता तो फिर कृष्ण इतना बल क्यों देते और वह भी भविष्य के लिए! मायावादी यह तर्क कर सकते हैं कि कृष्ण द्वारा कथित अस्तित्व अध्यात्मिक न होकर भौतिक है | यदि हम इस तर्क को, कि अस्तित्व भौतिक होता है, स्वीकार कर भी लें तो फिर कोई कृष्ण के अस्तित्व को किस प्रकार पहचानेगा? कृष्ण भूतकाल में भी अपने अस्तित्व की पुष्टि करते हैं और भविष्य में भी अपने अस्तित्व की पुष्टि करते हैं | उन्होंने अपने अस्तित्व की पुष्टि कई प्रकार से की है और निराकार ब्रह्म उनके अधीन घोषित किया जा चुका है | कृष्ण सदा सर्वदा अपना अस्तित्व बनाये रहे हैं; यदि उन्हें सामान्य चेतना वाले सामान्य व्यक्ति के रूप में माना जाता है तो प्रामाणिक शास्त्र के रूप में उनकी भगवद्गीता की कोई महत्ता नहीं होगी | एक सामान्य व्यक्ति मनुष्यों के चार अवगुणों के कारण श्रवण करने योग्य शिक्षा देने में असमर्थ रहता है | गीता ऐसे साहित्य से ऊपर है | कोई भी संसारी ग्रंथ गीता की तुलना नहीं कर सकता | श्रीकृष्ण को सामान्य व्यक्ति मान लेने पर गीता की सारी महत्ता जाती रहती है | मायावादियों का तर्क है कि इस श्लोक में वर्णित द्वैत लौकिक है और शरीर के लिए प्रयुक्त हुआ है | किन्तु इसके पहले वाले श्लोक में ऐसी देहात्मबुद्धि की निन्दा की गई है | एक बार जीवों की देहात्मबुद्धि की निन्दा करने के बाद यह कैसे सम्भव है कि कृष्ण पुनः शरीर पर उसी वक्तव्य को दुहराते? अतः यह अस्तित्व अध्यात्मिक आधार पर स्थापित है और इसकी पुष्टि रामानुजाचार्य तथा अन्य आचार्यों ने भी की है | गीता में कई स्थलों पर इसका उल्लेख है कि यह अध्यात्मिक अस्तित्व केवल भगवद्भक्तों द्वारा ज्ञेय है | जो लोग भगवान् कृष्ण का विरोध करते हैं उनकी इस महान साहित्य तक पहुँच नहीं हो पाती | अभक्तों द्वारा गीता के उपदेशों को समझने का प्रयास मधुमक्खी द्वारा मधुपात्र चाटने के सदृश है | पात्र को खोले बिना मधु को नहीं चखा जा सकता | इसी प्रकार भगवद्गीता के रहस्यवाद को केवल भक्त ही समझ सकते हैं, अन्य कोई नहीं, जैसा कि इसके चतुर्थ अध्याय में कहा गया है | न ही गीता का स्पर्श ऐसे लोग कर पाते हैं जो भगवान् के अस्तित्व का ही विरोध करते हैं | अतः मयावादियों द्वारा गीता की व्याख्या मानो समग्र सत्य का सरासर भ्रामक निरूपण है | भगवान् चैतन्य ने मायावादियों द्वारा की गई गीता की व्याख्याओं को पढ़ने का निषेध किया है और चेतावनी दी है कि जो कोई ऐसे मायावादी दर्शन को ग्रहण करता है वह गीता के वास्तविक रहस्य को समझ पाने में असमर्थ रहता है | यदि अस्तित्व का अभिप्राय अनुभवगम्य ब्रह्माण्ड से है तो भगवान् द्वारा उपदेश देने की कोई आवश्यकता नहीं थी | आत्मा तथा परमात्मा का द्वैत शाश्वत तथ्य है और इसकी पुष्टि वेदों द्वारा होती है जैसा कि ऊपर कहा जा चुका है |
-                                        
-                                    </p>
-                                
-                            </div>
-                        
-                    
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -355,178 +345,184 @@
 </section>
 
 
-    <section class="section pt-0">
-        <div class="container mt-6">
-            <div class="pagination-container">
-    <nav class="pagination is-centered" role="navigation" aria-label="pagination">
-        
-        <!-- previous page button -->
-        <a
-            class="pagination-previous pagination-button button is-orange is-outlined"
-            
-                href="/bhagavad-gita-hindi/2/11/"
-            
-        >
-            पिछला श्लोक
-        </a>
-
-        <!-- next page button -->
-        <a
-            class="pagination-next pagination-button button is-orange is-outlined"
-            
-                href="/bhagavad-gita-hindi/2/13/"
-            
-        >
-        अगला श्लोक
-        </a>
-
-        <ul class="pagination-list">
-            
-            
-                <li>
-                    <a
-                        class="pagination-link"
-                        
-                            href="/bhagavad-gita-hindi/2/1/"
-                        
-                    >
-                        1
-                    </a>
-                </li>
+<section class="section animatedParent animateOnce pb-0">
+    <div class="box glass animated fadeInUpShort">
+        <nav class="pagination is-centered" role="navigation" aria-label="pagination">
+            <!-- previous page button -->
+            <a
+                class="button is-outlined is-warning pagination-previous pagination-button button is-orange is-outlined"
                 
+                    href="/bhagavad-gita-hindi/2/11/"
                 
-                    
-                        <li>
-                            <span class="pagination-ellipsis">…</span>
-                        </li>
-                    
+            >
+                पिछला श्लोक
+            </a>
 
-                    <li>
-                        <a
-                            class="pagination-link"
-                            href="/bhagavad-gita-hindi/2/11/"
-                        >
-                            11
-                        </a>
-                    </li>
+            <!-- next page button -->
+            <!-- <a
+                class="button is-outlined is-warning pagination-next pagination-button button is-orange is-outlined"
                 
-            
-            
-            
-            
-            <li>
-                <a
-                    class="pagination-link is-current"
-                    aria-current="page"
-                    disabled
-                >
-                    12
-                </a>
-            </li>
-            
+                    href="/bhagavad-gita-hindi/2/13/"
+                
+            >
+            अगला श्लोक -->
+            </a>
 
-            
-            
+            <ul class="pagination-list">
+                
                 
                     <li>
                         <a
-                            class="pagination-link"
-                            href="/bhagavad-gita-hindi/2/13/"
+                            class="button is-outlined is-warning pagination-link"
+                            
+                                href="/bhagavad-gita-hindi/2/1/"
+                            
                         >
-                            13
+                            1
                         </a>
                     </li>
                     
+                    
+                        
+                            <li>
+                                <span class="pagination-ellipsis">…</span>
+                            </li>
+                        
+
                         <li>
-                            <span class="pagination-ellipsis">…</span>
+                            <a
+                                class="button is-outlined is-warning pagination-link"
+                                href="/bhagavad-gita-hindi/2/11/"
+                            >
+                                11
+                            </a>
                         </li>
                     
+                
+                
                 
                 
                 <li>
                     <a
-                        class="pagination-link"
-                        
-                            href="/bhagavad-gita-hindi/2/72/"
-                        
+                        class="button is-outlined is-warning pagination-link is-current" tabindex="-1"
+                        aria-current="page"
+                        disabled
                     >
-                        72
+                        12
                     </a>
                 </li>
-            
-            
-        </ul>
-    </nav>
-</div>
-        </div>
-    </section>
+                
 
-
-<section class="section pt-0">
-    <div class="container">
-        <article class="message is-warning is-small">
-            <div class="message-body has-text-centered">
-                <p class="mb-3">The BBT was established in 1972 by His Divine Grace A.C. Bhaktivedanta Swami Prabhupada, Founder-Acharya of the International Society for Krishna Consciousness. BBT is the publisher for his books. All material used here belongs to and copyrighted under BBT (Bhaktivedanta Book Trust).</p>
-
-                <p class="mb-3">🙏 Please consider buying books. Below is a beautiful message by Srila Prabhupada 🙏</p>
-
-                <p class="is-italic mb-3">“I specifically formed the BBT to invest in it exclusive rights for the printing of all literature containing my teachings, writings and lectures. In this way the collections are to be divided fifty percent for printing new books and fifty percent for construction of temples.”</p>
-            </div>
-        </article>
-    </div>
-</section>
-
-<section class="hero is-light is-small">
-    <div class="hero-body">
-        <div class="container">
-            <nav class="breadcrumb is-centered" aria-label="breadcrumbs">
-                <ul>
+                
+                
                     
-                        <li >
-                            <a class="is-link has-text-orange" href="/">
-                                <span class="icon is-small">
-                                    <i class="fas fa-home" aria-hidden="true"></i>
-                                </span>
-                                <span>Home</span>
+                        <li>
+                            <a
+                                class="button is-outlined is-warning pagination-link"
+                                href="/bhagavad-gita-hindi/2/13/"
+                            >
+                                13
                             </a>
                         </li>
+                        
+                            <li>
+                                <span class="pagination-ellipsis">…</span>
+                            </li>
+                        
                     
-                        <li >
-                            <a class="is-link has-text-orange" href="/bhagavad-gita-hindi/">
-                                <span class="icon is-small">
-                                    <i class="fas fa-book" aria-hidden="true"></i>
-                                </span>
-                                <span>श्रीमद्भगवद्गीता - यथारूप (हिंदी)</span>
-                            </a>
-                        </li>
                     
-                        <li >
-                            <a class="is-link has-text-orange" href="/bhagavad-gita-hindi/2/">
-                                <span class="icon is-small">
-                                    <i class="fas fa-file-alt" aria-hidden="true"></i>
-                                </span>
-                                <span>अध्याय २ - सांख्ययोग</span>
-                            </a>
-                        </li>
-                    
-                        <li class="is-active">
-                            <a  href="">
-                                <span class="icon is-small">
-                                    <i class="fas fa-quote-right" aria-hidden="true"></i>
-                                </span>
-                                <span>श्लोक १२</span>
-                            </a>
-                        </li>
-                    
-                </ul>
-            </nav>
-        </div>
+                    <li>
+                        <a
+                            class="button is-outlined is-warning pagination-link"
+                            
+                                href="/bhagavad-gita-hindi/2/72/"
+                            
+                        >
+                            72
+                        </a>
+                    </li>
+                
+                
+            </ul>
+
+            <!-- next page button -->
+            <a
+                class="button is-outlined is-warning pagination-next pagination-button button is-orange is-outlined"
+                
+                    href="/bhagavad-gita-hindi/2/13/"
+                
+            >
+            अगला श्लोक
+            </a>
+        </nav>
     </div>
 </section>
 
 
+<section class="section animatedParent animateOnce">
+    <div class="box glass animated fadeInUpShort">
+        <nav class="breadcrumb is-medium is-centered" aria-label="breadcrumbs">
+            <ul>
+                
+                <li >
+                    <a class="is-link has-text-orange" href="/">
+                        <span class="icon is-small">
+                            <i class="fas fa-home" aria-hidden="true"></i>
+                        </span>
+                        <span>Home</span>
+                    </a>
+                </li>
+                
+                <li >
+                    <a class="is-link has-text-orange" href="/bhagavad-gita-hindi/">
+                        <span class="icon is-small">
+                            <i class="fas fa-book" aria-hidden="true"></i>
+                        </span>
+                        <span>श्रीमद्भगवद्गीता</span>
+                    </a>
+                </li>
+                
+                <li >
+                    <a class="is-link has-text-orange" href="/bhagavad-gita-hindi/2/">
+                        <span class="icon is-small">
+                            <i class="fas fa-file-alt" aria-hidden="true"></i>
+                        </span>
+                        <span>अध्याय २ - सांख्ययोग</span>
+                    </a>
+                </li>
+                
+                <li class="is-active">
+                    <a tabindex="-1" href="">
+                        <span class="icon is-small">
+                            <i class="fas fa-quote-right" aria-hidden="true"></i>
+                        </span>
+                        <span>श्लोक १२</span>
+                    </a>
+                </li>
+                
+            </ul>
+        </nav>
+    </div>
+</section>
 
-    <footer class="footer bg-gradient-light-orange pt-5 pb-5">
+<section class="section pt-0 animatedParent animateOnce">
+    <article class="box message is-warning is-small p-0 animated fadeInUpShort">
+        <div class="message-header is-justify-content-center">
+            <p>Copyright Notice</p>
+        </div>
+        <div class="message-body has-text-centered">
+            <p class="mb-3">The BBT was established in 1972 by His Divine Grace A.C. Bhaktivedanta Swami Prabhupada, Founder-Acharya of the International Society for Krishna Consciousness. BBT is the publisher for his books. All material used here belongs to and copyrighted under BBT (Bhaktivedanta Book Trust).</p>
+    
+            <p class="is-italic mb-3">“I specifically formed the BBT to invest in it exclusive rights for the printing of all literature containing my teachings, writings and lectures. In this way the collections are to be divided fifty percent for printing new books and fifty percent for construction of temples.”</p>
+
+            <p>- A.C. Bhaktivedanta Swami Prabhupada</p>
+        </div>
+    </article>
+</section>
+
+
+
+    <!-- <footer class="footer bg-gradient-light-orange pt-5 pb-5">
     <div class="container">
         <div class="content">
             <div class="columns is-multiline is-centered">
@@ -549,7 +545,51 @@
             </div>
         </div>
     </div>
+</footer> -->
+
+<footer class="footer p-0">
+    <section class="section">
+        <div class="footer-container">
+            <div class="animatedParent animateOnce">
+                <div class="content-w-image is-flex is-centered-mobile">
+                    <figure class="image is-64x64 m-0 animated fadeInUpShort">
+                        <img src="https://www.ancientknowledge.in/static/images/logo.png">
+                    </figure>
+                    <div class="content m-0 is-flex is-flex-direction-column is-justify-content-space-between animated fadeInUpShort">
+                        <h4 class="mt-0">Ancient Knowledge</h4>
+                        <p class="is-centered-mobile">
+                            <a href="https://www.ancientknowledge.in/about/" class="no-decoration">
+                                <span>About</span>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="animatedParent animateOnce">
+                <div class="content animated fadeInUpShort">
+                    <h4 class="is-centered-mobile m-0 mb-4 animated fadeInUpShort delay-500">@PraacheenGyaan</h4>
+                    <p class="has-text-centered is-flex is-justify-content-space-between animatedParent animateOnce">
+                        <a class="box icon facebook is-large fa-2x mb-0 animated growIn delay-500" href="https://www.facebook.com/PraacheenGyaan/" target="_blank">
+                            <i class="fab fa-facebook-square has-text-white"></i>
+                        </a>
+
+                        <a class="box icon instagram is-large fa-2x mb-0 animated growIn delay-1000" href="https://www.instagram.com/PraacheenGyaan/" target="_blank">
+                            <i class="fab fa-instagram-square has-text-white"></i>
+                        </a>
+
+                        <a class="box icon twitter is-large fa-2x mb-0 animated growIn delay-1500" href="https://twitter.com/PraacheenGyaan/" target="_blank">
+                            <i class="fab fa-twitter-square has-text-white"></i>
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
 </footer>
+
+    <script src="https://www.ancientknowledge.in/static/js/jquery.min.js"></script>
+    <script src="https://www.ancientknowledge.in/static/js/script.js"></script>
+    <script src="https://www.ancientknowledge.in/static/js/css3-animate-it.js"></script>
 
     
 </body>

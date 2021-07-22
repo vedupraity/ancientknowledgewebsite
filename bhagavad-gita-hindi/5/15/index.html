@@ -14,7 +14,7 @@
 
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#ffffff" />
+    <meta name="theme-color" content="#ff902b" />
 
     <!-- Begin SEO tags -->
     <title>Ancient Knowledge | Bhagavad Gita | Hindi</title>
@@ -24,324 +24,314 @@
     <meta property="og:title" content="Ancient Knowledge | Bhagavad Gita | Hindi" />
     <meta property="og:description" content="Read Shrimad Bhagavad Gita - Yatharoop in hindi. श्रीमद्भगवद्गीता - यथारूप हिंदी में पढ़ें। अध्याय ५ - श्लोक १५" />
     <meta property="og:url" content="https://www.ancientknowledge.in" />
-    <meta property="og:image" content="https://www.ancientknowledge.in/static/images/bhagavad-gita-cover-16by9.jpg" />
+    <meta property="og:image" content="https://www.ancientknowledge.in/static/images/bhagavad-gita-cover-4x3.jpg" />
     <meta property="og:type" content="article" />
     
     <meta property="twitter:title" content="Ancient Knowledge | Bhagavad Gita | Hindi" />
     <meta property="twitter:description" content="Read Shrimad Bhagavad Gita - Yatharoop in hindi. श्रीमद्भगवद्गीता - यथारूप हिंदी में पढ़ें। अध्याय ५ - श्लोक १५" />
-    <meta property="twitter:image" content="https://www.ancientknowledge.in/static/images/bhagavad-gita-cover-16by9.jpg" />
+    <meta property="twitter:image" content="https://www.ancientknowledge.in/static/images/bhagavad-gita-cover-4x3.jpg" />
     <!-- End SEO tags -->
 
-    <link rel="stylesheet" href="https://www.ancientknowledge.in/static/css/theme.css" />
-    <link rel="stylesheet" href="https://www.ancientknowledge.in/static/css/theme-custom.css" />
+    <!-- <link rel="stylesheet" href="https://www.ancientknowledge.in/static/css/theme-old.css" /> -->
+    <!-- <link rel="stylesheet" href="https://www.ancientknowledge.in/static/css/switch-control.min.css" /> -->
+    <!-- <link rel="stylesheet" href="https://www.ancientknowledge.in/static/css/theme-custom.css" /> -->
     
     <link rel="icon" href="https://www.ancientknowledge.in/static/images/favicon.ico">
-    <link rel="shortcut icon" type="image/png" href="https://www.ancientknowledge.in/static/images/favicon.png" />
+    <link rel="shortcut icon" type="image/png" href="https://www.ancientknowledge.in/static/images/logo.png" />
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.0/dist/alpine.min.js" defer></script>
     
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-social@1/bin/bulma-social.min.css" />
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" /> -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-social@1/bin/bulma-social.min.css" /> -->
+
+    <link rel="stylesheet" href="https://www.ancientknowledge.in/static/css/bulma.min.css">
+    <link rel="stylesheet" href="https://www.ancientknowledge.in/static/css/theme.css">
+    <link rel="stylesheet" href="https://www.ancientknowledge.in/static/css/animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 
-<body>
-    <nav class="navbar is-warning bg-gradient-light-orange" x-data="{ openNav: false }">
-    <div class="container">
-        <div class="navbar-brand">
-            <a href="https://www.ancientknowledge.in" class="navbar-item">
-                <p class="has-text-weight-normal has-text-orange">
-                    <span>📖</span>
-                    <span class="pl-2">Ancient Knowledge</span>
-                </p>
+<body class="dark-modes">
+    <nav class="navbar is-light glass" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+        <a class="navbar-item pl-4" href="https://www.ancientknowledge.in">
+            <img src="https://www.ancientknowledge.in/static/images/logo.png" width="28" height="28">
+            <span class="pl-4">
+                Ancient Knowledge
+            </span>
+        </a>
+
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+            data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+    </div>
+
+    <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+            <a class="navbar-item" href="https://www.ancientknowledge.in/about/">
+                About
             </a>
-            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navMenu"
-                :class="{ 'is-active': openNav }" x-on:click="openNav = !openNav">
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-            </a>
-        </div>
-        <div class="navbar-menu" id="navMenu" :class="{ 'is-active': openNav }">
-            <div class="navbar-end">
-                <a href="https://www.ancientknowledge.in/about/" class="navbar-item has-text-weight-normal has-text-orange">About</a>
-            </div>
         </div>
     </div>
 </nav>
 
     
-    <section class="hero is-small is-bold is-dark bg-gradient-orange">
-    <div class="hero-body">
-        <div class="container has-text-centered p-5">
-            <h4 class="title is-4">श्रीमद्भगवद्गीता - यथारूप (हिंदी)</h4>
-        </div>
-    </div>
-</section>
-    
-
-    <div class="content is-centered has-text-centered" style="display: none;">
-        <h1>Ancient Knowledge</h1>
-        <h2>Recollecting the lost knowledge</h2>
-        <h3>Ancient Knowledge | Bhagavad Gita | Hindi</h3>
-        <p>Read Shrimad Bhagavad Gita - Yatharoop in hindi. श्रीमद्भगवद्गीता - यथारूप हिंदी में पढ़ें। अध्याय ५ - श्लोक १५</p>
-        <div class="tags is-centered">
-            
-                <span class="tag">Ancient</span>
-            
-                <span class="tag">Knowledge</span>
-            
-                <span class="tag">India</span>
-            
-                <span class="tag">Shrimad</span>
-            
-                <span class="tag">Bhagavad</span>
-            
-                <span class="tag">Gita</span>
-            
-                <span class="tag">Yatharoop</span>
-            
-                <span class="tag">As It Is</span>
-            
-                <span class="tag">Mahabharat</span>
-            
-                <span class="tag">Krishna</span>
-            
-                <span class="tag">Prabhupad</span>
-            
-                <span class="tag">Hindi</span>
-            
-        </div>
-    </div>
 
     
 
-<section class="hero is-light is-small">
-    <div class="hero-body">
-        <div class="container">
-            <nav class="breadcrumb is-centered" aria-label="breadcrumbs">
-                <ul>
-                    
-                        <li >
-                            <a class="is-link has-text-orange" href="/">
-                                <span class="icon is-small">
-                                    <i class="fas fa-home" aria-hidden="true"></i>
-                                </span>
-                                <span>Home</span>
-                            </a>
-                        </li>
-                    
-                        <li >
-                            <a class="is-link has-text-orange" href="/bhagavad-gita-hindi/">
-                                <span class="icon is-small">
-                                    <i class="fas fa-book" aria-hidden="true"></i>
-                                </span>
-                                <span>श्रीमद्भगवद्गीता - यथारूप (हिंदी)</span>
-                            </a>
-                        </li>
-                    
-                        <li >
-                            <a class="is-link has-text-orange" href="/bhagavad-gita-hindi/5/">
-                                <span class="icon is-small">
-                                    <i class="fas fa-file-alt" aria-hidden="true"></i>
-                                </span>
-                                <span>अध्याय ५ - कर्मसन्यासयोग</span>
-                            </a>
-                        </li>
-                    
-                        <li class="is-active">
-                            <a  href="">
-                                <span class="icon is-small">
-                                    <i class="fas fa-quote-right" aria-hidden="true"></i>
-                                </span>
-                                <span>श्लोक १५</span>
-                            </a>
-                        </li>
-                    
-                </ul>
-            </nav>
-        </div>
+<!-- Margin top behind navbar -->
+<div class="mt-6"></div>
+
+<style>
+    :root {
+        --page-background-image: url(/static/images/bhagavad-gita-cover-4x3.jpg);
+    }
+</style>
+<div class="image-background"></div>
+
+<section class="section animatedParent animateOnce">
+    <div class="box glass animated fadeInUpShort">
+        <nav class="breadcrumb is-medium is-centered" aria-label="breadcrumbs">
+            <ul>
+                
+                <li >
+                    <a class="is-link has-text-orange" href="/">
+                        <span class="icon is-small">
+                            <i class="fas fa-home" aria-hidden="true"></i>
+                        </span>
+                        <span>Home</span>
+                    </a>
+                </li>
+                
+                <li >
+                    <a class="is-link has-text-orange" href="/bhagavad-gita-hindi/">
+                        <span class="icon is-small">
+                            <i class="fas fa-book" aria-hidden="true"></i>
+                        </span>
+                        <span>श्रीमद्भगवद्गीता</span>
+                    </a>
+                </li>
+                
+                <li >
+                    <a class="is-link has-text-orange" href="/bhagavad-gita-hindi/5/">
+                        <span class="icon is-small">
+                            <i class="fas fa-file-alt" aria-hidden="true"></i>
+                        </span>
+                        <span>अध्याय ५ - कर्मसन्यासयोग</span>
+                    </a>
+                </li>
+                
+                <li class="is-active">
+                    <a tabindex="-1" href="">
+                        <span class="icon is-small">
+                            <i class="fas fa-quote-right" aria-hidden="true"></i>
+                        </span>
+                        <span>श्लोक १५</span>
+                    </a>
+                </li>
+                
+            </ul>
+        </nav>
     </div>
 </section>
 
-<section
-    class="
-        section
-        content-card-section
-        pb-0
-    "
-    oncopy="return false" oncut="return false" onpaste="return false"
->
-    <div class="container">
-        <div class="card has-glow-md">
-            <div class="card-content">
-                <div class="content is-medium">
-                    <h5 class="has-text-centered ">
-                        अध्याय ५ - श्लोक १५
-                        
-                    </h5>
-                    
-                    <hr/>
-
-                    
-                        
-                            <div
-                                
-                                    class="mb-5"
-                                
-                            >
-                                
-                                    <p class="has-text-centered has-text-weight-bold mb-1">
+<section class="section pt-0 pb-0">
+    <div class="columns is-multiline is-centered is-variable is-4">
+        <div
+            class="column is-full-tablet is-full-desktop is-full-widescreen is-full-fullhd is-flex animatedParent animateOnce">
+            <div class="card card-horizontal is-flex-grow-1 animated fadeInUpShort">
+                <div class="card-content p-2 pt-4 pb-4">
+                    <div class="columns is-multiline is-variable m-0">
+                        <div class="column">
+                            <div class="content is-medium m-0">
+                                <div class="">
+                                    
+                                    
                                         
-                                            नादत्ते कस्यचित्पापं न चैव सुकृतं विभुः ।
+                                            <div
+                                                
+                                                    class="mb-5"
+                                                
+                                            >
+                                                
+                                                    <p class="has-text-centered has-text-weight-bold mb-1">
+                                                        
+                                                            नादत्ते कस्यचित्पापं न चैव सुकृतं विभुः ।
+                                                        
+                                                    </p>
+                                                
+                                                    <p class="has-text-centered has-text-weight-bold mb-1">
+                                                        
+                                                            अज्ञानेनावृतं ज्ञानं तेन मुह्यन्ति जन्तवः ॥ १५ ॥
+                                                        
+                                                    </p>
+                                                
+                                            </div>
                                         
-                                    </p>
-                                
-                                    <p class="has-text-centered has-text-weight-bold mb-1">
+                                    
+                                    
+                                    
                                         
-                                            अज्ञानेनावृतं ज्ञानं तेन मुह्यन्ति जन्तवः ॥ १५ ॥
+                                            <div
+                                                
+                                                    class="mb-3"
+                                                
+                                            >
+                                                
+                                                    <p class="has-text-centered has-text-weight-bold">
+                                                        
+                                                            शब्दार्थ
+                                                        
+                                                    </p>
+                                                
+                                            </div>
                                         
-                                    </p>
-                                
+                                    
+                                    
+                                    
+                                        
+                                            <div
+                                                
+                                                    class="mb-5"
+                                                
+                                            >
+                                                
+                                                    <p class="has-text-justified">
+                                                        
+                                                            <strong>न</strong> – कभी नहीं; <strong>आदत्ते</strong> – स्वीकार करता है; <strong>कस्यचित्</strong> – किसी की; <strong>पापम्</strong> – पाप; <strong>न</strong> – न तो; <strong>च</strong> – भी; <strong>एव</strong> – निश्चय ही; <strong>सु-कृतम्</strong> – पुण्य को; <strong>विभुः</strong> – परमेश्वर; <strong>अज्ञानेन</strong> – अज्ञान से; <strong>आवृतम्</strong> – आच्छादित; <strong>ज्ञानम्</strong> – ज्ञान; <strong>तेन</strong> – उससे; <strong>मुह्यन्ति</strong> – मोह-ग्रस्त होते हैं; <strong>जन्तवः</strong> – जीवगण |
+                                                        
+                                                    </p>
+                                                
+                                            </div>
+                                        
+                                    
+                                    
+                                    
+                                        
+                                            <div
+                                                
+                                                    class="mb-3"
+                                                
+                                            >
+                                                
+                                                    <p class="has-text-centered has-text-weight-bold">
+                                                        
+                                                            भावार्थ
+                                                        
+                                                    </p>
+                                                
+                                            </div>
+                                        
+                                    
+                                    
+                                    
+                                        
+                                            <div
+                                                
+                                                    class="mb-5"
+                                                
+                                            >
+                                                
+                                                    <p class="has-text-justified">
+                                                        
+                                                            परमेश्वर न तो किसी के पापों को ग्रहण करता है , न पुण्यों को | किन्तु सारे देहधारी जीव उस अज्ञान के कारण मोहग्रस्त रहते हैं, जो उनके वास्तविक ज्ञान को आच्छादित किये रहता है |
+                                                        
+                                                    </p>
+                                                
+                                            </div>
+                                        
+                                    
+                                    
+                                    
+                                        
+                                            <div
+                                                
+                                                    class="mb-3"
+                                                
+                                            >
+                                                
+                                                    <p class="has-text-centered has-text-weight-bold">
+                                                        
+                                                            तात्पर्य
+                                                        
+                                                    </p>
+                                                
+                                            </div>
+                                        
+                                    
+                                    
+                                    
+                                        
+                                            <div
+                                                
+                                                    class="mb-5"
+                                                
+                                            >
+                                                
+                                                    <p class="has-text-justified">
+                                                        
+                                                            विभु का अर्थ है, परमेश्वर जो असीम ज्ञान, धन, बल, यश, सौन्दर्य तथा त्याग से युक्त है | वह सदैव आत्मतृप्त और पाप-पुण्य से अविचलित रहता है | वह किसी भी जीव के लिए विशिष्ट परिस्थिति नहीं उत्पन्न करता, अपितु जीव अज्ञान से मोहित होकर जीवन के लिए विशिष्ट परिस्थिति की कामना करता है, जिसके कारण कर्म तथा फल की शृंखला आरम्भ होती है | जीव परा प्रकृति के कारण ज्ञान से पूर्ण है | तो भी वह अपनी सीमित शक्ति के कारण अज्ञान के वशीभूत हो जाता है | भगवान् सर्वशक्तिमान् है, किन्तु जीव नहीं है | भगवान् विभु अर्थात् सर्वज्ञ है, किन्तु जीव अणु है | जीवात्मा में इच्छा करने की शक्ति है, किन्तु ऐसी इच्छा की पूर्ति सर्वशक्तिमान भगवान् द्वारा ही की जाती है | अतः जब जीव अपनी इच्छाओं से मोहग्रस्त हो जाता है तो भगवान् उसे अपनी इच्छापूर्ति करने देते हैं, किन्तु किसी परिस्थिति विशेष में इच्छित कर्मों तथा फलों के लिए उत्तरदायी नहीं होते | अतएव मोहग्रस्त होने से देहधारी जीव अपने को परिस्थितिजन्य शरीर मान लेता है और जीवन के क्षणिक दुख तथा सुख को भोगता है | भगवान् परमात्मा रूप में जीव के चिरसंगी रहते हैं, फलतः वे प्रत्येक जीव की इच्छाओं को उसी तरह समझते हैं जिस तरह फूल के निकट रहने वाला फूल की सुगन्ध को | इच्छा जीव को बद्ध करने के लिए सूक्ष्म बन्धन है | भगवान् मनुष्य की योग्यता के अनुसार उसकी इच्छा का पूरा करते हैं – आपन सोची होत नहिं प्रभु सोची तत्काल| अतः व्यक्ति अपनी इच्छाओं को पूरा करने में सर्वशक्तिमान नहीं होता | किन्तु भगवान् इच्छाओं की पूर्ति कर सकते हैं | वे निष्पक्ष होने के कारण स्वतन्त्र अणुजीवों की इच्छाओं में व्यवधान नहीं डालते | किन्तु जब कोई कृष्ण की इच्छा करता है तो भगवान् उसकी विशेष चिन्ता करते हैं और उसे इस प्रकार प्रोत्साहित करते हैं कि भगवान् को प्राप्त करने की उसकीइच्छा पूरी हो और वह सदैव सुखी रहे | अतएव वैदिक मन्त्र पुकार कर कहते हैं – एष उ ह्येव साधु कर्म कारयति तं यमेभ्यो लोकेभ्य उन्निनीषते |एष उ एवासाधु कर्म कारयति यमधो निनीषते – “भगवान् जीव को शुभ कर्मों में इसीलिए प्रवृत्त करते हैं जिससे वह ऊपर उठे | भगवान् उसे अशुभ कर्मों में इसीलिए प्रवृत्त करते हैं जिससे वह नरक जाए |” (कौषीतकी उपनिषद् ३.८) |
+                                                        
+                                                    </p>
+                                                
+                                            </div>
+                                        
+                                    
+                                    
+                                    
+                                        
+                                            <div
+                                                
+                                                    class="mb-5"
+                                                
+                                            >
+                                                
+                                                    <p class="has-text-centered is-italic mb-1">
+                                                        
+                                                            अज्ञो जन्तुरनीशोऽयमात्मनः सुखदुःखयोः |
+                                                        
+                                                    </p>
+                                                
+                                                    <p class="has-text-centered is-italic mb-1">
+                                                        
+                                                            ईश्वरप्रेरितो गच्छेत् स्वर्गं वाश्वभ्रमेव च ||
+                                                        
+                                                    </p>
+                                                
+                                            </div>
+                                        
+                                    
+                                    
+                                    
+                                        
+                                            <div
+                                                
+                                            >
+                                                
+                                                    <p class="has-text-justified">
+                                                        
+                                                            जीव अपने सुख-दुःख में पूर्णतया आश्रित है | परमेश्वर की इच्छा से वह स्वर्ग या नरक जाता है, जिस तरह वायु के द्वारा प्रेरित बादल |
+                                                        
+                                                    </p>
+                                                
+                                                    <p class="has-text-justified">
+                                                        
+                                                            अतः देहधारी जीव कृष्णभावनामृत की उपेक्षा करने की अपनी अनादि प्रवृत्ति के कारण अपने लिए मोह उत्पन्न करता है | फलस्वरूप स्वभावतः सच्चिदानन्द स्वरूप होते हुए भी वह अपने अस्तित्व की लघुता के कारण भगवान् के प्रति सेवा करने की अपनी स्वाभाविक स्थिति भूल जाता है और इस तरह वह अविद्या द्वारा बन्दी बना लिया जाता है | अज्ञानवश जीव यह कहता है कि उसके भवबन्धन के लिए भगवान् उत्तरदायी हैं | इसकी पुष्टि वेदान्त-सूत्र (२.१.३४) भी करते हैं – वैषम्यनैर्घृण्ये न सापेक्षत्वात् तथा हि दर्शयति – “भगवान् न तो किसी के प्रति घृणा करते हैं, न किसी को चाहते हैं, यद्यपि ऊपर से ऐसा प्रतीत होता है |”
+                                                        
+                                                    </p>
+                                                
+                                            </div>
+                                        
+                                    
+                                    
+                                </div>
                             </div>
-                        
-                    
-                        
-                            <div
-                                
-                                    class="mb-3"
-                                
-                            >
-                                
-                                    <p class="has-text-centered has-text-weight-bold">
-                                        
-                                            शब्दार्थ
-                                        
-                                    </p>
-                                
-                            </div>
-                        
-                    
-                        
-                            <div
-                                
-                                    class="mb-5"
-                                
-                            >
-                                
-                                    <p class="has-text-justified">
-                                        
-                                            <strong>न</strong> – कभी नहीं; <strong>आदत्ते</strong> – स्वीकार करता है; <strong>कस्यचित्</strong> – किसी की; <strong>पापम्</strong> – पाप; <strong>न</strong> – न तो; <strong>च</strong> – भी; <strong>एव</strong> – निश्चय ही; <strong>सु-कृतम्</strong> – पुण्य को; <strong>विभुः</strong> – परमेश्वर; <strong>अज्ञानेन</strong> – अज्ञान से; <strong>आवृतम्</strong> – आच्छादित; <strong>ज्ञानम्</strong> – ज्ञान; <strong>तेन</strong> – उससे; <strong>मुह्यन्ति</strong> – मोह-ग्रस्त होते हैं; <strong>जन्तवः</strong> – जीवगण |
-                                        
-                                    </p>
-                                
-                            </div>
-                        
-                    
-                        
-                            <div
-                                
-                                    class="mb-3"
-                                
-                            >
-                                
-                                    <p class="has-text-centered has-text-weight-bold">
-                                        
-                                            भावार्थ
-                                        
-                                    </p>
-                                
-                            </div>
-                        
-                    
-                        
-                            <div
-                                
-                                    class="mb-5"
-                                
-                            >
-                                
-                                    <p class="has-text-justified">
-                                        
-                                            परमेश्वर न तो किसी के पापों को ग्रहण करता है , न पुण्यों को | किन्तु सारे देहधारी जीव उस अज्ञान के कारण मोहग्रस्त रहते हैं, जो उनके वास्तविक ज्ञान को आच्छादित किये रहता है |
-                                        
-                                    </p>
-                                
-                            </div>
-                        
-                    
-                        
-                            <div
-                                
-                                    class="mb-3"
-                                
-                            >
-                                
-                                    <p class="has-text-centered has-text-weight-bold">
-                                        
-                                            तात्पर्य
-                                        
-                                    </p>
-                                
-                            </div>
-                        
-                    
-                        
-                            <div
-                                
-                                    class="mb-5"
-                                
-                            >
-                                
-                                    <p class="has-text-justified">
-                                        
-                                            विभु का अर्थ है, परमेश्वर जो असीम ज्ञान, धन, बल, यश, सौन्दर्य तथा त्याग से युक्त है | वह सदैव आत्मतृप्त और पाप-पुण्य से अविचलित रहता है | वह किसी भी जीव के लिए विशिष्ट परिस्थिति नहीं उत्पन्न करता, अपितु जीव अज्ञान से मोहित होकर जीवन के लिए विशिष्ट परिस्थिति की कामना करता है, जिसके कारण कर्म तथा फल की शृंखला आरम्भ होती है | जीव परा प्रकृति के कारण ज्ञान से पूर्ण है | तो भी वह अपनी सीमित शक्ति के कारण अज्ञान के वशीभूत हो जाता है | भगवान् सर्वशक्तिमान् है, किन्तु जीव नहीं है | भगवान् विभु अर्थात् सर्वज्ञ है, किन्तु जीव अणु है | जीवात्मा में इच्छा करने की शक्ति है, किन्तु ऐसी इच्छा की पूर्ति सर्वशक्तिमान भगवान् द्वारा ही की जाती है | अतः जब जीव अपनी इच्छाओं से मोहग्रस्त हो जाता है तो भगवान् उसे अपनी इच्छापूर्ति करने देते हैं, किन्तु किसी परिस्थिति विशेष में इच्छित कर्मों तथा फलों के लिए उत्तरदायी नहीं होते | अतएव मोहग्रस्त होने से देहधारी जीव अपने को परिस्थितिजन्य शरीर मान लेता है और जीवन के क्षणिक दुख तथा सुख को भोगता है | भगवान् परमात्मा रूप में जीव के चिरसंगी रहते हैं, फलतः वे प्रत्येक जीव की इच्छाओं को उसी तरह समझते हैं जिस तरह फूल के निकट रहने वाला फूल की सुगन्ध को | इच्छा जीव को बद्ध करने के लिए सूक्ष्म बन्धन है | भगवान् मनुष्य की योग्यता के अनुसार उसकी इच्छा का पूरा करते हैं – आपन सोची होत नहिं प्रभु सोची तत्काल| अतः व्यक्ति अपनी इच्छाओं को पूरा करने में सर्वशक्तिमान नहीं होता | किन्तु भगवान् इच्छाओं की पूर्ति कर सकते हैं | वे निष्पक्ष होने के कारण स्वतन्त्र अणुजीवों की इच्छाओं में व्यवधान नहीं डालते | किन्तु जब कोई कृष्ण की इच्छा करता है तो भगवान् उसकी विशेष चिन्ता करते हैं और उसे इस प्रकार प्रोत्साहित करते हैं कि भगवान् को प्राप्त करने की उसकीइच्छा पूरी हो और वह सदैव सुखी रहे | अतएव वैदिक मन्त्र पुकार कर कहते हैं – एष उ ह्येव साधु कर्म कारयति तं यमेभ्यो लोकेभ्य उन्निनीषते |एष उ एवासाधु कर्म कारयति यमधो निनीषते – “भगवान् जीव को शुभ कर्मों में इसीलिए प्रवृत्त करते हैं जिससे वह ऊपर उठे | भगवान् उसे अशुभ कर्मों में इसीलिए प्रवृत्त करते हैं जिससे वह नरक जाए |” (कौषीतकी उपनिषद् ३.८) |
-                                        
-                                    </p>
-                                
-                            </div>
-                        
-                    
-                        
-                            <div
-                                
-                                    class="mb-5"
-                                
-                            >
-                                
-                                    <p class="has-text-centered is-italic mb-1">
-                                        
-                                            अज्ञो जन्तुरनीशोऽयमात्मनः सुखदुःखयोः |
-                                        
-                                    </p>
-                                
-                                    <p class="has-text-centered is-italic mb-1">
-                                        
-                                            ईश्वरप्रेरितो गच्छेत् स्वर्गं वाश्वभ्रमेव च ||
-                                        
-                                    </p>
-                                
-                            </div>
-                        
-                    
-                        
-                            <div
-                                
-                            >
-                                
-                                    <p class="has-text-justified">
-                                        
-                                            जीव अपने सुख-दुःख में पूर्णतया आश्रित है | परमेश्वर की इच्छा से वह स्वर्ग या नरक जाता है, जिस तरह वायु के द्वारा प्रेरित बादल |
-                                        
-                                    </p>
-                                
-                                    <p class="has-text-justified">
-                                        
-                                            अतः देहधारी जीव कृष्णभावनामृत की उपेक्षा करने की अपनी अनादि प्रवृत्ति के कारण अपने लिए मोह उत्पन्न करता है | फलस्वरूप स्वभावतः सच्चिदानन्द स्वरूप होते हुए भी वह अपने अस्तित्व की लघुता के कारण भगवान् के प्रति सेवा करने की अपनी स्वाभाविक स्थिति भूल जाता है और इस तरह वह अविद्या द्वारा बन्दी बना लिया जाता है | अज्ञानवश जीव यह कहता है कि उसके भवबन्धन के लिए भगवान् उत्तरदायी हैं | इसकी पुष्टि वेदान्त-सूत्र (२.१.३४) भी करते हैं – वैषम्यनैर्घृण्ये न सापेक्षत्वात् तथा हि दर्शयति – “भगवान् न तो किसी के प्रति घृणा करते हैं, न किसी को चाहते हैं, यद्यपि ऊपर से ऐसा प्रतीत होता है |”
-                                        
-                                    </p>
-                                
-                            </div>
-                        
-                    
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -349,178 +339,184 @@
 </section>
 
 
-    <section class="section pt-0">
-        <div class="container mt-6">
-            <div class="pagination-container">
-    <nav class="pagination is-centered" role="navigation" aria-label="pagination">
-        
-        <!-- previous page button -->
-        <a
-            class="pagination-previous pagination-button button is-orange is-outlined"
-            
-                href="/bhagavad-gita-hindi/5/14/"
-            
-        >
-            पिछला श्लोक
-        </a>
-
-        <!-- next page button -->
-        <a
-            class="pagination-next pagination-button button is-orange is-outlined"
-            
-                href="/bhagavad-gita-hindi/5/16/"
-            
-        >
-        अगला श्लोक
-        </a>
-
-        <ul class="pagination-list">
-            
-            
-                <li>
-                    <a
-                        class="pagination-link"
-                        
-                            href="/bhagavad-gita-hindi/5/1/"
-                        
-                    >
-                        1
-                    </a>
-                </li>
+<section class="section animatedParent animateOnce pb-0">
+    <div class="box glass animated fadeInUpShort">
+        <nav class="pagination is-centered" role="navigation" aria-label="pagination">
+            <!-- previous page button -->
+            <a
+                class="button is-outlined is-warning pagination-previous pagination-button button is-orange is-outlined"
                 
+                    href="/bhagavad-gita-hindi/5/14/"
                 
-                    
-                        <li>
-                            <span class="pagination-ellipsis">…</span>
-                        </li>
-                    
+            >
+                पिछला श्लोक
+            </a>
 
-                    <li>
-                        <a
-                            class="pagination-link"
-                            href="/bhagavad-gita-hindi/5/14/"
-                        >
-                            14
-                        </a>
-                    </li>
+            <!-- next page button -->
+            <!-- <a
+                class="button is-outlined is-warning pagination-next pagination-button button is-orange is-outlined"
                 
-            
-            
-            
-            
-            <li>
-                <a
-                    class="pagination-link is-current"
-                    aria-current="page"
-                    disabled
-                >
-                    15
-                </a>
-            </li>
-            
+                    href="/bhagavad-gita-hindi/5/16/"
+                
+            >
+            अगला श्लोक -->
+            </a>
 
-            
-            
+            <ul class="pagination-list">
+                
                 
                     <li>
                         <a
-                            class="pagination-link"
-                            href="/bhagavad-gita-hindi/5/16/"
+                            class="button is-outlined is-warning pagination-link"
+                            
+                                href="/bhagavad-gita-hindi/5/1/"
+                            
                         >
-                            16
+                            1
                         </a>
                     </li>
                     
+                    
+                        
+                            <li>
+                                <span class="pagination-ellipsis">…</span>
+                            </li>
+                        
+
                         <li>
-                            <span class="pagination-ellipsis">…</span>
+                            <a
+                                class="button is-outlined is-warning pagination-link"
+                                href="/bhagavad-gita-hindi/5/14/"
+                            >
+                                14
+                            </a>
                         </li>
                     
+                
+                
                 
                 
                 <li>
                     <a
-                        class="pagination-link"
-                        
-                            href="/bhagavad-gita-hindi/5/29/"
-                        
+                        class="button is-outlined is-warning pagination-link is-current" tabindex="-1"
+                        aria-current="page"
+                        disabled
                     >
-                        29
+                        15
                     </a>
                 </li>
-            
-            
-        </ul>
-    </nav>
-</div>
-        </div>
-    </section>
+                
 
-
-<section class="section pt-0">
-    <div class="container">
-        <article class="message is-warning is-small">
-            <div class="message-body has-text-centered">
-                <p class="mb-3">The BBT was established in 1972 by His Divine Grace A.C. Bhaktivedanta Swami Prabhupada, Founder-Acharya of the International Society for Krishna Consciousness. BBT is the publisher for his books. All material used here belongs to and copyrighted under BBT (Bhaktivedanta Book Trust).</p>
-
-                <p class="mb-3">🙏 Please consider buying books. Below is a beautiful message by Srila Prabhupada 🙏</p>
-
-                <p class="is-italic mb-3">“I specifically formed the BBT to invest in it exclusive rights for the printing of all literature containing my teachings, writings and lectures. In this way the collections are to be divided fifty percent for printing new books and fifty percent for construction of temples.”</p>
-            </div>
-        </article>
-    </div>
-</section>
-
-<section class="hero is-light is-small">
-    <div class="hero-body">
-        <div class="container">
-            <nav class="breadcrumb is-centered" aria-label="breadcrumbs">
-                <ul>
+                
+                
                     
-                        <li >
-                            <a class="is-link has-text-orange" href="/">
-                                <span class="icon is-small">
-                                    <i class="fas fa-home" aria-hidden="true"></i>
-                                </span>
-                                <span>Home</span>
+                        <li>
+                            <a
+                                class="button is-outlined is-warning pagination-link"
+                                href="/bhagavad-gita-hindi/5/16/"
+                            >
+                                16
                             </a>
                         </li>
+                        
+                            <li>
+                                <span class="pagination-ellipsis">…</span>
+                            </li>
+                        
                     
-                        <li >
-                            <a class="is-link has-text-orange" href="/bhagavad-gita-hindi/">
-                                <span class="icon is-small">
-                                    <i class="fas fa-book" aria-hidden="true"></i>
-                                </span>
-                                <span>श्रीमद्भगवद्गीता - यथारूप (हिंदी)</span>
-                            </a>
-                        </li>
                     
-                        <li >
-                            <a class="is-link has-text-orange" href="/bhagavad-gita-hindi/5/">
-                                <span class="icon is-small">
-                                    <i class="fas fa-file-alt" aria-hidden="true"></i>
-                                </span>
-                                <span>अध्याय ५ - कर्मसन्यासयोग</span>
-                            </a>
-                        </li>
-                    
-                        <li class="is-active">
-                            <a  href="">
-                                <span class="icon is-small">
-                                    <i class="fas fa-quote-right" aria-hidden="true"></i>
-                                </span>
-                                <span>श्लोक १५</span>
-                            </a>
-                        </li>
-                    
-                </ul>
-            </nav>
-        </div>
+                    <li>
+                        <a
+                            class="button is-outlined is-warning pagination-link"
+                            
+                                href="/bhagavad-gita-hindi/5/29/"
+                            
+                        >
+                            29
+                        </a>
+                    </li>
+                
+                
+            </ul>
+
+            <!-- next page button -->
+            <a
+                class="button is-outlined is-warning pagination-next pagination-button button is-orange is-outlined"
+                
+                    href="/bhagavad-gita-hindi/5/16/"
+                
+            >
+            अगला श्लोक
+            </a>
+        </nav>
     </div>
 </section>
 
 
+<section class="section animatedParent animateOnce">
+    <div class="box glass animated fadeInUpShort">
+        <nav class="breadcrumb is-medium is-centered" aria-label="breadcrumbs">
+            <ul>
+                
+                <li >
+                    <a class="is-link has-text-orange" href="/">
+                        <span class="icon is-small">
+                            <i class="fas fa-home" aria-hidden="true"></i>
+                        </span>
+                        <span>Home</span>
+                    </a>
+                </li>
+                
+                <li >
+                    <a class="is-link has-text-orange" href="/bhagavad-gita-hindi/">
+                        <span class="icon is-small">
+                            <i class="fas fa-book" aria-hidden="true"></i>
+                        </span>
+                        <span>श्रीमद्भगवद्गीता</span>
+                    </a>
+                </li>
+                
+                <li >
+                    <a class="is-link has-text-orange" href="/bhagavad-gita-hindi/5/">
+                        <span class="icon is-small">
+                            <i class="fas fa-file-alt" aria-hidden="true"></i>
+                        </span>
+                        <span>अध्याय ५ - कर्मसन्यासयोग</span>
+                    </a>
+                </li>
+                
+                <li class="is-active">
+                    <a tabindex="-1" href="">
+                        <span class="icon is-small">
+                            <i class="fas fa-quote-right" aria-hidden="true"></i>
+                        </span>
+                        <span>श्लोक १५</span>
+                    </a>
+                </li>
+                
+            </ul>
+        </nav>
+    </div>
+</section>
 
-    <footer class="footer bg-gradient-light-orange pt-5 pb-5">
+<section class="section pt-0 animatedParent animateOnce">
+    <article class="box message is-warning is-small p-0 animated fadeInUpShort">
+        <div class="message-header is-justify-content-center">
+            <p>Copyright Notice</p>
+        </div>
+        <div class="message-body has-text-centered">
+            <p class="mb-3">The BBT was established in 1972 by His Divine Grace A.C. Bhaktivedanta Swami Prabhupada, Founder-Acharya of the International Society for Krishna Consciousness. BBT is the publisher for his books. All material used here belongs to and copyrighted under BBT (Bhaktivedanta Book Trust).</p>
+    
+            <p class="is-italic mb-3">“I specifically formed the BBT to invest in it exclusive rights for the printing of all literature containing my teachings, writings and lectures. In this way the collections are to be divided fifty percent for printing new books and fifty percent for construction of temples.”</p>
+
+            <p>- A.C. Bhaktivedanta Swami Prabhupada</p>
+        </div>
+    </article>
+</section>
+
+
+
+    <!-- <footer class="footer bg-gradient-light-orange pt-5 pb-5">
     <div class="container">
         <div class="content">
             <div class="columns is-multiline is-centered">
@@ -543,7 +539,51 @@
             </div>
         </div>
     </div>
+</footer> -->
+
+<footer class="footer p-0">
+    <section class="section">
+        <div class="footer-container">
+            <div class="animatedParent animateOnce">
+                <div class="content-w-image is-flex is-centered-mobile">
+                    <figure class="image is-64x64 m-0 animated fadeInUpShort">
+                        <img src="https://www.ancientknowledge.in/static/images/logo.png">
+                    </figure>
+                    <div class="content m-0 is-flex is-flex-direction-column is-justify-content-space-between animated fadeInUpShort">
+                        <h4 class="mt-0">Ancient Knowledge</h4>
+                        <p class="is-centered-mobile">
+                            <a href="https://www.ancientknowledge.in/about/" class="no-decoration">
+                                <span>About</span>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="animatedParent animateOnce">
+                <div class="content animated fadeInUpShort">
+                    <h4 class="is-centered-mobile m-0 mb-4 animated fadeInUpShort delay-500">@PraacheenGyaan</h4>
+                    <p class="has-text-centered is-flex is-justify-content-space-between animatedParent animateOnce">
+                        <a class="box icon facebook is-large fa-2x mb-0 animated growIn delay-500" href="https://www.facebook.com/PraacheenGyaan/" target="_blank">
+                            <i class="fab fa-facebook-square has-text-white"></i>
+                        </a>
+
+                        <a class="box icon instagram is-large fa-2x mb-0 animated growIn delay-1000" href="https://www.instagram.com/PraacheenGyaan/" target="_blank">
+                            <i class="fab fa-instagram-square has-text-white"></i>
+                        </a>
+
+                        <a class="box icon twitter is-large fa-2x mb-0 animated growIn delay-1500" href="https://twitter.com/PraacheenGyaan/" target="_blank">
+                            <i class="fab fa-twitter-square has-text-white"></i>
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
 </footer>
+
+    <script src="https://www.ancientknowledge.in/static/js/jquery.min.js"></script>
+    <script src="https://www.ancientknowledge.in/static/js/script.js"></script>
+    <script src="https://www.ancientknowledge.in/static/js/css3-animate-it.js"></script>
 
     
 </body>

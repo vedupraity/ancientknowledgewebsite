@@ -14,7 +14,7 @@
 
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#ffffff" />
+    <meta name="theme-color" content="#ff902b" />
 
     <!-- Begin SEO tags -->
     <title>Ancient Knowledge | Bhagavad Gita | Hindi</title>
@@ -24,875 +24,1371 @@
     <meta property="og:title" content="Ancient Knowledge | Bhagavad Gita | Hindi" />
     <meta property="og:description" content="Read Shrimad Bhagavad Gita - Yatharoop in hindi. श्रीमद्भगवद्गीता - यथारूप हिंदी में पढ़ें।" />
     <meta property="og:url" content="https://www.ancientknowledge.in" />
-    <meta property="og:image" content="https://www.ancientknowledge.in/static/images/bhagavad-gita-cover-16by9.jpg" />
+    <meta property="og:image" content="https://www.ancientknowledge.in/static/images/bhagavad-gita-cover-4x3.jpg" />
     <meta property="og:type" content="website" />
     
     <meta property="twitter:title" content="Ancient Knowledge | Bhagavad Gita | Hindi" />
     <meta property="twitter:description" content="Read Shrimad Bhagavad Gita - Yatharoop in hindi. श्रीमद्भगवद्गीता - यथारूप हिंदी में पढ़ें।" />
-    <meta property="twitter:image" content="https://www.ancientknowledge.in/static/images/bhagavad-gita-cover-16by9.jpg" />
+    <meta property="twitter:image" content="https://www.ancientknowledge.in/static/images/bhagavad-gita-cover-4x3.jpg" />
     <!-- End SEO tags -->
 
-    <link rel="stylesheet" href="https://www.ancientknowledge.in/static/css/theme.css" />
-    <link rel="stylesheet" href="https://www.ancientknowledge.in/static/css/theme-custom.css" />
+    <!-- <link rel="stylesheet" href="https://www.ancientknowledge.in/static/css/theme-old.css" /> -->
+    <!-- <link rel="stylesheet" href="https://www.ancientknowledge.in/static/css/switch-control.min.css" /> -->
+    <!-- <link rel="stylesheet" href="https://www.ancientknowledge.in/static/css/theme-custom.css" /> -->
     
     <link rel="icon" href="https://www.ancientknowledge.in/static/images/favicon.ico">
-    <link rel="shortcut icon" type="image/png" href="https://www.ancientknowledge.in/static/images/favicon.png" />
+    <link rel="shortcut icon" type="image/png" href="https://www.ancientknowledge.in/static/images/logo.png" />
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.0/dist/alpine.min.js" defer></script>
     
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-social@1/bin/bulma-social.min.css" />
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" /> -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-social@1/bin/bulma-social.min.css" /> -->
+
+    <link rel="stylesheet" href="https://www.ancientknowledge.in/static/css/bulma.min.css">
+    <link rel="stylesheet" href="https://www.ancientknowledge.in/static/css/theme.css">
+    <link rel="stylesheet" href="https://www.ancientknowledge.in/static/css/animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 
-<body>
-    <nav class="navbar is-warning bg-gradient-light-orange" x-data="{ openNav: false }">
-    <div class="container">
-        <div class="navbar-brand">
-            <a href="https://www.ancientknowledge.in" class="navbar-item">
-                <p class="has-text-weight-normal has-text-orange">
-                    <span>📖</span>
-                    <span class="pl-2">Ancient Knowledge</span>
-                </p>
+<body class="dark-modes">
+    <nav class="navbar is-light glass" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+        <a class="navbar-item pl-4" href="https://www.ancientknowledge.in">
+            <img src="https://www.ancientknowledge.in/static/images/logo.png" width="28" height="28">
+            <span class="pl-4">
+                Ancient Knowledge
+            </span>
+        </a>
+
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+            data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+    </div>
+
+    <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+            <a class="navbar-item" href="https://www.ancientknowledge.in/about/">
+                About
             </a>
-            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navMenu"
-                :class="{ 'is-active': openNav }" x-on:click="openNav = !openNav">
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-            </a>
-        </div>
-        <div class="navbar-menu" id="navMenu" :class="{ 'is-active': openNav }">
-            <div class="navbar-end">
-                <a href="https://www.ancientknowledge.in/about/" class="navbar-item has-text-weight-normal has-text-orange">About</a>
-            </div>
         </div>
     </div>
 </nav>
 
     
-    <section class="hero is-small is-bold is-dark bg-gradient-orange">
-    <div class="hero-body">
-        <div class="container has-text-centered p-5">
-            <h4 class="title is-4">श्रीमद्भगवद्गीता - यथारूप (हिंदी)</h4>
-        </div>
-    </div>
-</section>
-    
-
-    <div class="content is-centered has-text-centered" style="display: none;">
-        <h1>Ancient Knowledge</h1>
-        <h2>Recollecting the lost knowledge</h2>
-        <h3>Ancient Knowledge | Bhagavad Gita | Hindi</h3>
-        <p>Read Shrimad Bhagavad Gita - Yatharoop in hindi. श्रीमद्भगवद्गीता - यथारूप हिंदी में पढ़ें।</p>
-        <div class="tags is-centered">
-            
-                <span class="tag">Ancient</span>
-            
-                <span class="tag">Knowledge</span>
-            
-                <span class="tag">India</span>
-            
-                <span class="tag">Shrimad</span>
-            
-                <span class="tag">Bhagavad</span>
-            
-                <span class="tag">Gita</span>
-            
-                <span class="tag">Yatharoop</span>
-            
-                <span class="tag">As It Is</span>
-            
-                <span class="tag">Mahabharat</span>
-            
-                <span class="tag">Krishna</span>
-            
-                <span class="tag">Prabhupad</span>
-            
-                <span class="tag">Hindi</span>
-            
-        </div>
-    </div>
 
     
 
-<section class="hero is-light is-small">
-    <div class="hero-body">
-        <div class="container">
-            <nav class="breadcrumb is-centered" aria-label="breadcrumbs">
-                <ul>
-                    
-                        <li >
-                            <a class="is-link has-text-orange" href="/">
-                                <span class="icon is-small">
-                                    <i class="fas fa-home" aria-hidden="true"></i>
-                                </span>
-                                <span>Home</span>
-                            </a>
-                        </li>
-                    
-                        <li >
-                            <a class="is-link has-text-orange" href="/bhagavad-gita-hindi/">
-                                <span class="icon is-small">
-                                    <i class="fas fa-book" aria-hidden="true"></i>
-                                </span>
-                                <span>श्रीमद्भगवद्गीता - यथारूप (हिंदी)</span>
-                            </a>
-                        </li>
-                    
-                        <li class="is-active">
-                            <a  href="">
-                                <span class="icon is-small">
-                                    <i class="fas fa-file-alt" aria-hidden="true"></i>
-                                </span>
-                                <span>अध्याय १७ - श्रद्धात्रयविभागयोग</span>
-                            </a>
-                        </li>
-                    
-                </ul>
-            </nav>
-        </div>
+<!-- Margin top behind navbar -->
+<div class="mt-6"></div>
+
+<style>
+    :root {
+        --page-background-image: url(/static/images/bhagavad-gita-cover-4x3.jpg);
+    }
+</style>
+<div class="image-background"></div>
+
+<section class="section animatedParent animateOnce">
+    <div class="box glass animated fadeInUpShort">
+        <nav class="breadcrumb is-medium is-centered" aria-label="breadcrumbs">
+            <ul>
+                
+                <li >
+                    <a class="is-link has-text-orange" href="/">
+                        <span class="icon is-small">
+                            <i class="fas fa-home" aria-hidden="true"></i>
+                        </span>
+                        <span>Home</span>
+                    </a>
+                </li>
+                
+                <li >
+                    <a class="is-link has-text-orange" href="/bhagavad-gita-hindi/">
+                        <span class="icon is-small">
+                            <i class="fas fa-book" aria-hidden="true"></i>
+                        </span>
+                        <span>श्रीमद्भगवद्गीता</span>
+                    </a>
+                </li>
+                
+                <li class="is-active">
+                    <a tabindex="-1" href="">
+                        <span class="icon is-small">
+                            <i class="fas fa-file-alt" aria-hidden="true"></i>
+                        </span>
+                        <span>अध्याय १७ - श्रद्धात्रयविभागयोग</span>
+                    </a>
+                </li>
+                
+            </ul>
+        </nav>
     </div>
 </section>
 
-<section class="section" oncopy="return false" oncut="return false" onpaste="return false">
-    <div class="container">
-        <div class="columns is-multiline is-centered" id="book-card-container">
-            
-                <div class="column is-12">
-                    <a class="is-clickable" href="1/">
-                        <div class="card has-glow-md">
-                            <div class="card-content">
-                                <div class="content">
-                                    <h5 class="mb-0">
+<section class="section pt-0 pb-0">
+    <div class="columns is-multiline is-centered is-variable is-4">
+
+        
+        <div
+            class="column is-full-tablet is-full-desktop is-full-widescreen is-full-fullhd is-flex animatedParent animateOnce">
+            <div class="card card-horizontal is-flex-grow-1 animated fadeInUpShort">
+                <div class="card-content p-2">
+                    <div class="columns is-multiline is-variable m-0">
+                        <div class="column">
+                            <div class="content m-0">
+                                <div class="m-0">
+                                    
+                                    <h5 class="title is-5 m-0">
                                         अध्याय १७ - श्लोक १
                                     </h5>
                                     
                                     
-                                        <hr class="mt-3 mb-3"/>
-                                    
-
-                                    
-
-                                    
-                                        
-                                            <p class="has-text-justified">अर्जुन ने कहा – हे कृष्ण! जो लोग शास्त्र के नियमों का पालन न करके अपनी कल्पना के अनुसार पूजा करते हैं, उनकी स्थिति कौन सी है? वे सतोगुणी हैं, रजोगुणी हैं या तमोगुणी?</p>
-                                        
-                                    
+                                
                                 </div>
+                                
+                                
+                                <hr class="m-0 mt-4">
+                                
+                                <div class="m-0 mt-4">
+                                    
+                                    
+                                    <p class="has-text-justified">
+                                        अर्जुन ने कहा – हे कृष्ण! जो लोग शास्त्र के नियमों का पालन न करके अपनी कल्पना के अनुसार पूजा करते हैं, उनकी स्थिति कौन सी है? वे सतोगुणी हैं, रजोगुणी हैं या तमोगुणी?
+                                    </p>
+                                    
+
+                                </div>
+                                
+                                
+                                <div class="m-0 mt-4">
+                                    <p>
+                                        <a class="button is-outlined is-warning" href="1/">
+                                            Read Now
+                                        </a>
+                                    </p>
+                                </div>
+
                             </div>
                         </div>
-                    </a>
+                    </div>
                 </div>
-            
-                <div class="column is-12">
-                    <a class="is-clickable" href="2/">
-                        <div class="card has-glow-md">
-                            <div class="card-content">
-                                <div class="content">
-                                    <h5 class="mb-0">
+            </div>
+        </div>
+        
+        <div
+            class="column is-full-tablet is-full-desktop is-full-widescreen is-full-fullhd is-flex animatedParent animateOnce">
+            <div class="card card-horizontal is-flex-grow-1 animated fadeInUpShort">
+                <div class="card-content p-2">
+                    <div class="columns is-multiline is-variable m-0">
+                        <div class="column">
+                            <div class="content m-0">
+                                <div class="m-0">
+                                    
+                                    <h5 class="title is-5 m-0">
                                         अध्याय १७ - श्लोक २
                                     </h5>
                                     
                                     
-                                        <hr class="mt-3 mb-3"/>
-                                    
-
-                                    
-
-                                    
-                                        
-                                            <p class="has-text-justified">भगवान् ने कहा – देहधारी जीव द्वारा अर्जित गुणों के अनुसार उसकी श्रद्धा तीन प्रकार की हो सकती है – सतोगुणी, रजोगुणी अथवा तमोगुणी । अब इसके विषय में मुझसे सुनों ।</p>
-                                        
-                                    
+                                
                                 </div>
+                                
+                                
+                                <hr class="m-0 mt-4">
+                                
+                                <div class="m-0 mt-4">
+                                    
+                                    
+                                    <p class="has-text-justified">
+                                        भगवान् ने कहा – देहधारी जीव द्वारा अर्जित गुणों के अनुसार उसकी श्रद्धा तीन प्रकार की हो सकती है – सतोगुणी, रजोगुणी अथवा तमोगुणी । अब इसके विषय में मुझसे सुनों ।
+                                    </p>
+                                    
+
+                                </div>
+                                
+                                
+                                <div class="m-0 mt-4">
+                                    <p>
+                                        <a class="button is-outlined is-warning" href="2/">
+                                            Read Now
+                                        </a>
+                                    </p>
+                                </div>
+
                             </div>
                         </div>
-                    </a>
+                    </div>
                 </div>
-            
-                <div class="column is-12">
-                    <a class="is-clickable" href="3/">
-                        <div class="card has-glow-md">
-                            <div class="card-content">
-                                <div class="content">
-                                    <h5 class="mb-0">
+            </div>
+        </div>
+        
+        <div
+            class="column is-full-tablet is-full-desktop is-full-widescreen is-full-fullhd is-flex animatedParent animateOnce">
+            <div class="card card-horizontal is-flex-grow-1 animated fadeInUpShort">
+                <div class="card-content p-2">
+                    <div class="columns is-multiline is-variable m-0">
+                        <div class="column">
+                            <div class="content m-0">
+                                <div class="m-0">
+                                    
+                                    <h5 class="title is-5 m-0">
                                         अध्याय १७ - श्लोक ३
                                     </h5>
                                     
                                     
-                                        <hr class="mt-3 mb-3"/>
-                                    
-
-                                    
-
-                                    
-                                        
-                                            <p class="has-text-justified">हे भरतपुत्र! विभिन्न गुणों के अन्तर्गत अपने अपने अस्तित्व के अनुसार मनुष्य एक विशेष प्रकार की श्रद्धा विकसित करता है । अपने द्वारा अर्जित गुणों के अनुसार ही जीव को विशेष श्रद्धा से युक्त कहा जाता है ।</p>
-                                        
-                                    
+                                
                                 </div>
+                                
+                                
+                                <hr class="m-0 mt-4">
+                                
+                                <div class="m-0 mt-4">
+                                    
+                                    
+                                    <p class="has-text-justified">
+                                        हे भरतपुत्र! विभिन्न गुणों के अन्तर्गत अपने अपने अस्तित्व के अनुसार मनुष्य एक विशेष प्रकार की श्रद्धा विकसित करता है । अपने द्वारा अर्जित गुणों के अनुसार ही जीव को विशेष श्रद्धा से युक्त कहा जाता है ।
+                                    </p>
+                                    
+
+                                </div>
+                                
+                                
+                                <div class="m-0 mt-4">
+                                    <p>
+                                        <a class="button is-outlined is-warning" href="3/">
+                                            Read Now
+                                        </a>
+                                    </p>
+                                </div>
+
                             </div>
                         </div>
-                    </a>
+                    </div>
                 </div>
-            
-                <div class="column is-12">
-                    <a class="is-clickable" href="4/">
-                        <div class="card has-glow-md">
-                            <div class="card-content">
-                                <div class="content">
-                                    <h5 class="mb-0">
+            </div>
+        </div>
+        
+        <div
+            class="column is-full-tablet is-full-desktop is-full-widescreen is-full-fullhd is-flex animatedParent animateOnce">
+            <div class="card card-horizontal is-flex-grow-1 animated fadeInUpShort">
+                <div class="card-content p-2">
+                    <div class="columns is-multiline is-variable m-0">
+                        <div class="column">
+                            <div class="content m-0">
+                                <div class="m-0">
+                                    
+                                    <h5 class="title is-5 m-0">
                                         अध्याय १७ - श्लोक ४
                                     </h5>
                                     
                                     
-                                        <hr class="mt-3 mb-3"/>
-                                    
-
-                                    
-
-                                    
-                                        
-                                            <p class="has-text-justified">सतोगुणी व्यक्ति देवताओं को पूजते हैं, रजोगुणी यक्षों व राक्षसों की पूजा करते हैं और तमो गुणी व्यक्ति भूत-प्रेतों को पूजते हैं ।</p>
-                                        
-                                    
+                                
                                 </div>
+                                
+                                
+                                <hr class="m-0 mt-4">
+                                
+                                <div class="m-0 mt-4">
+                                    
+                                    
+                                    <p class="has-text-justified">
+                                        सतोगुणी व्यक्ति देवताओं को पूजते हैं, रजोगुणी यक्षों व राक्षसों की पूजा करते हैं और तमो गुणी व्यक्ति भूत-प्रेतों को पूजते हैं ।
+                                    </p>
+                                    
+
+                                </div>
+                                
+                                
+                                <div class="m-0 mt-4">
+                                    <p>
+                                        <a class="button is-outlined is-warning" href="4/">
+                                            Read Now
+                                        </a>
+                                    </p>
+                                </div>
+
                             </div>
                         </div>
-                    </a>
+                    </div>
                 </div>
-            
-                <div class="column is-12">
-                    <a class="is-clickable" href="5-6/">
-                        <div class="card has-glow-md">
-                            <div class="card-content">
-                                <div class="content">
-                                    <h5 class="mb-0">
+            </div>
+        </div>
+        
+        <div
+            class="column is-full-tablet is-full-desktop is-full-widescreen is-full-fullhd is-flex animatedParent animateOnce">
+            <div class="card card-horizontal is-flex-grow-1 animated fadeInUpShort">
+                <div class="card-content p-2">
+                    <div class="columns is-multiline is-variable m-0">
+                        <div class="column">
+                            <div class="content m-0">
+                                <div class="m-0">
+                                    
+                                    <h5 class="title is-5 m-0">
                                         अध्याय १७ - श्लोक ५,६
                                     </h5>
                                     
                                     
-                                        <hr class="mt-3 mb-3"/>
-                                    
-
-                                    
-
-                                    
-                                        
-                                            <p class="has-text-justified">जो लोग दम्भ तथा अहंकार से अभिभूत होकर शास्त्रविरुद्ध कठोर तपस्या और व्रत करते हैं, जो काम तथा आसक्ति द्वारा प्रेरित होते हैं जो मूर्ख हैं तथा शरीर के भौतिक तत्त्वों को तथा शरीर के भीतर स्थित परमात्मा को कष्ट पहुँचाते हैं, वे असुर कहे जाते हैं ।</p>
-                                        
-                                    
+                                
                                 </div>
+                                
+                                
+                                <hr class="m-0 mt-4">
+                                
+                                <div class="m-0 mt-4">
+                                    
+                                    
+                                    <p class="has-text-justified">
+                                        जो लोग दम्भ तथा अहंकार से अभिभूत होकर शास्त्रविरुद्ध कठोर तपस्या और व्रत करते हैं, जो काम तथा आसक्ति द्वारा प्रेरित होते हैं जो मूर्ख हैं तथा शरीर के भौतिक तत्त्वों को तथा शरीर के भीतर स्थित परमात्मा को कष्ट पहुँचाते हैं, वे असुर कहे जाते हैं ।
+                                    </p>
+                                    
+
+                                </div>
+                                
+                                
+                                <div class="m-0 mt-4">
+                                    <p>
+                                        <a class="button is-outlined is-warning" href="5-6/">
+                                            Read Now
+                                        </a>
+                                    </p>
+                                </div>
+
                             </div>
                         </div>
-                    </a>
+                    </div>
                 </div>
-            
-                <div class="column is-12">
-                    <a class="is-clickable" href="7/">
-                        <div class="card has-glow-md">
-                            <div class="card-content">
-                                <div class="content">
-                                    <h5 class="mb-0">
+            </div>
+        </div>
+        
+        <div
+            class="column is-full-tablet is-full-desktop is-full-widescreen is-full-fullhd is-flex animatedParent animateOnce">
+            <div class="card card-horizontal is-flex-grow-1 animated fadeInUpShort">
+                <div class="card-content p-2">
+                    <div class="columns is-multiline is-variable m-0">
+                        <div class="column">
+                            <div class="content m-0">
+                                <div class="m-0">
+                                    
+                                    <h5 class="title is-5 m-0">
                                         अध्याय १७ - श्लोक ७
                                     </h5>
                                     
                                     
-                                        <hr class="mt-3 mb-3"/>
-                                    
-
-                                    
-
-                                    
-                                        
-                                            <p class="has-text-justified">यहाँ तक कि प्रत्येक व्यक्ति जो भोजन पसन्द करता है, वह भी प्रकृति के अनुसार तीन प्रकार का होता है । यही बात यज्ञ, तपस्या तथा दान के लिए भी सत्य है । अब उनके भेदों के विषय में सुनो ।</p>
-                                        
-                                    
+                                
                                 </div>
+                                
+                                
+                                <hr class="m-0 mt-4">
+                                
+                                <div class="m-0 mt-4">
+                                    
+                                    
+                                    <p class="has-text-justified">
+                                        यहाँ तक कि प्रत्येक व्यक्ति जो भोजन पसन्द करता है, वह भी प्रकृति के अनुसार तीन प्रकार का होता है । यही बात यज्ञ, तपस्या तथा दान के लिए भी सत्य है । अब उनके भेदों के विषय में सुनो ।
+                                    </p>
+                                    
+
+                                </div>
+                                
+                                
+                                <div class="m-0 mt-4">
+                                    <p>
+                                        <a class="button is-outlined is-warning" href="7/">
+                                            Read Now
+                                        </a>
+                                    </p>
+                                </div>
+
                             </div>
                         </div>
-                    </a>
+                    </div>
                 </div>
-            
-                <div class="column is-12">
-                    <a class="is-clickable" href="8/">
-                        <div class="card has-glow-md">
-                            <div class="card-content">
-                                <div class="content">
-                                    <h5 class="mb-0">
+            </div>
+        </div>
+        
+        <div
+            class="column is-full-tablet is-full-desktop is-full-widescreen is-full-fullhd is-flex animatedParent animateOnce">
+            <div class="card card-horizontal is-flex-grow-1 animated fadeInUpShort">
+                <div class="card-content p-2">
+                    <div class="columns is-multiline is-variable m-0">
+                        <div class="column">
+                            <div class="content m-0">
+                                <div class="m-0">
+                                    
+                                    <h5 class="title is-5 m-0">
                                         अध्याय १७ - श्लोक ८
                                     </h5>
                                     
                                     
-                                        <hr class="mt-3 mb-3"/>
-                                    
-
-                                    
-
-                                    
-                                        
-                                            <p class="has-text-justified">जो भोजन सात्त्विक व्यक्तियों को प्रिय होता है, वह आयु बढ़ाने वाला, जीवन को शुद्ध करने वाला तथा बल, स्वास्थ्य, सुख तथा तृप्ति प्रदान करने वाला होता है । ऐसा भोजन रसमय, स्निग्ध, स्वास्थ्यप्रद तथा हृदय को भाने वाला होता है ।</p>
-                                        
-                                    
+                                
                                 </div>
+                                
+                                
+                                <hr class="m-0 mt-4">
+                                
+                                <div class="m-0 mt-4">
+                                    
+                                    
+                                    <p class="has-text-justified">
+                                        जो भोजन सात्त्विक व्यक्तियों को प्रिय होता है, वह आयु बढ़ाने वाला, जीवन को शुद्ध करने वाला तथा बल, स्वास्थ्य, सुख तथा तृप्ति प्रदान करने वाला होता है । ऐसा भोजन रसमय, स्निग्ध, स्वास्थ्यप्रद तथा हृदय को भाने वाला होता है ।
+                                    </p>
+                                    
+
+                                </div>
+                                
+                                
+                                <div class="m-0 mt-4">
+                                    <p>
+                                        <a class="button is-outlined is-warning" href="8/">
+                                            Read Now
+                                        </a>
+                                    </p>
+                                </div>
+
                             </div>
                         </div>
-                    </a>
+                    </div>
                 </div>
-            
-                <div class="column is-12">
-                    <a class="is-clickable" href="9/">
-                        <div class="card has-glow-md">
-                            <div class="card-content">
-                                <div class="content">
-                                    <h5 class="mb-0">
+            </div>
+        </div>
+        
+        <div
+            class="column is-full-tablet is-full-desktop is-full-widescreen is-full-fullhd is-flex animatedParent animateOnce">
+            <div class="card card-horizontal is-flex-grow-1 animated fadeInUpShort">
+                <div class="card-content p-2">
+                    <div class="columns is-multiline is-variable m-0">
+                        <div class="column">
+                            <div class="content m-0">
+                                <div class="m-0">
+                                    
+                                    <h5 class="title is-5 m-0">
                                         अध्याय १७ - श्लोक ९
                                     </h5>
                                     
                                     
-                                        <hr class="mt-3 mb-3"/>
-                                    
-
-                                    
-
-                                    
-                                        
-                                            <p class="has-text-justified">अत्यधिक तिक्त, खट्टे, नमकीन, गरम, चटपटे,शुष्क तथा जलन उत्पन्न करने वाले भोजन रजो गुणी व्यक्तियों को प्रिय होते हैं । ऐसे भोजन दुख, शोक तथा रोग उत्पन्न करने वाले हैं ।</p>
-                                        
-                                    
+                                
                                 </div>
+                                
+                                
+                                <hr class="m-0 mt-4">
+                                
+                                <div class="m-0 mt-4">
+                                    
+                                    
+                                    <p class="has-text-justified">
+                                        अत्यधिक तिक्त, खट्टे, नमकीन, गरम, चटपटे,शुष्क तथा जलन उत्पन्न करने वाले भोजन रजो गुणी व्यक्तियों को प्रिय होते हैं । ऐसे भोजन दुख, शोक तथा रोग उत्पन्न करने वाले हैं ।
+                                    </p>
+                                    
+
+                                </div>
+                                
+                                
+                                <div class="m-0 mt-4">
+                                    <p>
+                                        <a class="button is-outlined is-warning" href="9/">
+                                            Read Now
+                                        </a>
+                                    </p>
+                                </div>
+
                             </div>
                         </div>
-                    </a>
+                    </div>
                 </div>
-            
-                <div class="column is-12">
-                    <a class="is-clickable" href="10/">
-                        <div class="card has-glow-md">
-                            <div class="card-content">
-                                <div class="content">
-                                    <h5 class="mb-0">
+            </div>
+        </div>
+        
+        <div
+            class="column is-full-tablet is-full-desktop is-full-widescreen is-full-fullhd is-flex animatedParent animateOnce">
+            <div class="card card-horizontal is-flex-grow-1 animated fadeInUpShort">
+                <div class="card-content p-2">
+                    <div class="columns is-multiline is-variable m-0">
+                        <div class="column">
+                            <div class="content m-0">
+                                <div class="m-0">
+                                    
+                                    <h5 class="title is-5 m-0">
                                         अध्याय १७ - श्लोक १०
                                     </h5>
                                     
                                     
-                                        <hr class="mt-3 mb-3"/>
-                                    
-
-                                    
-
-                                    
-                                        
-                                            <p class="has-text-justified">खाने से तीन घंटे पूर्व पकाया गया, स्वादहीन, वियोजित एवं सड़ा, जूठा तथा अस्पृश्य वस्तुओं से युक्त भोजन उन लोगों को प्रिय होता है,जो तामसी होते हैं ।</p>
-                                        
-                                    
+                                
                                 </div>
+                                
+                                
+                                <hr class="m-0 mt-4">
+                                
+                                <div class="m-0 mt-4">
+                                    
+                                    
+                                    <p class="has-text-justified">
+                                        खाने से तीन घंटे पूर्व पकाया गया, स्वादहीन, वियोजित एवं सड़ा, जूठा तथा अस्पृश्य वस्तुओं से युक्त भोजन उन लोगों को प्रिय होता है,जो तामसी होते हैं ।
+                                    </p>
+                                    
+
+                                </div>
+                                
+                                
+                                <div class="m-0 mt-4">
+                                    <p>
+                                        <a class="button is-outlined is-warning" href="10/">
+                                            Read Now
+                                        </a>
+                                    </p>
+                                </div>
+
                             </div>
                         </div>
-                    </a>
+                    </div>
                 </div>
-            
-                <div class="column is-12">
-                    <a class="is-clickable" href="11/">
-                        <div class="card has-glow-md">
-                            <div class="card-content">
-                                <div class="content">
-                                    <h5 class="mb-0">
+            </div>
+        </div>
+        
+        <div
+            class="column is-full-tablet is-full-desktop is-full-widescreen is-full-fullhd is-flex animatedParent animateOnce">
+            <div class="card card-horizontal is-flex-grow-1 animated fadeInUpShort">
+                <div class="card-content p-2">
+                    <div class="columns is-multiline is-variable m-0">
+                        <div class="column">
+                            <div class="content m-0">
+                                <div class="m-0">
+                                    
+                                    <h5 class="title is-5 m-0">
                                         अध्याय १७ - श्लोक ११
                                     </h5>
                                     
                                     
-                                        <hr class="mt-3 mb-3"/>
-                                    
-
-                                    
-
-                                    
-                                        
-                                            <p class="has-text-justified">यज्ञों में वही यज्ञ सात्त्विक होता है,जो शास्त्र के निर्देशानुसार कर्तव्य समझ कर उन लोगों के द्वारा किया जाता है, जो फल की इच्छा नहीं करते ।</p>
-                                        
-                                    
+                                
                                 </div>
+                                
+                                
+                                <hr class="m-0 mt-4">
+                                
+                                <div class="m-0 mt-4">
+                                    
+                                    
+                                    <p class="has-text-justified">
+                                        यज्ञों में वही यज्ञ सात्त्विक होता है,जो शास्त्र के निर्देशानुसार कर्तव्य समझ कर उन लोगों के द्वारा किया जाता है, जो फल की इच्छा नहीं करते ।
+                                    </p>
+                                    
+
+                                </div>
+                                
+                                
+                                <div class="m-0 mt-4">
+                                    <p>
+                                        <a class="button is-outlined is-warning" href="11/">
+                                            Read Now
+                                        </a>
+                                    </p>
+                                </div>
+
                             </div>
                         </div>
-                    </a>
+                    </div>
                 </div>
-            
-                <div class="column is-12">
-                    <a class="is-clickable" href="12/">
-                        <div class="card has-glow-md">
-                            <div class="card-content">
-                                <div class="content">
-                                    <h5 class="mb-0">
+            </div>
+        </div>
+        
+        <div
+            class="column is-full-tablet is-full-desktop is-full-widescreen is-full-fullhd is-flex animatedParent animateOnce">
+            <div class="card card-horizontal is-flex-grow-1 animated fadeInUpShort">
+                <div class="card-content p-2">
+                    <div class="columns is-multiline is-variable m-0">
+                        <div class="column">
+                            <div class="content m-0">
+                                <div class="m-0">
+                                    
+                                    <h5 class="title is-5 m-0">
                                         अध्याय १७ - श्लोक १२
                                     </h5>
                                     
                                     
-                                        <hr class="mt-3 mb-3"/>
-                                    
-
-                                    
-
-                                    
-                                        
-                                            <p class="has-text-justified">लेकिन हे भरतश्रेष्ठ! जो यज्ञ किसी भौतिक लाभ के लिए गर्ववश किया जाता है, उसे तुम राजसी जानो |</p>
-                                        
-                                    
+                                
                                 </div>
+                                
+                                
+                                <hr class="m-0 mt-4">
+                                
+                                <div class="m-0 mt-4">
+                                    
+                                    
+                                    <p class="has-text-justified">
+                                        लेकिन हे भरतश्रेष्ठ! जो यज्ञ किसी भौतिक लाभ के लिए गर्ववश किया जाता है, उसे तुम राजसी जानो |
+                                    </p>
+                                    
+
+                                </div>
+                                
+                                
+                                <div class="m-0 mt-4">
+                                    <p>
+                                        <a class="button is-outlined is-warning" href="12/">
+                                            Read Now
+                                        </a>
+                                    </p>
+                                </div>
+
                             </div>
                         </div>
-                    </a>
+                    </div>
                 </div>
-            
-                <div class="column is-12">
-                    <a class="is-clickable" href="13/">
-                        <div class="card has-glow-md">
-                            <div class="card-content">
-                                <div class="content">
-                                    <h5 class="mb-0">
+            </div>
+        </div>
+        
+        <div
+            class="column is-full-tablet is-full-desktop is-full-widescreen is-full-fullhd is-flex animatedParent animateOnce">
+            <div class="card card-horizontal is-flex-grow-1 animated fadeInUpShort">
+                <div class="card-content p-2">
+                    <div class="columns is-multiline is-variable m-0">
+                        <div class="column">
+                            <div class="content m-0">
+                                <div class="m-0">
+                                    
+                                    <h5 class="title is-5 m-0">
                                         अध्याय १७ - श्लोक १३
                                     </h5>
                                     
                                     
-                                        <hr class="mt-3 mb-3"/>
-                                    
-
-                                    
-
-                                    
-                                        
-                                            <p class="has-text-justified">जो यज्ञ शास्त्र के निर्देशों की अवहेलना करके, प्रसाद वितरण किये बिना, वैदिक मन्त्रों का उच्चारण किये बिना, पुरोहितों को दक्षिणा दिये बिना तथा श्रद्धा के बिना सम्पन्न किया जाता है, वह तामसी माना जाता है |</p>
-                                        
-                                    
+                                
                                 </div>
+                                
+                                
+                                <hr class="m-0 mt-4">
+                                
+                                <div class="m-0 mt-4">
+                                    
+                                    
+                                    <p class="has-text-justified">
+                                        जो यज्ञ शास्त्र के निर्देशों की अवहेलना करके, प्रसाद वितरण किये बिना, वैदिक मन्त्रों का उच्चारण किये बिना, पुरोहितों को दक्षिणा दिये बिना तथा श्रद्धा के बिना सम्पन्न किया जाता है, वह तामसी माना जाता है |
+                                    </p>
+                                    
+
+                                </div>
+                                
+                                
+                                <div class="m-0 mt-4">
+                                    <p>
+                                        <a class="button is-outlined is-warning" href="13/">
+                                            Read Now
+                                        </a>
+                                    </p>
+                                </div>
+
                             </div>
                         </div>
-                    </a>
+                    </div>
                 </div>
-            
-                <div class="column is-12">
-                    <a class="is-clickable" href="14/">
-                        <div class="card has-glow-md">
-                            <div class="card-content">
-                                <div class="content">
-                                    <h5 class="mb-0">
+            </div>
+        </div>
+        
+        <div
+            class="column is-full-tablet is-full-desktop is-full-widescreen is-full-fullhd is-flex animatedParent animateOnce">
+            <div class="card card-horizontal is-flex-grow-1 animated fadeInUpShort">
+                <div class="card-content p-2">
+                    <div class="columns is-multiline is-variable m-0">
+                        <div class="column">
+                            <div class="content m-0">
+                                <div class="m-0">
+                                    
+                                    <h5 class="title is-5 m-0">
                                         अध्याय १७ - श्लोक १४
                                     </h5>
                                     
                                     
-                                        <hr class="mt-3 mb-3"/>
-                                    
-
-                                    
-
-                                    
-                                        
-                                            <p class="has-text-justified">परमेश्वर, ब्राह्मणों, गुरु, माता-पिता जैसे गुरुजनों की पूजा करना तथा पवित्रता, सरलता, ब्रह्मचर्य और अहिंसा ही शारीरिक तपस्या है |</p>
-                                        
-                                    
+                                
                                 </div>
+                                
+                                
+                                <hr class="m-0 mt-4">
+                                
+                                <div class="m-0 mt-4">
+                                    
+                                    
+                                    <p class="has-text-justified">
+                                        परमेश्वर, ब्राह्मणों, गुरु, माता-पिता जैसे गुरुजनों की पूजा करना तथा पवित्रता, सरलता, ब्रह्मचर्य और अहिंसा ही शारीरिक तपस्या है |
+                                    </p>
+                                    
+
+                                </div>
+                                
+                                
+                                <div class="m-0 mt-4">
+                                    <p>
+                                        <a class="button is-outlined is-warning" href="14/">
+                                            Read Now
+                                        </a>
+                                    </p>
+                                </div>
+
                             </div>
                         </div>
-                    </a>
+                    </div>
                 </div>
-            
-                <div class="column is-12">
-                    <a class="is-clickable" href="15/">
-                        <div class="card has-glow-md">
-                            <div class="card-content">
-                                <div class="content">
-                                    <h5 class="mb-0">
+            </div>
+        </div>
+        
+        <div
+            class="column is-full-tablet is-full-desktop is-full-widescreen is-full-fullhd is-flex animatedParent animateOnce">
+            <div class="card card-horizontal is-flex-grow-1 animated fadeInUpShort">
+                <div class="card-content p-2">
+                    <div class="columns is-multiline is-variable m-0">
+                        <div class="column">
+                            <div class="content m-0">
+                                <div class="m-0">
+                                    
+                                    <h5 class="title is-5 m-0">
                                         अध्याय १७ - श्लोक १५
                                     </h5>
                                     
                                     
-                                        <hr class="mt-3 mb-3"/>
-                                    
-
-                                    
-
-                                    
-                                        
-                                            <p class="has-text-justified">सच्चे, भाने वाले, हितकर तथा अन्यों को क्षुब्ध न करने वाले वाक्य बोलना और वैदिक साहित्य का नियमित पारायण करना – यही वाणी की तपस्या है ।</p>
-                                        
-                                    
+                                
                                 </div>
+                                
+                                
+                                <hr class="m-0 mt-4">
+                                
+                                <div class="m-0 mt-4">
+                                    
+                                    
+                                    <p class="has-text-justified">
+                                        सच्चे, भाने वाले, हितकर तथा अन्यों को क्षुब्ध न करने वाले वाक्य बोलना और वैदिक साहित्य का नियमित पारायण करना – यही वाणी की तपस्या है ।
+                                    </p>
+                                    
+
+                                </div>
+                                
+                                
+                                <div class="m-0 mt-4">
+                                    <p>
+                                        <a class="button is-outlined is-warning" href="15/">
+                                            Read Now
+                                        </a>
+                                    </p>
+                                </div>
+
                             </div>
                         </div>
-                    </a>
+                    </div>
                 </div>
-            
-                <div class="column is-12">
-                    <a class="is-clickable" href="16/">
-                        <div class="card has-glow-md">
-                            <div class="card-content">
-                                <div class="content">
-                                    <h5 class="mb-0">
+            </div>
+        </div>
+        
+        <div
+            class="column is-full-tablet is-full-desktop is-full-widescreen is-full-fullhd is-flex animatedParent animateOnce">
+            <div class="card card-horizontal is-flex-grow-1 animated fadeInUpShort">
+                <div class="card-content p-2">
+                    <div class="columns is-multiline is-variable m-0">
+                        <div class="column">
+                            <div class="content m-0">
+                                <div class="m-0">
+                                    
+                                    <h5 class="title is-5 m-0">
                                         अध्याय १७ - श्लोक १६
                                     </h5>
                                     
                                     
-                                        <hr class="mt-3 mb-3"/>
-                                    
-
-                                    
-
-                                    
-                                        
-                                            <p class="has-text-justified">तथा संतोष, सरलता, गम्भीरता, आत्म-संयम एवं जीवन की शुद्धि – ये मन की तपस्याएँ हैं |</p>
-                                        
-                                    
+                                
                                 </div>
+                                
+                                
+                                <hr class="m-0 mt-4">
+                                
+                                <div class="m-0 mt-4">
+                                    
+                                    
+                                    <p class="has-text-justified">
+                                        तथा संतोष, सरलता, गम्भीरता, आत्म-संयम एवं जीवन की शुद्धि – ये मन की तपस्याएँ हैं |
+                                    </p>
+                                    
+
+                                </div>
+                                
+                                
+                                <div class="m-0 mt-4">
+                                    <p>
+                                        <a class="button is-outlined is-warning" href="16/">
+                                            Read Now
+                                        </a>
+                                    </p>
+                                </div>
+
                             </div>
                         </div>
-                    </a>
+                    </div>
                 </div>
-            
-                <div class="column is-12">
-                    <a class="is-clickable" href="17/">
-                        <div class="card has-glow-md">
-                            <div class="card-content">
-                                <div class="content">
-                                    <h5 class="mb-0">
+            </div>
+        </div>
+        
+        <div
+            class="column is-full-tablet is-full-desktop is-full-widescreen is-full-fullhd is-flex animatedParent animateOnce">
+            <div class="card card-horizontal is-flex-grow-1 animated fadeInUpShort">
+                <div class="card-content p-2">
+                    <div class="columns is-multiline is-variable m-0">
+                        <div class="column">
+                            <div class="content m-0">
+                                <div class="m-0">
+                                    
+                                    <h5 class="title is-5 m-0">
                                         अध्याय १७ - श्लोक १७
                                     </h5>
                                     
                                     
-                                        <hr class="mt-3 mb-3"/>
-                                    
-
-                                    
-
-                                    
-                                        
-                                            <p class="has-text-justified">भौतिक लाभ की इच्छा न करने वाले तथा केवल परमेश्वर में प्रवृत्त मनुष्यों द्वारा दिव्य श्रद्धा से सम्पन्न यह तीन प्रकार की तपस्या सात्त्विक तपस्या कहलाती है ।</p>
-                                        
-                                    
+                                
                                 </div>
+                                
+                                
+                                <hr class="m-0 mt-4">
+                                
+                                <div class="m-0 mt-4">
+                                    
+                                    
+                                    <p class="has-text-justified">
+                                        भौतिक लाभ की इच्छा न करने वाले तथा केवल परमेश्वर में प्रवृत्त मनुष्यों द्वारा दिव्य श्रद्धा से सम्पन्न यह तीन प्रकार की तपस्या सात्त्विक तपस्या कहलाती है ।
+                                    </p>
+                                    
+
+                                </div>
+                                
+                                
+                                <div class="m-0 mt-4">
+                                    <p>
+                                        <a class="button is-outlined is-warning" href="17/">
+                                            Read Now
+                                        </a>
+                                    </p>
+                                </div>
+
                             </div>
                         </div>
-                    </a>
+                    </div>
                 </div>
-            
-                <div class="column is-12">
-                    <a class="is-clickable" href="18/">
-                        <div class="card has-glow-md">
-                            <div class="card-content">
-                                <div class="content">
-                                    <h5 class="mb-0">
+            </div>
+        </div>
+        
+        <div
+            class="column is-full-tablet is-full-desktop is-full-widescreen is-full-fullhd is-flex animatedParent animateOnce">
+            <div class="card card-horizontal is-flex-grow-1 animated fadeInUpShort">
+                <div class="card-content p-2">
+                    <div class="columns is-multiline is-variable m-0">
+                        <div class="column">
+                            <div class="content m-0">
+                                <div class="m-0">
+                                    
+                                    <h5 class="title is-5 m-0">
                                         अध्याय १७ - श्लोक १८
                                     </h5>
                                     
                                     
-                                        <hr class="mt-3 mb-3"/>
-                                    
-
-                                    
-
-                                    
-                                        
-                                            <p class="has-text-justified">जो तपस्या दंभपूर्वक तथा सम्मान, सत्कार एवं पूजा कराने के लिए सम्पन्न की जाती है, वह राजसी (रजोगुणी) कहलाती है । यह न तो स्थायी होती है न शाश्वत ।</p>
-                                        
-                                    
+                                
                                 </div>
+                                
+                                
+                                <hr class="m-0 mt-4">
+                                
+                                <div class="m-0 mt-4">
+                                    
+                                    
+                                    <p class="has-text-justified">
+                                        जो तपस्या दंभपूर्वक तथा सम्मान, सत्कार एवं पूजा कराने के लिए सम्पन्न की जाती है, वह राजसी (रजोगुणी) कहलाती है । यह न तो स्थायी होती है न शाश्वत ।
+                                    </p>
+                                    
+
+                                </div>
+                                
+                                
+                                <div class="m-0 mt-4">
+                                    <p>
+                                        <a class="button is-outlined is-warning" href="18/">
+                                            Read Now
+                                        </a>
+                                    </p>
+                                </div>
+
                             </div>
                         </div>
-                    </a>
+                    </div>
                 </div>
-            
-                <div class="column is-12">
-                    <a class="is-clickable" href="19/">
-                        <div class="card has-glow-md">
-                            <div class="card-content">
-                                <div class="content">
-                                    <h5 class="mb-0">
+            </div>
+        </div>
+        
+        <div
+            class="column is-full-tablet is-full-desktop is-full-widescreen is-full-fullhd is-flex animatedParent animateOnce">
+            <div class="card card-horizontal is-flex-grow-1 animated fadeInUpShort">
+                <div class="card-content p-2">
+                    <div class="columns is-multiline is-variable m-0">
+                        <div class="column">
+                            <div class="content m-0">
+                                <div class="m-0">
+                                    
+                                    <h5 class="title is-5 m-0">
                                         अध्याय १७ - श्लोक १९
                                     </h5>
                                     
                                     
-                                        <hr class="mt-3 mb-3"/>
-                                    
-
-                                    
-
-                                    
-                                        
-                                            <p class="has-text-justified">मूर्खतावश आत्म-उत्पीड़न के लिए या अन्यों को विनष्ट करने या हानि पहुँचाने के लिए जो तपस्या की जाती है, वह तामसी कहलाती है ।</p>
-                                        
-                                    
+                                
                                 </div>
+                                
+                                
+                                <hr class="m-0 mt-4">
+                                
+                                <div class="m-0 mt-4">
+                                    
+                                    
+                                    <p class="has-text-justified">
+                                        मूर्खतावश आत्म-उत्पीड़न के लिए या अन्यों को विनष्ट करने या हानि पहुँचाने के लिए जो तपस्या की जाती है, वह तामसी कहलाती है ।
+                                    </p>
+                                    
+
+                                </div>
+                                
+                                
+                                <div class="m-0 mt-4">
+                                    <p>
+                                        <a class="button is-outlined is-warning" href="19/">
+                                            Read Now
+                                        </a>
+                                    </p>
+                                </div>
+
                             </div>
                         </div>
-                    </a>
+                    </div>
                 </div>
-            
-                <div class="column is-12">
-                    <a class="is-clickable" href="20/">
-                        <div class="card has-glow-md">
-                            <div class="card-content">
-                                <div class="content">
-                                    <h5 class="mb-0">
+            </div>
+        </div>
+        
+        <div
+            class="column is-full-tablet is-full-desktop is-full-widescreen is-full-fullhd is-flex animatedParent animateOnce">
+            <div class="card card-horizontal is-flex-grow-1 animated fadeInUpShort">
+                <div class="card-content p-2">
+                    <div class="columns is-multiline is-variable m-0">
+                        <div class="column">
+                            <div class="content m-0">
+                                <div class="m-0">
+                                    
+                                    <h5 class="title is-5 m-0">
                                         अध्याय १७ - श्लोक २०
                                     </h5>
                                     
                                     
-                                        <hr class="mt-3 mb-3"/>
-                                    
-
-                                    
-
-                                    
-                                        
-                                            <p class="has-text-justified">जो दान कर्तव्य समझकर, किसी प्रत्युपकार की आशा के बिना, समुचित काल तथा स्थान में और योग्य व्यक्ति को दिया जाता है, वह सात्त्विक माना जाता है ।</p>
-                                        
-                                    
+                                
                                 </div>
+                                
+                                
+                                <hr class="m-0 mt-4">
+                                
+                                <div class="m-0 mt-4">
+                                    
+                                    
+                                    <p class="has-text-justified">
+                                        जो दान कर्तव्य समझकर, किसी प्रत्युपकार की आशा के बिना, समुचित काल तथा स्थान में और योग्य व्यक्ति को दिया जाता है, वह सात्त्विक माना जाता है ।
+                                    </p>
+                                    
+
+                                </div>
+                                
+                                
+                                <div class="m-0 mt-4">
+                                    <p>
+                                        <a class="button is-outlined is-warning" href="20/">
+                                            Read Now
+                                        </a>
+                                    </p>
+                                </div>
+
                             </div>
                         </div>
-                    </a>
+                    </div>
                 </div>
-            
-                <div class="column is-12">
-                    <a class="is-clickable" href="21/">
-                        <div class="card has-glow-md">
-                            <div class="card-content">
-                                <div class="content">
-                                    <h5 class="mb-0">
+            </div>
+        </div>
+        
+        <div
+            class="column is-full-tablet is-full-desktop is-full-widescreen is-full-fullhd is-flex animatedParent animateOnce">
+            <div class="card card-horizontal is-flex-grow-1 animated fadeInUpShort">
+                <div class="card-content p-2">
+                    <div class="columns is-multiline is-variable m-0">
+                        <div class="column">
+                            <div class="content m-0">
+                                <div class="m-0">
+                                    
+                                    <h5 class="title is-5 m-0">
                                         अध्याय १७ - श्लोक २१
                                     </h5>
                                     
                                     
-                                        <hr class="mt-3 mb-3"/>
-                                    
-
-                                    
-
-                                    
-                                        
-                                            <p class="has-text-justified">किन्तु जो दान प्रत्युपकार की भावना से या कर्म फल की इच्छा से या अनिच्छापूर्वक किया जाता है, वह रजोगुणी (राजस) कहलाता है ।</p>
-                                        
-                                    
+                                
                                 </div>
+                                
+                                
+                                <hr class="m-0 mt-4">
+                                
+                                <div class="m-0 mt-4">
+                                    
+                                    
+                                    <p class="has-text-justified">
+                                        किन्तु जो दान प्रत्युपकार की भावना से या कर्म फल की इच्छा से या अनिच्छापूर्वक किया जाता है, वह रजोगुणी (राजस) कहलाता है ।
+                                    </p>
+                                    
+
+                                </div>
+                                
+                                
+                                <div class="m-0 mt-4">
+                                    <p>
+                                        <a class="button is-outlined is-warning" href="21/">
+                                            Read Now
+                                        </a>
+                                    </p>
+                                </div>
+
                             </div>
                         </div>
-                    </a>
+                    </div>
                 </div>
-            
-                <div class="column is-12">
-                    <a class="is-clickable" href="22/">
-                        <div class="card has-glow-md">
-                            <div class="card-content">
-                                <div class="content">
-                                    <h5 class="mb-0">
+            </div>
+        </div>
+        
+        <div
+            class="column is-full-tablet is-full-desktop is-full-widescreen is-full-fullhd is-flex animatedParent animateOnce">
+            <div class="card card-horizontal is-flex-grow-1 animated fadeInUpShort">
+                <div class="card-content p-2">
+                    <div class="columns is-multiline is-variable m-0">
+                        <div class="column">
+                            <div class="content m-0">
+                                <div class="m-0">
+                                    
+                                    <h5 class="title is-5 m-0">
                                         अध्याय १७ - श्लोक २२
                                     </h5>
                                     
                                     
-                                        <hr class="mt-3 mb-3"/>
-                                    
-
-                                    
-
-                                    
-                                        
-                                            <p class="has-text-justified">तथा जो दान किसी अपवित्र स्थान में, अनुचित समय में, किसी अयोग्य व्यक्ति को या बिना समुचित ध्यान तथा आदर से दिया जाता है, वह तामसी कहलाता है ।</p>
-                                        
-                                    
+                                
                                 </div>
+                                
+                                
+                                <hr class="m-0 mt-4">
+                                
+                                <div class="m-0 mt-4">
+                                    
+                                    
+                                    <p class="has-text-justified">
+                                        तथा जो दान किसी अपवित्र स्थान में, अनुचित समय में, किसी अयोग्य व्यक्ति को या बिना समुचित ध्यान तथा आदर से दिया जाता है, वह तामसी कहलाता है ।
+                                    </p>
+                                    
+
+                                </div>
+                                
+                                
+                                <div class="m-0 mt-4">
+                                    <p>
+                                        <a class="button is-outlined is-warning" href="22/">
+                                            Read Now
+                                        </a>
+                                    </p>
+                                </div>
+
                             </div>
                         </div>
-                    </a>
+                    </div>
                 </div>
-            
-                <div class="column is-12">
-                    <a class="is-clickable" href="23/">
-                        <div class="card has-glow-md">
-                            <div class="card-content">
-                                <div class="content">
-                                    <h5 class="mb-0">
+            </div>
+        </div>
+        
+        <div
+            class="column is-full-tablet is-full-desktop is-full-widescreen is-full-fullhd is-flex animatedParent animateOnce">
+            <div class="card card-horizontal is-flex-grow-1 animated fadeInUpShort">
+                <div class="card-content p-2">
+                    <div class="columns is-multiline is-variable m-0">
+                        <div class="column">
+                            <div class="content m-0">
+                                <div class="m-0">
+                                    
+                                    <h5 class="title is-5 m-0">
                                         अध्याय १७ - श्लोक २३
                                     </h5>
                                     
                                     
-                                        <hr class="mt-3 mb-3"/>
-                                    
-
-                                    
-
-                                    
-                                        
-                                            <p class="has-text-justified">सृष्टि के आदिकाल से ऊँ तत् सत् ये तीन शब्द परब्रह्म को सूचित करने के लिए प्रयुक्त किये जाते रहे हैं । ये तीनों सांकेतिक अभिव्यक्तियाँ ब्राह्मणों द्वारा वैदिक मंत्रों का उच्चारण करते समय तथा ब्रह्म को संतुष्ट करने के लिए यज्ञों के समय प्रयुक्त होती थीं ।</p>
-                                        
-                                    
+                                
                                 </div>
+                                
+                                
+                                <hr class="m-0 mt-4">
+                                
+                                <div class="m-0 mt-4">
+                                    
+                                    
+                                    <p class="has-text-justified">
+                                        सृष्टि के आदिकाल से ऊँ तत् सत् ये तीन शब्द परब्रह्म को सूचित करने के लिए प्रयुक्त किये जाते रहे हैं । ये तीनों सांकेतिक अभिव्यक्तियाँ ब्राह्मणों द्वारा वैदिक मंत्रों का उच्चारण करते समय तथा ब्रह्म को संतुष्ट करने के लिए यज्ञों के समय प्रयुक्त होती थीं ।
+                                    </p>
+                                    
+
+                                </div>
+                                
+                                
+                                <div class="m-0 mt-4">
+                                    <p>
+                                        <a class="button is-outlined is-warning" href="23/">
+                                            Read Now
+                                        </a>
+                                    </p>
+                                </div>
+
                             </div>
                         </div>
-                    </a>
+                    </div>
                 </div>
-            
-                <div class="column is-12">
-                    <a class="is-clickable" href="24/">
-                        <div class="card has-glow-md">
-                            <div class="card-content">
-                                <div class="content">
-                                    <h5 class="mb-0">
+            </div>
+        </div>
+        
+        <div
+            class="column is-full-tablet is-full-desktop is-full-widescreen is-full-fullhd is-flex animatedParent animateOnce">
+            <div class="card card-horizontal is-flex-grow-1 animated fadeInUpShort">
+                <div class="card-content p-2">
+                    <div class="columns is-multiline is-variable m-0">
+                        <div class="column">
+                            <div class="content m-0">
+                                <div class="m-0">
+                                    
+                                    <h5 class="title is-5 m-0">
                                         अध्याय १७ - श्लोक २४
                                     </h5>
                                     
                                     
-                                        <hr class="mt-3 mb-3"/>
-                                    
-
-                                    
-
-                                    
-                                        
-                                            <p class="has-text-justified">अतएव योगीजन ब्रह्म की प्राप्ति के लिए शास्त्रीय विधि के अनुसार यज्ञ, दान तथा तप की समस्त क्रियाओं का शुभारम्भ सदैव ओम् से करते हैं ।</p>
-                                        
-                                    
+                                
                                 </div>
+                                
+                                
+                                <hr class="m-0 mt-4">
+                                
+                                <div class="m-0 mt-4">
+                                    
+                                    
+                                    <p class="has-text-justified">
+                                        अतएव योगीजन ब्रह्म की प्राप्ति के लिए शास्त्रीय विधि के अनुसार यज्ञ, दान तथा तप की समस्त क्रियाओं का शुभारम्भ सदैव ओम् से करते हैं ।
+                                    </p>
+                                    
+
+                                </div>
+                                
+                                
+                                <div class="m-0 mt-4">
+                                    <p>
+                                        <a class="button is-outlined is-warning" href="24/">
+                                            Read Now
+                                        </a>
+                                    </p>
+                                </div>
+
                             </div>
                         </div>
-                    </a>
+                    </div>
                 </div>
-            
-                <div class="column is-12">
-                    <a class="is-clickable" href="25/">
-                        <div class="card has-glow-md">
-                            <div class="card-content">
-                                <div class="content">
-                                    <h5 class="mb-0">
+            </div>
+        </div>
+        
+        <div
+            class="column is-full-tablet is-full-desktop is-full-widescreen is-full-fullhd is-flex animatedParent animateOnce">
+            <div class="card card-horizontal is-flex-grow-1 animated fadeInUpShort">
+                <div class="card-content p-2">
+                    <div class="columns is-multiline is-variable m-0">
+                        <div class="column">
+                            <div class="content m-0">
+                                <div class="m-0">
+                                    
+                                    <h5 class="title is-5 m-0">
                                         अध्याय १७ - श्लोक २५
                                     </h5>
                                     
                                     
-                                        <hr class="mt-3 mb-3"/>
-                                    
-
-                                    
-
-                                    
-                                        
-                                            <p class="has-text-justified">मनुष्य को चाहिए कि कर्मफल की इच्छा किये बिना विविध प्रकार के यज्ञ, तप तथा दान को ‘तत्’ शब्द कह कर सम्पन्न करे । ऐसी दिव्य क्रियाओं का उद्देश्य भव-बन्धन से मुक्त होना है ।</p>
-                                        
-                                    
+                                
                                 </div>
+                                
+                                
+                                <hr class="m-0 mt-4">
+                                
+                                <div class="m-0 mt-4">
+                                    
+                                    
+                                    <p class="has-text-justified">
+                                        मनुष्य को चाहिए कि कर्मफल की इच्छा किये बिना विविध प्रकार के यज्ञ, तप तथा दान को ‘तत्’ शब्द कह कर सम्पन्न करे । ऐसी दिव्य क्रियाओं का उद्देश्य भव-बन्धन से मुक्त होना है ।
+                                    </p>
+                                    
+
+                                </div>
+                                
+                                
+                                <div class="m-0 mt-4">
+                                    <p>
+                                        <a class="button is-outlined is-warning" href="25/">
+                                            Read Now
+                                        </a>
+                                    </p>
+                                </div>
+
                             </div>
                         </div>
-                    </a>
+                    </div>
                 </div>
-            
-                <div class="column is-12">
-                    <a class="is-clickable" href="26-27/">
-                        <div class="card has-glow-md">
-                            <div class="card-content">
-                                <div class="content">
-                                    <h5 class="mb-0">
+            </div>
+        </div>
+        
+        <div
+            class="column is-full-tablet is-full-desktop is-full-widescreen is-full-fullhd is-flex animatedParent animateOnce">
+            <div class="card card-horizontal is-flex-grow-1 animated fadeInUpShort">
+                <div class="card-content p-2">
+                    <div class="columns is-multiline is-variable m-0">
+                        <div class="column">
+                            <div class="content m-0">
+                                <div class="m-0">
+                                    
+                                    <h5 class="title is-5 m-0">
                                         अध्याय १७ - श्लोक २६,२७
                                     </h5>
                                     
                                     
-                                        <hr class="mt-3 mb-3"/>
-                                    
-
-                                    
-
-                                    
-                                        
-                                            <p class="has-text-justified">परम सत्य भक्तिमय यज्ञ का लक्ष्य है और उसे सत् शब्द से अभिहित किया जाता है । हे पृथापुत्र! ऐसे यज्ञ का सम्पन्नकर्ता भी सत् कहलाता है जिस प्रकार यज्ञ, तप तथा दान के सारे कर्म भी जो परम पुरुष को प्रसन्न करने के लिए सम्पन्न किये जाते हैं, ‘सत्’ हैं ।</p>
-                                        
-                                    
+                                
                                 </div>
+                                
+                                
+                                <hr class="m-0 mt-4">
+                                
+                                <div class="m-0 mt-4">
+                                    
+                                    
+                                    <p class="has-text-justified">
+                                        परम सत्य भक्तिमय यज्ञ का लक्ष्य है और उसे सत् शब्द से अभिहित किया जाता है । हे पृथापुत्र! ऐसे यज्ञ का सम्पन्नकर्ता भी सत् कहलाता है जिस प्रकार यज्ञ, तप तथा दान के सारे कर्म भी जो परम पुरुष को प्रसन्न करने के लिए सम्पन्न किये जाते हैं, ‘सत्’ हैं ।
+                                    </p>
+                                    
+
+                                </div>
+                                
+                                
+                                <div class="m-0 mt-4">
+                                    <p>
+                                        <a class="button is-outlined is-warning" href="26-27/">
+                                            Read Now
+                                        </a>
+                                    </p>
+                                </div>
+
                             </div>
                         </div>
-                    </a>
+                    </div>
                 </div>
-            
-                <div class="column is-12">
-                    <a class="is-clickable" href="28/">
-                        <div class="card has-glow-md">
-                            <div class="card-content">
-                                <div class="content">
-                                    <h5 class="mb-0">
+            </div>
+        </div>
+        
+        <div
+            class="column is-full-tablet is-full-desktop is-full-widescreen is-full-fullhd is-flex animatedParent animateOnce">
+            <div class="card card-horizontal is-flex-grow-1 animated fadeInUpShort">
+                <div class="card-content p-2">
+                    <div class="columns is-multiline is-variable m-0">
+                        <div class="column">
+                            <div class="content m-0">
+                                <div class="m-0">
+                                    
+                                    <h5 class="title is-5 m-0">
                                         अध्याय १७ - श्लोक २८
                                     </h5>
                                     
                                     
-                                        <hr class="mt-3 mb-3"/>
-                                    
-
-                                    
-
-                                    
-                                        
-                                            <p class="has-text-justified">हे पार्थ! श्रद्धा के बिना यज्ञ, दान या तप के रूप में जो भी किया जाता है, वह नश्वर है । वह असत् कहलाता है और इस जन्म तथा अगले जन्म – दोनों में ही व्यर्थ जाता है ।</p>
-                                        
-                                    
+                                
                                 </div>
+                                
+                                
+                                <hr class="m-0 mt-4">
+                                
+                                <div class="m-0 mt-4">
+                                    
+                                    
+                                    <p class="has-text-justified">
+                                        हे पार्थ! श्रद्धा के बिना यज्ञ, दान या तप के रूप में जो भी किया जाता है, वह नश्वर है । वह असत् कहलाता है और इस जन्म तथा अगले जन्म – दोनों में ही व्यर्थ जाता है ।
+                                    </p>
+                                    
+
+                                </div>
+                                
+                                
+                                <div class="m-0 mt-4">
+                                    <p>
+                                        <a class="button is-outlined is-warning" href="28/">
+                                            Read Now
+                                        </a>
+                                    </p>
+                                </div>
+
                             </div>
                         </div>
-                    </a>
+                    </div>
                 </div>
-            
-        </div>
-    </div>
-</section>
-
-<section class="section pt-0">
-    <div class="container">
-        <article class="message is-warning is-small">
-            <div class="message-body has-text-centered">
-                <p class="mb-3">The BBT was established in 1972 by His Divine Grace A.C. Bhaktivedanta Swami Prabhupada, Founder-Acharya of the International Society for Krishna Consciousness. BBT is the publisher for his books. All material used here belongs to and copyrighted under BBT (Bhaktivedanta Book Trust).</p>
-
-                <p class="mb-3">🙏 Please consider buying books. Below is a beautiful message by Srila Prabhupada 🙏</p>
-
-                <p class="is-italic mb-3">“I specifically formed the BBT to invest in it exclusive rights for the printing of all literature containing my teachings, writings and lectures. In this way the collections are to be divided fifty percent for printing new books and fifty percent for construction of temples.”</p>
             </div>
-        </article>
-    </div>
-</section>
-
-<section class="hero is-light is-small">
-    <div class="hero-body">
-        <div class="container">
-            <nav class="breadcrumb is-centered" aria-label="breadcrumbs">
-                <ul>
-                    
-                        <li >
-                            <a class="is-link has-text-orange" href="/">
-                                <span class="icon is-small">
-                                    <i class="fas fa-home" aria-hidden="true"></i>
-                                </span>
-                                <span>Home</span>
-                            </a>
-                        </li>
-                    
-                        <li >
-                            <a class="is-link has-text-orange" href="/bhagavad-gita-hindi/">
-                                <span class="icon is-small">
-                                    <i class="fas fa-book" aria-hidden="true"></i>
-                                </span>
-                                <span>श्रीमद्भगवद्गीता - यथारूप (हिंदी)</span>
-                            </a>
-                        </li>
-                    
-                        <li class="is-active">
-                            <a  href="">
-                                <span class="icon is-small">
-                                    <i class="fas fa-file-alt" aria-hidden="true"></i>
-                                </span>
-                                <span>अध्याय १७ - श्रद्धात्रयविभागयोग</span>
-                            </a>
-                        </li>
-                    
-                </ul>
-            </nav>
         </div>
+        
+
     </div>
+</section>
+
+<section class="section animatedParent animateOnce">
+    <div class="box glass animated fadeInUpShort">
+        <nav class="breadcrumb is-medium is-centered" aria-label="breadcrumbs">
+            <ul>
+                
+                <li >
+                    <a class="is-link has-text-orange" href="/">
+                        <span class="icon is-small">
+                            <i class="fas fa-home" aria-hidden="true"></i>
+                        </span>
+                        <span>Home</span>
+                    </a>
+                </li>
+                
+                <li >
+                    <a class="is-link has-text-orange" href="/bhagavad-gita-hindi/">
+                        <span class="icon is-small">
+                            <i class="fas fa-book" aria-hidden="true"></i>
+                        </span>
+                        <span>श्रीमद्भगवद्गीता</span>
+                    </a>
+                </li>
+                
+                <li class="is-active">
+                    <a tabindex="-1" href="">
+                        <span class="icon is-small">
+                            <i class="fas fa-file-alt" aria-hidden="true"></i>
+                        </span>
+                        <span>अध्याय १७ - श्रद्धात्रयविभागयोग</span>
+                    </a>
+                </li>
+                
+            </ul>
+        </nav>
+    </div>
+</section>
+
+<section class="section pt-0 animatedParent animateOnce">
+    <article class="box message is-warning is-small p-0 animated fadeInUpShort">
+        <div class="message-header is-justify-content-center">
+            <p>Copyright Notice</p>
+        </div>
+        <div class="message-body has-text-centered">
+            <p class="mb-3">The BBT was established in 1972 by His Divine Grace A.C. Bhaktivedanta Swami Prabhupada, Founder-Acharya of the International Society for Krishna Consciousness. BBT is the publisher for his books. All material used here belongs to and copyrighted under BBT (Bhaktivedanta Book Trust).</p>
+    
+            <p class="is-italic mb-3">“I specifically formed the BBT to invest in it exclusive rights for the printing of all literature containing my teachings, writings and lectures. In this way the collections are to be divided fifty percent for printing new books and fifty percent for construction of temples.”</p>
+
+            <p>- A.C. Bhaktivedanta Swami Prabhupada</p>
+        </div>
+    </article>
 </section>
 
 
 
-    <footer class="footer bg-gradient-light-orange pt-5 pb-5">
+    <!-- <footer class="footer bg-gradient-light-orange pt-5 pb-5">
     <div class="container">
         <div class="content">
             <div class="columns is-multiline is-centered">
@@ -915,7 +1411,51 @@
             </div>
         </div>
     </div>
+</footer> -->
+
+<footer class="footer p-0">
+    <section class="section">
+        <div class="footer-container">
+            <div class="animatedParent animateOnce">
+                <div class="content-w-image is-flex is-centered-mobile">
+                    <figure class="image is-64x64 m-0 animated fadeInUpShort">
+                        <img src="https://www.ancientknowledge.in/static/images/logo.png">
+                    </figure>
+                    <div class="content m-0 is-flex is-flex-direction-column is-justify-content-space-between animated fadeInUpShort">
+                        <h4 class="mt-0">Ancient Knowledge</h4>
+                        <p class="is-centered-mobile">
+                            <a href="https://www.ancientknowledge.in/about/" class="no-decoration">
+                                <span>About</span>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="animatedParent animateOnce">
+                <div class="content animated fadeInUpShort">
+                    <h4 class="is-centered-mobile m-0 mb-4 animated fadeInUpShort delay-500">@PraacheenGyaan</h4>
+                    <p class="has-text-centered is-flex is-justify-content-space-between animatedParent animateOnce">
+                        <a class="box icon facebook is-large fa-2x mb-0 animated growIn delay-500" href="https://www.facebook.com/PraacheenGyaan/" target="_blank">
+                            <i class="fab fa-facebook-square has-text-white"></i>
+                        </a>
+
+                        <a class="box icon instagram is-large fa-2x mb-0 animated growIn delay-1000" href="https://www.instagram.com/PraacheenGyaan/" target="_blank">
+                            <i class="fab fa-instagram-square has-text-white"></i>
+                        </a>
+
+                        <a class="box icon twitter is-large fa-2x mb-0 animated growIn delay-1500" href="https://twitter.com/PraacheenGyaan/" target="_blank">
+                            <i class="fab fa-twitter-square has-text-white"></i>
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
 </footer>
+
+    <script src="https://www.ancientknowledge.in/static/js/jquery.min.js"></script>
+    <script src="https://www.ancientknowledge.in/static/js/script.js"></script>
+    <script src="https://www.ancientknowledge.in/static/js/css3-animate-it.js"></script>
 
     
 </body>

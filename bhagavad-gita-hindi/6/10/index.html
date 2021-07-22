@@ -14,7 +14,7 @@
 
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#ffffff" />
+    <meta name="theme-color" content="#ff902b" />
 
     <!-- Begin SEO tags -->
     <title>Ancient Knowledge | Bhagavad Gita | Hindi</title>
@@ -24,348 +24,338 @@
     <meta property="og:title" content="Ancient Knowledge | Bhagavad Gita | Hindi" />
     <meta property="og:description" content="Read Shrimad Bhagavad Gita - Yatharoop in hindi. श्रीमद्भगवद्गीता - यथारूप हिंदी में पढ़ें। अध्याय ६ - श्लोक १०" />
     <meta property="og:url" content="https://www.ancientknowledge.in" />
-    <meta property="og:image" content="https://www.ancientknowledge.in/static/images/bhagavad-gita-cover-16by9.jpg" />
+    <meta property="og:image" content="https://www.ancientknowledge.in/static/images/bhagavad-gita-cover-4x3.jpg" />
     <meta property="og:type" content="article" />
     
     <meta property="twitter:title" content="Ancient Knowledge | Bhagavad Gita | Hindi" />
     <meta property="twitter:description" content="Read Shrimad Bhagavad Gita - Yatharoop in hindi. श्रीमद्भगवद्गीता - यथारूप हिंदी में पढ़ें। अध्याय ६ - श्लोक १०" />
-    <meta property="twitter:image" content="https://www.ancientknowledge.in/static/images/bhagavad-gita-cover-16by9.jpg" />
+    <meta property="twitter:image" content="https://www.ancientknowledge.in/static/images/bhagavad-gita-cover-4x3.jpg" />
     <!-- End SEO tags -->
 
-    <link rel="stylesheet" href="https://www.ancientknowledge.in/static/css/theme.css" />
-    <link rel="stylesheet" href="https://www.ancientknowledge.in/static/css/theme-custom.css" />
+    <!-- <link rel="stylesheet" href="https://www.ancientknowledge.in/static/css/theme-old.css" /> -->
+    <!-- <link rel="stylesheet" href="https://www.ancientknowledge.in/static/css/switch-control.min.css" /> -->
+    <!-- <link rel="stylesheet" href="https://www.ancientknowledge.in/static/css/theme-custom.css" /> -->
     
     <link rel="icon" href="https://www.ancientknowledge.in/static/images/favicon.ico">
-    <link rel="shortcut icon" type="image/png" href="https://www.ancientknowledge.in/static/images/favicon.png" />
+    <link rel="shortcut icon" type="image/png" href="https://www.ancientknowledge.in/static/images/logo.png" />
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.0/dist/alpine.min.js" defer></script>
     
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-social@1/bin/bulma-social.min.css" />
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" /> -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-social@1/bin/bulma-social.min.css" /> -->
+
+    <link rel="stylesheet" href="https://www.ancientknowledge.in/static/css/bulma.min.css">
+    <link rel="stylesheet" href="https://www.ancientknowledge.in/static/css/theme.css">
+    <link rel="stylesheet" href="https://www.ancientknowledge.in/static/css/animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 
-<body>
-    <nav class="navbar is-warning bg-gradient-light-orange" x-data="{ openNav: false }">
-    <div class="container">
-        <div class="navbar-brand">
-            <a href="https://www.ancientknowledge.in" class="navbar-item">
-                <p class="has-text-weight-normal has-text-orange">
-                    <span>📖</span>
-                    <span class="pl-2">Ancient Knowledge</span>
-                </p>
+<body class="dark-modes">
+    <nav class="navbar is-light glass" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+        <a class="navbar-item pl-4" href="https://www.ancientknowledge.in">
+            <img src="https://www.ancientknowledge.in/static/images/logo.png" width="28" height="28">
+            <span class="pl-4">
+                Ancient Knowledge
+            </span>
+        </a>
+
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+            data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+    </div>
+
+    <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+            <a class="navbar-item" href="https://www.ancientknowledge.in/about/">
+                About
             </a>
-            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navMenu"
-                :class="{ 'is-active': openNav }" x-on:click="openNav = !openNav">
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-            </a>
-        </div>
-        <div class="navbar-menu" id="navMenu" :class="{ 'is-active': openNav }">
-            <div class="navbar-end">
-                <a href="https://www.ancientknowledge.in/about/" class="navbar-item has-text-weight-normal has-text-orange">About</a>
-            </div>
         </div>
     </div>
 </nav>
 
     
-    <section class="hero is-small is-bold is-dark bg-gradient-orange">
-    <div class="hero-body">
-        <div class="container has-text-centered p-5">
-            <h4 class="title is-4">श्रीमद्भगवद्गीता - यथारूप (हिंदी)</h4>
-        </div>
-    </div>
-</section>
-    
-
-    <div class="content is-centered has-text-centered" style="display: none;">
-        <h1>Ancient Knowledge</h1>
-        <h2>Recollecting the lost knowledge</h2>
-        <h3>Ancient Knowledge | Bhagavad Gita | Hindi</h3>
-        <p>Read Shrimad Bhagavad Gita - Yatharoop in hindi. श्रीमद्भगवद्गीता - यथारूप हिंदी में पढ़ें। अध्याय ६ - श्लोक १०</p>
-        <div class="tags is-centered">
-            
-                <span class="tag">Ancient</span>
-            
-                <span class="tag">Knowledge</span>
-            
-                <span class="tag">India</span>
-            
-                <span class="tag">Shrimad</span>
-            
-                <span class="tag">Bhagavad</span>
-            
-                <span class="tag">Gita</span>
-            
-                <span class="tag">Yatharoop</span>
-            
-                <span class="tag">As It Is</span>
-            
-                <span class="tag">Mahabharat</span>
-            
-                <span class="tag">Krishna</span>
-            
-                <span class="tag">Prabhupad</span>
-            
-                <span class="tag">Hindi</span>
-            
-        </div>
-    </div>
 
     
 
-<section class="hero is-light is-small">
-    <div class="hero-body">
-        <div class="container">
-            <nav class="breadcrumb is-centered" aria-label="breadcrumbs">
-                <ul>
-                    
-                        <li >
-                            <a class="is-link has-text-orange" href="/">
-                                <span class="icon is-small">
-                                    <i class="fas fa-home" aria-hidden="true"></i>
-                                </span>
-                                <span>Home</span>
-                            </a>
-                        </li>
-                    
-                        <li >
-                            <a class="is-link has-text-orange" href="/bhagavad-gita-hindi/">
-                                <span class="icon is-small">
-                                    <i class="fas fa-book" aria-hidden="true"></i>
-                                </span>
-                                <span>श्रीमद्भगवद्गीता - यथारूप (हिंदी)</span>
-                            </a>
-                        </li>
-                    
-                        <li >
-                            <a class="is-link has-text-orange" href="/bhagavad-gita-hindi/6/">
-                                <span class="icon is-small">
-                                    <i class="fas fa-file-alt" aria-hidden="true"></i>
-                                </span>
-                                <span>अध्याय ६ - ध्यानयोग</span>
-                            </a>
-                        </li>
-                    
-                        <li class="is-active">
-                            <a  href="">
-                                <span class="icon is-small">
-                                    <i class="fas fa-quote-right" aria-hidden="true"></i>
-                                </span>
-                                <span>श्लोक १०</span>
-                            </a>
-                        </li>
-                    
-                </ul>
-            </nav>
-        </div>
+<!-- Margin top behind navbar -->
+<div class="mt-6"></div>
+
+<style>
+    :root {
+        --page-background-image: url(/static/images/bhagavad-gita-cover-4x3.jpg);
+    }
+</style>
+<div class="image-background"></div>
+
+<section class="section animatedParent animateOnce">
+    <div class="box glass animated fadeInUpShort">
+        <nav class="breadcrumb is-medium is-centered" aria-label="breadcrumbs">
+            <ul>
+                
+                <li >
+                    <a class="is-link has-text-orange" href="/">
+                        <span class="icon is-small">
+                            <i class="fas fa-home" aria-hidden="true"></i>
+                        </span>
+                        <span>Home</span>
+                    </a>
+                </li>
+                
+                <li >
+                    <a class="is-link has-text-orange" href="/bhagavad-gita-hindi/">
+                        <span class="icon is-small">
+                            <i class="fas fa-book" aria-hidden="true"></i>
+                        </span>
+                        <span>श्रीमद्भगवद्गीता</span>
+                    </a>
+                </li>
+                
+                <li >
+                    <a class="is-link has-text-orange" href="/bhagavad-gita-hindi/6/">
+                        <span class="icon is-small">
+                            <i class="fas fa-file-alt" aria-hidden="true"></i>
+                        </span>
+                        <span>अध्याय ६ - ध्यानयोग</span>
+                    </a>
+                </li>
+                
+                <li class="is-active">
+                    <a tabindex="-1" href="">
+                        <span class="icon is-small">
+                            <i class="fas fa-quote-right" aria-hidden="true"></i>
+                        </span>
+                        <span>श्लोक १०</span>
+                    </a>
+                </li>
+                
+            </ul>
+        </nav>
     </div>
 </section>
 
-<section
-    class="
-        section
-        content-card-section
-        pb-0
-    "
-    oncopy="return false" oncut="return false" onpaste="return false"
->
-    <div class="container">
-        <div class="card has-glow-md">
-            <div class="card-content">
-                <div class="content is-medium">
-                    <h5 class="has-text-centered ">
-                        अध्याय ६ - श्लोक १०
-                        
-                    </h5>
-                    
-                    <hr/>
-
-                    
-                        
-                            <div
-                                
-                                    class="mb-5"
-                                
-                            >
-                                
-                                    <p class="has-text-centered has-text-weight-bold mb-1">
+<section class="section pt-0 pb-0">
+    <div class="columns is-multiline is-centered is-variable is-4">
+        <div
+            class="column is-full-tablet is-full-desktop is-full-widescreen is-full-fullhd is-flex animatedParent animateOnce">
+            <div class="card card-horizontal is-flex-grow-1 animated fadeInUpShort">
+                <div class="card-content p-2 pt-4 pb-4">
+                    <div class="columns is-multiline is-variable m-0">
+                        <div class="column">
+                            <div class="content is-medium m-0">
+                                <div class="">
+                                    
+                                    
                                         
-                                            योगी युञ्जीत सततमात्मानं रहसि स्थितः ।
+                                            <div
+                                                
+                                                    class="mb-5"
+                                                
+                                            >
+                                                
+                                                    <p class="has-text-centered has-text-weight-bold mb-1">
+                                                        
+                                                            योगी युञ्जीत सततमात्मानं रहसि स्थितः ।
+                                                        
+                                                    </p>
+                                                
+                                                    <p class="has-text-centered has-text-weight-bold mb-1">
+                                                        
+                                                            एकाकी यतचित्तात्मा निराशीरपरिग्रहः ॥ १० ॥
+                                                        
+                                                    </p>
+                                                
+                                            </div>
                                         
-                                    </p>
-                                
-                                    <p class="has-text-centered has-text-weight-bold mb-1">
+                                    
+                                    
+                                    
                                         
-                                            एकाकी यतचित्तात्मा निराशीरपरिग्रहः ॥ १० ॥
+                                            <div
+                                                
+                                                    class="mb-3"
+                                                
+                                            >
+                                                
+                                                    <p class="has-text-centered has-text-weight-bold">
+                                                        
+                                                            शब्दार्थ
+                                                        
+                                                    </p>
+                                                
+                                            </div>
                                         
-                                    </p>
-                                
+                                    
+                                    
+                                    
+                                        
+                                            <div
+                                                
+                                                    class="mb-5"
+                                                
+                                            >
+                                                
+                                                    <p class="has-text-justified">
+                                                        
+                                                            <strong>योगी</strong> – योगी; <strong>युञ्जित</strong> – कृष्णचेतना में केन्द्रित करे; <strong>सततम्</strong> – निरन्तर; <strong>आत्मानम्</strong> – स्वयं को (मन, शरीर तथा आत्मा से); <strong>रहसि</strong> – एकान्त स्थान में; <strong>स्थितः</strong> – स्थित होकर; <strong>एकाकी</strong> – अकेले; <strong>यात-चित्त-आत्मा</strong> – मन में सदैव सचेत; <strong>निराशीः</strong> – किसी अन्य वस्तु से आकृष्ट हुए बिना; <strong>अपरिग्रहः</strong> – स्वामित्व की भावना से रहित, संग्रहभाव से मुक्त |
+                                                        
+                                                    </p>
+                                                
+                                            </div>
+                                        
+                                    
+                                    
+                                    
+                                        
+                                            <div
+                                                
+                                                    class="mb-3"
+                                                
+                                            >
+                                                
+                                                    <p class="has-text-centered has-text-weight-bold">
+                                                        
+                                                            भावार्थ
+                                                        
+                                                    </p>
+                                                
+                                            </div>
+                                        
+                                    
+                                    
+                                    
+                                        
+                                            <div
+                                                
+                                                    class="mb-5"
+                                                
+                                            >
+                                                
+                                                    <p class="has-text-justified">
+                                                        
+                                                            योगी को चाहिए कि वह सदैव अपने शरीर, मन तथा आत्मा को परमेश्वर में लगाए, एकान्त स्थान में रहे और बड़ी सावधानी के साथ अपने मन को वश में करे | उसे समस्त आकांक्षाओं तथा संग्रहभाव से मुक्त होना चाहिए |
+                                                        
+                                                    </p>
+                                                
+                                            </div>
+                                        
+                                    
+                                    
+                                    
+                                        
+                                            <div
+                                                
+                                                    class="mb-3"
+                                                
+                                            >
+                                                
+                                                    <p class="has-text-centered has-text-weight-bold">
+                                                        
+                                                            तात्पर्य
+                                                        
+                                                    </p>
+                                                
+                                            </div>
+                                        
+                                    
+                                    
+                                    
+                                        
+                                            <div
+                                                
+                                                    class="mb-5"
+                                                
+                                            >
+                                                
+                                                    <p class="has-text-justified">
+                                                        
+                                                            कृष्ण की अनुभूति ब्रह्म, परमात्मा तथा श्रीभगवान् के विभिन्न रूपों में होती है | संक्षेप में, कृष्णभावनामृत का अर्थ है – भगवान् की दिव्य प्रेमाभक्ति में निरन्तर प्रवृत्त रहना | किन्तु जो लोग निराकार ब्रह्म अथवा अन्तर्यामी परमात्मा के प्रति आसक्त होते हैं, वे भी आंशिक रूप से कृष्णभावनाभावित हैं क्योंकि निराकार ब्रह्म कृष्ण की आध्यात्मिक किरण है और परमात्मा कृष्ण का सर्वव्यापी आंशिक विस्तार होता है | इस प्रकार निर्विशेषवादी तथा ध्यानयोगी भी अपरोक्ष रूप से कृष्णभावनाभावित होते हैं | प्रत्यक्ष कृष्णभावनाभावित व्यक्ति सर्वोच्च योगी होता है क्योंकि ऐसा भक्त जानता है कि ब्रह्म तथा परमात्मा क्या हैं | उसका परम सत्य विषयक ज्ञान पूर्ण होता है, जबकि निर्विशेषवादी तथा ध्यानयोगी अपूर्ण रूप में कृष्णभावनाभावित होते हैं |
+                                                        
+                                                    </p>
+                                                
+                                                    <p class="has-text-justified">
+                                                        
+                                                            इतने पर भी इन सबों को अपने-अपने कार्यों में निरन्तर लगे रहने का आदेश दिया जाता है, जिससे वे देर-सवेर परम सिद्धि प्राप्त कर सकें | योगी का पहला कर्तव्य है कि वह कृष्ण पर अपना ध्यान सदैव एकाग्र रखे | उसे सदैव कृष्ण का चिन्तन करना चाहिए और एक क्षण के लिए भी उन्हें नहीं भुलाना चाहिए | परमेश्वर में मन की एकाग्रता ही समाधि कहलाती है | मन को एकाग्र करने के लिए सदैव एकान्तवास करना चाहिए और बाहरी उपद्रवों से बचना चाहिए | योगी को चाहिए कि वह अनुकूल परिस्थियों को ग्रहण करे और प्रतिकूल परिस्थितियों को त्याग दे, जिससे उसकी अनुभूति पर कोई प्रभाव न पड़े | पूर्ण संकल्प कर लेने पर उसे उन व्यर्थ की वस्तुओं के पीछे नहीं पड़ना चाहिए जो परिग्रह भाव में उसे फँसा लें |
+                                                        
+                                                    </p>
+                                                
+                                                    <p class="has-text-justified">
+                                                        
+                                                            ये सारी सिद्धियाँ तथा सावधानियाँ तभी पूर्णरूपेण कार्यान्वित हो सकती हैं जब मनुष्य प्रत्यक्षतः कृष्णभावनाभावित हो क्योंकि साक्षात् कृष्णभावनामृत का अर्थ है – आत्मोसर्ग जिसमें संग्रहभाव (परिग्रह) के लिए लेशमात्र स्थान नहीं होता | श्रील रूपगोस्वामी कृष्णभावनामृत का लक्षण इस प्रकार देते हैं –
+                                                        
+                                                    </p>
+                                                
+                                            </div>
+                                        
+                                    
+                                    
+                                    
+                                        
+                                            <div
+                                                
+                                                    class="mb-5"
+                                                
+                                            >
+                                                
+                                                    <p class="has-text-centered is-italic mb-1">
+                                                        
+                                                            अनासक्तय विषयान् यथार्हमुपयुञ्जतः |
+                                                        
+                                                    </p>
+                                                
+                                                    <p class="has-text-centered is-italic mb-1">
+                                                        
+                                                            निर्बन्धः कृष्णसम्बन्धे युक्तं वैराग्यमुच्यते ||
+                                                        
+                                                    </p>
+                                                
+                                                    <p class="has-text-centered is-italic mb-1">
+                                                        
+                                                            प्रापञ्चिकतया बुद्धया हरिसम्बन्धिवस्तुनः |
+                                                        
+                                                    </p>
+                                                
+                                                    <p class="has-text-centered is-italic mb-1">
+                                                        
+                                                            मुमुक्षुभिः परित्यागो वैराग्यं फल्गु कथ्यते ||
+                                                        
+                                                    </p>
+                                                
+                                            </div>
+                                        
+                                    
+                                    
+                                    
+                                        
+                                            <div
+                                                
+                                            >
+                                                
+                                                    <p class="has-text-justified">
+                                                        
+                                                            “जब मनुष्य किसी वस्तु के प्रति आसक्त न रहते हुए कृष्ण से सम्बन्धित हर वस्तु को स्वीकार कर लेता है, तभी वह परिग्रहत्व से ऊपर स्थित रहता है | दूसरी ओर, जो व्यक्ति कृष्ण से सम्बन्धित वस्तु को बिना जाने त्याग देता है उसका वैराग्य पूर्ण नहीं होता |” (भक्तिरसामृत सिन्धु २.२५५ – २५६) |
+                                                        
+                                                    </p>
+                                                
+                                                    <p class="has-text-justified">
+                                                        
+                                                            कृष्णभावनाभावित व्यक्ति भलीभाँति जानता रहता है कि प्रत्येक वस्तु श्रीकृष्ण की है, फलस्वरूप वह सभी प्रकार के परिग्रहभाव से मुक्त रहता है | इस प्रकार वह अपने लिए किसी वस्तु की लालसा नहीं करता | वह जानता है कि किस प्रकार कृष्णभावनामृत के अनुरूप वस्तुओं को स्वीकार किया जाता है और कृष्णभावनामृत के प्रतिकूल वस्तुओं का परित्याग कर दिया जाता है |वह सदैव भौतिक वस्तुओं से दूर रहता है, क्योंकि वह दिव्य होता है और कृष्णभावनामृत से रहित व्यक्तियों से किसी प्रकार का सरोकार न रखने के कारण सदा अकेला रहता है | अतः कृष्णभावनामृत में रहने वाला व्यक्ति पूर्णयोगी होता है |
+                                                        
+                                                    </p>
+                                                
+                                            </div>
+                                        
+                                    
+                                    
+                                </div>
                             </div>
-                        
-                    
-                        
-                            <div
-                                
-                                    class="mb-3"
-                                
-                            >
-                                
-                                    <p class="has-text-centered has-text-weight-bold">
-                                        
-                                            शब्दार्थ
-                                        
-                                    </p>
-                                
-                            </div>
-                        
-                    
-                        
-                            <div
-                                
-                                    class="mb-5"
-                                
-                            >
-                                
-                                    <p class="has-text-justified">
-                                        
-                                            <strong>योगी</strong> – योगी; <strong>युञ्जित</strong> – कृष्णचेतना में केन्द्रित करे; <strong>सततम्</strong> – निरन्तर; <strong>आत्मानम्</strong> – स्वयं को (मन, शरीर तथा आत्मा से); <strong>रहसि</strong> – एकान्त स्थान में; <strong>स्थितः</strong> – स्थित होकर; <strong>एकाकी</strong> – अकेले; <strong>यात-चित्त-आत्मा</strong> – मन में सदैव सचेत; <strong>निराशीः</strong> – किसी अन्य वस्तु से आकृष्ट हुए बिना; <strong>अपरिग्रहः</strong> – स्वामित्व की भावना से रहित, संग्रहभाव से मुक्त |
-                                        
-                                    </p>
-                                
-                            </div>
-                        
-                    
-                        
-                            <div
-                                
-                                    class="mb-3"
-                                
-                            >
-                                
-                                    <p class="has-text-centered has-text-weight-bold">
-                                        
-                                            भावार्थ
-                                        
-                                    </p>
-                                
-                            </div>
-                        
-                    
-                        
-                            <div
-                                
-                                    class="mb-5"
-                                
-                            >
-                                
-                                    <p class="has-text-justified">
-                                        
-                                            योगी को चाहिए कि वह सदैव अपने शरीर, मन तथा आत्मा को परमेश्वर में लगाए, एकान्त स्थान में रहे और बड़ी सावधानी के साथ अपने मन को वश में करे | उसे समस्त आकांक्षाओं तथा संग्रहभाव से मुक्त होना चाहिए |
-                                        
-                                    </p>
-                                
-                            </div>
-                        
-                    
-                        
-                            <div
-                                
-                                    class="mb-3"
-                                
-                            >
-                                
-                                    <p class="has-text-centered has-text-weight-bold">
-                                        
-                                            तात्पर्य
-                                        
-                                    </p>
-                                
-                            </div>
-                        
-                    
-                        
-                            <div
-                                
-                                    class="mb-5"
-                                
-                            >
-                                
-                                    <p class="has-text-justified">
-                                        
-                                            कृष्ण की अनुभूति ब्रह्म, परमात्मा तथा श्रीभगवान् के विभिन्न रूपों में होती है | संक्षेप में, कृष्णभावनामृत का अर्थ है – भगवान् की दिव्य प्रेमाभक्ति में निरन्तर प्रवृत्त रहना | किन्तु जो लोग निराकार ब्रह्म अथवा अन्तर्यामी परमात्मा के प्रति आसक्त होते हैं, वे भी आंशिक रूप से कृष्णभावनाभावित हैं क्योंकि निराकार ब्रह्म कृष्ण की आध्यात्मिक किरण है और परमात्मा कृष्ण का सर्वव्यापी आंशिक विस्तार होता है | इस प्रकार निर्विशेषवादी तथा ध्यानयोगी भी अपरोक्ष रूप से कृष्णभावनाभावित होते हैं | प्रत्यक्ष कृष्णभावनाभावित व्यक्ति सर्वोच्च योगी होता है क्योंकि ऐसा भक्त जानता है कि ब्रह्म तथा परमात्मा क्या हैं | उसका परम सत्य विषयक ज्ञान पूर्ण होता है, जबकि निर्विशेषवादी तथा ध्यानयोगी अपूर्ण रूप में कृष्णभावनाभावित होते हैं |
-                                        
-                                    </p>
-                                
-                                    <p class="has-text-justified">
-                                        
-                                            इतने पर भी इन सबों को अपने-अपने कार्यों में निरन्तर लगे रहने का आदेश दिया जाता है, जिससे वे देर-सवेर परम सिद्धि प्राप्त कर सकें | योगी का पहला कर्तव्य है कि वह कृष्ण पर अपना ध्यान सदैव एकाग्र रखे | उसे सदैव कृष्ण का चिन्तन करना चाहिए और एक क्षण के लिए भी उन्हें नहीं भुलाना चाहिए | परमेश्वर में मन की एकाग्रता ही समाधि कहलाती है | मन को एकाग्र करने के लिए सदैव एकान्तवास करना चाहिए और बाहरी उपद्रवों से बचना चाहिए | योगी को चाहिए कि वह अनुकूल परिस्थियों को ग्रहण करे और प्रतिकूल परिस्थितियों को त्याग दे, जिससे उसकी अनुभूति पर कोई प्रभाव न पड़े | पूर्ण संकल्प कर लेने पर उसे उन व्यर्थ की वस्तुओं के पीछे नहीं पड़ना चाहिए जो परिग्रह भाव में उसे फँसा लें |
-                                        
-                                    </p>
-                                
-                                    <p class="has-text-justified">
-                                        
-                                            ये सारी सिद्धियाँ तथा सावधानियाँ तभी पूर्णरूपेण कार्यान्वित हो सकती हैं जब मनुष्य प्रत्यक्षतः कृष्णभावनाभावित हो क्योंकि साक्षात् कृष्णभावनामृत का अर्थ है – आत्मोसर्ग जिसमें संग्रहभाव (परिग्रह) के लिए लेशमात्र स्थान नहीं होता | श्रील रूपगोस्वामी कृष्णभावनामृत का लक्षण इस प्रकार देते हैं –
-                                        
-                                    </p>
-                                
-                            </div>
-                        
-                    
-                        
-                            <div
-                                
-                                    class="mb-5"
-                                
-                            >
-                                
-                                    <p class="has-text-centered is-italic mb-1">
-                                        
-                                            अनासक्तय विषयान् यथार्हमुपयुञ्जतः |
-                                        
-                                    </p>
-                                
-                                    <p class="has-text-centered is-italic mb-1">
-                                        
-                                            निर्बन्धः कृष्णसम्बन्धे युक्तं वैराग्यमुच्यते ||
-                                        
-                                    </p>
-                                
-                                    <p class="has-text-centered is-italic mb-1">
-                                        
-                                            प्रापञ्चिकतया बुद्धया हरिसम्बन्धिवस्तुनः |
-                                        
-                                    </p>
-                                
-                                    <p class="has-text-centered is-italic mb-1">
-                                        
-                                            मुमुक्षुभिः परित्यागो वैराग्यं फल्गु कथ्यते ||
-                                        
-                                    </p>
-                                
-                            </div>
-                        
-                    
-                        
-                            <div
-                                
-                            >
-                                
-                                    <p class="has-text-justified">
-                                        
-                                            “जब मनुष्य किसी वस्तु के प्रति आसक्त न रहते हुए कृष्ण से सम्बन्धित हर वस्तु को स्वीकार कर लेता है, तभी वह परिग्रहत्व से ऊपर स्थित रहता है | दूसरी ओर, जो व्यक्ति कृष्ण से सम्बन्धित वस्तु को बिना जाने त्याग देता है उसका वैराग्य पूर्ण नहीं होता |” (भक्तिरसामृत सिन्धु २.२५५ – २५६) |
-                                        
-                                    </p>
-                                
-                                    <p class="has-text-justified">
-                                        
-                                            कृष्णभावनाभावित व्यक्ति भलीभाँति जानता रहता है कि प्रत्येक वस्तु श्रीकृष्ण की है, फलस्वरूप वह सभी प्रकार के परिग्रहभाव से मुक्त रहता है | इस प्रकार वह अपने लिए किसी वस्तु की लालसा नहीं करता | वह जानता है कि किस प्रकार कृष्णभावनामृत के अनुरूप वस्तुओं को स्वीकार किया जाता है और कृष्णभावनामृत के प्रतिकूल वस्तुओं का परित्याग कर दिया जाता है |वह सदैव भौतिक वस्तुओं से दूर रहता है, क्योंकि वह दिव्य होता है और कृष्णभावनामृत से रहित व्यक्तियों से किसी प्रकार का सरोकार न रखने के कारण सदा अकेला रहता है | अतः कृष्णभावनामृत में रहने वाला व्यक्ति पूर्णयोगी होता है |
-                                        
-                                    </p>
-                                
-                            </div>
-                        
-                    
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -373,178 +363,184 @@
 </section>
 
 
-    <section class="section pt-0">
-        <div class="container mt-6">
-            <div class="pagination-container">
-    <nav class="pagination is-centered" role="navigation" aria-label="pagination">
-        
-        <!-- previous page button -->
-        <a
-            class="pagination-previous pagination-button button is-orange is-outlined"
-            
-                href="/bhagavad-gita-hindi/6/9/"
-            
-        >
-            पिछला श्लोक
-        </a>
-
-        <!-- next page button -->
-        <a
-            class="pagination-next pagination-button button is-orange is-outlined"
-            
-                href="/bhagavad-gita-hindi/6/11-12/"
-            
-        >
-        अगला श्लोक
-        </a>
-
-        <ul class="pagination-list">
-            
-            
-                <li>
-                    <a
-                        class="pagination-link"
-                        
-                            href="/bhagavad-gita-hindi/6/1/"
-                        
-                    >
-                        1
-                    </a>
-                </li>
+<section class="section animatedParent animateOnce pb-0">
+    <div class="box glass animated fadeInUpShort">
+        <nav class="pagination is-centered" role="navigation" aria-label="pagination">
+            <!-- previous page button -->
+            <a
+                class="button is-outlined is-warning pagination-previous pagination-button button is-orange is-outlined"
                 
+                    href="/bhagavad-gita-hindi/6/9/"
                 
-                    
-                        <li>
-                            <span class="pagination-ellipsis">…</span>
-                        </li>
-                    
+            >
+                पिछला श्लोक
+            </a>
 
-                    <li>
-                        <a
-                            class="pagination-link"
-                            href="/bhagavad-gita-hindi/6/9/"
-                        >
-                            9
-                        </a>
-                    </li>
+            <!-- next page button -->
+            <!-- <a
+                class="button is-outlined is-warning pagination-next pagination-button button is-orange is-outlined"
                 
-            
-            
-            
-            
-            <li>
-                <a
-                    class="pagination-link is-current"
-                    aria-current="page"
-                    disabled
-                >
-                    10
-                </a>
-            </li>
-            
+                    href="/bhagavad-gita-hindi/6/11-12/"
+                
+            >
+            अगला श्लोक -->
+            </a>
 
-            
-            
+            <ul class="pagination-list">
+                
                 
                     <li>
                         <a
-                            class="pagination-link"
-                            href="/bhagavad-gita-hindi/6/11-12/"
+                            class="button is-outlined is-warning pagination-link"
+                            
+                                href="/bhagavad-gita-hindi/6/1/"
+                            
                         >
-                            11-12
+                            1
                         </a>
                     </li>
                     
+                    
+                        
+                            <li>
+                                <span class="pagination-ellipsis">…</span>
+                            </li>
+                        
+
                         <li>
-                            <span class="pagination-ellipsis">…</span>
+                            <a
+                                class="button is-outlined is-warning pagination-link"
+                                href="/bhagavad-gita-hindi/6/9/"
+                            >
+                                9
+                            </a>
                         </li>
                     
+                
+                
                 
                 
                 <li>
                     <a
-                        class="pagination-link"
-                        
-                            href="/bhagavad-gita-hindi/6/47/"
-                        
+                        class="button is-outlined is-warning pagination-link is-current" tabindex="-1"
+                        aria-current="page"
+                        disabled
                     >
-                        47
+                        10
                     </a>
                 </li>
-            
-            
-        </ul>
-    </nav>
-</div>
-        </div>
-    </section>
+                
 
-
-<section class="section pt-0">
-    <div class="container">
-        <article class="message is-warning is-small">
-            <div class="message-body has-text-centered">
-                <p class="mb-3">The BBT was established in 1972 by His Divine Grace A.C. Bhaktivedanta Swami Prabhupada, Founder-Acharya of the International Society for Krishna Consciousness. BBT is the publisher for his books. All material used here belongs to and copyrighted under BBT (Bhaktivedanta Book Trust).</p>
-
-                <p class="mb-3">🙏 Please consider buying books. Below is a beautiful message by Srila Prabhupada 🙏</p>
-
-                <p class="is-italic mb-3">“I specifically formed the BBT to invest in it exclusive rights for the printing of all literature containing my teachings, writings and lectures. In this way the collections are to be divided fifty percent for printing new books and fifty percent for construction of temples.”</p>
-            </div>
-        </article>
-    </div>
-</section>
-
-<section class="hero is-light is-small">
-    <div class="hero-body">
-        <div class="container">
-            <nav class="breadcrumb is-centered" aria-label="breadcrumbs">
-                <ul>
+                
+                
                     
-                        <li >
-                            <a class="is-link has-text-orange" href="/">
-                                <span class="icon is-small">
-                                    <i class="fas fa-home" aria-hidden="true"></i>
-                                </span>
-                                <span>Home</span>
+                        <li>
+                            <a
+                                class="button is-outlined is-warning pagination-link"
+                                href="/bhagavad-gita-hindi/6/11-12/"
+                            >
+                                11-12
                             </a>
                         </li>
+                        
+                            <li>
+                                <span class="pagination-ellipsis">…</span>
+                            </li>
+                        
                     
-                        <li >
-                            <a class="is-link has-text-orange" href="/bhagavad-gita-hindi/">
-                                <span class="icon is-small">
-                                    <i class="fas fa-book" aria-hidden="true"></i>
-                                </span>
-                                <span>श्रीमद्भगवद्गीता - यथारूप (हिंदी)</span>
-                            </a>
-                        </li>
                     
-                        <li >
-                            <a class="is-link has-text-orange" href="/bhagavad-gita-hindi/6/">
-                                <span class="icon is-small">
-                                    <i class="fas fa-file-alt" aria-hidden="true"></i>
-                                </span>
-                                <span>अध्याय ६ - ध्यानयोग</span>
-                            </a>
-                        </li>
-                    
-                        <li class="is-active">
-                            <a  href="">
-                                <span class="icon is-small">
-                                    <i class="fas fa-quote-right" aria-hidden="true"></i>
-                                </span>
-                                <span>श्लोक १०</span>
-                            </a>
-                        </li>
-                    
-                </ul>
-            </nav>
-        </div>
+                    <li>
+                        <a
+                            class="button is-outlined is-warning pagination-link"
+                            
+                                href="/bhagavad-gita-hindi/6/47/"
+                            
+                        >
+                            47
+                        </a>
+                    </li>
+                
+                
+            </ul>
+
+            <!-- next page button -->
+            <a
+                class="button is-outlined is-warning pagination-next pagination-button button is-orange is-outlined"
+                
+                    href="/bhagavad-gita-hindi/6/11-12/"
+                
+            >
+            अगला श्लोक
+            </a>
+        </nav>
     </div>
 </section>
 
 
+<section class="section animatedParent animateOnce">
+    <div class="box glass animated fadeInUpShort">
+        <nav class="breadcrumb is-medium is-centered" aria-label="breadcrumbs">
+            <ul>
+                
+                <li >
+                    <a class="is-link has-text-orange" href="/">
+                        <span class="icon is-small">
+                            <i class="fas fa-home" aria-hidden="true"></i>
+                        </span>
+                        <span>Home</span>
+                    </a>
+                </li>
+                
+                <li >
+                    <a class="is-link has-text-orange" href="/bhagavad-gita-hindi/">
+                        <span class="icon is-small">
+                            <i class="fas fa-book" aria-hidden="true"></i>
+                        </span>
+                        <span>श्रीमद्भगवद्गीता</span>
+                    </a>
+                </li>
+                
+                <li >
+                    <a class="is-link has-text-orange" href="/bhagavad-gita-hindi/6/">
+                        <span class="icon is-small">
+                            <i class="fas fa-file-alt" aria-hidden="true"></i>
+                        </span>
+                        <span>अध्याय ६ - ध्यानयोग</span>
+                    </a>
+                </li>
+                
+                <li class="is-active">
+                    <a tabindex="-1" href="">
+                        <span class="icon is-small">
+                            <i class="fas fa-quote-right" aria-hidden="true"></i>
+                        </span>
+                        <span>श्लोक १०</span>
+                    </a>
+                </li>
+                
+            </ul>
+        </nav>
+    </div>
+</section>
 
-    <footer class="footer bg-gradient-light-orange pt-5 pb-5">
+<section class="section pt-0 animatedParent animateOnce">
+    <article class="box message is-warning is-small p-0 animated fadeInUpShort">
+        <div class="message-header is-justify-content-center">
+            <p>Copyright Notice</p>
+        </div>
+        <div class="message-body has-text-centered">
+            <p class="mb-3">The BBT was established in 1972 by His Divine Grace A.C. Bhaktivedanta Swami Prabhupada, Founder-Acharya of the International Society for Krishna Consciousness. BBT is the publisher for his books. All material used here belongs to and copyrighted under BBT (Bhaktivedanta Book Trust).</p>
+    
+            <p class="is-italic mb-3">“I specifically formed the BBT to invest in it exclusive rights for the printing of all literature containing my teachings, writings and lectures. In this way the collections are to be divided fifty percent for printing new books and fifty percent for construction of temples.”</p>
+
+            <p>- A.C. Bhaktivedanta Swami Prabhupada</p>
+        </div>
+    </article>
+</section>
+
+
+
+    <!-- <footer class="footer bg-gradient-light-orange pt-5 pb-5">
     <div class="container">
         <div class="content">
             <div class="columns is-multiline is-centered">
@@ -567,7 +563,51 @@
             </div>
         </div>
     </div>
+</footer> -->
+
+<footer class="footer p-0">
+    <section class="section">
+        <div class="footer-container">
+            <div class="animatedParent animateOnce">
+                <div class="content-w-image is-flex is-centered-mobile">
+                    <figure class="image is-64x64 m-0 animated fadeInUpShort">
+                        <img src="https://www.ancientknowledge.in/static/images/logo.png">
+                    </figure>
+                    <div class="content m-0 is-flex is-flex-direction-column is-justify-content-space-between animated fadeInUpShort">
+                        <h4 class="mt-0">Ancient Knowledge</h4>
+                        <p class="is-centered-mobile">
+                            <a href="https://www.ancientknowledge.in/about/" class="no-decoration">
+                                <span>About</span>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="animatedParent animateOnce">
+                <div class="content animated fadeInUpShort">
+                    <h4 class="is-centered-mobile m-0 mb-4 animated fadeInUpShort delay-500">@PraacheenGyaan</h4>
+                    <p class="has-text-centered is-flex is-justify-content-space-between animatedParent animateOnce">
+                        <a class="box icon facebook is-large fa-2x mb-0 animated growIn delay-500" href="https://www.facebook.com/PraacheenGyaan/" target="_blank">
+                            <i class="fab fa-facebook-square has-text-white"></i>
+                        </a>
+
+                        <a class="box icon instagram is-large fa-2x mb-0 animated growIn delay-1000" href="https://www.instagram.com/PraacheenGyaan/" target="_blank">
+                            <i class="fab fa-instagram-square has-text-white"></i>
+                        </a>
+
+                        <a class="box icon twitter is-large fa-2x mb-0 animated growIn delay-1500" href="https://twitter.com/PraacheenGyaan/" target="_blank">
+                            <i class="fab fa-twitter-square has-text-white"></i>
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
 </footer>
+
+    <script src="https://www.ancientknowledge.in/static/js/jquery.min.js"></script>
+    <script src="https://www.ancientknowledge.in/static/js/script.js"></script>
+    <script src="https://www.ancientknowledge.in/static/js/css3-animate-it.js"></script>
 
     
 </body>

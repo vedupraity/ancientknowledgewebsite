@@ -14,7 +14,7 @@
 
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#ffffff" />
+    <meta name="theme-color" content="#ff902b" />
 
     <!-- Begin SEO tags -->
     <title>Ancient Knowledge | Bhagavad Gita | Hindi</title>
@@ -24,336 +24,326 @@
     <meta property="og:title" content="Ancient Knowledge | Bhagavad Gita | Hindi" />
     <meta property="og:description" content="Read Shrimad Bhagavad Gita - Yatharoop in hindi. श्रीमद्भगवद्गीता - यथारूप हिंदी में पढ़ें। अध्याय ४ - श्लोक १०" />
     <meta property="og:url" content="https://www.ancientknowledge.in" />
-    <meta property="og:image" content="https://www.ancientknowledge.in/static/images/bhagavad-gita-cover-16by9.jpg" />
+    <meta property="og:image" content="https://www.ancientknowledge.in/static/images/bhagavad-gita-cover-4x3.jpg" />
     <meta property="og:type" content="article" />
     
     <meta property="twitter:title" content="Ancient Knowledge | Bhagavad Gita | Hindi" />
     <meta property="twitter:description" content="Read Shrimad Bhagavad Gita - Yatharoop in hindi. श्रीमद्भगवद्गीता - यथारूप हिंदी में पढ़ें। अध्याय ४ - श्लोक १०" />
-    <meta property="twitter:image" content="https://www.ancientknowledge.in/static/images/bhagavad-gita-cover-16by9.jpg" />
+    <meta property="twitter:image" content="https://www.ancientknowledge.in/static/images/bhagavad-gita-cover-4x3.jpg" />
     <!-- End SEO tags -->
 
-    <link rel="stylesheet" href="https://www.ancientknowledge.in/static/css/theme.css" />
-    <link rel="stylesheet" href="https://www.ancientknowledge.in/static/css/theme-custom.css" />
+    <!-- <link rel="stylesheet" href="https://www.ancientknowledge.in/static/css/theme-old.css" /> -->
+    <!-- <link rel="stylesheet" href="https://www.ancientknowledge.in/static/css/switch-control.min.css" /> -->
+    <!-- <link rel="stylesheet" href="https://www.ancientknowledge.in/static/css/theme-custom.css" /> -->
     
     <link rel="icon" href="https://www.ancientknowledge.in/static/images/favicon.ico">
-    <link rel="shortcut icon" type="image/png" href="https://www.ancientknowledge.in/static/images/favicon.png" />
+    <link rel="shortcut icon" type="image/png" href="https://www.ancientknowledge.in/static/images/logo.png" />
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.0/dist/alpine.min.js" defer></script>
     
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-social@1/bin/bulma-social.min.css" />
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" /> -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-social@1/bin/bulma-social.min.css" /> -->
+
+    <link rel="stylesheet" href="https://www.ancientknowledge.in/static/css/bulma.min.css">
+    <link rel="stylesheet" href="https://www.ancientknowledge.in/static/css/theme.css">
+    <link rel="stylesheet" href="https://www.ancientknowledge.in/static/css/animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 
-<body>
-    <nav class="navbar is-warning bg-gradient-light-orange" x-data="{ openNav: false }">
-    <div class="container">
-        <div class="navbar-brand">
-            <a href="https://www.ancientknowledge.in" class="navbar-item">
-                <p class="has-text-weight-normal has-text-orange">
-                    <span>📖</span>
-                    <span class="pl-2">Ancient Knowledge</span>
-                </p>
+<body class="dark-modes">
+    <nav class="navbar is-light glass" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+        <a class="navbar-item pl-4" href="https://www.ancientknowledge.in">
+            <img src="https://www.ancientknowledge.in/static/images/logo.png" width="28" height="28">
+            <span class="pl-4">
+                Ancient Knowledge
+            </span>
+        </a>
+
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+            data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+    </div>
+
+    <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+            <a class="navbar-item" href="https://www.ancientknowledge.in/about/">
+                About
             </a>
-            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navMenu"
-                :class="{ 'is-active': openNav }" x-on:click="openNav = !openNav">
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-            </a>
-        </div>
-        <div class="navbar-menu" id="navMenu" :class="{ 'is-active': openNav }">
-            <div class="navbar-end">
-                <a href="https://www.ancientknowledge.in/about/" class="navbar-item has-text-weight-normal has-text-orange">About</a>
-            </div>
         </div>
     </div>
 </nav>
 
     
-    <section class="hero is-small is-bold is-dark bg-gradient-orange">
-    <div class="hero-body">
-        <div class="container has-text-centered p-5">
-            <h4 class="title is-4">श्रीमद्भगवद्गीता - यथारूप (हिंदी)</h4>
-        </div>
-    </div>
-</section>
-    
-
-    <div class="content is-centered has-text-centered" style="display: none;">
-        <h1>Ancient Knowledge</h1>
-        <h2>Recollecting the lost knowledge</h2>
-        <h3>Ancient Knowledge | Bhagavad Gita | Hindi</h3>
-        <p>Read Shrimad Bhagavad Gita - Yatharoop in hindi. श्रीमद्भगवद्गीता - यथारूप हिंदी में पढ़ें। अध्याय ४ - श्लोक १०</p>
-        <div class="tags is-centered">
-            
-                <span class="tag">Ancient</span>
-            
-                <span class="tag">Knowledge</span>
-            
-                <span class="tag">India</span>
-            
-                <span class="tag">Shrimad</span>
-            
-                <span class="tag">Bhagavad</span>
-            
-                <span class="tag">Gita</span>
-            
-                <span class="tag">Yatharoop</span>
-            
-                <span class="tag">As It Is</span>
-            
-                <span class="tag">Mahabharat</span>
-            
-                <span class="tag">Krishna</span>
-            
-                <span class="tag">Prabhupad</span>
-            
-                <span class="tag">Hindi</span>
-            
-        </div>
-    </div>
 
     
 
-<section class="hero is-light is-small">
-    <div class="hero-body">
-        <div class="container">
-            <nav class="breadcrumb is-centered" aria-label="breadcrumbs">
-                <ul>
-                    
-                        <li >
-                            <a class="is-link has-text-orange" href="/">
-                                <span class="icon is-small">
-                                    <i class="fas fa-home" aria-hidden="true"></i>
-                                </span>
-                                <span>Home</span>
-                            </a>
-                        </li>
-                    
-                        <li >
-                            <a class="is-link has-text-orange" href="/bhagavad-gita-hindi/">
-                                <span class="icon is-small">
-                                    <i class="fas fa-book" aria-hidden="true"></i>
-                                </span>
-                                <span>श्रीमद्भगवद्गीता - यथारूप (हिंदी)</span>
-                            </a>
-                        </li>
-                    
-                        <li >
-                            <a class="is-link has-text-orange" href="/bhagavad-gita-hindi/4/">
-                                <span class="icon is-small">
-                                    <i class="fas fa-file-alt" aria-hidden="true"></i>
-                                </span>
-                                <span>अध्याय ४ - ज्ञानकर्मसन्यासयोग</span>
-                            </a>
-                        </li>
-                    
-                        <li class="is-active">
-                            <a  href="">
-                                <span class="icon is-small">
-                                    <i class="fas fa-quote-right" aria-hidden="true"></i>
-                                </span>
-                                <span>श्लोक १०</span>
-                            </a>
-                        </li>
-                    
-                </ul>
-            </nav>
-        </div>
+<!-- Margin top behind navbar -->
+<div class="mt-6"></div>
+
+<style>
+    :root {
+        --page-background-image: url(/static/images/bhagavad-gita-cover-4x3.jpg);
+    }
+</style>
+<div class="image-background"></div>
+
+<section class="section animatedParent animateOnce">
+    <div class="box glass animated fadeInUpShort">
+        <nav class="breadcrumb is-medium is-centered" aria-label="breadcrumbs">
+            <ul>
+                
+                <li >
+                    <a class="is-link has-text-orange" href="/">
+                        <span class="icon is-small">
+                            <i class="fas fa-home" aria-hidden="true"></i>
+                        </span>
+                        <span>Home</span>
+                    </a>
+                </li>
+                
+                <li >
+                    <a class="is-link has-text-orange" href="/bhagavad-gita-hindi/">
+                        <span class="icon is-small">
+                            <i class="fas fa-book" aria-hidden="true"></i>
+                        </span>
+                        <span>श्रीमद्भगवद्गीता</span>
+                    </a>
+                </li>
+                
+                <li >
+                    <a class="is-link has-text-orange" href="/bhagavad-gita-hindi/4/">
+                        <span class="icon is-small">
+                            <i class="fas fa-file-alt" aria-hidden="true"></i>
+                        </span>
+                        <span>अध्याय ४ - ज्ञानकर्मसन्यासयोग</span>
+                    </a>
+                </li>
+                
+                <li class="is-active">
+                    <a tabindex="-1" href="">
+                        <span class="icon is-small">
+                            <i class="fas fa-quote-right" aria-hidden="true"></i>
+                        </span>
+                        <span>श्लोक १०</span>
+                    </a>
+                </li>
+                
+            </ul>
+        </nav>
     </div>
 </section>
 
-<section
-    class="
-        section
-        content-card-section
-        pb-0
-    "
-    oncopy="return false" oncut="return false" onpaste="return false"
->
-    <div class="container">
-        <div class="card has-glow-md">
-            <div class="card-content">
-                <div class="content is-medium">
-                    <h5 class="has-text-centered ">
-                        अध्याय ४ - श्लोक १०
-                        
-                    </h5>
-                    
-                    <hr/>
-
-                    
-                        
-                            <div
-                                
-                                    class="mb-5"
-                                
-                            >
-                                
-                                    <p class="has-text-centered has-text-weight-bold mb-1">
+<section class="section pt-0 pb-0">
+    <div class="columns is-multiline is-centered is-variable is-4">
+        <div
+            class="column is-full-tablet is-full-desktop is-full-widescreen is-full-fullhd is-flex animatedParent animateOnce">
+            <div class="card card-horizontal is-flex-grow-1 animated fadeInUpShort">
+                <div class="card-content p-2 pt-4 pb-4">
+                    <div class="columns is-multiline is-variable m-0">
+                        <div class="column">
+                            <div class="content is-medium m-0">
+                                <div class="">
+                                    
+                                    
                                         
-                                            वीतरागभयक्रोधा मन्मया मामुपाश्रिताः ।
+                                            <div
+                                                
+                                                    class="mb-5"
+                                                
+                                            >
+                                                
+                                                    <p class="has-text-centered has-text-weight-bold mb-1">
+                                                        
+                                                            वीतरागभयक्रोधा मन्मया मामुपाश्रिताः ।
+                                                        
+                                                    </p>
+                                                
+                                                    <p class="has-text-centered has-text-weight-bold mb-1">
+                                                        
+                                                            बहवो ज्ञानतपसा पूता मद्भावमागताः ॥ १० ॥
+                                                        
+                                                    </p>
+                                                
+                                            </div>
                                         
-                                    </p>
-                                
-                                    <p class="has-text-centered has-text-weight-bold mb-1">
+                                    
+                                    
+                                    
                                         
-                                            बहवो ज्ञानतपसा पूता मद्भावमागताः ॥ १० ॥
+                                            <div
+                                                
+                                                    class="mb-3"
+                                                
+                                            >
+                                                
+                                                    <p class="has-text-centered has-text-weight-bold">
+                                                        
+                                                            शब्दार्थ
+                                                        
+                                                    </p>
+                                                
+                                            </div>
                                         
-                                    </p>
-                                
+                                    
+                                    
+                                    
+                                        
+                                            <div
+                                                
+                                                    class="mb-5"
+                                                
+                                            >
+                                                
+                                                    <p class="has-text-justified">
+                                                        
+                                                            <strong>वीत</strong> – मुक्त; <strong>राग</strong> – आसक्ति; <strong>भय</strong> – भय; <strong>क्रोधाः</strong> – तथा क्रोध से; <strong>मत्-मया</strong> – पूर्णतया मुझमें; <strong>माम्</strong> – मुझमें; <strong>उपाश्रिताः</strong> – पूर्णतया स्थित; <strong>बहवः</strong> – अनेक; <strong>ज्ञान</strong> – ज्ञान की; <strong>तपसा</strong> – तपस्या से; <strong>पूताः</strong> – पवित्र हुआ; <strong>मत्-भावम्</strong> – मेरे प्रति दिव्य प्रेम को; <strong>आगताः</strong> – प्राप्त |
+                                                        
+                                                    </p>
+                                                
+                                            </div>
+                                        
+                                    
+                                    
+                                    
+                                        
+                                            <div
+                                                
+                                                    class="mb-3"
+                                                
+                                            >
+                                                
+                                                    <p class="has-text-centered has-text-weight-bold">
+                                                        
+                                                            भावार्थ
+                                                        
+                                                    </p>
+                                                
+                                            </div>
+                                        
+                                    
+                                    
+                                    
+                                        
+                                            <div
+                                                
+                                                    class="mb-5"
+                                                
+                                            >
+                                                
+                                                    <p class="has-text-justified">
+                                                        
+                                                            आसक्ति, भय तथा क्रोध से मुक्त होकर, मुझमें पूर्णतया तन्मय होकर और मेरी शरण में आकर बहुत से व्यक्ति भूत काल में मेरे ज्ञान से पवित्र हो चुके हैं | इस प्रकार से उन सबों ने मेरे प्रति दिव्यप्रेम को प्राप्त किया है |
+                                                        
+                                                    </p>
+                                                
+                                            </div>
+                                        
+                                    
+                                    
+                                    
+                                        
+                                            <div
+                                                
+                                                    class="mb-3"
+                                                
+                                            >
+                                                
+                                                    <p class="has-text-centered has-text-weight-bold">
+                                                        
+                                                            तात्पर्य
+                                                        
+                                                    </p>
+                                                
+                                            </div>
+                                        
+                                    
+                                    
+                                    
+                                        
+                                            <div
+                                                
+                                                    class="mb-5"
+                                                
+                                            >
+                                                
+                                                    <p class="has-text-justified">
+                                                        
+                                                            जैसा कि पहले कहा जा चुका है विषयों में आसक्त व्यक्ति के लिए परम सत्य के स्वरूप को समझ पाना अत्यन्त कठिन है | सामान्यतया जो लोग देहात्मबुद्धि में आसक्त होते हैं, वे भौतिकतावाद में इतने लीन रहते हैं कि उनके लिए यह समझ पाना असम्भव सा है कि परमात्मा व्यक्ति भी हो सकता है | ऐसे भौतिकतावादी व्यक्ति इसकी कल्पना तक नहीं कर पाते कि ऐसा भी दिव्य शरीर है जो नित्य तथा सच्चिदानन्दमय है | भौतिकतावादी धारणा के अनुसार शरीर नाशवान्, अज्ञानमय तथा अत्यन्त दुखमय होता है | अतः जब लोगों को भगवान् के साकार रूप के विषय में बताया जाता है तो उनके मन में शरीर की यही धारणा बनी रहती है | ऐसे भौतिकतावादी पुरुषों के लिए विराट भौतिक जगत् का स्वरूप ही परमतत्त्व है | फलस्वरूप वे परमेश्वर को निराकार मानते हैं और भौतिकता में इतने तल्लीन रहते हैं कि भौतिक पदार्थ से मुक्ति के बाद भी अपना स्वरूप बनाये रखने के विचार से डरते हैं | जब उन्हें यह बताया जाता है कि आध्यात्मिक जीवन भी व्यक्तिगत तथा साकार होता है तो वे पुनः व्यक्ति बनने से भयभीत हो उठते हैं, फलतः वे निराकार शून्य में तदाकार होना पसंद करते हैं | सामान्यतया वे जीवों की तुलना समुद्र के बुलबुलों से करते हैं, जो टूटने पर समुद्र में ही लीन हो जाते हैं | पृथक् व्यक्तित्व से रहित आध्यात्मिक जीवन की यह चरम सिद्धि है | यह जीवन की भयावह अवस्था है, जो आध्यात्मिक जीवन के पूर्णज्ञान से रहित है | इसके अतिरिक्त ऐसे बहुत से मनुष्य हैं जो आध्यात्मिक जीवन को तनिक भी नहीं समझ पाते | अनेक वादों तथा दार्शनिक चिन्तन की विविध विसंगतियों से परेशान होकर वे उब उठते हैं या क्रुद्ध हो जाते हैं और मूर्खतावश यह निष्कर्ष निकालते हैं कि परम कारण जैसा कुछ नहीं है, अतः प्रत्येक वस्तु अन्ततोगत्वा शून्य है | ऐसे लोग जीवन की रुग्णावस्था में होते हैं | कुछ लोग भौतिकता में इतने आसक्त रहते हैं कि वे आध्यात्मिक जीवन की ओर कोई ध्यान नहीं देते और कुछ लोग तो निराशावश सभी प्रकार के आध्यात्मिक चिन्तनों से क्रुद्ध होकर प्रत्येक वस्तु पर अविश्वास करने लगते हैं | इस अन्तिम कोटि के लोग किसी न किसी मादक वस्तु का सहारा लेते हैं और उनके मति-विभ्रम को कभी-कभी आध्यात्मिक दृष्टि मान लिया जाता है | मनुष्य को भौतिक जगत् के प्रति आसक्ति की तीनों अवस्थाओं से छुटकारा पाना होता है – ये हैं आध्यात्मिक जीवन की अपेक्षा, आध्यात्मिक साकार रूप का भय तथा जीवन की हताशा से उत्पन्न शून्यवाद की कल्पना | जीवन की इन तीनों अवस्थाओं से छुटकारा पाने के लिए प्रामाणिक गुरु के निर्देशन में भगवान् की शरण ग्रहण करना और भक्तिमय जीवन के नियम तथा विधि-विधानों का पालन करना आवश्यक है | भक्तिमय जीवन की अन्तिम अवस्था भाव या दिव्य ईश्वरीय प्रेम कहलाती है |
+                                                        
+                                                    </p>
+                                                
+                                                    <p class="has-text-justified">
+                                                        
+                                                            भक्तिरसामृतसिन्धु (१.४.१५-१६) के अनुसार भक्ति का विज्ञान इस प्रकार है –
+                                                        
+                                                    </p>
+                                                
+                                            </div>
+                                        
+                                    
+                                    
+                                    
+                                        
+                                            <div
+                                                
+                                                    class="mb-5"
+                                                
+                                            >
+                                                
+                                                    <p class="has-text-centered is-italic mb-1">
+                                                        
+                                                            आदौ श्रद्धा ततः साधुसंगोऽथ भजनक्रिया
+                                                        
+                                                    </p>
+                                                
+                                                    <p class="has-text-centered is-italic mb-1">
+                                                        
+                                                            ततोऽनर्थनिवृत्तिः स्यात्ततो निष्ठा रूचिस्ततः |
+                                                        
+                                                    </p>
+                                                
+                                                    <p class="has-text-centered is-italic mb-1">
+                                                        
+                                                            अथासक्तिस्ततो भावस्ततः प्रेमाभ्यदञ्चति
+                                                        
+                                                    </p>
+                                                
+                                                    <p class="has-text-centered is-italic mb-1">
+                                                        
+                                                            साधकानामयं प्रेम्णः प्रादुर्भावे भवेत्क्रमः ||
+                                                        
+                                                    </p>
+                                                
+                                            </div>
+                                        
+                                    
+                                    
+                                    
+                                        
+                                            <div
+                                                
+                                            >
+                                                
+                                                    <p class="has-text-justified">
+                                                        
+                                                            “प्रारम्भ में आत्म-साक्षात्कार की समान्य इच्छा होनी चाहिए | इससे मनुष्य ऐसे व्यक्तियों की संगति करने का प्रयास करता है जो आध्यात्मिक दृष्टि से उठे हुए हैं | अगली अवस्था में गुरु से दीक्षित होकर नवदीक्षित भक्त उसके आदेशानुसार भक्तियोग प्रारम्भ करता है | इस प्रकार सद्गुरु के निर्देश में भक्ति करते हुए वह समस्त भौतिक आसक्ति से मुक्त हो जाता है, उसके आत्म-साक्षात्कार में स्थिरता आती है और वह श्रीभगवान् कृष्ण के विषय में श्रवण करने के लिए रुचि विकसित करता है | इस रुचि से आगे चलकर कृष्णभावनामृत में आसक्ति उत्पन्न होती है जो भाव में अथवा भगवत्प्रेम के प्रथम सोपान में परिपक्व होती है | ईश्वर के प्रति प्रेम ही जीवन की सार्थकता है |” प्रेम-अवस्था में भक्त भगवान् की दिव्य प्रेमाभक्ति में निरन्तर लीन रहता है | अतः भक्ति की मन्द स्थिति से प्रामाणिक गुरु के निर्देश में सर्वोच्च अवस्था प्राप्त की जा सकती है और समस्त भौतिक आसक्ति, व्यक्तिगत आध्यात्मिक स्वरूप के भय तथा शून्यवाद से उत्पन्न हताशा से मुक्त हुआ जा सकता है | तभी मनुष्य को अन्त में भगवान् के धाम की प्राप्ति हो सकती है |
+                                                        
+                                                    </p>
+                                                
+                                            </div>
+                                        
+                                    
+                                    
+                                </div>
                             </div>
-                        
-                    
-                        
-                            <div
-                                
-                                    class="mb-3"
-                                
-                            >
-                                
-                                    <p class="has-text-centered has-text-weight-bold">
-                                        
-                                            शब्दार्थ
-                                        
-                                    </p>
-                                
-                            </div>
-                        
-                    
-                        
-                            <div
-                                
-                                    class="mb-5"
-                                
-                            >
-                                
-                                    <p class="has-text-justified">
-                                        
-                                            <strong>वीत</strong> – मुक्त; <strong>राग</strong> – आसक्ति; <strong>भय</strong> – भय; <strong>क्रोधाः</strong> – तथा क्रोध से; <strong>मत्-मया</strong> – पूर्णतया मुझमें; <strong>माम्</strong> – मुझमें; <strong>उपाश्रिताः</strong> – पूर्णतया स्थित; <strong>बहवः</strong> – अनेक; <strong>ज्ञान</strong> – ज्ञान की; <strong>तपसा</strong> – तपस्या से; <strong>पूताः</strong> – पवित्र हुआ; <strong>मत्-भावम्</strong> – मेरे प्रति दिव्य प्रेम को; <strong>आगताः</strong> – प्राप्त |
-                                        
-                                    </p>
-                                
-                            </div>
-                        
-                    
-                        
-                            <div
-                                
-                                    class="mb-3"
-                                
-                            >
-                                
-                                    <p class="has-text-centered has-text-weight-bold">
-                                        
-                                            भावार्थ
-                                        
-                                    </p>
-                                
-                            </div>
-                        
-                    
-                        
-                            <div
-                                
-                                    class="mb-5"
-                                
-                            >
-                                
-                                    <p class="has-text-justified">
-                                        
-                                            आसक्ति, भय तथा क्रोध से मुक्त होकर, मुझमें पूर्णतया तन्मय होकर और मेरी शरण में आकर बहुत से व्यक्ति भूत काल में मेरे ज्ञान से पवित्र हो चुके हैं | इस प्रकार से उन सबों ने मेरे प्रति दिव्यप्रेम को प्राप्त किया है |
-                                        
-                                    </p>
-                                
-                            </div>
-                        
-                    
-                        
-                            <div
-                                
-                                    class="mb-3"
-                                
-                            >
-                                
-                                    <p class="has-text-centered has-text-weight-bold">
-                                        
-                                            तात्पर्य
-                                        
-                                    </p>
-                                
-                            </div>
-                        
-                    
-                        
-                            <div
-                                
-                                    class="mb-5"
-                                
-                            >
-                                
-                                    <p class="has-text-justified">
-                                        
-                                            जैसा कि पहले कहा जा चुका है विषयों में आसक्त व्यक्ति के लिए परम सत्य के स्वरूप को समझ पाना अत्यन्त कठिन है | सामान्यतया जो लोग देहात्मबुद्धि में आसक्त होते हैं, वे भौतिकतावाद में इतने लीन रहते हैं कि उनके लिए यह समझ पाना असम्भव सा है कि परमात्मा व्यक्ति भी हो सकता है | ऐसे भौतिकतावादी व्यक्ति इसकी कल्पना तक नहीं कर पाते कि ऐसा भी दिव्य शरीर है जो नित्य तथा सच्चिदानन्दमय है | भौतिकतावादी धारणा के अनुसार शरीर नाशवान्, अज्ञानमय तथा अत्यन्त दुखमय होता है | अतः जब लोगों को भगवान् के साकार रूप के विषय में बताया जाता है तो उनके मन में शरीर की यही धारणा बनी रहती है | ऐसे भौतिकतावादी पुरुषों के लिए विराट भौतिक जगत् का स्वरूप ही परमतत्त्व है | फलस्वरूप वे परमेश्वर को निराकार मानते हैं और भौतिकता में इतने तल्लीन रहते हैं कि भौतिक पदार्थ से मुक्ति के बाद भी अपना स्वरूप बनाये रखने के विचार से डरते हैं | जब उन्हें यह बताया जाता है कि आध्यात्मिक जीवन भी व्यक्तिगत तथा साकार होता है तो वे पुनः व्यक्ति बनने से भयभीत हो उठते हैं, फलतः वे निराकार शून्य में तदाकार होना पसंद करते हैं | सामान्यतया वे जीवों की तुलना समुद्र के बुलबुलों से करते हैं, जो टूटने पर समुद्र में ही लीन हो जाते हैं | पृथक् व्यक्तित्व से रहित आध्यात्मिक जीवन की यह चरम सिद्धि है | यह जीवन की भयावह अवस्था है, जो आध्यात्मिक जीवन के पूर्णज्ञान से रहित है | इसके अतिरिक्त ऐसे बहुत से मनुष्य हैं जो आध्यात्मिक जीवन को तनिक भी नहीं समझ पाते | अनेक वादों तथा दार्शनिक चिन्तन की विविध विसंगतियों से परेशान होकर वे उब उठते हैं या क्रुद्ध हो जाते हैं और मूर्खतावश यह निष्कर्ष निकालते हैं कि परम कारण जैसा कुछ नहीं है, अतः प्रत्येक वस्तु अन्ततोगत्वा शून्य है | ऐसे लोग जीवन की रुग्णावस्था में होते हैं | कुछ लोग भौतिकता में इतने आसक्त रहते हैं कि वे आध्यात्मिक जीवन की ओर कोई ध्यान नहीं देते और कुछ लोग तो निराशावश सभी प्रकार के आध्यात्मिक चिन्तनों से क्रुद्ध होकर प्रत्येक वस्तु पर अविश्वास करने लगते हैं | इस अन्तिम कोटि के लोग किसी न किसी मादक वस्तु का सहारा लेते हैं और उनके मति-विभ्रम को कभी-कभी आध्यात्मिक दृष्टि मान लिया जाता है | मनुष्य को भौतिक जगत् के प्रति आसक्ति की तीनों अवस्थाओं से छुटकारा पाना होता है – ये हैं आध्यात्मिक जीवन की अपेक्षा, आध्यात्मिक साकार रूप का भय तथा जीवन की हताशा से उत्पन्न शून्यवाद की कल्पना | जीवन की इन तीनों अवस्थाओं से छुटकारा पाने के लिए प्रामाणिक गुरु के निर्देशन में भगवान् की शरण ग्रहण करना और भक्तिमय जीवन के नियम तथा विधि-विधानों का पालन करना आवश्यक है | भक्तिमय जीवन की अन्तिम अवस्था भाव या दिव्य ईश्वरीय प्रेम कहलाती है |
-                                        
-                                    </p>
-                                
-                                    <p class="has-text-justified">
-                                        
-                                            भक्तिरसामृतसिन्धु (१.४.१५-१६) के अनुसार भक्ति का विज्ञान इस प्रकार है –
-                                        
-                                    </p>
-                                
-                            </div>
-                        
-                    
-                        
-                            <div
-                                
-                                    class="mb-5"
-                                
-                            >
-                                
-                                    <p class="has-text-centered is-italic mb-1">
-                                        
-                                            आदौ श्रद्धा ततः साधुसंगोऽथ भजनक्रिया
-                                        
-                                    </p>
-                                
-                                    <p class="has-text-centered is-italic mb-1">
-                                        
-                                            ततोऽनर्थनिवृत्तिः स्यात्ततो निष्ठा रूचिस्ततः |
-                                        
-                                    </p>
-                                
-                                    <p class="has-text-centered is-italic mb-1">
-                                        
-                                            अथासक्तिस्ततो भावस्ततः प्रेमाभ्यदञ्चति
-                                        
-                                    </p>
-                                
-                                    <p class="has-text-centered is-italic mb-1">
-                                        
-                                            साधकानामयं प्रेम्णः प्रादुर्भावे भवेत्क्रमः ||
-                                        
-                                    </p>
-                                
-                            </div>
-                        
-                    
-                        
-                            <div
-                                
-                            >
-                                
-                                    <p class="has-text-justified">
-                                        
-                                            “प्रारम्भ में आत्म-साक्षात्कार की समान्य इच्छा होनी चाहिए | इससे मनुष्य ऐसे व्यक्तियों की संगति करने का प्रयास करता है जो आध्यात्मिक दृष्टि से उठे हुए हैं | अगली अवस्था में गुरु से दीक्षित होकर नवदीक्षित भक्त उसके आदेशानुसार भक्तियोग प्रारम्भ करता है | इस प्रकार सद्गुरु के निर्देश में भक्ति करते हुए वह समस्त भौतिक आसक्ति से मुक्त हो जाता है, उसके आत्म-साक्षात्कार में स्थिरता आती है और वह श्रीभगवान् कृष्ण के विषय में श्रवण करने के लिए रुचि विकसित करता है | इस रुचि से आगे चलकर कृष्णभावनामृत में आसक्ति उत्पन्न होती है जो भाव में अथवा भगवत्प्रेम के प्रथम सोपान में परिपक्व होती है | ईश्वर के प्रति प्रेम ही जीवन की सार्थकता है |” प्रेम-अवस्था में भक्त भगवान् की दिव्य प्रेमाभक्ति में निरन्तर लीन रहता है | अतः भक्ति की मन्द स्थिति से प्रामाणिक गुरु के निर्देश में सर्वोच्च अवस्था प्राप्त की जा सकती है और समस्त भौतिक आसक्ति, व्यक्तिगत आध्यात्मिक स्वरूप के भय तथा शून्यवाद से उत्पन्न हताशा से मुक्त हुआ जा सकता है | तभी मनुष्य को अन्त में भगवान् के धाम की प्राप्ति हो सकती है |
-                                        
-                                    </p>
-                                
-                            </div>
-                        
-                    
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -361,178 +351,184 @@
 </section>
 
 
-    <section class="section pt-0">
-        <div class="container mt-6">
-            <div class="pagination-container">
-    <nav class="pagination is-centered" role="navigation" aria-label="pagination">
-        
-        <!-- previous page button -->
-        <a
-            class="pagination-previous pagination-button button is-orange is-outlined"
-            
-                href="/bhagavad-gita-hindi/4/9/"
-            
-        >
-            पिछला श्लोक
-        </a>
-
-        <!-- next page button -->
-        <a
-            class="pagination-next pagination-button button is-orange is-outlined"
-            
-                href="/bhagavad-gita-hindi/4/11/"
-            
-        >
-        अगला श्लोक
-        </a>
-
-        <ul class="pagination-list">
-            
-            
-                <li>
-                    <a
-                        class="pagination-link"
-                        
-                            href="/bhagavad-gita-hindi/4/1/"
-                        
-                    >
-                        1
-                    </a>
-                </li>
+<section class="section animatedParent animateOnce pb-0">
+    <div class="box glass animated fadeInUpShort">
+        <nav class="pagination is-centered" role="navigation" aria-label="pagination">
+            <!-- previous page button -->
+            <a
+                class="button is-outlined is-warning pagination-previous pagination-button button is-orange is-outlined"
                 
+                    href="/bhagavad-gita-hindi/4/9/"
                 
-                    
-                        <li>
-                            <span class="pagination-ellipsis">…</span>
-                        </li>
-                    
+            >
+                पिछला श्लोक
+            </a>
 
-                    <li>
-                        <a
-                            class="pagination-link"
-                            href="/bhagavad-gita-hindi/4/9/"
-                        >
-                            9
-                        </a>
-                    </li>
+            <!-- next page button -->
+            <!-- <a
+                class="button is-outlined is-warning pagination-next pagination-button button is-orange is-outlined"
                 
-            
-            
-            
-            
-            <li>
-                <a
-                    class="pagination-link is-current"
-                    aria-current="page"
-                    disabled
-                >
-                    10
-                </a>
-            </li>
-            
+                    href="/bhagavad-gita-hindi/4/11/"
+                
+            >
+            अगला श्लोक -->
+            </a>
 
-            
-            
+            <ul class="pagination-list">
+                
                 
                     <li>
                         <a
-                            class="pagination-link"
-                            href="/bhagavad-gita-hindi/4/11/"
+                            class="button is-outlined is-warning pagination-link"
+                            
+                                href="/bhagavad-gita-hindi/4/1/"
+                            
                         >
-                            11
+                            1
                         </a>
                     </li>
                     
+                    
+                        
+                            <li>
+                                <span class="pagination-ellipsis">…</span>
+                            </li>
+                        
+
                         <li>
-                            <span class="pagination-ellipsis">…</span>
+                            <a
+                                class="button is-outlined is-warning pagination-link"
+                                href="/bhagavad-gita-hindi/4/9/"
+                            >
+                                9
+                            </a>
                         </li>
                     
+                
+                
                 
                 
                 <li>
                     <a
-                        class="pagination-link"
-                        
-                            href="/bhagavad-gita-hindi/4/42/"
-                        
+                        class="button is-outlined is-warning pagination-link is-current" tabindex="-1"
+                        aria-current="page"
+                        disabled
                     >
-                        42
+                        10
                     </a>
                 </li>
-            
-            
-        </ul>
-    </nav>
-</div>
-        </div>
-    </section>
+                
 
-
-<section class="section pt-0">
-    <div class="container">
-        <article class="message is-warning is-small">
-            <div class="message-body has-text-centered">
-                <p class="mb-3">The BBT was established in 1972 by His Divine Grace A.C. Bhaktivedanta Swami Prabhupada, Founder-Acharya of the International Society for Krishna Consciousness. BBT is the publisher for his books. All material used here belongs to and copyrighted under BBT (Bhaktivedanta Book Trust).</p>
-
-                <p class="mb-3">🙏 Please consider buying books. Below is a beautiful message by Srila Prabhupada 🙏</p>
-
-                <p class="is-italic mb-3">“I specifically formed the BBT to invest in it exclusive rights for the printing of all literature containing my teachings, writings and lectures. In this way the collections are to be divided fifty percent for printing new books and fifty percent for construction of temples.”</p>
-            </div>
-        </article>
-    </div>
-</section>
-
-<section class="hero is-light is-small">
-    <div class="hero-body">
-        <div class="container">
-            <nav class="breadcrumb is-centered" aria-label="breadcrumbs">
-                <ul>
+                
+                
                     
-                        <li >
-                            <a class="is-link has-text-orange" href="/">
-                                <span class="icon is-small">
-                                    <i class="fas fa-home" aria-hidden="true"></i>
-                                </span>
-                                <span>Home</span>
+                        <li>
+                            <a
+                                class="button is-outlined is-warning pagination-link"
+                                href="/bhagavad-gita-hindi/4/11/"
+                            >
+                                11
                             </a>
                         </li>
+                        
+                            <li>
+                                <span class="pagination-ellipsis">…</span>
+                            </li>
+                        
                     
-                        <li >
-                            <a class="is-link has-text-orange" href="/bhagavad-gita-hindi/">
-                                <span class="icon is-small">
-                                    <i class="fas fa-book" aria-hidden="true"></i>
-                                </span>
-                                <span>श्रीमद्भगवद्गीता - यथारूप (हिंदी)</span>
-                            </a>
-                        </li>
                     
-                        <li >
-                            <a class="is-link has-text-orange" href="/bhagavad-gita-hindi/4/">
-                                <span class="icon is-small">
-                                    <i class="fas fa-file-alt" aria-hidden="true"></i>
-                                </span>
-                                <span>अध्याय ४ - ज्ञानकर्मसन्यासयोग</span>
-                            </a>
-                        </li>
-                    
-                        <li class="is-active">
-                            <a  href="">
-                                <span class="icon is-small">
-                                    <i class="fas fa-quote-right" aria-hidden="true"></i>
-                                </span>
-                                <span>श्लोक १०</span>
-                            </a>
-                        </li>
-                    
-                </ul>
-            </nav>
-        </div>
+                    <li>
+                        <a
+                            class="button is-outlined is-warning pagination-link"
+                            
+                                href="/bhagavad-gita-hindi/4/42/"
+                            
+                        >
+                            42
+                        </a>
+                    </li>
+                
+                
+            </ul>
+
+            <!-- next page button -->
+            <a
+                class="button is-outlined is-warning pagination-next pagination-button button is-orange is-outlined"
+                
+                    href="/bhagavad-gita-hindi/4/11/"
+                
+            >
+            अगला श्लोक
+            </a>
+        </nav>
     </div>
 </section>
 
 
+<section class="section animatedParent animateOnce">
+    <div class="box glass animated fadeInUpShort">
+        <nav class="breadcrumb is-medium is-centered" aria-label="breadcrumbs">
+            <ul>
+                
+                <li >
+                    <a class="is-link has-text-orange" href="/">
+                        <span class="icon is-small">
+                            <i class="fas fa-home" aria-hidden="true"></i>
+                        </span>
+                        <span>Home</span>
+                    </a>
+                </li>
+                
+                <li >
+                    <a class="is-link has-text-orange" href="/bhagavad-gita-hindi/">
+                        <span class="icon is-small">
+                            <i class="fas fa-book" aria-hidden="true"></i>
+                        </span>
+                        <span>श्रीमद्भगवद्गीता</span>
+                    </a>
+                </li>
+                
+                <li >
+                    <a class="is-link has-text-orange" href="/bhagavad-gita-hindi/4/">
+                        <span class="icon is-small">
+                            <i class="fas fa-file-alt" aria-hidden="true"></i>
+                        </span>
+                        <span>अध्याय ४ - ज्ञानकर्मसन्यासयोग</span>
+                    </a>
+                </li>
+                
+                <li class="is-active">
+                    <a tabindex="-1" href="">
+                        <span class="icon is-small">
+                            <i class="fas fa-quote-right" aria-hidden="true"></i>
+                        </span>
+                        <span>श्लोक १०</span>
+                    </a>
+                </li>
+                
+            </ul>
+        </nav>
+    </div>
+</section>
 
-    <footer class="footer bg-gradient-light-orange pt-5 pb-5">
+<section class="section pt-0 animatedParent animateOnce">
+    <article class="box message is-warning is-small p-0 animated fadeInUpShort">
+        <div class="message-header is-justify-content-center">
+            <p>Copyright Notice</p>
+        </div>
+        <div class="message-body has-text-centered">
+            <p class="mb-3">The BBT was established in 1972 by His Divine Grace A.C. Bhaktivedanta Swami Prabhupada, Founder-Acharya of the International Society for Krishna Consciousness. BBT is the publisher for his books. All material used here belongs to and copyrighted under BBT (Bhaktivedanta Book Trust).</p>
+    
+            <p class="is-italic mb-3">“I specifically formed the BBT to invest in it exclusive rights for the printing of all literature containing my teachings, writings and lectures. In this way the collections are to be divided fifty percent for printing new books and fifty percent for construction of temples.”</p>
+
+            <p>- A.C. Bhaktivedanta Swami Prabhupada</p>
+        </div>
+    </article>
+</section>
+
+
+
+    <!-- <footer class="footer bg-gradient-light-orange pt-5 pb-5">
     <div class="container">
         <div class="content">
             <div class="columns is-multiline is-centered">
@@ -555,7 +551,51 @@
             </div>
         </div>
     </div>
+</footer> -->
+
+<footer class="footer p-0">
+    <section class="section">
+        <div class="footer-container">
+            <div class="animatedParent animateOnce">
+                <div class="content-w-image is-flex is-centered-mobile">
+                    <figure class="image is-64x64 m-0 animated fadeInUpShort">
+                        <img src="https://www.ancientknowledge.in/static/images/logo.png">
+                    </figure>
+                    <div class="content m-0 is-flex is-flex-direction-column is-justify-content-space-between animated fadeInUpShort">
+                        <h4 class="mt-0">Ancient Knowledge</h4>
+                        <p class="is-centered-mobile">
+                            <a href="https://www.ancientknowledge.in/about/" class="no-decoration">
+                                <span>About</span>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="animatedParent animateOnce">
+                <div class="content animated fadeInUpShort">
+                    <h4 class="is-centered-mobile m-0 mb-4 animated fadeInUpShort delay-500">@PraacheenGyaan</h4>
+                    <p class="has-text-centered is-flex is-justify-content-space-between animatedParent animateOnce">
+                        <a class="box icon facebook is-large fa-2x mb-0 animated growIn delay-500" href="https://www.facebook.com/PraacheenGyaan/" target="_blank">
+                            <i class="fab fa-facebook-square has-text-white"></i>
+                        </a>
+
+                        <a class="box icon instagram is-large fa-2x mb-0 animated growIn delay-1000" href="https://www.instagram.com/PraacheenGyaan/" target="_blank">
+                            <i class="fab fa-instagram-square has-text-white"></i>
+                        </a>
+
+                        <a class="box icon twitter is-large fa-2x mb-0 animated growIn delay-1500" href="https://twitter.com/PraacheenGyaan/" target="_blank">
+                            <i class="fab fa-twitter-square has-text-white"></i>
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
 </footer>
+
+    <script src="https://www.ancientknowledge.in/static/js/jquery.min.js"></script>
+    <script src="https://www.ancientknowledge.in/static/js/script.js"></script>
+    <script src="https://www.ancientknowledge.in/static/js/css3-animate-it.js"></script>
 
     
 </body>

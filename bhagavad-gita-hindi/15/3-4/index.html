@@ -14,7 +14,7 @@
 
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#ffffff" />
+    <meta name="theme-color" content="#ff902b" />
 
     <!-- Begin SEO tags -->
     <title>Ancient Knowledge | Bhagavad Gita | Hindi</title>
@@ -24,322 +24,308 @@
     <meta property="og:title" content="Ancient Knowledge | Bhagavad Gita | Hindi" />
     <meta property="og:description" content="Read Shrimad Bhagavad Gita - Yatharoop in hindi. श्रीमद्भगवद्गीता - यथारूप हिंदी में पढ़ें। अध्याय १५ - श्लोक ३,४" />
     <meta property="og:url" content="https://www.ancientknowledge.in" />
-    <meta property="og:image" content="https://www.ancientknowledge.in/static/images/bhagavad-gita-cover-16by9.jpg" />
+    <meta property="og:image" content="https://www.ancientknowledge.in/static/images/bhagavad-gita-cover-4x3.jpg" />
     <meta property="og:type" content="article" />
     
     <meta property="twitter:title" content="Ancient Knowledge | Bhagavad Gita | Hindi" />
     <meta property="twitter:description" content="Read Shrimad Bhagavad Gita - Yatharoop in hindi. श्रीमद्भगवद्गीता - यथारूप हिंदी में पढ़ें। अध्याय १५ - श्लोक ३,४" />
-    <meta property="twitter:image" content="https://www.ancientknowledge.in/static/images/bhagavad-gita-cover-16by9.jpg" />
+    <meta property="twitter:image" content="https://www.ancientknowledge.in/static/images/bhagavad-gita-cover-4x3.jpg" />
     <!-- End SEO tags -->
 
-    <link rel="stylesheet" href="https://www.ancientknowledge.in/static/css/theme.css" />
-    <link rel="stylesheet" href="https://www.ancientknowledge.in/static/css/theme-custom.css" />
+    <!-- <link rel="stylesheet" href="https://www.ancientknowledge.in/static/css/theme-old.css" /> -->
+    <!-- <link rel="stylesheet" href="https://www.ancientknowledge.in/static/css/switch-control.min.css" /> -->
+    <!-- <link rel="stylesheet" href="https://www.ancientknowledge.in/static/css/theme-custom.css" /> -->
     
     <link rel="icon" href="https://www.ancientknowledge.in/static/images/favicon.ico">
-    <link rel="shortcut icon" type="image/png" href="https://www.ancientknowledge.in/static/images/favicon.png" />
+    <link rel="shortcut icon" type="image/png" href="https://www.ancientknowledge.in/static/images/logo.png" />
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.0/dist/alpine.min.js" defer></script>
     
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-social@1/bin/bulma-social.min.css" />
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" /> -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-social@1/bin/bulma-social.min.css" /> -->
+
+    <link rel="stylesheet" href="https://www.ancientknowledge.in/static/css/bulma.min.css">
+    <link rel="stylesheet" href="https://www.ancientknowledge.in/static/css/theme.css">
+    <link rel="stylesheet" href="https://www.ancientknowledge.in/static/css/animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 
-<body>
-    <nav class="navbar is-warning bg-gradient-light-orange" x-data="{ openNav: false }">
-    <div class="container">
-        <div class="navbar-brand">
-            <a href="https://www.ancientknowledge.in" class="navbar-item">
-                <p class="has-text-weight-normal has-text-orange">
-                    <span>📖</span>
-                    <span class="pl-2">Ancient Knowledge</span>
-                </p>
+<body class="dark-modes">
+    <nav class="navbar is-light glass" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+        <a class="navbar-item pl-4" href="https://www.ancientknowledge.in">
+            <img src="https://www.ancientknowledge.in/static/images/logo.png" width="28" height="28">
+            <span class="pl-4">
+                Ancient Knowledge
+            </span>
+        </a>
+
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+            data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+    </div>
+
+    <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+            <a class="navbar-item" href="https://www.ancientknowledge.in/about/">
+                About
             </a>
-            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navMenu"
-                :class="{ 'is-active': openNav }" x-on:click="openNav = !openNav">
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-            </a>
-        </div>
-        <div class="navbar-menu" id="navMenu" :class="{ 'is-active': openNav }">
-            <div class="navbar-end">
-                <a href="https://www.ancientknowledge.in/about/" class="navbar-item has-text-weight-normal has-text-orange">About</a>
-            </div>
         </div>
     </div>
 </nav>
 
     
-    <section class="hero is-small is-bold is-dark bg-gradient-orange">
-    <div class="hero-body">
-        <div class="container has-text-centered p-5">
-            <h4 class="title is-4">श्रीमद्भगवद्गीता - यथारूप (हिंदी)</h4>
-        </div>
-    </div>
-</section>
-    
-
-    <div class="content is-centered has-text-centered" style="display: none;">
-        <h1>Ancient Knowledge</h1>
-        <h2>Recollecting the lost knowledge</h2>
-        <h3>Ancient Knowledge | Bhagavad Gita | Hindi</h3>
-        <p>Read Shrimad Bhagavad Gita - Yatharoop in hindi. श्रीमद्भगवद्गीता - यथारूप हिंदी में पढ़ें। अध्याय १५ - श्लोक ३,४</p>
-        <div class="tags is-centered">
-            
-                <span class="tag">Ancient</span>
-            
-                <span class="tag">Knowledge</span>
-            
-                <span class="tag">India</span>
-            
-                <span class="tag">Shrimad</span>
-            
-                <span class="tag">Bhagavad</span>
-            
-                <span class="tag">Gita</span>
-            
-                <span class="tag">Yatharoop</span>
-            
-                <span class="tag">As It Is</span>
-            
-                <span class="tag">Mahabharat</span>
-            
-                <span class="tag">Krishna</span>
-            
-                <span class="tag">Prabhupad</span>
-            
-                <span class="tag">Hindi</span>
-            
-        </div>
-    </div>
 
     
 
-<section class="hero is-light is-small">
-    <div class="hero-body">
-        <div class="container">
-            <nav class="breadcrumb is-centered" aria-label="breadcrumbs">
-                <ul>
-                    
-                        <li >
-                            <a class="is-link has-text-orange" href="/">
-                                <span class="icon is-small">
-                                    <i class="fas fa-home" aria-hidden="true"></i>
-                                </span>
-                                <span>Home</span>
-                            </a>
-                        </li>
-                    
-                        <li >
-                            <a class="is-link has-text-orange" href="/bhagavad-gita-hindi/">
-                                <span class="icon is-small">
-                                    <i class="fas fa-book" aria-hidden="true"></i>
-                                </span>
-                                <span>श्रीमद्भगवद्गीता - यथारूप (हिंदी)</span>
-                            </a>
-                        </li>
-                    
-                        <li >
-                            <a class="is-link has-text-orange" href="/bhagavad-gita-hindi/15/">
-                                <span class="icon is-small">
-                                    <i class="fas fa-file-alt" aria-hidden="true"></i>
-                                </span>
-                                <span>अध्याय १५ - पुरुषोत्तमयोग</span>
-                            </a>
-                        </li>
-                    
-                        <li class="is-active">
-                            <a  href="">
-                                <span class="icon is-small">
-                                    <i class="fas fa-quote-right" aria-hidden="true"></i>
-                                </span>
-                                <span>श्लोक ३,४</span>
-                            </a>
-                        </li>
-                    
-                </ul>
-            </nav>
-        </div>
+<!-- Margin top behind navbar -->
+<div class="mt-6"></div>
+
+<style>
+    :root {
+        --page-background-image: url(/static/images/bhagavad-gita-cover-4x3.jpg);
+    }
+</style>
+<div class="image-background"></div>
+
+<section class="section animatedParent animateOnce">
+    <div class="box glass animated fadeInUpShort">
+        <nav class="breadcrumb is-medium is-centered" aria-label="breadcrumbs">
+            <ul>
+                
+                <li >
+                    <a class="is-link has-text-orange" href="/">
+                        <span class="icon is-small">
+                            <i class="fas fa-home" aria-hidden="true"></i>
+                        </span>
+                        <span>Home</span>
+                    </a>
+                </li>
+                
+                <li >
+                    <a class="is-link has-text-orange" href="/bhagavad-gita-hindi/">
+                        <span class="icon is-small">
+                            <i class="fas fa-book" aria-hidden="true"></i>
+                        </span>
+                        <span>श्रीमद्भगवद्गीता</span>
+                    </a>
+                </li>
+                
+                <li >
+                    <a class="is-link has-text-orange" href="/bhagavad-gita-hindi/15/">
+                        <span class="icon is-small">
+                            <i class="fas fa-file-alt" aria-hidden="true"></i>
+                        </span>
+                        <span>अध्याय १५ - पुरुषोत्तमयोग</span>
+                    </a>
+                </li>
+                
+                <li class="is-active">
+                    <a tabindex="-1" href="">
+                        <span class="icon is-small">
+                            <i class="fas fa-quote-right" aria-hidden="true"></i>
+                        </span>
+                        <span>श्लोक ३,४</span>
+                    </a>
+                </li>
+                
+            </ul>
+        </nav>
     </div>
 </section>
 
-<section
-    class="
-        section
-        content-card-section
-        pb-0
-    "
-    oncopy="return false" oncut="return false" onpaste="return false"
->
-    <div class="container">
-        <div class="card has-glow-md">
-            <div class="card-content">
-                <div class="content is-medium">
-                    <h5 class="has-text-centered ">
-                        अध्याय १५ - श्लोक ३,४
-                        
-                    </h5>
-                    
-                    <hr/>
-
-                    
-                        
-                            <div
-                                
-                                    class="mb-5"
-                                
-                            >
-                                
-                                    <p class="has-text-centered has-text-weight-bold mb-1">
+<section class="section pt-0 pb-0">
+    <div class="columns is-multiline is-centered is-variable is-4">
+        <div
+            class="column is-full-tablet is-full-desktop is-full-widescreen is-full-fullhd is-flex animatedParent animateOnce">
+            <div class="card card-horizontal is-flex-grow-1 animated fadeInUpShort">
+                <div class="card-content p-2 pt-4 pb-4">
+                    <div class="columns is-multiline is-variable m-0">
+                        <div class="column">
+                            <div class="content is-medium m-0">
+                                <div class="">
+                                    
+                                    
                                         
-                                            न रूपमस्येह तथोपलभ्यते
+                                            <div
+                                                
+                                                    class="mb-5"
+                                                
+                                            >
+                                                
+                                                    <p class="has-text-centered has-text-weight-bold mb-1">
+                                                        
+                                                            न रूपमस्येह तथोपलभ्यते
+                                                        
+                                                    </p>
+                                                
+                                                    <p class="has-text-centered has-text-weight-bold mb-1">
+                                                        
+                                                            नान्तो न चादिर्न च सम्प्रतिष्ठा ।
+                                                        
+                                                    </p>
+                                                
+                                                    <p class="has-text-centered has-text-weight-bold mb-1">
+                                                        
+                                                            अश्वत्थमेनं सुविरूढमूल-
+                                                        
+                                                    </p>
+                                                
+                                                    <p class="has-text-centered has-text-weight-bold mb-1">
+                                                        
+                                                            मसङ्गशस्त्रेण दृढेन छित्त्वा ॥ ३ ॥
+                                                        
+                                                    </p>
+                                                
+                                                    <p class="has-text-centered has-text-weight-bold mb-1">
+                                                        
+                                                            ततः पदं तत्परिमार्गितव्यं
+                                                        
+                                                    </p>
+                                                
+                                                    <p class="has-text-centered has-text-weight-bold mb-1">
+                                                        
+                                                            यस्मिन्गता न निवर्तन्ति भूयः ।
+                                                        
+                                                    </p>
+                                                
+                                                    <p class="has-text-centered has-text-weight-bold mb-1">
+                                                        
+                                                            तमेव चाद्यं पुरुषं प्रपद्ये
+                                                        
+                                                    </p>
+                                                
+                                                    <p class="has-text-centered has-text-weight-bold mb-1">
+                                                        
+                                                            यतः प्रवृत्तिः प्रसृता पुराणी ॥ ४ ॥
+                                                        
+                                                    </p>
+                                                
+                                            </div>
                                         
-                                    </p>
-                                
-                                    <p class="has-text-centered has-text-weight-bold mb-1">
+                                    
+                                    
+                                    
                                         
-                                            नान्तो न चादिर्न च सम्प्रतिष्ठा ।
+                                            <div
+                                                
+                                                    class="mb-3"
+                                                
+                                            >
+                                                
+                                                    <p class="has-text-centered has-text-weight-bold">
+                                                        
+                                                            शब्दार्थ
+                                                        
+                                                    </p>
+                                                
+                                            </div>
                                         
-                                    </p>
-                                
-                                    <p class="has-text-centered has-text-weight-bold mb-1">
+                                    
+                                    
+                                    
                                         
-                                            अश्वत्थमेनं सुविरूढमूल-
+                                            <div
+                                                
+                                                    class="mb-5"
+                                                
+                                            >
+                                                
+                                                    <p class="has-text-justified">
+                                                        
+                                                            न - नहीं; रूपम् - रूप; अस्य - इस वृक्ष का; इह - इस संसार में; तथा - भी; उपलभ्यते - अनुभव किया जा सकता है; न - कभी नहीं; च - भी; आदिः - प्रारम्भ; न - कभी नहीं; च - भी; सम्प्रतिष्ठा - नींव; अश्वत्थम् - अश्वत्थ वृक्ष को; एनम् - इस; सु-विरूढ - अत्यन्त दृढ़ता से; मूलम् - जड़वाला; असङग-शस्त्रेण - विरक्ति के हथियार से; दृढेन - दृढ़; छित्वा - काट कर; ततः - तत्पश्चात्; पदम् - स्थिति को; तत् - उस; परिमार्गितव्यम् - खोजना चाहिए; यस्मिन - जहाँ; गताः - जाकर; न - कभी नहीं; निवर्तन्ति - वापस आते हैं; भूयः - पुनः; तम् - उसको; एव - ही; च - भी; आद्यम् - आदि; पुरुषम् - भगवान् की; प्रपद्ये - शरण में जाता हूँ; यतः - जिससे; प्रवृत्तिः - प्रारम्भ; प्रसृता - विस्तीर्ण; पुराणी - अत्यन्त पुरानी |
+                                                        
+                                                    </p>
+                                                
+                                            </div>
                                         
-                                    </p>
-                                
-                                    <p class="has-text-centered has-text-weight-bold mb-1">
+                                    
+                                    
+                                    
                                         
-                                            मसङ्गशस्त्रेण दृढेन छित्त्वा ॥ ३ ॥
+                                            <div
+                                                
+                                                    class="mb-3"
+                                                
+                                            >
+                                                
+                                                    <p class="has-text-centered has-text-weight-bold">
+                                                        
+                                                            भावार्थ
+                                                        
+                                                    </p>
+                                                
+                                            </div>
                                         
-                                    </p>
-                                
-                                    <p class="has-text-centered has-text-weight-bold mb-1">
+                                    
+                                    
+                                    
                                         
-                                            ततः पदं तत्परिमार्गितव्यं
+                                            <div
+                                                
+                                                    class="mb-5"
+                                                
+                                            >
+                                                
+                                                    <p class="has-text-justified">
+                                                        
+                                                            इस वृक्ष के वास्तविक स्वरूप का अनुभव इस जगत् में नहीं किया जा सकता | कोई भी नहीं समझ सकता कि इसका आदि कहाँ है, अन्त कहाँ है या इसका आधार कहाँ है ? लेकिन मनुष्य को चाहिए कि इस दृढ़ मूल वाले वृक्ष को विरक्ति के शस्त्र से काट गिराए | तत्पश्चात् उसे ऐसे स्थान की खोज करनी चाहिए जहाँ जाकर लौटना न पड़े और जहाँ उस भगवान् की शरण ग्रहण कर ली जाये, जिससे अनादि काल से प्रत्येक का सूत्रपात तथा विस्तार होता आया है |
+                                                        
+                                                    </p>
+                                                
+                                            </div>
                                         
-                                    </p>
-                                
-                                    <p class="has-text-centered has-text-weight-bold mb-1">
+                                    
+                                    
+                                    
                                         
-                                            यस्मिन्गता न निवर्तन्ति भूयः ।
+                                            <div
+                                                
+                                                    class="mb-3"
+                                                
+                                            >
+                                                
+                                                    <p class="has-text-centered has-text-weight-bold">
+                                                        
+                                                            तात्पर्य
+                                                        
+                                                    </p>
+                                                
+                                            </div>
                                         
-                                    </p>
-                                
-                                    <p class="has-text-centered has-text-weight-bold mb-1">
+                                    
+                                    
+                                    
                                         
-                                            तमेव चाद्यं पुरुषं प्रपद्ये
+                                            <div
+                                                
+                                            >
+                                                
+                                                    <p class="has-text-justified">
+                                                        
+                                                            अब यह स्पष्ट कर दिया गया है कि इस अश्वत्थ वृक्ष के वास्तविक स्वरूप को इस भौतिक जगत् में नहीं समझा जा सकता | चूँकि इसकी जड़ें ऊपर की ओर हैं, अतः वास्तविक वृक्ष का विस्तार विरुद्ध दिशा में होता है | जब वृक्ष के भौतिक विस्तार में कोई फँस जाता है, तो उसे न तो यह पता चल पाता है कि यह कितनी दूरी तक फैला है और न वह इस वृक्ष के शुभारम्भ को ही देख पाता है | फिर भी मनुष्य को कारण की खोज करनी ही होती है | “मैं अमुक पिता का पुत्र हूँ, जो अमुक का पुत्र है, आदि” – इस प्रकार अनुसन्धान करने से मनुष्य कोब्रह्मा प्राप्त होते हैं, जिन्हें गर्भोदकशायी विष्णु ने उत्पन्न किया | इस प्रकार अन्ततः भगवान् तक पहुँचा जा सकता है, जहाँ सारी गवेषणा का अन्त हो जाता है | मनुष्य को इस वृक्ष के उद्गम, परमेश्वर, की खोज ऐसे व्यक्तियों की संगति द्वारा करनी होती है, जिन्हें उस परमेश्वर का ज्ञान प्राप्त है | इस प्रकार ज्ञान से मनुष्य धीरे-धीरे वास्तविकता के इस छद्म प्रतिबिम्ब से विलग हो जाता है और सम्बन्ध-विच्छेद होने पर वह वास्तव में मूलवृक्ष में स्थित हो जाता है |
+                                                        
+                                                    </p>
+                                                
+                                                    <p class="has-text-justified">
+                                                        
+                                                            इस प्रसंग में असङग शब्द अत्यन्त महत्त्वपूर्ण है, क्योंकि विषयभोग की आसक्ति तथा भौतिक प्रकृति पर प्रभुता अत्यन्त प्रबल होती है | अतएव प्रामाणिक शास्त्रों पर आधारित आत्म-ज्ञान की विवेचना द्वारा विरक्ति सीखनी चाहिए और ज्ञानी पुरुषों से श्रवण करना चाहिए | भक्तों की संगति में रहकर ऐसी विवेचना से भगवान् की प्राप्ति होती है | तब सर्वप्रथम जो करणीय है, वह है भगवान् की शरण ग्रहण करना | यहाँ पर उस स्थान (पद) का वर्णन किया गया है, जहाँ जाकर मनुष्य इस छद्म प्रतिबिम्बित वृक्ष में कभी वापस नहीं लौटता | भगवान् कृष्ण वह आदि मूल हैं, जहाँ से प्रत्येक वस्तु निकली है | उस भगवान् का अनुग्रह प्राप्त करने के लिए केवल उनकी शरण ग्रहण करनी चाहिए, जो श्रवण,कीर्तन आदि द्वारा भक्ति करने के फलस्वरूप प्राप्त होती है | वे ही भौतिक जगत् के विस्तार के कारण हैं | इसकी व्याख्या पहले ही स्वयं भगवान् ने की है |अहं सर्वस्य प्रभावः – मैं प्रत्येक वस्तु का उद्गम हूँ | अतएव इस भौतिक जीवन रूपी प्रबल अश्वत्थ के वृक्ष के बन्धन से छूटने के लिए कृष्ण की शरण ग्रहण की जानी चाहिए | कृष्ण की शरण ग्रहण करते ही मनुष्य स्वतः इस भौतिक विस्तार से विलग हो जाता है |
+                                                        
+                                                    </p>
+                                                
+                                            </div>
                                         
-                                    </p>
-                                
-                                    <p class="has-text-centered has-text-weight-bold mb-1">
-                                        
-                                            यतः प्रवृत्तिः प्रसृता पुराणी ॥ ४ ॥
-                                        
-                                    </p>
-                                
+                                    
+                                    
+                                </div>
                             </div>
-                        
-                    
-                        
-                            <div
-                                
-                                    class="mb-3"
-                                
-                            >
-                                
-                                    <p class="has-text-centered has-text-weight-bold">
-                                        
-                                            शब्दार्थ
-                                        
-                                    </p>
-                                
-                            </div>
-                        
-                    
-                        
-                            <div
-                                
-                                    class="mb-5"
-                                
-                            >
-                                
-                                    <p class="has-text-justified">
-                                        
-                                            न - नहीं; रूपम् - रूप; अस्य - इस वृक्ष का; इह - इस संसार में; तथा - भी; उपलभ्यते - अनुभव किया जा सकता है; न - कभी नहीं; च - भी; आदिः - प्रारम्भ; न - कभी नहीं; च - भी; सम्प्रतिष्ठा - नींव; अश्वत्थम् - अश्वत्थ वृक्ष को; एनम् - इस; सु-विरूढ - अत्यन्त दृढ़ता से; मूलम् - जड़वाला; असङग-शस्त्रेण - विरक्ति के हथियार से; दृढेन - दृढ़; छित्वा - काट कर; ततः - तत्पश्चात्; पदम् - स्थिति को; तत् - उस; परिमार्गितव्यम् - खोजना चाहिए; यस्मिन - जहाँ; गताः - जाकर; न - कभी नहीं; निवर्तन्ति - वापस आते हैं; भूयः - पुनः; तम् - उसको; एव - ही; च - भी; आद्यम् - आदि; पुरुषम् - भगवान् की; प्रपद्ये - शरण में जाता हूँ; यतः - जिससे; प्रवृत्तिः - प्रारम्भ; प्रसृता - विस्तीर्ण; पुराणी - अत्यन्त पुरानी |
-                                        
-                                    </p>
-                                
-                            </div>
-                        
-                    
-                        
-                            <div
-                                
-                                    class="mb-3"
-                                
-                            >
-                                
-                                    <p class="has-text-centered has-text-weight-bold">
-                                        
-                                            भावार्थ
-                                        
-                                    </p>
-                                
-                            </div>
-                        
-                    
-                        
-                            <div
-                                
-                                    class="mb-5"
-                                
-                            >
-                                
-                                    <p class="has-text-justified">
-                                        
-                                            इस वृक्ष के वास्तविक स्वरूप का अनुभव इस जगत् में नहीं किया जा सकता | कोई भी नहीं समझ सकता कि इसका आदि कहाँ है, अन्त कहाँ है या इसका आधार कहाँ है ? लेकिन मनुष्य को चाहिए कि इस दृढ़ मूल वाले वृक्ष को विरक्ति के शस्त्र से काट गिराए | तत्पश्चात् उसे ऐसे स्थान की खोज करनी चाहिए जहाँ जाकर लौटना न पड़े और जहाँ उस भगवान् की शरण ग्रहण कर ली जाये, जिससे अनादि काल से प्रत्येक का सूत्रपात तथा विस्तार होता आया है |
-                                        
-                                    </p>
-                                
-                            </div>
-                        
-                    
-                        
-                            <div
-                                
-                                    class="mb-3"
-                                
-                            >
-                                
-                                    <p class="has-text-centered has-text-weight-bold">
-                                        
-                                            तात्पर्य
-                                        
-                                    </p>
-                                
-                            </div>
-                        
-                    
-                        
-                            <div
-                                
-                            >
-                                
-                                    <p class="has-text-justified">
-                                        
-                                            अब यह स्पष्ट कर दिया गया है कि इस अश्वत्थ वृक्ष के वास्तविक स्वरूप को इस भौतिक जगत् में नहीं समझा जा सकता | चूँकि इसकी जड़ें ऊपर की ओर हैं, अतः वास्तविक वृक्ष का विस्तार विरुद्ध दिशा में होता है | जब वृक्ष के भौतिक विस्तार में कोई फँस जाता है, तो उसे न तो यह पता चल पाता है कि यह कितनी दूरी तक फैला है और न वह इस वृक्ष के शुभारम्भ को ही देख पाता है | फिर भी मनुष्य को कारण की खोज करनी ही होती है | “मैं अमुक पिता का पुत्र हूँ, जो अमुक का पुत्र है, आदि” – इस प्रकार अनुसन्धान करने से मनुष्य कोब्रह्मा प्राप्त होते हैं, जिन्हें गर्भोदकशायी विष्णु ने उत्पन्न किया | इस प्रकार अन्ततः भगवान् तक पहुँचा जा सकता है, जहाँ सारी गवेषणा का अन्त हो जाता है | मनुष्य को इस वृक्ष के उद्गम, परमेश्वर, की खोज ऐसे व्यक्तियों की संगति द्वारा करनी होती है, जिन्हें उस परमेश्वर का ज्ञान प्राप्त है | इस प्रकार ज्ञान से मनुष्य धीरे-धीरे वास्तविकता के इस छद्म प्रतिबिम्ब से विलग हो जाता है और सम्बन्ध-विच्छेद होने पर वह वास्तव में मूलवृक्ष में स्थित हो जाता है |
-                                        
-                                    </p>
-                                
-                                    <p class="has-text-justified">
-                                        
-                                            इस प्रसंग में असङग शब्द अत्यन्त महत्त्वपूर्ण है, क्योंकि विषयभोग की आसक्ति तथा भौतिक प्रकृति पर प्रभुता अत्यन्त प्रबल होती है | अतएव प्रामाणिक शास्त्रों पर आधारित आत्म-ज्ञान की विवेचना द्वारा विरक्ति सीखनी चाहिए और ज्ञानी पुरुषों से श्रवण करना चाहिए | भक्तों की संगति में रहकर ऐसी विवेचना से भगवान् की प्राप्ति होती है | तब सर्वप्रथम जो करणीय है, वह है भगवान् की शरण ग्रहण करना | यहाँ पर उस स्थान (पद) का वर्णन किया गया है, जहाँ जाकर मनुष्य इस छद्म प्रतिबिम्बित वृक्ष में कभी वापस नहीं लौटता | भगवान् कृष्ण वह आदि मूल हैं, जहाँ से प्रत्येक वस्तु निकली है | उस भगवान् का अनुग्रह प्राप्त करने के लिए केवल उनकी शरण ग्रहण करनी चाहिए, जो श्रवण,कीर्तन आदि द्वारा भक्ति करने के फलस्वरूप प्राप्त होती है | वे ही भौतिक जगत् के विस्तार के कारण हैं | इसकी व्याख्या पहले ही स्वयं भगवान् ने की है |अहं सर्वस्य प्रभावः – मैं प्रत्येक वस्तु का उद्गम हूँ | अतएव इस भौतिक जीवन रूपी प्रबल अश्वत्थ के वृक्ष के बन्धन से छूटने के लिए कृष्ण की शरण ग्रहण की जानी चाहिए | कृष्ण की शरण ग्रहण करते ही मनुष्य स्वतः इस भौतिक विस्तार से विलग हो जाता है |
-                                        
-                                    </p>
-                                
-                            </div>
-                        
-                    
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -347,174 +333,180 @@
 </section>
 
 
-    <section class="section pt-0">
-        <div class="container mt-6">
-            <div class="pagination-container">
-    <nav class="pagination is-centered" role="navigation" aria-label="pagination">
-        
-        <!-- previous page button -->
-        <a
-            class="pagination-previous pagination-button button is-orange is-outlined"
-            
-                href="/bhagavad-gita-hindi/15/2/"
-            
-        >
-            पिछला श्लोक
-        </a>
+<section class="section animatedParent animateOnce pb-0">
+    <div class="box glass animated fadeInUpShort">
+        <nav class="pagination is-centered" role="navigation" aria-label="pagination">
+            <!-- previous page button -->
+            <a
+                class="button is-outlined is-warning pagination-previous pagination-button button is-orange is-outlined"
+                
+                    href="/bhagavad-gita-hindi/15/2/"
+                
+            >
+                पिछला श्लोक
+            </a>
 
-        <!-- next page button -->
-        <a
-            class="pagination-next pagination-button button is-orange is-outlined"
-            
-                href="/bhagavad-gita-hindi/15/5/"
-            
-        >
-        अगला श्लोक
-        </a>
+            <!-- next page button -->
+            <!-- <a
+                class="button is-outlined is-warning pagination-next pagination-button button is-orange is-outlined"
+                
+                    href="/bhagavad-gita-hindi/15/5/"
+                
+            >
+            अगला श्लोक -->
+            </a>
 
-        <ul class="pagination-list">
-            
-            
+            <ul class="pagination-list">
+                
+                
+                    <li>
+                        <a
+                            class="button is-outlined is-warning pagination-link"
+                            
+                                href="/bhagavad-gita-hindi/15/1/"
+                            
+                        >
+                            1
+                        </a>
+                    </li>
+                    
+                    
+                        
+
+                        <li>
+                            <a
+                                class="button is-outlined is-warning pagination-link"
+                                href="/bhagavad-gita-hindi/15/2/"
+                            >
+                                2
+                            </a>
+                        </li>
+                    
+                
+                
+                
+                
                 <li>
                     <a
-                        class="pagination-link"
-                        
-                            href="/bhagavad-gita-hindi/15/1/"
-                        
+                        class="button is-outlined is-warning pagination-link is-current" tabindex="-1"
+                        aria-current="page"
+                        disabled
                     >
-                        1
+                        3-4
                     </a>
                 </li>
                 
-                
-                    
 
-                    <li>
-                        <a
-                            class="pagination-link"
-                            href="/bhagavad-gita-hindi/15/2/"
-                        >
-                            2
-                        </a>
-                    </li>
                 
-            
-            
-            
-            
-            <li>
-                <a
-                    class="pagination-link is-current"
-                    aria-current="page"
-                    disabled
-                >
-                    3-4
-                </a>
-            </li>
-            
-
-            
-            
                 
-                    <li>
-                        <a
-                            class="pagination-link"
-                            href="/bhagavad-gita-hindi/15/5/"
-                        >
-                            5
-                        </a>
-                    </li>
                     
                         <li>
-                            <span class="pagination-ellipsis">…</span>
+                            <a
+                                class="button is-outlined is-warning pagination-link"
+                                href="/bhagavad-gita-hindi/15/5/"
+                            >
+                                5
+                            </a>
                         </li>
+                        
+                            <li>
+                                <span class="pagination-ellipsis">…</span>
+                            </li>
+                        
                     
+                    
+                    <li>
+                        <a
+                            class="button is-outlined is-warning pagination-link"
+                            
+                                href="/bhagavad-gita-hindi/15/20/"
+                            
+                        >
+                            20
+                        </a>
+                    </li>
                 
                 
-                <li>
-                    <a
-                        class="pagination-link"
-                        
-                            href="/bhagavad-gita-hindi/15/20/"
-                        
-                    >
-                        20
+            </ul>
+
+            <!-- next page button -->
+            <a
+                class="button is-outlined is-warning pagination-next pagination-button button is-orange is-outlined"
+                
+                    href="/bhagavad-gita-hindi/15/5/"
+                
+            >
+            अगला श्लोक
+            </a>
+        </nav>
+    </div>
+</section>
+
+
+<section class="section animatedParent animateOnce">
+    <div class="box glass animated fadeInUpShort">
+        <nav class="breadcrumb is-medium is-centered" aria-label="breadcrumbs">
+            <ul>
+                
+                <li >
+                    <a class="is-link has-text-orange" href="/">
+                        <span class="icon is-small">
+                            <i class="fas fa-home" aria-hidden="true"></i>
+                        </span>
+                        <span>Home</span>
                     </a>
                 </li>
-            
-            
-        </ul>
-    </nav>
-</div>
-        </div>
-    </section>
-
-
-<section class="section pt-0">
-    <div class="container">
-        <article class="message is-warning is-small">
-            <div class="message-body has-text-centered">
-                <p class="mb-3">The BBT was established in 1972 by His Divine Grace A.C. Bhaktivedanta Swami Prabhupada, Founder-Acharya of the International Society for Krishna Consciousness. BBT is the publisher for his books. All material used here belongs to and copyrighted under BBT (Bhaktivedanta Book Trust).</p>
-
-                <p class="mb-3">🙏 Please consider buying books. Below is a beautiful message by Srila Prabhupada 🙏</p>
-
-                <p class="is-italic mb-3">“I specifically formed the BBT to invest in it exclusive rights for the printing of all literature containing my teachings, writings and lectures. In this way the collections are to be divided fifty percent for printing new books and fifty percent for construction of temples.”</p>
-            </div>
-        </article>
+                
+                <li >
+                    <a class="is-link has-text-orange" href="/bhagavad-gita-hindi/">
+                        <span class="icon is-small">
+                            <i class="fas fa-book" aria-hidden="true"></i>
+                        </span>
+                        <span>श्रीमद्भगवद्गीता</span>
+                    </a>
+                </li>
+                
+                <li >
+                    <a class="is-link has-text-orange" href="/bhagavad-gita-hindi/15/">
+                        <span class="icon is-small">
+                            <i class="fas fa-file-alt" aria-hidden="true"></i>
+                        </span>
+                        <span>अध्याय १५ - पुरुषोत्तमयोग</span>
+                    </a>
+                </li>
+                
+                <li class="is-active">
+                    <a tabindex="-1" href="">
+                        <span class="icon is-small">
+                            <i class="fas fa-quote-right" aria-hidden="true"></i>
+                        </span>
+                        <span>श्लोक ३,४</span>
+                    </a>
+                </li>
+                
+            </ul>
+        </nav>
     </div>
 </section>
 
-<section class="hero is-light is-small">
-    <div class="hero-body">
-        <div class="container">
-            <nav class="breadcrumb is-centered" aria-label="breadcrumbs">
-                <ul>
-                    
-                        <li >
-                            <a class="is-link has-text-orange" href="/">
-                                <span class="icon is-small">
-                                    <i class="fas fa-home" aria-hidden="true"></i>
-                                </span>
-                                <span>Home</span>
-                            </a>
-                        </li>
-                    
-                        <li >
-                            <a class="is-link has-text-orange" href="/bhagavad-gita-hindi/">
-                                <span class="icon is-small">
-                                    <i class="fas fa-book" aria-hidden="true"></i>
-                                </span>
-                                <span>श्रीमद्भगवद्गीता - यथारूप (हिंदी)</span>
-                            </a>
-                        </li>
-                    
-                        <li >
-                            <a class="is-link has-text-orange" href="/bhagavad-gita-hindi/15/">
-                                <span class="icon is-small">
-                                    <i class="fas fa-file-alt" aria-hidden="true"></i>
-                                </span>
-                                <span>अध्याय १५ - पुरुषोत्तमयोग</span>
-                            </a>
-                        </li>
-                    
-                        <li class="is-active">
-                            <a  href="">
-                                <span class="icon is-small">
-                                    <i class="fas fa-quote-right" aria-hidden="true"></i>
-                                </span>
-                                <span>श्लोक ३,४</span>
-                            </a>
-                        </li>
-                    
-                </ul>
-            </nav>
+<section class="section pt-0 animatedParent animateOnce">
+    <article class="box message is-warning is-small p-0 animated fadeInUpShort">
+        <div class="message-header is-justify-content-center">
+            <p>Copyright Notice</p>
         </div>
-    </div>
+        <div class="message-body has-text-centered">
+            <p class="mb-3">The BBT was established in 1972 by His Divine Grace A.C. Bhaktivedanta Swami Prabhupada, Founder-Acharya of the International Society for Krishna Consciousness. BBT is the publisher for his books. All material used here belongs to and copyrighted under BBT (Bhaktivedanta Book Trust).</p>
+    
+            <p class="is-italic mb-3">“I specifically formed the BBT to invest in it exclusive rights for the printing of all literature containing my teachings, writings and lectures. In this way the collections are to be divided fifty percent for printing new books and fifty percent for construction of temples.”</p>
+
+            <p>- A.C. Bhaktivedanta Swami Prabhupada</p>
+        </div>
+    </article>
 </section>
 
 
 
-    <footer class="footer bg-gradient-light-orange pt-5 pb-5">
+    <!-- <footer class="footer bg-gradient-light-orange pt-5 pb-5">
     <div class="container">
         <div class="content">
             <div class="columns is-multiline is-centered">
@@ -537,7 +529,51 @@
             </div>
         </div>
     </div>
+</footer> -->
+
+<footer class="footer p-0">
+    <section class="section">
+        <div class="footer-container">
+            <div class="animatedParent animateOnce">
+                <div class="content-w-image is-flex is-centered-mobile">
+                    <figure class="image is-64x64 m-0 animated fadeInUpShort">
+                        <img src="https://www.ancientknowledge.in/static/images/logo.png">
+                    </figure>
+                    <div class="content m-0 is-flex is-flex-direction-column is-justify-content-space-between animated fadeInUpShort">
+                        <h4 class="mt-0">Ancient Knowledge</h4>
+                        <p class="is-centered-mobile">
+                            <a href="https://www.ancientknowledge.in/about/" class="no-decoration">
+                                <span>About</span>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="animatedParent animateOnce">
+                <div class="content animated fadeInUpShort">
+                    <h4 class="is-centered-mobile m-0 mb-4 animated fadeInUpShort delay-500">@PraacheenGyaan</h4>
+                    <p class="has-text-centered is-flex is-justify-content-space-between animatedParent animateOnce">
+                        <a class="box icon facebook is-large fa-2x mb-0 animated growIn delay-500" href="https://www.facebook.com/PraacheenGyaan/" target="_blank">
+                            <i class="fab fa-facebook-square has-text-white"></i>
+                        </a>
+
+                        <a class="box icon instagram is-large fa-2x mb-0 animated growIn delay-1000" href="https://www.instagram.com/PraacheenGyaan/" target="_blank">
+                            <i class="fab fa-instagram-square has-text-white"></i>
+                        </a>
+
+                        <a class="box icon twitter is-large fa-2x mb-0 animated growIn delay-1500" href="https://twitter.com/PraacheenGyaan/" target="_blank">
+                            <i class="fab fa-twitter-square has-text-white"></i>
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
 </footer>
+
+    <script src="https://www.ancientknowledge.in/static/js/jquery.min.js"></script>
+    <script src="https://www.ancientknowledge.in/static/js/script.js"></script>
+    <script src="https://www.ancientknowledge.in/static/js/css3-animate-it.js"></script>
 
     
 </body>

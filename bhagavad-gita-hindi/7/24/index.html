@@ -14,7 +14,7 @@
 
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#ffffff" />
+    <meta name="theme-color" content="#ff902b" />
 
     <!-- Begin SEO tags -->
     <title>Ancient Knowledge | Bhagavad Gita | Hindi</title>
@@ -24,392 +24,386 @@
     <meta property="og:title" content="Ancient Knowledge | Bhagavad Gita | Hindi" />
     <meta property="og:description" content="Read Shrimad Bhagavad Gita - Yatharoop in hindi. श्रीमद्भगवद्गीता - यथारूप हिंदी में पढ़ें। अध्याय ७ - श्लोक २४" />
     <meta property="og:url" content="https://www.ancientknowledge.in" />
-    <meta property="og:image" content="https://www.ancientknowledge.in/static/images/bhagavad-gita-cover-16by9.jpg" />
+    <meta property="og:image" content="https://www.ancientknowledge.in/static/images/bhagavad-gita-cover-4x3.jpg" />
     <meta property="og:type" content="article" />
     
     <meta property="twitter:title" content="Ancient Knowledge | Bhagavad Gita | Hindi" />
     <meta property="twitter:description" content="Read Shrimad Bhagavad Gita - Yatharoop in hindi. श्रीमद्भगवद्गीता - यथारूप हिंदी में पढ़ें। अध्याय ७ - श्लोक २४" />
-    <meta property="twitter:image" content="https://www.ancientknowledge.in/static/images/bhagavad-gita-cover-16by9.jpg" />
+    <meta property="twitter:image" content="https://www.ancientknowledge.in/static/images/bhagavad-gita-cover-4x3.jpg" />
     <!-- End SEO tags -->
 
-    <link rel="stylesheet" href="https://www.ancientknowledge.in/static/css/theme.css" />
-    <link rel="stylesheet" href="https://www.ancientknowledge.in/static/css/theme-custom.css" />
+    <!-- <link rel="stylesheet" href="https://www.ancientknowledge.in/static/css/theme-old.css" /> -->
+    <!-- <link rel="stylesheet" href="https://www.ancientknowledge.in/static/css/switch-control.min.css" /> -->
+    <!-- <link rel="stylesheet" href="https://www.ancientknowledge.in/static/css/theme-custom.css" /> -->
     
     <link rel="icon" href="https://www.ancientknowledge.in/static/images/favicon.ico">
-    <link rel="shortcut icon" type="image/png" href="https://www.ancientknowledge.in/static/images/favicon.png" />
+    <link rel="shortcut icon" type="image/png" href="https://www.ancientknowledge.in/static/images/logo.png" />
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.0/dist/alpine.min.js" defer></script>
     
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-social@1/bin/bulma-social.min.css" />
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" /> -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-social@1/bin/bulma-social.min.css" /> -->
+
+    <link rel="stylesheet" href="https://www.ancientknowledge.in/static/css/bulma.min.css">
+    <link rel="stylesheet" href="https://www.ancientknowledge.in/static/css/theme.css">
+    <link rel="stylesheet" href="https://www.ancientknowledge.in/static/css/animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 
-<body>
-    <nav class="navbar is-warning bg-gradient-light-orange" x-data="{ openNav: false }">
-    <div class="container">
-        <div class="navbar-brand">
-            <a href="https://www.ancientknowledge.in" class="navbar-item">
-                <p class="has-text-weight-normal has-text-orange">
-                    <span>📖</span>
-                    <span class="pl-2">Ancient Knowledge</span>
-                </p>
+<body class="dark-modes">
+    <nav class="navbar is-light glass" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+        <a class="navbar-item pl-4" href="https://www.ancientknowledge.in">
+            <img src="https://www.ancientknowledge.in/static/images/logo.png" width="28" height="28">
+            <span class="pl-4">
+                Ancient Knowledge
+            </span>
+        </a>
+
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+            data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+    </div>
+
+    <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+            <a class="navbar-item" href="https://www.ancientknowledge.in/about/">
+                About
             </a>
-            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navMenu"
-                :class="{ 'is-active': openNav }" x-on:click="openNav = !openNav">
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-            </a>
-        </div>
-        <div class="navbar-menu" id="navMenu" :class="{ 'is-active': openNav }">
-            <div class="navbar-end">
-                <a href="https://www.ancientknowledge.in/about/" class="navbar-item has-text-weight-normal has-text-orange">About</a>
-            </div>
         </div>
     </div>
 </nav>
 
     
-    <section class="hero is-small is-bold is-dark bg-gradient-orange">
-    <div class="hero-body">
-        <div class="container has-text-centered p-5">
-            <h4 class="title is-4">श्रीमद्भगवद्गीता - यथारूप (हिंदी)</h4>
-        </div>
-    </div>
-</section>
-    
-
-    <div class="content is-centered has-text-centered" style="display: none;">
-        <h1>Ancient Knowledge</h1>
-        <h2>Recollecting the lost knowledge</h2>
-        <h3>Ancient Knowledge | Bhagavad Gita | Hindi</h3>
-        <p>Read Shrimad Bhagavad Gita - Yatharoop in hindi. श्रीमद्भगवद्गीता - यथारूप हिंदी में पढ़ें। अध्याय ७ - श्लोक २४</p>
-        <div class="tags is-centered">
-            
-                <span class="tag">Ancient</span>
-            
-                <span class="tag">Knowledge</span>
-            
-                <span class="tag">India</span>
-            
-                <span class="tag">Shrimad</span>
-            
-                <span class="tag">Bhagavad</span>
-            
-                <span class="tag">Gita</span>
-            
-                <span class="tag">Yatharoop</span>
-            
-                <span class="tag">As It Is</span>
-            
-                <span class="tag">Mahabharat</span>
-            
-                <span class="tag">Krishna</span>
-            
-                <span class="tag">Prabhupad</span>
-            
-                <span class="tag">Hindi</span>
-            
-        </div>
-    </div>
 
     
 
-<section class="hero is-light is-small">
-    <div class="hero-body">
-        <div class="container">
-            <nav class="breadcrumb is-centered" aria-label="breadcrumbs">
-                <ul>
-                    
-                        <li >
-                            <a class="is-link has-text-orange" href="/">
-                                <span class="icon is-small">
-                                    <i class="fas fa-home" aria-hidden="true"></i>
-                                </span>
-                                <span>Home</span>
-                            </a>
-                        </li>
-                    
-                        <li >
-                            <a class="is-link has-text-orange" href="/bhagavad-gita-hindi/">
-                                <span class="icon is-small">
-                                    <i class="fas fa-book" aria-hidden="true"></i>
-                                </span>
-                                <span>श्रीमद्भगवद्गीता - यथारूप (हिंदी)</span>
-                            </a>
-                        </li>
-                    
-                        <li >
-                            <a class="is-link has-text-orange" href="/bhagavad-gita-hindi/7/">
-                                <span class="icon is-small">
-                                    <i class="fas fa-file-alt" aria-hidden="true"></i>
-                                </span>
-                                <span>अध्याय ७ - ज्ञानविज्ञानयोग</span>
-                            </a>
-                        </li>
-                    
-                        <li class="is-active">
-                            <a  href="">
-                                <span class="icon is-small">
-                                    <i class="fas fa-quote-right" aria-hidden="true"></i>
-                                </span>
-                                <span>श्लोक २४</span>
-                            </a>
-                        </li>
-                    
-                </ul>
-            </nav>
-        </div>
+<!-- Margin top behind navbar -->
+<div class="mt-6"></div>
+
+<style>
+    :root {
+        --page-background-image: url(/static/images/bhagavad-gita-cover-4x3.jpg);
+    }
+</style>
+<div class="image-background"></div>
+
+<section class="section animatedParent animateOnce">
+    <div class="box glass animated fadeInUpShort">
+        <nav class="breadcrumb is-medium is-centered" aria-label="breadcrumbs">
+            <ul>
+                
+                <li >
+                    <a class="is-link has-text-orange" href="/">
+                        <span class="icon is-small">
+                            <i class="fas fa-home" aria-hidden="true"></i>
+                        </span>
+                        <span>Home</span>
+                    </a>
+                </li>
+                
+                <li >
+                    <a class="is-link has-text-orange" href="/bhagavad-gita-hindi/">
+                        <span class="icon is-small">
+                            <i class="fas fa-book" aria-hidden="true"></i>
+                        </span>
+                        <span>श्रीमद्भगवद्गीता</span>
+                    </a>
+                </li>
+                
+                <li >
+                    <a class="is-link has-text-orange" href="/bhagavad-gita-hindi/7/">
+                        <span class="icon is-small">
+                            <i class="fas fa-file-alt" aria-hidden="true"></i>
+                        </span>
+                        <span>अध्याय ७ - ज्ञानविज्ञानयोग</span>
+                    </a>
+                </li>
+                
+                <li class="is-active">
+                    <a tabindex="-1" href="">
+                        <span class="icon is-small">
+                            <i class="fas fa-quote-right" aria-hidden="true"></i>
+                        </span>
+                        <span>श्लोक २४</span>
+                    </a>
+                </li>
+                
+            </ul>
+        </nav>
     </div>
 </section>
 
-<section
-    class="
-        section
-        content-card-section
-        pb-0
-    "
-    oncopy="return false" oncut="return false" onpaste="return false"
->
-    <div class="container">
-        <div class="card has-glow-md">
-            <div class="card-content">
-                <div class="content is-medium">
-                    <h5 class="has-text-centered ">
-                        अध्याय ७ - श्लोक २४
-                        
-                    </h5>
-                    
-                    <hr/>
-
-                    
-                        
-                            <div
-                                
-                                    class="mb-5"
-                                
-                            >
-                                
-                                    <p class="has-text-centered has-text-weight-bold mb-1">
+<section class="section pt-0 pb-0">
+    <div class="columns is-multiline is-centered is-variable is-4">
+        <div
+            class="column is-full-tablet is-full-desktop is-full-widescreen is-full-fullhd is-flex animatedParent animateOnce">
+            <div class="card card-horizontal is-flex-grow-1 animated fadeInUpShort">
+                <div class="card-content p-2 pt-4 pb-4">
+                    <div class="columns is-multiline is-variable m-0">
+                        <div class="column">
+                            <div class="content is-medium m-0">
+                                <div class="">
+                                    
+                                    
                                         
-                                            अव्यक्तं व्यक्तिमापन्नं मन्यन्ते मामबुद्धयः ।
+                                            <div
+                                                
+                                                    class="mb-5"
+                                                
+                                            >
+                                                
+                                                    <p class="has-text-centered has-text-weight-bold mb-1">
+                                                        
+                                                            अव्यक्तं व्यक्तिमापन्नं मन्यन्ते मामबुद्धयः ।
+                                                        
+                                                    </p>
+                                                
+                                                    <p class="has-text-centered has-text-weight-bold mb-1">
+                                                        
+                                                            परं भावमजानन्तो ममाव्ययमनुत्तमम् ॥ २४ ॥
+                                                        
+                                                    </p>
+                                                
+                                            </div>
                                         
-                                    </p>
-                                
-                                    <p class="has-text-centered has-text-weight-bold mb-1">
+                                    
+                                    
+                                    
                                         
-                                            परं भावमजानन्तो ममाव्ययमनुत्तमम् ॥ २४ ॥
+                                            <div
+                                                
+                                                    class="mb-3"
+                                                
+                                            >
+                                                
+                                                    <p class="has-text-centered has-text-weight-bold">
+                                                        
+                                                            शब्दार्थ
+                                                        
+                                                    </p>
+                                                
+                                            </div>
                                         
-                                    </p>
-                                
+                                    
+                                    
+                                    
+                                        
+                                            <div
+                                                
+                                                    class="mb-5"
+                                                
+                                            >
+                                                
+                                                    <p class="has-text-justified">
+                                                        
+                                                            <strong>अव्यक्तम्</strong> – अप्रकट; <strong>व्यक्तिम्</strong> – स्वरूप को; <strong>आपन्नम्</strong> – प्राप्त हुआ; <strong>मन्यन्ते</strong> – सोचते हैं; <strong>माम्</strong> – मुझको; <strong>अबुद्धयः</strong> – अल्पज्ञानी व्यक्ति; <strong>परम्</strong> – परम; <strong>भावम्</strong> – सत्ता; <strong>अजानन्तः</strong> – बिना जाने; <strong>मम</strong> – मेरा; <strong>अव्ययम्</strong> – अनश्वर; <strong>अनुत्तमम्</strong> – सर्वश्रेष्ठ |
+                                                        
+                                                    </p>
+                                                
+                                            </div>
+                                        
+                                    
+                                    
+                                    
+                                        
+                                            <div
+                                                
+                                                    class="mb-3"
+                                                
+                                            >
+                                                
+                                                    <p class="has-text-centered has-text-weight-bold">
+                                                        
+                                                            भावार्थ
+                                                        
+                                                    </p>
+                                                
+                                            </div>
+                                        
+                                    
+                                    
+                                    
+                                        
+                                            <div
+                                                
+                                                    class="mb-5"
+                                                
+                                            >
+                                                
+                                                    <p class="has-text-justified">
+                                                        
+                                                            बुद्धिहीन मनुष्य मुझको ठीक से न जानने के कारण सोचते हैं कि मैं (भगवान् कृष्ण) पहले निराकार था और अब मैंने इस स्वरूप को धारण किया है | वे अपने अल्पज्ञान के कारण मेरी अविनाशी तथा सर्वोच्च प्रकृति को नहीं जान पाते |
+                                                        
+                                                    </p>
+                                                
+                                            </div>
+                                        
+                                    
+                                    
+                                    
+                                        
+                                            <div
+                                                
+                                                    class="mb-3"
+                                                
+                                            >
+                                                
+                                                    <p class="has-text-centered has-text-weight-bold">
+                                                        
+                                                            तात्पर्य
+                                                        
+                                                    </p>
+                                                
+                                            </div>
+                                        
+                                    
+                                    
+                                    
+                                        
+                                            <div
+                                                
+                                                    class="mb-5"
+                                                
+                                            >
+                                                
+                                                    <p class="has-text-justified">
+                                                        
+                                                            देवताओं के उपासकों को अल्पज्ञ कहा गया है | भगवान् कृष्ण अपने साकार रूप में यहाँ पर अर्जुन से बातें कर रहे हैं, किन्तु तब भी निर्विशेषवादी अपने अज्ञान के कारण तर्क करते रहते हैं कि परमेश्वर का अन्ततः स्वरूप नहीं होता | श्रीरामानुजाचार्य की परम्परा के महान भगवद्भक्त यामुनाचार्य ने इस सम्बन्ध में दो अत्यन्त उपयुक्त श्लोक कहे हैं (स्तोत्र रत्न १२) –
+                                                        
+                                                    </p>
+                                                
+                                            </div>
+                                        
+                                    
+                                    
+                                    
+                                        
+                                            <div
+                                                
+                                                    class="mb-5"
+                                                
+                                            >
+                                                
+                                                    <p class="has-text-centered is-italic mb-1">
+                                                        
+                                                            त्वां शीलरूपचरितैः परमप्रकृष्टैः
+                                                        
+                                                    </p>
+                                                
+                                                    <p class="has-text-centered is-italic mb-1">
+                                                        
+                                                            सत्त्वेन सात्त्विकतया प्रबलैश्र्च शास्त्रैः |
+                                                        
+                                                    </p>
+                                                
+                                                    <p class="has-text-centered is-italic mb-1">
+                                                        
+                                                            प्रख्यातदैवपरमार्थविदां मतैश्र्च
+                                                        
+                                                    </p>
+                                                
+                                                    <p class="has-text-centered is-italic mb-1">
+                                                        
+                                                            नैवासुरप्रकृतयः प्रभवन्ति बोद्धुम् ||
+                                                        
+                                                    </p>
+                                                
+                                            </div>
+                                        
+                                    
+                                    
+                                    
+                                        
+                                            <div
+                                                
+                                                    class="mb-5"
+                                                
+                                            >
+                                                
+                                                    <p class="has-text-justified">
+                                                        
+                                                            हे प्रभु! व्यासदेव तथा नारद जैसे भक्त आपको भगवान् रूप में जानते हैं | मनुष्य विभिन्न वैदिक ग्रंथों को पढ़कर आपके गुण, रूप तथा कार्यों को जान सकता है और इस तरह आपको भगवान् के रूप में समझ सकता है | किन्तु जो लोग रजो तथा तमोगुण के वश में हैं, ऐसे असुर तथा अभक्तगण आपको नहीं समझ पाते | ऐसे अभक्त वेदान्त, उपनिषद् तथा वैदिक ग्रंथों की व्याख्या करने में कितने ही निपुण क्यों न हों, वे भगवान् को समझ नहीं पाते |
+                                                        
+                                                    </p>
+                                                
+                                                    <p class="has-text-justified">
+                                                        
+                                                            ब्रह्मसंहिता में यह बताया गया है कि केवल वेदान्त साहित्य के अध्ययन से भगवान् को नहीं समझा जा सकता | परमपुरुष को केवल भगवत्कृपा से जाना जा सकता है | अतः इस श्लोक में स्पष्ट रूप से कहा गया है कि न केवल देवताओं के उपासक अल्पज्ञ होते हैं, अपितु वे अभक्त भी जो कृष्णभावनामृत से रहित हैं, जो वेदान्त तथा वैदिक साहित्य के अध्ययन में लगे रहते हैं, अल्पज्ञ हैं और उनके लिए ईश्वर के साकार रूप को समझ पाना सम्भव नहीं है | जो लोग परम सत्य को निर्विशेष करके मानते हैं वे अबुद्धयः बताये गये हैं जिसका अर्थ है, वे लोग जो परमसत्य के परम स्वरूप को नहीं समझते | श्रीमद्भागवत में बताया गया है कि निर्विशेष ब्रह्म से ही परम अनुभूति प्रारम्भ होती है जो ऊपर उठती हुई अन्तर्यामी परमात्मा तक जाती है, किन्तु परमसत्य की अन्तिम अवस्था भगवान् है | आधुनिक निर्विशेषवादी तो और भी अधिक अल्पज्ञ हैं, क्योंकि वे पूर्वगामी शंकराचार्य का भी अनुसरण नहीं करते जिन्होंने स्पष्ट बताया है कि कृष्ण परमेश्वर हैं | अतः निर्विशेषवादी परमसत्य को न जानने के कारण सोचते हैं कि कृष्ण देवकी तथा वासुदेव के पुत्र हैं या कि राजकुमार हैं या कि शक्तिमान जीवात्मा हैं | भगवद्गीता में (९.११) भी इसकी भर्त्सना की गई है | अवजानन्ति मां मूढा मानुषीं तनुमाश्रितम् – केवल मूर्ख ही मुझे सामान्य पुरुष मानते हैं |
+                                                        
+                                                    </p>
+                                                
+                                                    <p class="has-text-justified">
+                                                        
+                                                            तथ्य तो यह है कि कोई बिना भक्ति के तथा कृष्णभावनामृत विकसित किये बिना कृष्ण को नहीं समझ सकता | इसकी पुष्टि भागवत में (१०.१४.२९) हुई है –
+                                                        
+                                                    </p>
+                                                
+                                            </div>
+                                        
+                                    
+                                    
+                                    
+                                        
+                                            <div
+                                                
+                                                    class="mb-5"
+                                                
+                                            >
+                                                
+                                                    <p class="has-text-centered is-italic mb-1">
+                                                        
+                                                            अथापि ते देव पदाम्बुजद्वय प्रसादलेशानुगृहीत एव हि |
+                                                        
+                                                    </p>
+                                                
+                                                    <p class="has-text-centered is-italic mb-1">
+                                                        
+                                                            जानाति तत्त्वं भगवन् महिन्मो न चान्य एकोऽपि चिरं विचिन्वन् ||
+                                                        
+                                                    </p>
+                                                
+                                            </div>
+                                        
+                                    
+                                    
+                                    
+                                        
+                                            <div
+                                                
+                                            >
+                                                
+                                                    <p class="has-text-justified">
+                                                        
+                                                            “हे प्रभु! यदि कोई आपके चरणकमलों की रंचमात्र भी कृपा प्राप्त कर लेता है तो वह आपकी महानता को समझ सकता है | किन्तु जो लोग भगवान् को समझने के लिए मानसिक कल्पना करते हैं वे वेदों का वर्षों तक अध्ययन करके भी नहीं समझ पाते |” कोई न तो मनोधर्म द्वारा, न ही वैदिक साहित्य की व्याख्या द्वार भगवान् कृष्ण या उनके रूप को समझ सकता है | भक्ति के द्वारा की उन्हें समझा जा सकता है | जब मनुष्य हरे कृष्ण हरे कृष्ण कृष्ण कृष्ण हरे हरे | हरे राम हरे राम राम राम हरे हरे – इस महानतम जप से प्रारम्भ करके कृष्णभावनामृत में पूर्णतया तन्मय हो जाता है, तभी वह भगवान् को समझ सकता है | अभक्त निर्विशेषवादी मानते हैं कि भगवान् कृष्ण का शरीर इसी भौतिक प्रकृति का बना है और उनके कार्य, उनका रूप इत्यादि सभी माया हैं | ये निर्विशेषवादी मायावादी कहलाते हैं | ये परमसत्य को नहीं जानते |
+                                                        
+                                                    </p>
+                                                
+                                                    <p class="has-text-justified">
+                                                        
+                                                            बीसवें श्लोक से स्पष्ट है – कामैस्तैस्तैर्हृतज्ञानाः प्रपद्यन्तेऽन्यदेवताः – जो लोग कामेच्छाओं से अन्धे हैं वे अन्य देवताओं की शरण में जाते हैं | यह स्वीकार किया गया है कि भगवान् के अतिरिक्त अन्य देवता भी हैं, जिनके अपने-अपने लोक हैं और भगवान् का भी अपना लोक है | जैसा कि तेईसवें श्लोक में कहा गया है – देवान् देवजयो यान्ति भद्भक्ता यान्ति मामपि – देवताओं के उपासक उनके लोकों को जाते हैं और जो कृष्ण के भक्त हैं वे कृष्णलोक को जाते हैं, किन्तु तो भी मूर्ख मायावादी यह मानते हैं कि भगवान् निर्विशेष हैं और ये विभिन्न रूप उन पर ऊपर से थोपे गये हैं | क्या गीता के अध्ययन से ऐसा प्रतीत होता है कि देवता तथा उनके धाम निर्विशेष हैं? स्पष्ट है कि न तो देवतागण, न ही कृष्ण निर्विशेष हैं | वे सभी व्यक्ति हैं | भगवान् कृष्णपरमेश्वर हैं, उनका अपना लोक है और देवताओं के भी अपने-अपने लोक हैं |
+                                                        
+                                                    </p>
+                                                
+                                                    <p class="has-text-justified">
+                                                        
+                                                            अतः यह अद्वैतवादी तर्क कि परमसत्य निर्विशेष है और रूप ऊपर से थोपा (आरोपित) हुआ है, सत्य नहीं उतरता | यहाँ स्पष्ट बताया गया है कि यह ऊपर से थोपा हुआनहीं है | भगवद्गीता से हम स्पष्टतया समझ सकते हैं कि देवताओं के रूप तथा परमेश्वर का स्वरूप साथ-साथ विद्यमान हैं और भगवान् कृष्ण सच्चिदानन्द रूप हैं | वेद भी पुष्टि करते हैं कि परमसत्य आनन्दमयोऽभ्यासात्– अर्थात् वे स्वभाव से ही आनन्दमय हैं और वे अनन्त शुभ गुणों के आगार हैं | गीता में भगवान् कहते हैं कि यद्यपि वे अज (अजन्मा) हैं, तो भी वे प्रकट होते हैं | भगवद्गीता से हम इस सारे तथ्यों को जान सकते हैं | अतः हम यह नहीं समझ पाते कि भगवान् किस तरह निर्विशेष हैं? जहाँ तक गीता के कथन हैं, उनके अनुसार निर्विशेषवादी अद्वैतवादियों का यह आरोपित सिद्धान्त मिथ्या है | यहाँ स्पष्ट है कि परमसत्य भगवान् कृष्ण के रूप और व्यक्तित्व दोनों हैं |
+                                                        
+                                                    </p>
+                                                
+                                            </div>
+                                        
+                                    
+                                    
+                                </div>
                             </div>
-                        
-                    
-                        
-                            <div
-                                
-                                    class="mb-3"
-                                
-                            >
-                                
-                                    <p class="has-text-centered has-text-weight-bold">
-                                        
-                                            शब्दार्थ
-                                        
-                                    </p>
-                                
-                            </div>
-                        
-                    
-                        
-                            <div
-                                
-                                    class="mb-5"
-                                
-                            >
-                                
-                                    <p class="has-text-justified">
-                                        
-                                            <strong>अव्यक्तम्</strong> – अप्रकट; <strong>व्यक्तिम्</strong> – स्वरूप को; <strong>आपन्नम्</strong> – प्राप्त हुआ; <strong>मन्यन्ते</strong> – सोचते हैं; <strong>माम्</strong> – मुझको; <strong>अबुद्धयः</strong> – अल्पज्ञानी व्यक्ति; <strong>परम्</strong> – परम; <strong>भावम्</strong> – सत्ता; <strong>अजानन्तः</strong> – बिना जाने; <strong>मम</strong> – मेरा; <strong>अव्ययम्</strong> – अनश्वर; <strong>अनुत्तमम्</strong> – सर्वश्रेष्ठ |
-                                        
-                                    </p>
-                                
-                            </div>
-                        
-                    
-                        
-                            <div
-                                
-                                    class="mb-3"
-                                
-                            >
-                                
-                                    <p class="has-text-centered has-text-weight-bold">
-                                        
-                                            भावार्थ
-                                        
-                                    </p>
-                                
-                            </div>
-                        
-                    
-                        
-                            <div
-                                
-                                    class="mb-5"
-                                
-                            >
-                                
-                                    <p class="has-text-justified">
-                                        
-                                            बुद्धिहीन मनुष्य मुझको ठीक से न जानने के कारण सोचते हैं कि मैं (भगवान् कृष्ण) पहले निराकार था और अब मैंने इस स्वरूप को धारण किया है | वे अपने अल्पज्ञान के कारण मेरी अविनाशी तथा सर्वोच्च प्रकृति को नहीं जान पाते |
-                                        
-                                    </p>
-                                
-                            </div>
-                        
-                    
-                        
-                            <div
-                                
-                                    class="mb-3"
-                                
-                            >
-                                
-                                    <p class="has-text-centered has-text-weight-bold">
-                                        
-                                            तात्पर्य
-                                        
-                                    </p>
-                                
-                            </div>
-                        
-                    
-                        
-                            <div
-                                
-                                    class="mb-5"
-                                
-                            >
-                                
-                                    <p class="has-text-justified">
-                                        
-                                            देवताओं के उपासकों को अल्पज्ञ कहा गया है | भगवान् कृष्ण अपने साकार रूप में यहाँ पर अर्जुन से बातें कर रहे हैं, किन्तु तब भी निर्विशेषवादी अपने अज्ञान के कारण तर्क करते रहते हैं कि परमेश्वर का अन्ततः स्वरूप नहीं होता | श्रीरामानुजाचार्य की परम्परा के महान भगवद्भक्त यामुनाचार्य ने इस सम्बन्ध में दो अत्यन्त उपयुक्त श्लोक कहे हैं (स्तोत्र रत्न १२) –
-                                        
-                                    </p>
-                                
-                            </div>
-                        
-                    
-                        
-                            <div
-                                
-                                    class="mb-5"
-                                
-                            >
-                                
-                                    <p class="has-text-centered is-italic mb-1">
-                                        
-                                            त्वां शीलरूपचरितैः परमप्रकृष्टैः
-                                        
-                                    </p>
-                                
-                                    <p class="has-text-centered is-italic mb-1">
-                                        
-                                            सत्त्वेन सात्त्विकतया प्रबलैश्र्च शास्त्रैः |
-                                        
-                                    </p>
-                                
-                                    <p class="has-text-centered is-italic mb-1">
-                                        
-                                            प्रख्यातदैवपरमार्थविदां मतैश्र्च
-                                        
-                                    </p>
-                                
-                                    <p class="has-text-centered is-italic mb-1">
-                                        
-                                            नैवासुरप्रकृतयः प्रभवन्ति बोद्धुम् ||
-                                        
-                                    </p>
-                                
-                            </div>
-                        
-                    
-                        
-                            <div
-                                
-                                    class="mb-5"
-                                
-                            >
-                                
-                                    <p class="has-text-justified">
-                                        
-                                            हे प्रभु! व्यासदेव तथा नारद जैसे भक्त आपको भगवान् रूप में जानते हैं | मनुष्य विभिन्न वैदिक ग्रंथों को पढ़कर आपके गुण, रूप तथा कार्यों को जान सकता है और इस तरह आपको भगवान् के रूप में समझ सकता है | किन्तु जो लोग रजो तथा तमोगुण के वश में हैं, ऐसे असुर तथा अभक्तगण आपको नहीं समझ पाते | ऐसे अभक्त वेदान्त, उपनिषद् तथा वैदिक ग्रंथों की व्याख्या करने में कितने ही निपुण क्यों न हों, वे भगवान् को समझ नहीं पाते |
-                                        
-                                    </p>
-                                
-                                    <p class="has-text-justified">
-                                        
-                                            ब्रह्मसंहिता में यह बताया गया है कि केवल वेदान्त साहित्य के अध्ययन से भगवान् को नहीं समझा जा सकता | परमपुरुष को केवल भगवत्कृपा से जाना जा सकता है | अतः इस श्लोक में स्पष्ट रूप से कहा गया है कि न केवल देवताओं के उपासक अल्पज्ञ होते हैं, अपितु वे अभक्त भी जो कृष्णभावनामृत से रहित हैं, जो वेदान्त तथा वैदिक साहित्य के अध्ययन में लगे रहते हैं, अल्पज्ञ हैं और उनके लिए ईश्वर के साकार रूप को समझ पाना सम्भव नहीं है | जो लोग परम सत्य को निर्विशेष करके मानते हैं वे अबुद्धयः बताये गये हैं जिसका अर्थ है, वे लोग जो परमसत्य के परम स्वरूप को नहीं समझते | श्रीमद्भागवत में बताया गया है कि निर्विशेष ब्रह्म से ही परम अनुभूति प्रारम्भ होती है जो ऊपर उठती हुई अन्तर्यामी परमात्मा तक जाती है, किन्तु परमसत्य की अन्तिम अवस्था भगवान् है | आधुनिक निर्विशेषवादी तो और भी अधिक अल्पज्ञ हैं, क्योंकि वे पूर्वगामी शंकराचार्य का भी अनुसरण नहीं करते जिन्होंने स्पष्ट बताया है कि कृष्ण परमेश्वर हैं | अतः निर्विशेषवादी परमसत्य को न जानने के कारण सोचते हैं कि कृष्ण देवकी तथा वासुदेव के पुत्र हैं या कि राजकुमार हैं या कि शक्तिमान जीवात्मा हैं | भगवद्गीता में (९.११) भी इसकी भर्त्सना की गई है | अवजानन्ति मां मूढा मानुषीं तनुमाश्रितम् – केवल मूर्ख ही मुझे सामान्य पुरुष मानते हैं |
-                                        
-                                    </p>
-                                
-                                    <p class="has-text-justified">
-                                        
-                                            तथ्य तो यह है कि कोई बिना भक्ति के तथा कृष्णभावनामृत विकसित किये बिना कृष्ण को नहीं समझ सकता | इसकी पुष्टि भागवत में (१०.१४.२९) हुई है –
-                                        
-                                    </p>
-                                
-                            </div>
-                        
-                    
-                        
-                            <div
-                                
-                                    class="mb-5"
-                                
-                            >
-                                
-                                    <p class="has-text-centered is-italic mb-1">
-                                        
-                                            अथापि ते देव पदाम्बुजद्वय प्रसादलेशानुगृहीत एव हि |
-                                        
-                                    </p>
-                                
-                                    <p class="has-text-centered is-italic mb-1">
-                                        
-                                            जानाति तत्त्वं भगवन् महिन्मो न चान्य एकोऽपि चिरं विचिन्वन् ||
-                                        
-                                    </p>
-                                
-                            </div>
-                        
-                    
-                        
-                            <div
-                                
-                            >
-                                
-                                    <p class="has-text-justified">
-                                        
-                                            “हे प्रभु! यदि कोई आपके चरणकमलों की रंचमात्र भी कृपा प्राप्त कर लेता है तो वह आपकी महानता को समझ सकता है | किन्तु जो लोग भगवान् को समझने के लिए मानसिक कल्पना करते हैं वे वेदों का वर्षों तक अध्ययन करके भी नहीं समझ पाते |” कोई न तो मनोधर्म द्वारा, न ही वैदिक साहित्य की व्याख्या द्वार भगवान् कृष्ण या उनके रूप को समझ सकता है | भक्ति के द्वारा की उन्हें समझा जा सकता है | जब मनुष्य हरे कृष्ण हरे कृष्ण कृष्ण कृष्ण हरे हरे | हरे राम हरे राम राम राम हरे हरे – इस महानतम जप से प्रारम्भ करके कृष्णभावनामृत में पूर्णतया तन्मय हो जाता है, तभी वह भगवान् को समझ सकता है | अभक्त निर्विशेषवादी मानते हैं कि भगवान् कृष्ण का शरीर इसी भौतिक प्रकृति का बना है और उनके कार्य, उनका रूप इत्यादि सभी माया हैं | ये निर्विशेषवादी मायावादी कहलाते हैं | ये परमसत्य को नहीं जानते |
-                                        
-                                    </p>
-                                
-                                    <p class="has-text-justified">
-                                        
-                                            बीसवें श्लोक से स्पष्ट है – कामैस्तैस्तैर्हृतज्ञानाः प्रपद्यन्तेऽन्यदेवताः – जो लोग कामेच्छाओं से अन्धे हैं वे अन्य देवताओं की शरण में जाते हैं | यह स्वीकार किया गया है कि भगवान् के अतिरिक्त अन्य देवता भी हैं, जिनके अपने-अपने लोक हैं और भगवान् का भी अपना लोक है | जैसा कि तेईसवें श्लोक में कहा गया है – देवान् देवजयो यान्ति भद्भक्ता यान्ति मामपि – देवताओं के उपासक उनके लोकों को जाते हैं और जो कृष्ण के भक्त हैं वे कृष्णलोक को जाते हैं, किन्तु तो भी मूर्ख मायावादी यह मानते हैं कि भगवान् निर्विशेष हैं और ये विभिन्न रूप उन पर ऊपर से थोपे गये हैं | क्या गीता के अध्ययन से ऐसा प्रतीत होता है कि देवता तथा उनके धाम निर्विशेष हैं? स्पष्ट है कि न तो देवतागण, न ही कृष्ण निर्विशेष हैं | वे सभी व्यक्ति हैं | भगवान् कृष्णपरमेश्वर हैं, उनका अपना लोक है और देवताओं के भी अपने-अपने लोक हैं |
-                                        
-                                    </p>
-                                
-                                    <p class="has-text-justified">
-                                        
-                                            अतः यह अद्वैतवादी तर्क कि परमसत्य निर्विशेष है और रूप ऊपर से थोपा (आरोपित) हुआ है, सत्य नहीं उतरता | यहाँ स्पष्ट बताया गया है कि यह ऊपर से थोपा हुआनहीं है | भगवद्गीता से हम स्पष्टतया समझ सकते हैं कि देवताओं के रूप तथा परमेश्वर का स्वरूप साथ-साथ विद्यमान हैं और भगवान् कृष्ण सच्चिदानन्द रूप हैं | वेद भी पुष्टि करते हैं कि परमसत्य आनन्दमयोऽभ्यासात्– अर्थात् वे स्वभाव से ही आनन्दमय हैं और वे अनन्त शुभ गुणों के आगार हैं | गीता में भगवान् कहते हैं कि यद्यपि वे अज (अजन्मा) हैं, तो भी वे प्रकट होते हैं | भगवद्गीता से हम इस सारे तथ्यों को जान सकते हैं | अतः हम यह नहीं समझ पाते कि भगवान् किस तरह निर्विशेष हैं? जहाँ तक गीता के कथन हैं, उनके अनुसार निर्विशेषवादी अद्वैतवादियों का यह आरोपित सिद्धान्त मिथ्या है | यहाँ स्पष्ट है कि परमसत्य भगवान् कृष्ण के रूप और व्यक्तित्व दोनों हैं |
-                                        
-                                    </p>
-                                
-                            </div>
-                        
-                    
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -417,178 +411,184 @@
 </section>
 
 
-    <section class="section pt-0">
-        <div class="container mt-6">
-            <div class="pagination-container">
-    <nav class="pagination is-centered" role="navigation" aria-label="pagination">
-        
-        <!-- previous page button -->
-        <a
-            class="pagination-previous pagination-button button is-orange is-outlined"
-            
-                href="/bhagavad-gita-hindi/7/23/"
-            
-        >
-            पिछला श्लोक
-        </a>
-
-        <!-- next page button -->
-        <a
-            class="pagination-next pagination-button button is-orange is-outlined"
-            
-                href="/bhagavad-gita-hindi/7/25/"
-            
-        >
-        अगला श्लोक
-        </a>
-
-        <ul class="pagination-list">
-            
-            
-                <li>
-                    <a
-                        class="pagination-link"
-                        
-                            href="/bhagavad-gita-hindi/7/1/"
-                        
-                    >
-                        1
-                    </a>
-                </li>
+<section class="section animatedParent animateOnce pb-0">
+    <div class="box glass animated fadeInUpShort">
+        <nav class="pagination is-centered" role="navigation" aria-label="pagination">
+            <!-- previous page button -->
+            <a
+                class="button is-outlined is-warning pagination-previous pagination-button button is-orange is-outlined"
                 
+                    href="/bhagavad-gita-hindi/7/23/"
                 
-                    
-                        <li>
-                            <span class="pagination-ellipsis">…</span>
-                        </li>
-                    
+            >
+                पिछला श्लोक
+            </a>
 
-                    <li>
-                        <a
-                            class="pagination-link"
-                            href="/bhagavad-gita-hindi/7/23/"
-                        >
-                            23
-                        </a>
-                    </li>
+            <!-- next page button -->
+            <!-- <a
+                class="button is-outlined is-warning pagination-next pagination-button button is-orange is-outlined"
                 
-            
-            
-            
-            
-            <li>
-                <a
-                    class="pagination-link is-current"
-                    aria-current="page"
-                    disabled
-                >
-                    24
-                </a>
-            </li>
-            
+                    href="/bhagavad-gita-hindi/7/25/"
+                
+            >
+            अगला श्लोक -->
+            </a>
 
-            
-            
+            <ul class="pagination-list">
+                
                 
                     <li>
                         <a
-                            class="pagination-link"
-                            href="/bhagavad-gita-hindi/7/25/"
+                            class="button is-outlined is-warning pagination-link"
+                            
+                                href="/bhagavad-gita-hindi/7/1/"
+                            
                         >
-                            25
+                            1
                         </a>
                     </li>
                     
+                    
+                        
+                            <li>
+                                <span class="pagination-ellipsis">…</span>
+                            </li>
+                        
+
                         <li>
-                            <span class="pagination-ellipsis">…</span>
+                            <a
+                                class="button is-outlined is-warning pagination-link"
+                                href="/bhagavad-gita-hindi/7/23/"
+                            >
+                                23
+                            </a>
                         </li>
                     
+                
+                
                 
                 
                 <li>
                     <a
-                        class="pagination-link"
-                        
-                            href="/bhagavad-gita-hindi/7/30/"
-                        
+                        class="button is-outlined is-warning pagination-link is-current" tabindex="-1"
+                        aria-current="page"
+                        disabled
                     >
-                        30
+                        24
                     </a>
                 </li>
-            
-            
-        </ul>
-    </nav>
-</div>
-        </div>
-    </section>
+                
 
-
-<section class="section pt-0">
-    <div class="container">
-        <article class="message is-warning is-small">
-            <div class="message-body has-text-centered">
-                <p class="mb-3">The BBT was established in 1972 by His Divine Grace A.C. Bhaktivedanta Swami Prabhupada, Founder-Acharya of the International Society for Krishna Consciousness. BBT is the publisher for his books. All material used here belongs to and copyrighted under BBT (Bhaktivedanta Book Trust).</p>
-
-                <p class="mb-3">🙏 Please consider buying books. Below is a beautiful message by Srila Prabhupada 🙏</p>
-
-                <p class="is-italic mb-3">“I specifically formed the BBT to invest in it exclusive rights for the printing of all literature containing my teachings, writings and lectures. In this way the collections are to be divided fifty percent for printing new books and fifty percent for construction of temples.”</p>
-            </div>
-        </article>
-    </div>
-</section>
-
-<section class="hero is-light is-small">
-    <div class="hero-body">
-        <div class="container">
-            <nav class="breadcrumb is-centered" aria-label="breadcrumbs">
-                <ul>
+                
+                
                     
-                        <li >
-                            <a class="is-link has-text-orange" href="/">
-                                <span class="icon is-small">
-                                    <i class="fas fa-home" aria-hidden="true"></i>
-                                </span>
-                                <span>Home</span>
+                        <li>
+                            <a
+                                class="button is-outlined is-warning pagination-link"
+                                href="/bhagavad-gita-hindi/7/25/"
+                            >
+                                25
                             </a>
                         </li>
+                        
+                            <li>
+                                <span class="pagination-ellipsis">…</span>
+                            </li>
+                        
                     
-                        <li >
-                            <a class="is-link has-text-orange" href="/bhagavad-gita-hindi/">
-                                <span class="icon is-small">
-                                    <i class="fas fa-book" aria-hidden="true"></i>
-                                </span>
-                                <span>श्रीमद्भगवद्गीता - यथारूप (हिंदी)</span>
-                            </a>
-                        </li>
                     
-                        <li >
-                            <a class="is-link has-text-orange" href="/bhagavad-gita-hindi/7/">
-                                <span class="icon is-small">
-                                    <i class="fas fa-file-alt" aria-hidden="true"></i>
-                                </span>
-                                <span>अध्याय ७ - ज्ञानविज्ञानयोग</span>
-                            </a>
-                        </li>
-                    
-                        <li class="is-active">
-                            <a  href="">
-                                <span class="icon is-small">
-                                    <i class="fas fa-quote-right" aria-hidden="true"></i>
-                                </span>
-                                <span>श्लोक २४</span>
-                            </a>
-                        </li>
-                    
-                </ul>
-            </nav>
-        </div>
+                    <li>
+                        <a
+                            class="button is-outlined is-warning pagination-link"
+                            
+                                href="/bhagavad-gita-hindi/7/30/"
+                            
+                        >
+                            30
+                        </a>
+                    </li>
+                
+                
+            </ul>
+
+            <!-- next page button -->
+            <a
+                class="button is-outlined is-warning pagination-next pagination-button button is-orange is-outlined"
+                
+                    href="/bhagavad-gita-hindi/7/25/"
+                
+            >
+            अगला श्लोक
+            </a>
+        </nav>
     </div>
 </section>
 
 
+<section class="section animatedParent animateOnce">
+    <div class="box glass animated fadeInUpShort">
+        <nav class="breadcrumb is-medium is-centered" aria-label="breadcrumbs">
+            <ul>
+                
+                <li >
+                    <a class="is-link has-text-orange" href="/">
+                        <span class="icon is-small">
+                            <i class="fas fa-home" aria-hidden="true"></i>
+                        </span>
+                        <span>Home</span>
+                    </a>
+                </li>
+                
+                <li >
+                    <a class="is-link has-text-orange" href="/bhagavad-gita-hindi/">
+                        <span class="icon is-small">
+                            <i class="fas fa-book" aria-hidden="true"></i>
+                        </span>
+                        <span>श्रीमद्भगवद्गीता</span>
+                    </a>
+                </li>
+                
+                <li >
+                    <a class="is-link has-text-orange" href="/bhagavad-gita-hindi/7/">
+                        <span class="icon is-small">
+                            <i class="fas fa-file-alt" aria-hidden="true"></i>
+                        </span>
+                        <span>अध्याय ७ - ज्ञानविज्ञानयोग</span>
+                    </a>
+                </li>
+                
+                <li class="is-active">
+                    <a tabindex="-1" href="">
+                        <span class="icon is-small">
+                            <i class="fas fa-quote-right" aria-hidden="true"></i>
+                        </span>
+                        <span>श्लोक २४</span>
+                    </a>
+                </li>
+                
+            </ul>
+        </nav>
+    </div>
+</section>
 
-    <footer class="footer bg-gradient-light-orange pt-5 pb-5">
+<section class="section pt-0 animatedParent animateOnce">
+    <article class="box message is-warning is-small p-0 animated fadeInUpShort">
+        <div class="message-header is-justify-content-center">
+            <p>Copyright Notice</p>
+        </div>
+        <div class="message-body has-text-centered">
+            <p class="mb-3">The BBT was established in 1972 by His Divine Grace A.C. Bhaktivedanta Swami Prabhupada, Founder-Acharya of the International Society for Krishna Consciousness. BBT is the publisher for his books. All material used here belongs to and copyrighted under BBT (Bhaktivedanta Book Trust).</p>
+    
+            <p class="is-italic mb-3">“I specifically formed the BBT to invest in it exclusive rights for the printing of all literature containing my teachings, writings and lectures. In this way the collections are to be divided fifty percent for printing new books and fifty percent for construction of temples.”</p>
+
+            <p>- A.C. Bhaktivedanta Swami Prabhupada</p>
+        </div>
+    </article>
+</section>
+
+
+
+    <!-- <footer class="footer bg-gradient-light-orange pt-5 pb-5">
     <div class="container">
         <div class="content">
             <div class="columns is-multiline is-centered">
@@ -611,7 +611,51 @@
             </div>
         </div>
     </div>
+</footer> -->
+
+<footer class="footer p-0">
+    <section class="section">
+        <div class="footer-container">
+            <div class="animatedParent animateOnce">
+                <div class="content-w-image is-flex is-centered-mobile">
+                    <figure class="image is-64x64 m-0 animated fadeInUpShort">
+                        <img src="https://www.ancientknowledge.in/static/images/logo.png">
+                    </figure>
+                    <div class="content m-0 is-flex is-flex-direction-column is-justify-content-space-between animated fadeInUpShort">
+                        <h4 class="mt-0">Ancient Knowledge</h4>
+                        <p class="is-centered-mobile">
+                            <a href="https://www.ancientknowledge.in/about/" class="no-decoration">
+                                <span>About</span>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="animatedParent animateOnce">
+                <div class="content animated fadeInUpShort">
+                    <h4 class="is-centered-mobile m-0 mb-4 animated fadeInUpShort delay-500">@PraacheenGyaan</h4>
+                    <p class="has-text-centered is-flex is-justify-content-space-between animatedParent animateOnce">
+                        <a class="box icon facebook is-large fa-2x mb-0 animated growIn delay-500" href="https://www.facebook.com/PraacheenGyaan/" target="_blank">
+                            <i class="fab fa-facebook-square has-text-white"></i>
+                        </a>
+
+                        <a class="box icon instagram is-large fa-2x mb-0 animated growIn delay-1000" href="https://www.instagram.com/PraacheenGyaan/" target="_blank">
+                            <i class="fab fa-instagram-square has-text-white"></i>
+                        </a>
+
+                        <a class="box icon twitter is-large fa-2x mb-0 animated growIn delay-1500" href="https://twitter.com/PraacheenGyaan/" target="_blank">
+                            <i class="fab fa-twitter-square has-text-white"></i>
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
 </footer>
+
+    <script src="https://www.ancientknowledge.in/static/js/jquery.min.js"></script>
+    <script src="https://www.ancientknowledge.in/static/js/script.js"></script>
+    <script src="https://www.ancientknowledge.in/static/js/css3-animate-it.js"></script>
 
     
 </body>
