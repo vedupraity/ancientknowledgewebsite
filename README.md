@@ -1,14 +1,3 @@
-<style>
-td, th {
-   border: none!important;
-}
-
-.logo {
-    min-width: 36px;
-    width: 36px;
-}
-</style>
-
 # Ancient Knowledge
 
 [![Status badge](https://img.shields.io/badge/Status-Live-success.svg)](https://shields.io/) [![Status badge](https://img.shields.io/badge/Open%20Source%3F-Yes!-success.svg)](https://shields.io/)
@@ -18,17 +7,16 @@ td, th {
 
 |     |     |
 | --- | --- |
-| <img src="static/images/logo.png" class="logo"/> | **[AncientKnowledge.in](https://www.ancientknowledge.in)** is a free digital library of ancient scriptures, texts, and books. <br> *“Our mission is to allow everyone to learn about Vedic Culture and the Sanatana Dharma.”*
-|
+|<img src="static/images/logo.png" style="min-width: 36px; width: 36px;"/>|**[AncientKnowledge.in](https://www.ancientknowledge.in)** is a free digital library of ancient scriptures, texts, and books. <br> *“Our mission is to allow everyone to learn about Vedic Culture and the Sanatana Dharma.”*|
 
 ---
 
 ## Content
 
-- [x] श्रीमद्भगवद्गीता - यथारूप (हिंदी)
-- [x] Shrimad Bhagavad Gita - As It Is (English)
-- [x] श्रीरामचरितमानस (हिंदी)
-- [x] Shri Ramcharitmanas (English)
+- ✅ श्रीमद्भगवद्गीता - यथारूप (हिंदी)
+- ✅ Shrimad Bhagavad Gita - As It Is (English)
+- ✅ श्रीरामचरितमानस (हिंदी)
+- ✅ Shri Ramcharitmanas (English)
 
 ---
 
