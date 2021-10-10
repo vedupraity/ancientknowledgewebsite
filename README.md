@@ -5,8 +5,6 @@
 
 ## About Us
 
-<img src="static/images/logo.png" style="min-width: 36px; width: 36px;"/>
-
 **[AncientKnowledge.in](https://www.ancientknowledge.in)** is a free digital library of ancient scriptures, texts, and books. <br> *“Our mission is to allow everyone to learn about Vedic Culture and the Sanatana Dharma.”*
 
 ---
