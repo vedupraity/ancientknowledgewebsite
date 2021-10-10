@@ -1,13 +1,12 @@
 ## About
 
-“Our mission is to allow everyone to learn about Vedic Culture and the Sanatana Dharma.”
-
-** This repository is for hosting static website with Github Pages.
+**[AncientKnowledge.in](https://www.ancientknowledge.in)** is a free digital library of ancient scriptures, texts, and books.
 
 ---
 
-**Visit [AncientKnowledge.in](https://www.ancientknowledge.in) to learn more**
+*“Our mission is to allow everyone to learn about Vedic Culture and the Sanatana Dharma.”*
 
+---
 
 Follow us on social media to get more updates 
 
