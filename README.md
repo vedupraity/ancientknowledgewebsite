@@ -1,22 +1,48 @@
-## About
+<style>
+td, th {
+   border: none!important;
+}
 
-**[AncientKnowledge.in](https://www.ancientknowledge.in)** is a free digital library of ancient scriptures, texts, and books.
+.logo {
+    min-width: 36px;
+    width: 36px;
+}
+</style>
+
+# Ancient Knowledge
+
+[![Status badge](https://img.shields.io/badge/Status-Live-success.svg)](https://shields.io/) [![Status badge](https://img.shields.io/badge/Open%20Source%3F-Yes!-success.svg)](https://shields.io/)
+
+
+## About Us
+
+|     |     |
+| --- | --- |
+| <img src="static/images/logo.png" class="logo"/> | **[AncientKnowledge.in](https://www.ancientknowledge.in)** is a free digital library of ancient scriptures, texts, and books. <br> *“Our mission is to allow everyone to learn about Vedic Culture and the Sanatana Dharma.”*
+|
 
 ---
 
-*“Our mission is to allow everyone to learn about Vedic Culture and the Sanatana Dharma.”*
+## Content
+
+- [x] श्रीमद्भगवद्गीता - यथारूप (हिंदी)
+- [x] Shrimad Bhagavad Gita - As It Is (English)
+- [x] श्रीरामचरितमानस (हिंदी)
+- [x] Shri Ramcharitmanas (English)
 
 ---
 
-Follow us on social media to get more updates 
+## Social media
 
-- [instagram.com/praacheengyaan](https://www.instagram.com/praacheengyaan)
+- [Instagram - praacheengyaan](https://www.instagram.com/praacheengyaan)
 
-- [facebook.com/praacheengyaan](https://www.facebook.com/praacheengyaan)
+- [Facebook - praacheengyaan](https://www.facebook.com/praacheengyaan)
 
-- [twitter.com/praacheengyaan](https://www.twitter.com/praacheengyaan)
+- [Twitter - praacheengyaan](https://www.twitter.com/praacheengyaan)
 
 ---
+
+## Contact
 
 We are looking forward to extend our team!
 
