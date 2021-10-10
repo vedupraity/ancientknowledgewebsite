@@ -18,4 +18,6 @@ Follow us on social media to get more updates
 
 ---
 
-Contact us at [ancientknowledgeinbox@gmail.com](ancientknowledgeinbox@gmail.com)
+We are looking forward to extend our team!
+
+Contact us at [ancientknowledgeinbox@gmail.com](ancientknowledgeinbox@gmail.com) to know more.
