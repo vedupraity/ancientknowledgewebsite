@@ -7,7 +7,6 @@
 
 **[AncientKnowledge.in](https://www.ancientknowledge.in)** is a free digital library of ancient scriptures, texts, and books. <br> *“Our mission is to allow everyone to learn about Vedic Culture and the Sanatana Dharma.”*
 
----
 
 ## Content
 
@@ -16,7 +15,6 @@
 - ✅ श्रीरामचरितमानस (हिंदी)
 - ✅ Shri Ramcharitmanas (English)
 
----
 
 ## Social media
 
@@ -26,7 +24,6 @@
 
 - [Twitter - praacheengyaan](https://www.twitter.com/praacheengyaan)
 
----
 
 ## Contact
 
