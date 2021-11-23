@@ -8,14 +8,6 @@
 **[AncientKnowledge.in](https://www.ancientknowledge.in)** is a free digital library of ancient scriptures, texts, and books. <br> *“Our mission is to allow everyone to learn about Vedic Culture and the Sanatana Dharma.”*
 
 
-## Content
-
-- ✅ श्रीमद्भगवद्गीता - यथारूप (हिंदी)
-- ✅ Shrimad Bhagavad Gita - As It Is (English)
-- ✅ श्रीरामचरितमानस (हिंदी)
-- ✅ Shri Ramcharitmanas (English)
-
-
 ## Social media
 
 - [Instagram - praacheengyaan](https://www.instagram.com/praacheengyaan)
