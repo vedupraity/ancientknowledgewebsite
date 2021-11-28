@@ -1,1 +1,1 @@
-release-95 (Sun Nov 28 06:38:09 UTC 2021)
+release-96 (Sun Nov 28 10:26:06 UTC 2021)
