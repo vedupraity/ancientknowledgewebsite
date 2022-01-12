@@ -1,0 +1,58 @@
+name: Post Deploy
+
+on:
+  push:
+    branches: [ master ]
+
+concurrency: 
+  group: ${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  sitemap_generator:
+    runs-on: ubuntu-latest
+    name: Generate a sitemap
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+    steps:
+      - name: Checkout the repo
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+
+      - name: Generate the sitemap
+        id: sitemap
+        uses: cicirello/generate-sitemap@v1
+        with:
+          include-pdf: false
+          base-url-path: https://www.ancientknowledge.in/
+
+      - name: Output stats
+        run: |
+          echo "sitemap-path = ${{ steps.sitemap.outputs.sitemap-path }}"
+          echo "url-count = ${{ steps.sitemap.outputs.url-count }}"
+          echo "excluded-count = ${{ steps.sitemap.outputs.excluded-count }}"
+
+      - name: Update sitemap in repository
+        run: |
+          git config user.email "${{ secrets.GIT_USER_EMAIL }}"
+          git config user.name "${{ secrets.GIT_USER_NAME }}"
+          git add sitemap.xml
+          git commit -m "update sitemap" || echo "No changes to commit"
+          git push
+  
+  cf_cache_purge:
+    runs-on: ubuntu-latest
+    name: Purge Cloudflare cache
+    needs: [sitemap_generator]
+    steps:
+      - name: Wait for pages-build-deployment workflow
+        run: |
+          sleep 2m
+      - name: Clear cloudflare cache
+        run: |
+          curl -X POST "https://api.cloudflare.com/client/v4/zones/${{ secrets.CF_ZONE_ID }}/purge_cache" \
+            -H "Authorization: Bearer ${{ secrets.CF_PURGE_TOKEN }}" \
+            -H "Content-Type: application/json" \
+            --data '{"purge_everything":true}'
