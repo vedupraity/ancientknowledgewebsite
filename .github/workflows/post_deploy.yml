@@ -49,7 +49,7 @@ jobs:
     steps:
       - name: Wait for pages-build-deployment workflow
         run: |
-          sleep 2m
+          sleep 1m
       - name: Clear cloudflare cache
         run: |
           curl -X POST "https://api.cloudflare.com/client/v4/zones/${{ secrets.CF_ZONE_ID }}/purge_cache" \
