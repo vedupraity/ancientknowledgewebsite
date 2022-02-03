@@ -1,4 +1,5 @@
 User-agent: *
 Disallow: /404.html
+Disallow: /version.html
 
 Sitemap: https://www.ancientknowledge.in/sitemap.xml
