@@ -17,13 +17,13 @@ jobs:
 
     steps:
       - name: Checkout the repo
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           fetch-depth: 0
 
       - name: Generate the sitemap
         id: sitemap
-        uses: cicirello/generate-sitemap@v1
+        uses: cicirello/generate-sitemap@v2
         with:
           include-pdf: false
           base-url-path: https://www.ancientknowledge.in/
