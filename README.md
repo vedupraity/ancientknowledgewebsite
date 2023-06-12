@@ -1,4 +1,4 @@
-Ancient Knowledge Website: Static Website hosted by GitHub Pages
+# Ancient Knowledge Website: Static Website hosted by GitHub Pages
 
 Welcome to the Ancient Knowledge repository, a hub for Vedic Culture and the Sanātana Dharma. Our mission is to foster a platform that enables everyone to explore and learn from the profound wisdom contained within ancient scriptures.
 
