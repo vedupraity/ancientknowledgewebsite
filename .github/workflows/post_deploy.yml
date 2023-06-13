@@ -2,7 +2,7 @@ name: Post Deploy
 
 on:
   push:
-    branches: [ master ]
+    branches: [ main ]
 
 concurrency: 
   group: ${{ github.ref }}
